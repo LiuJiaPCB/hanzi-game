@@ -134,7 +134,6 @@
             display: flex;
             flex-wrap: wrap;
             gap: 15px;
-            /* 增加按钮间距 */
             justify-content: center;
             margin-top: 25px;
         }
@@ -413,465 +412,444 @@
 
 <body>
 
-    <div class="tabs">
-        <button class="tab-btn active" onclick="switchTab('run')">跑跑镇 (合体字)</button>
-        <button class="tab-btn" onclick="switchTab('split')">笔画实验室 (拆解字)</button>
-        <button class="tab-btn" onclick="switchTab('xiang')">象形实验室 (变变变)</button>
-    </div>
+<div class="tabs">
+    <button class="tab-btn active" onclick="switchTab('run')">跑跑镇 (合体字)</button>
+    <button class="tab-btn" onclick="switchTab('split')">笔画实验室 (拆解字)</button>
+    <button class="tab-btn" onclick="switchTab('xiang')">象形实验室 (变变变)</button>
+</div>
 
-    <div id="game-run" class="game-container active">
-        <h2>两个字跑跑，碰在一起变新字！</h2>
-        <div id="stage-run">
-            <div id="leftPart-run" class="word-run" style="left:80px"></div>
-            <div id="rightPart-run" class="word-run" style="right:80px"></div>
-            <div id="resBox-run">
-                <div class="res-detail" style="display:flex; flex-direction:column; align-items:center;">
-                    <div id="resPinyin-run"></div>
-                    <div id="resChar-writer"></div>
+<div id="game-run" class="game-container active">
+    <h2>两个字跑跑，碰在一起变新字！</h2>
+    <div id="stage-run">
+        <div id="leftPart-run" class="word-run" style="left:80px"></div>
+        <div id="rightPart-run" class="word-run" style="right:80px"></div>
+        <div id="resBox-run">
+            <div class="res-detail" style="display:flex; flex-direction:column; align-items:center;">
+                <div id="resPinyin-run"></div>
+                <div id="resChar-writer"></div>
+            </div>
+            <div style="text-align: left;">
+                <div id="resPhrase-run"
+                     style="font-size:50px; color:#333; font-weight:bold; border-left: 5px solid var(--primary); padding-left: 20px;">
                 </div>
-                <div style="text-align: left;">
-                    <div id="resPhrase-run"
-                        style="font-size:50px; color:#333; font-weight:bold; border-left: 5px solid var(--primary); padding-left: 20px;">
-                    </div>
-                    <div style="font-size: 20px; color: #999; margin-top: 10px; padding-left: 20px;">🎉 组合成功！</div>
-                </div>
+                <div style="font-size: 20px; color: #999; margin-top: 10px; padding-left: 20px;">🎉 组合成功！</div>
             </div>
         </div>
-        <div class="controls"
-            style="margin-top: 35px; width: 100%; display: flex; flex-direction: column; align-items: center;">
-            <div style="display: flex; justify-content: center; gap: 15px;">
-                <button id="actionBtn-run" class="btn-main">🚀 开始跑跑</button>
-                <button onclick="resetRun()" class="child-btn"
+    </div>
+    <div class="controls"
+         style="margin-top: 35px; width: 100%; display: flex; flex-direction: column; align-items: center;">
+        <div style="display: flex; justify-content: center; gap: 15px;">
+            <button id="actionBtn-run" class="btn-main">🚀 开始跑跑</button>
+            <button onclick="resetRun()" class="child-btn"
                     style="background: var(--secondary); color:white; box-shadow: 0 4px 0 #d35400;">🔄 重置</button>
-            </div>
-            <div class="child-btn-list" id="run-selectors"></div>
+        </div>
+        <div class="child-btn-list" id="run-selectors"></div>
 
-            <div style="margin-top: 50px; width: 100%; text-align: center;">
-                <button onclick="toggleAdmin()" class="child-btn" style="font-size: 14px; padding: 8px 15px;">⚙️
-                    字库设置与备份</button>
-            </div>
+        <div style="margin-top: 50px; width: 100%; text-align: center;">
+            <button onclick="toggleAdmin()" class="child-btn" style="font-size: 14px; padding: 8px 15px;">⚙️
+                字库设置与备份</button>
+        </div>
 
-            <div id="admin-panel" class="admin-section">
-                <h3 style="margin-top:0;">🏫 跑跑镇字库管理</h3>
-                <div
-                    style="display: flex; gap: 10px; margin-bottom: 20px; justify-content: center; background: #f9f9f9; padding: 15px; border-radius: 15px;">
-                    <input type="text" id="new-l" class="admin-input" placeholder="左部件">
-                    <span style="font-size: 20px;">+</span>
-                    <input type="text" id="new-r" class="admin-input" placeholder="右部件">
-                    <span style="font-size: 20px;">=</span>
-                    <input type="text" id="new-t" class="admin-input" placeholder="新字">
-                    <input type="text" id="new-p" class="admin-input" placeholder="组词" style="width: 120px;">
-                    <button onclick="addWord()" class="child-btn"
+        <div id="admin-panel" class="admin-section">
+            <h3 style="margin-top:0;">🏫 跑跑镇字库管理</h3>
+            <div
+                style="display: flex; gap: 10px; margin-bottom: 20px; justify-content: center; background: #f9f9f9; padding: 15px; border-radius: 15px;">
+                <input type="text" id="new-l" class="admin-input" placeholder="左部件">
+                <span style="font-size: 20px;">+</span>
+                <input type="text" id="new-r" class="admin-input" placeholder="右部件">
+                <span style="font-size: 20px;">=</span>
+                <input type="text" id="new-t" class="admin-input" placeholder="新字">
+                <input type="text" id="new-p" class="admin-input" placeholder="组词" style="width: 120px;">
+                <button onclick="addWord()" class="child-btn"
                         style="background: var(--soft-green); color:white; box-shadow: 0 4px 0 #5bbd5b;">➕ 添加</button>
-                </div>
-                <table class="admin-table">
-                    <thead>
-                        <tr>
-                            <th>左</th>
-                            <th>右</th>
-                            <th>合</th>
-                            <th>词</th>
-                            <th>管理</th>
-                        </tr>
-                    </thead>
-                    <tbody id="admin-tbody"></tbody>
-                </table>
-                <div
-                    style="margin-top: 25px; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #eee; padding-top: 15px;">
-                    <div>
-                        <button onclick="exportLib()" class="child-btn"
+            </div>
+            <table class="admin-table">
+                <thead>
+                <tr>
+                    <th>左</th>
+                    <th>右</th>
+                    <th>合</th>
+                    <th>词</th>
+                    <th>管理</th>
+                </tr>
+                </thead>
+                <tbody id="admin-tbody"></tbody>
+            </table>
+            <div
+                style="margin-top: 25px; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #eee; padding-top: 15px;">
+                <div>
+                    <button onclick="exportLib()" class="child-btn"
                             style="background:#3498db; color:white; font-size: 14px;">💾 导出备份(JSON)</button>
-                        <button onclick="document.getElementById('importFile').click()" class="child-btn"
+                    <button onclick="document.getElementById('importFile').click()" class="child-btn"
                             style="background:#9b59b6; color:white; font-size: 14px;">📂 导入备份</button>
-                        <input type="file" id="importFile" style="display:none" onchange="importLib(event)">
-                    </div>
-                    <button onclick="resetToDefault()" class="child-btn"
-                        style="background:var(--danger); color:white; font-size: 14px;">⚠️ 恢复初始设置</button>
+                    <input type="file" id="importFile" style="display:none" onchange="importLib(event)">
                 </div>
+                <button onclick="resetToDefault()" class="child-btn"
+                        style="background:var(--danger); color:white; font-size: 14px;">⚠️ 恢复初始设置</button>
             </div>
         </div>
     </div>
+</div>
 
-    <div id="game-split" class="game-container">
-        <h2>点点笔画，看看藏着哪些小伙伴？</h2>
-        <div
-            style="margin-bottom: 25px; background: white; padding: 10px 25px; border-radius: 50px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
-            <span style="font-size: 20px; font-weight: bold; color: #8b4513;">请输入母字：</span>
-            <input type="text" id="charInput" value="克" maxlength="1"
-                style="font-size: 24px; width: 60px; text-align: center; border: 3px solid var(--primary); border-radius: 15px; outline: none;">
-            <button class="btn-main" onclick="initSplit()"
+<div id="game-split" class="game-container">
+    <h2>点点笔画，看看藏着哪些小伙伴？</h2>
+    <div
+        style="margin-bottom: 25px; background: white; padding: 10px 25px; border-radius: 50px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
+        <span style="font-size: 20px; font-weight: bold; color: #8b4513;">请输入母字：</span>
+        <input type="text" id="charInput" value="克" maxlength="1"
+               style="font-size: 24px; width: 60px; text-align: center; border: 3px solid var(--primary); border-radius: 15px; outline: none;">
+        <button class="btn-main" onclick="initSplit()"
                 style="padding: 8px 25px; font-size: 18px; margin-left: 10px;">变变变！</button>
+    </div>
+    <div class="split-main">
+        <div class="hanzi-box">
+            <div id="target-bg"></div>
+            <div id="target-fg"></div>
         </div>
-        <div class="split-main">
-            <div class="hanzi-box">
-                <div id="target-bg"></div>
-                <div id="target-fg"></div>
-            </div>
-            <div class="stroke-panel" style="width:450px;">
-                <div id="btns" class="child-btn-list"
-                    style="justify-content: flex-start; margin-top:0; margin-bottom: 25px;"></div>
-                <div style="display: flex; gap: 15px;">
-                    <button class="btn-main" onclick="findExactMatches()"
+        <div class="stroke-panel" style="width:450px;">
+            <div id="btns" class="child-btn-list"
+                 style="justify-content: flex-start; margin-top:0; margin-bottom: 25px;"></div>
+            <div style="display: flex; gap: 15px;">
+                <button class="btn-main" onclick="findExactMatches()"
                         style="background: var(--soft-green); box-shadow: 0 4px 0 #5bbd5b;">🔍 找一找</button>
-                    <button class="child-btn" onclick="resetStrokes()"
+                <button class="child-btn" onclick="resetStrokes()"
                         style="background: var(--secondary); color:white; box-shadow: 0 4px 0 #d35400;">🔄 重选</button>
-                </div>
-                <div class="matching-area">
+            </div>
+            <div class="matching-area">
                     <span
                         style="font-weight: bold; font-size: 18px; color: var(--primary); display: block; margin-bottom: 10px;">🌟
                         发现的小伙伴：</span>
-                    <div id="matchResults" style="color: #aaa;">等待小朋友挑战...</div>
-                </div>
+                <div id="matchResults" style="color: #aaa;">等待小朋友挑战...</div>
             </div>
         </div>
     </div>
+</div>
 
-    <div id="game-xiang" class="game-container">
-        <h2>看图找汉字，象形字变变变！</h2>
-        <div class="match-stage">
-            <div class="match-col" id="xiang-pics" style="display:flex; flex-direction:column; gap:10px;"></div>
-            <div style="display: flex; flex-direction: column; align-items: center; gap: 20px; width: 300px;">
-                <div style="display: flex; gap: 20px;">
-                    <div id="slot-pic" class="slot">?</div>
-                    <div id="slot-han" class="slot">?</div>
-                </div>
-                <button class="btn-main" id="btn-check-xiang">💡 变一变</button>
-                <div style="color: #999; font-size: 16px;">先从左右各选一张卡片哦</div>
+<div id="game-xiang" class="game-container">
+    <h2>看图找汉字，象形字变变变！</h2>
+    <div class="match-stage">
+        <div class="match-col" id="xiang-pics" style="display:flex; flex-direction:column; gap:10px;"></div>
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 20px; width: 300px;">
+            <div style="display: flex; gap: 20px;">
+                <div id="slot-pic" class="slot">?</div>
+                <div id="slot-han" class="slot">?</div>
             </div>
-            <div class="match-col" id="xiang-hans" style="display:flex; flex-direction:column; gap:10px;"></div>
+            <button class="btn-main" id="btn-check-xiang">💡 变一变</button>
+            <div style="color: #999; font-size: 16px;">先从左右各选一张卡片哦</div>
         </div>
+        <div class="match-col" id="xiang-hans" style="display:flex; flex-direction:column; gap:10px;"></div>
     </div>
+</div>
 
-    <div class="overlay" id="xiang-overlay"></div>
-    <div id="xiang-modal" class="modal">
-        <h2 style="color: var(--soft-green); font-size: 32px;">🌟 太棒啦！找对了！</h2>
-        <div id="xiang-writer" class="tian-grid"></div>
-        <div id="xiang-tip" style="font-size: 20px; color: #666; margin-bottom: 20px; max-width: 400px;"></div>
-        <button class="btn-main" onclick="closeXiangModal()">继续挑战</button>
-    </div>
+<div class="overlay" id="xiang-overlay"></div>
+<div id="xiang-modal" class="modal">
+    <h2 style="color: var(--soft-green); font-size: 32px;">🌟 太棒啦！找对了！</h2>
+    <div id="xiang-writer" class="tian-grid"></div>
+    <div id="xiang-tip" style="font-size: 20px; color: #666; margin-bottom: 20px; max-width: 400px;"></div>
+    <button class="btn-main" onclick="closeXiangModal()">继续挑战</button>
+</div>
 
-    <audio id="ding" src="https://assets.mixkit.co/active_storage/sfx/2568/2568-preview.mp3"></audio>
+<audio id="ding" src="https://assets.mixkit.co/active_storage/sfx/2568/2568-preview.mp3"></audio>
 
-    <script>
-        // --- 核心数据与 Toast ---
-        const DEFAULT_LIB = [['足', '包', '跑', '跑步'], ['日', '月', '明', '明天'], ['木', '木', '林', '森林'], ['氵', '去', '法', '办法'], ['口', '下', '吓', '吓人'], ['人', '木', '休', '休息']];
-        let libRun = JSON.parse(localStorage.getItem('paopao_lib')) || DEFAULT_LIB;
+<script>
+    // --- 核心数据与 Toast ---
+    const DEFAULT_LIB = [['足', '包', '跑', '跑步'], ['日', '月', '明', '明天'], ['木', '木', '林', '森林'], ['氵', '去', '法', '办法'], ['口', '下', '吓', '吓人'], ['人', '木', '休', '休息']];
+    let libRun = JSON.parse(localStorage.getItem('paopao_lib')) || DEFAULT_LIB;
 
-        // --- 新增：语音播报功能 ---
-        function speakHanzi(text) {
-            const utterance = new SpeechSynthesisUtterance(text);
-            utterance.lang = 'zh-CN';
-            utterance.rate = 0.8; // 语速稍慢，适合幼儿园小朋友
-            window.speechSynthesis.speak(utterance);
+    // --- 新增：语音播报功能 ---
+    function speakHanzi(text) {
+        // 1. 取消当前正在播放的所有语音（防止重叠）
+        window.speechSynthesis.cancel();
+
+        // 2. 创建播报对象
+        const msg = new SpeechSynthesisUtterance(text);
+
+        // 3. 配置参数
+        msg.lang = 'zh-CN';  // 设置中文
+        msg.rate = 1.0;      // 语速略慢，适合小朋友
+        msg.pitch = 1.2;     // 音调略高，听起来更亲切
+
+        // 4. 执行播报
+        window.speechSynthesis.speak(msg);
+    }
+
+    function showToast(msg) {
+        const toast = document.createElement('div');
+        toast.className = 'toast-hint';
+        toast.innerText = msg;
+        document.body.appendChild(toast);
+        setTimeout(() => {
+            toast.style.transition = '0.3s';
+            toast.style.opacity = '0';
+            setTimeout(() => toast.remove(), 300);
+        }, 1500);
+    }
+
+    function saveLib() { localStorage.setItem('paopao_lib', JSON.stringify(libRun)); }
+
+    function switchTab(mode) {
+        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+        document.querySelectorAll('.tab-btn').forEach(b => {
+            if ((mode === 'run' && b.innerText.includes('跑跑')) ||
+                (mode === 'split' && b.innerText.includes('笔画')) ||
+                (mode === 'xiang' && b.innerText.includes('象形'))) b.classList.add('active');
+        });
+        document.querySelectorAll('.game-container').forEach(c => c.classList.remove('active'));
+        document.getElementById('game-' + mode).classList.add('active');
+        if (mode === 'split') initSplit();
+        if (mode === 'run') initRun();
+        if (mode === 'xiang') initXiang();
+    }
+
+    // --- Tab 1: 跑跑镇逻辑 ---
+    let runIdx = 0, isRunning = false, leftX = 80, rightX = 80, runAnim;
+    function initRun() {
+        const group = document.getElementById('run-selectors'); group.innerHTML = '';
+        libRun.forEach((d, i) => {
+            const b = document.createElement('button'); b.className = 'child-btn' + (i === runIdx ? ' active' : '');
+            b.innerText = d[0] + ' + ' + d[1]; b.onclick = () => { runIdx = i; resetRun(); };
+            group.appendChild(b);
+        });
+        if (libRun[runIdx]) {
+            document.getElementById('leftPart-run').innerText = libRun[runIdx][0];
+            document.getElementById('rightPart-run').innerText = libRun[runIdx][1];
+            document.getElementById('resPhrase-run').innerText = libRun[runIdx][3];
         }
+    }
+    function startRun() {
+        const actionBtn = document.getElementById('actionBtn-run');
+        if (isRunning) { isRunning = false; actionBtn.innerText = '🚀 继续跑'; return; }
+        isRunning = true; actionBtn.innerText = '⏸ 暂停';
+        function step() {
+            if (!isRunning) return;
+            leftX += 7; rightX += 7;
+            document.getElementById('leftPart-run').style.left = leftX + 'px';
+            document.getElementById('rightPart-run').style.right = rightX + 'px';
+            if (800 - leftX - rightX <= 100) {
+                isRunning = false; document.getElementById('ding').play(); showRunResult();
+            } else { runAnim = requestAnimationFrame(step); }
+        }
+        step();
+    }
+    function showRunResult() {
+        const targetChar = libRun[runIdx][2];
+        const phrase = libRun[runIdx][3]; // 组词
 
-        function showToast(msg) {
-            const toast = document.createElement('div');
-            toast.className = 'toast-hint';
-            toast.innerText = msg;
-            document.body.appendChild(toast);
-            setTimeout(() => {
-                toast.style.transition = '0.3s';
-                toast.style.opacity = '0';
-                setTimeout(() => toast.remove(), 300);
-            }, 1500);
-        }
+        document.getElementById('leftPart-run').style.display = 'none';
+        document.getElementById('rightPart-run').style.display = 'none';
+        document.getElementById('resPinyin-run').innerText = cnchar.spell(targetChar);
+        document.getElementById('resBox-run').style.display = 'flex';
+        document.getElementById('resChar-writer').innerHTML = '';
+        HanziWriter.create('resChar-writer', targetChar, { width: 180, height: 180, padding: 10, strokeColor: '#e74c3c' }).animateCharacter();
+        document.getElementById('actionBtn-run').innerText = '✨ 成功！';
+        document.getElementById('actionBtn-run').disabled = true;
 
-        function saveLib() { localStorage.setItem('paopao_lib', JSON.stringify(libRun)); }
+        // 1. 需求：跑跑镇成功播报结果字和组词
+        speakHanzi(`${targetChar}。${phrase}。`);
+    }
+    function resetRun() {
+        cancelAnimationFrame(runAnim); isRunning = false; leftX = 80; rightX = 80;
+        const btn = document.getElementById('actionBtn-run'); btn.disabled = false; btn.innerText = '🚀 开始跑跑';
+        document.getElementById('leftPart-run').style.left = '80px'; document.getElementById('leftPart-run').style.display = 'block';
+        document.getElementById('rightPart-run').style.right = '80px'; document.getElementById('rightPart-run').style.display = 'block';
+        document.getElementById('resBox-run').style.display = 'none';
+        initRun();
+    }
 
-        function switchTab(mode) {
-            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-            document.querySelectorAll('.tab-btn').forEach(b => {
-                if ((mode === 'run' && b.innerText.includes('跑跑')) ||
-                    (mode === 'split' && b.innerText.includes('笔画')) ||
-                    (mode === 'xiang' && b.innerText.includes('象形'))) b.classList.add('active');
-            });
-            document.querySelectorAll('.game-container').forEach(c => c.classList.remove('active'));
-            document.getElementById('game-' + mode).classList.add('active');
-            if (mode === 'split') initSplit();
-            if (mode === 'run') initRun();
-            if (mode === 'xiang') initXiang();
-        }
-
-        // --- Tab 1: 跑跑镇逻辑 ---
-        let runIdx = 0, isRunning = false, leftX = 80, rightX = 80, runAnim;
-        function initRun() {
-            const group = document.getElementById('run-selectors'); group.innerHTML = '';
-            libRun.forEach((d, i) => {
-                const b = document.createElement('button'); b.className = 'child-btn' + (i === runIdx ? ' active' : '');
-                b.innerText = d[0] + ' + ' + d[1]; b.onclick = () => { runIdx = i; resetRun(); };
-                group.appendChild(b);
-            });
-            if (libRun[runIdx]) {
-                document.getElementById('leftPart-run').innerText = libRun[runIdx][0];
-                document.getElementById('rightPart-run').innerText = libRun[runIdx][1];
-                document.getElementById('resPhrase-run').innerText = libRun[runIdx][3];
-            }
-        }
-        function startRun() {
-            const actionBtn = document.getElementById('actionBtn-run');
-            if (isRunning) { isRunning = false; actionBtn.innerText = '🚀 继续跑'; return; }
-            isRunning = true; actionBtn.innerText = '⏸ 暂停';
-            function step() {
-                if (!isRunning) return;
-                leftX += 7; rightX += 7;
-                document.getElementById('leftPart-run').style.left = leftX + 'px';
-                document.getElementById('rightPart-run').style.right = rightX + 'px';
-                if (800 - leftX - rightX <= 100) {
-                    isRunning = false; document.getElementById('ding').play(); showRunResult();
-                } else { runAnim = requestAnimationFrame(step); }
-            }
-            step();
-        }
-        function showRunResult() {
-            const targetChar = libRun[runIdx][2];
-            document.getElementById('leftPart-run').style.display = 'none';
-            document.getElementById('rightPart-run').style.display = 'none';
-            document.getElementById('resPinyin-run').innerText = cnchar.spell(targetChar);
-            document.getElementById('resBox-run').style.display = 'flex';
-            document.getElementById('resChar-writer').innerHTML = '';
-            HanziWriter.create('resChar-writer', targetChar, { width: 180, height: 180, padding: 10, strokeColor: '#e74c3c' }).animateCharacter();
-            document.getElementById('actionBtn-run').innerText = '✨ 成功！';
-            document.getElementById('actionBtn-run').disabled = true;
-        }
-        function resetRun() {
-            cancelAnimationFrame(runAnim); isRunning = false; leftX = 80; rightX = 80;
-            const btn = document.getElementById('actionBtn-run'); btn.disabled = false; btn.innerText = '🚀 开始跑跑';
-            document.getElementById('leftPart-run').style.left = '80px'; document.getElementById('leftPart-run').style.display = 'block';
-            document.getElementById('rightPart-run').style.right = '80px'; document.getElementById('rightPart-run').style.display = 'block';
-            document.getElementById('resBox-run').style.display = 'none';
-            initRun();
-        }
-
-        // --- 字库维护逻辑 ---
-        function toggleAdmin() {
-            const p = document.getElementById('admin-panel');
-            p.style.display = p.style.display === 'block' ? 'none' : 'block';
-            if (p.style.display === 'block') renderAdmin();
-        }
-        function renderAdmin() {
-            const tb = document.getElementById('admin-tbody'); tb.innerHTML = '';
-            libRun.forEach((d, i) => {
-                const tr = document.createElement('tr');
-                tr.innerHTML = `<td>${d[0]}</td><td>${d[1]}</td><td>${d[2]}</td><td>${d[3]}</td>
+    // --- 字库维护逻辑 ---
+    function toggleAdmin() {
+        const p = document.getElementById('admin-panel');
+        p.style.display = p.style.display === 'block' ? 'none' : 'block';
+        if (p.style.display === 'block') renderAdmin();
+    }
+    function renderAdmin() {
+        const tb = document.getElementById('admin-tbody'); tb.innerHTML = '';
+        libRun.forEach((d, i) => {
+            const tr = document.createElement('tr');
+            tr.innerHTML = `<td>${d[0]}</td><td>${d[1]}</td><td>${d[2]}</td><td>${d[3]}</td>
                 <td><button onclick="delWord(${i})" style="color:var(--danger); border:none; background:none; cursor:pointer;">删除</button></td>`;
-                tb.appendChild(tr);
-            });
-        }
-        function addWord() {
-            const l = document.getElementById('new-l').value, r = document.getElementById('new-r').value,
-                t = document.getElementById('new-t').value, p = document.getElementById('new-p').value;
-            if (!l || !r || !t || !p) return showToast("请把四个格子都填好哦！");
-            libRun.push([l, r, t, p]); saveLib(); renderAdmin(); initRun();
-            document.querySelectorAll('.admin-input').forEach(i => i.value = '');
-        }
-        function delWord(i) { if (confirm("确定要删除吗？")) { libRun.splice(i, 1); saveLib(); renderAdmin(); initRun(); resetRun(); } }
-        function resetToDefault() { if (confirm("确定恢复初始吗？")) { libRun = [...DEFAULT_LIB]; saveLib(); renderAdmin(); initRun(); resetRun(); } }
-        function exportLib() {
-            const b = new Blob([JSON.stringify(libRun, null, 2)], { type: "application/json" });
-            const a = document.createElement('a'); a.href = URL.createObjectURL(b);
-            a.download = `字库备份_${new Date().toLocaleDateString()}.json`; a.click();
-        }
-        function importLib(e) {
-            const f = e.target.files[0]; if (!f) return;
-            const rd = new FileReader(); rd.onload = (ev) => {
-                try { libRun = JSON.parse(ev.target.result); saveLib(); renderAdmin(); initRun(); resetRun(); alert("导入成功！"); }
-                catch (ex) { alert("文件格式不正确"); }
-            }; rd.readAsText(f);
-        }
+            tb.appendChild(tr);
+        });
+    }
+    function addWord() {
+        const l = document.getElementById('new-l').value, r = document.getElementById('new-r').value,
+            t = document.getElementById('new-t').value, p = document.getElementById('new-p').value;
+        if (!l || !r || !t || !p) return showToast("请把四个格子都填好哦！");
+        libRun.push([l, r, t, p]); saveLib(); renderAdmin(); initRun();
+        document.querySelectorAll('.admin-input').forEach(i => i.value = '');
+    }
+    function delWord(i) { if (confirm("确定要删除吗？")) { libRun.splice(i, 1); saveLib(); renderAdmin(); initRun(); resetRun(); } }
+    function resetToDefault() { if (confirm("确定恢复初始吗？")) { libRun = [...DEFAULT_LIB]; saveLib(); renderAdmin(); initRun(); resetRun(); } }
+    function exportLib() {
+        const b = new Blob([JSON.stringify(libRun, null, 2)], { type: "application/json" });
+        const a = document.createElement('a'); a.href = URL.createObjectURL(b);
+        a.download = `字库备份_${new Date().toLocaleDateString()}.json`; a.click();
+    }
+    function importLib(e) {
+        const f = e.target.files[0]; if (!f) return;
+        const rd = new FileReader(); rd.onload = (ev) => {
+            try { libRun = JSON.parse(ev.target.result); saveLib(); renderAdmin(); initRun(); resetRun(); alert("导入成功！"); }
+            catch (ex) { alert("文件格式不正确"); }
+        }; rd.readAsText(f);
+    }
 
-        // --- Tab 2: 笔画实验室 ---
-        let writerFg; let strokeStatus = []; let clickSequence = []; let foundChars = new Set();
+    // --- Tab 2: 笔画实验室 ---
+    let writerFg; let strokeStatus = []; let clickSequence = []; let foundChars = new Set();
 
-        //笔画在10以内的汉字
-        const matchLibrary = ["一", "乙", "丁", "七", "乃", "九", "了", "二", "人", "儿", "入", "八", "几", "刀", "刁", "力", "匕", "十", "卜", "厂", "又", "万", "丈", "三", "上", "下", "与", "个", "丸", "久", "么", "义", "之", "乞", "也", "习", "乡", "于", "亏", "亡", "亿", "凡", "刃", "勺", "千", "卫", "叉", "及", "口", "土", "士", "夕", "大", "女", "子", "寸", "小", "尸", "山", "川", "工", "己", "已", "巾", "干", "广", "弓", "才", "门", "飞", "马", "不", "丐", "丑", "专", "中", "丰", "丹", "为", "乌", "乏", "书", "予", "云", "互", "五", "井", "什", "仁", "仅", "仆", "仇", "今", "介", "仍", "从", "仑", "仓", "以", "允", "元", "公", "六", "内", "冈", "冗", "凤", "凶", "分", "切", "劝", "办", "勾", "勿", "匀", "化", "匹", "区", "升", "午", "厅", "历", "友", "双", "反", "天", "太", "夫", "夭", "孔", "少", "尤", "尺", "屯", "巨", "巴", "币", "幻", "开", "引", "心", "忆", "戈", "户", "手", "扎", "支", "文", "斗", "斤", "方", "无", "日", "月", "木", "欠", "止", "歹", "比", "毛", "氏", "气", "水", "火", "爪", "父", "片", "牙", "牛", "犬", "王", "瓦", "艺", "见", "计", "订", "认", "讥", "贝", "车", "邓", "长", "队", "风", "且", "世", "丘", "丙", "业", "丛", "东", "丝", "主", "乍", "乎", "乐", "仔", "他", "仗", "付", "仙", "代", "令", "仪", "们", "兄", "兰", "册", "写", "冬", "冯", "凸", "凹", "出", "击", "刊", "功", "加", "务", "包", "匆", "北", "半", "占", "卡", "卢", "印", "厉", "去", "发", "古", "句", "另", "叨", "只", "叫", "召", "叭", "叮", "可", "台", "史", "右", "叶", "号", "司", "叹", "叼", "叽", "囚", "四", "圣", "处", "外", "央", "夯", "失", "头", "奴", "奶", "孕", "宁", "它", "对", "尔", "尼", "左", "巧", "市", "布", "帅", "平", "幼", "归", "必", "扑", "扒", "打", "扔", "斥", "旦", "旧", "未", "末", "本", "术", "正", "母", "民", "永", "汁", "汇", "汉", "灭", "犯", "玄", "玉", "瓜", "甘", "生", "用", "甩", "田", "由", "甲", "申", "电", "白", "皮", "皿", "目", "矛", "矢", "石", "示", "礼", "禾", "穴", "立", "纠", "艾", "节", "讨", "让", "训", "议", "讯", "记", "轧", "边", "辽", "闪", "饥", "鸟", "龙", "丢", "乒", "乓", "乔", "买", "争", "亚", "交", "亥", "亦", "产", "仰", "仲", "件", "价", "任", "份", "仿", "企", "伊", "伍", "伏", "伐", "休", "众", "优", "伙", "会", "伞", "伟", "传", "伤", "伦", "伪", "似", "充", "兆", "先", "光", "全", "共", "关", "兴", "再", "军", "农", "冰", "冲", "决", "凫", "刑", "划", "列", "刘", "则", "刚", "创", "劣", "动", "匈", "匠", "华", "协", "危", "压", "厌", "吁", "吃", "各", "吆", "合", "吉", "吊", "同", "名", "后", "吏", "吐", "向", "吓", "吕", "吗", "吸", "回", "因", "团", "在", "地", "场", "圾", "壮", "多", "夷", "夸", "夹", "夺", "奸", "她", "好", "如", "妄", "妆", "妇", "妈", "字", "存", "孙", "宅", "宇", "守", "安", "寺", "寻", "导", "尖", "尘", "尽", "屹", "屿", "岁", "岂", "州", "巡", "巩", "帆", "师", "年", "并", "庄", "庆", "延", "廷", "异", "式", "弛", "当", "忙", "戏", "成", "托", "扛", "扣", "执", "扩", "扫", "扬", "收", "旨", "早", "旬", "旭", "曲", "有", "朱", "朴", "朵", "机", "朽", "杀", "杂", "权", "次", "欢", "此", "死", "毕", "汗", "汛", "江", "池", "污", "汤", "灯", "灰", "爷", "百", "竹", "米", "红", "纤", "约", "级", "纪", "纫", "网", "羊", "羽", "老", "考", "而", "耳", "肉", "肋", "肌", "臣", "自", "至", "臼", "舌", "舟", "色", "芋", "芍", "芒", "芝", "虫", "血", "行", "衣", "西", "观", "讲", "讳", "讶", "许", "讹", "论", "讼", "讽", "设", "访", "诀", "贞", "负", "轨", "达", "迁", "迂", "迄", "迅", "过", "迈", "邢", "那", "邦", "邪", "闭", "问", "闯", "阱", "防", "阳", "阴", "阵", "阶", "页", "驮", "驯", "驰", "齐", "两", "严", "串", "丽", "乱", "亩", "伯", "估", "伴", "伶", "伸", "伺", "佃", "但", "位", "低", "住", "佑", "体", "何", "余", "佛", "作", "你", "佣", "克", "免", "兑", "兵", "况", "冶", "冷", "冻", "初", "删", "判", "刨", "利", "别", "助", "努", "劫", "励", "劲", "劳", "匣", "医", "卤", "即", "却", "卵", "县", "君", "吝", "吞", "吟", "吠", "否", "吧", "吨", "吩", "含", "听", "吭", "吮", "启", "吱", "吴", "吵", "吹", "吻", "吼", "呀", "呆", "呈", "告", "呐", "呕", "员", "呛", "呜", "囤", "园", "困", "囱", "围", "址", "均", "坊", "坎", "坏", "坐", "坑", "块", "坚", "坛", "坝", "坞", "坟", "坠", "声", "壳", "妒", "妓", "妖", "妙", "妥", "妨", "姊", "孝", "宋", "完", "宏", "寿", "尾", "尿", "局", "屁", "层", "岔", "岖", "岗", "岛", "巫", "希", "帐", "庇", "床", "序", "庐", "库", "应", "弃", "弄", "弟", "张", "形", "彤", "役", "彻", "忌", "忍", "志", "忘", "忧", "快", "忱", "怀", "我", "戒", "扭", "扮", "扯", "扰", "扳", "扶", "批", "扼", "找", "技", "抄", "把", "抑", "抒", "抓", "投", "抖", "抗", "折", "抚", "抛", "抠", "抡", "抢", "护", "报", "拒", "拟", "改", "攻", "旱", "时", "旷", "更", "杆", "杈", "杉", "李", "杏", "材", "村", "杖", "杜", "束", "杠", "条", "来", "杨", "极", "步", "歼", "每", "求", "汞", "汪", "汰", "汹", "汽", "沃", "沈", "沉", "沐", "沙", "沛", "沟", "没", "沥", "沦", "沧", "沪", "泛", "灵", "灶", "灸", "灼", "灾", "灿", "牡", "牢", "状", "犹", "狂", "狈", "玖", "玛", "甫", "男", "甸", "疗", "皂", "盯", "社", "秀", "私", "秃", "究", "穷", "系", "纬", "纯", "纱", "纲", "纳", "纵", "纷", "纸", "纹", "纺", "纽", "罕", "肖", "肘", "肚", "肛", "肝", "肠", "良", "芙", "芜", "芥", "芦", "芬", "芭", "芯", "花", "芳", "芹", "芽", "苇", "苍", "苏", "补", "角", "言", "证", "评", "诅", "识", "诈", "诉", "诊", "词", "译", "谷", "豆", "贡", "财", "赤", "走", "足", "身", "轩", "辛", "辰", "迎", "运", "近", "返", "还", "这", "进", "远", "违", "连", "迟", "邑", "邮", "邻", "里", "针", "钉", "闰", "闲", "间", "闷", "阻", "阿", "附", "际", "陆", "陈", "韧", "饭", "饮", "驱", "驳", "驴", "鸠", "鸡", "麦", "龟", "丧", "乖", "乳", "事", "些", "享", "京", "佩", "佳", "使", "侄", "侈", "例", "侍", "供", "依", "侠", "侣", "侥", "侦", "侧", "侨", "兔", "其", "具", "典", "净", "凭", "凯", "函", "刮", "到", "制", "刷", "券", "刹", "刺", "刻", "刽", "剂", "势", "卑", "卒", "卓", "单", "卖", "卦", "卧", "卷", "厕", "叁", "参", "叔", "取", "受", "变", "呢", "周", "味", "呵", "呻", "呼", "命", "咆", "和", "咏", "咐", "咒", "咕", "咖", "咙", "哎", "固", "国", "图", "坡", "坤", "坦", "坪", "坯", "坷", "垂", "垃", "垄", "备", "夜", "奄", "奇", "奈", "奉", "奋", "奔", "妹", "妻", "姆", "始", "姐", "姑", "姓", "委", "孟", "季", "孤", "学", "宗", "官", "宙", "定", "宛", "宜", "宝", "实", "宠", "审", "尚", "居", "屈", "屉", "届", "岩", "岭", "岳", "岸", "帕", "帖", "帘", "帚", "帜", "幸", "底", "店", "庙", "府", "庞", "废", "建", "弥", "弦", "弧", "录", "彼", "往", "征", "径", "忠", "念", "忽", "忿", "态", "怔", "怕", "怖", "怜", "性", "怪", "怯", "或", "房", "所", "承", "披", "抬", "抱", "抵", "抹", "押", "抽", "拂", "拄", "担", "拆", "拇", "拉", "拌", "拍", "拐", "拓", "拔", "拖", "拗", "拘", "拙", "招", "拢", "拣", "拥", "拦", "拧", "拨", "择", "放", "斧", "斩", "旺", "昂", "昆", "昌", "明", "昏", "易", "昔", "昙", "朋", "服", "杭", "杯", "杰", "松", "板", "构", "枉", "析", "枕", "林", "枚", "果", "枝", "枢", "枣", "枪", "枫", "柜", "欣", "欧", "武", "歧", "殴", "氓", "氛", "沫", "沮", "河", "沸", "油", "治", "沼", "沽", "沾", "沿", "泄", "泊", "泌", "法", "泞", "泡", "波", "泣", "泥", "注", "泪", "泳", "泻", "泼", "泽", "浅", "炉", "炊", "炎", "炒", "炕", "炬", "爬", "爸", "版", "牧", "物", "狐", "狗", "狞", "玩", "玫", "环", "现", "瓮", "画", "畅", "疙", "疚", "疟", "的", "盲", "直", "知", "矾", "矿", "码", "祈", "秆", "秉", "空", "线", "练", "组", "绅", "细", "织", "终", "绊", "绍", "绎", "经", "罗", "者", "肃", "股", "肢", "肤", "肥", "肩", "肪", "肮", "肯", "育", "肴", "肺", "肾", "肿", "胀", "胁", "舍", "艰", "苔", "苗", "苛", "苞", "苟", "若", "苦", "苫", "英", "苹", "茁", "茂", "范", "茄", "茅", "茉", "茎", "虎", "虏", "虱", "表", "衩", "衫", "衬", "规", "觅", "视", "试", "诗", "诚", "话", "诞", "诡", "询", "该", "详", "责", "贤", "败", "账", "货", "质", "贩", "贪", "贫", "贬", "购", "贮", "贯", "转", "轮", "软", "轰", "迫", "述", "郁", "郊", "郎", "郑", "采", "金", "钓", "闸", "闹", "陋", "陌", "降", "限", "陕", "隶", "雨", "青", "非", "顶", "顷", "饰", "饱", "饲", "驶", "驹", "驻", "驼", "驾", "鱼", "鸣", "齿", "临", "举", "亭", "亮", "亲", "侮", "侯", "侵", "便", "促", "俄", "俊", "俏", "俐", "俗", "俘", "保", "信", "俩", "俭", "修", "养", "冒", "冠", "剃", "削", "前", "剑", "勃", "勇", "勉", "勋", "南", "卸", "厘", "厚", "叙", "叛", "咧", "咨", "咪", "咬", "咱", "咳", "咸", "咽", "哀", "品", "哄", "哆", "哈", "响", "哑", "哗", "哟", "哪", "型", "垒", "垛", "垢", "垦", "垫", "垮", "城", "复", "奏", "契", "奕", "奖", "姚", "姜", "姥", "姨", "姻", "姿", "威", "娃", "娄", "娇", "娜", "孩", "客", "宣", "室", "宦", "宪", "宫", "封", "将", "尝", "屋", "屎", "屏", "峡", "峦", "差", "巷", "帝", "带", "帮", "幽", "度", "庭", "弯", "待", "很", "徊", "律", "怎", "怒", "思", "怠", "急", "怨", "总", "恃", "恍", "恒", "恢", "恤", "恨", "恬", "恰", "恼", "战", "扁", "拜", "括", "拭", "拯", "拱", "拴", "拷", "拼", "拾", "持", "挂", "指", "按", "挎", "挑", "挖", "挟", "挠", "挡", "挣", "挤", "挥", "挪", "挺", "政", "故", "施", "既", "星", "映", "春", "昧", "昨", "昭", "是", "昵", "昼", "显", "枯", "架", "枷", "柄", "柏", "某", "柑", "柒", "染", "柔", "柠", "查", "柬", "柱", "柳", "柿", "栅", "标", "栈", "栋", "栏", "树", "歪", "殃", "残", "段", "毒", "毡", "氢", "泉", "泵", "洁", "洋", "洒", "洗", "洛", "洞", "津", "洪", "洲", "活", "洼", "洽", "派", "浇", "浊", "测", "济", "浑", "浓", "涎", "炫", "炭", "炮", "炸", "点", "炼", "烁", "烂", "牲", "牵", "狠", "狡", "独", "狭", "狮", "狰", "狱", "玲", "玷", "玻", "珊", "珍", "甚", "界", "畏", "疤", "疫", "疮", "疯", "皆", "皇", "盅", "盆", "盈", "相", "盹", "盼", "盾", "省", "眉", "看", "眨", "矩", "砂", "砌", "砍", "研", "砖", "砚", "祖", "祝", "神", "祠", "秋", "种", "科", "秒", "秕", "穿", "突", "窃", "竖", "竿", "类", "籽", "绑", "绒", "结", "绕", "绘", "给", "络", "绝", "绞", "统", "缸", "罚", "美", "耍", "耐", "胃", "胆", "背", "胎", "胖", "胚", "胜", "胞", "胡", "胧", "脉", "茧", "茫", "茬", "茴", "茵", "茶", "茸", "荆", "草", "荐", "荒", "荔", "荚", "荞", "荠", "荡", "荣", "荤", "荧", "药", "虐", "虹", "虽", "虾", "蚀", "蚁", "蚂", "蚤", "衍", "袄", "要", "览", "觉", "诫", "诬", "语", "误", "诱", "诲", "说", "诵", "贰", "贱", "贴", "贵", "贷", "贸", "费", "贺", "赴", "赵", "趴", "轴", "轻", "迷", "迹", "追", "退", "送", "适", "逃", "逆", "选", "逊", "重", "钙", "钝", "钞", "钟", "钠", "钢", "钥", "钦", "钧", "钩", "钮", "闺", "闻", "闽", "阀", "阁", "陡", "院", "除", "陨", "险", "面", "革", "韭", "音", "项", "顺", "须", "飒", "食", "饵", "饶", "饺", "饼", "首", "香", "骂", "骄", "骆", "骇", "骨", "鬼", "鸥", "鸦", "乘", "俯", "俱", "俺", "倍", "倒", "倔", "倘", "候", "倚", "借", "倡", "倦", "债", "值", "倾", "健", "党", "兼", "冤", "凄", "准", "凉", "凌", "剔", "剖", "剥", "剧", "匪", "匿", "卿", "原", "哥", "哨", "哩", "哭", "哮", "哲", "哺", "哼", "唁", "唆", "唇", "唉", "唐", "唠", "唤", "唧", "啊", "圃", "圆", "埂", "埃", "埋", "壶", "夏", "套", "娘", "娩", "娱", "宰", "害", "宴", "宵", "家", "容", "宽", "宾", "射", "屑", "展", "峭", "峰", "峻", "席", "座", "弱", "徐", "徒", "恋", "恐", "恕", "恩", "恭", "息", "恳", "恶", "悄", "悍", "悔", "悟", "悦", "悯", "扇", "拳", "拿", "挚", "挨", "挫", "振", "挽", "捂", "捅", "捆", "捉", "捌", "捍", "捎", "捏", "捐", "捕", "捞", "损", "捡", "换", "捣", "效", "敌", "斋", "料", "旁", "旅", "晃", "晋", "晌", "晒", "晓", "晕", "朗", "柴", "栓", "栖", "栗", "校", "株", "样", "核", "根", "格", "栽", "桂", "桃", "桅", "框", "案", "桌", "桐", "桑", "档", "桥", "桦", "桨", "桩", "梆", "殉", "殊", "殷", "毙", "氧", "氨", "泰", "流", "浆", "浙", "浦", "浩", "浪", "浮", "浴", "海", "浸", "涂", "消", "涉", "涌", "涕", "涛", "涝", "涡", "涣", "涤", "润", "涧", "涨", "涩", "烈", "烘", "烙", "烛", "烟", "烤", "烦", "烧", "烫", "热", "爱", "爹", "特", "牺", "狸", "狼", "珠", "班", "瓶", "瓷", "畔", "留", "畜", "疲", "疹", "疼", "疾", "病", "症", "皱", "益", "盏", "盐", "监", "真", "眠", "砰", "破", "砸", "砾", "础", "祟", "祥", "离", "秘", "租", "秤", "秦", "秧", "秩", "秫", "积", "称", "窄", "窍", "站", "竞", "笆", "笋", "笑", "笔", "粉", "紊", "素", "索", "紧", "绢", "绣", "继", "缺", "罢", "羔", "羞", "翁", "翅", "耕", "耗", "耘", "耙", "耸", "耻", "耽", "耿", "聂", "胯", "胰", "胳", "胶", "胸", "能", "脂", "脆", "脊", "脏", "脐", "脑", "脓", "臭", "致", "舀", "航", "般", "舰", "舱", "艳", "荷", "荸", "莉", "莫", "莱", "莲", "获", "莹", "莺", "莽", "虑", "蚊", "蚌", "蚓", "蚕", "蚜", "蚣", "蚪", "衰", "衷", "袁", "袍", "袒", "袖", "袜", "被", "请", "诸", "诺", "读", "诽", "课", "谁", "调", "谅", "谆", "谈", "谊", "豹", "豺", "贼", "贾", "贿", "赁", "赂", "赃", "资", "赶", "起", "躬", "载", "轿", "较", "辱", "透", "逐", "递", "途", "逗", "通", "逛", "逝", "逞", "速", "造", "逢", "部", "郭", "都", "酌", "配", "酒", "钱", "钳", "钻", "钾", "铁", "铃", "铅", "铆", "阅", "陪", "陵", "陶", "陷", "难", "顽", "顾", "顿", "颁", "颂", "预", "饿", "馁", "验", "骏", "高", "鸭", "鸯", "鸳", "鸵"];
-        const STROKE_MAP = {
-            // 1. 横向类
-            '一': 'H', '㇀': 'H',
-            // 2. 撇捺/点类
-            '丶': 'N', '㇏': 'N'
-        };
+    const matchLibrary = ["一", "乙", "丁", "七", "乃", "九", "了", "二", "人", "儿", "入", "八", "几", "刀", "刁", "力", "匕", "十", "卜", "厂", "又", "万", "丈", "三", "上", "下", "与", "个", "丸", "久", "么", "义", "之", "乞", "也", "习", "乡", "于", "亏", "亡", "亿", "凡", "刃", "勺", "千", "卫", "叉", "及", "口", "土", "士", "夕", "大", "女", "子", "寸", "小", "尸", "山", "川", "工", "己", "已", "巾", "干", "广", "弓", "才", "门", "飞", "马", "不", "丐", "丑", "专", "中", "丰", "丹", "为", "乌", "乏", "书", "予", "云", "互", "五", "井", "什", "仁", "仅", "仆", "仇", "今", "介", "仍", "从", "仑", "仓", "以", "允", "元", "公", "六", "内", "冈", "冗", "凤", "凶", "分", "切", "劝", "办", "勾", "勿", "匀", "化", "匹", "区", "升", "午", "厅", "历", "友", "双", "反", "天", "太", "夫", "夭", "孔", "少", "尤", "尺", "屯", "巨", "巴", "币", "幻", "开", "引", "心", "忆", "戈", "户", "手", "扎", "支", "文", "斗", "斤", "方", "无", "日", "月", "木", "欠", "止", "歹", "比", "毛", "氏", "气", "水", "火", "爪", "父", "片", "牙", "牛", "犬", "王", "瓦", "艺", "见", "计", "订", "认", "讥", "贝", "车", "邓", "长", "队", "风", "且", "世", "丘", "丙", "业", "丛", "东", "丝", "主", "乍", "乎", "乐", "仔", "他", "仗", "付", "仙", "代", "令", "仪", "们", "兄", "兰", "册", "写", "冬", "冯", "凸", "凹", "出", "击", "刊", "功", "加", "务", "包", "匆", "北", "半", "占", "卡", "卢", "印", "厉", "去", "发", "古", "句", "另", "叨", "只", "叫", "召", "叭", "叮", "可", "台", "史", "右", "叶", "号", "司", "叹", "叼", "叽", "囚", "四", "圣", "处", "外", "央", "夯", "失", "头", "奴", "奶", "孕", "宁", "它", "对", "尔", "尼", "左", "巧", "市", "布", "帅", "平", "幼", "归", "必", "扑", "扒", "打", "扔", "斥", "旦", "旧", "未", "末", "本", "术", "正", "母", "民", "永", "汁", "汇", "汉", "灭", "犯", "玄", "玉", "瓜", "甘", "生", "用", "甩", "田", "由", "甲", "申", "电", "白", "皮", "皿", "目", "矛", "矢", "石", "示", "礼", "禾", "穴", "立", "纠", "艾", "节", "讨", "让", "训", "议", "讯", "记", "轧", "边", "辽", "闪", "饥", "鸟", "龙", "丢", "乒", "乓", "乔", "买", "争", "亚", "交", "亥", "亦", "产", "仰", "仲", "件", "价", "任", "份", "仿", "企", "伊", "伍", "伏", "伐", "休", "众", "优", "伙", "会", "伞", "伟", "传", "伤", "伦", "伪", "似", "充", "兆", "先", "光", "全", "共", "关", "兴", "再", "军", "农", "冰", "冲", "决", "凫", "刑", "划", "列", "刘", "则", "刚", "创", "劣", "动", "匈", "匠", "华", "协", "危", "压", "厌", "吁", "吃", "各", "吆", "合", "吉", "吊", "同", "名", "后", "吏", "吐", "向", "吓", "吕", "吗", "吸", "回", "因", "团", "在", "地", "场", "圾", "壮", "多", "夷", "夸", "夹", "夺", "奸", "她", "好", "如", "妄", "妆", "妇", "妈", "字", "存", "孙", "宅", "宇", "守", "安", "寺", "寻", "导", "尖", "尘", "尽", "屹", "屿", "岁", "岂", "州", "巡", "巩", "帆", "师", "年", "并", "庄", "庆", "延", "廷", "异", "式", "弛", "当", "忙", "戏", "成", "托", "扛", "扣", "执", "扩", "扫", "扬", "收", "旨", "早", "旬", "旭", "曲", "有", "朱", "朴", "朵", "机", "朽", "杀", "杂", "权", "次", "欢", "此", "死", "毕", "汗", "汛", "江", "池", "污", "汤", "灯", "灰", "爷", "百", "竹", "米", "红", "纤", "约", "级", "纪", "纫", "网", "羊", "羽", "老", "考", "而", "耳", "肉", "肋", "肌", "臣", "自", "至", "臼", "舌", "舟", "色", "芋", "芍", "芒", "芝", "虫", "血", "行", "衣", "西", "观", "讲", "讳", "讶", "许", "讹", "论", "讼", "讽", "设", "访", "诀", "贞", "负", "轨", "达", "迁", "迂", "迄", "迅", "过", "迈", "邢", "那", "邦", "邪", "闭", "问", "闯", "阱", "防", "阳", "阴", "阵", "阶", "页", "驮", "驯", "驰", "齐", "两", "严", "串", "丽", "乱", "亩", "伯", "估", "伴", "伶", "伸", "伺", "佃", "但", "位", "低", "住", "佑", "体", "何", "余", "佛", "作", "你", "佣", "克", "免", "兑", "兵", "况", "冶", "冷", "冻", "初", "删", "判", "刨", "利", "别", "助", "努", "劫", "励", "劲", "劳", "匣", "医", "卤", "即", "却", "卵", "县", "君", "吝", "吞", "吟", "吠", "否", "吧", "吨", "吩", "含", "听", "吭", "吮", "启", "吱", "吴", "吵", "吹", "吻", "吼", "呀", "呆", "呈", "告", "呐", "呕", "员", "呛", "呜", "囤", "园", "困", "囱", "围", "址", "均", "坊", "坎", "坏", "坐", "坑", "块", "坚", "坛", "坝", "坞", "坟", "坠", "声", "壳", "妒", "妓", "妖", "妙", "妥", "妨", "姊", "孝", "宋", "完", "宏", "寿", "尾", "尿", "局", "屁", "层", "岔", "岖", "岗", "岛", "巫", "希", "帐", "庇", "床", "序", "庐", "库", "应", "弃", "弄", "弟", "张", "形", "彤", "役", "彻", "忌", "忍", "志", "忘", "忧", "快", "忱", "怀", "我", "戒", "扭", "扮", "扯", "扰", "扳", "扶", "批", "扼", "找", "技", "抄", "把", "抑", "抒", "抓", "投", "抖", "抗", "折", "抚", "抛", "抠", "抡", "抢", "护", "报", "拒", "拟", "改", "攻", "旱", "时", "旷", "更", "杆", "杈", "杉", "李", "杏", "材", "村", "杖", "杜", "束", "杠", "条", "来", "杨", "极", "步", "歼", "每", "求", "汞", "汪", "汰", "汹", "汽", "沃", "沈", "沉", "沐", "沙", "沛", "沟", "没", "沥", "沦", "沧", "沪", "泛", "灵", "灶", "灸", "灼", "灾", "灿", "牡", "牢", "状", "犹", "狂", "狈", "玖", "玛", "甫", "男", "甸", "疗", "皂", "盯", "社", "秀", "私", "秃", "究", "穷", "系", "纬", "纯", "纱", "纲", "纳", "纵", "纷", "纸", "纹", "纺", "纽", "罕", "肖", "肘", "肚", "肛", "肝", "肠", "良", "芙", "芜", "芥", "芦", "芬", "芭", "芯", "花", "芳", "芹", "芽", "苇", "苍", "苏", "补", "角", "言", "证", "评", "诅", "识", "诈", "诉", "诊", "词", "译", "谷", "豆", "贡", "财", "赤", "走", "足", "身", "轩", "辛", "辰", "迎", "运", "近", "返", "还", "这", "进", "远", "违", "连", "迟", "邑", "邮", "邻", "里", "针", "钉", "闰", "闲", "间", "闷", "阻", "阿", "附", "际", "陆", "陈", "韧", "饭", "饮", "驱", "驳", "驴", "鸠", "鸡", "麦", "龟", "丧", "乖", "乳", "事", "些", "享", "京", "佩", "佳", "使", "侄", "侈", "例", "侍", "供", "依", "侠", "侣", "侥", "侦", "侧", "侨", "兔", "其", "具", "典", "净", "凭", "凯", "函", "刮", "到", "制", "刷", "券", "刹", "刺", "刻", "刽", "剂", "势", "卑", "卒", "卓", "单", "卖", "卦", "卧", "卷", "厕", "叁", "参", "叔", "取", "受", "变", "呢", "周", "味", "呵", "呻", "呼", "命", "咆", "和", "咏", "咐", "咒", "咕", "咖", "咙", "哎", "固", "国", "图", "坡", "坤", "坦", "坪", "坯", "坷", "垂", "垃", "垄", "备", "夜", "奄", "奇", "奈", "奉", "奋", "奔", "妹", "妻", "姆", "始", "姐", "姑", "姓", "委", "孟", "季", "孤", "学", "宗", "官", "宙", "定", "宛", "宜", "宝", "实", "宠", "审", "尚", "居", "屈", "屉", "届", "岩", "岭", "岳", "岸", "帕", "帖", "帘", "帚", "帜", "幸", "底", "店", "庙", "府", "庞", "废", "建", "弥", "弦", "弧", "录", "彼", "往", "征", "径", "忠", "念", "忽", "忿", "态", "怔", "怕", "怖", "怜", "性", "怪", "怯", "或", "房", "所", "承", "披", "抬", "抱", "抵", "抹", "押", "抽", "拂", "拄", "担", "拆", "拇", "拉", "拌", "拍", "拐", "拓", "拔", "拖", "拗", "拘", "拙", "招", "拢", "拣", "拥", "拦", "拧", "拨", "择", "放", "斧", "斩", "旺", "昂", "昆", "昌", "明", "昏", "易", "昔", "昙", "朋", "服", "杭", "杯", "杰", "松", "板", "构", "枉", "析", "枕", "林", "枚", "果", "枝", "枢", "枣", "枪", "枫", "柜", "欣", "欧", "武", "歧", "殴", "氓", "氛", "沫", "沮", "河", "沸", "油", "治", "沼", "沽", "沾", "沿", "泄", "泊", "泌", "法", "泞", "泡", "波", "泣", "泥", "注", "泪", "泳", "泻", "泼", "泽", "浅", "炉", "炊", "炎", "炒", "炕", "炬", "爬", "爸", "版", "牧", "物", "狐", "狗", "狞", "玩", "玫", "环", "现", "瓮", "画", "畅", "疙", "疚", "疟", "的", "盲", "直", "知", "矾", "矿", "码", "祈", "秆", "秉", "空", "线", "练", "组", "绅", "细", "织", "终", "绊", "绍", "绎", "经", "罗", "者", "肃", "股", "肢", "肤", "肥", "肩", "肪", "肮", "肯", "育", "肴", "肺", "肾", "肿", "胀", "胁", "舍", "艰", "苔", "苗", "苛", "苞", "苟", "若", "苦", "苫", "英", "苹", "茁", "茂", "范", "茄", "茅", "茉", "茎", "虎", "虏", "虱", "表", "衩", "衫", "衬", "规", "觅", "视", "试", "诗", "诚", "话", "诞", "诡", "询", "该", "详", "责", "贤", "败", "账", "货", "质", "贩", "贪", "贫", "贬", "购", "贮", "贯", "转", "轮", "软", "轰", "迫", "述", "郁", "郊", "郎", "郑", "采", "金", "钓", "闸", "闹", "陋", "陌", "降", "限", "陕", "隶", "雨", "青", "非", "顶", "顷", "饰", "饱", "饲", "驶", "驹", "驻", "驼", "驾", "鱼", "鸣", "齿", "临", "举", "亭", "亮", "亲", "侮", "侯", "侵", "便", "促", "俄", "俊", "俏", "俐", "俗", "俘", "保", "信", "俩", "俭", "修", "养", "冒", "冠", "剃", "削", "前", "剑", "勃", "勇", "勉", "勋", "南", "卸", "厘", "厚", "叙", "叛", "咧", "咨", "咪", "咬", "咱", "咳", "咸", "咽", "哀", "品", "哄", "哆", "哈", "响", "哑", "哗", "哟", "哪", "型", "垒", "垛", "垢", "垦", "垫", "垮", "城", "复", "奏", "契", "奕", "奖", "姚", "姜", "姥", "姨", "姻", "姿", "威", "娃", "娄", "娇", "娜", "孩", "客", "宣", "室", "宦", "宪", "宫", "封", "将", "尝", "屋", "屎", "屏", "峡", "峦", "差", "巷", "帝", "带", "帮", "幽", "度", "庭", "弯", "待", "很", "徊", "律", "怎", "怒", "思", "怠", "急", "怨", "总", "恃", "恍", "恒", "恢", "恤", "恨", "恬", "恰", "恼", "战", "扁", "拜", "括", "拭", "拯", "拱", "拴", "拷", "拼", "拾", "持", "挂", "指", "按", "挎", "挑", "挖", "挟", "挠", "挡", "挣", "挤", "挥", "挪", "挺", "政", "故", "施", "既", "星", "映", "春", "昧", "昨", "昭", "是", "昵", "昼", "显", "枯", "架", "枷", "柄", "柏", "某", "柑", "柒", "染", "柔", "柠", "查", "柬", "柱", "柳", "柿", "栅", "标", "栈", "栋", "栏", "树", "歪", "殃", "残", "段", "毒", "毡", "氢", "泉", "泵", "洁", "洋", "洒", "洗", "洛", "洞", "津", "洪", "洲", "活", "洼", "洽", "派", "浇", "浊", "测", "济", "浑", "浓", "涎", "炫", "炭", "炮", "炸", "点", "炼", "烁", "烂", "牲", "牵", "狠", "狡", "独", "狭", "狮", "狰", "狱", "玲", "玷", "玻", "珊", "珍", "甚", "界", "畏", "疤", "疫", "疮", "疯", "皆", "皇", "盅", "盆", "盈", "相", "盹", "盼", "盾", "省", "眉", "看", "眨", "矩", "砂", "砌", "砍", "研", "砖", "砚", "祖", "祝", "神", "祠", "秋", "种", "科", "秒", "秕", "穿", "突", "窃", "竖", "竿", "类", "籽", "绑", "绒", "结", "绕", "绘", "给", "络", "绝", "绞", "统", "缸", "罚", "美", "耍", "耐", "胃", "胆", "背", "胎", "胖", "胚", "胜", "胞", "胡", "胧", "脉", "茧", "茫", "茬", "茴", "茵", "茶", "茸", "荆", "草", "荐", "荒", "荔", "荚", "荞", "荠", "荡", "荣", "荤", "荧", "药", "虐", "虹", "虽", "虾", "蚀", "蚁", "蚂", "蚤", "衍", "袄", "要", "览", "觉", "诫", "诬", "语", "误", "诱", "诲", "说", "诵", "贰", "贱", "贴", "贵", "贷", "贸", "费", "贺", "赴", "赵", "趴", "轴", "轻", "迷", "迹", "追", "退", "送", "适", "逃", "逆", "选", "逊", "重", "钙", "钝", "钞", "钟", "钠", "钢", "钥", "钦", "钧", "钩", "钮", "闺", "闻", "闽", "阀", "阁", "陡", "院", "除", "陨", "险", "面", "革", "韭", "音", "项", "顺", "须", "飒", "食", "饵", "饶", "饺", "饼", "首", "香", "骂", "骄", "骆", "骇", "骨", "鬼", "鸥", "鸦", "乘", "俯", "俱", "俺", "倍", "倒", "倔", "倘", "候", "倚", "借", "倡", "倦", "债", "值", "倾", "健", "党", "兼", "冤", "凄", "准", "凉", "凌", "剔", "剖", "剥", "剧", "匪", "匿", "卿", "原", "哥", "哨", "哩", "哭", "哮", "哲", "哺", "哼", "唁", "唆", "唇", "唉", "唐", "唠", "唤", "唧", "啊", "圃", "圆", "埂", "埃", "埋", "壶", "夏", "套", "娘", "娩", "娱", "宰", "害", "宴", "宵", "家", "容", "宽", "宾", "射", "屑", "展", "峭", "峰", "峻", "席", "座", "弱", "徐", "徒", "恋", "恐", "恕", "恩", "恭", "息", "恳", "恶", "悄", "悍", "悔", "悟", "悦", "悯", "扇", "拳", "拿", "挚", "挨", "挫", "振", "挽", "捂", "捅", "捆", "捉", "捌", "捍", "捎", "捏", "捐", "捕", "捞", "损", "捡", "换", "捣", "效", "敌", "斋", "料", "旁", "旅", "晃", "晋", "晌", "晒", "晓", "办", "晕", "朗", "柴", "栓", "栖", "栗", "校", "株", "样", "核", "根", "格", "栽", "桂", "桃", "桅", "框", "案", "桌", "桐", "桑", "档", "桥", "桦", "桨", "桩", "梆", "殉", "殊", "殷", "毙", "氧", "氨", "泰", "流", "浆", "浙", "浦", "浩", "浪", "浮", "浴", "海", "浸", "涂", "消", "涉", "涌", "涕", "涛", "涝", "涡", "涣", "涤", "润", "涧", "涨", "涩", "烈", "烘", "烙", "烛", "烟", "烤", "烦", "烧", "烫", "热", "爱", "爹", "特", "牺牲", "狸", "狼", "珠", "班", "瓶", "瓷", "畔", "留", "畜", "疲", "疹", "疼", "疾", "病", "症", "皱", "益", "盏", "盐", "监", "真", "眠", "砰", "破", "砸", "砾", "础", "祟", "祥", "离", "秘", "租", "秤", "秦", "秧", "秩", "秫", "积", "称", "窄", "窍", "站", "竞", "笆", "笋", "笑", "笔", "粉", "紊", "素", "索", "紧", "绢", "绣", "继", "缺", "罢", "羔", "羞", "翁", "翅", "耕", "耗", "耘", "耙", "耸", "耻", "耽", "耿", "聂", "胯", "胰", "胳", "胶", "胸", "能", "脂", "脆", "脊", "脏", "脐", "脑", "脓", "臭", "致", "舀", "航", "般", "舰", "舱", "艳", "荷", "荸", "莉", "莫", "莱", "莲", "获", "莹", "莺", "莽", "虑", "蚊", "蚌", "蚓", "蚕", "蚜", "蚣", "蚪", "衰", "衷", "袁", "袍", "袒", "袖", "袜", "被", "请", "诸", "诺", "读", "诽", "课", "谁", "调", "谅", "谆", "谈", "谊", "豹", "豺", "贼", "贾", "贿", "赁", "赂", "赃", "资", "赶", "起", "躬", "载", "轿", "较", "辱", "透", "逐", "递", "途", "逗", "通", "逛", "逝", "逞", "速", "造", "逢", "部", "郭", "都", "酌", "配", "酒", "钱", "钳", "钻", "钾", "铁", "铃", "铅", "铆", "阅", "陪", "陵", "陶", "陷", "难", "顽", "顾", "顿", "颁", "颂", "预", "饿", "馁", "验", "骏", "高", "鸭", "鸯", "鸳", "鸵"];
+    const STROKE_MAP = { '一': 'H', '㇀': 'H', '丶': 'N', '㇏': 'N' };
 
-        /**
-         * 将笔画数组转换为标准化代码串串
-         * 例如：["横", "竖", "点"] -> "H,S,P"
-         */
-        function getStandardCode(strokeArray) {
-            if (!strokeArray) return '';
-            return strokeArray.map(s => STROKE_MAP[s] || s).join(',');
-        }
-        function initSplit() {
-            const char = document.getElementById('charInput').value || '克';
-            document.getElementById('target-bg').innerHTML = ''; document.getElementById('target-fg').innerHTML = '';
-            document.getElementById('btns').innerHTML = ''; document.getElementById('matchResults').innerHTML = '<span style="color:#aaa">等待小朋友挑战...</span>';
-            clickSequence = []; foundChars.clear();
-            HanziWriter.create('target-bg', char, { width: 300, height: 300, padding: 25, strokeColor: '#F5F5F5' });
-            writerFg = HanziWriter.create('target-fg', char, { width: 300, height: 300, padding: 25, strokeColor: '#FF8E9E' });
-            writerFg.hideCharacter();
-            const strokes = cnchar.stroke(char, 'order', 'shape')[0];
-            strokeStatus = new Array(strokes.length).fill(false);
-            strokes.forEach((name, index) => {
-                const b = document.createElement('button'); b.className = 'child-btn'; b.innerText = name;
-                b.onclick = () => {
-                    if (strokeStatus[index]) return;
-                    strokeStatus[index] = true; clickSequence.push(name); b.classList.add('active');
-                    writerFg.animateStroke(index);
-                };
-                document.getElementById('btns').appendChild(b);
-            });
-        }
-        function resetStrokes() {
-            writerFg.hideCharacter(); strokeStatus.fill(false); clickSequence = [];
-            document.querySelectorAll('#btns .child-btn').forEach(b => b.classList.remove('active'));
-        }
+    function getStandardCode(strokeArray) {
+        if (!strokeArray) return '';
+        return strokeArray.map(s => STROKE_MAP[s] || s).join(',');
+    }
+    function initSplit() {
+        const char = document.getElementById('charInput').value || '克';
+        // 2. 需求：拆字游戏在点“变变变”初始化时语音输出母字
+        speakHanzi(char);
 
-        function findExactMatches() {
-            if (clickSequence.length === 0) return;
+        document.getElementById('target-bg').innerHTML = ''; document.getElementById('target-fg').innerHTML = '';
+        document.getElementById('btns').innerHTML = ''; document.getElementById('matchResults').innerHTML = '<span style="color:#aaa">等待小朋友挑战...</span>';
+        clickSequence = []; foundChars.clear();
+        HanziWriter.create('target-bg', char, { width: 300, height: 300, padding: 25, strokeColor: '#F5F5F5' });
+        writerFg = HanziWriter.create('target-fg', char, { width: 300, height: 300, padding: 25, strokeColor: '#FF8E9E' });
+        writerFg.hideCharacter();
+        const strokes = cnchar.stroke(char, 'order', 'shape')[0];
+        strokeStatus = new Array(strokes.length).fill(false);
+        strokes.forEach((name, index) => {
+            const b = document.createElement('button'); b.className = 'child-btn'; b.innerText = name;
+            b.onclick = () => {
+                if (strokeStatus[index]) return;
+                strokeStatus[index] = true; clickSequence.push(name); b.classList.add('active');
+                writerFg.animateStroke(index);
+            };
+            document.getElementById('btns').appendChild(b);
+        });
+    }
+    function resetStrokes() {
+        writerFg.hideCharacter(); strokeStatus.fill(false); clickSequence = [];
+        document.querySelectorAll('#btns .child-btn').forEach(b => b.classList.remove('active'));
+    }
 
-            // 获取当前小朋友点击序列的标准码
-            const currentCode = getStandardCode(clickSequence);
+    function findExactMatches() {
+        if (clickSequence.length === 0) return;
+        const currentCode = getStandardCode(clickSequence);
+        const newMatched = [];
 
-            console.log("%c[玩家序列] 标准码:", "color: #FF8E9E; font-weight: bold;", currentCode);
-            console.log("[玩家序列] 原始名称:", clickSequence.join(','));
-            const newMatched = [];
+        matchLibrary.forEach(char => {
+            const charData = cnchar.stroke(char, 'order', 'shape')[0];
+            const charCode = getStandardCode(charData);
+            if (currentCode === charCode && !foundChars.has(char)) {
+                newMatched.push(char);
+                foundChars.add(char);
+            }
+        });
 
-            matchLibrary.forEach(char => {
-                // 1. 获取字库中汉字的原始笔画
-                const charData = cnchar.stroke(char, 'order', 'shape')[0];
-
-                // 2. 将字库汉字也转换为标准码
-                const charCode = getStandardCode(charData);
-                // 调试特定汉字（可选）：如果某个字认不出，可以取消下面这行的注释
-                //if (char === '凡') console.log(`[对比检查] ${char} 的标准码是: ${charCode}`);
-
-                // 3. 模糊对比：只要标准码一致即可
-                if (currentCode === charCode && !foundChars.has(char)) {
-                    console.log(`%c✨ 匹配成功: ${char}`, "color: #77DD77; font-weight: bold;");
-                    newMatched.push(char);
-                    foundChars.add(char);
-                }
-            });
-
-            // 渲染结果
-            const resDiv = document.getElementById('matchResults');
-            if (newMatched.length > 0) {
-                if (resDiv.innerText.includes('等待小朋友')) resDiv.innerHTML = '';
-                newMatched.forEach(c => {
-                    const card = document.createElement('div');
-                    card.className = 'char-card';
-                    const gridId = 'g-' + Math.random().toString(36).substr(2, 6);
-                    card.innerHTML = `<span class="pinyin">${cnchar.spell(c)}</span><div id="${gridId}"></div>`;
-                    resDiv.appendChild(card);
-                    HanziWriter.create(gridId, c, {
-                        width: 70, height: 70, padding: 5, strokeColor: '#3498db'
-                    });
+        const resDiv = document.getElementById('matchResults');
+        if (newMatched.length > 0) {
+            if (resDiv.innerText.includes('等待小朋友')) resDiv.innerHTML = '';
+            newMatched.forEach(c => {
+                const card = document.createElement('div');
+                card.className = 'char-card';
+                const gridId = 'g-' + Math.random().toString(36).substr(2, 6);
+                card.innerHTML = `<span class="pinyin">${cnchar.spell(c)}</span><div id="${gridId}"></div>`;
+                resDiv.appendChild(card);
+                HanziWriter.create(gridId, c, {
+                    width: 70, height: 70, padding: 5, strokeColor: '#3498db'
                 });
-                document.getElementById('ding').play(); // 成功反馈
-            } else {
-                showToast("💡 还没找到对应的小伙伴，再试一组笔画？");
-            }
-        }
-
-        // --- Tab 3: 象形实验室 ---
-        const xiangData = [
-            { char: '中', pic: 'images/中.png', tip: '旗杆立中央，飘带两边扬，正中位置就是它！' },
-            { char: '虹', pic: 'images/虹.png', tip: '弯弯彩虹像小桥，双头神兽藏山腰～' },
-            { char: '雨', pic: 'images/雨.png', tip: '云朵飘上头，雨滴往下流，下雨啦真凉快！' },
-            { char: '雷', pic: 'images/雷.png', tip: '闪电划天空，雷声轰隆隆，雷公敲鼓真威风！' },
-            { char: '星', pic: 'images/星.png', tip: '小星星眨眼睛，光芒闪闪亮晶晶～' },
-            { char: '火', pic: 'images/火.png', tip: '火苗红通通，向上跳蹦蹦！' },
-            { char: '月', pic: 'images/月.png', tip: '弯弯的月亮像小船，挂在天上亮晶晶。' },
-            { char: '人', pic: 'images/人.png', tip: '伸开胳膊迈开腿，站立的人儿就是我～' },
-            { char: '逐', pic: 'images/逐.png', tip: '野兽跑在前，道路在后边，追着猎物跑圈圈～' },
-            { char: '囚', pic: 'images/囚.png', tip: '人在围栏里，出门没力气，被困住的就是你～' },
-            { char: '爪', pic: 'images/爪.png', tip: '尖尖的趾头分岔开，小猫小狗的小爪子～' },
-            { char: '日', pic: 'images/日.png', tip: '太阳公公圆又圆，中间加个小黑点！' },
-            { char: '夕', pic: 'images/夕.png', tip: '月牙弯弯挂天边，傍晚来临就是夕～' },
-            { char: '山', pic: 'images/山.png', tip: '高高的山峰三座起，大自然真神气。' },
-            { char: '水', pic: 'images/水.png', tip: '流水哗啦啦，波纹一圈圈。' },
-            { char: '云', pic: 'images/云.png', tip: '云朵软软卷卷飘，天上安家乐逍遥～' }
-        ];
-        let selPic = null, selHan = null;
-        // --- 修改：象形实验室初始化逻辑 ---
-        function initXiang() {
-            const pCol = document.getElementById('xiang-pics'),
-                hCol = document.getElementById('xiang-hans');
-
-            pCol.innerHTML = '';
-            hCol.innerHTML = '';
-
-            // 1. 从大库随机抽取 5 个 (核心逻辑修改)
-            const selectedData = [...xiangData]
-                .sort(() => Math.random() - 0.5)
-                .slice(0, 5);
-
-            // 2. 准备打乱顺序的数组
-            const sPic = [...selectedData].sort(() => Math.random() - 0.5);
-            const sHan = [...selectedData].sort(() => Math.random() - 0.5);
-
-            // 3. 渲染图片卡片
-            sPic.forEach(d => {
-                const el = document.createElement('div');
-                el.className = 'pic-card';
-                el.innerHTML = `<img src="${d.pic}">`;
-                el.onclick = () => {
-                    document.querySelectorAll('.pic-card').forEach(c => c.classList.remove('selected'));
-                    el.classList.add('selected');
-                    selPic = d;
-                    document.getElementById('slot-pic').innerHTML = el.innerHTML;
-                };
-                pCol.appendChild(el);
+                // 2. 需求：拆字成功后，将拆出来的字也语音输出
+                speakHanzi(c);
             });
-
-            // 4. 渲染汉字卡片
-            sHan.forEach(d => {
-                const el = document.createElement('div');
-                el.className = 'han-card';
-                el.innerText = d.char;
-                el.onclick = () => {
-                    document.querySelectorAll('.han-card').forEach(c => c.classList.remove('selected'));
-                    el.classList.add('selected');
-                    selHan = d;
-                    document.getElementById('slot-han').innerText = d.char;
-                };
-                hCol.appendChild(el);
-            });
+            document.getElementById('ding').play();
+        } else {
+            showToast("💡 还没找到对应的小伙伴，再试一组笔画？");
         }
-        // --- 修改：点击“变一变”后的判断逻辑 ---
-        document.getElementById('btn-check-xiang').onclick = () => {
-            if (!selPic || !selHan) return showToast("请先选两张卡片哦！");
+    }
 
-            if (selPic.char === selHan.char) {
-                // 播放成功音效
-                document.getElementById('ding').play();
+    // --- Tab 3: 象形实验室 ---
+    const xiangData = [
+        { char: '中', pic: 'images/中.png', tip: '旗杆立中央，飘带两边扬，正中位置就是它！' },
+        { char: '虹', pic: 'images/虹.png', tip: '弯弯彩虹像小桥，双头神兽藏山腰～' },
+        { char: '雨', pic: 'images/雨.png', tip: '云朵飘上头，雨滴往下流，下雨啦真凉快！' },
+        { char: '雷', pic: 'images/雷.png', tip: '闪电划天空，雷声轰隆隆，雷公敲鼓真威风！' },
+        { char: '星', pic: 'images/星.png', tip: '小星星眨眼睛，光芒闪闪亮晶晶～' },
+        { char: '火', pic: 'images/火.png', tip: '火苗红通通，向上跳蹦蹦！' },
+        { char: '月', pic: 'images/月.png', tip: '弯弯的月亮像小船，挂在天上亮晶晶。' },
+        { char: '人', pic: 'images/人.png', tip: '伸开胳膊迈开腿，站立的人儿就是我～' },
+        { char: '逐', pic: 'images/逐.png', tip: '野兽跑在前，道路在后边，追着猎物跑圈圈～' },
+        { char: '囚', pic: 'images/囚.png', tip: '人在围栏里，出门没力气，被困住的就是你～' },
+        { char: '爪', pic: 'images/爪.png', tip: '尖尖的趾头分岔开，小猫小狗的小爪子～' },
+        { char: '日', pic: 'images/日.png', tip: '太阳公公圆又圆，中间加个小黑点！' },
+        { char: '夕', pic: 'images/夕.png', tip: '月牙弯弯挂天边，傍晚来临就是夕～' },
+        { char: '山', pic: 'images/山.png', tip: '高高的山峰三座起，大自然真神气。' },
+        { char: '水', pic: 'images/水.png', tip: '流水哗啦啦，波纹一圈圈。' },
+        { char: '云', pic: 'images/云.png', tip: '云朵软软卷卷飘，天上安家乐逍遥～' }
+    ];
+    let selPic = null, selHan = null;
+    function initXiang() {
+        const pCol = document.getElementById('xiang-pics'),
+            hCol = document.getElementById('xiang-hans');
+        pCol.innerHTML = ''; hCol.innerHTML = '';
+        const selectedData = [...xiangData].sort(() => Math.random() - 0.5).slice(0, 5);
+        const sPic = [...selectedData].sort(() => Math.random() - 0.5);
+        const sHan = [...selectedData].sort(() => Math.random() - 0.5);
 
-                // 语音播报对应的汉字
-                speakHanzi(selHan.char);
+        sPic.forEach(d => {
+            const el = document.createElement('div');
+            el.className = 'pic-card';
+            el.innerHTML = `<img src="${d.pic}">`;
+            el.onclick = () => {
+                document.querySelectorAll('.pic-card').forEach(c => c.classList.remove('selected'));
+                el.classList.add('selected'); selPic = d;
+                document.getElementById('slot-pic').innerHTML = el.innerHTML;
+            };
+            pCol.appendChild(el);
+        });
 
-                // 显示 Modal
-                document.getElementById('xiang-overlay').style.display = 'block';
-                document.getElementById('xiang-modal').style.display = 'block';
-                document.getElementById('xiang-tip').innerText = selPic.tip;
-                document.getElementById('xiang-writer').innerHTML = '';
+        sHan.forEach(d => {
+            const el = document.createElement('div');
+            el.className = 'han-card';
+            el.innerText = d.char;
+            el.onclick = () => {
+                document.querySelectorAll('.han-card').forEach(c => c.classList.remove('selected'));
+                el.classList.add('selected'); selHan = d;
+                document.getElementById('slot-han').innerText = d.char;
+            };
+            hCol.appendChild(el);
+        });
+    }
 
-                HanziWriter.create('xiang-writer', selHan.char, {
-                    width: 200, height: 200, padding: 10, strokeColor: '#e74c3c'
-                }).animateCharacter();
+    document.getElementById('btn-check-xiang').onclick = () => {
+        if (!selPic || !selHan) return showToast("请先选两张卡片哦！");
+        if (selPic.char === selHan.char) {
+            document.getElementById('ding').play();
 
-            } else {
-                showToast("💡 哎呀，它们不是好朋友，再找找看！");
-            }
-        };
-        function closeXiangModal() {
-            document.getElementById('xiang-overlay').style.display = 'none';
-            document.getElementById('xiang-modal').style.display = 'none';
-            initXiang(); selPic = null; selHan = null;
-            document.getElementById('slot-pic').innerText = '?'; document.getElementById('slot-han').innerText = '?';
+            // 3. 需求：将象形字匹配成功后的字和tips也语音输出
+            // 先说字，停顿一下再说童谣
+            speakHanzi(selHan.char + "。" + selPic.tip);
+
+            document.getElementById('xiang-overlay').style.display = 'block';
+            document.getElementById('xiang-modal').style.display = 'block';
+            document.getElementById('xiang-tip').innerText = selPic.tip;
+            document.getElementById('xiang-writer').innerHTML = '';
+            HanziWriter.create('xiang-writer', selHan.char, {
+                width: 200, height: 200, padding: 10, strokeColor: '#e74c3c'
+            }).animateCharacter();
+        } else {
+            showToast("💡 哎呀，它们不是好朋友，再找找看！");
         }
+    };
 
-        document.getElementById('actionBtn-run').onclick = startRun;
-        window.onload = () => { initRun(); };
-    </script>
+    function closeXiangModal() {
+        document.getElementById('xiang-overlay').style.display = 'none';
+        document.getElementById('xiang-modal').style.display = 'none';
+        initXiang(); selPic = null; selHan = null;
+        document.getElementById('slot-pic').innerText = '?'; document.getElementById('slot-han').innerText = '?';
+    }
+
+    document.getElementById('actionBtn-run').onclick = startRun;
+    window.onload = () => { initRun(); };
+</script>
 </body>
 
 </html>
