@@ -500,6 +500,8 @@
                style="font-size: 24px; width: 60px; text-align: center; border: 3px solid var(--primary); border-radius: 15px; outline: none;">
         <button class="btn-main" onclick="initSplit()"
                 style="padding: 8px 25px; font-size: 18px; margin-left: 10px;">变变变！</button>
+        <button class="btn-main" onclick="randomHanzi()"
+                style="padding: 8px 25px; font-size: 18px; margin-left: 10px; background: var(--secondary); box-shadow: 0 4px 0 #d35400;">换一个</button>
     </div>
     <div class="split-main">
         <div class="hanzi-box">
@@ -555,6 +557,36 @@
     // --- 核心数据与 Toast ---
     const DEFAULT_LIB = [['足', '包', '跑', '跑步'], ['日', '月', '明', '明天'], ['木', '木', '林', '森林'], ['氵', '去', '法', '办法'], ['口', '下', '吓', '吓人'], ['人', '木', '休', '休息']];
     let libRun = JSON.parse(localStorage.getItem('paopao_lib')) || DEFAULT_LIB;
+
+    // --- 常用3500汉字列表 ---
+    let hanziList = [];
+    
+    // --- 加载汉字列表 ---
+    async function loadHanziList() {
+        try {
+            const response = await fetch('data/hanzi.txt');
+            const text = await response.text();
+            // 解析CSV格式的汉字，去除引号并分割
+            hanziList = text.split(',').map(char => char.trim().replace(/"/g, ''));
+        } catch (error) {
+            console.error('加载汉字列表失败:', error);
+            // 如果加载失败，使用一些默认汉字
+            hanziList = ['克', '明', '林', '休', '好', '家', '山', '水', '火', '木', '日', '月', '人', '口', '手', '目', '田', '心', '门', '车'];
+        }
+    }
+    
+    // --- 随机选择汉字并填充 ---
+    function randomHanzi() {
+        if (hanziList.length === 0) {
+            showToast('汉字列表还在加载中...');
+            return;
+        }
+        const randomIndex = Math.floor(Math.random() * hanziList.length);
+        const randomChar = hanziList[randomIndex];
+        document.getElementById('charInput').value = randomChar;
+        // 自动触发变变变
+        initSplit();
+    }
 
     // --- 新增：语音播报功能 ---
     function speakHanzi(text) {
@@ -768,6 +800,8 @@
 
     // --- Tab 3: 象形实验室 ---
     const xiangData = [
+        { char: '上', pic: 'images_opt/上.webp', tip: '一横在下面，一竖往上指，方向朝上就是它！' },
+        { char: '下', pic: 'images_opt/下.webp', tip: '一横在上面，一点往下落，方向朝下看仔细！' },
         { char: '中', pic: 'images_opt/中.webp', tip: '旗杆立中央，飘带两边扬，正中位置就是它！' },
         { char: '虹', pic: 'images_opt/虹.webp', tip: '弯弯彩虹像小桥，双头神兽藏山腰～' },
         { char: '雨', pic: 'images_opt/雨.webp', tip: '云朵飘上头，雨滴往下流，下雨啦真凉快！' },
@@ -780,6 +814,7 @@
         { char: '休', pic: 'images_opt/休.webp', tip: '人靠大树旁，乘凉好舒服，休息一下再出发。' },
         { char: '众', pic: 'images_opt/众.webp', tip: '上面一个人，下面两个人，大家团结力量大。' },
         { char: '伞', pic: 'images_opt/伞.webp', tip: '大伞撑开来，挡雨又遮阳，下面躲着好多人。' },
+        { char: '保', pic: 'images_opt/保.webp', tip: '人背着孩子，保护小宝贝，安全守护最重要。' },
         { char: '儿', pic: 'images_opt/儿.webp', tip: '脑袋圆溜溜，两腿跑得快，是个可爱小娃娃。' },
         { char: '光', pic: 'images_opt/光.webp', tip: '火把举头顶，照亮黑夜路，光明就在正前方。' },
         { char: '兔', pic: 'images_opt/兔.webp', tip: '长长耳朵竖，短短尾巴翘，小白兔爱吃萝卜。' },
@@ -788,6 +823,8 @@
         { char: '口', pic: 'images_opt/口.webp', tip: '张开大嘴巴，像个方框框，吃饭说话全靠它。' },
         { char: '土', pic: 'images_opt/土.webp', tip: '地上长植物，下面是泥土，万物生长靠大地。' },
         { char: '壶', pic: 'images_opt/壶.webp', tip: '盖子圆圆顶，肚子大又圆，装满茶水待客人。' },
+        { char: '刀', pic: 'images_opt/刀.webp', tip: '弯弯刀刃利，刀柄握手里，切菜砍柴真锋利。' },
+        { char: '大', pic: 'images_opt/大.webp', tip: '人儿张开手，伸展腿和臂，大大方方站得稳。' },
         { char: '天', pic: 'images_opt/天.webp', tip: '大字头顶上，还有一片天，蓝天白云真广阔。' },
         { char: '夫', pic: 'images_opt/夫.webp', tip: '大字加一横，簪子插头上，古代男子叫丈夫。' },
         { char: '夹', pic: 'images_opt/夹.webp', tip: '大字胳肢窝，两边夹东西，紧紧夹住不掉落。' },
@@ -797,6 +834,7 @@
         { char: '安', pic: 'images_opt/安.webp', tip: '屋里有个女，安稳又静谧，平平安安最重要。' },
         { char: '家', pic: 'images_opt/家.webp', tip: '屋顶下面猪，养猪能致富，有房有猪就是家。' },
         { char: '尾', pic: 'images_opt/尾.webp', tip: '屁股后面长，毛茸茸一条，摇来摇去真好玩。' },
+        { char: '尿', pic: 'images_opt/尿.webp', tip: '身体排废水，水滴往下走，排出废水身体好。' },
         { char: '屎', pic: 'images_opt/屎.webp', tip: '身体排废物，米粒变残渣，虽然臭臭也有用。' },
         { char: '山', pic: 'images_opt/山.webp', tip: '中间高高峰，两边低低岭，连绵起伏是高山。' },
         { char: '巾', pic: 'images_opt/巾.webp', tip: '挂在架子上，垂下两条边，擦脸擦手用毛巾。' },
@@ -806,6 +844,7 @@
         { char: '手', pic: 'images_opt/手.webp', tip: '五指张开来，手掌在中间，灵巧双手能干活。' },
         { char: '日', pic: 'images_opt/日.webp', tip: '圆圆太阳照，中间一点光，白天全靠它照亮。' },
         { char: '明', pic: 'images_opt/明.webp', tip: '日头和月亮，一起来照耀，光明灿烂照四方。' },
+        { char: '晶', pic: 'images_opt/晶.webp', tip: '三个太阳聚，闪闪亮晶晶，水晶宝石真漂亮。' },
         { char: '月', pic: 'images_opt/月.webp', tip: '弯弯像镰刀，有时圆又圆，晚上出来亮晶晶。' },
         { char: '木', pic: 'images_opt/木.webp', tip: '上面是树枝，下面是树根，一棵大树站得稳。' },
         { char: '林', pic: 'images_opt/林.webp', tip: '两棵大树站，手拉手成排，树木多了成树林。' },
@@ -813,6 +852,7 @@
         { char: '栗', pic: 'images_opt/栗.webp', tip: '树上长刺球，里面藏坚果，炒熟以后香喷喷。' },
         { char: '森', pic: 'images_opt/森.webp', tip: '三棵大树聚，密密又麻麻，森林深处有奥秘。' },
         { char: '毛', pic: 'images_opt/毛.webp', tip: '弯弯一根根，轻飘飘飞舞，鸟兽身上长满毛。' },
+        { char: '气', pic: 'images_opt/气.webp', tip: '云气飘飘升，看不见摸不着，呼吸全靠空气好。' },
         { char: '水', pic: 'images_opt/水.webp', tip: '弯弯河流淌，波纹荡漾开，生命之源离不开。' },
         { char: '火', pic: 'images_opt/火.webp', tip: '中间火苗高，两边火星跳，熊熊大火热烘烘。' },
         { char: '燕', pic: 'images_opt/燕.webp', tip: '嘴巴尖尖叫，尾巴像剪刀，春天来了燕子飞。' },
@@ -829,6 +869,7 @@
         { char: '看', pic: 'images_opt/看.webp', tip: '手搭在目上，遮光望远方，看看哪里有情况。' },
         { char: '石', pic: 'images_opt/石.webp', tip: '山崖落下来，硬硬一块块，铺路盖房离不开。' },
         { char: '禾', pic: 'images_opt/禾.webp', tip: '苗儿弯弯腰，穗儿沉甸甸，庄稼成熟要丰收。' },
+        { char: '立', pic: 'images_opt/立.webp', tip: '人儿站得直，双脚踩地上，立正站好精神好。' },
         { char: '竹', pic: 'images_opt/竹.webp', tip: '叶子尖尖垂，节节往上长，熊猫最爱吃竹子。' },
         { char: '米', pic: 'images_opt/米.webp', tip: '谷粒脱了壳，白白又胖胖，煮成米饭香喷喷。' },
         { char: '网', pic: 'images_opt/网.webp', tip: '线条交织密，像个大格子，捕鱼捉鸟全靠它。' },
@@ -856,6 +897,7 @@
         { char: '雪', pic: 'images_opt/雪.webp', tip: '雨点变雪花，飘飘洒洒下，大地白茫茫一片。' },
         { char: '雷', pic: 'images_opt/雷.webp', tip: '雨下田地响，轰隆隆隆震，打雷时候要躲好。' },
         { char: '马', pic: 'images_opt/马.webp', tip: '鬃毛长长飘，四蹄奔跑快，千里骏马任驰骋。' },
+        { char: '高', pic: 'images_opt/高.webp', tip: '高台楼阁立，层层往上搭，登高望远看得远。' },
         { char: '鱼', pic: 'images_opt/鱼.webp', tip: '头尖尾巴摇，鳞片闪闪亮，水里游来又游去。' },
         { char: '鸟', pic: 'images_opt/鸟.webp', tip: '尖嘴翅膀张，羽毛五彩衣，飞在蓝天唱着歌。' },
         { char: '鸡', pic: 'images_opt/鸡.webp', tip: '头顶红冠子，尖嘴啄米吃，喔喔打鸣叫早起。' },
@@ -928,7 +970,10 @@
     }
 
     document.getElementById('actionBtn-run').onclick = startRun;
-    window.onload = () => { initRun(); };
+    window.onload = () => { 
+        initRun(); 
+        loadHanziList(); // 加载常用汉字列表
+    };
 </script>
 </body>
 
