@@ -17,6 +17,12 @@ fs.readdirSync(inputDir).forEach(file => {
 
   // 检查是否为图片文件
   if (file.match(/\.(png|jpg|jpeg)$/i)) {
+    // 如果输出文件已存在，则跳过
+    if (fs.existsSync(outputFilePath)) {
+      console.log(`跳过: ${file} (已存在)`);
+      return;
+    }
+
     sharp(filePath)
     .resize(150, 150, { // 调整为150px以匹配HTML中的实际显示尺寸（75px的2倍，支持视网膜屏）
       fit: 'inside',    // 保持比例，图片完全包含在指定尺寸内
