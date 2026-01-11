@@ -554,6 +554,31 @@
 <audio id="ding" src="https://assets.mixkit.co/active_storage/sfx/2568/2568-preview.mp3"></audio>
 
 <script>
+    // 新增：用于存储从文件解析出的合体字典
+    let outputLibMap = {};
+
+    // 新增：加载并解析 output.txt
+    async function loadOutputData() {
+        try {
+            const response = await fetch('../tool/output.txt');
+            const text = await response.text();
+            const lines = text.split('\n');
+            lines.forEach(line => {
+                const [target, structure] = line.trim().split('\t');
+                if (target && structure) {
+                    // 匹配包含 ⿰ 或 ⿱ 结构的部件，例如 "⿰亻山" 提取出 "亻" 和 "山"
+                    const parts = structure.match(/[⿰⿱](.)(.)/);
+                    if (parts) {
+                        const key = parts[1] + "+" + parts[2]; // 存为 "左+右" 的键
+                        outputLibMap[key] = { char: target, phrase: "字库组合" };
+                    }
+                }
+            });
+            console.log("外部字库加载成功");
+        } catch (e) {
+            console.error("加载 output.txt 失败:", e);
+        }
+    }
     // --- 核心数据与 Toast ---
     const DEFAULT_LIB = [['足', '包', '跑', '跑步'], ['日', '月', '明', '明天'], ['木', '木', '林', '森林'], ['氵', '去', '法', '办法'], ['口', '下', '吓', '吓人'], ['人', '木', '休', '休息']];
     let libRun = JSON.parse(localStorage.getItem('paopao_lib')) || DEFAULT_LIB;
@@ -664,19 +689,39 @@
         step();
     }
     function showRunResult() {
-        const targetChar = libRun[runIdx][2];
-        const phrase = libRun[runIdx][3]; // 组词
+        // --- 核心逻辑改动开始 ---
+        const leftPart = document.getElementById('leftPart-run').innerText;
+        const rightPart = document.getElementById('rightPart-run').innerText;
+        const comboKey = leftPart + "+" + rightPart;
+
+        let targetChar, phrase;
+
+        // 优先匹配 output.txt 中的数据，如果没有，则回退到原有的 libRun
+        if (outputLibMap[comboKey]) {
+            targetChar = outputLibMap[comboKey].char;
+            // 获取与该字相关的词组列表，取第一个作为显示词组
+            const words = cnchar.words(targetChar);
+            phrase = (words && words.length > 0) ? words[0] : ("新字");
+        } else {
+            targetChar = libRun[runIdx][2];
+            phrase = libRun[runIdx][3];
+        }
+        // --- 核心逻辑改动结束 ---
 
         document.getElementById('leftPart-run').style.display = 'none';
         document.getElementById('rightPart-run').style.display = 'none';
         document.getElementById('resPinyin-run').innerText = cnchar.spell(targetChar);
         document.getElementById('resBox-run').style.display = 'flex';
         document.getElementById('resChar-writer').innerHTML = '';
-        HanziWriter.create('resChar-writer', targetChar, { width: 180, height: 180, padding: 10, strokeColor: '#e74c3c' }).animateCharacter();
+
+        HanziWriter.create('resChar-writer', targetChar, {
+            width: 180, height: 180, padding: 10, strokeColor: '#e74c3c'
+        }).animateCharacter();
+
         document.getElementById('actionBtn-run').innerText = '✨ 成功！';
         document.getElementById('actionBtn-run').disabled = true;
+        document.getElementById('resPhrase-run').innerText = phrase; // 确保显示对应的组词
 
-        // 1. 需求：跑跑镇成功播报结果字和组词
         speakHanzi(`${targetChar}。${phrase}。`);
     }
     function resetRun() {
@@ -973,6 +1018,8 @@
     window.onload = () => { 
         initRun(); 
         loadHanziList(); // 加载常用汉字列表
+        // 在页面初始化处调用
+        loadOutputData();
     };
 </script>
 </body>
