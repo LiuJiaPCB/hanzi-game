@@ -461,29 +461,11 @@
 
         <div id="admin-panel" class="admin-section">
             <h3 style="margin-top:0;">🏫 跑跑镇字库管理</h3>
-            <div
-                style="display: flex; gap: 10px; margin-bottom: 20px; justify-content: center; background: #f9f9f9; padding: 15px; border-radius: 15px;">
-                <input type="text" id="new-l" class="admin-input" placeholder="左部件">
-                <span style="font-size: 20px;">+</span>
-                <input type="text" id="new-r" class="admin-input" placeholder="右部件">
-                <span style="font-size: 20px;">=</span>
-                <input type="text" id="new-t" class="admin-input" placeholder="新字">
-                <input type="text" id="new-p" class="admin-input" placeholder="组词" style="width: 120px;">
-                <button onclick="addWord()" class="child-btn"
-                        style="background: var(--soft-green); color:white; box-shadow: 0 4px 0 #5bbd5b;">➕ 添加</button>
+            <div style="display: flex; gap: 10px; margin-bottom: 20px; justify-content: center;">
+                <input type="text" id="new-part" class="admin-input" placeholder="输入新部件" maxlength="1">
+                <button onclick="addNewPart('left')" class="child-btn" style="background:var(--primary); color:white;">➕ 加入左边</button>
+                <button onclick="addNewPart('right')" class="child-btn" style="background:var(--secondary); color:white;">➕ 加入右边</button>
             </div>
-            <table class="admin-table">
-                <thead>
-                <tr>
-                    <th>左</th>
-                    <th>右</th>
-                    <th>合</th>
-                    <th>词</th>
-                    <th>管理</th>
-                </tr>
-                </thead>
-                <tbody id="admin-tbody"></tbody>
-            </table>
             <div
                 style="margin-top: 25px; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #eee; padding-top: 15px;">
                 <div>
@@ -588,9 +570,29 @@
             console.error("加载 output.txt 失败:", e);
         }
     }
-    // --- 核心数据与 Toast ---
-    const DEFAULT_LIB = [['足', '包', '跑', '跑步'], ['日', '月', '明', '明天'], ['木', '木', '林', '森林'], ['氵', '去', '法', '办法'], ['口', '下', '吓', '吓人'], ['人', '木', '休', '休息']];
-    let libRun = JSON.parse(localStorage.getItem('paopao_lib')) || DEFAULT_LIB;
+    // 修改为两个数组，分别存左和右的常用部件
+    const DEFAULT_LEFT = ['足', '日', '木', '氵', '口', '人', '女', '马'];
+    const DEFAULT_RIGHT = ['包', '月', '木', '去', '下', '子', '也', '奇'];
+
+    // 尝试从本地加载，如果没有则使用默认
+    let libLeft = JSON.parse(localStorage.getItem('paopao_left')) || DEFAULT_LEFT;
+    let libRight = JSON.parse(localStorage.getItem('paopao_right')) || DEFAULT_RIGHT;
+
+    function addNewPart(side) {
+        const val = document.getElementById('new-part').value.trim();
+        if (!val) return showToast("请输入部件");
+
+        if (side === 'left') {
+            if (!libLeft.includes(val)) libLeft.push(val);
+        } else {
+            if (!libRight.includes(val)) libRight.push(val);
+        }
+
+        saveLib();
+        initRun();
+        document.getElementById('new-part').value = '';
+        showToast("添加成功！");
+    }
 
     // --- 常用3500汉字列表 ---
     let hanziList = [];
@@ -651,7 +653,11 @@
         }, 1500);
     }
 
-    function saveLib() { localStorage.setItem('paopao_lib', JSON.stringify(libRun)); }
+    // 对应的保存函数
+    function saveLib() {
+        localStorage.setItem('paopao_left', JSON.stringify(libLeft));
+        localStorage.setItem('paopao_right', JSON.stringify(libRight));
+    }
 
     function switchTab(mode) {
         document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
@@ -678,38 +684,27 @@
         leftGroup.innerHTML = '';
         rightGroup.innerHTML = '';
 
-        // 提取所有唯一的左部件和右部件
-        const leftParts = [...new Set(libRun.map(d => d[0]))];
-        const rightParts = [...new Set(libRun.map(d => d[1]))];
-
-        // 渲染左侧选择器
-        leftParts.forEach((char) => {
+        // 渲染左侧：直接使用 libLeft
+        libLeft.forEach((char, index) => {
             const b = document.createElement('button');
-            b.className = 'child-btn' + (char === libRun[runIdxLeft][0] ? ' active' : '');
+            b.className = 'child-btn' + (index === runIdxLeft ? ' active' : '');
             b.innerText = char;
-            b.onclick = () => {
-                // 找到库中第一个匹配该左部件的索引，保持逻辑连贯
-                runIdxLeft = libRun.findIndex(d => d[0] === char);
-                resetRun();
-            };
+            b.onclick = () => { runIdxLeft = index; resetRun(); };
             leftGroup.appendChild(b);
         });
 
-        // 渲染右侧选择器
-        rightParts.forEach((char) => {
+        // 渲染右侧：直接使用 libRight
+        libRight.forEach((char, index) => {
             const b = document.createElement('button');
-            b.className = 'child-btn' + (char === libRun[runIdxRight][1] ? ' active' : '');
+            b.className = 'child-btn' + (index === runIdxRight ? ' active' : '');
             b.innerText = char;
-            b.onclick = () => {
-                runIdxRight = libRun.findIndex(d => d[1] === char);
-                resetRun();
-            };
+            b.onclick = () => { runIdxRight = index; resetRun(); };
             rightGroup.appendChild(b);
         });
 
-        // 更新舞台上的文字内容
-        document.getElementById('leftPart-run').innerText = libRun[runIdxLeft][0];
-        document.getElementById('rightPart-run').innerText = libRun[runIdxRight][1];
+        // 更新舞台文字
+        document.getElementById('leftPart-run').innerText = libLeft[runIdxLeft];
+        document.getElementById('rightPart-run').innerText = libRight[runIdxRight];
     }
     function startRun() {
         const actionBtn = document.getElementById('actionBtn-run');
@@ -739,19 +734,13 @@
             targetChar = outputLibMap[comboKey].char;
             // 获取与该字相关的词组列表，取第一个作为显示词组
             const words = cnchar.words(targetChar);
-            phrase = (words && words.length > 0) ? words[0] : ("新字");
+            console.log(`[词组查询] 目标字: ${targetChar}, 查询结果:`, words);
+            phrase = (words && words.length > 0) ? words[0] : ("问问老师怎么组词吧😊");
         } else {
-            // 2. 否则从用户定义的 libRun 中查找匹配项
-            const match = libRun.find(d => d[0] === leftPart && d[1] === rightPart);
-            if (match) {
-                targetChar = match[2];
-                phrase = match[3];
-            } else {
-                // 3. 如果都没有匹配到，显示“？”表示组合失败
-                showToast("哎呀，这两个字碰不出火花呢！");
-                resetRun();
-                return;
-            }
+            // 如果都没有匹配到，组合失败
+            showToast("哎呀，这两个字碰不出火花呢！");
+            resetRun();
+            return;
         }
         // --- 核心逻辑改动结束 ---
 
