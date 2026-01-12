@@ -275,6 +275,7 @@
             border-radius: 8px;
             width: 80px;
             text-align: center;
+            font-size: 20px;
         }
 
         /* 气泡提示样式 */
@@ -528,7 +529,7 @@
             <h3 style="margin-top:0;">🏫 跑跑镇字库管理</h3>
 
             <div style="display: flex; gap: 10px; margin-bottom: 20px; justify-content: center;">
-                <input type="text" id="new-part" class="admin-input" placeholder="输入新部件" maxlength="1">
+                <input type="text" id="new-part" class="admin-input" placeholder="点这里" maxlength="2">
                 <button onclick="addNewPart('left')" class="child-btn" style="background:var(--primary); color:white;">➕ 加入左边</button>
                 <button onclick="addNewPart('right')" class="child-btn" style="background:var(--secondary); color:white;">➕ 加入右边</button>
             </div>
@@ -632,7 +633,8 @@
                 const [target, structure] = line.trim().split('\t');
                 if (target && structure) {
                     // 匹配包含 ⿰ 或 ⿱ 结构的部件，例如 "⿰亻山" 提取出 "亻" 和 "山"
-                    const parts = structure.match(/[⿰⿱](.)(.)/);
+                    // 使用u标志支持扩展汉字（如𧾷）
+                    const parts = structure.match(/[⿰⿱]([\s\S])([\s\S])/u);
                     if (parts) {
                         const key = parts[1] + "+" + parts[2]; // 存为 "左+右" 的键
                         outputLibMap[key] = { char: target, phrase: "字库组合" };
@@ -913,30 +915,9 @@
         }
 
         saveLib();      // 保存到本地存储
-        initRun();      // 刷新游戏界面的选择器
         renderAdmin();  // 刷新管理列表
-        resetRun();     // 重置游戏舞台
+        resetRun();     // 重置游戏舞台（包含initRun）
         showToast("删除成功！");
-    }
-    function addWord() {
-        const l = document.getElementById('new-l').value, r = document.getElementById('new-r').value,
-            t = document.getElementById('new-t').value, p = document.getElementById('new-p').value;
-        if (!l || !r || !t || !p) return showToast("请把四个格子都填好哦！");
-        libRun.push([l, r, t, p]); saveLib(); renderAdmin(); initRun();
-        document.querySelectorAll('.admin-input').forEach(i => i.value = '');
-    }
-    function resetToDefault() { if (confirm("确定恢复初始吗？")) { libRun = [...DEFAULT_LIB]; saveLib(); renderAdmin(); initRun(); resetRun(); } }
-    function exportLib() {
-        const b = new Blob([JSON.stringify(libRun, null, 2)], { type: "application/json" });
-        const a = document.createElement('a'); a.href = URL.createObjectURL(b);
-        a.download = `字库备份_${new Date().toLocaleDateString()}.json`; a.click();
-    }
-    function importLib(e) {
-        const f = e.target.files[0]; if (!f) return;
-        const rd = new FileReader(); rd.onload = (ev) => {
-            try { libRun = JSON.parse(ev.target.result); saveLib(); renderAdmin(); initRun(); resetRun(); alert("导入成功！"); }
-            catch (ex) { alert("文件格式不正确"); }
-        }; rd.readAsText(f);
     }
 
     // --- Tab 2: 笔画实验室 ---
