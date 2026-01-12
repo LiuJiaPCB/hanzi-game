@@ -632,11 +632,12 @@
             lines.forEach(line => {
                 const [target, structure] = line.trim().split('\t');
                 if (target && structure) {
-                    // 匹配包含 ⿰ 或 ⿱ 结构的部件，例如 "⿰亻山" 提取出 "亻" 和 "山"
+                    // 匹配所有两个部件组合的IDS结构：
+                    // ⿰左右 ⿱上下 ⿴全包围 ⿵上包围 ⿶下包围 ⿷左包围 ⿸左上包围 ⿹右上包围 ⿺左下包围 ⿻重叠
                     // 使用u标志支持扩展汉字（如𧾷）
-                    const parts = structure.match(/[⿰⿱]([\s\S])([\s\S])/u);
+                    const parts = structure.match(/[⿰⿱⿴⿵⿶⿷⿸⿹⿺⿻]([\s\S])([\s\S])/u);
                     if (parts) {
-                        const key = parts[1] + "+" + parts[2]; // 存为 "左+右" 的键
+                        const key = parts[1] + "+" + parts[2]; // 存为 "部件1+部件2" 的键
                         outputLibMap[key] = { char: target, phrase: "字库组合" };
                     }
                 }
