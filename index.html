@@ -648,8 +648,10 @@
         }
     }
     // 修改为两个数组，分别存左和右的常用部件
-    const DEFAULT_LEFT = ['足', '日', '木', '氵', '口', '人', '女', '马'];
-    const DEFAULT_RIGHT = ['包', '月', '木', '去', '下', '子', '也', '奇'];
+    // DEFAULT_LEFT 基于 hanzi_3500.txt 统计的前20个高频偏旁
+    const DEFAULT_LEFT = ['氵', '亻', '口', '木', '扌', '艹', '一', '月', '土', '讠', '日', '宀', '钅', '女', '虫', '纟', '阝', '忄', '禾', '石'];
+    // DEFAULT_RIGHT 基于 hanzi_3500.txt 统计的前20个高频右侧部件
+    const DEFAULT_RIGHT = ['心', '口', '刂', '土', '力', '木', '页', '贝', '攵', '隹', '寸', '日', '月', '鸟', '欠', '灬', '虫', '一', '十', '又'];
 
     // 尝试从本地加载，如果没有则使用默认
     let libLeft = JSON.parse(localStorage.getItem('paopao_left')) || DEFAULT_LEFT;
