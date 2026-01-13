@@ -59,7 +59,7 @@
 import { ref, onMounted, nextTick } from 'vue';
 import HanziWriter from 'hanzi-writer';
 import { speakHanzi, showToast } from '../utils/common';
-import { xiangData } from '../utils/data';
+import { xiangData } from '../assets/data/characters';
 
 interface XiangItem {
   char: string;

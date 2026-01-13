@@ -54,7 +54,7 @@ import { ref, onMounted, nextTick } from 'vue';
 import cnchar from 'cnchar-all';
 import HanziWriter from 'hanzi-writer';
 import { speakHanzi, showToast } from '../utils/common';
-import { matchLibrary } from '../utils/data';
+import { matchLibrary } from '../assets/data/characters';
 
 const charInput = ref('克');
 const strokes = ref<string[]>([]);
