@@ -186,8 +186,10 @@ Page({
       // 隐藏当前字符，准备切换
       this.writer.hideCharacter();
       
-      // 设置新字符（会自动触发 charDataLoader 和 onLoadCharDataSuccess）
-      this.writer.setCharacter(char);
+      // 延时再设置新字符，确保隐藏动画完成
+      wx.nextTick(() => {
+        this.writer.setCharacter(char);
+      });
     } catch (e) {
       console.error('更新字符失败，尝试重新创建 writer:', e);
       // 如果更新失败，销毁后重新创建
