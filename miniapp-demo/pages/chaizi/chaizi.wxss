@@ -102,34 +102,6 @@
   overflow: hidden; /* 防止溢出 */
 }
 
-.hanzi-canvas {
-  width: 100%;
-  height: 100%;
-  opacity: 1;
-  transition: opacity 0.1s ease-out; /* 更快的过渡 */
-}
-
-/* 加载中状态：完全隐藏，避免看到销毁过程 */
-.hanzi-canvas.loading {
-  opacity: 0;
-  pointer-events: none; /* 禁止交互 */
-}
-
-/* 加载遮罩层：完全覆盖canvas，避免看到销毁和重建过程 */
-.canvas-mask {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #fff;
-  z-index: 10;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 30rpx;
-}
-
 /* 右侧面板 */
 .right-panel {
   width: 100%;

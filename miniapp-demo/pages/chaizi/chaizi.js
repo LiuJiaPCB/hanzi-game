@@ -24,7 +24,6 @@ Page({
     clickSequence: [],
     matchedChars: [],
     hanziList: [],
-    isWriterLoaded: false,
     canvasSize: 300 // 默认值
   },
 
@@ -208,6 +207,7 @@ Page({
         return new Promise((resolve, reject) => {
           wx.request({
             url: url,
+            timeout: 1000, // 超时时间设置为 1 秒
             header: { 'content-type': 'application/json' },
             success: (res) => {
               if (res.statusCode === 200) {
@@ -265,13 +265,6 @@ Page({
       if (this.writer) {
         this.writer.showOutline();
         this.writer.hideCharacter();
-
-        wx.nextTick(() => {
-          setTimeout(() => {
-            this.setData({ isWriterLoaded: true });
-            console.log(`[${Date.now()}] ✅ 汉字内容已就绪`);
-          }, 50);
-        });
       }
     });
   },
@@ -339,7 +332,7 @@ Page({
   },
 
   animateStroke(index) {
-    if (this.writer && this.data.isWriterLoaded) {
+    if (this.writer) {
       // 使用 animateStroke 并指定颜色
       this.writer.animateStroke(index, {
         strokeColor: '#168F16', // 高亮显示点击的笔画

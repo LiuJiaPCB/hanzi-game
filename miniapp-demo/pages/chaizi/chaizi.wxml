@@ -23,14 +23,10 @@
       <!-- 使用 hanzi-writer 的组件 -->
       <hanzi-writer-view
         wx:if="{{charInput}}"
-        class="hanzi-canvas {{isWriterLoaded ? '' : 'loading'}}"
         id="hanzi-canvas"
         width="{{canvasSize}}"
         height="{{canvasSize}}"
       ></hanzi-writer-view>
-      
-      <!-- 加载遮罩层，完全覆盖canvas避免闪烁 -->
-      <view wx:if="{{!isWriterLoaded}}" class="canvas-mask"></view>
     </view>
 
     <!-- 右侧面板 -->
