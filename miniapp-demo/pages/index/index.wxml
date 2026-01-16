@@ -1,0 +1,48 @@
+<!--pages/index/index.wxml-->
+<view class="container">
+  <view class="header">
+    <text class="title">🎨 汉字实验室</text>
+    <text class="subtitle">探索汉字的奥秘</text>
+  </view>
+
+  <view class="card">
+    <view class="hanzi-display">{{currentHanzi}}</view>
+    <view class="hanzi-info">
+      <text class="info-label">拼音：</text>
+      <text class="info-value">{{pinyin}}</text>
+    </view>
+    <view class="hanzi-info">
+      <text class="info-label">笔画数：</text>
+      <text class="info-value">{{strokeCount}}</text>
+    </view>
+  </view>
+
+  <view class="actions">
+    <button class="btn-primary" bindtap="changeHanzi">换一个汉字</button>
+    <button class="btn-secondary" bindtap="playSound">📢 朗读</button>
+  </view>
+
+  <view class="features">
+    <view class="feature-item" bindtap="goToRuntown">
+      <text class="feature-icon">🏃</text>
+      <text class="feature-name">跑跑镇</text>
+    </view>
+    <view class="feature-item" bindtap="goToChaizi">
+      <text class="feature-icon">🔍</text>
+      <text class="feature-name">拆字</text>
+    </view>
+    <view class="feature-item" bindtap="goToStroke">
+      <text class="feature-icon">✍️</text>
+      <text class="feature-name">笔画练习</text>
+    </view>
+    <view class="feature-item" bindtap="goToXiangxing">
+      <text class="feature-icon">🖼️</text>
+      <text class="feature-name">象形字</text>
+    </view>
+  </view>
+
+  <view class="tips">
+    <text class="tips-title">💡 小提示</text>
+    <text class="tips-content">点击"换一个汉字"可以随机学习新的汉字哦！</text>
+  </view>
+</view>

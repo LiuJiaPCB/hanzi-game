@@ -1,0 +1,147 @@
+<!--pages/runtown/runtown.wxml-->
+<view class="container">
+  <view class="header">
+    <text class="title">🏃 两个部件组合，变出新汉字！</text>
+  </view>
+
+  <!-- 舞台区域 -->
+  <view class="stage">
+    <!-- 左边部件 -->
+    <view 
+      class="word-run left-word" 
+      style="left: {{leftX}}px;"
+      wx:if="{{showParts}}"
+    >
+      {{libLeft[runIdxLeft]}}
+    </view>
+
+    <!-- 右边部件 -->
+    <view 
+      class="word-run right-word" 
+      style="right: {{rightX}}px;"
+      wx:if="{{showParts}}"
+    >
+      {{libRight[runIdxRight]}}
+    </view>
+
+    <!-- 结果展示 -->
+    <view class="result-box" wx:if="{{showResult}}">
+      <view class="result-left">
+        <view class="result-pinyin">{{resultPinyin}}</view>
+        <canvas 
+          canvas-id="hanziCanvas" 
+          class="hanzi-canvas"
+          style="width: 180px; height: 180px;"
+        ></canvas>
+      </view>
+      <view class="result-right">
+        <view class="result-phrase">{{resultPhrase}}</view>
+        <view class="result-tip">🎉 组合成功！</view>
+        <button class="btn-voice-play" bindtap="playVoice" data-char="{{resultChar}}">🔊 听发音</button>
+      </view>
+    </view>
+  </view>
+
+  <!-- 控制按钮 -->
+  <view class="controls">
+    <view class="btn-group">
+      <button 
+        class="btn-main {{isSuccess ? 'btn-success' : ''}}" 
+        bindtap="toggleRun"
+        disabled="{{isSuccess}}"
+      >
+        {{runBtnText}}
+      </button>
+      <button class="btn-reset" bindtap="resetRun">🔄 重置</button>
+    </view>
+  </view>
+
+  <!-- 部件选择区 -->
+  <view class="selector-area">
+    <view class="selector-col">
+      <view class="selector-title">部件一</view>
+      <scroll-view scroll-y class="selector-scroll">
+        <view class="part-grid">
+          <view 
+            wx:for="{{libLeft}}" 
+            wx:key="index"
+            class="part-item {{runIdxLeft === index ? 'part-active-left' : ''}}"
+            bindtap="selectLeft"
+            data-index="{{index}}"
+          >
+            {{item}}
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+
+    <view class="selector-col">
+      <view class="selector-title">部件二</view>
+      <scroll-view scroll-y class="selector-scroll">
+        <view class="part-grid">
+          <view 
+            wx:for="{{libRight}}" 
+            wx:key="index"
+            class="part-item {{runIdxRight === index ? 'part-active-right' : ''}}"
+            bindtap="selectRight"
+            data-index="{{index}}"
+          >
+            {{item}}
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+
+  <!-- 管理按钮 -->
+  <view class="admin-toggle">
+    <button class="btn-admin" bindtap="toggleAdmin">⚙️ 字库设置</button>
+  </view>
+
+  <!-- 管理面板 -->
+  <view class="admin-panel" wx:if="{{showAdmin}}">
+    <view class="admin-header">🏫 跑跑镇字库管理（支持左右、上下、叠加、包围等结构）</view>
+    
+    <view class="admin-add">
+      <input 
+        class="admin-input" 
+        value="{{newPartInput}}"
+        bindinput="onInputChange"
+        placeholder="输入部件"
+        maxlength="2"
+      />
+      <button class="btn-add-left" bindtap="addLeft">➕ 加入部件一</button>
+      <button class="btn-add-right" bindtap="addRight">➕ 加入部件二</button>
+    </view>
+
+    <view class="admin-libs">
+      <view class="admin-lib">
+        <view class="lib-title">部件库一：</view>
+        <view class="lib-items">
+          <view 
+            wx:for="{{libLeft}}" 
+            wx:key="index"
+            class="lib-item lib-item-left"
+          >
+            <text>{{item}}</text>
+            <text class="lib-delete" bindtap="deleteLeft" data-index="{{index}}">×</text>
+          </view>
+        </view>
+      </view>
+
+      <view class="admin-lib">
+        <view class="lib-title">部件库二：</view>
+        <view class="lib-items">
+          <view 
+            wx:for="{{libRight}}" 
+            wx:key="index"
+            class="lib-item lib-item-right"
+          >
+            <text>{{item}}</text>
+            <text class="lib-delete" bindtap="deleteRight" data-index="{{index}}">×</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

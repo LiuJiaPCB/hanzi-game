@@ -1,0 +1,241 @@
+/* pages/xiangxing/xiangxing.wxss */
+.container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 40rpx 20rpx;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 40rpx;
+}
+
+.title {
+  font-size: 40rpx;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2rpx 2rpx 4rpx rgba(0, 0, 0, 0.2);
+}
+
+/* 配对舞台 */
+.match-stage {
+  background: white;
+  border-radius: 30rpx;
+  padding: 40rpx 20rpx;
+  box-shadow: 0 10rpx 40rpx rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20rpx;
+}
+
+/* 左右卡片列 */
+.match-col {
+  display: flex;
+  flex-direction: column;
+  gap: 15rpx;
+  flex: 1;
+}
+
+/* 图片卡片 */
+.pic-card {
+  width: 100%;
+  height: 120rpx;
+  border: 4rpx solid #eee;
+  border-radius: 20rpx;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+  box-shadow: 0 2rpx 8rpx rgba(0, 0, 0, 0.08);
+}
+
+.pic-card.selected {
+  border-color: #FF9800;
+  background: #fff9ed;
+  transform: scale(1.05);
+  box-shadow: 0 4rpx 16rpx rgba(255, 152, 0, 0.3);
+}
+
+.pic-image {
+  width: 80rpx;
+  height: 80rpx;
+}
+
+/* 汉字卡片 */
+.han-card {
+  width: 100%;
+  height: 120rpx;
+  border: 4rpx solid #eee;
+  border-radius: 20rpx;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+  box-shadow: 0 2rpx 8rpx rgba(0, 0, 0, 0.08);
+}
+
+.han-card.selected {
+  border-color: #4CAF50;
+  background: #f0f7ff;
+  transform: scale(1.05);
+  box-shadow: 0 4rpx 16rpx rgba(76, 175, 80, 0.3);
+}
+
+.han-text {
+  font-size: 60rpx;
+  font-weight: bold;
+  color: #333;
+}
+
+/* 中间区域 */
+.center-area {
+  flex: 1.2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25rpx;
+}
+
+.slots {
+  display: flex;
+  gap: 20rpx;
+}
+
+.slot {
+  width: 120rpx;
+  height: 120rpx;
+  border: 4rpx dashed #ccc;
+  border-radius: 20rpx;
+  background: #fafafa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slot-image {
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.slot-hanzi {
+  font-size: 70rpx;
+  font-weight: bold;
+  color: #333;
+}
+
+.slot-placeholder {
+  font-size: 60rpx;
+  color: #ccc;
+}
+
+.btn-check {
+  width: 200rpx;
+  height: 80rpx;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 40rpx;
+  font-size: 32rpx;
+  font-weight: bold;
+  border: none;
+  box-shadow: 0 4rpx 15rpx rgba(102, 126, 234, 0.4);
+}
+
+.hint {
+  font-size: 22rpx;
+  color: #999;
+}
+
+/* 弹窗 */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  width: 600rpx;
+}
+
+.modal-content {
+  background: white;
+  border-radius: 30rpx;
+  padding: 60rpx 40rpx;
+  box-shadow: 0 10rpx 40rpx rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30rpx;
+}
+
+.modal-title {
+  font-size: 40rpx;
+  font-weight: bold;
+  color: #4CAF50;
+}
+
+.modal-hanzi {
+  font-size: 160rpx;
+  font-weight: bold;
+  color: #333;
+  line-height: 1;
+}
+
+.modal-tip {
+  font-size: 28rpx;
+  color: #666;
+  line-height: 1.6;
+  text-align: center;
+  max-width: 500rpx;
+}
+
+.btn-continue {
+  width: 300rpx;
+  height: 80rpx;
+  background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+  color: white;
+  border-radius: 40rpx;
+  font-size: 32rpx;
+  font-weight: bold;
+  border: none;
+  box-shadow: 0 4rpx 15rpx rgba(76, 175, 80, 0.4);
+}
+
+/* 语音按钮容器 */
+.voice-buttons {
+  display: flex;
+  gap: 20rpx;
+  margin: 10rpx 0;
+  justify-content: center;
+  width: 100%;
+}
+
+/* 语音按钮 */
+.btn-voice {
+  flex: 1;
+  padding: 20rpx 30rpx;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 50rpx;
+  font-size: 28rpx;
+  font-weight: bold;
+  box-shadow: 0 4rpx 15rpx rgba(102, 126, 234, 0.4);
+  transition: all 0.3s;
+}
+
+.btn-voice:active {
+  transform: scale(0.95);
+  box-shadow: 0 2rpx 8rpx rgba(102, 126, 234, 0.3);
+}

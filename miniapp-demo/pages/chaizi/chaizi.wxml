@@ -1,0 +1,82 @@
+<view class="container">
+  <!-- 标题 -->
+  <view class="title">点点笔画，看看藏着哪些小伙伴？</view>
+  
+  <!-- 输入区 -->
+  <view class="input-section">
+    <text class="input-label">请输入母字：</text>
+    <input 
+      class="char-input" 
+      type="text" 
+      maxlength="6"
+      value="{{charInput}}" 
+      bindinput="onCharInput"
+    />
+    <button class="btn-primary" bindtap="initSplit">拆字</button>
+    <button class="btn-secondary" bindtap="randomHanzi">随机</button>
+  </view>
+
+  <!-- 主内容区 -->
+  <view class="main-content">
+    <!-- 汉字展示区 -->
+    <view class="hanzi-display">
+      <!-- 使用 hanzi-writer 的组件 -->
+      <hanzi-writer-view
+        wx:if="{{charInput}}"
+        class="hanzi-canvas {{isWriterLoaded ? '' : 'loading'}}"
+        id="hanzi-canvas"
+        width="{{canvasSize}}"
+        height="{{canvasSize}}"
+      ></hanzi-writer-view>
+      
+      <!-- 加载遮罩层，完全覆盖canvas避免闪烁 -->
+      <view wx:if="{{!isWriterLoaded}}" class="canvas-mask"></view>
+    </view>
+
+    <!-- 右侧面板 -->
+    <view class="right-panel">
+      <!-- 笔画选择区 -->
+      <view class="stroke-section">
+        <view class="stroke-list">
+          <view wx:if="{{strokes.length === 0}}" class="loading-hint">
+            加载笔画中...
+          </view>
+          <button
+            wx:for="{{strokes}}"
+            wx:key="index"
+            class="stroke-btn {{strokeStatus[index] ? 'active' : ''}}"
+            bindtap="handleStrokeClick"
+            data-index="{{index}}"
+            data-stroke="{{item}}"
+          >
+            {{item}}
+          </button>
+        </view>
+        
+        <!-- 操作按钮 -->
+        <view class="action-buttons">
+          <button class="btn-find" bindtap="findExactMatches">🔍 找一找</button>
+          <button class="btn-reset" bindtap="resetStrokes">🔄 重选</button>
+        </view>
+      </view>
+
+      <!-- 结果展示区 -->
+      <view class="result-section">
+        <text class="result-title">🌟 发现的小伙伴：</text>
+        <view class="result-list">
+          <view wx:if="{{matchedChars.length === 0}}" class="empty-hint">
+            等待小朋友挑战...
+          </view>
+          <view 
+            wx:for="{{matchedChars}}" 
+            wx:key="index"
+            class="char-card"
+          >
+            <text class="char-pinyin">{{item.pinyin}}</text>
+            <text class="char-text">{{item.char}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

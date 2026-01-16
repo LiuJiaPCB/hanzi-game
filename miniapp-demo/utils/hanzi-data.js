@@ -1,0 +1,69130 @@
+// 汉字字库数据 - 自动生成
+// 包含汉字的笔画顺序、拼音、笔画数等信息
+// 共 3501 个汉字
+// 
+// 数据结构说明：
+// - structure: 汉字结构（使用 Ideographic Description Characters）
+// - strokeCount: 笔画数
+// - strokeShapes: 笔画形状数组（如：["一", "丨", "丿", "㇏"]）
+// - pinyin: 拼音（带声调）
+// - pinyinArray: 拼音数组（不带声调）
+
+const HANZI_DATA = {
+  "一": {
+    "structure": "一",
+    "strokeCount": 1,
+    "strokeShapes": [
+      "一"
+    ],
+    "pinyin": "Yī",
+    "pinyinArray": [
+      "Yi"
+    ]
+  },
+  "丁": {
+    "structure": "⿱一亅",
+    "strokeCount": 2,
+    "strokeShapes": [
+      "一",
+      "亅"
+    ],
+    "pinyin": "Dīng",
+    "pinyinArray": [
+      "Ding"
+    ]
+  },
+  "七": {
+    "structure": "⿻㇀乚",
+    "strokeCount": 2,
+    "strokeShapes": [
+      "一",
+      "乚"
+    ],
+    "pinyin": "Qī",
+    "pinyinArray": [
+      "Qi"
+    ]
+  },
+  "万": {
+    "structure": "⿱一⿰丿𠃌",
+    "strokeCount": 3,
+    "strokeShapes": [
+      "一",
+      "𠃌",
+      "丿"
+    ],
+    "pinyin": "Wàn",
+    "pinyinArray": [
+      "Wan"
+    ]
+  },
+  "丈": {
+    "structure": "丈",
+    "strokeCount": 3,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Zhàng",
+    "pinyinArray": [
+      "Zhang"
+    ]
+  },
+  "三": {
+    "structure": "⿱一二",
+    "strokeCount": 3,
+    "strokeShapes": [
+      "一",
+      "一",
+      "一"
+    ],
+    "pinyin": "Sān",
+    "pinyinArray": [
+      "San"
+    ]
+  },
+  "上": {
+    "structure": "⿱⺊一",
+    "strokeCount": 3,
+    "strokeShapes": [
+      "丨",
+      "一",
+      "一"
+    ],
+    "pinyin": "Shàng",
+    "pinyinArray": [
+      "Shang"
+    ]
+  },
+  "下": {
+    "structure": "⿱一卜",
+    "strokeCount": 3,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丶"
+    ],
+    "pinyin": "Xià",
+    "pinyinArray": [
+      "Xia"
+    ]
+  },
+  "不": {
+    "structure": "⿱一③",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "丨",
+      "丶"
+    ],
+    "pinyin": "Bù",
+    "pinyinArray": [
+      "Bu"
+    ]
+  },
+  "与": {
+    "structure": "⿹②一[GTKV]",
+    "strokeCount": 3,
+    "strokeShapes": [
+      "一",
+      "㇉",
+      "一"
+    ],
+    "pinyin": "Yú",
+    "pinyinArray": [
+      "Yu"
+    ]
+  },
+  "丐": {
+    "structure": "丐",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "一",
+      "㇉"
+    ],
+    "pinyin": "Gài",
+    "pinyinArray": [
+      "Gai"
+    ]
+  },
+  "丑": {
+    "structure": "丑",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "𠃍",
+      "丨",
+      "一",
+      "一"
+    ],
+    "pinyin": "Chǒu",
+    "pinyinArray": [
+      "Chou"
+    ]
+  },
+  "专": {
+    "structure": "专",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "一",
+      "一",
+      "ㄣ|𠃑",
+      "丶"
+    ],
+    "pinyin": "Zhuān",
+    "pinyinArray": [
+      "Zhuan"
+    ]
+  },
+  "且": {
+    "structure": "且",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一"
+    ],
+    "pinyin": "Qiě",
+    "pinyinArray": [
+      "Qie"
+    ]
+  },
+  "世": {
+    "structure": "世",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "㇄"
+    ],
+    "pinyin": "Shì",
+    "pinyinArray": [
+      "Shi"
+    ]
+  },
+  "丘": {
+    "structure": "丘",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Qiū",
+    "pinyinArray": [
+      "Qiu"
+    ]
+  },
+  "丙": {
+    "structure": "⿱一内",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "𠃌",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Bǐng",
+    "pinyinArray": [
+      "Bing"
+    ]
+  },
+  "业": {
+    "structure": "⿱④一",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丨",
+      "丨",
+      "丶",
+      "丿",
+      "一"
+    ],
+    "pinyin": "Yè",
+    "pinyinArray": [
+      "Ye"
+    ]
+  },
+  "丛": {
+    "structure": "⿱从一",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丿",
+      "丶",
+      "丿",
+      "㇏",
+      "一"
+    ],
+    "pinyin": "Cóng",
+    "pinyinArray": [
+      "Cong"
+    ]
+  },
+  "东": {
+    "structure": "东",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "一",
+      "𠃋",
+      "亅",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Dōng",
+    "pinyinArray": [
+      "Dong"
+    ]
+  },
+  "丝": {
+    "structure": "⿱⿰②②一",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "𠃋",
+      "𠃋",
+      "𠃋",
+      "𠃋",
+      "一"
+    ],
+    "pinyin": "Sī",
+    "pinyinArray": [
+      "Si"
+    ]
+  },
+  "丢": {
+    "structure": "⿱丿去",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丨",
+      "一",
+      "𠃋",
+      "丶"
+    ],
+    "pinyin": "Diū",
+    "pinyinArray": [
+      "Diu"
+    ]
+  },
+  "两": {
+    "structure": "⿱一⿻冂从",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "𠃌",
+      "丿",
+      "丶",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Liǎng",
+    "pinyinArray": [
+      "Liang"
+    ]
+  },
+  "严": {
+    "structure": "⿳一④厂",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丶",
+      "丿",
+      "一",
+      "丿"
+    ],
+    "pinyin": "Yán",
+    "pinyinArray": [
+      "Yan"
+    ]
+  },
+  "丧": {
+    "structure": "⿱⿻土丷⿰𠄌⿺乀丿",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丶",
+      "丿",
+      "一",
+      "𠄌",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Sàng",
+    "pinyinArray": [
+      "Sang"
+    ]
+  },
+  "个": {
+    "structure": "⿱人丨",
+    "strokeCount": 3,
+    "strokeShapes": [
+      "丿",
+      "㇏",
+      "丨"
+    ],
+    "pinyin": "Gè",
+    "pinyinArray": [
+      "Ge"
+    ]
+  },
+  "中": {
+    "structure": "⿻口丨",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Zhōng",
+    "pinyinArray": [
+      "Zhong"
+    ]
+  },
+  "丰": {
+    "structure": "⿻三丨[GJK]",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "一",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Fēng",
+    "pinyinArray": [
+      "Feng"
+    ]
+  },
+  "串": {
+    "structure": "⿻吕丨",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Chuàn",
+    "pinyinArray": [
+      "Chuan"
+    ]
+  },
+  "临": {
+    "structure": "⿰〢⿱⿱𠂉丶𫩏",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丨",
+      "丨",
+      "丿",
+      "一",
+      "丶",
+      "丨",
+      "𠃍",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Lín",
+    "pinyinArray": [
+      "Lin"
+    ]
+  },
+  "丸": {
+    "structure": "⿻九丶[GJ]",
+    "strokeCount": 3,
+    "strokeShapes": [
+      "丿",
+      "⺄",
+      "丶"
+    ],
+    "pinyin": "Wán",
+    "pinyinArray": [
+      "Wan"
+    ]
+  },
+  "丹": {
+    "structure": "丹",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "丶",
+      "一"
+    ],
+    "pinyin": "Dān",
+    "pinyinArray": [
+      "Dan"
+    ]
+  },
+  "为": {
+    "structure": "为",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "丶",
+      "丿",
+      "𠃌",
+      "丶"
+    ],
+    "pinyin": "Wéi",
+    "pinyinArray": [
+      "Wei"
+    ]
+  },
+  "主": {
+    "structure": "⿱亠土",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Zhù",
+    "pinyinArray": [
+      "Zhu"
+    ]
+  },
+  "丽": {
+    "structure": "⿱一⿰⿵冂丶⿵冂丶[G]",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "𠃌",
+      "丶",
+      "丨",
+      "𠃌",
+      "丶"
+    ],
+    "pinyin": "Lí",
+    "pinyinArray": [
+      "Li"
+    ]
+  },
+  "举": {
+    "structure": "⿱兴⿻二丨",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "丿",
+      "一",
+      "丿",
+      "㇏",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Jǔ",
+    "pinyinArray": [
+      "Ju"
+    ]
+  },
+  "乃": {
+    "structure": "⿹𠄎丿",
+    "strokeCount": 2,
+    "strokeShapes": [
+      "𠄎|㇌",
+      "丿"
+    ],
+    "pinyin": "Nǎi",
+    "pinyinArray": [
+      "Nai"
+    ]
+  },
+  "久": {
+    "structure": "久",
+    "strokeCount": 3,
+    "strokeShapes": [
+      "丿",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Jiǔ",
+    "pinyinArray": [
+      "Jiu"
+    ]
+  },
+  "么": {
+    "structure": "⿱丿厶",
+    "strokeCount": 3,
+    "strokeShapes": [
+      "丿",
+      "𠃋",
+      "丶"
+    ],
+    "pinyin": "Me",
+    "pinyinArray": [
+      "Me"
+    ]
+  },
+  "义": {
+    "structure": "⿶乂丶",
+    "strokeCount": 3,
+    "strokeShapes": [
+      "丶",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Yí",
+    "pinyinArray": [
+      "Yi"
+    ]
+  },
+  "之": {
+    "structure": "⿱丶②",
+    "strokeCount": 3,
+    "strokeShapes": [
+      "丶",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Zhī",
+    "pinyinArray": [
+      "Zhi"
+    ]
+  },
+  "乌": {
+    "structure": "⿹③一",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "㇉",
+      "一"
+    ],
+    "pinyin": "Wù",
+    "pinyinArray": [
+      "Wu"
+    ]
+  },
+  "乍": {
+    "structure": "乍",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丨",
+      "一",
+      "一"
+    ],
+    "pinyin": "Zhà",
+    "pinyinArray": [
+      "Zha"
+    ]
+  },
+  "乎": {
+    "structure": "乎",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丿",
+      "丶",
+      "丿",
+      "一",
+      "亅"
+    ],
+    "pinyin": "Hū",
+    "pinyinArray": [
+      "Hu"
+    ]
+  },
+  "乏": {
+    "structure": "⿱丿之",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "丿",
+      "丶",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Fá",
+    "pinyinArray": [
+      "Fa"
+    ]
+  },
+  "乐": {
+    "structure": "乐",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丿",
+      "㇄",
+      "亅",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Lè",
+    "pinyinArray": [
+      "Le"
+    ]
+  },
+  "乒": {
+    "structure": "⿱丘丿",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "一",
+      "丨",
+      "一",
+      "丿"
+    ],
+    "pinyin": "Pīng",
+    "pinyinArray": [
+      "Ping"
+    ]
+  },
+  "乓": {
+    "structure": "⿱丘丶",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "一",
+      "丨",
+      "一",
+      "丶"
+    ],
+    "pinyin": "Pāng",
+    "pinyinArray": [
+      "Pang"
+    ]
+  },
+  "乔": {
+    "structure": "⿱夭⿰丿丨",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丿",
+      "㇏",
+      "丿",
+      "丨"
+    ],
+    "pinyin": "Qiáo",
+    "pinyinArray": [
+      "Qiao"
+    ]
+  },
+  "乖": {
+    "structure": "⿻千北",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "㇀",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Guāi",
+    "pinyinArray": [
+      "Guai"
+    ]
+  },
+  "乘": {
+    "structure": "⿻禾北",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "㇀",
+      "丿",
+      "乚",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Chéng",
+    "pinyinArray": [
+      "Cheng"
+    ]
+  },
+  "乙": {
+    "structure": "乙",
+    "strokeCount": 1,
+    "strokeShapes": [
+      "⺄"
+    ],
+    "pinyin": "Yǐ",
+    "pinyinArray": [
+      "Yi"
+    ]
+  },
+  "九": {
+    "structure": "九",
+    "strokeCount": 2,
+    "strokeShapes": [
+      "丿",
+      "⺄"
+    ],
+    "pinyin": "Jiǔ",
+    "pinyinArray": [
+      "Jiu"
+    ]
+  },
+  "乞": {
+    "structure": "⿱𠂉乙",
+    "strokeCount": 3,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "⺄"
+    ],
+    "pinyin": "Qǐ",
+    "pinyinArray": [
+      "Qi"
+    ]
+  },
+  "也": {
+    "structure": "也",
+    "strokeCount": 3,
+    "strokeShapes": [
+      "𠃌",
+      "丨",
+      "乚"
+    ],
+    "pinyin": "Yě",
+    "pinyinArray": [
+      "Ye"
+    ]
+  },
+  "习": {
+    "structure": "⿹𠃌冫",
+    "strokeCount": 3,
+    "strokeShapes": [
+      "𠃌",
+      "丶",
+      "㇀"
+    ],
+    "pinyin": "Xí",
+    "pinyinArray": [
+      "Xi"
+    ]
+  },
+  "乡": {
+    "structure": "乡",
+    "strokeCount": 3,
+    "strokeShapes": [
+      "𠃋",
+      "𠃋",
+      "丿"
+    ],
+    "pinyin": "Xiāng",
+    "pinyinArray": [
+      "Xiang"
+    ]
+  },
+  "书": {
+    "structure": "书",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "𠃍",
+      "𠃌",
+      "丨",
+      "丶"
+    ],
+    "pinyin": "Shū",
+    "pinyinArray": [
+      "Shu"
+    ]
+  },
+  "买": {
+    "structure": "⿱乛头",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "㇇|乛",
+      "丶",
+      "丶",
+      "一",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Mǎi",
+    "pinyinArray": [
+      "Mai"
+    ]
+  },
+  "乱": {
+    "structure": "⿰舌乚",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "乚"
+    ],
+    "pinyin": "Luàn",
+    "pinyinArray": [
+      "Luan"
+    ]
+  },
+  "乳": {
+    "structure": "⿰孚乚",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丿",
+      "丶",
+      "丶",
+      "丿",
+      "㇇|乛",
+      "亅",
+      "㇀",
+      "乚"
+    ],
+    "pinyin": "Rǔ",
+    "pinyinArray": [
+      "Ru"
+    ]
+  },
+  "乾": {
+    "structure": "⿰𠦝乞",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "丿",
+      "一",
+      "⺄"
+    ],
+    "pinyin": "Qián",
+    "pinyinArray": [
+      "Qian"
+    ]
+  },
+  "了": {
+    "structure": "⿱乛亅",
+    "strokeCount": 2,
+    "strokeShapes": [
+      "㇇|乛",
+      "亅"
+    ],
+    "pinyin": "Le",
+    "pinyinArray": [
+      "Le"
+    ]
+  },
+  "予": {
+    "structure": "⿱龴𠄐",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "㇇|乛",
+      "丶",
+      "㇇|乛",
+      "亅"
+    ],
+    "pinyin": "Yú",
+    "pinyinArray": [
+      "Yu"
+    ]
+  },
+  "争": {
+    "structure": "⿱𠂊⿻⿻コ一亅",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丿",
+      "㇇|乛",
+      "𠃍",
+      "一",
+      "一",
+      "亅"
+    ],
+    "pinyin": "Zhèng",
+    "pinyinArray": [
+      "Zheng"
+    ]
+  },
+  "事": {
+    "structure": "事",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "𠃍",
+      "一",
+      "一",
+      "亅"
+    ],
+    "pinyin": "Shì",
+    "pinyinArray": [
+      "Shi"
+    ]
+  },
+  "二": {
+    "structure": "⿱一一",
+    "strokeCount": 2,
+    "strokeShapes": [
+      "一",
+      "一"
+    ],
+    "pinyin": "Èr",
+    "pinyinArray": [
+      "Er"
+    ]
+  },
+  "于": {
+    "structure": "于",
+    "strokeCount": 3,
+    "strokeShapes": [
+      "一",
+      "一",
+      "亅"
+    ],
+    "pinyin": "Yú",
+    "pinyinArray": [
+      "Yu"
+    ]
+  },
+  "亏": {
+    "structure": "⿱一丂",
+    "strokeCount": 3,
+    "strokeShapes": [
+      "一",
+      "一",
+      "㇉"
+    ],
+    "pinyin": "Kuī",
+    "pinyinArray": [
+      "Kui"
+    ]
+  },
+  "云": {
+    "structure": "⿱二厶",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "一",
+      "一",
+      "𠃋",
+      "丶"
+    ],
+    "pinyin": "Yún",
+    "pinyinArray": [
+      "Yun"
+    ]
+  },
+  "互": {
+    "structure": "⿱一彑",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "一",
+      "𠃋",
+      "㇇|乛",
+      "一"
+    ],
+    "pinyin": "Hù",
+    "pinyinArray": [
+      "Hu"
+    ]
+  },
+  "五": {
+    "structure": "⿱一𫝀",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Wǔ",
+    "pinyinArray": [
+      "Wu"
+    ]
+  },
+  "井": {
+    "structure": "井",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "一",
+      "一",
+      "丿",
+      "丨"
+    ],
+    "pinyin": "Jǐng",
+    "pinyinArray": [
+      "Jing"
+    ]
+  },
+  "亚": {
+    "structure": "⿱一业",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丶",
+      "丿",
+      "一"
+    ],
+    "pinyin": "Yà",
+    "pinyinArray": [
+      "Ya"
+    ]
+  },
+  "些": {
+    "structure": "⿱此二",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丨",
+      "一",
+      "丨",
+      "㇀",
+      "丿",
+      "乚",
+      "一",
+      "一"
+    ],
+    "pinyin": "Xiē",
+    "pinyinArray": [
+      "Xie"
+    ]
+  },
+  "亡": {
+    "structure": "⿱亠𠃊",
+    "strokeCount": 3,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "㇄"
+    ],
+    "pinyin": "Wáng",
+    "pinyinArray": [
+      "Wang"
+    ]
+  },
+  "交": {
+    "structure": "⿱亠父",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "丶",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Jiāo",
+    "pinyinArray": [
+      "Jiao"
+    ]
+  },
+  "亥": {
+    "structure": "⿳亠𠂈人",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "𠃋",
+      "丿",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Hài",
+    "pinyinArray": [
+      "Hai"
+    ]
+  },
+  "亦": {
+    "structure": "⿱亠④",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "亅",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Yì",
+    "pinyinArray": [
+      "Yi"
+    ]
+  },
+  "产": {
+    "structure": "⿱⿱亠丷厂",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丿"
+    ],
+    "pinyin": "Chǎn",
+    "pinyinArray": [
+      "Chan"
+    ]
+  },
+  "亩": {
+    "structure": "⿱亠田",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Mǔ",
+    "pinyinArray": [
+      "Mu"
+    ]
+  },
+  "享": {
+    "structure": "⿳亠口子",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "㇇|乛",
+      "亅",
+      "一"
+    ],
+    "pinyin": "Xiǎng",
+    "pinyinArray": [
+      "Xiang"
+    ]
+  },
+  "京": {
+    "structure": "⿳亠口小",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "亅",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Jīng",
+    "pinyinArray": [
+      "Jing"
+    ]
+  },
+  "亭": {
+    "structure": "⿱⿳亠口冖丁",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "㇀",
+      "㇇|乛",
+      "一",
+      "亅"
+    ],
+    "pinyin": "Tíng",
+    "pinyinArray": [
+      "Ting"
+    ]
+  },
+  "亮": {
+    "structure": "⿱⿳亠口冖几[G]",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "㇀",
+      "㇇|乛",
+      "丿",
+      "⺄"
+    ],
+    "pinyin": "Liàng",
+    "pinyinArray": [
+      "Liang"
+    ]
+  },
+  "亲": {
+    "structure": "⿱立朩",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "亅",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Qīn",
+    "pinyinArray": [
+      "Qin"
+    ]
+  },
+  "人": {
+    "structure": "人",
+    "strokeCount": 2,
+    "strokeShapes": [
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Rén",
+    "pinyinArray": [
+      "Ren"
+    ]
+  },
+  "亿": {
+    "structure": "⿰亻乙",
+    "strokeCount": 3,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "⺄"
+    ],
+    "pinyin": "Yì",
+    "pinyinArray": [
+      "Yi"
+    ]
+  },
+  "什": {
+    "structure": "⿰亻十",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Shén",
+    "pinyinArray": [
+      "Shen"
+    ]
+  },
+  "仁": {
+    "structure": "⿰亻二",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "一",
+      "一"
+    ],
+    "pinyin": "Rén",
+    "pinyinArray": [
+      "Ren"
+    ]
+  },
+  "仅": {
+    "structure": "⿰亻又",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Jìn",
+    "pinyinArray": [
+      "Jin"
+    ]
+  },
+  "仆": {
+    "structure": "⿰亻卜",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "丨",
+      "丶"
+    ],
+    "pinyin": "Pú",
+    "pinyinArray": [
+      "Pu"
+    ]
+  },
+  "仇": {
+    "structure": "⿰亻九",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "丿",
+      "⺄"
+    ],
+    "pinyin": "Chóu",
+    "pinyinArray": [
+      "Chou"
+    ]
+  },
+  "今": {
+    "structure": "⿱亽㇇[G]",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "丿",
+      "㇏",
+      "丶",
+      "㇇|乛"
+    ],
+    "pinyin": "Jīn",
+    "pinyinArray": [
+      "Jin"
+    ]
+  },
+  "介": {
+    "structure": "⿱人⿰丿丨",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "丿",
+      "㇏",
+      "丿",
+      "丨"
+    ],
+    "pinyin": "Jiè",
+    "pinyinArray": [
+      "Jie"
+    ]
+  },
+  "仍": {
+    "structure": "⿰亻乃",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "𠄎|㇌",
+      "丿"
+    ],
+    "pinyin": "Réng",
+    "pinyinArray": [
+      "Reng"
+    ]
+  },
+  "从": {
+    "structure": "⿰人人",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "丿",
+      "丶",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Cóng",
+    "pinyinArray": [
+      "Cong"
+    ]
+  },
+  "仑": {
+    "structure": "⿱人匕",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "丿",
+      "㇏",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Lún",
+    "pinyinArray": [
+      "Lun"
+    ]
+  },
+  "仓": {
+    "structure": "⿱人㔾",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "丿",
+      "㇏",
+      "𠃌",
+      "乚"
+    ],
+    "pinyin": "Cāng",
+    "pinyinArray": [
+      "Cang"
+    ]
+  },
+  "仔": {
+    "structure": "⿰亻子",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "㇇|乛",
+      "亅",
+      "一"
+    ],
+    "pinyin": "Zǎi",
+    "pinyinArray": [
+      "Zai"
+    ]
+  },
+  "他": {
+    "structure": "⿰亻也",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "𠃌",
+      "丨",
+      "乚"
+    ],
+    "pinyin": "Tā",
+    "pinyinArray": [
+      "Ta"
+    ]
+  },
+  "仗": {
+    "structure": "⿰亻丈",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Zhàng",
+    "pinyinArray": [
+      "Zhang"
+    ]
+  },
+  "付": {
+    "structure": "⿰亻寸",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "一",
+      "亅",
+      "丶"
+    ],
+    "pinyin": "Fù",
+    "pinyinArray": [
+      "Fu"
+    ]
+  },
+  "仙": {
+    "structure": "⿰亻山",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "丨",
+      "㇄",
+      "丨"
+    ],
+    "pinyin": "Xiān",
+    "pinyinArray": [
+      "Xian"
+    ]
+  },
+  "代": {
+    "structure": "⿰亻弋",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "一",
+      "㇂|㇃",
+      "丶"
+    ],
+    "pinyin": "Dài",
+    "pinyinArray": [
+      "Dai"
+    ]
+  },
+  "令": {
+    "structure": "⿱亽龴[G]",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丿",
+      "㇏",
+      "丶",
+      "㇇|乛",
+      "丶"
+    ],
+    "pinyin": "Líng",
+    "pinyinArray": [
+      "Ling"
+    ]
+  },
+  "以": {
+    "structure": "以",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "𠄌",
+      "丶",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Yǐ",
+    "pinyinArray": [
+      "Yi"
+    ]
+  },
+  "仪": {
+    "structure": "⿰亻义",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "丶",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Yí",
+    "pinyinArray": [
+      "Yi"
+    ]
+  },
+  "们": {
+    "structure": "⿰亻门",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "丶",
+      "丨",
+      "𠃌"
+    ],
+    "pinyin": "Men",
+    "pinyinArray": [
+      "Men"
+    ]
+  },
+  "仰": {
+    "structure": "⿰亻卬",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "丿",
+      "𠄌",
+      "𠃌",
+      "丨"
+    ],
+    "pinyin": "Yǎng",
+    "pinyinArray": [
+      "Yang"
+    ]
+  },
+  "仲": {
+    "structure": "⿰亻中",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Zhòng",
+    "pinyinArray": [
+      "Zhong"
+    ]
+  },
+  "件": {
+    "structure": "⿰亻牛",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "丿",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Jiàn",
+    "pinyinArray": [
+      "Jian"
+    ]
+  },
+  "价": {
+    "structure": "⿰亻介",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "丿",
+      "㇏",
+      "丿",
+      "丨"
+    ],
+    "pinyin": "Jie",
+    "pinyinArray": [
+      "Jie"
+    ]
+  },
+  "任": {
+    "structure": "⿰亻壬",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "丿",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Rèn",
+    "pinyinArray": [
+      "Ren"
+    ]
+  },
+  "份": {
+    "structure": "⿰亻分",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "丿",
+      "㇏",
+      "𠃌",
+      "丿"
+    ],
+    "pinyin": "Fèn",
+    "pinyinArray": [
+      "Fen"
+    ]
+  },
+  "仿": {
+    "structure": "⿰亻方",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "丶",
+      "一",
+      "𠃌",
+      "丿"
+    ],
+    "pinyin": "Fǎng",
+    "pinyinArray": [
+      "Fang"
+    ]
+  },
+  "企": {
+    "structure": "⿱人止",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丿",
+      "㇏",
+      "丨",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Qǐ",
+    "pinyinArray": [
+      "Qi"
+    ]
+  },
+  "伊": {
+    "structure": "⿰亻尹",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丿"
+    ],
+    "pinyin": "Yī",
+    "pinyinArray": [
+      "Yi"
+    ]
+  },
+  "伍": {
+    "structure": "⿰亻五",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Wǔ",
+    "pinyinArray": [
+      "Wu"
+    ]
+  },
+  "伏": {
+    "structure": "⿰亻犬",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "一",
+      "丿",
+      "㇏",
+      "丶"
+    ],
+    "pinyin": "Fú",
+    "pinyinArray": [
+      "Fu"
+    ]
+  },
+  "伐": {
+    "structure": "⿰亻戈",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "一",
+      "㇂|㇃",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Fá",
+    "pinyinArray": [
+      "Fa"
+    ]
+  },
+  "休": {
+    "structure": "⿰亻木",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Xiū",
+    "pinyinArray": [
+      "Xiu"
+    ]
+  },
+  "众": {
+    "structure": "⿱人从",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丿",
+      "㇏",
+      "丿",
+      "丶",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Zhòng",
+    "pinyinArray": [
+      "Zhong"
+    ]
+  },
+  "优": {
+    "structure": "⿰亻尤",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "一",
+      "丿",
+      "乚",
+      "丶"
+    ],
+    "pinyin": "Yōu",
+    "pinyinArray": [
+      "You"
+    ]
+  },
+  "伙": {
+    "structure": "⿰亻火",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "㇀",
+      "丿",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Huǒ",
+    "pinyinArray": [
+      "Huo"
+    ]
+  },
+  "会": {
+    "structure": "⿱人云",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丿",
+      "㇏",
+      "一",
+      "一",
+      "𠃋",
+      "丶"
+    ],
+    "pinyin": "Huì",
+    "pinyinArray": [
+      "Hui"
+    ]
+  },
+  "伞": {
+    "structure": "⿱人⿻丷十",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丿",
+      "㇏",
+      "丶",
+      "丿",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Sǎn",
+    "pinyinArray": [
+      "San"
+    ]
+  },
+  "伟": {
+    "structure": "⿰亻韦",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "一",
+      "一",
+      "𠃌",
+      "丨"
+    ],
+    "pinyin": "Wěi",
+    "pinyinArray": [
+      "Wei"
+    ]
+  },
+  "传": {
+    "structure": "⿰亻专",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "一",
+      "一",
+      "ㄣ|𠃑",
+      "丶"
+    ],
+    "pinyin": "Chuán",
+    "pinyinArray": [
+      "Chuan"
+    ]
+  },
+  "伤": {
+    "structure": "⿰亻⿱𠂉力",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "丿",
+      "一",
+      "𠃌",
+      "丿"
+    ],
+    "pinyin": "Shāng",
+    "pinyinArray": [
+      "Shang"
+    ]
+  },
+  "伦": {
+    "structure": "⿰亻仑",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "丿",
+      "㇏",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Lún",
+    "pinyinArray": [
+      "Lun"
+    ]
+  },
+  "伪": {
+    "structure": "⿰亻为",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "丶",
+      "丿",
+      "𠃌",
+      "丶"
+    ],
+    "pinyin": "Wěi",
+    "pinyinArray": [
+      "Wei"
+    ]
+  },
+  "伯": {
+    "structure": "⿰亻白",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Bó",
+    "pinyinArray": [
+      "Bo"
+    ]
+  },
+  "估": {
+    "structure": "⿰亻古",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Gù",
+    "pinyinArray": [
+      "Gu"
+    ]
+  },
+  "伴": {
+    "structure": "⿰亻半",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Bàn",
+    "pinyinArray": [
+      "Ban"
+    ]
+  },
+  "伶": {
+    "structure": "⿰亻令",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "丿",
+      "㇏",
+      "丶",
+      "㇇|乛",
+      "丶"
+    ],
+    "pinyin": "Líng",
+    "pinyinArray": [
+      "Ling"
+    ]
+  },
+  "伸": {
+    "structure": "⿰亻申",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Shēn",
+    "pinyinArray": [
+      "Shen"
+    ]
+  },
+  "伺": {
+    "structure": "⿰亻司",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "𠃌",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Sì",
+    "pinyinArray": [
+      "Si"
+    ]
+  },
+  "似": {
+    "structure": "⿰亻以",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "𠄌",
+      "丶",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Shì",
+    "pinyinArray": [
+      "Shi"
+    ]
+  },
+  "佃": {
+    "structure": "⿰亻田",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Diàn",
+    "pinyinArray": [
+      "Dian"
+    ]
+  },
+  "但": {
+    "structure": "⿰亻旦",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一"
+    ],
+    "pinyin": "Dàn",
+    "pinyinArray": [
+      "Dan"
+    ]
+  },
+  "位": {
+    "structure": "⿰亻立",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "一"
+    ],
+    "pinyin": "Wèi",
+    "pinyinArray": [
+      "Wei"
+    ]
+  },
+  "低": {
+    "structure": "⿰亻氐",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "丿",
+      "𠄌",
+      "一",
+      "㇂|㇃",
+      "丶"
+    ],
+    "pinyin": "Dī",
+    "pinyinArray": [
+      "Di"
+    ]
+  },
+  "住": {
+    "structure": "⿰亻主",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "丶",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Zhù",
+    "pinyinArray": [
+      "Zhu"
+    ]
+  },
+  "佑": {
+    "structure": "⿰亻右",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Yòu",
+    "pinyinArray": [
+      "You"
+    ]
+  },
+  "体": {
+    "structure": "⿰亻本",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "一",
+      "丨",
+      "丿",
+      "㇏",
+      "一"
+    ],
+    "pinyin": "Tǐ",
+    "pinyinArray": [
+      "Ti"
+    ]
+  },
+  "何": {
+    "structure": "⿰亻可",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "亅"
+    ],
+    "pinyin": "Hé",
+    "pinyinArray": [
+      "He"
+    ]
+  },
+  "余": {
+    "structure": "⿱亼朩",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丿",
+      "㇏",
+      "一",
+      "一",
+      "亅",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Yú",
+    "pinyinArray": [
+      "Yu"
+    ]
+  },
+  "佛": {
+    "structure": "⿰亻弗",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "㇉",
+      "丿",
+      "丨"
+    ],
+    "pinyin": "Fó",
+    "pinyinArray": [
+      "Fo"
+    ]
+  },
+  "作": {
+    "structure": "⿰亻乍",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "丿",
+      "一",
+      "丨",
+      "一",
+      "一"
+    ],
+    "pinyin": "Zuò",
+    "pinyinArray": [
+      "Zuo"
+    ]
+  },
+  "你": {
+    "structure": "⿰亻尔",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "丿",
+      "㇇|乛",
+      "亅",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Nǐ",
+    "pinyinArray": [
+      "Ni"
+    ]
+  },
+  "佣": {
+    "structure": "⿰亻用",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Yòng",
+    "pinyinArray": [
+      "Yong"
+    ]
+  },
+  "佩": {
+    "structure": "⿰亻𫥞",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "丿",
+      "⺄",
+      "一",
+      "丨",
+      "𠃌",
+      "丨"
+    ],
+    "pinyin": "Pèi",
+    "pinyinArray": [
+      "Pei"
+    ]
+  },
+  "佳": {
+    "structure": "⿰亻圭",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "一",
+      "丨",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Jiā",
+    "pinyinArray": [
+      "Jia"
+    ]
+  },
+  "使": {
+    "structure": "⿰亻吏",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Shǐ",
+    "pinyinArray": [
+      "Shi"
+    ]
+  },
+  "侄": {
+    "structure": "⿰亻至",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "一",
+      "𠃋",
+      "丶",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Zhí",
+    "pinyinArray": [
+      "Zhi"
+    ]
+  },
+  "侈": {
+    "structure": "⿰亻多",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "丿",
+      "㇇|乛",
+      "丶",
+      "丿",
+      "㇇|乛",
+      "丶"
+    ],
+    "pinyin": "Chǐ",
+    "pinyinArray": [
+      "Chi"
+    ]
+  },
+  "例": {
+    "structure": "⿰亻列",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "一",
+      "丿",
+      "㇇|乛",
+      "丶",
+      "丨",
+      "亅"
+    ],
+    "pinyin": "Lì",
+    "pinyinArray": [
+      "Li"
+    ]
+  },
+  "侍": {
+    "structure": "⿰亻寺",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "一",
+      "丨",
+      "一",
+      "一",
+      "亅",
+      "丶"
+    ],
+    "pinyin": "Shì",
+    "pinyinArray": [
+      "Shi"
+    ]
+  },
+  "供": {
+    "structure": "⿰亻共",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Gòng",
+    "pinyinArray": [
+      "Gong"
+    ]
+  },
+  "依": {
+    "structure": "⿰亻衣",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "丶",
+      "一",
+      "丿",
+      "𠄌",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Yǐ",
+    "pinyinArray": [
+      "Yi"
+    ]
+  },
+  "侠": {
+    "structure": "⿰亻夹",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Xiá",
+    "pinyinArray": [
+      "Xia"
+    ]
+  },
+  "侣": {
+    "structure": "⿰亻吕",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Lǚ",
+    "pinyinArray": [
+      "Lü"
+    ]
+  },
+  "侥": {
+    "structure": "⿰亻尧",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "一",
+      "㇂|㇃",
+      "丿",
+      "一",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Jiǎo",
+    "pinyinArray": [
+      "Jiao"
+    ]
+  },
+  "侦": {
+    "structure": "⿰亻贞",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Zhēn",
+    "pinyinArray": [
+      "Zhen"
+    ]
+  },
+  "侧": {
+    "structure": "⿰亻则",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶",
+      "丨",
+      "亅"
+    ],
+    "pinyin": "Cè",
+    "pinyinArray": [
+      "Ce"
+    ]
+  },
+  "侨": {
+    "structure": "⿰亻乔",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "丿",
+      "一",
+      "丿",
+      "㇏",
+      "丿",
+      "丨"
+    ],
+    "pinyin": "Qiáo",
+    "pinyinArray": [
+      "Qiao"
+    ]
+  },
+  "侮": {
+    "structure": "⿰亻每[GTK]",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "丿",
+      "一",
+      "㇄",
+      "𠃌",
+      "丶",
+      "一",
+      "丶"
+    ],
+    "pinyin": "Wǔ",
+    "pinyinArray": [
+      "Wu"
+    ]
+  },
+  "侯": {
+    "structure": "⿰亻⿱ユ矢",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "一",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Hóu",
+    "pinyinArray": [
+      "Hou"
+    ]
+  },
+  "侵": {
+    "structure": "⿰亻𠬶",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "㇀",
+      "㇇|乛",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Qīn",
+    "pinyinArray": [
+      "Qin"
+    ]
+  },
+  "便": {
+    "structure": "⿰亻更",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Biàn",
+    "pinyinArray": [
+      "Bian"
+    ]
+  },
+  "促": {
+    "structure": "⿰亻足",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Cù",
+    "pinyinArray": [
+      "Cu"
+    ]
+  },
+  "俄": {
+    "structure": "⿰亻我",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "丿",
+      "一",
+      "亅",
+      "㇀",
+      "㇂|㇃",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "É",
+    "pinyinArray": [
+      "E"
+    ]
+  },
+  "俊": {
+    "structure": "⿰亻夋",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "𠃋",
+      "丶",
+      "丿",
+      "丶",
+      "丿",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Jùn",
+    "pinyinArray": [
+      "Jun"
+    ]
+  },
+  "俏": {
+    "structure": "⿰亻肖",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "丨",
+      "丶",
+      "丿",
+      "丨",
+      "𠃌",
+      "一",
+      "一"
+    ],
+    "pinyin": "Qiào",
+    "pinyinArray": [
+      "Qiao"
+    ]
+  },
+  "俐": {
+    "structure": "⿰亻利",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丨",
+      "亅"
+    ],
+    "pinyin": "Lì",
+    "pinyinArray": [
+      "Li"
+    ]
+  },
+  "俗": {
+    "structure": "⿰亻谷",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "丿",
+      "丶",
+      "丿",
+      "㇏",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Sú",
+    "pinyinArray": [
+      "Su"
+    ]
+  },
+  "俘": {
+    "structure": "⿰亻孚",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "丿",
+      "丶",
+      "丶",
+      "丿",
+      "㇇|乛",
+      "亅",
+      "一"
+    ],
+    "pinyin": "Fú",
+    "pinyinArray": [
+      "Fu"
+    ]
+  },
+  "保": {
+    "structure": "⿰亻呆",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Bǎo",
+    "pinyinArray": [
+      "Bao"
+    ]
+  },
+  "信": {
+    "structure": "⿰亻言",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "丶",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Xìn",
+    "pinyinArray": [
+      "Xin"
+    ]
+  },
+  "俩": {
+    "structure": "⿰亻两",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "一",
+      "丨",
+      "𠃌",
+      "丿",
+      "丶",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Liǎng",
+    "pinyinArray": [
+      "Liang"
+    ]
+  },
+  "俭": {
+    "structure": "⿰亻佥",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "丿",
+      "㇏",
+      "一",
+      "丶",
+      "丶",
+      "丿",
+      "一"
+    ],
+    "pinyin": "Jiǎn",
+    "pinyinArray": [
+      "Jian"
+    ]
+  },
+  "修": {
+    "structure": "⿰⿰亻丨⿱夂彡[G]",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "丨",
+      "丿",
+      "㇇|乛",
+      "㇏",
+      "丿",
+      "丿",
+      "丿"
+    ],
+    "pinyin": "Xiū",
+    "pinyinArray": [
+      "Xiu"
+    ]
+  },
+  "俯": {
+    "structure": "⿰亻府",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "丶",
+      "一",
+      "丿",
+      "丿",
+      "丨",
+      "一",
+      "亅",
+      "丶"
+    ],
+    "pinyin": "Fǔ",
+    "pinyinArray": [
+      "Fu"
+    ]
+  },
+  "俱": {
+    "structure": "⿰亻具",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Jù",
+    "pinyinArray": [
+      "Ju"
+    ]
+  },
+  "俺": {
+    "structure": "⿰亻奄",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "一",
+      "丿",
+      "㇏",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "乚"
+    ],
+    "pinyin": "Ǎn",
+    "pinyinArray": [
+      "An"
+    ]
+  },
+  "倍": {
+    "structure": "⿰亻咅",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Bèi",
+    "pinyinArray": [
+      "Bei"
+    ]
+  },
+  "倒": {
+    "structure": "⿰亻到",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "一",
+      "𠃋",
+      "丶",
+      "一",
+      "丨",
+      "㇀",
+      "丨",
+      "亅"
+    ],
+    "pinyin": "Dǎo",
+    "pinyinArray": [
+      "Dao"
+    ]
+  },
+  "倔": {
+    "structure": "⿰亻屈",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "㇄",
+      "丨",
+      "丨",
+      "㇄",
+      "丨"
+    ],
+    "pinyin": "Jué",
+    "pinyinArray": [
+      "Jue"
+    ]
+  },
+  "倘": {
+    "structure": "⿰亻尚[GTV]",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "丨",
+      "丶",
+      "丿",
+      "丨",
+      "𠃌",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Tǎng",
+    "pinyinArray": [
+      "Tang"
+    ]
+  },
+  "候": {
+    "structure": "⿰⿰亻丨⿱ユ矢",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "一",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Hòu",
+    "pinyinArray": [
+      "Hou"
+    ]
+  },
+  "倚": {
+    "structure": "⿰亻奇",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "一",
+      "丿",
+      "丶",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "亅"
+    ],
+    "pinyin": "Yǐ",
+    "pinyinArray": [
+      "Yi"
+    ]
+  },
+  "借": {
+    "structure": "⿰亻昔",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Jiè",
+    "pinyinArray": [
+      "Jie"
+    ]
+  },
+  "倡": {
+    "structure": "⿰亻昌",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Chàng",
+    "pinyinArray": [
+      "Chang"
+    ]
+  },
+  "倦": {
+    "structure": "⿰亻卷[GTKV]",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "丿",
+      "㇏",
+      "𠃌",
+      "乚"
+    ],
+    "pinyin": "Juàn",
+    "pinyinArray": [
+      "Juan"
+    ]
+  },
+  "债": {
+    "structure": "⿰亻责",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Zhài",
+    "pinyinArray": [
+      "Zhai"
+    ]
+  },
+  "值": {
+    "structure": "⿰亻直",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "一"
+    ],
+    "pinyin": "Zhí",
+    "pinyinArray": [
+      "Zhi"
+    ]
+  },
+  "倾": {
+    "structure": "⿰亻顷",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "一",
+      "𠄌",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Qīng",
+    "pinyinArray": [
+      "Qing"
+    ]
+  },
+  "假": {
+    "structure": "⿰亻叚",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "一",
+      "𠃍",
+      "一",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Jiǎ",
+    "pinyinArray": [
+      "Jia"
+    ]
+  },
+  "偎": {
+    "structure": "⿰亻畏",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "一",
+      "𠄌",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Wēi",
+    "pinyinArray": [
+      "Wei"
+    ]
+  },
+  "偏": {
+    "structure": "⿰亻扁",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "丶",
+      "𠃍",
+      "一",
+      "丿",
+      "丨",
+      "𠃌",
+      "一",
+      "丨",
+      "丨"
+    ],
+    "pinyin": "Piān",
+    "pinyinArray": [
+      "Pian"
+    ]
+  },
+  "做": {
+    "structure": "⿰亻故",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Zuò",
+    "pinyinArray": [
+      "Zuo"
+    ]
+  },
+  "停": {
+    "structure": "⿰亻亭",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "丶",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "㇀",
+      "㇇|乛",
+      "一",
+      "亅"
+    ],
+    "pinyin": "Tíng",
+    "pinyinArray": [
+      "Ting"
+    ]
+  },
+  "健": {
+    "structure": "⿰亻建",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Jiàn",
+    "pinyinArray": [
+      "Jian"
+    ]
+  },
+  "偶": {
+    "structure": "⿰亻禺",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "𠃌",
+      "丨",
+      "㇀",
+      "丶"
+    ],
+    "pinyin": "Ǒu",
+    "pinyinArray": [
+      "Ou"
+    ]
+  },
+  "偷": {
+    "structure": "⿰亻俞",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "丿",
+      "㇏",
+      "一",
+      "丨",
+      "𠃌",
+      "一",
+      "一",
+      "丨",
+      "亅"
+    ],
+    "pinyin": "Tōu",
+    "pinyinArray": [
+      "Tou"
+    ]
+  },
+  "偿": {
+    "structure": "⿰亻尝",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "丨",
+      "丶",
+      "丿",
+      "㇀",
+      "㇇|乛",
+      "一",
+      "一",
+      "𠃋",
+      "丶"
+    ],
+    "pinyin": "Cháng",
+    "pinyinArray": [
+      "Chang"
+    ]
+  },
+  "傀": {
+    "structure": "⿰亻鬼",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "乚",
+      "𠃋",
+      "丶"
+    ],
+    "pinyin": "Kuǐ",
+    "pinyinArray": [
+      "Kui"
+    ]
+  },
+  "傅": {
+    "structure": "⿰亻尃",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "丶",
+      "一",
+      "亅",
+      "丶"
+    ],
+    "pinyin": "Fù",
+    "pinyinArray": [
+      "Fu"
+    ]
+  },
+  "傍": {
+    "structure": "⿰亻旁",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "㇀",
+      "㇇|乛",
+      "丶",
+      "一",
+      "𠃌",
+      "丿"
+    ],
+    "pinyin": "Bàng",
+    "pinyinArray": [
+      "Bang"
+    ]
+  },
+  "储": {
+    "structure": "⿰亻诸",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "丶",
+      "㇊",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Chǔ",
+    "pinyinArray": [
+      "Chu"
+    ]
+  },
+  "催": {
+    "structure": "⿰亻崔",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "丨",
+      "㇄",
+      "丨",
+      "丿",
+      "丨",
+      "丶",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Cuī",
+    "pinyinArray": [
+      "Cui"
+    ]
+  },
+  "傲": {
+    "structure": "⿰亻敖",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "𠃌",
+      "丿",
+      "丿",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Ào",
+    "pinyinArray": [
+      "Ao"
+    ]
+  },
+  "傻": {
+    "structure": "⿰亻𡕩",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "丿",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶",
+      "一",
+      "丿",
+      "丶",
+      "丿",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Shǎ",
+    "pinyinArray": [
+      "Sha"
+    ]
+  },
+  "像": {
+    "structure": "⿰亻象",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "丿",
+      "㇇|乛",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "㇁",
+      "丿",
+      "丿",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Xiàng",
+    "pinyinArray": [
+      "Xiang"
+    ]
+  },
+  "僚": {
+    "structure": "⿰亻尞",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "一",
+      "丿",
+      "㇏",
+      "丶",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "亅",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Liáo",
+    "pinyinArray": [
+      "Liao"
+    ]
+  },
+  "僧": {
+    "structure": "⿰亻曾[GTKV]",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "丶",
+      "丿",
+      "丨",
+      "𠃍",
+      "丨",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Sēng",
+    "pinyinArray": [
+      "Seng"
+    ]
+  },
+  "僵": {
+    "structure": "⿰亻畺",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "一"
+    ],
+    "pinyin": "Jiāng",
+    "pinyinArray": [
+      "Jiang"
+    ]
+  },
+  "僻": {
+    "structure": "⿰亻辟",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Pì",
+    "pinyinArray": [
+      "Pi"
+    ]
+  },
+  "儒": {
+    "structure": "⿰亻需",
+    "strokeCount": 16,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "一",
+      "㇀",
+      "㇇|乛",
+      "丨",
+      "丶",
+      "丶",
+      "丶",
+      "丶",
+      "一",
+      "丿",
+      "丨",
+      "𠃌",
+      "丨",
+      "丨"
+    ],
+    "pinyin": "Rú",
+    "pinyinArray": [
+      "Ru"
+    ]
+  },
+  "儡": {
+    "structure": "⿰亻畾",
+    "strokeCount": 17,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Léi",
+    "pinyinArray": [
+      "Lei"
+    ]
+  },
+  "儿": {
+    "structure": "⿰丿乚",
+    "strokeCount": 2,
+    "strokeShapes": [
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Ér",
+    "pinyinArray": [
+      "Er"
+    ]
+  },
+  "允": {
+    "structure": "⿱厶儿",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "𠃋",
+      "丶",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Yǔn",
+    "pinyinArray": [
+      "Yun"
+    ]
+  },
+  "元": {
+    "structure": "⿱一兀",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "一",
+      "一",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Yuán",
+    "pinyinArray": [
+      "Yuan"
+    ]
+  },
+  "兄": {
+    "structure": "⿱口儿",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Xiōng",
+    "pinyinArray": [
+      "Xiong"
+    ]
+  },
+  "充": {
+    "structure": "⿱𠫓儿",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "𠃋",
+      "丶",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Chōng",
+    "pinyinArray": [
+      "Chong"
+    ]
+  },
+  "兆": {
+    "structure": "兆",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丿",
+      "丶",
+      "㇀",
+      "乚",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Zhào",
+    "pinyinArray": [
+      "Zhao"
+    ]
+  },
+  "先": {
+    "structure": "⿱𠂒儿",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Xiān",
+    "pinyinArray": [
+      "Xian"
+    ]
+  },
+  "光": {
+    "structure": "⿱⺌兀",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丨",
+      "丶",
+      "丿",
+      "一",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Guāng",
+    "pinyinArray": [
+      "Guang"
+    ]
+  },
+  "克": {
+    "structure": "⿱古儿",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Kè",
+    "pinyinArray": [
+      "Ke"
+    ]
+  },
+  "免": {
+    "structure": "⿱𠂊⑤[GTK]",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丿",
+      "㇇|乛",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Miǎn",
+    "pinyinArray": [
+      "Mian"
+    ]
+  },
+  "兑": {
+    "structure": "⿱丷兄",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丶",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Duì",
+    "pinyinArray": [
+      "Dui"
+    ]
+  },
+  "兔": {
+    "structure": "⿷免丶",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丿",
+      "㇇|乛",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "乚",
+      "丶"
+    ],
+    "pinyin": "Tù",
+    "pinyinArray": [
+      "Tu"
+    ]
+  },
+  "党": {
+    "structure": "⿱龸兄",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丨",
+      "丶",
+      "丿",
+      "㇀",
+      "㇇|乛",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Dǎng",
+    "pinyinArray": [
+      "Dang"
+    ]
+  },
+  "兜": {
+    "structure": "⿱⿲②白コ儿",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "𠄌",
+      "𠃍",
+      "一",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Dōu",
+    "pinyinArray": [
+      "Dou"
+    ]
+  },
+  "兢": {
+    "structure": "⿰克克",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "𠄌",
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Jīng",
+    "pinyinArray": [
+      "Jing"
+    ]
+  },
+  "入": {
+    "structure": "入",
+    "strokeCount": 2,
+    "strokeShapes": [
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Rù",
+    "pinyinArray": [
+      "Ru"
+    ]
+  },
+  "全": {
+    "structure": "⿱人王[GJ]",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丿",
+      "㇏",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Quán",
+    "pinyinArray": [
+      "Quan"
+    ]
+  },
+  "八": {
+    "structure": "八",
+    "strokeCount": 2,
+    "strokeShapes": [
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Bā",
+    "pinyinArray": [
+      "Ba"
+    ]
+  },
+  "公": {
+    "structure": "⿱八厶",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "丿",
+      "㇏",
+      "𠃋",
+      "丶"
+    ],
+    "pinyin": "Gōng",
+    "pinyinArray": [
+      "Gong"
+    ]
+  },
+  "六": {
+    "structure": "⿱亠八",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Liù",
+    "pinyinArray": [
+      "Liu"
+    ]
+  },
+  "兰": {
+    "structure": "⿱丷三",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "一"
+    ],
+    "pinyin": "Lán",
+    "pinyinArray": [
+      "Lan"
+    ]
+  },
+  "共": {
+    "structure": "⿱龷八",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Gòng",
+    "pinyinArray": [
+      "Gong"
+    ]
+  },
+  "关": {
+    "structure": "⿱丷天[G]",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Guān",
+    "pinyinArray": [
+      "Guan"
+    ]
+  },
+  "兴": {
+    "structure": "⿳𭕄一八",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "丿",
+      "一",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Xìng",
+    "pinyinArray": [
+      "Xing"
+    ]
+  },
+  "兵": {
+    "structure": "⿱丘八",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Bīng",
+    "pinyinArray": [
+      "Bing"
+    ]
+  },
+  "其": {
+    "structure": "⿱⿱⑤一八",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Qí",
+    "pinyinArray": [
+      "Qi"
+    ]
+  },
+  "具": {
+    "structure": "⿱⿴且一八[GTKV]",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Jù",
+    "pinyinArray": [
+      "Ju"
+    ]
+  },
+  "典": {
+    "structure": "⿱⑥八",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Diǎn",
+    "pinyinArray": [
+      "Dian"
+    ]
+  },
+  "养": {
+    "structure": "⿳䒑夫⿰丿丨",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "㇏",
+      "丿",
+      "丨"
+    ],
+    "pinyin": "Yǎng",
+    "pinyinArray": [
+      "Yang"
+    ]
+  },
+  "兼": {
+    "structure": "⿱䒑⿻⿻コ一④",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "丿",
+      "一",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Jiān",
+    "pinyinArray": [
+      "Jian"
+    ]
+  },
+  "兽": {
+    "structure": "⿳𬎿一口",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丶",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Shòu",
+    "pinyinArray": [
+      "Shou"
+    ]
+  },
+  "冀": {
+    "structure": "⿱北異",
+    "strokeCount": 16,
+    "strokeShapes": [
+      "丨",
+      "一",
+      "㇀",
+      "丿",
+      "乚",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Jì",
+    "pinyinArray": [
+      "Ji"
+    ]
+  },
+  "内": {
+    "structure": "⿻冂人",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "丨",
+      "𠃌",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Nèi",
+    "pinyinArray": [
+      "Nei"
+    ]
+  },
+  "冈": {
+    "structure": "⿵冂㐅",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "丨",
+      "𠃌",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Gāng",
+    "pinyinArray": [
+      "Gang"
+    ]
+  },
+  "册": {
+    "structure": "册",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "丿",
+      "𠃌",
+      "一"
+    ],
+    "pinyin": "Cè",
+    "pinyinArray": [
+      "Ce"
+    ]
+  },
+  "再": {
+    "structure": "⿱一冉",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "𠃌",
+      "丨",
+      "一",
+      "一"
+    ],
+    "pinyin": "Zài",
+    "pinyinArray": [
+      "Zai"
+    ]
+  },
+  "冒": {
+    "structure": "⿱冃目[GTKV]",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一"
+    ],
+    "pinyin": "Mào",
+    "pinyinArray": [
+      "Mao"
+    ]
+  },
+  "冕": {
+    "structure": "⿱冃免",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "㇇|乛",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Miǎn",
+    "pinyinArray": [
+      "Mian"
+    ]
+  },
+  "冗": {
+    "structure": "⿱冖几",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "㇀",
+      "㇇|乛",
+      "丿",
+      "⺄"
+    ],
+    "pinyin": "Rǒng",
+    "pinyinArray": [
+      "Rong"
+    ]
+  },
+  "写": {
+    "structure": "⿱冖与",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "㇀",
+      "㇇|乛",
+      "一",
+      "㇉",
+      "一"
+    ],
+    "pinyin": "Xiě",
+    "pinyinArray": [
+      "Xie"
+    ]
+  },
+  "军": {
+    "structure": "⿱冖车",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "㇀",
+      "㇇|乛",
+      "一",
+      "𠃋",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Jūn",
+    "pinyinArray": [
+      "Jun"
+    ]
+  },
+  "农": {
+    "structure": "⿻冖𧘇",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "㇀",
+      "㇇|乛",
+      "丿",
+      "𠄌",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Nóng",
+    "pinyinArray": [
+      "Nong"
+    ]
+  },
+  "冠": {
+    "structure": "⿱冖㝴",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "㇀",
+      "㇇|乛",
+      "一",
+      "一",
+      "丿",
+      "乚",
+      "一",
+      "亅",
+      "丶"
+    ],
+    "pinyin": "Guàn",
+    "pinyinArray": [
+      "Guan"
+    ]
+  },
+  "冤": {
+    "structure": "⿱冖兔",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "㇀",
+      "㇇|乛",
+      "丿",
+      "㇇|乛",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "乚",
+      "丶"
+    ],
+    "pinyin": "Yuān",
+    "pinyinArray": [
+      "Yuan"
+    ]
+  },
+  "冬": {
+    "structure": "⿱夂⺀",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丿",
+      "㇇|乛",
+      "㇏",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Dōng",
+    "pinyinArray": [
+      "Dong"
+    ]
+  },
+  "冯": {
+    "structure": "⿰冫马",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "𠃍",
+      "㇉",
+      "一"
+    ],
+    "pinyin": "Féng",
+    "pinyinArray": [
+      "Feng"
+    ]
+  },
+  "冰": {
+    "structure": "⿰冫水",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "亅",
+      "㇇|乛",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Bīng",
+    "pinyinArray": [
+      "Bing"
+    ]
+  },
+  "冲": {
+    "structure": "⿰冫中",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "丨",
+      "𠃍",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Chòng",
+    "pinyinArray": [
+      "Chong"
+    ]
+  },
+  "决": {
+    "structure": "⿰冫夬",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "𠃍",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Jué",
+    "pinyinArray": [
+      "Jue"
+    ]
+  },
+  "况": {
+    "structure": "⿰冫兄",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Kuàng",
+    "pinyinArray": [
+      "Kuang"
+    ]
+  },
+  "冶": {
+    "structure": "⿰冫台",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "𠃋",
+      "丶",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Yě",
+    "pinyinArray": [
+      "Ye"
+    ]
+  },
+  "冷": {
+    "structure": "⿰冫令",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "丿",
+      "㇏",
+      "丶",
+      "㇇|乛",
+      "丶"
+    ],
+    "pinyin": "Lěng",
+    "pinyinArray": [
+      "Leng"
+    ]
+  },
+  "冻": {
+    "structure": "⿰冫东",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "一",
+      "𠃋",
+      "亅",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Dòng",
+    "pinyinArray": [
+      "Dong"
+    ]
+  },
+  "净": {
+    "structure": "⿰冫争",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "丿",
+      "㇇|乛",
+      "𠃍",
+      "一",
+      "一",
+      "亅"
+    ],
+    "pinyin": "Jìng",
+    "pinyinArray": [
+      "Jing"
+    ]
+  },
+  "凄": {
+    "structure": "⿰冫妻",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "一",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "𡿨",
+      "丿",
+      "一"
+    ],
+    "pinyin": "Qī",
+    "pinyinArray": [
+      "Qi"
+    ]
+  },
+  "准": {
+    "structure": "⿰冫隹",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "丿",
+      "丨",
+      "丶",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Zhǔn",
+    "pinyinArray": [
+      "Zhun"
+    ]
+  },
+  "凉": {
+    "structure": "⿰冫京",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "丶",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "亅",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Liáng",
+    "pinyinArray": [
+      "Liang"
+    ]
+  },
+  "凌": {
+    "structure": "⿰冫夌",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "丶",
+      "丿",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Líng",
+    "pinyinArray": [
+      "Ling"
+    ]
+  },
+  "减": {
+    "structure": "⿰冫咸",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "一",
+      "丿",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "㇂|㇃",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Jiǎn",
+    "pinyinArray": [
+      "Jian"
+    ]
+  },
+  "凑": {
+    "structure": "⿰冫奏[GT]",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "㇏",
+      "一",
+      "一",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Còu",
+    "pinyinArray": [
+      "Cou"
+    ]
+  },
+  "凛": {
+    "structure": "⿰冫禀",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "丶",
+      "一",
+      "丨",
+      "𠃍",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "一",
+      "亅",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Lǐn",
+    "pinyinArray": [
+      "Lin"
+    ]
+  },
+  "凝": {
+    "structure": "⿰冫疑",
+    "strokeCount": 16,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "丿",
+      "乚",
+      "丿",
+      "一",
+      "一",
+      "丿",
+      "丶",
+      "㇇|乛",
+      "丶",
+      "㇇|乛",
+      "丨",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Níng",
+    "pinyinArray": [
+      "Ning"
+    ]
+  },
+  "几": {
+    "structure": "几",
+    "strokeCount": 2,
+    "strokeShapes": [
+      "丿",
+      "⺄"
+    ],
+    "pinyin": "Jǐ",
+    "pinyinArray": [
+      "Ji"
+    ]
+  },
+  "凡": {
+    "structure": "⿵几丶",
+    "strokeCount": 3,
+    "strokeShapes": [
+      "丿",
+      "⺄",
+      "丶"
+    ],
+    "pinyin": "Fán",
+    "pinyinArray": [
+      "Fan"
+    ]
+  },
+  "凤": {
+    "structure": "⿵几又",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "丿",
+      "⺄",
+      "㇇|乛",
+      "丶"
+    ],
+    "pinyin": "Fèng",
+    "pinyinArray": [
+      "Feng"
+    ]
+  },
+  "凫": {
+    "structure": "⿹④几",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "丶",
+      "㇉",
+      "丿",
+      "⺄"
+    ],
+    "pinyin": "Fú",
+    "pinyinArray": [
+      "Fu"
+    ]
+  },
+  "凭": {
+    "structure": "⿱任几",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "丿",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "⺄"
+    ],
+    "pinyin": "Píng",
+    "pinyinArray": [
+      "Ping"
+    ]
+  },
+  "凯": {
+    "structure": "⿰岂几",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丨",
+      "㇄",
+      "丨",
+      "𠃍",
+      "一",
+      "𠄌",
+      "丿",
+      "⺄"
+    ],
+    "pinyin": "Kǎi",
+    "pinyinArray": [
+      "Kai"
+    ]
+  },
+  "凰": {
+    "structure": "⿵几皇",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丿",
+      "⺄",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Huáng",
+    "pinyinArray": [
+      "Huang"
+    ]
+  },
+  "凳": {
+    "structure": "⿱登几",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "㇇|乛",
+      "丶",
+      "丿",
+      "丿",
+      "㇏",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丿",
+      "⺄"
+    ],
+    "pinyin": "Dèng",
+    "pinyinArray": [
+      "Deng"
+    ]
+  },
+  "凶": {
+    "structure": "⿶凵㐅",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "丿",
+      "丶",
+      "㇄",
+      "丨"
+    ],
+    "pinyin": "Xiōng",
+    "pinyinArray": [
+      "Xiong"
+    ]
+  },
+  "凸": {
+    "structure": "凸",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丨",
+      "一",
+      "丨",
+      "㇎",
+      "一"
+    ],
+    "pinyin": "Tū",
+    "pinyinArray": [
+      "Tu"
+    ]
+  },
+  "凹": {
+    "structure": "凹",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丨",
+      "㇅|㇍",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Āo",
+    "pinyinArray": [
+      "Ao"
+    ]
+  },
+  "出": {
+    "structure": "⿱屮凵",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "㇄",
+      "丨",
+      "丨",
+      "㇄",
+      "丨"
+    ],
+    "pinyin": "Chū",
+    "pinyinArray": [
+      "Chu"
+    ]
+  },
+  "击": {
+    "structure": "⿱⿻二丨凵",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "一",
+      "一",
+      "丨",
+      "㇄",
+      "丨"
+    ],
+    "pinyin": "Jī",
+    "pinyinArray": [
+      "Ji"
+    ]
+  },
+  "函": {
+    "structure": "⿶凵⿻了⿱丷八[GTV]",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "㇇|乛",
+      "亅",
+      "丶",
+      "㇀",
+      "丿",
+      "丶",
+      "㇄",
+      "丨"
+    ],
+    "pinyin": "Hán",
+    "pinyinArray": [
+      "Han"
+    ]
+  },
+  "凿": {
+    "structure": "⿶凵丵",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丨",
+      "丨",
+      "丶",
+      "丿",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "丨",
+      "㇄",
+      "丨"
+    ],
+    "pinyin": "Záo",
+    "pinyinArray": [
+      "Zao"
+    ]
+  },
+  "刀": {
+    "structure": "⿹𠃌丿",
+    "strokeCount": 2,
+    "strokeShapes": [
+      "𠃌",
+      "丿"
+    ],
+    "pinyin": "Dāo",
+    "pinyinArray": [
+      "Dao"
+    ]
+  },
+  "刁": {
+    "structure": "⿹𠃌㇀",
+    "strokeCount": 2,
+    "strokeShapes": [
+      "𠃌",
+      "㇀"
+    ],
+    "pinyin": "Diāo",
+    "pinyinArray": [
+      "Diao"
+    ]
+  },
+  "刃": {
+    "structure": "⿹刀丿[GK]",
+    "strokeCount": 3,
+    "strokeShapes": [
+      "𠃌",
+      "丿",
+      "㇀"
+    ],
+    "pinyin": "Rèn",
+    "pinyinArray": [
+      "Ren"
+    ]
+  },
+  "分": {
+    "structure": "⿱八刀",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "丿",
+      "㇏",
+      "𠃌",
+      "丿"
+    ],
+    "pinyin": "Fēn",
+    "pinyinArray": [
+      "Fen"
+    ]
+  },
+  "切": {
+    "structure": "⿰七刀",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "一",
+      "𠄌",
+      "𠃌",
+      "丿"
+    ],
+    "pinyin": "Qiè",
+    "pinyinArray": [
+      "Qie"
+    ]
+  },
+  "刊": {
+    "structure": "⿰干刂",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "一",
+      "一",
+      "丨",
+      "丨",
+      "亅"
+    ],
+    "pinyin": "Kān",
+    "pinyinArray": [
+      "Kan"
+    ]
+  },
+  "刑": {
+    "structure": "⿰开刂",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "一",
+      "一",
+      "丿",
+      "丨",
+      "丨",
+      "亅"
+    ],
+    "pinyin": "Xíng",
+    "pinyinArray": [
+      "Xing"
+    ]
+  },
+  "划": {
+    "structure": "⿰戈刂",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "一",
+      "㇂|㇃",
+      "丿",
+      "丶",
+      "丨",
+      "亅"
+    ],
+    "pinyin": "Huá",
+    "pinyinArray": [
+      "Hua"
+    ]
+  },
+  "列": {
+    "structure": "⿰歹刂",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "㇇|乛",
+      "丶",
+      "丨",
+      "亅"
+    ],
+    "pinyin": "Liè",
+    "pinyinArray": [
+      "Lie"
+    ]
+  },
+  "刘": {
+    "structure": "⿰文刂",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "丶",
+      "丨",
+      "亅"
+    ],
+    "pinyin": "Liú",
+    "pinyinArray": [
+      "Liu"
+    ]
+  },
+  "则": {
+    "structure": "⿰贝刂",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "丿",
+      "丶",
+      "丨",
+      "亅"
+    ],
+    "pinyin": "Zé",
+    "pinyinArray": [
+      "Ze"
+    ]
+  },
+  "刚": {
+    "structure": "⿰冈刂",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丨",
+      "𠃌",
+      "丿",
+      "丶",
+      "丨",
+      "亅"
+    ],
+    "pinyin": "Gāng",
+    "pinyinArray": [
+      "Gang"
+    ]
+  },
+  "创": {
+    "structure": "⿰仓刂",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丿",
+      "丶",
+      "𠃌",
+      "乚",
+      "丨",
+      "亅"
+    ],
+    "pinyin": "Chuàng",
+    "pinyinArray": [
+      "Chuang"
+    ]
+  },
+  "初": {
+    "structure": "⿰衤刀",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丶",
+      "㇇|乛",
+      "丨",
+      "丿",
+      "丶",
+      "𠃌",
+      "丿"
+    ],
+    "pinyin": "Chū",
+    "pinyinArray": [
+      "Chu"
+    ]
+  },
+  "删": {
+    "structure": "⿰册刂",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "丿",
+      "𠃌",
+      "一",
+      "丨",
+      "亅"
+    ],
+    "pinyin": "Shān",
+    "pinyinArray": [
+      "Shan"
+    ]
+  },
+  "判": {
+    "structure": "⿰半刂",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "丿",
+      "丨",
+      "亅"
+    ],
+    "pinyin": "Pàn",
+    "pinyinArray": [
+      "Pan"
+    ]
+  },
+  "刨": {
+    "structure": "⿰包刂",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "𠃍",
+      "一",
+      "乚",
+      "丨",
+      "亅"
+    ],
+    "pinyin": "Páo",
+    "pinyinArray": [
+      "Pao"
+    ]
+  },
+  "利": {
+    "structure": "⿰禾刂",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丨",
+      "亅"
+    ],
+    "pinyin": "Lì",
+    "pinyinArray": [
+      "Li"
+    ]
+  },
+  "别": {
+    "structure": "⿰另刂",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "𠃌",
+      "丿",
+      "丨",
+      "亅"
+    ],
+    "pinyin": "Bié",
+    "pinyinArray": [
+      "Bie"
+    ]
+  },
+  "刮": {
+    "structure": "⿰舌刂",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "亅"
+    ],
+    "pinyin": "Guā",
+    "pinyinArray": [
+      "Gua"
+    ]
+  },
+  "到": {
+    "structure": "⿰至刂",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "𠃋",
+      "丶",
+      "一",
+      "丨",
+      "㇀",
+      "丨",
+      "亅"
+    ],
+    "pinyin": "Dào",
+    "pinyinArray": [
+      "Dao"
+    ]
+  },
+  "制": {
+    "structure": "⿰⿻牛冂刂",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "丨",
+      "𠃌",
+      "丨",
+      "丨",
+      "亅"
+    ],
+    "pinyin": "Zhì",
+    "pinyinArray": [
+      "Zhi"
+    ]
+  },
+  "刷": {
+    "structure": "⿰𡰯刂",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "𠃍",
+      "一",
+      "丿",
+      "丨",
+      "𠃌",
+      "丨",
+      "丨",
+      "亅"
+    ],
+    "pinyin": "Shuà",
+    "pinyinArray": [
+      "Shua"
+    ]
+  },
+  "券": {
+    "structure": "⿱龹刀[GTJ]",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "丿",
+      "㇏",
+      "𠃌",
+      "丿"
+    ],
+    "pinyin": "Quàn",
+    "pinyinArray": [
+      "Quan"
+    ]
+  },
+  "刹": {
+    "structure": "⿰杀刂",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丿",
+      "丶",
+      "一",
+      "亅",
+      "丿",
+      "丶",
+      "丨",
+      "亅"
+    ],
+    "pinyin": "Shā",
+    "pinyinArray": [
+      "Sha"
+    ]
+  },
+  "刺": {
+    "structure": "⿰朿刂",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "𠃌",
+      "丨",
+      "丿",
+      "丶",
+      "丨",
+      "亅"
+    ],
+    "pinyin": "Cì",
+    "pinyinArray": [
+      "Ci"
+    ]
+  },
+  "刻": {
+    "structure": "⿰亥刂",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "𠃋",
+      "丿",
+      "丿",
+      "丶",
+      "丨",
+      "亅"
+    ],
+    "pinyin": "Kè",
+    "pinyinArray": [
+      "Ke"
+    ]
+  },
+  "刽": {
+    "structure": "⿰会刂",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丿",
+      "丶",
+      "一",
+      "一",
+      "𠃋",
+      "丶",
+      "丨",
+      "亅"
+    ],
+    "pinyin": "Guì",
+    "pinyinArray": [
+      "Gui"
+    ]
+  },
+  "剂": {
+    "structure": "⿰齐刂",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "丶",
+      "丿",
+      "丨",
+      "丨",
+      "亅"
+    ],
+    "pinyin": "Jì",
+    "pinyinArray": [
+      "Ji"
+    ]
+  },
+  "剃": {
+    "structure": "⿰弟刂",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "丿",
+      "𠃍",
+      "一",
+      "㇉",
+      "丨",
+      "丿",
+      "丨",
+      "亅"
+    ],
+    "pinyin": "Tì",
+    "pinyinArray": [
+      "Ti"
+    ]
+  },
+  "削": {
+    "structure": "⿰肖刂",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丨",
+      "丶",
+      "丿",
+      "丨",
+      "𠃌",
+      "一",
+      "一",
+      "丨",
+      "亅"
+    ],
+    "pinyin": "Xiāo",
+    "pinyinArray": [
+      "Xiao"
+    ]
+  },
+  "前": {
+    "structure": "⿱䒑刖",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "𠃌",
+      "一",
+      "一",
+      "丨",
+      "亅"
+    ],
+    "pinyin": "Qián",
+    "pinyinArray": [
+      "Qian"
+    ]
+  },
+  "剑": {
+    "structure": "⿰佥刂",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "丶",
+      "一",
+      "丶",
+      "丶",
+      "丿",
+      "㇀",
+      "丨",
+      "亅"
+    ],
+    "pinyin": "Jiàn",
+    "pinyinArray": [
+      "Jian"
+    ]
+  },
+  "剔": {
+    "structure": "⿰易刂",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "𠃌",
+      "丿",
+      "丿",
+      "丨",
+      "亅"
+    ],
+    "pinyin": "Tī",
+    "pinyinArray": [
+      "Ti"
+    ]
+  },
+  "剖": {
+    "structure": "⿰咅刂",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "亅"
+    ],
+    "pinyin": "Pōu",
+    "pinyinArray": [
+      "Pou"
+    ]
+  },
+  "剥": {
+    "structure": "⿰录刂",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "𠃍",
+      "一",
+      "一",
+      "亅",
+      "丶",
+      "㇀",
+      "丿",
+      "丶",
+      "丨",
+      "亅"
+    ],
+    "pinyin": "Bō",
+    "pinyinArray": [
+      "Bo"
+    ]
+  },
+  "剧": {
+    "structure": "⿰居刂",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "𠃍",
+      "一",
+      "丿",
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "亅"
+    ],
+    "pinyin": "Jù",
+    "pinyinArray": [
+      "Ju"
+    ]
+  },
+  "剩": {
+    "structure": "⿰乘刂",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "㇀",
+      "丿",
+      "乚",
+      "丿",
+      "丶",
+      "丨",
+      "亅"
+    ],
+    "pinyin": "Shèng",
+    "pinyinArray": [
+      "Sheng"
+    ]
+  },
+  "剪": {
+    "structure": "⿱前刀",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "𠃌",
+      "一",
+      "一",
+      "丨",
+      "亅",
+      "𠃌",
+      "丿"
+    ],
+    "pinyin": "Jiǎn",
+    "pinyinArray": [
+      "Jian"
+    ]
+  },
+  "副": {
+    "structure": "⿰畐刂",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "亅"
+    ],
+    "pinyin": "Fù",
+    "pinyinArray": [
+      "Fu"
+    ]
+  },
+  "割": {
+    "structure": "⿰害刂",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "亅"
+    ],
+    "pinyin": "Gē",
+    "pinyinArray": [
+      "Ge"
+    ]
+  },
+  "剿": {
+    "structure": "⿰巢刂",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "𡿨",
+      "𡿨",
+      "𡿨",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丨",
+      "亅"
+    ],
+    "pinyin": "Jiǎo",
+    "pinyinArray": [
+      "Jiao"
+    ]
+  },
+  "劈": {
+    "structure": "⿱辟刀",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "𠃍",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "丨",
+      "𠃌",
+      "丿"
+    ],
+    "pinyin": "Pǐ",
+    "pinyinArray": [
+      "Pi"
+    ]
+  },
+  "力": {
+    "structure": "⿻丿𠃌",
+    "strokeCount": 2,
+    "strokeShapes": [
+      "𠃌",
+      "丿"
+    ],
+    "pinyin": "Lì",
+    "pinyinArray": [
+      "Li"
+    ]
+  },
+  "劝": {
+    "structure": "⿰又力",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "㇇|乛",
+      "丶",
+      "𠃌",
+      "丿"
+    ],
+    "pinyin": "Quàn",
+    "pinyinArray": [
+      "Quan"
+    ]
+  },
+  "办": {
+    "structure": "⿻力八",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "𠃌",
+      "丿",
+      "㇀",
+      "丶"
+    ],
+    "pinyin": "Bàn",
+    "pinyinArray": [
+      "Ban"
+    ]
+  },
+  "功": {
+    "structure": "⿰工力",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "㇀",
+      "𠃌",
+      "丿"
+    ],
+    "pinyin": "Gōng",
+    "pinyinArray": [
+      "Gong"
+    ]
+  },
+  "加": {
+    "structure": "⿰力口",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "𠃌",
+      "丿",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Jiā",
+    "pinyinArray": [
+      "Jia"
+    ]
+  },
+  "务": {
+    "structure": "⿱夂力",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丿",
+      "㇇|乛",
+      "㇏",
+      "𠃌",
+      "丿"
+    ],
+    "pinyin": "Wù",
+    "pinyinArray": [
+      "Wu"
+    ]
+  },
+  "劣": {
+    "structure": "⿱少力",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丨",
+      "丿",
+      "丶",
+      "丿",
+      "𠃌",
+      "丿"
+    ],
+    "pinyin": "Liè",
+    "pinyinArray": [
+      "Lie"
+    ]
+  },
+  "动": {
+    "structure": "⿰云力",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "一",
+      "一",
+      "𠃋",
+      "丶",
+      "𠃌",
+      "丿"
+    ],
+    "pinyin": "Dòng",
+    "pinyinArray": [
+      "Dong"
+    ]
+  },
+  "助": {
+    "structure": "⿰且力",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "㇀",
+      "𠃌",
+      "丿"
+    ],
+    "pinyin": "Zhù",
+    "pinyinArray": [
+      "Zhu"
+    ]
+  },
+  "努": {
+    "structure": "⿱奴力",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "𡿨",
+      "丿",
+      "一",
+      "㇇|乛",
+      "㇏",
+      "𠃌",
+      "丿"
+    ],
+    "pinyin": "Nǔ",
+    "pinyinArray": [
+      "Nu"
+    ]
+  },
+  "劫": {
+    "structure": "⿰去力",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "一",
+      "𠃋",
+      "丶",
+      "𠃌",
+      "丿"
+    ],
+    "pinyin": "Jié",
+    "pinyinArray": [
+      "Jie"
+    ]
+  },
+  "励": {
+    "structure": "⿰厉力",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "一",
+      "𠃌",
+      "丿",
+      "𠃌",
+      "丿"
+    ],
+    "pinyin": "Lì",
+    "pinyinArray": [
+      "Li"
+    ]
+  },
+  "劲": {
+    "structure": "⿰𢀖力",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "㇇|乛",
+      "丶",
+      "一",
+      "丨",
+      "㇀",
+      "𠃌",
+      "丿"
+    ],
+    "pinyin": "Jìn",
+    "pinyinArray": [
+      "Jin"
+    ]
+  },
+  "劳": {
+    "structure": "⿱𫇦力",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "㇀",
+      "㇇|乛",
+      "𠃌",
+      "丿"
+    ],
+    "pinyin": "Láo",
+    "pinyinArray": [
+      "Lao"
+    ]
+  },
+  "势": {
+    "structure": "⿱执力",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丿",
+      "⺄",
+      "丶",
+      "𠃌",
+      "丿"
+    ],
+    "pinyin": "Shì",
+    "pinyinArray": [
+      "Shi"
+    ]
+  },
+  "勃": {
+    "structure": "⿰孛力",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "㇀",
+      "㇇|乛",
+      "㇇|乛",
+      "亅",
+      "㇀",
+      "𠃌",
+      "丿"
+    ],
+    "pinyin": "Bó",
+    "pinyinArray": [
+      "Bo"
+    ]
+  },
+  "勇": {
+    "structure": "⿱甬力[GTV]",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "㇇|乛",
+      "丶",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "𠃌",
+      "丿"
+    ],
+    "pinyin": "Yǒng",
+    "pinyinArray": [
+      "Yong"
+    ]
+  },
+  "勉": {
+    "structure": "⿺免力",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "㇇|乛",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "乚",
+      "𠃌",
+      "丿"
+    ],
+    "pinyin": "Miǎn",
+    "pinyinArray": [
+      "Mian"
+    ]
+  },
+  "勋": {
+    "structure": "⿰员力",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶",
+      "𠃌",
+      "丿"
+    ],
+    "pinyin": "Xūn",
+    "pinyinArray": [
+      "Xun"
+    ]
+  },
+  "勒": {
+    "structure": "⿰革力",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "𠃌",
+      "丿"
+    ],
+    "pinyin": "Lè",
+    "pinyinArray": [
+      "Le"
+    ]
+  },
+  "勘": {
+    "structure": "⿰甚力",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "丶",
+      "㇄",
+      "𠃌",
+      "丿"
+    ],
+    "pinyin": "Kān",
+    "pinyinArray": [
+      "Kan"
+    ]
+  },
+  "募": {
+    "structure": "⿱莫力",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "㇏",
+      "𠃌",
+      "丿"
+    ],
+    "pinyin": "Mù",
+    "pinyinArray": [
+      "Mu"
+    ]
+  },
+  "勤": {
+    "structure": "⿰堇力[GTKV]",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "㇀",
+      "𠃌",
+      "丿"
+    ],
+    "pinyin": "Qín",
+    "pinyinArray": [
+      "Qin"
+    ]
+  },
+  "勺": {
+    "structure": "⿹勹丶",
+    "strokeCount": 3,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "丶"
+    ],
+    "pinyin": "Sháo",
+    "pinyinArray": [
+      "Shao"
+    ]
+  },
+  "勾": {
+    "structure": "⿹勹厶",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "𠃋",
+      "丶"
+    ],
+    "pinyin": "Gòu",
+    "pinyinArray": [
+      "Gou"
+    ]
+  },
+  "勿": {
+    "structure": "⿹勹⿱丿丿",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "丿",
+      "丿"
+    ],
+    "pinyin": "Wù",
+    "pinyinArray": [
+      "Wu"
+    ]
+  },
+  "匀": {
+    "structure": "⿹勹冫",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "丶",
+      "㇀"
+    ],
+    "pinyin": "Yún",
+    "pinyinArray": [
+      "Yun"
+    ]
+  },
+  "包": {
+    "structure": "⿹勹巳[GTKV]",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "𠃍",
+      "一",
+      "乚"
+    ],
+    "pinyin": "Bāo",
+    "pinyinArray": [
+      "Bao"
+    ]
+  },
+  "匆": {
+    "structure": "⿻勿丶",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "丿",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Cōng",
+    "pinyinArray": [
+      "Cong"
+    ]
+  },
+  "匈": {
+    "structure": "⿹勹凶",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "丿",
+      "丶",
+      "㇄",
+      "丨"
+    ],
+    "pinyin": "Xiōng",
+    "pinyinArray": [
+      "Xiong"
+    ]
+  },
+  "匕": {
+    "structure": "⿺乚丿[GJ]",
+    "strokeCount": 2,
+    "strokeShapes": [
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Bǐ",
+    "pinyinArray": [
+      "Bi"
+    ]
+  },
+  "化": {
+    "structure": "⿰亻𠤎[G]",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Huà",
+    "pinyinArray": [
+      "Hua"
+    ]
+  },
+  "北": {
+    "structure": "⿰③匕",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丨",
+      "一",
+      "㇀",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Běi",
+    "pinyinArray": [
+      "Bei"
+    ]
+  },
+  "匙": {
+    "structure": "⿺是匕",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "㇏",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Shi",
+    "pinyinArray": [
+      "Shi"
+    ]
+  },
+  "匠": {
+    "structure": "⿷匚斤",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "丿",
+      "一",
+      "丨",
+      "㇄"
+    ],
+    "pinyin": "Jiàng",
+    "pinyinArray": [
+      "Jiang"
+    ]
+  },
+  "匣": {
+    "structure": "⿷匚甲",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "㇄"
+    ],
+    "pinyin": "Xiá",
+    "pinyinArray": [
+      "Xia"
+    ]
+  },
+  "匪": {
+    "structure": "⿷匚非",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "一",
+      "一",
+      "㇄"
+    ],
+    "pinyin": "Fěi",
+    "pinyinArray": [
+      "Fei"
+    ]
+  },
+  "匹": {
+    "structure": "⿷匚儿[GJK]",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "乚",
+      "㇄"
+    ],
+    "pinyin": "Pǐ",
+    "pinyinArray": [
+      "Pi"
+    ]
+  },
+  "区": {
+    "structure": "⿷匚㐅[GJK]",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "丶",
+      "㇄"
+    ],
+    "pinyin": "Qū",
+    "pinyinArray": [
+      "Qu"
+    ]
+  },
+  "医": {
+    "structure": "⿷匚矢[GJK]",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "一",
+      "一",
+      "丿",
+      "丶",
+      "㇄"
+    ],
+    "pinyin": "Yī",
+    "pinyinArray": [
+      "Yi"
+    ]
+  },
+  "匾": {
+    "structure": "⿷匚扁[GJK]",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "丶",
+      "𠃍",
+      "一",
+      "丿",
+      "丨",
+      "𠃌",
+      "一",
+      "丨",
+      "丨",
+      "㇄"
+    ],
+    "pinyin": "Biǎn",
+    "pinyinArray": [
+      "Bian"
+    ]
+  },
+  "匿": {
+    "structure": "⿷匚若[GJK]",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "㇄"
+    ],
+    "pinyin": "Nì",
+    "pinyinArray": [
+      "Ni"
+    ]
+  },
+  "十": {
+    "structure": "十",
+    "strokeCount": 2,
+    "strokeShapes": [
+      "一",
+      "丨"
+    ],
+    "pinyin": "Shí",
+    "pinyinArray": [
+      "Shi"
+    ]
+  },
+  "千": {
+    "structure": "⿱丿十",
+    "strokeCount": 3,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Qiān",
+    "pinyinArray": [
+      "Qian"
+    ]
+  },
+  "升": {
+    "structure": "⿱丿廾",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丿",
+      "丨"
+    ],
+    "pinyin": "Shēng",
+    "pinyinArray": [
+      "Sheng"
+    ]
+  },
+  "午": {
+    "structure": "⿱𠂉十",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Wǔ",
+    "pinyinArray": [
+      "Wu"
+    ]
+  },
+  "半": {
+    "structure": "⿱丷⿻二丨",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Bàn",
+    "pinyinArray": [
+      "Ban"
+    ]
+  },
+  "华": {
+    "structure": "⿱化十",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "丿",
+      "乚",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Huá",
+    "pinyinArray": [
+      "Hua"
+    ]
+  },
+  "协": {
+    "structure": "⿰十办",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "𠃌",
+      "丿",
+      "㇀",
+      "丶"
+    ],
+    "pinyin": "Xié",
+    "pinyinArray": [
+      "Xie"
+    ]
+  },
+  "卑": {
+    "structure": "⿱⿻白丿十[GTK]",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Bēi",
+    "pinyinArray": [
+      "Bei"
+    ]
+  },
+  "卒": {
+    "structure": "⿱𠅃十",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "丶",
+      "丿",
+      "丶",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Zú",
+    "pinyinArray": [
+      "Zu"
+    ]
+  },
+  "卓": {
+    "structure": "⿱⺊早",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Zhuó",
+    "pinyinArray": [
+      "Zhuo"
+    ]
+  },
+  "单": {
+    "structure": "⿱丷⿻甲一",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丶",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Dān",
+    "pinyinArray": [
+      "Dan"
+    ]
+  },
+  "卖": {
+    "structure": "⿱十买",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "㇇|乛",
+      "丶",
+      "丶",
+      "一",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Mài",
+    "pinyinArray": [
+      "Mai"
+    ]
+  },
+  "南": {
+    "structure": "⿱十⿵冂𢆉",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "𠃌",
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Nán",
+    "pinyinArray": [
+      "Nan"
+    ]
+  },
+  "博": {
+    "structure": "⿰十尃[GTKV]",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "丶",
+      "一",
+      "亅",
+      "丶"
+    ],
+    "pinyin": "Bó",
+    "pinyinArray": [
+      "Bo"
+    ]
+  },
+  "卜": {
+    "structure": "卜",
+    "strokeCount": 2,
+    "strokeShapes": [
+      "丨",
+      "丶"
+    ],
+    "pinyin": "Bo",
+    "pinyinArray": [
+      "Bo"
+    ]
+  },
+  "占": {
+    "structure": "⿱⺊口",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Zhàn",
+    "pinyinArray": [
+      "Zhan"
+    ]
+  },
+  "卡": {
+    "structure": "⿱上卜",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丨",
+      "一",
+      "一",
+      "丨",
+      "丶"
+    ],
+    "pinyin": "Kǎ",
+    "pinyinArray": [
+      "Ka"
+    ]
+  },
+  "卢": {
+    "structure": "⿱⺊尸",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丨",
+      "一",
+      "𠃍",
+      "一",
+      "丿"
+    ],
+    "pinyin": "Lú",
+    "pinyinArray": [
+      "Lu"
+    ]
+  },
+  "卤": {
+    "structure": "⿱⺊龱",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶",
+      "一"
+    ],
+    "pinyin": "Lǔ",
+    "pinyinArray": [
+      "Lu"
+    ]
+  },
+  "卦": {
+    "structure": "⿰圭卜",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "一",
+      "一",
+      "丨",
+      "㇀",
+      "丨",
+      "丶"
+    ],
+    "pinyin": "Guà",
+    "pinyinArray": [
+      "Gua"
+    ]
+  },
+  "卧": {
+    "structure": "⿰臣卜",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "㇄",
+      "丨",
+      "丶"
+    ],
+    "pinyin": "Wò",
+    "pinyinArray": [
+      "Wo"
+    ]
+  },
+  "卫": {
+    "structure": "⿱⿱𠃌丨一",
+    "strokeCount": 3,
+    "strokeShapes": [
+      "𠃌",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Wèi",
+    "pinyinArray": [
+      "Wei"
+    ]
+  },
+  "印": {
+    "structure": "⿰③卩",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丿",
+      "𠄌",
+      "一",
+      "𠃌",
+      "丨"
+    ],
+    "pinyin": "Yìn",
+    "pinyinArray": [
+      "Yin"
+    ]
+  },
+  "危": {
+    "structure": "⿸厃㔾",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丿",
+      "㇇|乛",
+      "一",
+      "丿",
+      "𠃌",
+      "乚"
+    ],
+    "pinyin": "Wēi",
+    "pinyinArray": [
+      "Wei"
+    ]
+  },
+  "即": {
+    "structure": "⿰⑤卩",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "𠃍",
+      "一",
+      "一",
+      "𠄌",
+      "丶",
+      "𠃌",
+      "丨"
+    ],
+    "pinyin": "Jí",
+    "pinyinArray": [
+      "Ji"
+    ]
+  },
+  "却": {
+    "structure": "⿰去卩",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "一",
+      "𠃋",
+      "丶",
+      "𠃌",
+      "丨"
+    ],
+    "pinyin": "Què",
+    "pinyinArray": [
+      "Que"
+    ]
+  },
+  "卵": {
+    "structure": "⿰𠂑卪",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丿",
+      "𠄌",
+      "丶",
+      "丿",
+      "𠃌",
+      "丨",
+      "丶"
+    ],
+    "pinyin": "Luǎn",
+    "pinyinArray": [
+      "Luan"
+    ]
+  },
+  "卷": {
+    "structure": "⿱龹㔾[GTV]",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "丿",
+      "㇏",
+      "𠃌",
+      "乚"
+    ],
+    "pinyin": "Juàn",
+    "pinyinArray": [
+      "Juan"
+    ]
+  },
+  "卸": {
+    "structure": "⿰𦈢卩",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "㇀",
+      "𠃌",
+      "丨"
+    ],
+    "pinyin": "Xiè",
+    "pinyinArray": [
+      "Xie"
+    ]
+  },
+  "卿": {
+    "structure": "⿲𠂎⑤卩",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "𠄌",
+      "丿",
+      "𠃍",
+      "一",
+      "一",
+      "𠄌",
+      "丶",
+      "𠃌",
+      "丨"
+    ],
+    "pinyin": "Qīng",
+    "pinyinArray": [
+      "Qing"
+    ]
+  },
+  "厂": {
+    "structure": "厂",
+    "strokeCount": 2,
+    "strokeShapes": [
+      "一",
+      "丿"
+    ],
+    "pinyin": "Chǎng",
+    "pinyinArray": [
+      "Chang"
+    ]
+  },
+  "厅": {
+    "structure": "⿸厂丁",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "一",
+      "亅"
+    ],
+    "pinyin": "Tīng",
+    "pinyinArray": [
+      "Ting"
+    ]
+  },
+  "历": {
+    "structure": "⿸厂力",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "𠃌",
+      "丿"
+    ],
+    "pinyin": "Lì",
+    "pinyinArray": [
+      "Li"
+    ]
+  },
+  "厉": {
+    "structure": "⿸厂万",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "一",
+      "𠃌",
+      "丿"
+    ],
+    "pinyin": "Lì",
+    "pinyinArray": [
+      "Li"
+    ]
+  },
+  "压": {
+    "structure": "⿸厂圡",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "一",
+      "丨",
+      "一",
+      "丶"
+    ],
+    "pinyin": "Yā",
+    "pinyinArray": [
+      "Ya"
+    ]
+  },
+  "厌": {
+    "structure": "⿸厂犬",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "一",
+      "丿",
+      "㇏",
+      "丶"
+    ],
+    "pinyin": "Yā",
+    "pinyinArray": [
+      "Ya"
+    ]
+  },
+  "厕": {
+    "structure": "⿸厂则",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶",
+      "丨",
+      "亅"
+    ],
+    "pinyin": "Cè",
+    "pinyinArray": [
+      "Ce"
+    ]
+  },
+  "厘": {
+    "structure": "⿸厂里",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "一"
+    ],
+    "pinyin": "Lí",
+    "pinyinArray": [
+      "Li"
+    ]
+  },
+  "厚": {
+    "structure": "⿸厂㫗",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "㇇|乛",
+      "亅",
+      "一"
+    ],
+    "pinyin": "Hòu",
+    "pinyinArray": [
+      "Hou"
+    ]
+  },
+  "原": {
+    "structure": "⿸厂⿱白小",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "亅",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Yuán",
+    "pinyinArray": [
+      "Yuan"
+    ]
+  },
+  "厢": {
+    "structure": "⿸厂相",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一"
+    ],
+    "pinyin": "Xiāng",
+    "pinyinArray": [
+      "Xiang"
+    ]
+  },
+  "厦": {
+    "structure": "⿸厂夏",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Xià",
+    "pinyinArray": [
+      "Xia"
+    ]
+  },
+  "厨": {
+    "structure": "⿸厂𭔰",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丶",
+      "丿",
+      "㇀",
+      "一",
+      "亅",
+      "丶"
+    ],
+    "pinyin": "Chú",
+    "pinyinArray": [
+      "Chu"
+    ]
+  },
+  "去": {
+    "structure": "⿱土厶",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "一",
+      "𠃋",
+      "丶"
+    ],
+    "pinyin": "Qù",
+    "pinyinArray": [
+      "Qu"
+    ]
+  },
+  "县": {
+    "structure": "⿱且厶",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "𠃋",
+      "丶"
+    ],
+    "pinyin": "Xiàn",
+    "pinyinArray": [
+      "Xian"
+    ]
+  },
+  "叁": {
+    "structure": "⿳厶大三",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "𠃋",
+      "丶",
+      "一",
+      "丿",
+      "㇏",
+      "一",
+      "一",
+      "一"
+    ],
+    "pinyin": "Sān",
+    "pinyinArray": [
+      "San"
+    ]
+  },
+  "参": {
+    "structure": "⿳厶大彡",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "𠃋",
+      "丶",
+      "一",
+      "丿",
+      "㇏",
+      "丿",
+      "丿",
+      "丿"
+    ],
+    "pinyin": "Cān",
+    "pinyinArray": [
+      "Can"
+    ]
+  },
+  "又": {
+    "structure": "又",
+    "strokeCount": 2,
+    "strokeShapes": [
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Yòu",
+    "pinyinArray": [
+      "You"
+    ]
+  },
+  "叉": {
+    "structure": "⿴又丶",
+    "strokeCount": 3,
+    "strokeShapes": [
+      "㇇|乛",
+      "㇏",
+      "丶"
+    ],
+    "pinyin": "Chā",
+    "pinyinArray": [
+      "Cha"
+    ]
+  },
+  "及": {
+    "structure": "及",
+    "strokeCount": 3,
+    "strokeShapes": [
+      "丿",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Jí",
+    "pinyinArray": [
+      "Ji"
+    ]
+  },
+  "友": {
+    "structure": "⿸𠂇又",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Yǒu",
+    "pinyinArray": [
+      "You"
+    ]
+  },
+  "双": {
+    "structure": "⿰又又",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "㇇|乛",
+      "丶",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Shuāng",
+    "pinyinArray": [
+      "Shuang"
+    ]
+  },
+  "反": {
+    "structure": "⿸𠂆又[G]",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "丿",
+      "丿",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Fǎn",
+    "pinyinArray": [
+      "Fan"
+    ]
+  },
+  "发": {
+    "structure": "发",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "𠃋",
+      "丿",
+      "㇇|乛",
+      "㇏",
+      "丶"
+    ],
+    "pinyin": "Fā",
+    "pinyinArray": [
+      "Fa"
+    ]
+  },
+  "叔": {
+    "structure": "⿰尗又",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丨",
+      "一",
+      "一",
+      "亅",
+      "丿",
+      "丶",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Shū",
+    "pinyinArray": [
+      "Shu"
+    ]
+  },
+  "取": {
+    "structure": "⿰耳又[GV]",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "一",
+      "㇀",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Qǔ",
+    "pinyinArray": [
+      "Qu"
+    ]
+  },
+  "受": {
+    "structure": "⿱⿱爫冖又",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丿",
+      "丶",
+      "丶",
+      "丿",
+      "㇀",
+      "㇇|乛",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Shòu",
+    "pinyinArray": [
+      "Shou"
+    ]
+  },
+  "变": {
+    "structure": "⿱亦又",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丨",
+      "丨",
+      "丿",
+      "丶",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Biàn",
+    "pinyinArray": [
+      "Bian"
+    ]
+  },
+  "叙": {
+    "structure": "⿰余又",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "丶",
+      "一",
+      "一",
+      "亅",
+      "丿",
+      "丶",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Xù",
+    "pinyinArray": [
+      "Xu"
+    ]
+  },
+  "叛": {
+    "structure": "⿰半反",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "丿",
+      "丿",
+      "丿",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Pàn",
+    "pinyinArray": [
+      "Pan"
+    ]
+  },
+  "叠": {
+    "structure": "⿱叒冝",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "㇇|乛",
+      "丶",
+      "㇇|乛",
+      "丶",
+      "㇇|乛",
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一"
+    ],
+    "pinyin": "Dié",
+    "pinyinArray": [
+      "Die"
+    ]
+  },
+  "口": {
+    "structure": "口",
+    "strokeCount": 3,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Kǒu",
+    "pinyinArray": [
+      "Kou"
+    ]
+  },
+  "古": {
+    "structure": "⿱十口",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Gǔ",
+    "pinyinArray": [
+      "Gu"
+    ]
+  },
+  "句": {
+    "structure": "⿹勹口",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Jù",
+    "pinyinArray": [
+      "Ju"
+    ]
+  },
+  "另": {
+    "structure": "⿱口力",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "𠃌",
+      "丿"
+    ],
+    "pinyin": "Lìng",
+    "pinyinArray": [
+      "Ling"
+    ]
+  },
+  "叨": {
+    "structure": "⿰口刀",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "𠃌",
+      "丿"
+    ],
+    "pinyin": "Dāo",
+    "pinyinArray": [
+      "Dao"
+    ]
+  },
+  "只": {
+    "structure": "⿱口八",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Zhǐ",
+    "pinyinArray": [
+      "Zhi"
+    ]
+  },
+  "叫": {
+    "structure": "⿰口丩",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "𠄌",
+      "丨"
+    ],
+    "pinyin": "Jiào",
+    "pinyinArray": [
+      "Jiao"
+    ]
+  },
+  "召": {
+    "structure": "⿱刀口",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "𠃌",
+      "丿",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Zhào",
+    "pinyinArray": [
+      "Zhao"
+    ]
+  },
+  "叭": {
+    "structure": "⿰口八",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Bā",
+    "pinyinArray": [
+      "Ba"
+    ]
+  },
+  "叮": {
+    "structure": "⿰口丁",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "亅"
+    ],
+    "pinyin": "Dīng",
+    "pinyinArray": [
+      "Ding"
+    ]
+  },
+  "可": {
+    "structure": "⿹丁口",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "亅"
+    ],
+    "pinyin": "Kě",
+    "pinyinArray": [
+      "Ke"
+    ]
+  },
+  "台": {
+    "structure": "⿱厶口",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "𠃋",
+      "丶",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Tái",
+    "pinyinArray": [
+      "Tai"
+    ]
+  },
+  "史": {
+    "structure": "史",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Shǐ",
+    "pinyinArray": [
+      "Shi"
+    ]
+  },
+  "右": {
+    "structure": "⿸𠂇口",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Yòu",
+    "pinyinArray": [
+      "You"
+    ]
+  },
+  "叶": {
+    "structure": "⿰口十",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Yè",
+    "pinyinArray": [
+      "Ye"
+    ]
+  },
+  "号": {
+    "structure": "⿱口丂",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "㇉"
+    ],
+    "pinyin": "Hào",
+    "pinyinArray": [
+      "Hao"
+    ]
+  },
+  "司": {
+    "structure": "⿹𠃌𠮛",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "𠃌",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Sī",
+    "pinyinArray": [
+      "Si"
+    ]
+  },
+  "叹": {
+    "structure": "⿰口又",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Tàn",
+    "pinyinArray": [
+      "Tan"
+    ]
+  },
+  "叼": {
+    "structure": "⿰口刁",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "𠃌",
+      "㇀"
+    ],
+    "pinyin": "Diāo",
+    "pinyinArray": [
+      "Diao"
+    ]
+  },
+  "叽": {
+    "structure": "⿰口几",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "⺄"
+    ],
+    "pinyin": "Jī",
+    "pinyinArray": [
+      "Ji"
+    ]
+  },
+  "吁": {
+    "structure": "⿰口于",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "亅"
+    ],
+    "pinyin": "Xū",
+    "pinyinArray": [
+      "Xu"
+    ]
+  },
+  "吃": {
+    "structure": "⿰口乞",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "一",
+      "⺄"
+    ],
+    "pinyin": "Chī",
+    "pinyinArray": [
+      "Chi"
+    ]
+  },
+  "各": {
+    "structure": "⿱夂口",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丿",
+      "㇇|乛",
+      "㇏",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Gè",
+    "pinyinArray": [
+      "Ge"
+    ]
+  },
+  "吆": {
+    "structure": "⿰口幺",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "𠃋",
+      "𠃋",
+      "丶"
+    ],
+    "pinyin": "Yāo",
+    "pinyinArray": [
+      "Yao"
+    ]
+  },
+  "合": {
+    "structure": "⿱亼口",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丿",
+      "㇏",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Hé",
+    "pinyinArray": [
+      "He"
+    ]
+  },
+  "吉": {
+    "structure": "⿱士口",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Jí",
+    "pinyinArray": [
+      "Ji"
+    ]
+  },
+  "吊": {
+    "structure": "⿱口巾",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃌",
+      "丨"
+    ],
+    "pinyin": "Diào",
+    "pinyinArray": [
+      "Diao"
+    ]
+  },
+  "同": {
+    "structure": "⿵𠔼口",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丨",
+      "𠃌",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Tóng",
+    "pinyinArray": [
+      "Tong"
+    ]
+  },
+  "名": {
+    "structure": "⿱夕口",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丿",
+      "㇇|乛",
+      "丶",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Míng",
+    "pinyinArray": [
+      "Ming"
+    ]
+  },
+  "后": {
+    "structure": "⿸𠂋口",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丿",
+      "丿",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Hòu",
+    "pinyinArray": [
+      "Hou"
+    ]
+  },
+  "吏": {
+    "structure": "⿻一史",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Lì",
+    "pinyinArray": [
+      "Li"
+    ]
+  },
+  "吐": {
+    "structure": "⿰口土",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Tù",
+    "pinyinArray": [
+      "Tu"
+    ]
+  },
+  "向": {
+    "structure": "⿵⿱丿冂口",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "𠃌",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Xiàng",
+    "pinyinArray": [
+      "Xiang"
+    ]
+  },
+  "吓": {
+    "structure": "⿰口下",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "丶"
+    ],
+    "pinyin": "Xià",
+    "pinyinArray": [
+      "Xia"
+    ]
+  },
+  "吕": {
+    "structure": "⿱口口",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Lǚ",
+    "pinyinArray": [
+      "Lü"
+    ]
+  },
+  "吗": {
+    "structure": "⿰口马",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "𠃍",
+      "㇉",
+      "一"
+    ],
+    "pinyin": "Má",
+    "pinyinArray": [
+      "Ma"
+    ]
+  },
+  "君": {
+    "structure": "⿸尹口",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Jūn",
+    "pinyinArray": [
+      "Jun"
+    ]
+  },
+  "吝": {
+    "structure": "⿱文口",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "㇏",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Lìn",
+    "pinyinArray": [
+      "Lin"
+    ]
+  },
+  "吞": {
+    "structure": "⿱天口",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "一",
+      "丿",
+      "㇏",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Tūn",
+    "pinyinArray": [
+      "Tun"
+    ]
+  },
+  "吟": {
+    "structure": "⿰口今",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "㇏",
+      "丶",
+      "㇇|乛"
+    ],
+    "pinyin": "Yín",
+    "pinyinArray": [
+      "Yin"
+    ]
+  },
+  "吠": {
+    "structure": "⿰口犬",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "㇏",
+      "丶"
+    ],
+    "pinyin": "Fèi",
+    "pinyinArray": [
+      "Fei"
+    ]
+  },
+  "否": {
+    "structure": "⿱不口",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "丨",
+      "丶",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Fǒu",
+    "pinyinArray": [
+      "Fou"
+    ]
+  },
+  "吧": {
+    "structure": "⿰口巴",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "𠃍",
+      "丨",
+      "一",
+      "乚"
+    ],
+    "pinyin": "Bā",
+    "pinyinArray": [
+      "Ba"
+    ]
+  },
+  "吨": {
+    "structure": "⿰口屯",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "㇄",
+      "丨",
+      "乚"
+    ],
+    "pinyin": "Dūn",
+    "pinyinArray": [
+      "Dun"
+    ]
+  },
+  "吩": {
+    "structure": "⿰口分",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "㇏",
+      "𠃌",
+      "丿"
+    ],
+    "pinyin": "Fēn",
+    "pinyinArray": [
+      "Fen"
+    ]
+  },
+  "含": {
+    "structure": "⿱今口",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丿",
+      "㇏",
+      "丶",
+      "㇇|乛",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Hán",
+    "pinyinArray": [
+      "Han"
+    ]
+  },
+  "听": {
+    "structure": "⿰口斤",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "丿",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Tīng",
+    "pinyinArray": [
+      "Ting"
+    ]
+  },
+  "吭": {
+    "structure": "⿰口亢",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丶",
+      "一",
+      "丿",
+      "⺄"
+    ],
+    "pinyin": "Kēng",
+    "pinyinArray": [
+      "Keng"
+    ]
+  },
+  "吮": {
+    "structure": "⿰口允",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "𠃋",
+      "丶",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Shǔn",
+    "pinyinArray": [
+      "Shun"
+    ]
+  },
+  "启": {
+    "structure": "⿸户口[G]",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丶",
+      "𠃍",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Qǐ",
+    "pinyinArray": [
+      "Qi"
+    ]
+  },
+  "吱": {
+    "structure": "⿰口支",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Zhī",
+    "pinyinArray": [
+      "Zhi"
+    ]
+  },
+  "吴": {
+    "structure": "⿱口天",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Wú",
+    "pinyinArray": [
+      "Wu"
+    ]
+  },
+  "吵": {
+    "structure": "⿰口少",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丿"
+    ],
+    "pinyin": "Chǎo",
+    "pinyinArray": [
+      "Chao"
+    ]
+  },
+  "吸": {
+    "structure": "⿰口及",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Xī",
+    "pinyinArray": [
+      "Xi"
+    ]
+  },
+  "吹": {
+    "structure": "⿰口欠",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "㇇|乛",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Chuī",
+    "pinyinArray": [
+      "Chui"
+    ]
+  },
+  "吻": {
+    "structure": "⿰口勿",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "𠃌",
+      "丿",
+      "丿"
+    ],
+    "pinyin": "Wěn",
+    "pinyinArray": [
+      "Wen"
+    ]
+  },
+  "吼": {
+    "structure": "⿰口孔",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "㇇|乛",
+      "亅",
+      "㇀",
+      "乚"
+    ],
+    "pinyin": "Hǒu",
+    "pinyinArray": [
+      "Hou"
+    ]
+  },
+  "呀": {
+    "structure": "⿰口牙",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "𠃋",
+      "亅",
+      "丿"
+    ],
+    "pinyin": "Yā",
+    "pinyinArray": [
+      "Ya"
+    ]
+  },
+  "呆": {
+    "structure": "⿱口木[GJK]",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Dāi",
+    "pinyinArray": [
+      "Dai"
+    ]
+  },
+  "呈": {
+    "structure": "⿱口王[GJK]",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Chéng",
+    "pinyinArray": [
+      "Cheng"
+    ]
+  },
+  "告": {
+    "structure": "⿱𠂒口",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Gào",
+    "pinyinArray": [
+      "Gao"
+    ]
+  },
+  "呐": {
+    "structure": "⿰口内",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃌",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Nà",
+    "pinyinArray": [
+      "Na"
+    ]
+  },
+  "呕": {
+    "structure": "⿰口区",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "丶",
+      "㇄"
+    ],
+    "pinyin": "Ǒu",
+    "pinyinArray": [
+      "Ou"
+    ]
+  },
+  "员": {
+    "structure": "⿱口贝",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Yún",
+    "pinyinArray": [
+      "Yun"
+    ]
+  },
+  "呛": {
+    "structure": "⿰口仓",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "㇏",
+      "𠃌",
+      "乚"
+    ],
+    "pinyin": "Qiàng",
+    "pinyinArray": [
+      "Qiang"
+    ]
+  },
+  "呜": {
+    "structure": "⿰口乌",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "𠃌",
+      "㇉",
+      "一"
+    ],
+    "pinyin": "Wū",
+    "pinyinArray": [
+      "Wu"
+    ]
+  },
+  "呢": {
+    "structure": "⿰口尼",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "𠃍",
+      "一",
+      "丿",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Ne",
+    "pinyinArray": [
+      "Ne"
+    ]
+  },
+  "周": {
+    "structure": "⿵⺆𠮷",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Zhōu",
+    "pinyinArray": [
+      "Zhou"
+    ]
+  },
+  "味": {
+    "structure": "⿰口未",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Wèi",
+    "pinyinArray": [
+      "Wei"
+    ]
+  },
+  "呵": {
+    "structure": "⿰口可",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "亅"
+    ],
+    "pinyin": "Hē",
+    "pinyinArray": [
+      "He"
+    ]
+  },
+  "呻": {
+    "structure": "⿰口申",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Shēn",
+    "pinyinArray": [
+      "Shen"
+    ]
+  },
+  "呼": {
+    "structure": "⿰口乎",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "丶",
+      "丿",
+      "一",
+      "亅"
+    ],
+    "pinyin": "Hū",
+    "pinyinArray": [
+      "Hu"
+    ]
+  },
+  "命": {
+    "structure": "⿱亼叩",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丿",
+      "㇏",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "𠃌",
+      "丨"
+    ],
+    "pinyin": "Mìng",
+    "pinyinArray": [
+      "Ming"
+    ]
+  },
+  "咆": {
+    "structure": "⿰口包",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "𠃌",
+      "𠃍",
+      "一",
+      "乚"
+    ],
+    "pinyin": "Páo",
+    "pinyinArray": [
+      "Pao"
+    ]
+  },
+  "和": {
+    "structure": "⿰禾口",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Hé",
+    "pinyinArray": [
+      "He"
+    ]
+  },
+  "咏": {
+    "structure": "⿰口永",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丶",
+      "𠃌",
+      "㇇|乛",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Yǒng",
+    "pinyinArray": [
+      "Yong"
+    ]
+  },
+  "咐": {
+    "structure": "⿰口付",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "丨",
+      "一",
+      "亅",
+      "丶"
+    ],
+    "pinyin": "Fù",
+    "pinyinArray": [
+      "Fu"
+    ]
+  },
+  "咒": {
+    "structure": "⿱吅几",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "⺄"
+    ],
+    "pinyin": "Zhòu",
+    "pinyinArray": [
+      "Zhou"
+    ]
+  },
+  "咕": {
+    "structure": "⿰口古",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Gū",
+    "pinyinArray": [
+      "Gu"
+    ]
+  },
+  "咖": {
+    "structure": "⿰口加",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "𠃌",
+      "丿",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Kā",
+    "pinyinArray": [
+      "Ka"
+    ]
+  },
+  "咙": {
+    "structure": "⿰口龙",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "乚",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Lóng",
+    "pinyinArray": [
+      "Long"
+    ]
+  },
+  "咧": {
+    "structure": "⿰口列",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "㇇|乛",
+      "丶",
+      "丨",
+      "亅"
+    ],
+    "pinyin": "Lie",
+    "pinyinArray": [
+      "Lie"
+    ]
+  },
+  "咨": {
+    "structure": "⿱次口",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "丿",
+      "㇇|乛",
+      "丿",
+      "㇏",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Zī",
+    "pinyinArray": [
+      "Zi"
+    ]
+  },
+  "咪": {
+    "structure": "⿰口米",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Mǐ",
+    "pinyinArray": [
+      "Mi"
+    ]
+  },
+  "咬": {
+    "structure": "⿰口交",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丶",
+      "一",
+      "丿",
+      "丶",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Yǎo",
+    "pinyinArray": [
+      "Yao"
+    ]
+  },
+  "咱": {
+    "structure": "⿰口自",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一"
+    ],
+    "pinyin": "Zán",
+    "pinyinArray": [
+      "Zan"
+    ]
+  },
+  "咳": {
+    "structure": "⿰口亥",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丶",
+      "一",
+      "𠃋",
+      "丿",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Ké",
+    "pinyinArray": [
+      "Ke"
+    ]
+  },
+  "咸": {
+    "structure": "⿵戌口",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "㇂|㇃",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Xián",
+    "pinyinArray": [
+      "Xian"
+    ]
+  },
+  "咽": {
+    "structure": "⿰口因",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "丶",
+      "一"
+    ],
+    "pinyin": "Yè",
+    "pinyinArray": [
+      "Ye"
+    ]
+  },
+  "哀": {
+    "structure": "⿳亠口𧘇",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "𠄌",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Āi",
+    "pinyinArray": [
+      "Ai"
+    ]
+  },
+  "品": {
+    "structure": "⿱口吅",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Pǐn",
+    "pinyinArray": [
+      "Pin"
+    ]
+  },
+  "哄": {
+    "structure": "⿰口共",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Hòng",
+    "pinyinArray": [
+      "Hong"
+    ]
+  },
+  "哆": {
+    "structure": "⿰口多",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "㇇|乛",
+      "丶",
+      "丿",
+      "㇇|乛",
+      "丶"
+    ],
+    "pinyin": "Duō",
+    "pinyinArray": [
+      "Duo"
+    ]
+  },
+  "哈": {
+    "structure": "⿰口合",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "㇏",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Hà",
+    "pinyinArray": [
+      "Ha"
+    ]
+  },
+  "响": {
+    "structure": "⿰口向",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "丨",
+      "𠃌",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Xiǎng",
+    "pinyinArray": [
+      "Xiang"
+    ]
+  },
+  "哎": {
+    "structure": "⿰口艾",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Āi",
+    "pinyinArray": [
+      "Ai"
+    ]
+  },
+  "哑": {
+    "structure": "⿰口亚",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "丨",
+      "丶",
+      "丿",
+      "一"
+    ],
+    "pinyin": "Yǎ",
+    "pinyinArray": [
+      "Ya"
+    ]
+  },
+  "哗": {
+    "structure": "⿰口华",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "丨",
+      "丿",
+      "乚",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Huá",
+    "pinyinArray": [
+      "Hua"
+    ]
+  },
+  "哟": {
+    "structure": "⿰口约",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "𠃋",
+      "𠃋",
+      "㇀",
+      "丿",
+      "𠃌",
+      "丶"
+    ],
+    "pinyin": "Yo",
+    "pinyinArray": [
+      "Yo"
+    ]
+  },
+  "哥": {
+    "structure": "⿱可可",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "亅"
+    ],
+    "pinyin": "Gē",
+    "pinyinArray": [
+      "Ge"
+    ]
+  },
+  "哨": {
+    "structure": "⿰口肖",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "丶",
+      "丿",
+      "丨",
+      "𠃌",
+      "一",
+      "一"
+    ],
+    "pinyin": "Shào",
+    "pinyinArray": [
+      "Shao"
+    ]
+  },
+  "哩": {
+    "structure": "⿰口里",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "一"
+    ],
+    "pinyin": "Li",
+    "pinyinArray": [
+      "Li"
+    ]
+  },
+  "哪": {
+    "structure": "⿰口那",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "𠃌",
+      "一",
+      "一",
+      "丿",
+      "𠄎|㇌",
+      "丨"
+    ],
+    "pinyin": "Nǎ",
+    "pinyinArray": [
+      "Na"
+    ]
+  },
+  "哭": {
+    "structure": "⿱吅犬",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "㇏",
+      "丶"
+    ],
+    "pinyin": "Kū",
+    "pinyinArray": [
+      "Ku"
+    ]
+  },
+  "哮": {
+    "structure": "⿰口孝",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "㇇|乛",
+      "亅",
+      "一"
+    ],
+    "pinyin": "Xiào",
+    "pinyinArray": [
+      "Xiao"
+    ]
+  },
+  "哲": {
+    "structure": "⿱折口",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丿",
+      "丿",
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Zhé",
+    "pinyinArray": [
+      "Zhe"
+    ]
+  },
+  "哺": {
+    "structure": "⿰口甫",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "𠃌",
+      "一",
+      "一",
+      "丨",
+      "丶"
+    ],
+    "pinyin": "Bǔ",
+    "pinyinArray": [
+      "Bu"
+    ]
+  },
+  "哼": {
+    "structure": "⿰口亨",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丶",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "㇇|乛",
+      "亅"
+    ],
+    "pinyin": "Hēng",
+    "pinyinArray": [
+      "Heng"
+    ]
+  },
+  "唁": {
+    "structure": "⿰口言",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丶",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Yàn",
+    "pinyinArray": [
+      "Yan"
+    ]
+  },
+  "唆": {
+    "structure": "⿰口夋",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "𠃋",
+      "丶",
+      "丿",
+      "丶",
+      "丿",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Suō",
+    "pinyinArray": [
+      "Suo"
+    ]
+  },
+  "唇": {
+    "structure": "⿸辰口[G]",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "一",
+      "一",
+      "𠄌",
+      "丿",
+      "㇏",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Chún",
+    "pinyinArray": [
+      "Chun"
+    ]
+  },
+  "唉": {
+    "structure": "⿰口矣",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "𠃋",
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Ài",
+    "pinyinArray": [
+      "Ai"
+    ]
+  },
+  "唐": {
+    "structure": "⿸广⿱肀口[GTKV]",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Táng",
+    "pinyinArray": [
+      "Tang"
+    ]
+  },
+  "唠": {
+    "structure": "⿰口劳",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "丨",
+      "㇀",
+      "㇇|乛",
+      "𠃌",
+      "丿"
+    ],
+    "pinyin": "Láo",
+    "pinyinArray": [
+      "Lao"
+    ]
+  },
+  "唤": {
+    "structure": "⿰口奂",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "㇇|乛",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Huàn",
+    "pinyinArray": [
+      "Huan"
+    ]
+  },
+  "唧": {
+    "structure": "⿰口即",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "𠃍",
+      "一",
+      "一",
+      "𠄌",
+      "丶",
+      "𠃌",
+      "丨"
+    ],
+    "pinyin": "Jī",
+    "pinyinArray": [
+      "Ji"
+    ]
+  },
+  "唬": {
+    "structure": "⿰口虎",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "㇇|乛",
+      "丿",
+      "一",
+      "乚",
+      "丿",
+      "⺄"
+    ],
+    "pinyin": "Hǔ",
+    "pinyinArray": [
+      "Hu"
+    ]
+  },
+  "售": {
+    "structure": "⿱隹口",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "丶",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Shòu",
+    "pinyinArray": [
+      "Shou"
+    ]
+  },
+  "唯": {
+    "structure": "⿰口隹",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "丨",
+      "丶",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Wéi",
+    "pinyinArray": [
+      "Wei"
+    ]
+  },
+  "唱": {
+    "structure": "⿰口昌",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Chàng",
+    "pinyinArray": [
+      "Chang"
+    ]
+  },
+  "唾": {
+    "structure": "⿰口垂",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "一"
+    ],
+    "pinyin": "Tuò",
+    "pinyinArray": [
+      "Tuo"
+    ]
+  },
+  "啃": {
+    "structure": "⿰口肯",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "𠃌",
+      "一",
+      "一"
+    ],
+    "pinyin": "Kěn",
+    "pinyinArray": [
+      "Ken"
+    ]
+  },
+  "啄": {
+    "structure": "⿰口豖[GTKV]",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "㇁",
+      "丿",
+      "丿",
+      "丶",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Zhuó",
+    "pinyinArray": [
+      "Zhuo"
+    ]
+  },
+  "商": {
+    "structure": "⿱⿱亠丷冏",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "丨",
+      "𠃌",
+      "丿",
+      "丶",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Shāng",
+    "pinyinArray": [
+      "Shang"
+    ]
+  },
+  "啊": {
+    "structure": "⿰口阿",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "𠄎|㇌",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "亅"
+    ],
+    "pinyin": "Ā",
+    "pinyinArray": [
+      "A"
+    ]
+  },
+  "啡": {
+    "structure": "⿰口非",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "一",
+      "一"
+    ],
+    "pinyin": "Fēi",
+    "pinyinArray": [
+      "Fei"
+    ]
+  },
+  "啤": {
+    "structure": "⿰口卑",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Pí",
+    "pinyinArray": [
+      "Pi"
+    ]
+  },
+  "啥": {
+    "structure": "⿰口舍",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "㇏",
+      "一",
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Shá",
+    "pinyinArray": [
+      "Sha"
+    ]
+  },
+  "啦": {
+    "structure": "⿰口拉",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "亅",
+      "㇀",
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "一"
+    ],
+    "pinyin": "Lā",
+    "pinyinArray": [
+      "La"
+    ]
+  },
+  "啰": {
+    "structure": "⿰口罗",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃍",
+      "丨",
+      "丨",
+      "一",
+      "丿",
+      "㇇|乛",
+      "丶"
+    ],
+    "pinyin": "Luo",
+    "pinyinArray": [
+      "Luo"
+    ]
+  },
+  "啸": {
+    "structure": "⿰口肃",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "丿",
+      "丨",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Xiào",
+    "pinyinArray": [
+      "Xiao"
+    ]
+  },
+  "啼": {
+    "structure": "⿰口帝",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "㇀",
+      "㇇|乛",
+      "丨",
+      "𠃌",
+      "丨"
+    ],
+    "pinyin": "Tí",
+    "pinyinArray": [
+      "Ti"
+    ]
+  },
+  "喂": {
+    "structure": "⿰口畏",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "一",
+      "𠄌",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Wèi",
+    "pinyinArray": [
+      "Wei"
+    ]
+  },
+  "善": {
+    "structure": "⿱⿱羊䒑口[GJK]",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Shàn",
+    "pinyinArray": [
+      "Shan"
+    ]
+  },
+  "喇": {
+    "structure": "⿰口剌",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丨",
+      "亅"
+    ],
+    "pinyin": "Lá",
+    "pinyinArray": [
+      "La"
+    ]
+  },
+  "喉": {
+    "structure": "⿰口侯",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "一",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Hóu",
+    "pinyinArray": [
+      "Hou"
+    ]
+  },
+  "喊": {
+    "structure": "⿰口咸",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "㇂|㇃",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Hǎn",
+    "pinyinArray": [
+      "Han"
+    ]
+  },
+  "喘": {
+    "structure": "⿰口耑",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "㇄",
+      "丨",
+      "一",
+      "丿",
+      "丨",
+      "𠃌",
+      "丨",
+      "丨"
+    ],
+    "pinyin": "Chuǎn",
+    "pinyinArray": [
+      "Chuan"
+    ]
+  },
+  "喜": {
+    "structure": "⿱壴口",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Xǐ",
+    "pinyinArray": [
+      "Xi"
+    ]
+  },
+  "喝": {
+    "structure": "⿰口曷[GTKV]",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "𠃌",
+      "丿",
+      "丶",
+      "㇄"
+    ],
+    "pinyin": "Hē",
+    "pinyinArray": [
+      "He"
+    ]
+  },
+  "喧": {
+    "structure": "⿰口宣",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一"
+    ],
+    "pinyin": "Xuān",
+    "pinyinArray": [
+      "Xuan"
+    ]
+  },
+  "喳": {
+    "structure": "⿰口查[GT]",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "丿",
+      "㇏",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一"
+    ],
+    "pinyin": "Zhā",
+    "pinyinArray": [
+      "Zha"
+    ]
+  },
+  "喷": {
+    "structure": "⿰口贲",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "丨",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Pèn",
+    "pinyinArray": [
+      "Pen"
+    ]
+  },
+  "喻": {
+    "structure": "⿰口俞",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "㇏",
+      "一",
+      "丨",
+      "𠃌",
+      "一",
+      "一",
+      "丨",
+      "亅"
+    ],
+    "pinyin": "Yù",
+    "pinyinArray": [
+      "Yu"
+    ]
+  },
+  "嗅": {
+    "structure": "⿰口臭",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "㇏",
+      "丶"
+    ],
+    "pinyin": "Xiù",
+    "pinyinArray": [
+      "Xiu"
+    ]
+  },
+  "嗓": {
+    "structure": "⿰口桑",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "㇇|乛",
+      "丶",
+      "㇇|乛",
+      "丶",
+      "㇇|乛",
+      "丶",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Sǎng",
+    "pinyinArray": [
+      "Sang"
+    ]
+  },
+  "嗜": {
+    "structure": "⿰口耆",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "丿",
+      "乚",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Shì",
+    "pinyinArray": [
+      "Shi"
+    ]
+  },
+  "嗡": {
+    "structure": "⿰口翁",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "㇏",
+      "𠃋",
+      "丶",
+      "𠃌",
+      "丶",
+      "㇀",
+      "𠃌",
+      "丶",
+      "㇀"
+    ],
+    "pinyin": "Wēng",
+    "pinyinArray": [
+      "Weng"
+    ]
+  },
+  "嗤": {
+    "structure": "⿰口蚩",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "㇄",
+      "丨",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丶"
+    ],
+    "pinyin": "Chī",
+    "pinyinArray": [
+      "Chi"
+    ]
+  },
+  "嗦": {
+    "structure": "⿰口索",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "㇀",
+      "㇇|乛",
+      "𠃋",
+      "𠃋",
+      "丶",
+      "亅",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Suo",
+    "pinyinArray": [
+      "Suo"
+    ]
+  },
+  "嗽": {
+    "structure": "⿰口欶",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丿",
+      "㇇|乛",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Sòu",
+    "pinyinArray": [
+      "Sou"
+    ]
+  },
+  "嘀": {
+    "structure": "⿰口啇",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "丨",
+      "𠃌",
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Dí",
+    "pinyinArray": [
+      "Di"
+    ]
+  },
+  "嘁": {
+    "structure": "⿰口戚",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "丨",
+      "一",
+      "一",
+      "亅",
+      "丿",
+      "丶",
+      "㇂|㇃",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Qī",
+    "pinyinArray": [
+      "Qi"
+    ]
+  },
+  "嘉": {
+    "structure": "⿱壴加",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "𠃌",
+      "丿",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Jiā",
+    "pinyinArray": [
+      "Jia"
+    ]
+  },
+  "嘱": {
+    "structure": "⿰口属",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "𠃍",
+      "一",
+      "丿",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃌",
+      "丨",
+      "㇀",
+      "丶"
+    ],
+    "pinyin": "Zhǔ",
+    "pinyinArray": [
+      "Zhu"
+    ]
+  },
+  "嘲": {
+    "structure": "⿰口朝",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "丿",
+      "𠃌",
+      "一",
+      "一"
+    ],
+    "pinyin": "Cháo",
+    "pinyinArray": [
+      "Chao"
+    ]
+  },
+  "嘴": {
+    "structure": "⿰口觜",
+    "strokeCount": 16,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "㇀",
+      "丿",
+      "乚",
+      "丿",
+      "㇇|乛",
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Zuǐ",
+    "pinyinArray": [
+      "Zui"
+    ]
+  },
+  "嘶": {
+    "structure": "⿰口斯",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "丶",
+      "丿",
+      "丿",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Sī",
+    "pinyinArray": [
+      "Si"
+    ]
+  },
+  "嘹": {
+    "structure": "⿰口尞",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "㇏",
+      "丶",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "亅",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Liáo",
+    "pinyinArray": [
+      "Liao"
+    ]
+  },
+  "嘿": {
+    "structure": "⿰口黑",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃍",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "一",
+      "一",
+      "㇀",
+      "丶",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Hēi",
+    "pinyinArray": [
+      "Hei"
+    ]
+  },
+  "器": {
+    "structure": "⿳吅犬吅[GTKV]",
+    "strokeCount": 16,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "㇏",
+      "丶",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Qì",
+    "pinyinArray": [
+      "Qi"
+    ]
+  },
+  "噩": {
+    "structure": "⿱⿻干㗊一",
+    "strokeCount": 16,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Ě",
+    "pinyinArray": [
+      "E"
+    ]
+  },
+  "噪": {
+    "structure": "⿰口喿",
+    "strokeCount": 16,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Zào",
+    "pinyinArray": [
+      "Zao"
+    ]
+  },
+  "嚎": {
+    "structure": "⿰口豪",
+    "strokeCount": 17,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丶",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "㇀",
+      "㇇|乛",
+      "一",
+      "丿",
+      "㇁",
+      "丿",
+      "丿",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Háo",
+    "pinyinArray": [
+      "Hao"
+    ]
+  },
+  "嚣": {
+    "structure": "⿳吅页吅",
+    "strokeCount": 18,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Xiāo",
+    "pinyinArray": [
+      "Xiao"
+    ]
+  },
+  "嚷": {
+    "structure": "⿰口襄",
+    "strokeCount": 20,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丶",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丿",
+      "𠄌",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Rǎng",
+    "pinyinArray": [
+      "Rang"
+    ]
+  },
+  "嚼": {
+    "structure": "⿰口爵",
+    "strokeCount": 20,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "丶",
+      "丶",
+      "丿",
+      "丨",
+      "𠃍",
+      "丨",
+      "丨",
+      "一",
+      "𠃍",
+      "一",
+      "一",
+      "𠄌",
+      "丶",
+      "一",
+      "亅",
+      "丶"
+    ],
+    "pinyin": "Jiáo",
+    "pinyinArray": [
+      "Jiao"
+    ]
+  },
+  "囊": {
+    "structure": "⿳⿻一中冖⿱⿱吅𠀎𧘇",
+    "strokeCount": 22,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "㇀",
+      "㇇|乛",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丿",
+      "𠄌",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Náng",
+    "pinyinArray": [
+      "Nang"
+    ]
+  },
+  "囚": {
+    "structure": "⿴囗人",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "丿",
+      "丶",
+      "一"
+    ],
+    "pinyin": "Qiú",
+    "pinyinArray": [
+      "Qiu"
+    ]
+  },
+  "四": {
+    "structure": "⿴囗儿",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "丿",
+      "㇄",
+      "一"
+    ],
+    "pinyin": "Sì",
+    "pinyinArray": [
+      "Si"
+    ]
+  },
+  "回": {
+    "structure": "⿴囗口",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Huí",
+    "pinyinArray": [
+      "Hui"
+    ]
+  },
+  "因": {
+    "structure": "⿴囗大",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "丶",
+      "一"
+    ],
+    "pinyin": "Yīn",
+    "pinyinArray": [
+      "Yin"
+    ]
+  },
+  "团": {
+    "structure": "⿴囗才",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "亅",
+      "丿",
+      "一"
+    ],
+    "pinyin": "Tuán",
+    "pinyinArray": [
+      "Tuan"
+    ]
+  },
+  "囤": {
+    "structure": "⿴囗屯",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "㇄",
+      "丨",
+      "乚",
+      "一"
+    ],
+    "pinyin": "Tún",
+    "pinyinArray": [
+      "Tun"
+    ]
+  },
+  "园": {
+    "structure": "⿴囗元",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "乚",
+      "一"
+    ],
+    "pinyin": "Yuán",
+    "pinyinArray": [
+      "Yuan"
+    ]
+  },
+  "困": {
+    "structure": "⿴囗木",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "一"
+    ],
+    "pinyin": "Kùn",
+    "pinyinArray": [
+      "Kun"
+    ]
+  },
+  "囱": {
+    "structure": "⿴⿱丿囗夂[G]",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "𠃍",
+      "丿",
+      "㇇|乛",
+      "丶",
+      "一"
+    ],
+    "pinyin": "Cōng",
+    "pinyinArray": [
+      "Cong"
+    ]
+  },
+  "围": {
+    "structure": "⿴囗韦",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "𠃌",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Wéi",
+    "pinyinArray": [
+      "Wei"
+    ]
+  },
+  "固": {
+    "structure": "⿴囗古",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Gù",
+    "pinyinArray": [
+      "Gu"
+    ]
+  },
+  "国": {
+    "structure": "⿴囗玉",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "丶",
+      "一"
+    ],
+    "pinyin": "Guó",
+    "pinyinArray": [
+      "Guo"
+    ]
+  },
+  "图": {
+    "structure": "⿴囗冬",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "丿",
+      "㇇|乛",
+      "㇏",
+      "丶",
+      "丶",
+      "一"
+    ],
+    "pinyin": "Tú",
+    "pinyinArray": [
+      "Tu"
+    ]
+  },
+  "圃": {
+    "structure": "⿴囗甫",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃌",
+      "一",
+      "一",
+      "丨",
+      "丶",
+      "一"
+    ],
+    "pinyin": "Pǔ",
+    "pinyinArray": [
+      "Pu"
+    ]
+  },
+  "圆": {
+    "structure": "⿴囗员",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶",
+      "一"
+    ],
+    "pinyin": "Yuán",
+    "pinyinArray": [
+      "Yuan"
+    ]
+  },
+  "圈": {
+    "structure": "⿴囗卷",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "丿",
+      "㇏",
+      "𠃌",
+      "乚",
+      "一"
+    ],
+    "pinyin": "Quān",
+    "pinyinArray": [
+      "Quan"
+    ]
+  },
+  "土": {
+    "structure": "⿱十一",
+    "strokeCount": 3,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Tǔ",
+    "pinyinArray": [
+      "Tu"
+    ]
+  },
+  "圣": {
+    "structure": "⿱又土",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "㇇|乛",
+      "㇏",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Shèng",
+    "pinyinArray": [
+      "Sheng"
+    ]
+  },
+  "在": {
+    "structure": "⿸③土",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "丨",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Zài",
+    "pinyinArray": [
+      "Zai"
+    ]
+  },
+  "地": {
+    "structure": "⿰土也",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "㇀",
+      "𠃌",
+      "丨",
+      "乚"
+    ],
+    "pinyin": "Dì",
+    "pinyinArray": [
+      "Di"
+    ]
+  },
+  "场": {
+    "structure": "⿰土𠃓",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "㇀",
+      "𠄎|㇌",
+      "丿",
+      "丿"
+    ],
+    "pinyin": "Cháng",
+    "pinyinArray": [
+      "Chang"
+    ]
+  },
+  "圾": {
+    "structure": "⿰土及",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "㇀",
+      "丿",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Jī",
+    "pinyinArray": [
+      "Ji"
+    ]
+  },
+  "址": {
+    "structure": "⿰土止",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "㇀",
+      "丨",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Zhǐ",
+    "pinyinArray": [
+      "Zhi"
+    ]
+  },
+  "均": {
+    "structure": "⿰土匀[G]",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "㇀",
+      "丿",
+      "𠃌",
+      "丶",
+      "㇀"
+    ],
+    "pinyin": "Jūn",
+    "pinyinArray": [
+      "Jun"
+    ]
+  },
+  "坊": {
+    "structure": "⿰土方",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "㇀",
+      "丶",
+      "一",
+      "𠃌",
+      "丿"
+    ],
+    "pinyin": "Fáng",
+    "pinyinArray": [
+      "Fang"
+    ]
+  },
+  "坎": {
+    "structure": "⿰土欠",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "㇀",
+      "丿",
+      "㇇|乛",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Kǎn",
+    "pinyinArray": [
+      "Kan"
+    ]
+  },
+  "坏": {
+    "structure": "⿰土不",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "㇀",
+      "一",
+      "丿",
+      "丨",
+      "丶"
+    ],
+    "pinyin": "Huài",
+    "pinyinArray": [
+      "Huai"
+    ]
+  },
+  "坐": {
+    "structure": "⿻土从",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丿",
+      "丶",
+      "丿",
+      "丶",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Zuò",
+    "pinyinArray": [
+      "Zuo"
+    ]
+  },
+  "坑": {
+    "structure": "⿰土亢",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "㇀",
+      "丶",
+      "一",
+      "丿",
+      "⺄"
+    ],
+    "pinyin": "Kēng",
+    "pinyinArray": [
+      "Keng"
+    ]
+  },
+  "块": {
+    "structure": "⿰土夬",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "㇀",
+      "𠃍",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Kuài",
+    "pinyinArray": [
+      "Kuai"
+    ]
+  },
+  "坚": {
+    "structure": "⿱⿰〢又土",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丨",
+      "丨",
+      "㇇|乛",
+      "㇏",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Jiān",
+    "pinyinArray": [
+      "Jian"
+    ]
+  },
+  "坛": {
+    "structure": "⿰土云",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "㇀",
+      "一",
+      "一",
+      "𠃋",
+      "丶"
+    ],
+    "pinyin": "Tán",
+    "pinyinArray": [
+      "Tan"
+    ]
+  },
+  "坝": {
+    "structure": "⿰土贝",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "㇀",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Bà",
+    "pinyinArray": [
+      "Ba"
+    ]
+  },
+  "坞": {
+    "structure": "⿰土乌",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "㇀",
+      "丿",
+      "𠃌",
+      "㇉",
+      "一"
+    ],
+    "pinyin": "Wù",
+    "pinyinArray": [
+      "Wu"
+    ]
+  },
+  "坟": {
+    "structure": "⿰土文",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "㇀",
+      "丶",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Fén",
+    "pinyinArray": [
+      "Fen"
+    ]
+  },
+  "坠": {
+    "structure": "⿱队土",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "𠄎|㇌",
+      "丨",
+      "丿",
+      "㇏",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Zhuì",
+    "pinyinArray": [
+      "Zhui"
+    ]
+  },
+  "坡": {
+    "structure": "⿰土皮",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "㇀",
+      "㇇|乛",
+      "丿",
+      "丨",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Pō",
+    "pinyinArray": [
+      "Po"
+    ]
+  },
+  "坤": {
+    "structure": "⿰土申",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "㇀",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Kūn",
+    "pinyinArray": [
+      "Kun"
+    ]
+  },
+  "坦": {
+    "structure": "⿰土旦",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "㇀",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一"
+    ],
+    "pinyin": "Tǎn",
+    "pinyinArray": [
+      "Tan"
+    ]
+  },
+  "坪": {
+    "structure": "⿰土平",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "㇀",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Píng",
+    "pinyinArray": [
+      "Ping"
+    ]
+  },
+  "坯": {
+    "structure": "⿰土丕",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "㇀",
+      "一",
+      "丿",
+      "丨",
+      "丶",
+      "一"
+    ],
+    "pinyin": "Pī",
+    "pinyinArray": [
+      "Pi"
+    ]
+  },
+  "坷": {
+    "structure": "⿰土可",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "㇀",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "亅"
+    ],
+    "pinyin": "Kě",
+    "pinyinArray": [
+      "Ke"
+    ]
+  },
+  "垂": {
+    "structure": "⿳丿⑥一",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "一"
+    ],
+    "pinyin": "Chuí",
+    "pinyinArray": [
+      "Chui"
+    ]
+  },
+  "垃": {
+    "structure": "⿰土立",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "㇀",
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "一"
+    ],
+    "pinyin": "Lā",
+    "pinyinArray": [
+      "La"
+    ]
+  },
+  "垄": {
+    "structure": "⿱龙土",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "乚",
+      "丿",
+      "丶",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Lǒng",
+    "pinyinArray": [
+      "Long"
+    ]
+  },
+  "型": {
+    "structure": "⿱刑土",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "一",
+      "丿",
+      "丨",
+      "丨",
+      "亅",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Xíng",
+    "pinyinArray": [
+      "Xing"
+    ]
+  },
+  "垒": {
+    "structure": "⿱厽土",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "𠃋",
+      "丶",
+      "𠃋",
+      "丶",
+      "𠃋",
+      "丶",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Lěi",
+    "pinyinArray": [
+      "Lei"
+    ]
+  },
+  "垛": {
+    "structure": "⿰土朵",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "㇀",
+      "丿",
+      "㇅|㇍",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Duǒ",
+    "pinyinArray": [
+      "Duo"
+    ]
+  },
+  "垢": {
+    "structure": "⿰土后",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "㇀",
+      "丿",
+      "丿",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Gòu",
+    "pinyinArray": [
+      "Gou"
+    ]
+  },
+  "垦": {
+    "structure": "⿱艮土",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "𠃍",
+      "一",
+      "一",
+      "𠄌",
+      "丿",
+      "㇏",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Kěn",
+    "pinyinArray": [
+      "Ken"
+    ]
+  },
+  "垫": {
+    "structure": "⿱执土",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丿",
+      "⺄",
+      "丶",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Diàn",
+    "pinyinArray": [
+      "Dian"
+    ]
+  },
+  "垮": {
+    "structure": "⿰土夸",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "㇀",
+      "一",
+      "丿",
+      "㇏",
+      "一",
+      "一",
+      "㇉"
+    ],
+    "pinyin": "Kuǎ",
+    "pinyinArray": [
+      "Kua"
+    ]
+  },
+  "埂": {
+    "structure": "⿰土更",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "㇀",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Gěng",
+    "pinyinArray": [
+      "Geng"
+    ]
+  },
+  "埃": {
+    "structure": "⿰土矣",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "㇀",
+      "𠃋",
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Āi",
+    "pinyinArray": [
+      "Ai"
+    ]
+  },
+  "埋": {
+    "structure": "⿰土里",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "㇀",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "一"
+    ],
+    "pinyin": "Mái",
+    "pinyinArray": [
+      "Mai"
+    ]
+  },
+  "城": {
+    "structure": "⿰土成",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "㇀",
+      "一",
+      "丿",
+      "𠃌",
+      "㇂|㇃",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Chéng",
+    "pinyinArray": [
+      "Cheng"
+    ]
+  },
+  "域": {
+    "structure": "⿰土或",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "㇀",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "㇀",
+      "㇂|㇃",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Yù",
+    "pinyinArray": [
+      "Yu"
+    ]
+  },
+  "埠": {
+    "structure": "⿰土阜",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "㇀",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "𠃍",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Bù",
+    "pinyinArray": [
+      "Bu"
+    ]
+  },
+  "培": {
+    "structure": "⿰土咅",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "㇀",
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Péi",
+    "pinyinArray": [
+      "Pei"
+    ]
+  },
+  "基": {
+    "structure": "⿱其土",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "㇏",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Jī",
+    "pinyinArray": [
+      "Ji"
+    ]
+  },
+  "堂": {
+    "structure": "⿱𫩠土",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丨",
+      "丶",
+      "丿",
+      "㇀",
+      "㇇|乛",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Táng",
+    "pinyinArray": [
+      "Tang"
+    ]
+  },
+  "堆": {
+    "structure": "⿰土隹",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "㇀",
+      "丿",
+      "丨",
+      "丶",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Duī",
+    "pinyinArray": [
+      "Dui"
+    ]
+  },
+  "堕": {
+    "structure": "⿱陏土",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "𠄎|㇌",
+      "丨",
+      "一",
+      "丿",
+      "丨",
+      "𠃌",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Duò",
+    "pinyinArray": [
+      "Duo"
+    ]
+  },
+  "堡": {
+    "structure": "⿱保土",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "丿",
+      "㇏",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Bǎo",
+    "pinyinArray": [
+      "Bao"
+    ]
+  },
+  "堤": {
+    "structure": "⿰土是",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "㇀",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Dī",
+    "pinyinArray": [
+      "Di"
+    ]
+  },
+  "堪": {
+    "structure": "⿰土甚",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "㇀",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "丶",
+      "㇄"
+    ],
+    "pinyin": "Kān",
+    "pinyinArray": [
+      "Kan"
+    ]
+  },
+  "堰": {
+    "structure": "⿰土匽",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "㇀",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "𡿨",
+      "丿",
+      "一",
+      "㇄"
+    ],
+    "pinyin": "Yàn",
+    "pinyinArray": [
+      "Yan"
+    ]
+  },
+  "堵": {
+    "structure": "⿰土者",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "㇀",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Dǔ",
+    "pinyinArray": [
+      "Du"
+    ]
+  },
+  "塌": {
+    "structure": "⿰土𦐇",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "㇀",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "𠃌",
+      "丶",
+      "㇀",
+      "𠃌",
+      "丶",
+      "㇀"
+    ],
+    "pinyin": "Tā",
+    "pinyinArray": [
+      "Ta"
+    ]
+  },
+  "塑": {
+    "structure": "⿱朔土",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丶",
+      "丿",
+      "一",
+      "㇄",
+      "丨",
+      "丿",
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Sù",
+    "pinyinArray": [
+      "Su"
+    ]
+  },
+  "塔": {
+    "structure": "⿰土荅",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "㇀",
+      "一",
+      "丨",
+      "丨",
+      "丿",
+      "㇏",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Tǎ",
+    "pinyinArray": [
+      "Ta"
+    ]
+  },
+  "塘": {
+    "structure": "⿰土唐",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "㇀",
+      "丶",
+      "一",
+      "丿",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Táng",
+    "pinyinArray": [
+      "Tang"
+    ]
+  },
+  "塞": {
+    "structure": "⿱𡨄土",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "一",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丿",
+      "㇏",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Sāi",
+    "pinyinArray": [
+      "Sai"
+    ]
+  },
+  "填": {
+    "structure": "⿰土真",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "㇀",
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Tián",
+    "pinyinArray": [
+      "Tian"
+    ]
+  },
+  "境": {
+    "structure": "⿰土竟",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "㇀",
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Jìng",
+    "pinyinArray": [
+      "Jing"
+    ]
+  },
+  "墅": {
+    "structure": "⿱野土",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "㇀",
+      "㇇|乛",
+      "丶",
+      "㇇|乛",
+      "亅",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Shù",
+    "pinyinArray": [
+      "Shu"
+    ]
+  },
+  "墓": {
+    "structure": "⿱莫土",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "㇏",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Mù",
+    "pinyinArray": [
+      "Mu"
+    ]
+  },
+  "墙": {
+    "structure": "⿰土啬",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "㇀",
+      "一",
+      "丨",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "𠃍",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Qiáng",
+    "pinyinArray": [
+      "Qiang"
+    ]
+  },
+  "增": {
+    "structure": "⿰土曾",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "㇀",
+      "丶",
+      "丿",
+      "丨",
+      "𠃍",
+      "丨",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Zēng",
+    "pinyinArray": [
+      "Zeng"
+    ]
+  },
+  "墨": {
+    "structure": "⿱黑土[GTK]",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "一",
+      "一",
+      "㇀",
+      "丶",
+      "丶",
+      "丶",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Mò",
+    "pinyinArray": [
+      "Mo"
+    ]
+  },
+  "墩": {
+    "structure": "⿰土敦",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "㇀",
+      "丶",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "㇇|乛",
+      "亅",
+      "㇀",
+      "丿",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Dūn",
+    "pinyinArray": [
+      "Dun"
+    ]
+  },
+  "壁": {
+    "structure": "⿱辟土",
+    "strokeCount": 16,
+    "strokeShapes": [
+      "𠃍",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Bì",
+    "pinyinArray": [
+      "Bi"
+    ]
+  },
+  "壕": {
+    "structure": "⿰土豪",
+    "strokeCount": 17,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "㇀",
+      "丶",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "㇀",
+      "㇇|乛",
+      "一",
+      "丿",
+      "㇁",
+      "丿",
+      "丿",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Háo",
+    "pinyinArray": [
+      "Hao"
+    ]
+  },
+  "壤": {
+    "structure": "⿰土襄",
+    "strokeCount": 20,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "㇀",
+      "丶",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丿",
+      "𠄌",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Rǎng",
+    "pinyinArray": [
+      "Rang"
+    ]
+  },
+  "士": {
+    "structure": "⿱十一",
+    "strokeCount": 3,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Shì",
+    "pinyinArray": [
+      "Shi"
+    ]
+  },
+  "壮": {
+    "structure": "⿰丬士",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "丨",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Zhuàng",
+    "pinyinArray": [
+      "Zhuang"
+    ]
+  },
+  "声": {
+    "structure": "⿱士𠃜",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "一",
+      "𠃍",
+      "丨",
+      "一",
+      "丿"
+    ],
+    "pinyin": "Shēng",
+    "pinyinArray": [
+      "Sheng"
+    ]
+  },
+  "壳": {
+    "structure": "⿱士冗[G]",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "一",
+      "㇀",
+      "㇇|乛",
+      "丿",
+      "⺄"
+    ],
+    "pinyin": "Ké",
+    "pinyinArray": [
+      "Ke"
+    ]
+  },
+  "壶": {
+    "structure": "⿳士冖业",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "一",
+      "㇀",
+      "㇇|乛",
+      "丨",
+      "丨",
+      "丶",
+      "丿",
+      "一"
+    ],
+    "pinyin": "Hú",
+    "pinyinArray": [
+      "Hu"
+    ]
+  },
+  "壹": {
+    "structure": "⿳士冖豆",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "一",
+      "㇀",
+      "㇇|乛",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丶",
+      "丿",
+      "一"
+    ],
+    "pinyin": "Yī",
+    "pinyinArray": [
+      "Yi"
+    ]
+  },
+  "处": {
+    "structure": "⿺夂卜[GK]",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丿",
+      "㇇|乛",
+      "㇏",
+      "丨",
+      "丶"
+    ],
+    "pinyin": "Chù",
+    "pinyinArray": [
+      "Chu"
+    ]
+  },
+  "备": {
+    "structure": "⿱夂田",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丿",
+      "㇇|乛",
+      "㇏",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Bèi",
+    "pinyinArray": [
+      "Bei"
+    ]
+  },
+  "复": {
+    "structure": "⿳𠂉日夂[G]",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Fù",
+    "pinyinArray": [
+      "Fu"
+    ]
+  },
+  "夏": {
+    "structure": "⿱𦣻夂[GJK]",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Xià",
+    "pinyinArray": [
+      "Xia"
+    ]
+  },
+  "夕": {
+    "structure": "⿴𠂊丶",
+    "strokeCount": 3,
+    "strokeShapes": [
+      "丿",
+      "㇇|乛",
+      "丶"
+    ],
+    "pinyin": "Xī",
+    "pinyinArray": [
+      "Xi"
+    ]
+  },
+  "外": {
+    "structure": "⿰夕卜",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丿",
+      "㇇|乛",
+      "丶",
+      "丨",
+      "丶"
+    ],
+    "pinyin": "Wài",
+    "pinyinArray": [
+      "Wai"
+    ]
+  },
+  "多": {
+    "structure": "⿱夕夕",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丿",
+      "㇇|乛",
+      "丶",
+      "丿",
+      "㇇|乛",
+      "丶"
+    ],
+    "pinyin": "Duō",
+    "pinyinArray": [
+      "Duo"
+    ]
+  },
+  "夜": {
+    "structure": "⿱亠⿰亻⿴夂丶",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "丨",
+      "丿",
+      "㇇|乛",
+      "丶",
+      "㇏"
+    ],
+    "pinyin": "Yè",
+    "pinyinArray": [
+      "Ye"
+    ]
+  },
+  "够": {
+    "structure": "⿰句多",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "㇇|乛",
+      "丶",
+      "丿",
+      "㇇|乛",
+      "丶"
+    ],
+    "pinyin": "Gòu",
+    "pinyinArray": [
+      "Gou"
+    ]
+  },
+  "大": {
+    "structure": "⿻一人",
+    "strokeCount": 3,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Dà",
+    "pinyinArray": [
+      "Da"
+    ]
+  },
+  "天": {
+    "structure": "⿱一大",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "一",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Tiān",
+    "pinyinArray": [
+      "Tian"
+    ]
+  },
+  "太": {
+    "structure": "⿵大丶",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "㇏",
+      "丶"
+    ],
+    "pinyin": "Tài",
+    "pinyinArray": [
+      "Tai"
+    ]
+  },
+  "夫": {
+    "structure": "⿻二人",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "一",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Fú",
+    "pinyinArray": [
+      "Fu"
+    ]
+  },
+  "夭": {
+    "structure": "⿱丿大",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Yāo",
+    "pinyinArray": [
+      "Yao"
+    ]
+  },
+  "央": {
+    "structure": "央",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Yāng",
+    "pinyinArray": [
+      "Yang"
+    ]
+  },
+  "夯": {
+    "structure": "⿱大力",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "㇏",
+      "𠃌",
+      "丿"
+    ],
+    "pinyin": "Hāng",
+    "pinyinArray": [
+      "Hang"
+    ]
+  },
+  "失": {
+    "structure": "⿰丿夫",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Shī",
+    "pinyinArray": [
+      "Shi"
+    ]
+  },
+  "头": {
+    "structure": "头",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "一",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Tou",
+    "pinyinArray": [
+      "Tou"
+    ]
+  },
+  "夷": {
+    "structure": "⿻大弓",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "一",
+      "𠃍",
+      "一",
+      "㇉",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Yí",
+    "pinyinArray": [
+      "Yi"
+    ]
+  },
+  "夸": {
+    "structure": "⿱大亏",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "㇏",
+      "一",
+      "一",
+      "㇉"
+    ],
+    "pinyin": "Kuā",
+    "pinyinArray": [
+      "Kua"
+    ]
+  },
+  "夹": {
+    "structure": "⿻夫丷",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Jiá",
+    "pinyinArray": [
+      "Jia"
+    ]
+  },
+  "夺": {
+    "structure": "⿱大寸",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "㇏",
+      "一",
+      "亅",
+      "丶"
+    ],
+    "pinyin": "Duó",
+    "pinyinArray": [
+      "Duo"
+    ]
+  },
+  "奄": {
+    "structure": "⿱大电",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "㇏",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "乚"
+    ],
+    "pinyin": "Yǎn",
+    "pinyinArray": [
+      "Yan"
+    ]
+  },
+  "奇": {
+    "structure": "⿱大可",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "丶",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "亅"
+    ],
+    "pinyin": "Qí",
+    "pinyinArray": [
+      "Qi"
+    ]
+  },
+  "奈": {
+    "structure": "⿱大示",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "㇏",
+      "一",
+      "一",
+      "亅",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Nài",
+    "pinyinArray": [
+      "Nai"
+    ]
+  },
+  "奉": {
+    "structure": "⿱𡗗⿻二丨",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "一",
+      "一",
+      "丿",
+      "㇏",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Fèng",
+    "pinyinArray": [
+      "Feng"
+    ]
+  },
+  "奋": {
+    "structure": "⿱大田",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "㇏",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Fèn",
+    "pinyinArray": [
+      "Fen"
+    ]
+  },
+  "奏": {
+    "structure": "⿱𡗗天",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "一",
+      "一",
+      "丿",
+      "㇏",
+      "一",
+      "一",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Zòu",
+    "pinyinArray": [
+      "Zou"
+    ]
+  },
+  "契": {
+    "structure": "⿱㓞大[GTKV]",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "一",
+      "一",
+      "丨",
+      "𠃌",
+      "丿",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Qì",
+    "pinyinArray": [
+      "Qi"
+    ]
+  },
+  "奔": {
+    "structure": "⿱大卉",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "㇏",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "丨"
+    ],
+    "pinyin": "Bèn",
+    "pinyinArray": [
+      "Ben"
+    ]
+  },
+  "奕": {
+    "structure": "⿱亦大",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "亅",
+      "丿",
+      "丶",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Yì",
+    "pinyinArray": [
+      "Yi"
+    ]
+  },
+  "奖": {
+    "structure": "⿱⿰丬夕大",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "丨",
+      "丿",
+      "㇇|乛",
+      "丶",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Jiǎng",
+    "pinyinArray": [
+      "Jiang"
+    ]
+  },
+  "套": {
+    "structure": "⿱大镸",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "㇏",
+      "一",
+      "丨",
+      "一",
+      "一",
+      "一",
+      "𠃋",
+      "丶"
+    ],
+    "pinyin": "Tào",
+    "pinyinArray": [
+      "Tao"
+    ]
+  },
+  "奠": {
+    "structure": "⿱酋大",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "𠃍",
+      "丿",
+      "㇄",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Diàn",
+    "pinyinArray": [
+      "Dian"
+    ]
+  },
+  "奢": {
+    "structure": "⿱大者",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "㇏",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Shē",
+    "pinyinArray": [
+      "She"
+    ]
+  },
+  "奥": {
+    "structure": "⿱⿵⿱丿冂米大",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "𠃍",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Ào",
+    "pinyinArray": [
+      "Ao"
+    ]
+  },
+  "女": {
+    "structure": "女",
+    "strokeCount": 3,
+    "strokeShapes": [
+      "𡿨",
+      "丿",
+      "一"
+    ],
+    "pinyin": "Nǚ",
+    "pinyinArray": [
+      "Nü"
+    ]
+  },
+  "奴": {
+    "structure": "⿰女又",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "𡿨",
+      "丿",
+      "一",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Nú",
+    "pinyinArray": [
+      "Nu"
+    ]
+  },
+  "奶": {
+    "structure": "⿰女乃",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "𡿨",
+      "丿",
+      "一",
+      "𠄎|㇌",
+      "丿"
+    ],
+    "pinyin": "Nǎi",
+    "pinyinArray": [
+      "Nai"
+    ]
+  },
+  "奸": {
+    "structure": "⿰女干",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "𡿨",
+      "丿",
+      "一",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Gān",
+    "pinyinArray": [
+      "Gan"
+    ]
+  },
+  "她": {
+    "structure": "⿰女也",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "𡿨",
+      "丿",
+      "一",
+      "𠃌",
+      "丨",
+      "乚"
+    ],
+    "pinyin": "Tā",
+    "pinyinArray": [
+      "Ta"
+    ]
+  },
+  "好": {
+    "structure": "⿰女子",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "𡿨",
+      "丿",
+      "一",
+      "㇇|乛",
+      "亅",
+      "一"
+    ],
+    "pinyin": "Hǎo",
+    "pinyinArray": [
+      "Hao"
+    ]
+  },
+  "如": {
+    "structure": "⿰女口",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "𡿨",
+      "丿",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Rú",
+    "pinyinArray": [
+      "Ru"
+    ]
+  },
+  "妄": {
+    "structure": "⿱亡女",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "㇄",
+      "𡿨",
+      "丿",
+      "一"
+    ],
+    "pinyin": "Wàng",
+    "pinyinArray": [
+      "Wang"
+    ]
+  },
+  "妆": {
+    "structure": "⿰丬女",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "丨",
+      "𡿨",
+      "丿",
+      "一"
+    ],
+    "pinyin": "Zhuāng",
+    "pinyinArray": [
+      "Zhuang"
+    ]
+  },
+  "妇": {
+    "structure": "⿰女彐",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "𡿨",
+      "丿",
+      "一",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Fù",
+    "pinyinArray": [
+      "Fu"
+    ]
+  },
+  "妈": {
+    "structure": "⿰女马",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "𡿨",
+      "丿",
+      "一",
+      "𠃍",
+      "㇉",
+      "一"
+    ],
+    "pinyin": "Mā",
+    "pinyinArray": [
+      "Ma"
+    ]
+  },
+  "妒": {
+    "structure": "⿰女户[G]",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "𡿨",
+      "丿",
+      "一",
+      "丶",
+      "𠃍",
+      "一",
+      "丿"
+    ],
+    "pinyin": "Dù",
+    "pinyinArray": [
+      "Du"
+    ]
+  },
+  "妓": {
+    "structure": "⿰女支",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "𡿨",
+      "丿",
+      "一",
+      "一",
+      "丨",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Jì",
+    "pinyinArray": [
+      "Ji"
+    ]
+  },
+  "妖": {
+    "structure": "⿰女夭",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "𡿨",
+      "丿",
+      "一",
+      "丿",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Yāo",
+    "pinyinArray": [
+      "Yao"
+    ]
+  },
+  "妙": {
+    "structure": "⿰女少",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "𡿨",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丿"
+    ],
+    "pinyin": "Miào",
+    "pinyinArray": [
+      "Miao"
+    ]
+  },
+  "妥": {
+    "structure": "⿱爫女",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丿",
+      "丶",
+      "丶",
+      "丿",
+      "𡿨",
+      "丿",
+      "一"
+    ],
+    "pinyin": "Tuǒ",
+    "pinyinArray": [
+      "Tuo"
+    ]
+  },
+  "妨": {
+    "structure": "⿰女方",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "𡿨",
+      "丿",
+      "一",
+      "丶",
+      "一",
+      "𠃌",
+      "丿"
+    ],
+    "pinyin": "Fáng",
+    "pinyinArray": [
+      "Fang"
+    ]
+  },
+  "妹": {
+    "structure": "⿰女未",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "𡿨",
+      "丿",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Mèi",
+    "pinyinArray": [
+      "Mei"
+    ]
+  },
+  "妻": {
+    "structure": "⿱⿻十⿻コ一女",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "𡿨",
+      "丿",
+      "一"
+    ],
+    "pinyin": "Qì",
+    "pinyinArray": [
+      "Qi"
+    ]
+  },
+  "姆": {
+    "structure": "⿰女母",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "𡿨",
+      "丿",
+      "一",
+      "㇄",
+      "𠃌",
+      "丶",
+      "一",
+      "丶"
+    ],
+    "pinyin": "Mǔ",
+    "pinyinArray": [
+      "Mu"
+    ]
+  },
+  "姊": {
+    "structure": "⿰女𠂔",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "𡿨",
+      "丿",
+      "一",
+      "丿",
+      "㇉",
+      "丨",
+      "丿"
+    ],
+    "pinyin": "Zǐ",
+    "pinyinArray": [
+      "Zi"
+    ]
+  },
+  "始": {
+    "structure": "⿰女台",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "𡿨",
+      "丿",
+      "一",
+      "𠃋",
+      "丶",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Shǐ",
+    "pinyinArray": [
+      "Shi"
+    ]
+  },
+  "姐": {
+    "structure": "⿰女且",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "𡿨",
+      "丿",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一"
+    ],
+    "pinyin": "Jiě",
+    "pinyinArray": [
+      "Jie"
+    ]
+  },
+  "姑": {
+    "structure": "⿰女古",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "𡿨",
+      "丿",
+      "一",
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Gū",
+    "pinyinArray": [
+      "Gu"
+    ]
+  },
+  "姓": {
+    "structure": "⿰女生",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "𡿨",
+      "丿",
+      "一",
+      "丿",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Xìng",
+    "pinyinArray": [
+      "Xing"
+    ]
+  },
+  "委": {
+    "structure": "⿱禾女",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "㇏",
+      "𡿨",
+      "丿",
+      "一"
+    ],
+    "pinyin": "Wěi",
+    "pinyinArray": [
+      "Wei"
+    ]
+  },
+  "姚": {
+    "structure": "⿰女兆",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "𡿨",
+      "丿",
+      "一",
+      "丿",
+      "丶",
+      "㇀",
+      "乚",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Yáo",
+    "pinyinArray": [
+      "Yao"
+    ]
+  },
+  "姜": {
+    "structure": "⿱𦍌女",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "𡿨",
+      "丿",
+      "一"
+    ],
+    "pinyin": "Jiāng",
+    "pinyinArray": [
+      "Jiang"
+    ]
+  },
+  "姥": {
+    "structure": "⿰女老",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "𡿨",
+      "丿",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Lǎo",
+    "pinyinArray": [
+      "Lao"
+    ]
+  },
+  "姨": {
+    "structure": "⿰女夷",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "𡿨",
+      "丿",
+      "一",
+      "一",
+      "𠃍",
+      "一",
+      "㇉",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Yí",
+    "pinyinArray": [
+      "Yi"
+    ]
+  },
+  "姻": {
+    "structure": "⿰女因",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "𡿨",
+      "丿",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "丶",
+      "一"
+    ],
+    "pinyin": "Yīn",
+    "pinyinArray": [
+      "Yin"
+    ]
+  },
+  "姿": {
+    "structure": "⿱次女",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "丿",
+      "㇇|乛",
+      "丿",
+      "㇏",
+      "𡿨",
+      "丿",
+      "一"
+    ],
+    "pinyin": "Zī",
+    "pinyinArray": [
+      "Zi"
+    ]
+  },
+  "威": {
+    "structure": "⿵戌女",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "一",
+      "𡿨",
+      "丿",
+      "一",
+      "㇂|㇃",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Wēi",
+    "pinyinArray": [
+      "Wei"
+    ]
+  },
+  "娃": {
+    "structure": "⿰女圭",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "𡿨",
+      "丿",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Wá",
+    "pinyinArray": [
+      "Wa"
+    ]
+  },
+  "娄": {
+    "structure": "⿱米女",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "㇏",
+      "𡿨",
+      "丿",
+      "一"
+    ],
+    "pinyin": "Lóu",
+    "pinyinArray": [
+      "Lou"
+    ]
+  },
+  "娇": {
+    "structure": "⿰女乔",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "𡿨",
+      "丿",
+      "一",
+      "丿",
+      "一",
+      "丿",
+      "㇏",
+      "丿",
+      "丨"
+    ],
+    "pinyin": "Jiāo",
+    "pinyinArray": [
+      "Jiao"
+    ]
+  },
+  "娘": {
+    "structure": "⿰女良",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "𡿨",
+      "丿",
+      "一",
+      "丶",
+      "𠃍",
+      "一",
+      "一",
+      "𠄌",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Niáng",
+    "pinyinArray": [
+      "Niang"
+    ]
+  },
+  "娜": {
+    "structure": "⿰女那",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "𡿨",
+      "丿",
+      "一",
+      "𠃌",
+      "一",
+      "一",
+      "丿",
+      "𠄎|㇌",
+      "丨"
+    ],
+    "pinyin": "Nà",
+    "pinyinArray": [
+      "Na"
+    ]
+  },
+  "娩": {
+    "structure": "⿰女免",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "𡿨",
+      "丿",
+      "一",
+      "丿",
+      "㇇|乛",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Miǎn",
+    "pinyinArray": [
+      "Mian"
+    ]
+  },
+  "娱": {
+    "structure": "⿰女吴",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "𡿨",
+      "丿",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Yú",
+    "pinyinArray": [
+      "Yu"
+    ]
+  },
+  "娶": {
+    "structure": "⿱取女",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "一",
+      "㇀",
+      "㇇|乛",
+      "㇏",
+      "𡿨",
+      "丿",
+      "一"
+    ],
+    "pinyin": "Qǔ",
+    "pinyinArray": [
+      "Qu"
+    ]
+  },
+  "婆": {
+    "structure": "⿱波女",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "丿",
+      "丨",
+      "㇇|乛",
+      "㇏",
+      "𡿨",
+      "丿",
+      "一"
+    ],
+    "pinyin": "Pó",
+    "pinyinArray": [
+      "Po"
+    ]
+  },
+  "婉": {
+    "structure": "⿰女宛",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "𡿨",
+      "丿",
+      "一",
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "丿",
+      "㇇|乛",
+      "丶",
+      "𠃌",
+      "乚"
+    ],
+    "pinyin": "Wǎn",
+    "pinyinArray": [
+      "Wan"
+    ]
+  },
+  "婚": {
+    "structure": "⿰女昏",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "𡿨",
+      "丿",
+      "一",
+      "丿",
+      "𠄌",
+      "一",
+      "㇂|㇃",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Hūn",
+    "pinyinArray": [
+      "Hun"
+    ]
+  },
+  "婴": {
+    "structure": "⿱⿰贝贝女",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "丿",
+      "丶",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶",
+      "𡿨",
+      "丿",
+      "一"
+    ],
+    "pinyin": "Yīng",
+    "pinyinArray": [
+      "Ying"
+    ]
+  },
+  "婶": {
+    "structure": "⿰女审",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "𡿨",
+      "丿",
+      "一",
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Shěn",
+    "pinyinArray": [
+      "Shen"
+    ]
+  },
+  "婿": {
+    "structure": "⿰女胥",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "𡿨",
+      "丿",
+      "一",
+      "㇇|乛",
+      "丨",
+      "一",
+      "丿",
+      "㇏",
+      "丨",
+      "𠃌",
+      "一",
+      "一"
+    ],
+    "pinyin": "Xù",
+    "pinyinArray": [
+      "Xu"
+    ]
+  },
+  "媒": {
+    "structure": "⿰女某",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "𡿨",
+      "丿",
+      "一",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Méi",
+    "pinyinArray": [
+      "Mei"
+    ]
+  },
+  "媚": {
+    "structure": "⿰女眉",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "𡿨",
+      "丿",
+      "一",
+      "𠃍",
+      "丨",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一"
+    ],
+    "pinyin": "Mèi",
+    "pinyinArray": [
+      "Mei"
+    ]
+  },
+  "媳": {
+    "structure": "⿰女息",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "𡿨",
+      "丿",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "㇀",
+      "㇂|㇃",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Xí",
+    "pinyinArray": [
+      "Xi"
+    ]
+  },
+  "嫁": {
+    "structure": "⿰女家",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "𡿨",
+      "丿",
+      "一",
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "一",
+      "丿",
+      "㇁",
+      "丿",
+      "丿",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Jià",
+    "pinyinArray": [
+      "Jia"
+    ]
+  },
+  "嫂": {
+    "structure": "⿰女叟",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "𡿨",
+      "丿",
+      "一",
+      "丿",
+      "丨",
+      "一",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Sǎo",
+    "pinyinArray": [
+      "Sao"
+    ]
+  },
+  "嫉": {
+    "structure": "⿰女疾",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "𡿨",
+      "丿",
+      "一",
+      "丶",
+      "一",
+      "丿",
+      "丶",
+      "㇀",
+      "丿",
+      "一",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Jí",
+    "pinyinArray": [
+      "Ji"
+    ]
+  },
+  "嫌": {
+    "structure": "⿰女兼",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "𡿨",
+      "丿",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Xián",
+    "pinyinArray": [
+      "Xian"
+    ]
+  },
+  "嫡": {
+    "structure": "⿰女啇",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "𡿨",
+      "丿",
+      "一",
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "丨",
+      "𠃌",
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Dí",
+    "pinyinArray": [
+      "Di"
+    ]
+  },
+  "嫩": {
+    "structure": "⿰女敕",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "𡿨",
+      "丿",
+      "一",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丿",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Nèn",
+    "pinyinArray": [
+      "Nen"
+    ]
+  },
+  "嬉": {
+    "structure": "⿰女喜",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "𡿨",
+      "丿",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Xī",
+    "pinyinArray": [
+      "Xi"
+    ]
+  },
+  "子": {
+    "structure": "子",
+    "strokeCount": 3,
+    "strokeShapes": [
+      "㇇|乛",
+      "亅",
+      "一"
+    ],
+    "pinyin": "Zǐ",
+    "pinyinArray": [
+      "Zi"
+    ]
+  },
+  "孔": {
+    "structure": "⿰子乚",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "㇇|乛",
+      "亅",
+      "㇀",
+      "乚"
+    ],
+    "pinyin": "Kǒng",
+    "pinyinArray": [
+      "Kong"
+    ]
+  },
+  "孕": {
+    "structure": "⿱乃子",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "𠄎|㇌",
+      "丿",
+      "㇇|乛",
+      "亅",
+      "一"
+    ],
+    "pinyin": "Yùn",
+    "pinyinArray": [
+      "Yun"
+    ]
+  },
+  "字": {
+    "structure": "⿱宀子",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "㇇|乛",
+      "亅",
+      "一"
+    ],
+    "pinyin": "Zì",
+    "pinyinArray": [
+      "Zi"
+    ]
+  },
+  "存": {
+    "structure": "⿸③子",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "丨",
+      "㇇|乛",
+      "亅",
+      "一"
+    ],
+    "pinyin": "Cún",
+    "pinyinArray": [
+      "Cun"
+    ]
+  },
+  "孙": {
+    "structure": "⿰子小",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "㇇|乛",
+      "亅",
+      "㇀",
+      "亅",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Sūn",
+    "pinyinArray": [
+      "Sun"
+    ]
+  },
+  "孝": {
+    "structure": "⿸耂子",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "㇇|乛",
+      "亅",
+      "一"
+    ],
+    "pinyin": "Xiào",
+    "pinyinArray": [
+      "Xiao"
+    ]
+  },
+  "孟": {
+    "structure": "⿱子皿",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "㇇|乛",
+      "亅",
+      "一",
+      "丨",
+      "𠃍",
+      "丨",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Mèng",
+    "pinyinArray": [
+      "Meng"
+    ]
+  },
+  "季": {
+    "structure": "⿱禾子",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "㇏",
+      "㇇|乛",
+      "亅",
+      "一"
+    ],
+    "pinyin": "Jì",
+    "pinyinArray": [
+      "Ji"
+    ]
+  },
+  "孤": {
+    "structure": "⿰子瓜",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "㇇|乛",
+      "亅",
+      "㇀",
+      "丿",
+      "丿",
+      "𠄌",
+      "丶",
+      "㇏"
+    ],
+    "pinyin": "Gū",
+    "pinyinArray": [
+      "Gu"
+    ]
+  },
+  "学": {
+    "structure": "⿳𭕄冖子",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "丿",
+      "㇀",
+      "㇇|乛",
+      "㇇|乛",
+      "亅",
+      "一"
+    ],
+    "pinyin": "Xué",
+    "pinyinArray": [
+      "Xue"
+    ]
+  },
+  "孩": {
+    "structure": "⿰子亥",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "㇇|乛",
+      "亅",
+      "㇀",
+      "丶",
+      "一",
+      "𠃋",
+      "丿",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Hái",
+    "pinyinArray": [
+      "Hai"
+    ]
+  },
+  "孵": {
+    "structure": "⿰卵孚",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "丿",
+      "𠄌",
+      "丶",
+      "丿",
+      "𠃌",
+      "丨",
+      "丶",
+      "丿",
+      "丶",
+      "丶",
+      "丿",
+      "㇇|乛",
+      "亅",
+      "一"
+    ],
+    "pinyin": "Fū",
+    "pinyinArray": [
+      "Fu"
+    ]
+  },
+  "孽": {
+    "structure": "⿱薛子",
+    "strokeCount": 19,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "𠃍",
+      "一",
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "丨",
+      "㇇|乛",
+      "亅",
+      "一"
+    ],
+    "pinyin": "Niè",
+    "pinyinArray": [
+      "Nie"
+    ]
+  },
+  "宁": {
+    "structure": "⿱宀丁",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "一",
+      "亅"
+    ],
+    "pinyin": "Níng",
+    "pinyinArray": [
+      "Ning"
+    ]
+  },
+  "它": {
+    "structure": "⿱宀匕",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Tā",
+    "pinyinArray": [
+      "Ta"
+    ]
+  },
+  "宅": {
+    "structure": "⿱宀乇",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "丿",
+      "一",
+      "乚"
+    ],
+    "pinyin": "Zhái",
+    "pinyinArray": [
+      "Zhai"
+    ]
+  },
+  "宇": {
+    "structure": "⿱宀于",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "一",
+      "一",
+      "亅"
+    ],
+    "pinyin": "Yǔ",
+    "pinyinArray": [
+      "Yu"
+    ]
+  },
+  "守": {
+    "structure": "⿱宀寸",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "一",
+      "亅",
+      "丶"
+    ],
+    "pinyin": "Shǒu",
+    "pinyinArray": [
+      "Shou"
+    ]
+  },
+  "安": {
+    "structure": "⿱宀女",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "𡿨",
+      "丿",
+      "一"
+    ],
+    "pinyin": "Ān",
+    "pinyinArray": [
+      "An"
+    ]
+  },
+  "宋": {
+    "structure": "⿱宀木",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Sòng",
+    "pinyinArray": [
+      "Song"
+    ]
+  },
+  "完": {
+    "structure": "⿱宀元",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "一",
+      "一",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Wán",
+    "pinyinArray": [
+      "Wan"
+    ]
+  },
+  "宏": {
+    "structure": "⿱宀厷",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "一",
+      "丿",
+      "𠃋",
+      "丶"
+    ],
+    "pinyin": "Hóng",
+    "pinyinArray": [
+      "Hong"
+    ]
+  },
+  "宗": {
+    "structure": "⿱宀示",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "一",
+      "一",
+      "亅",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Zōng",
+    "pinyinArray": [
+      "Zong"
+    ]
+  },
+  "官": {
+    "structure": "⿱宀㠯",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "丨",
+      "𠃍",
+      "一",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Guān",
+    "pinyinArray": [
+      "Guan"
+    ]
+  },
+  "宙": {
+    "structure": "⿱宀由",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Zhòu",
+    "pinyinArray": [
+      "Zhou"
+    ]
+  },
+  "定": {
+    "structure": "⿱宀𤴓",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Dìng",
+    "pinyinArray": [
+      "Ding"
+    ]
+  },
+  "宛": {
+    "structure": "⿱宀夗",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "丿",
+      "㇇|乛",
+      "丶",
+      "𠃌",
+      "乚"
+    ],
+    "pinyin": "Wǎn",
+    "pinyinArray": [
+      "Wan"
+    ]
+  },
+  "宜": {
+    "structure": "⿱宀且",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一"
+    ],
+    "pinyin": "Yí",
+    "pinyinArray": [
+      "Yi"
+    ]
+  },
+  "宝": {
+    "structure": "⿱宀玉",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "丶"
+    ],
+    "pinyin": "Bǎo",
+    "pinyinArray": [
+      "Bao"
+    ]
+  },
+  "实": {
+    "structure": "⿱宀头",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "丶",
+      "丶",
+      "一",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Shí",
+    "pinyinArray": [
+      "Shi"
+    ]
+  },
+  "宠": {
+    "structure": "⿱宀龙",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "一",
+      "丿",
+      "乚",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Chǒng",
+    "pinyinArray": [
+      "Chong"
+    ]
+  },
+  "审": {
+    "structure": "⿱宀申",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Shěn",
+    "pinyinArray": [
+      "Shen"
+    ]
+  },
+  "客": {
+    "structure": "⿱宀各",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "丿",
+      "㇇|乛",
+      "㇏",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Kè",
+    "pinyinArray": [
+      "Ke"
+    ]
+  },
+  "宣": {
+    "structure": "⿱宀亘",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一"
+    ],
+    "pinyin": "Xuān",
+    "pinyinArray": [
+      "Xuan"
+    ]
+  },
+  "室": {
+    "structure": "⿱宀至",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "一",
+      "𠃋",
+      "丶",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Shì",
+    "pinyinArray": [
+      "Shi"
+    ]
+  },
+  "宦": {
+    "structure": "⿱宀臣",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "㇄"
+    ],
+    "pinyin": "Huàn",
+    "pinyinArray": [
+      "Huan"
+    ]
+  },
+  "宪": {
+    "structure": "⿱宀先",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "丿",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Xiàn",
+    "pinyinArray": [
+      "Xian"
+    ]
+  },
+  "宫": {
+    "structure": "⿱宀吕",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Gōng",
+    "pinyinArray": [
+      "Gong"
+    ]
+  },
+  "宰": {
+    "structure": "⿱宀辛",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Zǎi",
+    "pinyinArray": [
+      "Zai"
+    ]
+  },
+  "害": {
+    "structure": "⿱𫲸口[GK]",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Hài",
+    "pinyinArray": [
+      "Hai"
+    ]
+  },
+  "宴": {
+    "structure": "⿱宀妟",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "𡿨",
+      "丿",
+      "一"
+    ],
+    "pinyin": "Yàn",
+    "pinyinArray": [
+      "Yan"
+    ]
+  },
+  "宵": {
+    "structure": "⿱宀肖",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "丨",
+      "丶",
+      "丿",
+      "丨",
+      "𠃌",
+      "一",
+      "一"
+    ],
+    "pinyin": "Xiāo",
+    "pinyinArray": [
+      "Xiao"
+    ]
+  },
+  "家": {
+    "structure": "⿱宀豕",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "一",
+      "丿",
+      "㇁",
+      "丿",
+      "丿",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Jiā",
+    "pinyinArray": [
+      "Jia"
+    ]
+  },
+  "容": {
+    "structure": "⿱宀谷",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "丿",
+      "丶",
+      "丿",
+      "㇏",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Róng",
+    "pinyinArray": [
+      "Rong"
+    ]
+  },
+  "宽": {
+    "structure": "⿱宀苋",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "一",
+      "丨",
+      "丨",
+      "丨",
+      "𠃍",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Kuān",
+    "pinyinArray": [
+      "Kuan"
+    ]
+  },
+  "宾": {
+    "structure": "⿱宀兵",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "丿",
+      "丨",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Bīn",
+    "pinyinArray": [
+      "Bin"
+    ]
+  },
+  "宿": {
+    "structure": "⿱宀佰",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "丿",
+      "丨",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Sù",
+    "pinyinArray": [
+      "Su"
+    ]
+  },
+  "寂": {
+    "structure": "⿱宀叔",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "丨",
+      "一",
+      "一",
+      "亅",
+      "丿",
+      "丶",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Jì",
+    "pinyinArray": [
+      "Ji"
+    ]
+  },
+  "寄": {
+    "structure": "⿱宀奇",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "一",
+      "丿",
+      "丶",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "亅"
+    ],
+    "pinyin": "Jì",
+    "pinyinArray": [
+      "Ji"
+    ]
+  },
+  "密": {
+    "structure": "⿱宓山",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "㇀",
+      "㇂|㇃",
+      "丶",
+      "丿",
+      "丶",
+      "丨",
+      "㇄",
+      "丨"
+    ],
+    "pinyin": "Mì",
+    "pinyinArray": [
+      "Mi"
+    ]
+  },
+  "寇": {
+    "structure": "⿱宀⿺元攴",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "一",
+      "一",
+      "丿",
+      "乚",
+      "丨",
+      "一",
+      "㇇|乛",
+      "丶"
+    ],
+    "pinyin": "Kòu",
+    "pinyinArray": [
+      "Kou"
+    ]
+  },
+  "富": {
+    "structure": "⿱宀畐",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Fù",
+    "pinyinArray": [
+      "Fu"
+    ]
+  },
+  "寒": {
+    "structure": "⿱𡨄⺀",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "一",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丿",
+      "㇏",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Hán",
+    "pinyinArray": [
+      "Han"
+    ]
+  },
+  "寓": {
+    "structure": "⿱宀禺",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "𠃌",
+      "丨",
+      "㇀",
+      "丶"
+    ],
+    "pinyin": "Yù",
+    "pinyinArray": [
+      "Yu"
+    ]
+  },
+  "寝": {
+    "structure": "⿱宀⿰丬𠬶",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "丶",
+      "㇀",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "㇀",
+      "㇇|乛",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Qǐn",
+    "pinyinArray": [
+      "Qin"
+    ]
+  },
+  "寞": {
+    "structure": "⿱宀莫",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "一",
+      "丨",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Mò",
+    "pinyinArray": [
+      "Mo"
+    ]
+  },
+  "察": {
+    "structure": "⿱宀祭",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "丿",
+      "㇇|乛",
+      "丶",
+      "丶",
+      "㇇|乛",
+      "㇏",
+      "一",
+      "一",
+      "亅",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Chá",
+    "pinyinArray": [
+      "Cha"
+    ]
+  },
+  "寡": {
+    "structure": "⿳宀⿱丆且分",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "㇏",
+      "𠃌",
+      "丿"
+    ],
+    "pinyin": "Guǎ",
+    "pinyinArray": [
+      "Gua"
+    ]
+  },
+  "寥": {
+    "structure": "⿱宀翏",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "𠃍",
+      "丶",
+      "㇀",
+      "𠃍",
+      "丶",
+      "㇀",
+      "丿",
+      "㇏",
+      "丿",
+      "丿",
+      "丿"
+    ],
+    "pinyin": "Liáo",
+    "pinyinArray": [
+      "Liao"
+    ]
+  },
+  "寨": {
+    "structure": "⿱𡨄木[GJK]",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "一",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丿",
+      "㇏",
+      "一",
+      "亅",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Zhài",
+    "pinyinArray": [
+      "Zhai"
+    ]
+  },
+  "寸": {
+    "structure": "寸",
+    "strokeCount": 3,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "丶"
+    ],
+    "pinyin": "Cùn",
+    "pinyinArray": [
+      "Cun"
+    ]
+  },
+  "对": {
+    "structure": "⿰又寸",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "㇇|乛",
+      "丶",
+      "一",
+      "亅",
+      "丶"
+    ],
+    "pinyin": "Duì",
+    "pinyinArray": [
+      "Dui"
+    ]
+  },
+  "寺": {
+    "structure": "⿱土寸[GJK]",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "一",
+      "一",
+      "亅",
+      "丶"
+    ],
+    "pinyin": "Sì",
+    "pinyinArray": [
+      "Si"
+    ]
+  },
+  "寻": {
+    "structure": "⿱彐寸",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "亅",
+      "丶"
+    ],
+    "pinyin": "Xún",
+    "pinyinArray": [
+      "Xun"
+    ]
+  },
+  "导": {
+    "structure": "⿱巳寸",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "𠃍",
+      "一",
+      "乚",
+      "一",
+      "亅",
+      "丶"
+    ],
+    "pinyin": "Dǎo",
+    "pinyinArray": [
+      "Dao"
+    ]
+  },
+  "寿": {
+    "structure": "⿸丰寸",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "一",
+      "一",
+      "丿",
+      "一",
+      "亅",
+      "丶"
+    ],
+    "pinyin": "Shòu",
+    "pinyinArray": [
+      "Shou"
+    ]
+  },
+  "封": {
+    "structure": "⿰圭寸",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "一",
+      "一",
+      "丨",
+      "㇀",
+      "一",
+      "亅",
+      "丶"
+    ],
+    "pinyin": "Fēng",
+    "pinyinArray": [
+      "Feng"
+    ]
+  },
+  "射": {
+    "structure": "⿰身寸",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "𠃌",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "一",
+      "亅",
+      "丶"
+    ],
+    "pinyin": "Shè",
+    "pinyinArray": [
+      "She"
+    ]
+  },
+  "将": {
+    "structure": "⿰丬𪧷[G]",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "丨",
+      "丿",
+      "㇇|乛",
+      "丶",
+      "一",
+      "亅",
+      "丶"
+    ],
+    "pinyin": "Jiāng",
+    "pinyinArray": [
+      "Jiang"
+    ]
+  },
+  "尉": {
+    "structure": "⿰𫵖寸",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "𠃍",
+      "一",
+      "丿",
+      "一",
+      "一",
+      "亅",
+      "丿",
+      "丶",
+      "一",
+      "亅",
+      "丶"
+    ],
+    "pinyin": "Wèi",
+    "pinyinArray": [
+      "Wei"
+    ]
+  },
+  "尊": {
+    "structure": "⿱酋寸",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "𠃍",
+      "丿",
+      "㇄",
+      "一",
+      "一",
+      "一",
+      "亅",
+      "丶"
+    ],
+    "pinyin": "Zūn",
+    "pinyinArray": [
+      "Zun"
+    ]
+  },
+  "小": {
+    "structure": "小",
+    "strokeCount": 3,
+    "strokeShapes": [
+      "亅",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Xiǎo",
+    "pinyinArray": [
+      "Xiao"
+    ]
+  },
+  "少": {
+    "structure": "⿱小丿",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "丨",
+      "丿",
+      "丶",
+      "丿"
+    ],
+    "pinyin": "Shǎo",
+    "pinyinArray": [
+      "Shao"
+    ]
+  },
+  "尔": {
+    "structure": "⿱𠂊小",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丿",
+      "㇇|乛",
+      "亅",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Ěr",
+    "pinyinArray": [
+      "Er"
+    ]
+  },
+  "尖": {
+    "structure": "⿱小大",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Jiān",
+    "pinyinArray": [
+      "Jian"
+    ]
+  },
+  "尘": {
+    "structure": "⿱小土",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Chén",
+    "pinyinArray": [
+      "Chen"
+    ]
+  },
+  "尚": {
+    "structure": "⿱⺌冋",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丨",
+      "丶",
+      "丿",
+      "丨",
+      "𠃌",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Shàng",
+    "pinyinArray": [
+      "Shang"
+    ]
+  },
+  "尝": {
+    "structure": "⿱龸云",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丨",
+      "丶",
+      "丿",
+      "㇀",
+      "㇇|乛",
+      "一",
+      "一",
+      "𠃋",
+      "丶"
+    ],
+    "pinyin": "Cháng",
+    "pinyinArray": [
+      "Chang"
+    ]
+  },
+  "尤": {
+    "structure": "⿺尢丶",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "乚",
+      "丶"
+    ],
+    "pinyin": "Yóu",
+    "pinyinArray": [
+      "You"
+    ]
+  },
+  "就": {
+    "structure": "⿰京尤",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "亅",
+      "丿",
+      "丶",
+      "一",
+      "丿",
+      "乚",
+      "丶"
+    ],
+    "pinyin": "Jiù",
+    "pinyinArray": [
+      "Jiu"
+    ]
+  },
+  "尸": {
+    "structure": "尸",
+    "strokeCount": 3,
+    "strokeShapes": [
+      "𠃍",
+      "一",
+      "丿"
+    ],
+    "pinyin": "Shī",
+    "pinyinArray": [
+      "Shi"
+    ]
+  },
+  "尺": {
+    "structure": "尺",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "𠃍",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Chǐ",
+    "pinyinArray": [
+      "Chi"
+    ]
+  },
+  "尼": {
+    "structure": "⿸尸匕",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "𠃍",
+      "一",
+      "丿",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Ní",
+    "pinyinArray": [
+      "Ni"
+    ]
+  },
+  "尽": {
+    "structure": "⿱尺⺀",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "𠃍",
+      "一",
+      "丿",
+      "㇏",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Jìn",
+    "pinyinArray": [
+      "Jin"
+    ]
+  },
+  "尾": {
+    "structure": "⿸尸毛",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "𠃍",
+      "一",
+      "丿",
+      "丿",
+      "一",
+      "一",
+      "乚"
+    ],
+    "pinyin": "Wěi",
+    "pinyinArray": [
+      "Wei"
+    ]
+  },
+  "尿": {
+    "structure": "⿸尸水",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "𠃍",
+      "一",
+      "丿",
+      "亅",
+      "㇇|乛",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Niào",
+    "pinyinArray": [
+      "Niao"
+    ]
+  },
+  "局": {
+    "structure": "⿸尸⿹𠃌口",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "𠃍",
+      "一",
+      "丿",
+      "𠃌",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Jú",
+    "pinyinArray": [
+      "Ju"
+    ]
+  },
+  "屁": {
+    "structure": "⿸尸比",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "𠃍",
+      "一",
+      "丿",
+      "一",
+      "𠄌",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Pì",
+    "pinyinArray": [
+      "Pi"
+    ]
+  },
+  "层": {
+    "structure": "⿸尸云",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "𠃍",
+      "一",
+      "丿",
+      "一",
+      "一",
+      "𠃋",
+      "丶"
+    ],
+    "pinyin": "Céng",
+    "pinyinArray": [
+      "Ceng"
+    ]
+  },
+  "居": {
+    "structure": "⿸尸古",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "𠃍",
+      "一",
+      "丿",
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Jū",
+    "pinyinArray": [
+      "Ju"
+    ]
+  },
+  "屈": {
+    "structure": "⿸尸出",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "𠃍",
+      "一",
+      "丿",
+      "㇄",
+      "丨",
+      "丨",
+      "㇄",
+      "丨"
+    ],
+    "pinyin": "Qū",
+    "pinyinArray": [
+      "Qu"
+    ]
+  },
+  "屉": {
+    "structure": "⿸尸世",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "𠃍",
+      "一",
+      "丿",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "㇄"
+    ],
+    "pinyin": "Tì",
+    "pinyinArray": [
+      "Ti"
+    ]
+  },
+  "届": {
+    "structure": "⿸尸由",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "𠃍",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Jiè",
+    "pinyinArray": [
+      "Jie"
+    ]
+  },
+  "屋": {
+    "structure": "⿸尸至",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "𠃍",
+      "一",
+      "丿",
+      "一",
+      "𠃋",
+      "丶",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Wū",
+    "pinyinArray": [
+      "Wu"
+    ]
+  },
+  "屎": {
+    "structure": "⿸尸米",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "𠃍",
+      "一",
+      "丿",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Shǐ",
+    "pinyinArray": [
+      "Shi"
+    ]
+  },
+  "屏": {
+    "structure": "⿸尸并",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "𠃍",
+      "一",
+      "丿",
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "丿",
+      "丨"
+    ],
+    "pinyin": "Píng",
+    "pinyinArray": [
+      "Ping"
+    ]
+  },
+  "屑": {
+    "structure": "⿸尸肖",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "𠃍",
+      "一",
+      "丿",
+      "丨",
+      "丶",
+      "丿",
+      "丨",
+      "𠃌",
+      "一",
+      "一"
+    ],
+    "pinyin": "Xiè",
+    "pinyinArray": [
+      "Xie"
+    ]
+  },
+  "展": {
+    "structure": "⿸尸⿱龷⿰𠄌⿺乀丿",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "𠃍",
+      "一",
+      "丿",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "𠄌",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Zhǎn",
+    "pinyinArray": [
+      "Zhan"
+    ]
+  },
+  "属": {
+    "structure": "⿸尸禹",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "𠃍",
+      "一",
+      "丿",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃌",
+      "丨",
+      "㇀",
+      "丶"
+    ],
+    "pinyin": "Shǔ",
+    "pinyinArray": [
+      "Shu"
+    ]
+  },
+  "屠": {
+    "structure": "⿸尸者",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "𠃍",
+      "一",
+      "丿",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Tú",
+    "pinyinArray": [
+      "Tu"
+    ]
+  },
+  "屡": {
+    "structure": "⿸尸娄",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "𠃍",
+      "一",
+      "丿",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "㇏",
+      "𡿨",
+      "丿",
+      "一"
+    ],
+    "pinyin": "Lǚ",
+    "pinyinArray": [
+      "Lü"
+    ]
+  },
+  "履": {
+    "structure": "⿸尸復",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "𠃍",
+      "一",
+      "丿",
+      "丿",
+      "丿",
+      "丨",
+      "丿",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Lǚ",
+    "pinyinArray": [
+      "Lü"
+    ]
+  },
+  "屯": {
+    "structure": "⿻丿𡳾",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "一",
+      "㇄",
+      "丨",
+      "乚"
+    ],
+    "pinyin": "Tún",
+    "pinyinArray": [
+      "Tun"
+    ]
+  },
+  "山": {
+    "structure": "山",
+    "strokeCount": 3,
+    "strokeShapes": [
+      "丨",
+      "㇄",
+      "丨"
+    ],
+    "pinyin": "Shān",
+    "pinyinArray": [
+      "Shan"
+    ]
+  },
+  "屹": {
+    "structure": "⿰山乞",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丨",
+      "㇄",
+      "丨",
+      "丿",
+      "一",
+      "⺄"
+    ],
+    "pinyin": "Yì",
+    "pinyinArray": [
+      "Yi"
+    ]
+  },
+  "屿": {
+    "structure": "⿰山与",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丨",
+      "㇄",
+      "丨",
+      "一",
+      "㇉",
+      "一"
+    ],
+    "pinyin": "Yǔ",
+    "pinyinArray": [
+      "Yu"
+    ]
+  },
+  "岁": {
+    "structure": "⿱山夕",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丨",
+      "㇄",
+      "丨",
+      "丿",
+      "㇇|乛",
+      "丶"
+    ],
+    "pinyin": "Suì",
+    "pinyinArray": [
+      "Sui"
+    ]
+  },
+  "岂": {
+    "structure": "⿱山己",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丨",
+      "㇄",
+      "丨",
+      "𠃍",
+      "一",
+      "乚"
+    ],
+    "pinyin": "Qǐ",
+    "pinyinArray": [
+      "Qi"
+    ]
+  },
+  "岔": {
+    "structure": "⿱分山",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丿",
+      "㇏",
+      "𠃌",
+      "丿",
+      "丨",
+      "㇄",
+      "丨"
+    ],
+    "pinyin": "Chà",
+    "pinyinArray": [
+      "Cha"
+    ]
+  },
+  "岖": {
+    "structure": "⿰山区",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丨",
+      "㇄",
+      "丨",
+      "一",
+      "丿",
+      "丶",
+      "㇄"
+    ],
+    "pinyin": "Qū",
+    "pinyinArray": [
+      "Qu"
+    ]
+  },
+  "岗": {
+    "structure": "⿱山冈",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丨",
+      "㇄",
+      "丨",
+      "丨",
+      "𠃌",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Gàng",
+    "pinyinArray": [
+      "Gang"
+    ]
+  },
+  "岛": {
+    "structure": "⿹④山",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "丶",
+      "㇉",
+      "丨",
+      "㇄",
+      "丨"
+    ],
+    "pinyin": "Dǎo",
+    "pinyinArray": [
+      "Dao"
+    ]
+  },
+  "岩": {
+    "structure": "⿱山石",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丨",
+      "㇄",
+      "丨",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Yán",
+    "pinyinArray": [
+      "Yan"
+    ]
+  },
+  "岭": {
+    "structure": "⿰山令",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丨",
+      "㇄",
+      "丨",
+      "丿",
+      "㇏",
+      "丶",
+      "㇇|乛",
+      "丶"
+    ],
+    "pinyin": "Lǐng",
+    "pinyinArray": [
+      "Ling"
+    ]
+  },
+  "岳": {
+    "structure": "⿱丘山",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "㇄",
+      "丨"
+    ],
+    "pinyin": "Yuè",
+    "pinyinArray": [
+      "Yue"
+    ]
+  },
+  "岸": {
+    "structure": "⿱山厈",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丨",
+      "㇄",
+      "丨",
+      "一",
+      "丿",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Àn",
+    "pinyinArray": [
+      "An"
+    ]
+  },
+  "峡": {
+    "structure": "⿰山夹",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丨",
+      "㇄",
+      "丨",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Xiá",
+    "pinyinArray": [
+      "Xia"
+    ]
+  },
+  "峦": {
+    "structure": "⿱亦山",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丨",
+      "丨",
+      "丿",
+      "丶",
+      "丨",
+      "㇄",
+      "丨"
+    ],
+    "pinyin": "Luán",
+    "pinyinArray": [
+      "Luan"
+    ]
+  },
+  "峭": {
+    "structure": "⿰山肖",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丨",
+      "㇄",
+      "丨",
+      "丨",
+      "丶",
+      "丿",
+      "丨",
+      "𠃌",
+      "一",
+      "一"
+    ],
+    "pinyin": "Qiào",
+    "pinyinArray": [
+      "Qiao"
+    ]
+  },
+  "峰": {
+    "structure": "⿰山夆",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丨",
+      "㇄",
+      "丨",
+      "丿",
+      "㇇|乛",
+      "㇏",
+      "一",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Fēng",
+    "pinyinArray": [
+      "Feng"
+    ]
+  },
+  "峻": {
+    "structure": "⿰山夋",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丨",
+      "㇄",
+      "丨",
+      "𠃋",
+      "丶",
+      "丿",
+      "丶",
+      "丿",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Jùn",
+    "pinyinArray": [
+      "Jun"
+    ]
+  },
+  "崇": {
+    "structure": "⿱山宗",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丨",
+      "㇄",
+      "丨",
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "一",
+      "一",
+      "亅",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Chóng",
+    "pinyinArray": [
+      "Chong"
+    ]
+  },
+  "崎": {
+    "structure": "⿰山奇",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丨",
+      "㇄",
+      "丨",
+      "一",
+      "丿",
+      "丶",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "亅"
+    ],
+    "pinyin": "Qí",
+    "pinyinArray": [
+      "Qi"
+    ]
+  },
+  "崔": {
+    "structure": "⿱山隹",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丨",
+      "㇄",
+      "丨",
+      "丿",
+      "丨",
+      "丶",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Cuī",
+    "pinyinArray": [
+      "Cui"
+    ]
+  },
+  "崖": {
+    "structure": "⿱山厓",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丨",
+      "㇄",
+      "丨",
+      "一",
+      "丿",
+      "一",
+      "丨",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Yá",
+    "pinyinArray": [
+      "Ya"
+    ]
+  },
+  "崩": {
+    "structure": "⿱山朋",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丨",
+      "㇄",
+      "丨",
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "丿",
+      "𠃌",
+      "一",
+      "一"
+    ],
+    "pinyin": "Bēng",
+    "pinyinArray": [
+      "Beng"
+    ]
+  },
+  "崭": {
+    "structure": "⿱山斩",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丨",
+      "㇄",
+      "丨",
+      "一",
+      "𠃋",
+      "丨",
+      "㇀",
+      "丿",
+      "丿",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Zhǎn",
+    "pinyinArray": [
+      "Zhan"
+    ]
+  },
+  "嵌": {
+    "structure": "⿱山𣢟",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丨",
+      "㇄",
+      "丨",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "一",
+      "丿",
+      "㇇|乛",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Qiàn",
+    "pinyinArray": [
+      "Qian"
+    ]
+  },
+  "巍": {
+    "structure": "⿱山魏",
+    "strokeCount": 20,
+    "strokeShapes": [
+      "丨",
+      "㇄",
+      "丨",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "𡿨",
+      "丿",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "乚",
+      "𠃋",
+      "丶"
+    ],
+    "pinyin": "Wēi",
+    "pinyinArray": [
+      "Wei"
+    ]
+  },
+  "川": {
+    "structure": "川",
+    "strokeCount": 3,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "丨"
+    ],
+    "pinyin": "Chuān",
+    "pinyinArray": [
+      "Chuan"
+    ]
+  },
+  "州": {
+    "structure": "州",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "㇀",
+      "丿",
+      "丶",
+      "丨",
+      "丶",
+      "丨"
+    ],
+    "pinyin": "Zhōu",
+    "pinyinArray": [
+      "Zhou"
+    ]
+  },
+  "巡": {
+    "structure": "⿺辶巛",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "𡿨",
+      "𡿨",
+      "𡿨",
+      "丶",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Xún",
+    "pinyinArray": [
+      "Xun"
+    ]
+  },
+  "巢": {
+    "structure": "⿱巛果",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "𡿨",
+      "𡿨",
+      "𡿨",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Cháo",
+    "pinyinArray": [
+      "Chao"
+    ]
+  },
+  "工": {
+    "structure": "工",
+    "strokeCount": 3,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Gōng",
+    "pinyinArray": [
+      "Gong"
+    ]
+  },
+  "左": {
+    "structure": "⿸𠂇工",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Zuǒ",
+    "pinyinArray": [
+      "Zuo"
+    ]
+  },
+  "巧": {
+    "structure": "⿰工丂",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "㇀",
+      "一",
+      "㇉"
+    ],
+    "pinyin": "Qiǎo",
+    "pinyinArray": [
+      "Qiao"
+    ]
+  },
+  "巨": {
+    "structure": "巨",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "一",
+      "𠃍",
+      "一",
+      "㇄"
+    ],
+    "pinyin": "Jù",
+    "pinyinArray": [
+      "Ju"
+    ]
+  },
+  "巩": {
+    "structure": "⿰工凡[G]",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "㇀",
+      "丿",
+      "⺄",
+      "丶"
+    ],
+    "pinyin": "Gǒng",
+    "pinyinArray": [
+      "Gong"
+    ]
+  },
+  "巫": {
+    "structure": "⿻工从",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丿",
+      "丶",
+      "一"
+    ],
+    "pinyin": "Wū",
+    "pinyinArray": [
+      "Wu"
+    ]
+  },
+  "差": {
+    "structure": "⿸羊工[G]",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Chà",
+    "pinyinArray": [
+      "Cha"
+    ]
+  },
+  "己": {
+    "structure": "己",
+    "strokeCount": 3,
+    "strokeShapes": [
+      "𠃍",
+      "一",
+      "乚"
+    ],
+    "pinyin": "Jǐ",
+    "pinyinArray": [
+      "Ji"
+    ]
+  },
+  "已": {
+    "structure": "已",
+    "strokeCount": 3,
+    "strokeShapes": [
+      "𠃍",
+      "一",
+      "乚"
+    ],
+    "pinyin": "Yǐ",
+    "pinyinArray": [
+      "Yi"
+    ]
+  },
+  "巴": {
+    "structure": "巴",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "𠃍",
+      "丨",
+      "一",
+      "乚"
+    ],
+    "pinyin": "Bā",
+    "pinyinArray": [
+      "Ba"
+    ]
+  },
+  "巷": {
+    "structure": "⿱共巳[GTK]",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丿",
+      "㇏",
+      "𠃍",
+      "一",
+      "乚"
+    ],
+    "pinyin": "Xiàng",
+    "pinyinArray": [
+      "Xiang"
+    ]
+  },
+  "巾": {
+    "structure": "巾",
+    "strokeCount": 3,
+    "strokeShapes": [
+      "丨",
+      "𠃌",
+      "丨"
+    ],
+    "pinyin": "Jīn",
+    "pinyinArray": [
+      "Jin"
+    ]
+  },
+  "币": {
+    "structure": "⿱丿巾",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "𠃌",
+      "丨"
+    ],
+    "pinyin": "Bì",
+    "pinyinArray": [
+      "Bi"
+    ]
+  },
+  "市": {
+    "structure": "⿱亠巾",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丨",
+      "𠃌",
+      "丨"
+    ],
+    "pinyin": "Shì",
+    "pinyinArray": [
+      "Shi"
+    ]
+  },
+  "布": {
+    "structure": "⿸𠂇巾",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "丨",
+      "𠃌",
+      "丨"
+    ],
+    "pinyin": "Bù",
+    "pinyinArray": [
+      "Bu"
+    ]
+  },
+  "帅": {
+    "structure": "⿰⿰丨丿巾",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丨",
+      "丿",
+      "丨",
+      "𠃌",
+      "丨"
+    ],
+    "pinyin": "Shuài",
+    "pinyinArray": [
+      "Shuai"
+    ]
+  },
+  "帆": {
+    "structure": "⿰巾凡",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丨",
+      "𠃌",
+      "丨",
+      "丿",
+      "⺄",
+      "丶"
+    ],
+    "pinyin": "Fān",
+    "pinyinArray": [
+      "Fan"
+    ]
+  },
+  "师": {
+    "structure": "⿰⿰丨丿帀[G]",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丨",
+      "丿",
+      "一",
+      "丨",
+      "𠃌",
+      "丨"
+    ],
+    "pinyin": "Shī",
+    "pinyinArray": [
+      "Shi"
+    ]
+  },
+  "希": {
+    "structure": "⿱㐅布",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丿",
+      "丶",
+      "一",
+      "丿",
+      "丨",
+      "𠃌",
+      "丨"
+    ],
+    "pinyin": "Xī",
+    "pinyinArray": [
+      "Xi"
+    ]
+  },
+  "帐": {
+    "structure": "⿰巾长",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丨",
+      "𠃌",
+      "丨",
+      "丿",
+      "一",
+      "𠄌",
+      "㇏"
+    ],
+    "pinyin": "Zhàng",
+    "pinyinArray": [
+      "Zhang"
+    ]
+  },
+  "帕": {
+    "structure": "⿰巾白",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丨",
+      "𠃌",
+      "丨",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Pà",
+    "pinyinArray": [
+      "Pa"
+    ]
+  },
+  "帖": {
+    "structure": "⿰巾占",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丨",
+      "𠃌",
+      "丨",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Tiē",
+    "pinyinArray": [
+      "Tie"
+    ]
+  },
+  "帘": {
+    "structure": "⿱穴巾",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "丿",
+      "丶",
+      "丨",
+      "𠃌",
+      "丨"
+    ],
+    "pinyin": "Lián",
+    "pinyinArray": [
+      "Lian"
+    ]
+  },
+  "帚": {
+    "structure": "⿳彐冖巾[G]",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "𠃍",
+      "一",
+      "一",
+      "㇀",
+      "㇇|乛",
+      "丨",
+      "𠃌",
+      "丨"
+    ],
+    "pinyin": "Zhǒu",
+    "pinyinArray": [
+      "Zhou"
+    ]
+  },
+  "帜": {
+    "structure": "⿰巾只",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丨",
+      "𠃌",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Zhì",
+    "pinyinArray": [
+      "Zhi"
+    ]
+  },
+  "帝": {
+    "structure": "⿱⿱⿱亠丷冖巾",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "㇀",
+      "㇇|乛",
+      "丨",
+      "𠃌",
+      "丨"
+    ],
+    "pinyin": "Dì",
+    "pinyinArray": [
+      "Di"
+    ]
+  },
+  "带": {
+    "structure": "⿳卅冖巾",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丨",
+      "㇀",
+      "㇇|乛",
+      "丨",
+      "𠃌",
+      "丨"
+    ],
+    "pinyin": "Dài",
+    "pinyinArray": [
+      "Dai"
+    ]
+  },
+  "席": {
+    "structure": "⿸广⿱廿巾",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丨",
+      "𠃌",
+      "丨"
+    ],
+    "pinyin": "Xí",
+    "pinyinArray": [
+      "Xi"
+    ]
+  },
+  "帮": {
+    "structure": "⿱邦巾",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "一",
+      "一",
+      "丿",
+      "𠄎|㇌",
+      "丨",
+      "丨",
+      "𠃌",
+      "丨"
+    ],
+    "pinyin": "Bāng",
+    "pinyinArray": [
+      "Bang"
+    ]
+  },
+  "常": {
+    "structure": "⿱𫩠巾",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丨",
+      "丶",
+      "丿",
+      "㇀",
+      "㇇|乛",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃌",
+      "丨"
+    ],
+    "pinyin": "Cháng",
+    "pinyinArray": [
+      "Chang"
+    ]
+  },
+  "帽": {
+    "structure": "⿰巾冒",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丨",
+      "𠃌",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一"
+    ],
+    "pinyin": "Mào",
+    "pinyinArray": [
+      "Mao"
+    ]
+  },
+  "幅": {
+    "structure": "⿰巾畐",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丨",
+      "𠃌",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Fú",
+    "pinyinArray": [
+      "Fu"
+    ]
+  },
+  "幌": {
+    "structure": "⿰巾晃",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丨",
+      "𠃌",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "丶",
+      "丿",
+      "一",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Huǎng",
+    "pinyinArray": [
+      "Huang"
+    ]
+  },
+  "幔": {
+    "structure": "⿰巾曼",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "丨",
+      "𠃌",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "𠃍",
+      "丨",
+      "丨",
+      "一",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Màn",
+    "pinyinArray": [
+      "Man"
+    ]
+  },
+  "幕": {
+    "structure": "⿱莫巾",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "㇏",
+      "丨",
+      "𠃌",
+      "丨"
+    ],
+    "pinyin": "Mù",
+    "pinyinArray": [
+      "Mu"
+    ]
+  },
+  "幢": {
+    "structure": "⿰巾童",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "丨",
+      "𠃌",
+      "丨",
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "一"
+    ],
+    "pinyin": "Zhuàng",
+    "pinyinArray": [
+      "Zhuang"
+    ]
+  },
+  "干": {
+    "structure": "干",
+    "strokeCount": 3,
+    "strokeShapes": [
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Gàn",
+    "pinyinArray": [
+      "Gan"
+    ]
+  },
+  "平": {
+    "structure": "⿻干丷",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Píng",
+    "pinyinArray": [
+      "Ping"
+    ]
+  },
+  "年": {
+    "structure": "年",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Nián",
+    "pinyinArray": [
+      "Nian"
+    ]
+  },
+  "并": {
+    "structure": "⿱丷开",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "丿",
+      "丨"
+    ],
+    "pinyin": "Bìng",
+    "pinyinArray": [
+      "Bing"
+    ]
+  },
+  "幸": {
+    "structure": "⿱土𢆉",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Xìng",
+    "pinyinArray": [
+      "Xing"
+    ]
+  },
+  "幻": {
+    "structure": "⿰幺𠃌",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "𠃋",
+      "𠃋",
+      "丶",
+      "𠃌"
+    ],
+    "pinyin": "Huàn",
+    "pinyinArray": [
+      "Huan"
+    ]
+  },
+  "幼": {
+    "structure": "⿰幺力",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "𠃋",
+      "𠃋",
+      "丶",
+      "𠃌",
+      "丿"
+    ],
+    "pinyin": "Yòu",
+    "pinyinArray": [
+      "You"
+    ]
+  },
+  "幽": {
+    "structure": "⿻山𢆶",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丨",
+      "𠃋",
+      "𠃋",
+      "丶",
+      "𠃋",
+      "𠃋",
+      "丶",
+      "㇄",
+      "丨"
+    ],
+    "pinyin": "Yōu",
+    "pinyinArray": [
+      "You"
+    ]
+  },
+  "广": {
+    "structure": "广",
+    "strokeCount": 3,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿"
+    ],
+    "pinyin": "Guǎng",
+    "pinyinArray": [
+      "Guang"
+    ]
+  },
+  "庄": {
+    "structure": "⿸广土",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Zhuāng",
+    "pinyinArray": [
+      "Zhuang"
+    ]
+  },
+  "庆": {
+    "structure": "⿸广大",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Qìng",
+    "pinyinArray": [
+      "Qing"
+    ]
+  },
+  "庇": {
+    "structure": "⿸广比",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "一",
+      "𠄌",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Bì",
+    "pinyinArray": [
+      "Bi"
+    ]
+  },
+  "床": {
+    "structure": "⿸广木",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Chuáng",
+    "pinyinArray": [
+      "Chuang"
+    ]
+  },
+  "序": {
+    "structure": "⿸广予",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "㇇|乛",
+      "丶",
+      "㇇|乛",
+      "亅"
+    ],
+    "pinyin": "Xù",
+    "pinyinArray": [
+      "Xu"
+    ]
+  },
+  "庐": {
+    "structure": "⿸广户[G]",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "丶",
+      "𠃍",
+      "一",
+      "丿"
+    ],
+    "pinyin": "Lú",
+    "pinyinArray": [
+      "Lu"
+    ]
+  },
+  "库": {
+    "structure": "⿸广车",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "一",
+      "𠃋",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Kù",
+    "pinyinArray": [
+      "Ku"
+    ]
+  },
+  "应": {
+    "structure": "⿸广⿱𭕄一",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "丶",
+      "丶",
+      "丿",
+      "一"
+    ],
+    "pinyin": "Yìng",
+    "pinyinArray": [
+      "Ying"
+    ]
+  },
+  "底": {
+    "structure": "⿸广氐",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "丿",
+      "𠄌",
+      "一",
+      "㇂|㇃",
+      "丶"
+    ],
+    "pinyin": "Dǐ",
+    "pinyinArray": [
+      "Di"
+    ]
+  },
+  "店": {
+    "structure": "⿸广占",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Diàn",
+    "pinyinArray": [
+      "Dian"
+    ]
+  },
+  "庙": {
+    "structure": "⿸广由",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Miào",
+    "pinyinArray": [
+      "Miao"
+    ]
+  },
+  "府": {
+    "structure": "⿸广付",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "丿",
+      "丨",
+      "一",
+      "亅",
+      "丶"
+    ],
+    "pinyin": "Fǔ",
+    "pinyinArray": [
+      "Fu"
+    ]
+  },
+  "庞": {
+    "structure": "⿸广龙",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "一",
+      "丿",
+      "乚",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Páng",
+    "pinyinArray": [
+      "Pang"
+    ]
+  },
+  "废": {
+    "structure": "⿸广发",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "𠃋",
+      "丿",
+      "㇇|乛",
+      "㇏",
+      "丶"
+    ],
+    "pinyin": "Fèi",
+    "pinyinArray": [
+      "Fei"
+    ]
+  },
+  "度": {
+    "structure": "⿸广⿱廿又",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Dù",
+    "pinyinArray": [
+      "Du"
+    ]
+  },
+  "座": {
+    "structure": "⿸广坐",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "丿",
+      "丶",
+      "丿",
+      "丶",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Zuò",
+    "pinyinArray": [
+      "Zuo"
+    ]
+  },
+  "庭": {
+    "structure": "⿸广廷",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "丿",
+      "一",
+      "丨",
+      "一",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Tíng",
+    "pinyinArray": [
+      "Ting"
+    ]
+  },
+  "庵": {
+    "structure": "⿸广奄",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "一",
+      "丿",
+      "㇏",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "乚"
+    ],
+    "pinyin": "Ān",
+    "pinyinArray": [
+      "An"
+    ]
+  },
+  "庶": {
+    "structure": "⿸广⿱廿灬",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "㇀",
+      "丶",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Shù",
+    "pinyinArray": [
+      "Shu"
+    ]
+  },
+  "康": {
+    "structure": "⿸广隶",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "𠃍",
+      "一",
+      "一",
+      "亅",
+      "丶",
+      "㇀",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Kāng",
+    "pinyinArray": [
+      "Kang"
+    ]
+  },
+  "庸": {
+    "structure": "⿸广𬎾",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "𠃌",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Yōng",
+    "pinyinArray": [
+      "Yong"
+    ]
+  },
+  "廉": {
+    "structure": "⿸广兼",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "丶",
+      "丿",
+      "一",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Lián",
+    "pinyinArray": [
+      "Lian"
+    ]
+  },
+  "廊": {
+    "structure": "⿸广郎",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "丶",
+      "𠃍",
+      "一",
+      "一",
+      "𠄌",
+      "丶",
+      "𠄎|㇌",
+      "丨"
+    ],
+    "pinyin": "Láng",
+    "pinyinArray": [
+      "Lang"
+    ]
+  },
+  "廓": {
+    "structure": "⿸广郭",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "丶",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "㇇|乛",
+      "亅",
+      "㇀",
+      "𠄎|㇌",
+      "丨"
+    ],
+    "pinyin": "Kuò",
+    "pinyinArray": [
+      "Kuo"
+    ]
+  },
+  "延": {
+    "structure": "⿺廴⿱丿③[GK]",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "一",
+      "㇄",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Yán",
+    "pinyinArray": [
+      "Yan"
+    ]
+  },
+  "廷": {
+    "structure": "⿺廴壬[GJK]",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丨",
+      "一",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Tíng",
+    "pinyinArray": [
+      "Ting"
+    ]
+  },
+  "建": {
+    "structure": "⿺廴聿",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Jiàn",
+    "pinyinArray": [
+      "Jian"
+    ]
+  },
+  "开": {
+    "structure": "⿱一廾",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "一",
+      "一",
+      "丿",
+      "丨"
+    ],
+    "pinyin": "Kāi",
+    "pinyinArray": [
+      "Kai"
+    ]
+  },
+  "异": {
+    "structure": "⿱巳廾[G]",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "𠃍",
+      "一",
+      "乚",
+      "一",
+      "丿",
+      "丨"
+    ],
+    "pinyin": "Yì",
+    "pinyinArray": [
+      "Yi"
+    ]
+  },
+  "弃": {
+    "structure": "⿱𠫓廾",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "𠃋",
+      "丶",
+      "一",
+      "丿",
+      "丨"
+    ],
+    "pinyin": "Qì",
+    "pinyinArray": [
+      "Qi"
+    ]
+  },
+  "弄": {
+    "structure": "⿱王廾",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "一",
+      "丨",
+      "一",
+      "一",
+      "丿",
+      "丨"
+    ],
+    "pinyin": "Nòng",
+    "pinyinArray": [
+      "Nong"
+    ]
+  },
+  "弊": {
+    "structure": "⿱敝廾",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "丶",
+      "丿",
+      "丨",
+      "𠃌",
+      "丨",
+      "丿",
+      "丶",
+      "丿",
+      "一",
+      "丿",
+      "㇏",
+      "一",
+      "丿",
+      "丨"
+    ],
+    "pinyin": "Bì",
+    "pinyinArray": [
+      "Bi"
+    ]
+  },
+  "式": {
+    "structure": "⿹弋工",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "一",
+      "一",
+      "丨",
+      "㇀",
+      "㇂|㇃",
+      "丶"
+    ],
+    "pinyin": "Shì",
+    "pinyinArray": [
+      "Shi"
+    ]
+  },
+  "弓": {
+    "structure": "弓",
+    "strokeCount": 3,
+    "strokeShapes": [
+      "𠃍",
+      "一",
+      "㇉"
+    ],
+    "pinyin": "Gōng",
+    "pinyinArray": [
+      "Gong"
+    ]
+  },
+  "引": {
+    "structure": "⿰弓丨",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "𠃍",
+      "一",
+      "㇉",
+      "丨"
+    ],
+    "pinyin": "Yǐn",
+    "pinyinArray": [
+      "Yin"
+    ]
+  },
+  "弛": {
+    "structure": "⿰弓也",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "𠃍",
+      "一",
+      "㇉",
+      "𠃌",
+      "丨",
+      "乚"
+    ],
+    "pinyin": "Chí",
+    "pinyinArray": [
+      "Chi"
+    ]
+  },
+  "弟": {
+    "structure": "⿱丷𢎨",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丶",
+      "丿",
+      "𠃍",
+      "一",
+      "㇉",
+      "丨",
+      "丿"
+    ],
+    "pinyin": "Dì",
+    "pinyinArray": [
+      "Di"
+    ]
+  },
+  "张": {
+    "structure": "⿰弓长",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "𠃍",
+      "一",
+      "㇉",
+      "丿",
+      "一",
+      "𠄌",
+      "㇏"
+    ],
+    "pinyin": "Zhāng",
+    "pinyinArray": [
+      "Zhang"
+    ]
+  },
+  "弥": {
+    "structure": "⿰弓尔[G]",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "𠃍",
+      "一",
+      "㇉",
+      "丿",
+      "㇇|乛",
+      "亅",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Mí",
+    "pinyinArray": [
+      "Mi"
+    ]
+  },
+  "弦": {
+    "structure": "⿰弓玄",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "𠃍",
+      "一",
+      "㇉",
+      "丶",
+      "一",
+      "𠃋",
+      "𠃋",
+      "丶"
+    ],
+    "pinyin": "Xián",
+    "pinyinArray": [
+      "Xian"
+    ]
+  },
+  "弧": {
+    "structure": "⿰弓瓜",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "𠃍",
+      "一",
+      "㇉",
+      "丿",
+      "丿",
+      "𠄌",
+      "丶",
+      "㇏"
+    ],
+    "pinyin": "Hú",
+    "pinyinArray": [
+      "Hu"
+    ]
+  },
+  "弯": {
+    "structure": "⿱亦弓",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丨",
+      "丨",
+      "丿",
+      "丶",
+      "𠃍",
+      "一",
+      "㇉"
+    ],
+    "pinyin": "Wān",
+    "pinyinArray": [
+      "Wan"
+    ]
+  },
+  "弱": {
+    "structure": "⿰⿹弓冫⿹弓冫",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "𠃍",
+      "一",
+      "㇉",
+      "丶",
+      "㇀",
+      "𠃍",
+      "一",
+      "㇉",
+      "丶",
+      "㇀"
+    ],
+    "pinyin": "Ruò",
+    "pinyinArray": [
+      "Ruo"
+    ]
+  },
+  "弹": {
+    "structure": "⿰弓单",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "𠃍",
+      "一",
+      "㇉",
+      "丶",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Dàn",
+    "pinyinArray": [
+      "Dan"
+    ]
+  },
+  "强": {
+    "structure": "⿰弓虽",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "𠃍",
+      "一",
+      "㇉",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丶"
+    ],
+    "pinyin": "Qiáng",
+    "pinyinArray": [
+      "Qiang"
+    ]
+  },
+  "归": {
+    "structure": "⿰⿰丨丿彐",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丨",
+      "丿",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Guī",
+    "pinyinArray": [
+      "Gui"
+    ]
+  },
+  "当": {
+    "structure": "⿱⺌彐",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丨",
+      "丶",
+      "丿",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Dāng",
+    "pinyinArray": [
+      "Dang"
+    ]
+  },
+  "录": {
+    "structure": "⿱彐氺",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "𠃍",
+      "一",
+      "一",
+      "亅",
+      "丶",
+      "㇀",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Lù",
+    "pinyinArray": [
+      "Lu"
+    ]
+  },
+  "形": {
+    "structure": "⿰开彡",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "一",
+      "丿",
+      "丨",
+      "丿",
+      "丿",
+      "丿"
+    ],
+    "pinyin": "Xíng",
+    "pinyinArray": [
+      "Xing"
+    ]
+  },
+  "彤": {
+    "structure": "⿰丹彡",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "丶",
+      "一",
+      "丿",
+      "丿",
+      "丿"
+    ],
+    "pinyin": "Tóng",
+    "pinyinArray": [
+      "Tong"
+    ]
+  },
+  "彩": {
+    "structure": "⿰采彡",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丿",
+      "丶",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丿",
+      "丿",
+      "丿"
+    ],
+    "pinyin": "Cǎi",
+    "pinyinArray": [
+      "Cai"
+    ]
+  },
+  "彪": {
+    "structure": "⿺虎彡",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丨",
+      "一",
+      "㇇|乛",
+      "丿",
+      "一",
+      "乚",
+      "丿",
+      "⺄",
+      "丿",
+      "丿",
+      "丿"
+    ],
+    "pinyin": "Biāo",
+    "pinyinArray": [
+      "Biao"
+    ]
+  },
+  "彬": {
+    "structure": "⿰林彡",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丿",
+      "丿",
+      "丿"
+    ],
+    "pinyin": "Bīn",
+    "pinyinArray": [
+      "Bin"
+    ]
+  },
+  "彭": {
+    "structure": "⿰壴彡",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丶",
+      "丿",
+      "㇀",
+      "丿",
+      "丿",
+      "丿"
+    ],
+    "pinyin": "Péng",
+    "pinyinArray": [
+      "Peng"
+    ]
+  },
+  "彰": {
+    "structure": "⿰章彡",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "丿",
+      "丿",
+      "丿"
+    ],
+    "pinyin": "Zhāng",
+    "pinyinArray": [
+      "Zhang"
+    ]
+  },
+  "影": {
+    "structure": "⿰景彡",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丶",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "亅",
+      "丿",
+      "丶",
+      "丿",
+      "丿",
+      "丿"
+    ],
+    "pinyin": "Yǐng",
+    "pinyinArray": [
+      "Ying"
+    ]
+  },
+  "役": {
+    "structure": "⿰彳殳",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丿",
+      "丿",
+      "丨",
+      "丿",
+      "㇅|㇍",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Yì",
+    "pinyinArray": [
+      "Yi"
+    ]
+  },
+  "彻": {
+    "structure": "⿰彳切",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丿",
+      "丿",
+      "丨",
+      "一",
+      "𠄌",
+      "𠃌",
+      "丿"
+    ],
+    "pinyin": "Chè",
+    "pinyinArray": [
+      "Che"
+    ]
+  },
+  "彼": {
+    "structure": "⿰彳皮",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丿",
+      "丿",
+      "丨",
+      "㇇|乛",
+      "丿",
+      "丨",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Bǐ",
+    "pinyinArray": [
+      "Bi"
+    ]
+  },
+  "往": {
+    "structure": "⿰彳主",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丿",
+      "丿",
+      "丨",
+      "丶",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Wǎng",
+    "pinyinArray": [
+      "Wang"
+    ]
+  },
+  "征": {
+    "structure": "⿰彳正",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丿",
+      "丿",
+      "丨",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Zhēng",
+    "pinyinArray": [
+      "Zheng"
+    ]
+  },
+  "径": {
+    "structure": "⿰彳𢀖[G]",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丿",
+      "丿",
+      "丨",
+      "㇇|乛",
+      "丶",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Jìng",
+    "pinyinArray": [
+      "Jing"
+    ]
+  },
+  "待": {
+    "structure": "⿰彳寺",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "丿",
+      "丨",
+      "一",
+      "丨",
+      "一",
+      "一",
+      "亅",
+      "丶"
+    ],
+    "pinyin": "Dài",
+    "pinyinArray": [
+      "Dai"
+    ]
+  },
+  "很": {
+    "structure": "⿰彳艮",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "𠄌",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Hěn",
+    "pinyinArray": [
+      "Hen"
+    ]
+  },
+  "徊": {
+    "structure": "⿰彳回",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "丿",
+      "丨",
+      "丨",
+      "𠃍",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Huái",
+    "pinyinArray": [
+      "Huai"
+    ]
+  },
+  "律": {
+    "structure": "⿰彳聿",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Lǜ",
+    "pinyinArray": [
+      "Lü"
+    ]
+  },
+  "徐": {
+    "structure": "⿰彳余",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "丿",
+      "丨",
+      "丿",
+      "㇏",
+      "一",
+      "一",
+      "亅",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Xú",
+    "pinyinArray": [
+      "Xu"
+    ]
+  },
+  "徒": {
+    "structure": "⿰彳走",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "丿",
+      "丨",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Tú",
+    "pinyinArray": [
+      "Tu"
+    ]
+  },
+  "得": {
+    "structure": "⿰彳㝵",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丿",
+      "丿",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "一",
+      "亅",
+      "丶"
+    ],
+    "pinyin": "De",
+    "pinyinArray": [
+      "De"
+    ]
+  },
+  "徘": {
+    "structure": "⿰彳非",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丿",
+      "丿",
+      "丨",
+      "丨",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "一",
+      "一"
+    ],
+    "pinyin": "Pái",
+    "pinyinArray": [
+      "Pai"
+    ]
+  },
+  "徙": {
+    "structure": "⿰彳歨",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丿",
+      "丿",
+      "丨",
+      "丨",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Xǐ",
+    "pinyinArray": [
+      "Xi"
+    ]
+  },
+  "御": {
+    "structure": "⿰彳卸",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丿",
+      "丿",
+      "丨",
+      "丿",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "㇀",
+      "𠃌",
+      "丨"
+    ],
+    "pinyin": "Yù",
+    "pinyinArray": [
+      "Yu"
+    ]
+  },
+  "循": {
+    "structure": "⿰彳盾",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丿",
+      "丿",
+      "丨",
+      "丿",
+      "丿",
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一"
+    ],
+    "pinyin": "Xún",
+    "pinyinArray": [
+      "Xun"
+    ]
+  },
+  "微": {
+    "structure": "⿰彳𢼸[GK]",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丿",
+      "丿",
+      "丨",
+      "丨",
+      "㇄",
+      "丨",
+      "一",
+      "丿",
+      "㇊",
+      "丿",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Wēi",
+    "pinyinArray": [
+      "Wei"
+    ]
+  },
+  "德": {
+    "structure": "⿰彳𢛳",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "丿",
+      "丿",
+      "丨",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "丨",
+      "丨",
+      "一",
+      "一",
+      "㇀",
+      "㇂|㇃",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Dé",
+    "pinyinArray": [
+      "De"
+    ]
+  },
+  "徽": {
+    "structure": "⿰彳𢾰[GTK]",
+    "strokeCount": 17,
+    "strokeShapes": [
+      "丿",
+      "丿",
+      "丨",
+      "丨",
+      "㇄",
+      "丨",
+      "一",
+      "𠃋",
+      "𠃋",
+      "丶",
+      "亅",
+      "丿",
+      "丶",
+      "丿",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Huī",
+    "pinyinArray": [
+      "Hui"
+    ]
+  },
+  "心": {
+    "structure": "心",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "㇀",
+      "㇂|㇃",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Xīn",
+    "pinyinArray": [
+      "Xin"
+    ]
+  },
+  "必": {
+    "structure": "⿻心丿",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "㇀",
+      "㇂|㇃",
+      "丶",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Bì",
+    "pinyinArray": [
+      "Bi"
+    ]
+  },
+  "忆": {
+    "structure": "⿰忄乙",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "㇀",
+      "丶",
+      "丨",
+      "⺄"
+    ],
+    "pinyin": "Yì",
+    "pinyinArray": [
+      "Yi"
+    ]
+  },
+  "忌": {
+    "structure": "⿱己心",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "𠃍",
+      "一",
+      "乚",
+      "㇀",
+      "㇂|㇃",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Jì",
+    "pinyinArray": [
+      "Ji"
+    ]
+  },
+  "忍": {
+    "structure": "⿱刃心",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "𠃌",
+      "丿",
+      "㇀",
+      "㇀",
+      "㇂|㇃",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Rěn",
+    "pinyinArray": [
+      "Ren"
+    ]
+  },
+  "志": {
+    "structure": "⿱士心",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "一",
+      "㇀",
+      "㇂|㇃",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Zhì",
+    "pinyinArray": [
+      "Zhi"
+    ]
+  },
+  "忘": {
+    "structure": "⿱亡心",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "㇄",
+      "㇀",
+      "㇂|㇃",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Wàng",
+    "pinyinArray": [
+      "Wang"
+    ]
+  },
+  "忙": {
+    "structure": "⿰忄亡",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "㇀",
+      "丶",
+      "丨",
+      "丶",
+      "一",
+      "㇄"
+    ],
+    "pinyin": "Máng",
+    "pinyinArray": [
+      "Mang"
+    ]
+  },
+  "忠": {
+    "structure": "⿱中心",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "㇀",
+      "㇂|㇃",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Zhōng",
+    "pinyinArray": [
+      "Zhong"
+    ]
+  },
+  "忧": {
+    "structure": "⿰忄尤",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "㇀",
+      "丶",
+      "丨",
+      "一",
+      "丿",
+      "乚",
+      "丶"
+    ],
+    "pinyin": "Yōu",
+    "pinyinArray": [
+      "You"
+    ]
+  },
+  "快": {
+    "structure": "⿰忄夬",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "㇀",
+      "丶",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Kuài",
+    "pinyinArray": [
+      "Kuai"
+    ]
+  },
+  "忱": {
+    "structure": "⿰忄冘",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "㇀",
+      "丶",
+      "丨",
+      "㇀",
+      "㇇|乛",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Chén",
+    "pinyinArray": [
+      "Chen"
+    ]
+  },
+  "念": {
+    "structure": "⿱今心",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丿",
+      "㇏",
+      "丶",
+      "㇇|乛",
+      "㇀",
+      "㇂|㇃",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Niàn",
+    "pinyinArray": [
+      "Nian"
+    ]
+  },
+  "忽": {
+    "structure": "⿱勿心",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "丿",
+      "丿",
+      "㇀",
+      "㇂|㇃",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Hū",
+    "pinyinArray": [
+      "Hu"
+    ]
+  },
+  "忿": {
+    "structure": "⿱分心",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丿",
+      "㇏",
+      "𠃌",
+      "丿",
+      "㇀",
+      "㇂|㇃",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Fèn",
+    "pinyinArray": [
+      "Fen"
+    ]
+  },
+  "怀": {
+    "structure": "⿰忄不",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "㇀",
+      "丶",
+      "丨",
+      "一",
+      "丿",
+      "丨",
+      "丶"
+    ],
+    "pinyin": "Huái",
+    "pinyinArray": [
+      "Huai"
+    ]
+  },
+  "态": {
+    "structure": "⿱太心",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "㇏",
+      "丶",
+      "㇀",
+      "㇂|㇃",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Tài",
+    "pinyinArray": [
+      "Tai"
+    ]
+  },
+  "怎": {
+    "structure": "⿱乍心",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丨",
+      "一",
+      "一",
+      "㇀",
+      "㇂|㇃",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Zěn",
+    "pinyinArray": [
+      "Zen"
+    ]
+  },
+  "怒": {
+    "structure": "⿱奴心",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "𡿨",
+      "丿",
+      "一",
+      "㇇|乛",
+      "㇏",
+      "㇀",
+      "㇂|㇃",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Nù",
+    "pinyinArray": [
+      "Nu"
+    ]
+  },
+  "怔": {
+    "structure": "⿰忄正",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "㇀",
+      "丶",
+      "丨",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Zhèng",
+    "pinyinArray": [
+      "Zheng"
+    ]
+  },
+  "怕": {
+    "structure": "⿰忄白",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "㇀",
+      "丶",
+      "丨",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Pà",
+    "pinyinArray": [
+      "Pa"
+    ]
+  },
+  "怖": {
+    "structure": "⿰忄布",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "㇀",
+      "丶",
+      "丨",
+      "一",
+      "丿",
+      "丨",
+      "𠃌",
+      "丨"
+    ],
+    "pinyin": "Bù",
+    "pinyinArray": [
+      "Bu"
+    ]
+  },
+  "怜": {
+    "structure": "⿰忄令",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "㇀",
+      "丶",
+      "丨",
+      "丿",
+      "㇏",
+      "丶",
+      "㇇|乛",
+      "丶"
+    ],
+    "pinyin": "Lián",
+    "pinyinArray": [
+      "Lian"
+    ]
+  },
+  "思": {
+    "structure": "⿱田心",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "㇀",
+      "㇂|㇃",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Sī",
+    "pinyinArray": [
+      "Si"
+    ]
+  },
+  "怠": {
+    "structure": "⿱台心",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "𠃋",
+      "丶",
+      "丨",
+      "𠃍",
+      "一",
+      "㇀",
+      "㇂|㇃",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Dài",
+    "pinyinArray": [
+      "Dai"
+    ]
+  },
+  "急": {
+    "structure": "⿱刍心",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "㇇|乛",
+      "𠃍",
+      "一",
+      "一",
+      "㇀",
+      "㇂|㇃",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Jí",
+    "pinyinArray": [
+      "Ji"
+    ]
+  },
+  "性": {
+    "structure": "⿰忄生",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "㇀",
+      "丶",
+      "丨",
+      "丿",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Xìng",
+    "pinyinArray": [
+      "Xing"
+    ]
+  },
+  "怨": {
+    "structure": "⿱夗心",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "㇇|乛",
+      "丶",
+      "𠃌",
+      "乚",
+      "㇀",
+      "㇂|㇃",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Yuàn",
+    "pinyinArray": [
+      "Yuan"
+    ]
+  },
+  "怪": {
+    "structure": "⿰忄圣",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "㇀",
+      "丶",
+      "丨",
+      "㇇|乛",
+      "㇏",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Guài",
+    "pinyinArray": [
+      "Guai"
+    ]
+  },
+  "怯": {
+    "structure": "⿰忄去",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "㇀",
+      "丶",
+      "丨",
+      "一",
+      "丨",
+      "一",
+      "𠃋",
+      "丶"
+    ],
+    "pinyin": "Qiè",
+    "pinyinArray": [
+      "Qie"
+    ]
+  },
+  "总": {
+    "structure": "⿱𠮦心",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "㇀",
+      "㇂|㇃",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Zǒng",
+    "pinyinArray": [
+      "Zong"
+    ]
+  },
+  "恃": {
+    "structure": "⿰忄寺",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "㇀",
+      "丶",
+      "丨",
+      "一",
+      "丨",
+      "一",
+      "一",
+      "亅",
+      "丶"
+    ],
+    "pinyin": "Shì",
+    "pinyinArray": [
+      "Shi"
+    ]
+  },
+  "恋": {
+    "structure": "⿱亦心",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丨",
+      "丨",
+      "丿",
+      "丶",
+      "㇀",
+      "㇂|㇃",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Liàn",
+    "pinyinArray": [
+      "Lian"
+    ]
+  },
+  "恍": {
+    "structure": "⿰忄光",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "㇀",
+      "丶",
+      "丨",
+      "丨",
+      "丶",
+      "丿",
+      "一",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Huǎng",
+    "pinyinArray": [
+      "Huang"
+    ]
+  },
+  "恐": {
+    "structure": "⿱巩心",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "㇀",
+      "丿",
+      "⺄",
+      "丶",
+      "㇀",
+      "㇂|㇃",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Kǒng",
+    "pinyinArray": [
+      "Kong"
+    ]
+  },
+  "恒": {
+    "structure": "⿰忄亘",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "㇀",
+      "丶",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一"
+    ],
+    "pinyin": "Héng",
+    "pinyinArray": [
+      "Heng"
+    ]
+  },
+  "恕": {
+    "structure": "⿱如心",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "𡿨",
+      "丿",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "㇀",
+      "㇂|㇃",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Shù",
+    "pinyinArray": [
+      "Shu"
+    ]
+  },
+  "恢": {
+    "structure": "⿰忄灰",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "㇀",
+      "丶",
+      "丨",
+      "一",
+      "丿",
+      "㇀",
+      "丿",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Huī",
+    "pinyinArray": [
+      "Hui"
+    ]
+  },
+  "恤": {
+    "structure": "⿰忄血",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "㇀",
+      "丶",
+      "丨",
+      "丿",
+      "丨",
+      "𠃍",
+      "丨",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Xù",
+    "pinyinArray": [
+      "Xu"
+    ]
+  },
+  "恨": {
+    "structure": "⿰忄艮",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "㇀",
+      "丶",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "𠄌",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Hèn",
+    "pinyinArray": [
+      "Hen"
+    ]
+  },
+  "恩": {
+    "structure": "⿱因心",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "丶",
+      "一",
+      "㇀",
+      "㇂|㇃",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Ēn",
+    "pinyinArray": [
+      "En"
+    ]
+  },
+  "恬": {
+    "structure": "⿰忄舌",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "㇀",
+      "丶",
+      "丨",
+      "丿",
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Tián",
+    "pinyinArray": [
+      "Tian"
+    ]
+  },
+  "恭": {
+    "structure": "⿱共㣺",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丿",
+      "㇏",
+      "亅",
+      "㇀",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Gōng",
+    "pinyinArray": [
+      "Gong"
+    ]
+  },
+  "息": {
+    "structure": "⿱自心",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "㇀",
+      "㇂|㇃",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Xī",
+    "pinyinArray": [
+      "Xi"
+    ]
+  },
+  "恰": {
+    "structure": "⿰忄合",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "㇀",
+      "丶",
+      "丨",
+      "丿",
+      "㇏",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Qià",
+    "pinyinArray": [
+      "Qia"
+    ]
+  },
+  "恳": {
+    "structure": "⿱艮心",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "𠃍",
+      "一",
+      "一",
+      "𠄌",
+      "丿",
+      "㇏",
+      "㇀",
+      "㇂|㇃",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Kěn",
+    "pinyinArray": [
+      "Ken"
+    ]
+  },
+  "恶": {
+    "structure": "⿱亚心",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丶",
+      "丿",
+      "一",
+      "㇀",
+      "㇂|㇃",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Wù",
+    "pinyinArray": [
+      "Wu"
+    ]
+  },
+  "恼": {
+    "structure": "⿰忄㐫",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "㇀",
+      "丶",
+      "丨",
+      "丶",
+      "一",
+      "丿",
+      "丶",
+      "㇄",
+      "丨"
+    ],
+    "pinyin": "Nǎo",
+    "pinyinArray": [
+      "Nao"
+    ]
+  },
+  "悄": {
+    "structure": "⿰忄肖",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "㇀",
+      "丶",
+      "丨",
+      "丨",
+      "丶",
+      "丿",
+      "丨",
+      "𠃌",
+      "一",
+      "一"
+    ],
+    "pinyin": "Qiāo",
+    "pinyinArray": [
+      "Qiao"
+    ]
+  },
+  "悉": {
+    "structure": "⿱釆心",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丿",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "㇏",
+      "㇀",
+      "㇂|㇃",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Xī",
+    "pinyinArray": [
+      "Xi"
+    ]
+  },
+  "悍": {
+    "structure": "⿰忄旱",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "㇀",
+      "丶",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Hàn",
+    "pinyinArray": [
+      "Han"
+    ]
+  },
+  "悔": {
+    "structure": "⿰忄每[GTKV]",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "㇀",
+      "丶",
+      "丨",
+      "丿",
+      "一",
+      "㇄",
+      "𠃌",
+      "丶",
+      "一",
+      "丶"
+    ],
+    "pinyin": "Huǐ",
+    "pinyinArray": [
+      "Hui"
+    ]
+  },
+  "悟": {
+    "structure": "⿰忄吾",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "㇀",
+      "丶",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Wù",
+    "pinyinArray": [
+      "Wu"
+    ]
+  },
+  "悠": {
+    "structure": "⿱攸心",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "丨",
+      "丿",
+      "一",
+      "丿",
+      "㇏",
+      "㇀",
+      "㇂|㇃",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Yōu",
+    "pinyinArray": [
+      "You"
+    ]
+  },
+  "患": {
+    "structure": "⿱串心",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "㇀",
+      "㇂|㇃",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Huàn",
+    "pinyinArray": [
+      "Huan"
+    ]
+  },
+  "悦": {
+    "structure": "⿰忄兑",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "㇀",
+      "丶",
+      "丨",
+      "丶",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Yuè",
+    "pinyinArray": [
+      "Yue"
+    ]
+  },
+  "您": {
+    "structure": "⿱你心",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "丿",
+      "㇇|乛",
+      "亅",
+      "丿",
+      "丶",
+      "㇀",
+      "㇂|㇃",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Nín",
+    "pinyinArray": [
+      "Nin"
+    ]
+  },
+  "悬": {
+    "structure": "⿱县心",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "𠃋",
+      "丶",
+      "㇀",
+      "㇂|㇃",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Xuán",
+    "pinyinArray": [
+      "Xuan"
+    ]
+  },
+  "悯": {
+    "structure": "⿰忄闵",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "㇀",
+      "丶",
+      "丨",
+      "丶",
+      "丨",
+      "𠃌",
+      "丶",
+      "一",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Mǐn",
+    "pinyinArray": [
+      "Min"
+    ]
+  },
+  "悲": {
+    "structure": "⿱非心",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丨",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "一",
+      "一",
+      "㇀",
+      "㇂|㇃",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Bēi",
+    "pinyinArray": [
+      "Bei"
+    ]
+  },
+  "悴": {
+    "structure": "⿰忄卒",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "㇀",
+      "丶",
+      "丨",
+      "丶",
+      "一",
+      "丿",
+      "丶",
+      "丿",
+      "丶",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Cuì",
+    "pinyinArray": [
+      "Cui"
+    ]
+  },
+  "悼": {
+    "structure": "⿰忄卓",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "㇀",
+      "丶",
+      "丨",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Dào",
+    "pinyinArray": [
+      "Dao"
+    ]
+  },
+  "情": {
+    "structure": "⿰忄青",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "㇀",
+      "丶",
+      "丨",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "𠃌",
+      "一",
+      "一"
+    ],
+    "pinyin": "Qíng",
+    "pinyinArray": [
+      "Qing"
+    ]
+  },
+  "惊": {
+    "structure": "⿰忄京",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "㇀",
+      "丶",
+      "丨",
+      "丶",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "亅",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Jīng",
+    "pinyinArray": [
+      "Jing"
+    ]
+  },
+  "惋": {
+    "structure": "⿰忄宛",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "㇀",
+      "丶",
+      "丨",
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "丿",
+      "㇇|乛",
+      "丶",
+      "𠃌",
+      "乚"
+    ],
+    "pinyin": "Wǎn",
+    "pinyinArray": [
+      "Wan"
+    ]
+  },
+  "惑": {
+    "structure": "⿱或心",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "㇀",
+      "㇂|㇃",
+      "丿",
+      "丶",
+      "㇀",
+      "㇂|㇃",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Huò",
+    "pinyinArray": [
+      "Huo"
+    ]
+  },
+  "惕": {
+    "structure": "⿰忄易",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "㇀",
+      "丶",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "𠃌",
+      "丿",
+      "丿"
+    ],
+    "pinyin": "Tì",
+    "pinyinArray": [
+      "Ti"
+    ]
+  },
+  "惜": {
+    "structure": "⿰忄昔",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "㇀",
+      "丶",
+      "丨",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Xī",
+    "pinyinArray": [
+      "Xi"
+    ]
+  },
+  "惠": {
+    "structure": "⿱⑧心",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "丶",
+      "㇀",
+      "㇂|㇃",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Huì",
+    "pinyinArray": [
+      "Hui"
+    ]
+  },
+  "惦": {
+    "structure": "⿰忄店",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "㇀",
+      "丶",
+      "丨",
+      "丶",
+      "一",
+      "丿",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Diàn",
+    "pinyinArray": [
+      "Dian"
+    ]
+  },
+  "惧": {
+    "structure": "⿰忄具",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "㇀",
+      "丶",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Jù",
+    "pinyinArray": [
+      "Ju"
+    ]
+  },
+  "惨": {
+    "structure": "⿰忄参[GJK]",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "㇀",
+      "丶",
+      "丨",
+      "𠃋",
+      "丶",
+      "一",
+      "丿",
+      "㇏",
+      "丿",
+      "丿",
+      "丿"
+    ],
+    "pinyin": "Cǎn",
+    "pinyinArray": [
+      "Can"
+    ]
+  },
+  "惩": {
+    "structure": "⿱征心",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丿",
+      "丿",
+      "丨",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "一",
+      "㇀",
+      "㇂|㇃",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Chéng",
+    "pinyinArray": [
+      "Cheng"
+    ]
+  },
+  "惫": {
+    "structure": "⿱夂思",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丿",
+      "㇇|乛",
+      "㇏",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "㇀",
+      "㇂|㇃",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Bèi",
+    "pinyinArray": [
+      "Bei"
+    ]
+  },
+  "惭": {
+    "structure": "⿰忄斩",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "㇀",
+      "丶",
+      "丨",
+      "一",
+      "𠃋",
+      "丨",
+      "㇀",
+      "丿",
+      "丿",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Cán",
+    "pinyinArray": [
+      "Can"
+    ]
+  },
+  "惯": {
+    "structure": "⿰忄贯",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "㇀",
+      "丶",
+      "丨",
+      "㇄",
+      "𠃍",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Guàn",
+    "pinyinArray": [
+      "Guan"
+    ]
+  },
+  "惰": {
+    "structure": "⿰忄⿱左月",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "㇀",
+      "丶",
+      "丨",
+      "一",
+      "丿",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "𠃌",
+      "一",
+      "一"
+    ],
+    "pinyin": "Duò",
+    "pinyinArray": [
+      "Duo"
+    ]
+  },
+  "想": {
+    "structure": "⿱相心",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "㇀",
+      "㇂|㇃",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Xiǎng",
+    "pinyinArray": [
+      "Xiang"
+    ]
+  },
+  "惶": {
+    "structure": "⿰忄皇",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "㇀",
+      "丶",
+      "丨",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Huáng",
+    "pinyinArray": [
+      "Huang"
+    ]
+  },
+  "惹": {
+    "structure": "⿱若心",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "㇀",
+      "㇂|㇃",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Rě",
+    "pinyinArray": [
+      "Re"
+    ]
+  },
+  "愁": {
+    "structure": "⿱秋心",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "㇀",
+      "丿",
+      "丿",
+      "㇏",
+      "㇀",
+      "㇂|㇃",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Chóu",
+    "pinyinArray": [
+      "Chou"
+    ]
+  },
+  "愈": {
+    "structure": "⿱俞心",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丿",
+      "㇏",
+      "一",
+      "丨",
+      "𠃌",
+      "一",
+      "一",
+      "丨",
+      "亅",
+      "㇀",
+      "㇂|㇃",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Yù",
+    "pinyinArray": [
+      "Yu"
+    ]
+  },
+  "愉": {
+    "structure": "⿰忄俞[GTJ]",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "㇀",
+      "丶",
+      "丨",
+      "丿",
+      "㇏",
+      "一",
+      "丨",
+      "𠃌",
+      "一",
+      "一",
+      "丨",
+      "亅"
+    ],
+    "pinyin": "Yú",
+    "pinyinArray": [
+      "Yu"
+    ]
+  },
+  "意": {
+    "structure": "⿱音心",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "㇀",
+      "㇂|㇃",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Yì",
+    "pinyinArray": [
+      "Yi"
+    ]
+  },
+  "愕": {
+    "structure": "⿰忄咢",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "㇀",
+      "丶",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "㇉"
+    ],
+    "pinyin": "Ě",
+    "pinyinArray": [
+      "E"
+    ]
+  },
+  "愚": {
+    "structure": "⿱禺心",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "𠃌",
+      "丨",
+      "㇀",
+      "丶",
+      "㇀",
+      "㇂|㇃",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Yú",
+    "pinyinArray": [
+      "Yu"
+    ]
+  },
+  "感": {
+    "structure": "⿱咸心[GJK]",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "㇂|㇃",
+      "丿",
+      "丶",
+      "㇀",
+      "㇂|㇃",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Gǎn",
+    "pinyinArray": [
+      "Gan"
+    ]
+  },
+  "愤": {
+    "structure": "⿰忄贲",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "㇀",
+      "丶",
+      "丨",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "丨",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Fèn",
+    "pinyinArray": [
+      "Fen"
+    ]
+  },
+  "愧": {
+    "structure": "⿰忄鬼",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "㇀",
+      "丶",
+      "丨",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "乚",
+      "𠃋",
+      "丶"
+    ],
+    "pinyin": "Kuì",
+    "pinyinArray": [
+      "Kui"
+    ]
+  },
+  "愿": {
+    "structure": "⿸原心[G]",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "亅",
+      "丿",
+      "丶",
+      "㇀",
+      "㇂|㇃",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Yuàn",
+    "pinyinArray": [
+      "Yuan"
+    ]
+  },
+  "慈": {
+    "structure": "⿱兹心",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丶",
+      "丿",
+      "一",
+      "𠃋",
+      "𠃋",
+      "丶",
+      "𠃋",
+      "𠃋",
+      "丶",
+      "㇀",
+      "㇂|㇃",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Cí",
+    "pinyinArray": [
+      "Ci"
+    ]
+  },
+  "慌": {
+    "structure": "⿰忄荒",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "㇀",
+      "丶",
+      "丨",
+      "一",
+      "丨",
+      "丨",
+      "丶",
+      "一",
+      "㇄",
+      "丿",
+      "丨",
+      "乚"
+    ],
+    "pinyin": "Huǎng",
+    "pinyinArray": [
+      "Huang"
+    ]
+  },
+  "慎": {
+    "structure": "⿰忄真",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "㇀",
+      "丶",
+      "丨",
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Shèn",
+    "pinyinArray": [
+      "Shen"
+    ]
+  },
+  "慕": {
+    "structure": "⿱莫㣺",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "㇏",
+      "亅",
+      "㇀",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Mù",
+    "pinyinArray": [
+      "Mu"
+    ]
+  },
+  "慢": {
+    "structure": "⿰忄曼",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "㇀",
+      "丶",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "𠃍",
+      "丨",
+      "丨",
+      "一",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Màn",
+    "pinyinArray": [
+      "Man"
+    ]
+  },
+  "慧": {
+    "structure": "⿱彗心",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "㇀",
+      "㇂|㇃",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Huì",
+    "pinyinArray": [
+      "Hui"
+    ]
+  },
+  "慨": {
+    "structure": "⿰忄既",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "㇀",
+      "丶",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "𠄌",
+      "丶",
+      "一",
+      "𠃋",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Kǎi",
+    "pinyinArray": [
+      "Kai"
+    ]
+  },
+  "慰": {
+    "structure": "⿱尉心",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "𠃍",
+      "一",
+      "丿",
+      "一",
+      "一",
+      "亅",
+      "丿",
+      "丶",
+      "一",
+      "亅",
+      "丶",
+      "㇀",
+      "㇂|㇃",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Wèi",
+    "pinyinArray": [
+      "Wei"
+    ]
+  },
+  "慷": {
+    "structure": "⿰忄康",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "㇀",
+      "丶",
+      "丨",
+      "丶",
+      "一",
+      "丿",
+      "𠃍",
+      "一",
+      "一",
+      "亅",
+      "丶",
+      "㇀",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Kāng",
+    "pinyinArray": [
+      "Kang"
+    ]
+  },
+  "憋": {
+    "structure": "⿱敝心",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "丶",
+      "丿",
+      "丨",
+      "𠃌",
+      "丨",
+      "丿",
+      "丶",
+      "丿",
+      "一",
+      "丿",
+      "㇏",
+      "㇀",
+      "㇂|㇃",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Biē",
+    "pinyinArray": [
+      "Bie"
+    ]
+  },
+  "憎": {
+    "structure": "⿰忄曾[GTK]",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "㇀",
+      "丶",
+      "丨",
+      "丶",
+      "丿",
+      "丨",
+      "𠃍",
+      "丨",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Zēng",
+    "pinyinArray": [
+      "Zeng"
+    ]
+  },
+  "憔": {
+    "structure": "⿰忄焦",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "㇀",
+      "丶",
+      "丨",
+      "丿",
+      "丨",
+      "丶",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "㇀",
+      "丶",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Qiáo",
+    "pinyinArray": [
+      "Qiao"
+    ]
+  },
+  "憨": {
+    "structure": "⿱敢心",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "㇇|乛",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "一",
+      "㇀",
+      "丿",
+      "一",
+      "丿",
+      "㇏",
+      "㇀",
+      "㇂|㇃",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Hān",
+    "pinyinArray": [
+      "Han"
+    ]
+  },
+  "憾": {
+    "structure": "⿰忄感",
+    "strokeCount": 16,
+    "strokeShapes": [
+      "㇀",
+      "丶",
+      "丨",
+      "一",
+      "丿",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "㇂|㇃",
+      "丿",
+      "丶",
+      "㇀",
+      "㇂|㇃",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Hàn",
+    "pinyinArray": [
+      "Han"
+    ]
+  },
+  "懂": {
+    "structure": "⿰忄董",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "㇀",
+      "丶",
+      "丨",
+      "一",
+      "丨",
+      "丨",
+      "丿",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "一"
+    ],
+    "pinyin": "Dǒng",
+    "pinyinArray": [
+      "Dong"
+    ]
+  },
+  "懈": {
+    "structure": "⿰忄解",
+    "strokeCount": 16,
+    "strokeShapes": [
+      "㇀",
+      "丶",
+      "丨",
+      "丿",
+      "㇇|乛",
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "丨",
+      "𠃌",
+      "丿",
+      "丿",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Xiè",
+    "pinyinArray": [
+      "Xie"
+    ]
+  },
+  "懊": {
+    "structure": "⿰忄奥[G]",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "㇀",
+      "丶",
+      "丨",
+      "丿",
+      "丨",
+      "𠃍",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Ào",
+    "pinyinArray": [
+      "Ao"
+    ]
+  },
+  "懒": {
+    "structure": "⿰忄赖",
+    "strokeCount": 16,
+    "strokeShapes": [
+      "㇀",
+      "丶",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丿",
+      "㇇|乛",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Lǎn",
+    "pinyinArray": [
+      "Lan"
+    ]
+  },
+  "懦": {
+    "structure": "⿰忄需",
+    "strokeCount": 17,
+    "strokeShapes": [
+      "㇀",
+      "丶",
+      "丨",
+      "一",
+      "㇀",
+      "㇇|乛",
+      "丨",
+      "丶",
+      "丶",
+      "丶",
+      "丶",
+      "一",
+      "丿",
+      "丨",
+      "𠃌",
+      "丨",
+      "丨"
+    ],
+    "pinyin": "Nuò",
+    "pinyinArray": [
+      "Nuo"
+    ]
+  },
+  "戈": {
+    "structure": "⿻弋丿",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "一",
+      "㇂|㇃",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Gē",
+    "pinyinArray": [
+      "Ge"
+    ]
+  },
+  "戏": {
+    "structure": "⿰又戈",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "㇇|乛",
+      "丶",
+      "一",
+      "㇂|㇃",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Xì",
+    "pinyinArray": [
+      "Xi"
+    ]
+  },
+  "成": {
+    "structure": "⿵戊𠃌",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "𠃌",
+      "㇂|㇃",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Chéng",
+    "pinyinArray": [
+      "Cheng"
+    ]
+  },
+  "我": {
+    "structure": "我",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "亅",
+      "㇀",
+      "㇂|㇃",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Wǒ",
+    "pinyinArray": [
+      "Wo"
+    ]
+  },
+  "戒": {
+    "structure": "⿹戈廾",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "一",
+      "丿",
+      "丨",
+      "㇂|㇃",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Jiè",
+    "pinyinArray": [
+      "Jie"
+    ]
+  },
+  "或": {
+    "structure": "⿹戈⿱口一",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "㇀",
+      "㇂|㇃",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Huò",
+    "pinyinArray": [
+      "Huo"
+    ]
+  },
+  "战": {
+    "structure": "⿰占戈",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "㇂|㇃",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Zhàn",
+    "pinyinArray": [
+      "Zhan"
+    ]
+  },
+  "戚": {
+    "structure": "⿵戊尗",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "丨",
+      "一",
+      "一",
+      "亅",
+      "丿",
+      "丶",
+      "㇂|㇃",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Qī",
+    "pinyinArray": [
+      "Qi"
+    ]
+  },
+  "截": {
+    "structure": "⿹𢦏隹",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "丨",
+      "丶",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "㇂|㇃",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Jié",
+    "pinyinArray": [
+      "Jie"
+    ]
+  },
+  "戳": {
+    "structure": "⿰翟戈",
+    "strokeCount": 18,
+    "strokeShapes": [
+      "𠃍",
+      "丶",
+      "㇀",
+      "𠃍",
+      "丶",
+      "㇀",
+      "丿",
+      "丨",
+      "丶",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "一",
+      "㇂|㇃",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Chuō",
+    "pinyinArray": [
+      "Chuo"
+    ]
+  },
+  "戴": {
+    "structure": "⿹𢦏異",
+    "strokeCount": 17,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丿",
+      "丶",
+      "㇂|㇃",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Dài",
+    "pinyinArray": [
+      "Dai"
+    ]
+  },
+  "户": {
+    "structure": "⿱丶尸",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "丶",
+      "𠃍",
+      "一",
+      "丿"
+    ],
+    "pinyin": "Hù",
+    "pinyinArray": [
+      "Hu"
+    ]
+  },
+  "房": {
+    "structure": "⿸户方[G]",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丶",
+      "𠃍",
+      "一",
+      "丿",
+      "丶",
+      "一",
+      "𠃌",
+      "丿"
+    ],
+    "pinyin": "Fáng",
+    "pinyinArray": [
+      "Fang"
+    ]
+  },
+  "所": {
+    "structure": "⿰戶斤[GTKV]",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丿",
+      "丿",
+      "𠃍",
+      "一",
+      "丿",
+      "丿",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Suǒ",
+    "pinyinArray": [
+      "Suo"
+    ]
+  },
+  "扁": {
+    "structure": "⿸户𠕁[G]",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "𠃍",
+      "一",
+      "丿",
+      "丨",
+      "𠃌",
+      "一",
+      "丨",
+      "丨"
+    ],
+    "pinyin": "Biǎn",
+    "pinyinArray": [
+      "Bian"
+    ]
+  },
+  "扇": {
+    "structure": "⿸户羽[G]",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "𠃍",
+      "一",
+      "丿",
+      "𠃌",
+      "丶",
+      "㇀",
+      "𠃌",
+      "丶",
+      "㇀"
+    ],
+    "pinyin": "Shàn",
+    "pinyinArray": [
+      "Shan"
+    ]
+  },
+  "手": {
+    "structure": "手",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "亅"
+    ],
+    "pinyin": "Shǒu",
+    "pinyinArray": [
+      "Shou"
+    ]
+  },
+  "才": {
+    "structure": "才",
+    "strokeCount": 3,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "丿"
+    ],
+    "pinyin": "Cái",
+    "pinyinArray": [
+      "Cai"
+    ]
+  },
+  "扎": {
+    "structure": "⿰扌乚",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "乚"
+    ],
+    "pinyin": "Zhā",
+    "pinyinArray": [
+      "Zha"
+    ]
+  },
+  "扑": {
+    "structure": "⿰扌卜",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丨",
+      "丶"
+    ],
+    "pinyin": "Pū",
+    "pinyinArray": [
+      "Pu"
+    ]
+  },
+  "扒": {
+    "structure": "⿰扌八",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Bā",
+    "pinyinArray": [
+      "Ba"
+    ]
+  },
+  "打": {
+    "structure": "⿰扌丁",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "一",
+      "亅"
+    ],
+    "pinyin": "Dá",
+    "pinyinArray": [
+      "Da"
+    ]
+  },
+  "扔": {
+    "structure": "⿰扌乃",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "𠄎|㇌",
+      "丿"
+    ],
+    "pinyin": "Rēng",
+    "pinyinArray": [
+      "Reng"
+    ]
+  },
+  "托": {
+    "structure": "⿰扌乇",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丿",
+      "一",
+      "乚"
+    ],
+    "pinyin": "Tuō",
+    "pinyinArray": [
+      "Tuo"
+    ]
+  },
+  "扛": {
+    "structure": "⿰扌工",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Káng",
+    "pinyinArray": [
+      "Kang"
+    ]
+  },
+  "扣": {
+    "structure": "⿰扌口",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Kòu",
+    "pinyinArray": [
+      "Kou"
+    ]
+  },
+  "执": {
+    "structure": "⿰扌丸",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丿",
+      "⺄",
+      "丶"
+    ],
+    "pinyin": "Zhí",
+    "pinyinArray": [
+      "Zhi"
+    ]
+  },
+  "扩": {
+    "structure": "⿰扌广",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丶",
+      "一",
+      "丿"
+    ],
+    "pinyin": "Kuò",
+    "pinyinArray": [
+      "Kuo"
+    ]
+  },
+  "扫": {
+    "structure": "⿰扌彐",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Sào",
+    "pinyinArray": [
+      "Sao"
+    ]
+  },
+  "扬": {
+    "structure": "⿰扌𠃓",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "𠄎|㇌",
+      "丿",
+      "丿"
+    ],
+    "pinyin": "Yáng",
+    "pinyinArray": [
+      "Yang"
+    ]
+  },
+  "扭": {
+    "structure": "⿰扌丑",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "𠃍",
+      "丨",
+      "一",
+      "一"
+    ],
+    "pinyin": "Niǔ",
+    "pinyinArray": [
+      "Niu"
+    ]
+  },
+  "扮": {
+    "structure": "⿰扌分",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丿",
+      "㇏",
+      "𠃌",
+      "丿"
+    ],
+    "pinyin": "Bàn",
+    "pinyinArray": [
+      "Ban"
+    ]
+  },
+  "扯": {
+    "structure": "⿰扌止",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丨",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Chě",
+    "pinyinArray": [
+      "Che"
+    ]
+  },
+  "扰": {
+    "structure": "⿰扌尤",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "一",
+      "丿",
+      "乚",
+      "丶"
+    ],
+    "pinyin": "Rǎo",
+    "pinyinArray": [
+      "Rao"
+    ]
+  },
+  "扳": {
+    "structure": "⿰扌反",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丿",
+      "丿",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Bān",
+    "pinyinArray": [
+      "Ban"
+    ]
+  },
+  "扶": {
+    "structure": "⿰扌夫",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "一",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Fú",
+    "pinyinArray": [
+      "Fu"
+    ]
+  },
+  "批": {
+    "structure": "⿰扌比",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "一",
+      "𠄌",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Pī",
+    "pinyinArray": [
+      "Pi"
+    ]
+  },
+  "扼": {
+    "structure": "⿰扌厄",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "一",
+      "丿",
+      "𠃌",
+      "乚"
+    ],
+    "pinyin": "Ě",
+    "pinyinArray": [
+      "E"
+    ]
+  },
+  "找": {
+    "structure": "⿰扌戈",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "一",
+      "㇂|㇃",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Zhǎo",
+    "pinyinArray": [
+      "Zhao"
+    ]
+  },
+  "承": {
+    "structure": "承",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "㇇|乛",
+      "亅",
+      "一",
+      "一",
+      "一",
+      "㇇|乛",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Chéng",
+    "pinyinArray": [
+      "Cheng"
+    ]
+  },
+  "技": {
+    "structure": "⿰扌支",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "一",
+      "丨",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Jì",
+    "pinyinArray": [
+      "Ji"
+    ]
+  },
+  "抄": {
+    "structure": "⿰扌少",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丨",
+      "丿",
+      "丶",
+      "丿"
+    ],
+    "pinyin": "Chāo",
+    "pinyinArray": [
+      "Chao"
+    ]
+  },
+  "把": {
+    "structure": "⿰扌巴",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "𠃍",
+      "丨",
+      "一",
+      "乚"
+    ],
+    "pinyin": "Bǎ",
+    "pinyinArray": [
+      "Ba"
+    ]
+  },
+  "抑": {
+    "structure": "⿰扌卬",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丿",
+      "𠄌",
+      "𠃌",
+      "丨"
+    ],
+    "pinyin": "Yì",
+    "pinyinArray": [
+      "Yi"
+    ]
+  },
+  "抒": {
+    "structure": "⿰扌予",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "㇇|乛",
+      "丶",
+      "㇇|乛",
+      "亅"
+    ],
+    "pinyin": "Shū",
+    "pinyinArray": [
+      "Shu"
+    ]
+  },
+  "抓": {
+    "structure": "⿰扌爪",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丿",
+      "丿",
+      "丨",
+      "㇏"
+    ],
+    "pinyin": "Zhuā",
+    "pinyinArray": [
+      "Zhua"
+    ]
+  },
+  "投": {
+    "structure": "⿰扌殳",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丿",
+      "㇅|㇍",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Tóu",
+    "pinyinArray": [
+      "Tou"
+    ]
+  },
+  "抖": {
+    "structure": "⿰扌斗",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丶",
+      "丶",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Dǒu",
+    "pinyinArray": [
+      "Dou"
+    ]
+  },
+  "抗": {
+    "structure": "⿰扌亢",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丶",
+      "一",
+      "丿",
+      "⺄"
+    ],
+    "pinyin": "Kàng",
+    "pinyinArray": [
+      "Kang"
+    ]
+  },
+  "折": {
+    "structure": "⿰扌斤",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丿",
+      "丿",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Zhé",
+    "pinyinArray": [
+      "Zhe"
+    ]
+  },
+  "抚": {
+    "structure": "⿰扌无",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "一",
+      "一",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Fǔ",
+    "pinyinArray": [
+      "Fu"
+    ]
+  },
+  "抛": {
+    "structure": "⿰扌𠠵",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丿",
+      "⺄",
+      "𠃌",
+      "丿"
+    ],
+    "pinyin": "Pāo",
+    "pinyinArray": [
+      "Pao"
+    ]
+  },
+  "抠": {
+    "structure": "⿰扌区",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "一",
+      "丿",
+      "丶",
+      "㇄"
+    ],
+    "pinyin": "Kōu",
+    "pinyinArray": [
+      "Kou"
+    ]
+  },
+  "抡": {
+    "structure": "⿰扌仑",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丿",
+      "㇏",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Lún",
+    "pinyinArray": [
+      "Lun"
+    ]
+  },
+  "抢": {
+    "structure": "⿰扌仓",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丿",
+      "㇏",
+      "𠃌",
+      "乚"
+    ],
+    "pinyin": "Qiǎng",
+    "pinyinArray": [
+      "Qiang"
+    ]
+  },
+  "护": {
+    "structure": "⿰扌户[G]",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丶",
+      "𠃍",
+      "一",
+      "丿"
+    ],
+    "pinyin": "Hù",
+    "pinyinArray": [
+      "Hu"
+    ]
+  },
+  "报": {
+    "structure": "⿰扌𠬝",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "𠃌",
+      "丨",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Bào",
+    "pinyinArray": [
+      "Bao"
+    ]
+  },
+  "披": {
+    "structure": "⿰扌皮",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "㇇|乛",
+      "丿",
+      "丨",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Pī",
+    "pinyinArray": [
+      "Pi"
+    ]
+  },
+  "抬": {
+    "structure": "⿰扌台",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "𠃋",
+      "丶",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Tái",
+    "pinyinArray": [
+      "Tai"
+    ]
+  },
+  "抱": {
+    "structure": "⿰扌包",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丿",
+      "𠃌",
+      "𠃍",
+      "一",
+      "乚"
+    ],
+    "pinyin": "Bào",
+    "pinyinArray": [
+      "Bao"
+    ]
+  },
+  "抵": {
+    "structure": "⿰扌氐",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丿",
+      "𠄌",
+      "一",
+      "㇂|㇃",
+      "丶"
+    ],
+    "pinyin": "Dǐ",
+    "pinyinArray": [
+      "Di"
+    ]
+  },
+  "抹": {
+    "structure": "⿰扌末",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "一",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Mā",
+    "pinyinArray": [
+      "Ma"
+    ]
+  },
+  "押": {
+    "structure": "⿰扌甲",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Yā",
+    "pinyinArray": [
+      "Ya"
+    ]
+  },
+  "抽": {
+    "structure": "⿰扌由",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Chōu",
+    "pinyinArray": [
+      "Chou"
+    ]
+  },
+  "拂": {
+    "structure": "⿰扌弗",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "𠃍",
+      "一",
+      "㇉",
+      "丿",
+      "丨"
+    ],
+    "pinyin": "Fú",
+    "pinyinArray": [
+      "Fu"
+    ]
+  },
+  "拄": {
+    "structure": "⿰扌主[GTJ]",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丶",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Zhǔ",
+    "pinyinArray": [
+      "Zhu"
+    ]
+  },
+  "担": {
+    "structure": "⿰扌旦",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一"
+    ],
+    "pinyin": "Dàn",
+    "pinyinArray": [
+      "Dan"
+    ]
+  },
+  "拆": {
+    "structure": "⿰扌斥",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丿",
+      "丿",
+      "一",
+      "丨",
+      "丶"
+    ],
+    "pinyin": "Chāi",
+    "pinyinArray": [
+      "Chai"
+    ]
+  },
+  "拇": {
+    "structure": "⿰扌母",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "㇄",
+      "𠃌",
+      "丶",
+      "一",
+      "丶"
+    ],
+    "pinyin": "Mǔ",
+    "pinyinArray": [
+      "Mu"
+    ]
+  },
+  "拉": {
+    "structure": "⿰扌立",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "一"
+    ],
+    "pinyin": "Lá",
+    "pinyinArray": [
+      "La"
+    ]
+  },
+  "拌": {
+    "structure": "⿰扌半",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Bàn",
+    "pinyinArray": [
+      "Ban"
+    ]
+  },
+  "拍": {
+    "structure": "⿰扌白",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Pāi",
+    "pinyinArray": [
+      "Pai"
+    ]
+  },
+  "拐": {
+    "structure": "⿰扌另[GK]",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丨",
+      "𠃍",
+      "一",
+      "𠃌",
+      "丿"
+    ],
+    "pinyin": "Guǎi",
+    "pinyinArray": [
+      "Guai"
+    ]
+  },
+  "拒": {
+    "structure": "⿰扌巨",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "一",
+      "𠃍",
+      "一",
+      "㇄"
+    ],
+    "pinyin": "Jù",
+    "pinyinArray": [
+      "Ju"
+    ]
+  },
+  "拓": {
+    "structure": "⿰扌石",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Tuò",
+    "pinyinArray": [
+      "Tuo"
+    ]
+  },
+  "拔": {
+    "structure": "⿰扌犮",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "一",
+      "丿",
+      "㇇|乛",
+      "㇏",
+      "丶"
+    ],
+    "pinyin": "Bá",
+    "pinyinArray": [
+      "Ba"
+    ]
+  },
+  "拖": {
+    "structure": "⿰扌㐌",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丿",
+      "一",
+      "𠃌",
+      "丨",
+      "乚"
+    ],
+    "pinyin": "Tuō",
+    "pinyinArray": [
+      "Tuo"
+    ]
+  },
+  "拗": {
+    "structure": "⿰扌幼",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "𠃋",
+      "𠃋",
+      "丶",
+      "𠃌",
+      "丿"
+    ],
+    "pinyin": "Ào",
+    "pinyinArray": [
+      "Ao"
+    ]
+  },
+  "拘": {
+    "structure": "⿰扌句",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丿",
+      "𠃌",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Jū",
+    "pinyinArray": [
+      "Ju"
+    ]
+  },
+  "拙": {
+    "structure": "⿰扌出",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "㇄",
+      "丨",
+      "丨",
+      "㇄",
+      "丨"
+    ],
+    "pinyin": "Zhuō",
+    "pinyinArray": [
+      "Zhuo"
+    ]
+  },
+  "招": {
+    "structure": "⿰扌召",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "𠃌",
+      "丿",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Zhāo",
+    "pinyinArray": [
+      "Zhao"
+    ]
+  },
+  "拜": {
+    "structure": "⿰龵⿱一丰",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "丿",
+      "一",
+      "一",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Bài",
+    "pinyinArray": [
+      "Bai"
+    ]
+  },
+  "拟": {
+    "structure": "⿰扌以",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "𠄌",
+      "丶",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Nǐ",
+    "pinyinArray": [
+      "Ni"
+    ]
+  },
+  "拢": {
+    "structure": "⿰扌龙",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "一",
+      "丿",
+      "乚",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Lǒng",
+    "pinyinArray": [
+      "Long"
+    ]
+  },
+  "拣": {
+    "structure": "⿰扌𫠣",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "一",
+      "𠃋",
+      "𠃌",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Jiǎn",
+    "pinyinArray": [
+      "Jian"
+    ]
+  },
+  "拥": {
+    "structure": "⿰扌用",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Yōng",
+    "pinyinArray": [
+      "Yong"
+    ]
+  },
+  "拦": {
+    "structure": "⿰扌兰",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "一"
+    ],
+    "pinyin": "Lán",
+    "pinyinArray": [
+      "Lan"
+    ]
+  },
+  "拧": {
+    "structure": "⿰扌宁",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "一",
+      "亅"
+    ],
+    "pinyin": "Níng",
+    "pinyinArray": [
+      "Ning"
+    ]
+  },
+  "拨": {
+    "structure": "⿰扌发",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "𠃋",
+      "丿",
+      "㇇|乛",
+      "㇏",
+      "丶"
+    ],
+    "pinyin": "Bō",
+    "pinyinArray": [
+      "Bo"
+    ]
+  },
+  "择": {
+    "structure": "⿰扌𠬤",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "㇇|乛",
+      "㇏",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Zé",
+    "pinyinArray": [
+      "Ze"
+    ]
+  },
+  "括": {
+    "structure": "⿰扌舌",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丿",
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Kuò",
+    "pinyinArray": [
+      "Kuo"
+    ]
+  },
+  "拭": {
+    "structure": "⿰扌式",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "一",
+      "一",
+      "丨",
+      "㇀",
+      "㇂|㇃",
+      "丶"
+    ],
+    "pinyin": "Shì",
+    "pinyinArray": [
+      "Shi"
+    ]
+  },
+  "拯": {
+    "structure": "⿰扌丞",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "㇇|乛",
+      "亅",
+      "㇇|乛",
+      "丿",
+      "㇏",
+      "一"
+    ],
+    "pinyin": "Zhěng",
+    "pinyinArray": [
+      "Zheng"
+    ]
+  },
+  "拱": {
+    "structure": "⿰扌共",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Gǒng",
+    "pinyinArray": [
+      "Gong"
+    ]
+  },
+  "拳": {
+    "structure": "⿱龹手",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "丿",
+      "㇏",
+      "丿",
+      "一",
+      "一",
+      "亅"
+    ],
+    "pinyin": "Quán",
+    "pinyinArray": [
+      "Quan"
+    ]
+  },
+  "拴": {
+    "structure": "⿰扌全",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丿",
+      "㇏",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Shuān",
+    "pinyinArray": [
+      "Shuan"
+    ]
+  },
+  "拷": {
+    "structure": "⿰扌考",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "一",
+      "㇉"
+    ],
+    "pinyin": "Kǎo",
+    "pinyinArray": [
+      "Kao"
+    ]
+  },
+  "拼": {
+    "structure": "⿰扌并",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "丿",
+      "丨"
+    ],
+    "pinyin": "Pīn",
+    "pinyinArray": [
+      "Pin"
+    ]
+  },
+  "拾": {
+    "structure": "⿰扌合",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丿",
+      "㇏",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Shí",
+    "pinyinArray": [
+      "Shi"
+    ]
+  },
+  "拿": {
+    "structure": "⿱合手",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "㇏",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "一",
+      "一",
+      "亅"
+    ],
+    "pinyin": "Ná",
+    "pinyinArray": [
+      "Na"
+    ]
+  },
+  "持": {
+    "structure": "⿰扌寺",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "一",
+      "丨",
+      "一",
+      "一",
+      "亅",
+      "丶"
+    ],
+    "pinyin": "Chí",
+    "pinyinArray": [
+      "Chi"
+    ]
+  },
+  "挂": {
+    "structure": "⿰扌圭",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "一",
+      "丨",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Guà",
+    "pinyinArray": [
+      "Gua"
+    ]
+  },
+  "指": {
+    "structure": "⿰扌旨",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丿",
+      "乚",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Zhǐ",
+    "pinyinArray": [
+      "Zhi"
+    ]
+  },
+  "按": {
+    "structure": "⿰扌安",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "𡿨",
+      "丿",
+      "一"
+    ],
+    "pinyin": "Àn",
+    "pinyinArray": [
+      "An"
+    ]
+  },
+  "挎": {
+    "structure": "⿰扌夸",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "一",
+      "丿",
+      "㇏",
+      "一",
+      "一",
+      "㇉"
+    ],
+    "pinyin": "Kuà",
+    "pinyinArray": [
+      "Kua"
+    ]
+  },
+  "挑": {
+    "structure": "⿰扌兆",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丿",
+      "丶",
+      "㇀",
+      "乚",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Tiǎo",
+    "pinyinArray": [
+      "Tiao"
+    ]
+  },
+  "挖": {
+    "structure": "⿰扌穵",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "丿",
+      "丶",
+      "⺄"
+    ],
+    "pinyin": "Wā",
+    "pinyinArray": [
+      "Wa"
+    ]
+  },
+  "挚": {
+    "structure": "⿱执手",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丿",
+      "⺄",
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "亅"
+    ],
+    "pinyin": "Zhì",
+    "pinyinArray": [
+      "Zhi"
+    ]
+  },
+  "挟": {
+    "structure": "⿰扌夹",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Xié",
+    "pinyinArray": [
+      "Xie"
+    ]
+  },
+  "挠": {
+    "structure": "⿰扌尧",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "一",
+      "㇂|㇃",
+      "丿",
+      "一",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Náo",
+    "pinyinArray": [
+      "Nao"
+    ]
+  },
+  "挡": {
+    "structure": "⿰扌当",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丨",
+      "丶",
+      "丿",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Dàng",
+    "pinyinArray": [
+      "Dang"
+    ]
+  },
+  "挣": {
+    "structure": "⿰扌争",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丿",
+      "㇇|乛",
+      "𠃍",
+      "一",
+      "一",
+      "亅"
+    ],
+    "pinyin": "Zhèng",
+    "pinyinArray": [
+      "Zheng"
+    ]
+  },
+  "挤": {
+    "structure": "⿰扌齐",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丶",
+      "一",
+      "丿",
+      "㇏",
+      "丿",
+      "丨"
+    ],
+    "pinyin": "Jǐ",
+    "pinyinArray": [
+      "Ji"
+    ]
+  },
+  "挥": {
+    "structure": "⿰扌军",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "㇀",
+      "㇇|乛",
+      "一",
+      "𠃋",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Huī",
+    "pinyinArray": [
+      "Hui"
+    ]
+  },
+  "挨": {
+    "structure": "⿰扌矣",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "𠃋",
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Ái",
+    "pinyinArray": [
+      "Ai"
+    ]
+  },
+  "挪": {
+    "structure": "⿰扌那",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "𠃌",
+      "一",
+      "一",
+      "丿",
+      "𠄎|㇌",
+      "丨"
+    ],
+    "pinyin": "Nuó",
+    "pinyinArray": [
+      "Nuo"
+    ]
+  },
+  "挫": {
+    "structure": "⿰扌坐",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丿",
+      "丶",
+      "丿",
+      "丶",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Cuò",
+    "pinyinArray": [
+      "Cuo"
+    ]
+  },
+  "振": {
+    "structure": "⿰扌辰",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "一",
+      "丿",
+      "一",
+      "一",
+      "𠄌",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Zhèn",
+    "pinyinArray": [
+      "Zhen"
+    ]
+  },
+  "挺": {
+    "structure": "⿰扌廷",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丿",
+      "一",
+      "丨",
+      "一",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Tǐng",
+    "pinyinArray": [
+      "Ting"
+    ]
+  },
+  "挽": {
+    "structure": "⿰扌免",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丿",
+      "㇇|乛",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Wǎn",
+    "pinyinArray": [
+      "Wan"
+    ]
+  },
+  "捂": {
+    "structure": "⿰扌吾",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Wǔ",
+    "pinyinArray": [
+      "Wu"
+    ]
+  },
+  "捅": {
+    "structure": "⿰扌甬",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "㇇|乛",
+      "丶",
+      "丨",
+      "𠃌",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Tǒng",
+    "pinyinArray": [
+      "Tong"
+    ]
+  },
+  "捆": {
+    "structure": "⿰扌困",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "一"
+    ],
+    "pinyin": "Kǔn",
+    "pinyinArray": [
+      "Kun"
+    ]
+  },
+  "捉": {
+    "structure": "⿰扌足",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Zhuō",
+    "pinyinArray": [
+      "Zhuo"
+    ]
+  },
+  "捌": {
+    "structure": "⿰扌别",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丨",
+      "𠃍",
+      "一",
+      "𠃌",
+      "丿",
+      "丨",
+      "亅"
+    ],
+    "pinyin": "Bā",
+    "pinyinArray": [
+      "Ba"
+    ]
+  },
+  "捍": {
+    "structure": "⿰扌旱",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Hàn",
+    "pinyinArray": [
+      "Han"
+    ]
+  },
+  "捎": {
+    "structure": "⿰扌肖",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丨",
+      "丶",
+      "丿",
+      "丨",
+      "𠃌",
+      "一",
+      "一"
+    ],
+    "pinyin": "Shào",
+    "pinyinArray": [
+      "Shao"
+    ]
+  },
+  "捏": {
+    "structure": "⿰扌圼",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Niē",
+    "pinyinArray": [
+      "Nie"
+    ]
+  },
+  "捐": {
+    "structure": "⿰扌肙",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃌",
+      "一",
+      "一"
+    ],
+    "pinyin": "Juān",
+    "pinyinArray": [
+      "Juan"
+    ]
+  },
+  "捕": {
+    "structure": "⿰扌甫",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "一",
+      "丨",
+      "𠃌",
+      "一",
+      "一",
+      "丨",
+      "丶"
+    ],
+    "pinyin": "Bǔ",
+    "pinyinArray": [
+      "Bu"
+    ]
+  },
+  "捞": {
+    "structure": "⿰扌劳",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "一",
+      "丨",
+      "丨",
+      "㇀",
+      "㇇|乛",
+      "𠃌",
+      "丿"
+    ],
+    "pinyin": "Lāo",
+    "pinyinArray": [
+      "Lao"
+    ]
+  },
+  "损": {
+    "structure": "⿰扌员",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Sǔn",
+    "pinyinArray": [
+      "Sun"
+    ]
+  },
+  "捡": {
+    "structure": "⿰扌佥",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丿",
+      "㇏",
+      "一",
+      "丶",
+      "丶",
+      "丿",
+      "一"
+    ],
+    "pinyin": "Jiǎn",
+    "pinyinArray": [
+      "Jian"
+    ]
+  },
+  "换": {
+    "structure": "⿰扌奂",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丿",
+      "㇇|乛",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Huàn",
+    "pinyinArray": [
+      "Huan"
+    ]
+  },
+  "捣": {
+    "structure": "⿰扌岛",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丿",
+      "𠃌",
+      "丶",
+      "㇉",
+      "丨",
+      "㇄",
+      "丨"
+    ],
+    "pinyin": "Dǎo",
+    "pinyinArray": [
+      "Dao"
+    ]
+  },
+  "捧": {
+    "structure": "⿰扌奉",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "㇏",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Pěng",
+    "pinyinArray": [
+      "Peng"
+    ]
+  },
+  "据": {
+    "structure": "⿰扌居",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "𠃍",
+      "一",
+      "丿",
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Jù",
+    "pinyinArray": [
+      "Ju"
+    ]
+  },
+  "捶": {
+    "structure": "⿰扌垂",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丿",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "一"
+    ],
+    "pinyin": "Chuí",
+    "pinyinArray": [
+      "Chui"
+    ]
+  },
+  "捷": {
+    "structure": "⿰扌疌",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "一",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Jié",
+    "pinyinArray": [
+      "Jie"
+    ]
+  },
+  "捺": {
+    "structure": "⿰扌奈",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "一",
+      "丿",
+      "㇏",
+      "一",
+      "一",
+      "亅",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Nà",
+    "pinyinArray": [
+      "Na"
+    ]
+  },
+  "捻": {
+    "structure": "⿰扌念",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丿",
+      "㇏",
+      "丶",
+      "㇇|乛",
+      "㇀",
+      "㇂|㇃",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Niǎn",
+    "pinyinArray": [
+      "Nian"
+    ]
+  },
+  "掀": {
+    "structure": "⿰扌欣",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丿",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "㇇|乛",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Xiān",
+    "pinyinArray": [
+      "Xian"
+    ]
+  },
+  "掂": {
+    "structure": "⿰扌店",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丶",
+      "一",
+      "丿",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Diān",
+    "pinyinArray": [
+      "Dian"
+    ]
+  },
+  "授": {
+    "structure": "⿰扌受",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丿",
+      "丶",
+      "丶",
+      "丿",
+      "㇀",
+      "㇇|乛",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Shòu",
+    "pinyinArray": [
+      "Shou"
+    ]
+  },
+  "掉": {
+    "structure": "⿰扌卓",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Diào",
+    "pinyinArray": [
+      "Diao"
+    ]
+  },
+  "掌": {
+    "structure": "⿱𫩠手",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丨",
+      "丶",
+      "丿",
+      "㇀",
+      "㇇|乛",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "一",
+      "一",
+      "亅"
+    ],
+    "pinyin": "Zhǎng",
+    "pinyinArray": [
+      "Zhang"
+    ]
+  },
+  "掏": {
+    "structure": "⿰扌匋",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丿",
+      "𠃌",
+      "丿",
+      "一",
+      "一",
+      "丨",
+      "㇄",
+      "丨"
+    ],
+    "pinyin": "Tāo",
+    "pinyinArray": [
+      "Tao"
+    ]
+  },
+  "掐": {
+    "structure": "⿰扌臽",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丿",
+      "㇇|乛",
+      "丿",
+      "丨",
+      "一",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Qiā",
+    "pinyinArray": [
+      "Qia"
+    ]
+  },
+  "排": {
+    "structure": "⿰扌非",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丨",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "一",
+      "一"
+    ],
+    "pinyin": "Pái",
+    "pinyinArray": [
+      "Pai"
+    ]
+  },
+  "掖": {
+    "structure": "⿰扌夜",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丶",
+      "一",
+      "丿",
+      "丨",
+      "丿",
+      "㇇|乛",
+      "丶",
+      "㇏"
+    ],
+    "pinyin": "Yè",
+    "pinyinArray": [
+      "Ye"
+    ]
+  },
+  "掘": {
+    "structure": "⿰扌屈",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "𠃍",
+      "一",
+      "丿",
+      "㇄",
+      "丨",
+      "丨",
+      "㇄",
+      "丨"
+    ],
+    "pinyin": "Jué",
+    "pinyinArray": [
+      "Jue"
+    ]
+  },
+  "掠": {
+    "structure": "⿰扌京",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丶",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "亅",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Lüè",
+    "pinyinArray": [
+      "Lüe"
+    ]
+  },
+  "探": {
+    "structure": "⿰扌罙",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "㇀",
+      "㇇|乛",
+      "丿",
+      "丶",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Tàn",
+    "pinyinArray": [
+      "Tan"
+    ]
+  },
+  "接": {
+    "structure": "⿰扌妾",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "𡿨",
+      "丿",
+      "一"
+    ],
+    "pinyin": "Jié",
+    "pinyinArray": [
+      "Jie"
+    ]
+  },
+  "控": {
+    "structure": "⿰扌空",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "丿",
+      "丶",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Kòng",
+    "pinyinArray": [
+      "Kong"
+    ]
+  },
+  "推": {
+    "structure": "⿰扌隹",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丿",
+      "丨",
+      "丶",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Tuī",
+    "pinyinArray": [
+      "Tui"
+    ]
+  },
+  "掩": {
+    "structure": "⿰扌奄",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "一",
+      "丿",
+      "㇏",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "乚"
+    ],
+    "pinyin": "Yǎn",
+    "pinyinArray": [
+      "Yan"
+    ]
+  },
+  "措": {
+    "structure": "⿰扌昔",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Cuò",
+    "pinyinArray": [
+      "Cuo"
+    ]
+  },
+  "掰": {
+    "structure": "⿲龵分手[G]",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "丿",
+      "丿",
+      "㇏",
+      "𠃌",
+      "丿",
+      "丿",
+      "一",
+      "一",
+      "亅"
+    ],
+    "pinyin": "Bāi",
+    "pinyinArray": [
+      "Bai"
+    ]
+  },
+  "掷": {
+    "structure": "⿰扌郑",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "丿",
+      "丶",
+      "𠄎|㇌",
+      "丨"
+    ],
+    "pinyin": "Zhì",
+    "pinyinArray": [
+      "Zhi"
+    ]
+  },
+  "掸": {
+    "structure": "⿰扌单",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丶",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Dǎn",
+    "pinyinArray": [
+      "Dan"
+    ]
+  },
+  "掺": {
+    "structure": "⿰扌参",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "𠃋",
+      "丶",
+      "一",
+      "丿",
+      "㇏",
+      "丿",
+      "丿",
+      "丿"
+    ],
+    "pinyin": "Càn",
+    "pinyinArray": [
+      "Can"
+    ]
+  },
+  "揉": {
+    "structure": "⿰扌柔",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "㇇|乛",
+      "丶",
+      "㇇|乛",
+      "亅",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Róu",
+    "pinyinArray": [
+      "Rou"
+    ]
+  },
+  "揍": {
+    "structure": "⿰扌奏[GT]",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "㇏",
+      "一",
+      "一",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Zòu",
+    "pinyinArray": [
+      "Zou"
+    ]
+  },
+  "描": {
+    "structure": "⿰扌苗",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "一",
+      "丨",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Miáo",
+    "pinyinArray": [
+      "Miao"
+    ]
+  },
+  "提": {
+    "structure": "⿰扌是",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Tí",
+    "pinyinArray": [
+      "Ti"
+    ]
+  },
+  "插": {
+    "structure": "⿰扌臿",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丨",
+      "一",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Chā",
+    "pinyinArray": [
+      "Cha"
+    ]
+  },
+  "揖": {
+    "structure": "⿰扌咠",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "一",
+      "一"
+    ],
+    "pinyin": "Yī",
+    "pinyinArray": [
+      "Yi"
+    ]
+  },
+  "握": {
+    "structure": "⿰扌屋",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "𠃍",
+      "一",
+      "丿",
+      "一",
+      "𠃋",
+      "丶",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Wò",
+    "pinyinArray": [
+      "Wo"
+    ]
+  },
+  "揣": {
+    "structure": "⿰扌耑",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丨",
+      "㇄",
+      "丨",
+      "一",
+      "丿",
+      "丨",
+      "𠃌",
+      "丨",
+      "丨"
+    ],
+    "pinyin": "Chuài",
+    "pinyinArray": [
+      "Chuai"
+    ]
+  },
+  "揩": {
+    "structure": "⿰扌皆",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "一",
+      "𠄌",
+      "丿",
+      "乚",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Kāi",
+    "pinyinArray": [
+      "Kai"
+    ]
+  },
+  "揪": {
+    "structure": "⿰扌秋",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "㇀",
+      "丿",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Jiū",
+    "pinyinArray": [
+      "Jiu"
+    ]
+  },
+  "揭": {
+    "structure": "⿰扌曷",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "𠃌",
+      "丿",
+      "丶",
+      "㇄"
+    ],
+    "pinyin": "Jiē",
+    "pinyinArray": [
+      "Jie"
+    ]
+  },
+  "援": {
+    "structure": "⿰扌爰",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丿",
+      "丶",
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "丿",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Yuán",
+    "pinyinArray": [
+      "Yuan"
+    ]
+  },
+  "揽": {
+    "structure": "⿰扌览",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丨",
+      "丨",
+      "丿",
+      "一",
+      "丶",
+      "丨",
+      "𠃍",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Lǎn",
+    "pinyinArray": [
+      "Lan"
+    ]
+  },
+  "搀": {
+    "structure": "⿰扌𫥎",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丿",
+      "㇇|乛",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "乚",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Chān",
+    "pinyinArray": [
+      "Chan"
+    ]
+  },
+  "搁": {
+    "structure": "⿰扌阁",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丶",
+      "丨",
+      "𠃌",
+      "丿",
+      "㇇|乛",
+      "㇏",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Gé",
+    "pinyinArray": [
+      "Ge"
+    ]
+  },
+  "搂": {
+    "structure": "⿰扌娄",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "㇏",
+      "𡿨",
+      "丿",
+      "一"
+    ],
+    "pinyin": "Lǒu",
+    "pinyinArray": [
+      "Lou"
+    ]
+  },
+  "搅": {
+    "structure": "⿰扌觉",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丶",
+      "丶",
+      "丿",
+      "㇀",
+      "㇇|乛",
+      "丨",
+      "𠃍",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Jiǎo",
+    "pinyinArray": [
+      "Jiao"
+    ]
+  },
+  "搏": {
+    "structure": "⿰扌尃",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "丶",
+      "一",
+      "亅",
+      "丶"
+    ],
+    "pinyin": "Bó",
+    "pinyinArray": [
+      "Bo"
+    ]
+  },
+  "搓": {
+    "structure": "⿰扌差",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Cuō",
+    "pinyinArray": [
+      "Cuo"
+    ]
+  },
+  "搔": {
+    "structure": "⿰扌蚤",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "㇇|乛",
+      "㇏",
+      "丶",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丶"
+    ],
+    "pinyin": "Sāo",
+    "pinyinArray": [
+      "Sao"
+    ]
+  },
+  "搜": {
+    "structure": "⿰扌叟",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丿",
+      "丨",
+      "一",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Sōu",
+    "pinyinArray": [
+      "Sou"
+    ]
+  },
+  "搞": {
+    "structure": "⿰扌高",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丶",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃌",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Gǎo",
+    "pinyinArray": [
+      "Gao"
+    ]
+  },
+  "搪": {
+    "structure": "⿰扌唐",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丶",
+      "一",
+      "丿",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Táng",
+    "pinyinArray": [
+      "Tang"
+    ]
+  },
+  "搬": {
+    "structure": "⿰扌般",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丿",
+      "丿",
+      "𠃌",
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "㇅|㇍",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Bān",
+    "pinyinArray": [
+      "Ban"
+    ]
+  },
+  "搭": {
+    "structure": "⿰扌荅",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "一",
+      "丨",
+      "丨",
+      "丿",
+      "㇏",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Dā",
+    "pinyinArray": [
+      "Da"
+    ]
+  },
+  "携": {
+    "structure": "⿰扌隽",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丿",
+      "丨",
+      "丶",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "𠄎|㇌",
+      "丿"
+    ],
+    "pinyin": "Xié",
+    "pinyinArray": [
+      "Xie"
+    ]
+  },
+  "摄": {
+    "structure": "⿰扌聂",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "一",
+      "一",
+      "㇇|乛",
+      "丶",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Shè",
+    "pinyinArray": [
+      "She"
+    ]
+  },
+  "摆": {
+    "structure": "⿰扌罢",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丨",
+      "𠃍",
+      "丨",
+      "丨",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "𠃋",
+      "丶"
+    ],
+    "pinyin": "Bǎi",
+    "pinyinArray": [
+      "Bai"
+    ]
+  },
+  "摇": {
+    "structure": "⿰扌䍃",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丿",
+      "丶",
+      "丶",
+      "丿",
+      "丿",
+      "一",
+      "一",
+      "丨",
+      "㇄",
+      "丨"
+    ],
+    "pinyin": "Yáo",
+    "pinyinArray": [
+      "Yao"
+    ]
+  },
+  "摊": {
+    "structure": "⿰扌难",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "㇇|乛",
+      "丶",
+      "丿",
+      "丨",
+      "丶",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Tān",
+    "pinyinArray": [
+      "Tan"
+    ]
+  },
+  "摔": {
+    "structure": "⿰扌率",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丶",
+      "一",
+      "𠃋",
+      "𠃋",
+      "丶",
+      "丶",
+      "㇀",
+      "丿",
+      "丶",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Shuāi",
+    "pinyinArray": [
+      "Shuai"
+    ]
+  },
+  "摘": {
+    "structure": "⿰扌啇",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "丨",
+      "𠃌",
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Zhāi",
+    "pinyinArray": [
+      "Zhai"
+    ]
+  },
+  "摧": {
+    "structure": "⿰扌崔",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丨",
+      "㇄",
+      "丨",
+      "丿",
+      "丨",
+      "丶",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Cuī",
+    "pinyinArray": [
+      "Cui"
+    ]
+  },
+  "摩": {
+    "structure": "⿸麻手",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "丨",
+      "丿",
+      "㇏",
+      "丿",
+      "一",
+      "一",
+      "亅"
+    ],
+    "pinyin": "Mó",
+    "pinyinArray": [
+      "Mo"
+    ]
+  },
+  "摸": {
+    "structure": "⿰扌莫",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "一",
+      "丨",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Mō",
+    "pinyinArray": [
+      "Mo"
+    ]
+  },
+  "摹": {
+    "structure": "⿱莫手",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "㇏",
+      "丿",
+      "一",
+      "一",
+      "亅"
+    ],
+    "pinyin": "Mó",
+    "pinyinArray": [
+      "Mo"
+    ]
+  },
+  "撇": {
+    "structure": "⿰扌敝",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丶",
+      "丿",
+      "丨",
+      "𠃌",
+      "丨",
+      "丿",
+      "丶",
+      "丿",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Piě",
+    "pinyinArray": [
+      "Pie"
+    ]
+  },
+  "撑": {
+    "structure": "⿰扌掌",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丨",
+      "丶",
+      "丿",
+      "㇀",
+      "㇇|乛",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "一",
+      "一",
+      "亅"
+    ],
+    "pinyin": "Chēng",
+    "pinyinArray": [
+      "Cheng"
+    ]
+  },
+  "撒": {
+    "structure": "⿰扌散",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丨",
+      "𠃌",
+      "一",
+      "一",
+      "丿",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Sǎ",
+    "pinyinArray": [
+      "Sa"
+    ]
+  },
+  "撕": {
+    "structure": "⿰扌斯",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "丶",
+      "丿",
+      "丿",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Sī",
+    "pinyinArray": [
+      "Si"
+    ]
+  },
+  "撞": {
+    "structure": "⿰扌童",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "一"
+    ],
+    "pinyin": "Zhuàng",
+    "pinyinArray": [
+      "Zhuang"
+    ]
+  },
+  "撤": {
+    "structure": "⿲扌育攵",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丶",
+      "一",
+      "𠃋",
+      "丶",
+      "丨",
+      "𠃌",
+      "一",
+      "一",
+      "丿",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Chè",
+    "pinyinArray": [
+      "Che"
+    ]
+  },
+  "撩": {
+    "structure": "⿰扌尞",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "一",
+      "丿",
+      "㇏",
+      "丶",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "亅",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Liáo",
+    "pinyinArray": [
+      "Liao"
+    ]
+  },
+  "撬": {
+    "structure": "⿰扌毳",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丿",
+      "一",
+      "一",
+      "乚",
+      "丿",
+      "一",
+      "一",
+      "𠄌",
+      "丿",
+      "一",
+      "一",
+      "乚"
+    ],
+    "pinyin": "Qiào",
+    "pinyinArray": [
+      "Qiao"
+    ]
+  },
+  "播": {
+    "structure": "⿰扌番",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丿",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "㇏",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Bō",
+    "pinyinArray": [
+      "Bo"
+    ]
+  },
+  "撮": {
+    "structure": "⿰扌最",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "一",
+      "㇀",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Cuō",
+    "pinyinArray": [
+      "Cuo"
+    ]
+  },
+  "撰": {
+    "structure": "⿰扌巽",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "𠃍",
+      "一",
+      "乚",
+      "𠃍",
+      "一",
+      "乚",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Zhuàn",
+    "pinyinArray": [
+      "Zhuan"
+    ]
+  },
+  "撵": {
+    "structure": "⿰扌辇",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "一",
+      "一",
+      "丿",
+      "丶",
+      "一",
+      "一",
+      "丿",
+      "㇏",
+      "一",
+      "𠃋",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Niǎn",
+    "pinyinArray": [
+      "Nian"
+    ]
+  },
+  "撼": {
+    "structure": "⿰扌感",
+    "strokeCount": 16,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "一",
+      "丿",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "㇂|㇃",
+      "丿",
+      "丶",
+      "㇀",
+      "㇂|㇃",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Hàn",
+    "pinyinArray": [
+      "Han"
+    ]
+  },
+  "擂": {
+    "structure": "⿰扌雷",
+    "strokeCount": 16,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "一",
+      "㇀",
+      "㇇|乛",
+      "丨",
+      "丶",
+      "丶",
+      "丶",
+      "丶",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Léi",
+    "pinyinArray": [
+      "Lei"
+    ]
+  },
+  "擅": {
+    "structure": "⿰扌亶",
+    "strokeCount": 16,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丶",
+      "一",
+      "丨",
+      "𠃍",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一"
+    ],
+    "pinyin": "Shàn",
+    "pinyinArray": [
+      "Shan"
+    ]
+  },
+  "操": {
+    "structure": "⿰扌喿",
+    "strokeCount": 16,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Cāo",
+    "pinyinArray": [
+      "Cao"
+    ]
+  },
+  "擎": {
+    "structure": "⿱敬手",
+    "strokeCount": 16,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丿",
+      "𠃌",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "一",
+      "丿",
+      "㇏",
+      "丿",
+      "一",
+      "一",
+      "亅"
+    ],
+    "pinyin": "Qíng",
+    "pinyinArray": [
+      "Qing"
+    ]
+  },
+  "擒": {
+    "structure": "⿰扌禽",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丿",
+      "㇏",
+      "丶",
+      "一",
+      "丿",
+      "丶",
+      "㇄",
+      "丨",
+      "丨",
+      "𠃌",
+      "𠃋",
+      "丶"
+    ],
+    "pinyin": "Qín",
+    "pinyinArray": [
+      "Qin"
+    ]
+  },
+  "擦": {
+    "structure": "⿰扌察",
+    "strokeCount": 17,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "丿",
+      "㇇|乛",
+      "丶",
+      "丶",
+      "㇇|乛",
+      "㇏",
+      "一",
+      "一",
+      "亅",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Cā",
+    "pinyinArray": [
+      "Ca"
+    ]
+  },
+  "攀": {
+    "structure": "⿱樊手",
+    "strokeCount": 19,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丿",
+      "丶",
+      "丿",
+      "丶",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "丿",
+      "㇏",
+      "丿",
+      "一",
+      "一",
+      "亅"
+    ],
+    "pinyin": "Pān",
+    "pinyinArray": [
+      "Pan"
+    ]
+  },
+  "攒": {
+    "structure": "⿰扌赞",
+    "strokeCount": 19,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丿",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "𠄌",
+      "丿",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "乚",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Zǎn",
+    "pinyinArray": [
+      "Zan"
+    ]
+  },
+  "攘": {
+    "structure": "⿰扌襄",
+    "strokeCount": 20,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丶",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丿",
+      "𠄌",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Rǎng",
+    "pinyinArray": [
+      "Rang"
+    ]
+  },
+  "支": {
+    "structure": "⿱十又",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Zhī",
+    "pinyinArray": [
+      "Zhi"
+    ]
+  },
+  "收": {
+    "structure": "⿰丩攵",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "𠄌",
+      "丨",
+      "丿",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Shōu",
+    "pinyinArray": [
+      "Shou"
+    ]
+  },
+  "改": {
+    "structure": "⿰己攵",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "𠃍",
+      "一",
+      "𠄌",
+      "丿",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Gǎi",
+    "pinyinArray": [
+      "Gai"
+    ]
+  },
+  "攻": {
+    "structure": "⿰工攵",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "㇀",
+      "丿",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Gōng",
+    "pinyinArray": [
+      "Gong"
+    ]
+  },
+  "放": {
+    "structure": "⿰方攵",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "𠃌",
+      "丿",
+      "丿",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Fàng",
+    "pinyinArray": [
+      "Fang"
+    ]
+  },
+  "政": {
+    "structure": "⿰正攵",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "㇀",
+      "丿",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Zhèng",
+    "pinyinArray": [
+      "Zheng"
+    ]
+  },
+  "故": {
+    "structure": "⿰古攵",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Gù",
+    "pinyinArray": [
+      "Gu"
+    ]
+  },
+  "效": {
+    "structure": "⿰交攵",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "丶",
+      "丿",
+      "丶",
+      "丿",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Xiào",
+    "pinyinArray": [
+      "Xiao"
+    ]
+  },
+  "敌": {
+    "structure": "⿰舌攵",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Dí",
+    "pinyinArray": [
+      "Di"
+    ]
+  },
+  "敏": {
+    "structure": "⿰每攵[GTKV]",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "㇄",
+      "𠃌",
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Mǐn",
+    "pinyinArray": [
+      "Min"
+    ]
+  },
+  "救": {
+    "structure": "⿰求攵",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "丶",
+      "㇀",
+      "丿",
+      "丶",
+      "丶",
+      "丿",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Jiù",
+    "pinyinArray": [
+      "Jiu"
+    ]
+  },
+  "教": {
+    "structure": "⿰孝攵",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "㇇|乛",
+      "亅",
+      "㇀",
+      "丿",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Jiāo",
+    "pinyinArray": [
+      "Jiao"
+    ]
+  },
+  "敛": {
+    "structure": "⿰佥攵",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丿",
+      "丶",
+      "一",
+      "丶",
+      "丶",
+      "丿",
+      "㇀",
+      "丿",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Liǎn",
+    "pinyinArray": [
+      "Lian"
+    ]
+  },
+  "敞": {
+    "structure": "⿰尚攵[GT]",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丨",
+      "丶",
+      "丿",
+      "丨",
+      "𠃌",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Chǎng",
+    "pinyinArray": [
+      "Chang"
+    ]
+  },
+  "敢": {
+    "structure": "⿰⿱乛耳攵[G]",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "㇇|乛",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "一",
+      "㇀",
+      "丿",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Gǎn",
+    "pinyinArray": [
+      "Gan"
+    ]
+  },
+  "散": {
+    "structure": "⿰⿱龷⺼攵",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丨",
+      "𠃌",
+      "一",
+      "一",
+      "丿",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Sàn",
+    "pinyinArray": [
+      "San"
+    ]
+  },
+  "敦": {
+    "structure": "⿰享攵",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "㇇|乛",
+      "亅",
+      "㇀",
+      "丿",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Dūn",
+    "pinyinArray": [
+      "Dun"
+    ]
+  },
+  "敬": {
+    "structure": "⿰苟攵[GJK]",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丿",
+      "𠃌",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Jìng",
+    "pinyinArray": [
+      "Jing"
+    ]
+  },
+  "数": {
+    "structure": "⿰娄攵",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "𡿨",
+      "丿",
+      "一",
+      "丿",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Shù",
+    "pinyinArray": [
+      "Shu"
+    ]
+  },
+  "敲": {
+    "structure": "⿰高攴",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃌",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Qiāo",
+    "pinyinArray": [
+      "Qiao"
+    ]
+  },
+  "整": {
+    "structure": "⿱敕正",
+    "strokeCount": 16,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丿",
+      "一",
+      "丿",
+      "㇏",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Zhěng",
+    "pinyinArray": [
+      "Zheng"
+    ]
+  },
+  "敷": {
+    "structure": "⿰旉攵[GTK]",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "丶",
+      "丶",
+      "一",
+      "𠃌",
+      "丿",
+      "丿",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Fū",
+    "pinyinArray": [
+      "Fu"
+    ]
+  },
+  "文": {
+    "structure": "⿱亠乂",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Wén",
+    "pinyinArray": [
+      "Wen"
+    ]
+  },
+  "斋": {
+    "structure": "⿱文而",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "㇏",
+      "一",
+      "丿",
+      "丨",
+      "𠃌",
+      "丨",
+      "丨"
+    ],
+    "pinyin": "Zhāi",
+    "pinyinArray": [
+      "Zhai"
+    ]
+  },
+  "斑": {
+    "structure": "⿲王文王",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "一",
+      "丨",
+      "㇀",
+      "丶",
+      "一",
+      "丿",
+      "丶",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Bān",
+    "pinyinArray": [
+      "Ban"
+    ]
+  },
+  "斗": {
+    "structure": "斗",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Dòu",
+    "pinyinArray": [
+      "Dou"
+    ]
+  },
+  "料": {
+    "structure": "⿰米斗",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丶",
+      "丶",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Liào",
+    "pinyinArray": [
+      "Liao"
+    ]
+  },
+  "斜": {
+    "structure": "⿰余斗",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丿",
+      "丶",
+      "一",
+      "一",
+      "亅",
+      "丿",
+      "丶",
+      "丶",
+      "丶",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Xié",
+    "pinyinArray": [
+      "Xie"
+    ]
+  },
+  "斟": {
+    "structure": "⿰甚斗",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "丶",
+      "㇄",
+      "丶",
+      "丶",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Zhēn",
+    "pinyinArray": [
+      "Zhen"
+    ]
+  },
+  "斤": {
+    "structure": "⿸𠂆丅",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "丿",
+      "丿",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Gōng",
+    "pinyinArray": [
+      "Gong"
+    ]
+  },
+  "斥": {
+    "structure": "⿻斤丶",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丿",
+      "丿",
+      "一",
+      "丨",
+      "丶"
+    ],
+    "pinyin": "Chì",
+    "pinyinArray": [
+      "Chi"
+    ]
+  },
+  "斧": {
+    "structure": "⿱父斤",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丿",
+      "丶",
+      "丿",
+      "㇏",
+      "丿",
+      "丿",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Fǔ",
+    "pinyinArray": [
+      "Fu"
+    ]
+  },
+  "斩": {
+    "structure": "⿰车斤",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "𠃋",
+      "丨",
+      "㇀",
+      "丿",
+      "丿",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Zhǎn",
+    "pinyinArray": [
+      "Zhan"
+    ]
+  },
+  "断": {
+    "structure": "⿰⿺𠃊米斤",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "㇄",
+      "丿",
+      "丿",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Duàn",
+    "pinyinArray": [
+      "Duan"
+    ]
+  },
+  "斯": {
+    "structure": "⿰其斤",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "丶",
+      "丿",
+      "丿",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Sī",
+    "pinyinArray": [
+      "Si"
+    ]
+  },
+  "新": {
+    "structure": "⿰亲斤",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "亅",
+      "丿",
+      "丶",
+      "丿",
+      "丿",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Xīn",
+    "pinyinArray": [
+      "Xin"
+    ]
+  },
+  "方": {
+    "structure": "⿱亠⿰丿𠃌",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "𠃌",
+      "丿"
+    ],
+    "pinyin": "Fāng",
+    "pinyinArray": [
+      "Fang"
+    ]
+  },
+  "施": {
+    "structure": "⿰方㐌",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "𠃌",
+      "丿",
+      "丿",
+      "一",
+      "𠃌",
+      "丨",
+      "乚"
+    ],
+    "pinyin": "Shī",
+    "pinyinArray": [
+      "Shi"
+    ]
+  },
+  "旁": {
+    "structure": "⿱⿱⿱亠丷冖方",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "㇀",
+      "㇇|乛",
+      "丶",
+      "一",
+      "𠃌",
+      "丿"
+    ],
+    "pinyin": "Páng",
+    "pinyinArray": [
+      "Pang"
+    ]
+  },
+  "旅": {
+    "structure": "⿰方⿱𠂉④",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "𠃌",
+      "丿",
+      "丿",
+      "一",
+      "丿",
+      "𠄌",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Lǚ",
+    "pinyinArray": [
+      "Lü"
+    ]
+  },
+  "旋": {
+    "structure": "⿰方𭻾",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "𠃌",
+      "丿",
+      "丿",
+      "一",
+      "㇇|乛",
+      "丨",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Xuán",
+    "pinyinArray": [
+      "Xuan"
+    ]
+  },
+  "族": {
+    "structure": "⿰方⿱𠂉矢",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "𠃌",
+      "丿",
+      "丿",
+      "一",
+      "丿",
+      "一",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Zú",
+    "pinyinArray": [
+      "Zu"
+    ]
+  },
+  "旗": {
+    "structure": "⿰方⿱𠂉其",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "𠃌",
+      "丿",
+      "丿",
+      "一",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Qí",
+    "pinyinArray": [
+      "Qi"
+    ]
+  },
+  "无": {
+    "structure": "⿱一尢",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "一",
+      "一",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Wú",
+    "pinyinArray": [
+      "Wu"
+    ]
+  },
+  "既": {
+    "structure": "⿰⑤旡",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "𠃍",
+      "一",
+      "一",
+      "𠄌",
+      "丶",
+      "一",
+      "𠃋",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Jì",
+    "pinyinArray": [
+      "Ji"
+    ]
+  },
+  "日": {
+    "structure": "日",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Rì",
+    "pinyinArray": [
+      "Ri"
+    ]
+  },
+  "旦": {
+    "structure": "⿱日一",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一"
+    ],
+    "pinyin": "Dàn",
+    "pinyinArray": [
+      "Dan"
+    ]
+  },
+  "旧": {
+    "structure": "⿰丨日",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Jiù",
+    "pinyinArray": [
+      "Jiu"
+    ]
+  },
+  "旨": {
+    "structure": "⿱匕日",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丿",
+      "乚",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Zhǐ",
+    "pinyinArray": [
+      "Zhi"
+    ]
+  },
+  "早": {
+    "structure": "⿱日十",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Zǎo",
+    "pinyinArray": [
+      "Zao"
+    ]
+  },
+  "旬": {
+    "structure": "⿹勹日",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Xún",
+    "pinyinArray": [
+      "Xun"
+    ]
+  },
+  "旭": {
+    "structure": "⿺九日",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丿",
+      "⺄",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Xù",
+    "pinyinArray": [
+      "Xu"
+    ]
+  },
+  "旱": {
+    "structure": "⿱日干",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Hàn",
+    "pinyinArray": [
+      "Han"
+    ]
+  },
+  "时": {
+    "structure": "⿰日寸",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "亅",
+      "丶"
+    ],
+    "pinyin": "Shí",
+    "pinyinArray": [
+      "Shi"
+    ]
+  },
+  "旷": {
+    "structure": "⿰日广",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丶",
+      "一",
+      "丿"
+    ],
+    "pinyin": "Kuàng",
+    "pinyinArray": [
+      "Kuang"
+    ]
+  },
+  "旺": {
+    "structure": "⿰日王",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Wàng",
+    "pinyinArray": [
+      "Wang"
+    ]
+  },
+  "昂": {
+    "structure": "⿱日卬",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "𠄌",
+      "𠃌",
+      "丨"
+    ],
+    "pinyin": "Áng",
+    "pinyinArray": [
+      "Ang"
+    ]
+  },
+  "昆": {
+    "structure": "⿱日比",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "𠄌",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Kūn",
+    "pinyinArray": [
+      "Kun"
+    ]
+  },
+  "昌": {
+    "structure": "⿱日日",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Chāng",
+    "pinyinArray": [
+      "Chang"
+    ]
+  },
+  "明": {
+    "structure": "⿰日月",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "𠃌",
+      "一",
+      "一"
+    ],
+    "pinyin": "Míng",
+    "pinyinArray": [
+      "Ming"
+    ]
+  },
+  "昏": {
+    "structure": "⿱氏日",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丿",
+      "𠄌",
+      "一",
+      "㇂|㇃",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Hūn",
+    "pinyinArray": [
+      "Hun"
+    ]
+  },
+  "易": {
+    "structure": "⿱日勿",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "𠃌",
+      "丿",
+      "丿"
+    ],
+    "pinyin": "Yì",
+    "pinyinArray": [
+      "Yi"
+    ]
+  },
+  "昔": {
+    "structure": "⿱龷日",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Xī",
+    "pinyinArray": [
+      "Xi"
+    ]
+  },
+  "昙": {
+    "structure": "⿱日云",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "一",
+      "𠃋",
+      "丶"
+    ],
+    "pinyin": "Tán",
+    "pinyinArray": [
+      "Tan"
+    ]
+  },
+  "星": {
+    "structure": "⿱日生",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Xīng",
+    "pinyinArray": [
+      "Xing"
+    ]
+  },
+  "映": {
+    "structure": "⿰日央",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Yìng",
+    "pinyinArray": [
+      "Ying"
+    ]
+  },
+  "春": {
+    "structure": "⿱𡗗日",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "一",
+      "一",
+      "丿",
+      "㇏",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Chūn",
+    "pinyinArray": [
+      "Chun"
+    ]
+  },
+  "昧": {
+    "structure": "⿰日未",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Mèi",
+    "pinyinArray": [
+      "Mei"
+    ]
+  },
+  "昨": {
+    "structure": "⿰日乍",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "一",
+      "丨",
+      "一",
+      "一"
+    ],
+    "pinyin": "Zuó",
+    "pinyinArray": [
+      "Zuo"
+    ]
+  },
+  "昭": {
+    "structure": "⿰日召",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "𠃌",
+      "丿",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Zhāo",
+    "pinyinArray": [
+      "Zhao"
+    ]
+  },
+  "是": {
+    "structure": "⿱日𤴓",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Shì",
+    "pinyinArray": [
+      "Shi"
+    ]
+  },
+  "昵": {
+    "structure": "⿰日尼",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "𠃍",
+      "一",
+      "丿",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Nì",
+    "pinyinArray": [
+      "Ni"
+    ]
+  },
+  "昼": {
+    "structure": "⿱尺旦",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "𠃍",
+      "一",
+      "丿",
+      "㇏",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一"
+    ],
+    "pinyin": "Zhòu",
+    "pinyinArray": [
+      "Zhou"
+    ]
+  },
+  "显": {
+    "structure": "⿱日业",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "丨",
+      "丶",
+      "丿",
+      "一"
+    ],
+    "pinyin": "Xiǎn",
+    "pinyinArray": [
+      "Xian"
+    ]
+  },
+  "晃": {
+    "structure": "⿱日光",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "丶",
+      "丿",
+      "一",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Huàng",
+    "pinyinArray": [
+      "Huang"
+    ]
+  },
+  "晋": {
+    "structure": "⿱亚日",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Jìn",
+    "pinyinArray": [
+      "Jin"
+    ]
+  },
+  "晌": {
+    "structure": "⿰日向",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "丨",
+      "𠃌",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Shǎng",
+    "pinyinArray": [
+      "Shang"
+    ]
+  },
+  "晒": {
+    "structure": "⿰日西",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "𠃍",
+      "丿",
+      "㇄",
+      "一"
+    ],
+    "pinyin": "Shài",
+    "pinyinArray": [
+      "Shai"
+    ]
+  },
+  "晓": {
+    "structure": "⿰日尧",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "㇂|㇃",
+      "丿",
+      "一",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Xiǎo",
+    "pinyinArray": [
+      "Xiao"
+    ]
+  },
+  "晕": {
+    "structure": "⿱日军",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "㇀",
+      "㇇|乛",
+      "一",
+      "𠃋",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Yùn",
+    "pinyinArray": [
+      "Yun"
+    ]
+  },
+  "晚": {
+    "structure": "⿰日免",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "㇇|乛",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Wǎn",
+    "pinyinArray": [
+      "Wan"
+    ]
+  },
+  "晤": {
+    "structure": "⿰日吾",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Wù",
+    "pinyinArray": [
+      "Wu"
+    ]
+  },
+  "晦": {
+    "structure": "⿰日每",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "一",
+      "㇄",
+      "𠃌",
+      "丶",
+      "一",
+      "丶"
+    ],
+    "pinyin": "Huì",
+    "pinyinArray": [
+      "Hui"
+    ]
+  },
+  "晨": {
+    "structure": "⿱日辰",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "一",
+      "一",
+      "𠄌",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Chén",
+    "pinyinArray": [
+      "Chen"
+    ]
+  },
+  "普": {
+    "structure": "⿱並日",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "丨",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Pǔ",
+    "pinyinArray": [
+      "Pu"
+    ]
+  },
+  "景": {
+    "structure": "⿱日京",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丶",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "亅",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Jǐng",
+    "pinyinArray": [
+      "Jing"
+    ]
+  },
+  "晰": {
+    "structure": "⿰日析",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丿",
+      "丿",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Xī",
+    "pinyinArray": [
+      "Xi"
+    ]
+  },
+  "晴": {
+    "structure": "⿰日青",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "𠃌",
+      "一",
+      "一"
+    ],
+    "pinyin": "Qíng",
+    "pinyinArray": [
+      "Qing"
+    ]
+  },
+  "晶": {
+    "structure": "⿱日昍",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Jīng",
+    "pinyinArray": [
+      "Jing"
+    ]
+  },
+  "智": {
+    "structure": "⿱知日",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "丿",
+      "丶",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Zhì",
+    "pinyinArray": [
+      "Zhi"
+    ]
+  },
+  "晾": {
+    "structure": "⿰日京",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丶",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "亅",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Liàng",
+    "pinyinArray": [
+      "Liang"
+    ]
+  },
+  "暂": {
+    "structure": "⿱斩日",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "𠃋",
+      "丨",
+      "㇀",
+      "丿",
+      "丿",
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Zàn",
+    "pinyinArray": [
+      "Zan"
+    ]
+  },
+  "暇": {
+    "structure": "⿰日叚",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "一",
+      "𠃍",
+      "一",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Xiá",
+    "pinyinArray": [
+      "Xia"
+    ]
+  },
+  "暑": {
+    "structure": "⿱日者",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Shǔ",
+    "pinyinArray": [
+      "Shu"
+    ]
+  },
+  "暖": {
+    "structure": "⿰日爰",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "丶",
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "丿",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Nuǎn",
+    "pinyinArray": [
+      "Nuan"
+    ]
+  },
+  "暗": {
+    "structure": "⿰日音",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Àn",
+    "pinyinArray": [
+      "An"
+    ]
+  },
+  "暮": {
+    "structure": "⿱莫日",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "㇏",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Mù",
+    "pinyinArray": [
+      "Mu"
+    ]
+  },
+  "暴": {
+    "structure": "⿱日㳟",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丿",
+      "㇏",
+      "亅",
+      "丶",
+      "㇀",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Bào",
+    "pinyinArray": [
+      "Bao"
+    ]
+  },
+  "曙": {
+    "structure": "⿰日署",
+    "strokeCount": 17,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "𠃍",
+      "丨",
+      "丨",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Shǔ",
+    "pinyinArray": [
+      "Shu"
+    ]
+  },
+  "曲": {
+    "structure": "曲",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Qǔ",
+    "pinyinArray": [
+      "Qu"
+    ]
+  },
+  "更": {
+    "structure": "⿱一⿻日乂",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Gèng",
+    "pinyinArray": [
+      "Geng"
+    ]
+  },
+  "曹": {
+    "structure": "⿱⿻一曲日",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Cáo",
+    "pinyinArray": [
+      "Cao"
+    ]
+  },
+  "曼": {
+    "structure": "⿳日罒又[GJK]",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "𠃍",
+      "丨",
+      "丨",
+      "一",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Màn",
+    "pinyinArray": [
+      "Man"
+    ]
+  },
+  "曾": {
+    "structure": "⿱丷𭥴[GTV]",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丶",
+      "丿",
+      "丨",
+      "𠃍",
+      "丨",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Céng",
+    "pinyinArray": [
+      "Ceng"
+    ]
+  },
+  "替": {
+    "structure": "⿱㚘日",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "一",
+      "丿",
+      "丶",
+      "一",
+      "一",
+      "丿",
+      "㇏",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Tì",
+    "pinyinArray": [
+      "Ti"
+    ]
+  },
+  "最": {
+    "structure": "⿱日取[GJK]",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "一",
+      "㇀",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Zuì",
+    "pinyinArray": [
+      "Zui"
+    ]
+  },
+  "月": {
+    "structure": "月",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "一",
+      "一"
+    ],
+    "pinyin": "Yuè",
+    "pinyinArray": [
+      "Yue"
+    ]
+  },
+  "有": {
+    "structure": "⿸𠂇月",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "丨",
+      "𠃌",
+      "一",
+      "一"
+    ],
+    "pinyin": "Yǒu",
+    "pinyinArray": [
+      "You"
+    ]
+  },
+  "朋": {
+    "structure": "⿰月月",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "丿",
+      "𠃌",
+      "一",
+      "一"
+    ],
+    "pinyin": "Péng",
+    "pinyinArray": [
+      "Peng"
+    ]
+  },
+  "服": {
+    "structure": "⿰月𠬝",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "𠃌",
+      "丨",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Fú",
+    "pinyinArray": [
+      "Fu"
+    ]
+  },
+  "朗": {
+    "structure": "⿰⿱丶⑤月",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "𠃍",
+      "一",
+      "一",
+      "𠄌",
+      "丶",
+      "丿",
+      "𠃌",
+      "一",
+      "一"
+    ],
+    "pinyin": "Lǎng",
+    "pinyinArray": [
+      "Lang"
+    ]
+  },
+  "望": {
+    "structure": "⿱⿰亡月王[GJK]",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "𠄌",
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Wàng",
+    "pinyinArray": [
+      "Wang"
+    ]
+  },
+  "朝": {
+    "structure": "⿰𠦝月",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "丿",
+      "𠃌",
+      "一",
+      "一"
+    ],
+    "pinyin": "Cháo",
+    "pinyinArray": [
+      "Chao"
+    ]
+  },
+  "期": {
+    "structure": "⿰其月",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "丶",
+      "丿",
+      "𠃌",
+      "一",
+      "一"
+    ],
+    "pinyin": "Qī",
+    "pinyinArray": [
+      "Qi"
+    ]
+  },
+  "朦": {
+    "structure": "⿰月蒙",
+    "strokeCount": 17,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "丨",
+      "㇀",
+      "㇇|乛",
+      "一",
+      "一",
+      "丿",
+      "㇁",
+      "丿",
+      "丿",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Méng",
+    "pinyinArray": [
+      "Meng"
+    ]
+  },
+  "木": {
+    "structure": "木",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Mù",
+    "pinyinArray": [
+      "Mu"
+    ]
+  },
+  "未": {
+    "structure": "未",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "一",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Wèi",
+    "pinyinArray": [
+      "Wei"
+    ]
+  },
+  "末": {
+    "structure": "末",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "一",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Mò",
+    "pinyinArray": [
+      "Mo"
+    ]
+  },
+  "本": {
+    "structure": "本",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "㇏",
+      "一"
+    ],
+    "pinyin": "Běn",
+    "pinyinArray": [
+      "Ben"
+    ]
+  },
+  "术": {
+    "structure": "⿺木丶",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "㇏",
+      "丶"
+    ],
+    "pinyin": "Shù",
+    "pinyinArray": [
+      "Shu"
+    ]
+  },
+  "朱": {
+    "structure": "朱",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Zhū",
+    "pinyinArray": [
+      "Zhu"
+    ]
+  },
+  "朴": {
+    "structure": "⿰木卜",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丨",
+      "丶"
+    ],
+    "pinyin": "Pǔ",
+    "pinyinArray": [
+      "Pu"
+    ]
+  },
+  "朵": {
+    "structure": "⿱几木[GK]",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丿",
+      "㇅|㇍",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Duǒ",
+    "pinyinArray": [
+      "Duo"
+    ]
+  },
+  "机": {
+    "structure": "⿰木几",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丿",
+      "⺄"
+    ],
+    "pinyin": "Jī",
+    "pinyinArray": [
+      "Ji"
+    ]
+  },
+  "朽": {
+    "structure": "⿰木丂",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "㇉"
+    ],
+    "pinyin": "Xiǔ",
+    "pinyinArray": [
+      "Xiu"
+    ]
+  },
+  "杀": {
+    "structure": "⿱㐅朩",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丿",
+      "丶",
+      "一",
+      "亅",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Shā",
+    "pinyinArray": [
+      "Sha"
+    ]
+  },
+  "杂": {
+    "structure": "⿱九朩",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丿",
+      "⺄",
+      "一",
+      "亅",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Zá",
+    "pinyinArray": [
+      "Za"
+    ]
+  },
+  "权": {
+    "structure": "⿰木又",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Quán",
+    "pinyinArray": [
+      "Quan"
+    ]
+  },
+  "杆": {
+    "structure": "⿰木干",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Gǎn",
+    "pinyinArray": [
+      "Gan"
+    ]
+  },
+  "杈": {
+    "structure": "⿰木叉",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "㇇|乛",
+      "㇏",
+      "丶"
+    ],
+    "pinyin": "Chà",
+    "pinyinArray": [
+      "Cha"
+    ]
+  },
+  "杉": {
+    "structure": "⿰木彡",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丿",
+      "丿",
+      "丿"
+    ],
+    "pinyin": "Shān",
+    "pinyinArray": [
+      "Shan"
+    ]
+  },
+  "李": {
+    "structure": "⿱木子",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "㇏",
+      "㇇|乛",
+      "亅",
+      "一"
+    ],
+    "pinyin": "Lǐ",
+    "pinyinArray": [
+      "Li"
+    ]
+  },
+  "杏": {
+    "structure": "⿱木口",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "㇏",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Xìng",
+    "pinyinArray": [
+      "Xing"
+    ]
+  },
+  "材": {
+    "structure": "⿰木才",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "亅",
+      "丿"
+    ],
+    "pinyin": "Cái",
+    "pinyinArray": [
+      "Cai"
+    ]
+  },
+  "村": {
+    "structure": "⿰木寸",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "亅",
+      "丶"
+    ],
+    "pinyin": "Cūn",
+    "pinyinArray": [
+      "Cun"
+    ]
+  },
+  "杖": {
+    "structure": "⿰木丈",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Zhàng",
+    "pinyinArray": [
+      "Zhang"
+    ]
+  },
+  "杜": {
+    "structure": "⿰木土",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Dù",
+    "pinyinArray": [
+      "Du"
+    ]
+  },
+  "束": {
+    "structure": "束",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Shù",
+    "pinyinArray": [
+      "Shu"
+    ]
+  },
+  "杠": {
+    "structure": "⿰木工",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Gàng",
+    "pinyinArray": [
+      "Gang"
+    ]
+  },
+  "条": {
+    "structure": "⿱夂朩[GT]",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丿",
+      "㇇|乛",
+      "㇏",
+      "一",
+      "亅",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Tiáo",
+    "pinyinArray": [
+      "Tiao"
+    ]
+  },
+  "来": {
+    "structure": "来",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Lái",
+    "pinyinArray": [
+      "Lai"
+    ]
+  },
+  "杨": {
+    "structure": "⿰木𠃓",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "𠄎|㇌",
+      "丿",
+      "丿"
+    ],
+    "pinyin": "Yáng",
+    "pinyinArray": [
+      "Yang"
+    ]
+  },
+  "杭": {
+    "structure": "⿰木亢",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丶",
+      "一",
+      "丿",
+      "⺄"
+    ],
+    "pinyin": "Háng",
+    "pinyinArray": [
+      "Hang"
+    ]
+  },
+  "杯": {
+    "structure": "⿰木不",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "丿",
+      "丨",
+      "丶"
+    ],
+    "pinyin": "Bēi",
+    "pinyinArray": [
+      "Bei"
+    ]
+  },
+  "杰": {
+    "structure": "⿱木灬",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "㇏",
+      "㇀",
+      "丶",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Jié",
+    "pinyinArray": [
+      "Jie"
+    ]
+  },
+  "松": {
+    "structure": "⿰木公",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丿",
+      "㇏",
+      "𠃋",
+      "丶"
+    ],
+    "pinyin": "Sōng",
+    "pinyinArray": [
+      "Song"
+    ]
+  },
+  "板": {
+    "structure": "⿰木反",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丿",
+      "丿",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Bǎn",
+    "pinyinArray": [
+      "Ban"
+    ]
+  },
+  "极": {
+    "structure": "⿰木及",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丿",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Jí",
+    "pinyinArray": [
+      "Ji"
+    ]
+  },
+  "构": {
+    "structure": "⿰木勾",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丿",
+      "𠃌",
+      "𠃋",
+      "丶"
+    ],
+    "pinyin": "Gòu",
+    "pinyinArray": [
+      "Gou"
+    ]
+  },
+  "枉": {
+    "structure": "⿰木王",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Wǎng",
+    "pinyinArray": [
+      "Wang"
+    ]
+  },
+  "析": {
+    "structure": "⿰木斤",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丿",
+      "丿",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Xī",
+    "pinyinArray": [
+      "Xi"
+    ]
+  },
+  "枕": {
+    "structure": "⿰木冘",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Zhěn",
+    "pinyinArray": [
+      "Zhen"
+    ]
+  },
+  "林": {
+    "structure": "⿰木木",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Lín",
+    "pinyinArray": [
+      "Lin"
+    ]
+  },
+  "枚": {
+    "structure": "⿰木攵",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丿",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Méi",
+    "pinyinArray": [
+      "Mei"
+    ]
+  },
+  "果": {
+    "structure": "⿻日木",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Guǒ",
+    "pinyinArray": [
+      "Guo"
+    ]
+  },
+  "枝": {
+    "structure": "⿰木支",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "丨",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Zhī",
+    "pinyinArray": [
+      "Zhi"
+    ]
+  },
+  "枢": {
+    "structure": "⿰木区",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "丿",
+      "丶",
+      "㇄"
+    ],
+    "pinyin": "Shū",
+    "pinyinArray": [
+      "Shu"
+    ]
+  },
+  "枣": {
+    "structure": "⿱朿⺀",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "𠃍",
+      "丨",
+      "丿",
+      "㇏",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Zǎo",
+    "pinyinArray": [
+      "Zao"
+    ]
+  },
+  "枪": {
+    "structure": "⿰木仓",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丿",
+      "㇏",
+      "𠃌",
+      "乚"
+    ],
+    "pinyin": "Qiāng",
+    "pinyinArray": [
+      "Qiang"
+    ]
+  },
+  "枫": {
+    "structure": "⿰木风",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丿",
+      "⺄",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Fēng",
+    "pinyinArray": [
+      "Feng"
+    ]
+  },
+  "枯": {
+    "structure": "⿰木古",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Kū",
+    "pinyinArray": [
+      "Ku"
+    ]
+  },
+  "架": {
+    "structure": "⿱加木[GJK]",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "𠃌",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Jià",
+    "pinyinArray": [
+      "Jia"
+    ]
+  },
+  "枷": {
+    "structure": "⿰木加",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "𠃌",
+      "丿",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Jiā",
+    "pinyinArray": [
+      "Jia"
+    ]
+  },
+  "柄": {
+    "structure": "⿰木丙",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "丨",
+      "𠃌",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Bǐng",
+    "pinyinArray": [
+      "Bing"
+    ]
+  },
+  "柏": {
+    "structure": "⿰木白",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Bǎi",
+    "pinyinArray": [
+      "Bai"
+    ]
+  },
+  "某": {
+    "structure": "⿱甘木[GJK]",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Mǒu",
+    "pinyinArray": [
+      "Mou"
+    ]
+  },
+  "柑": {
+    "structure": "⿰木甘",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "一"
+    ],
+    "pinyin": "Gān",
+    "pinyinArray": [
+      "Gan"
+    ]
+  },
+  "柒": {
+    "structure": "⿱㲺木[GJK]",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "一",
+      "乚",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Qī",
+    "pinyinArray": [
+      "Qi"
+    ]
+  },
+  "染": {
+    "structure": "⿱氿木[GJK]",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丿",
+      "⺄",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Rǎn",
+    "pinyinArray": [
+      "Ran"
+    ]
+  },
+  "柔": {
+    "structure": "⿱矛木[GJK]",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "㇇|乛",
+      "丶",
+      "㇇|乛",
+      "亅",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Róu",
+    "pinyinArray": [
+      "Rou"
+    ]
+  },
+  "柜": {
+    "structure": "⿰木巨",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "𠃍",
+      "一",
+      "㇄"
+    ],
+    "pinyin": "Guì",
+    "pinyinArray": [
+      "Gui"
+    ]
+  },
+  "柠": {
+    "structure": "⿰木宁",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "一",
+      "亅"
+    ],
+    "pinyin": "Níng",
+    "pinyinArray": [
+      "Ning"
+    ]
+  },
+  "查": {
+    "structure": "⿱木旦",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "㇏",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一"
+    ],
+    "pinyin": "Chá",
+    "pinyinArray": [
+      "Cha"
+    ]
+  },
+  "柬": {
+    "structure": "柬",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "𠃍",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Jiǎn",
+    "pinyinArray": [
+      "Jian"
+    ]
+  },
+  "柱": {
+    "structure": "⿰木主",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丶",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Zhù",
+    "pinyinArray": [
+      "Zhu"
+    ]
+  },
+  "柳": {
+    "structure": "⿰木卯",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丿",
+      "𠄌",
+      "丿",
+      "𠃌",
+      "丨"
+    ],
+    "pinyin": "Liǔ",
+    "pinyinArray": [
+      "Liu"
+    ]
+  },
+  "柴": {
+    "structure": "⿱此木[GJK]",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丨",
+      "一",
+      "丨",
+      "㇀",
+      "丿",
+      "乚",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Chái",
+    "pinyinArray": [
+      "Chai"
+    ]
+  },
+  "柿": {
+    "structure": "⿰木市",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丶",
+      "一",
+      "丨",
+      "𠃌",
+      "丨"
+    ],
+    "pinyin": "Shì",
+    "pinyinArray": [
+      "Shi"
+    ]
+  },
+  "栅": {
+    "structure": "⿰木册",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丿",
+      "𠃌",
+      "丿",
+      "𠃌",
+      "一"
+    ],
+    "pinyin": "Zhà",
+    "pinyinArray": [
+      "Zha"
+    ]
+  },
+  "标": {
+    "structure": "⿰木示",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "一",
+      "亅",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Biāo",
+    "pinyinArray": [
+      "Biao"
+    ]
+  },
+  "栈": {
+    "structure": "⿰木戋",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "一",
+      "㇂|㇃",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Zhàn",
+    "pinyinArray": [
+      "Zhan"
+    ]
+  },
+  "栋": {
+    "structure": "⿰木东",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "𠃋",
+      "亅",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Dòng",
+    "pinyinArray": [
+      "Dong"
+    ]
+  },
+  "栏": {
+    "structure": "⿰木兰",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "一"
+    ],
+    "pinyin": "Lán",
+    "pinyinArray": [
+      "Lan"
+    ]
+  },
+  "树": {
+    "structure": "⿰木对",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "㇇|乛",
+      "丶",
+      "一",
+      "亅",
+      "丶"
+    ],
+    "pinyin": "Shù",
+    "pinyinArray": [
+      "Shu"
+    ]
+  },
+  "栓": {
+    "structure": "⿰木全",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丿",
+      "㇏",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Shuān",
+    "pinyinArray": [
+      "Shuan"
+    ]
+  },
+  "栖": {
+    "structure": "⿰木西",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "丨",
+      "𠃍",
+      "丿",
+      "㇄",
+      "一"
+    ],
+    "pinyin": "Qī",
+    "pinyinArray": [
+      "Qi"
+    ]
+  },
+  "栗": {
+    "structure": "⿱覀木[GJK]",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "𠃍",
+      "丨",
+      "丨",
+      "一",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Lì",
+    "pinyinArray": [
+      "Li"
+    ]
+  },
+  "校": {
+    "structure": "⿰木交",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丶",
+      "一",
+      "丿",
+      "丶",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Xiào",
+    "pinyinArray": [
+      "Xiao"
+    ]
+  },
+  "株": {
+    "structure": "⿰木朱",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Zhū",
+    "pinyinArray": [
+      "Zhu"
+    ]
+  },
+  "样": {
+    "structure": "⿰木羊",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Yàng",
+    "pinyinArray": [
+      "Yang"
+    ]
+  },
+  "核": {
+    "structure": "⿰木亥",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丶",
+      "一",
+      "𠃋",
+      "丿",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Hé",
+    "pinyinArray": [
+      "He"
+    ]
+  },
+  "根": {
+    "structure": "⿰木艮",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "𠃍",
+      "一",
+      "一",
+      "𠄌",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Gēn",
+    "pinyinArray": [
+      "Gen"
+    ]
+  },
+  "格": {
+    "structure": "⿰木各",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丿",
+      "㇇|乛",
+      "㇏",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Gé",
+    "pinyinArray": [
+      "Ge"
+    ]
+  },
+  "栽": {
+    "structure": "⿹𢦏木",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "一",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "㇂|㇃",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Zāi",
+    "pinyinArray": [
+      "Zai"
+    ]
+  },
+  "桂": {
+    "structure": "⿰木圭",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "丨",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Guì",
+    "pinyinArray": [
+      "Gui"
+    ]
+  },
+  "桃": {
+    "structure": "⿰木兆",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丿",
+      "丶",
+      "㇀",
+      "乚",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Táo",
+    "pinyinArray": [
+      "Tao"
+    ]
+  },
+  "桅": {
+    "structure": "⿰木危",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丿",
+      "㇇|乛",
+      "一",
+      "丿",
+      "𠃌",
+      "乚"
+    ],
+    "pinyin": "Wéi",
+    "pinyinArray": [
+      "Wei"
+    ]
+  },
+  "框": {
+    "structure": "⿰木匡",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "㇄"
+    ],
+    "pinyin": "Kuàng",
+    "pinyinArray": [
+      "Kuang"
+    ]
+  },
+  "案": {
+    "structure": "⿱安木[GJK]",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "𡿨",
+      "丿",
+      "一",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Àn",
+    "pinyinArray": [
+      "An"
+    ]
+  },
+  "桌": {
+    "structure": "⿱⺊杲",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Zhuō",
+    "pinyinArray": [
+      "Zhuo"
+    ]
+  },
+  "桐": {
+    "structure": "⿰木同",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丨",
+      "𠃌",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Tóng",
+    "pinyinArray": [
+      "Tong"
+    ]
+  },
+  "桑": {
+    "structure": "⿱叒木[GJK]",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "㇇|乛",
+      "丶",
+      "㇇|乛",
+      "丶",
+      "㇇|乛",
+      "丶",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Sāng",
+    "pinyinArray": [
+      "Sang"
+    ]
+  },
+  "档": {
+    "structure": "⿰木当",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丨",
+      "丶",
+      "丿",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Dàng",
+    "pinyinArray": [
+      "Dang"
+    ]
+  },
+  "桥": {
+    "structure": "⿰木乔",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丿",
+      "一",
+      "丿",
+      "㇏",
+      "丿",
+      "丨"
+    ],
+    "pinyin": "Qiáo",
+    "pinyinArray": [
+      "Qiao"
+    ]
+  },
+  "桦": {
+    "structure": "⿰木华",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丿",
+      "丨",
+      "丿",
+      "乚",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Huà",
+    "pinyinArray": [
+      "Hua"
+    ]
+  },
+  "桨": {
+    "structure": "⿱⿰丬夕木",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "丨",
+      "丿",
+      "㇇|乛",
+      "丶",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Jiǎng",
+    "pinyinArray": [
+      "Jiang"
+    ]
+  },
+  "桩": {
+    "structure": "⿰木庄",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丶",
+      "一",
+      "丿",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Zhuāng",
+    "pinyinArray": [
+      "Zhuang"
+    ]
+  },
+  "桶": {
+    "structure": "⿰木甬",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "㇇|乛",
+      "丶",
+      "丨",
+      "𠃌",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Tǒng",
+    "pinyinArray": [
+      "Tong"
+    ]
+  },
+  "梁": {
+    "structure": "⿱⿰氵刅木[GJK]",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "𠃌",
+      "丿",
+      "㇀",
+      "丶",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Liáng",
+    "pinyinArray": [
+      "Liang"
+    ]
+  },
+  "梅": {
+    "structure": "⿰木每[GTKV]",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丿",
+      "一",
+      "㇄",
+      "𠃌",
+      "丶",
+      "一",
+      "丶"
+    ],
+    "pinyin": "Méi",
+    "pinyinArray": [
+      "Mei"
+    ]
+  },
+  "梆": {
+    "structure": "⿰木邦",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "𠄎|㇌",
+      "丨"
+    ],
+    "pinyin": "Bāng",
+    "pinyinArray": [
+      "Bang"
+    ]
+  },
+  "梗": {
+    "structure": "⿰木更",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Gěng",
+    "pinyinArray": [
+      "Geng"
+    ]
+  },
+  "梢": {
+    "structure": "⿰木肖",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丨",
+      "丶",
+      "丿",
+      "丨",
+      "𠃌",
+      "一",
+      "一"
+    ],
+    "pinyin": "Shāo",
+    "pinyinArray": [
+      "Shao"
+    ]
+  },
+  "梦": {
+    "structure": "⿱林夕",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "丨",
+      "丿",
+      "㇏",
+      "丿",
+      "㇇|乛",
+      "丶"
+    ],
+    "pinyin": "Mèng",
+    "pinyinArray": [
+      "Meng"
+    ]
+  },
+  "梧": {
+    "structure": "⿰木吾",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Wú",
+    "pinyinArray": [
+      "Wu"
+    ]
+  },
+  "梨": {
+    "structure": "⿱利木[GJK]",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丨",
+      "亅",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Lí",
+    "pinyinArray": [
+      "Li"
+    ]
+  },
+  "梭": {
+    "structure": "⿰木夋",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "𠃋",
+      "丶",
+      "丿",
+      "丶",
+      "丿",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Suō",
+    "pinyinArray": [
+      "Suo"
+    ]
+  },
+  "梯": {
+    "structure": "⿰木弟",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丶",
+      "丿",
+      "𠃍",
+      "一",
+      "㇉",
+      "丨",
+      "丿"
+    ],
+    "pinyin": "Tī",
+    "pinyinArray": [
+      "Ti"
+    ]
+  },
+  "械": {
+    "structure": "⿰木戒",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "一",
+      "丿",
+      "丨",
+      "㇂|㇃",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Xiè",
+    "pinyinArray": [
+      "Xie"
+    ]
+  },
+  "梳": {
+    "structure": "⿰木㐬",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丶",
+      "一",
+      "𠃋",
+      "丶",
+      "丿",
+      "丨",
+      "乚"
+    ],
+    "pinyin": "Shū",
+    "pinyinArray": [
+      "Shu"
+    ]
+  },
+  "检": {
+    "structure": "⿰木佥",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丿",
+      "㇏",
+      "一",
+      "丶",
+      "丶",
+      "丿",
+      "一"
+    ],
+    "pinyin": "Jiǎn",
+    "pinyinArray": [
+      "Jian"
+    ]
+  },
+  "棉": {
+    "structure": "⿰木帛",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "𠃌",
+      "丨"
+    ],
+    "pinyin": "Mián",
+    "pinyinArray": [
+      "Mian"
+    ]
+  },
+  "棋": {
+    "structure": "⿰木其",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Qí",
+    "pinyinArray": [
+      "Qi"
+    ]
+  },
+  "棍": {
+    "structure": "⿰木昆",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "𠄌",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Gùn",
+    "pinyinArray": [
+      "Gun"
+    ]
+  },
+  "棒": {
+    "structure": "⿰木奉",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "㇏",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Bàng",
+    "pinyinArray": [
+      "Bang"
+    ]
+  },
+  "棕": {
+    "structure": "⿰木宗",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "一",
+      "一",
+      "亅",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Zōng",
+    "pinyinArray": [
+      "Zong"
+    ]
+  },
+  "棘": {
+    "structure": "⿰朿朿",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "𠃌",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "丨",
+      "𠃌",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Jí",
+    "pinyinArray": [
+      "Ji"
+    ]
+  },
+  "棚": {
+    "structure": "⿰木朋",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "丿",
+      "𠃌",
+      "一",
+      "一"
+    ],
+    "pinyin": "Péng",
+    "pinyinArray": [
+      "Peng"
+    ]
+  },
+  "棠": {
+    "structure": "⿱𫩠木[GJK]",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丨",
+      "丶",
+      "丿",
+      "㇀",
+      "㇇|乛",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Táng",
+    "pinyinArray": [
+      "Tang"
+    ]
+  },
+  "森": {
+    "structure": "⿱木林",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "㇏",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Sēn",
+    "pinyinArray": [
+      "Sen"
+    ]
+  },
+  "棱": {
+    "structure": "⿰木夌",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "丶",
+      "丿",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Léng",
+    "pinyinArray": [
+      "Leng"
+    ]
+  },
+  "棵": {
+    "structure": "⿰木果",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Kē",
+    "pinyinArray": [
+      "Ke"
+    ]
+  },
+  "棺": {
+    "structure": "⿰木官",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "丨",
+      "𠃍",
+      "一",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Guān",
+    "pinyinArray": [
+      "Guan"
+    ]
+  },
+  "椅": {
+    "structure": "⿰木奇",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "丿",
+      "丶",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "亅"
+    ],
+    "pinyin": "Yǐ",
+    "pinyinArray": [
+      "Yi"
+    ]
+  },
+  "植": {
+    "structure": "⿰木直",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "一"
+    ],
+    "pinyin": "Zhí",
+    "pinyinArray": [
+      "Zhi"
+    ]
+  },
+  "椎": {
+    "structure": "⿰木隹",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丿",
+      "丨",
+      "丶",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Zhuī",
+    "pinyinArray": [
+      "Zhui"
+    ]
+  },
+  "椒": {
+    "structure": "⿰木叔",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丨",
+      "一",
+      "一",
+      "亅",
+      "丿",
+      "丶",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Jiāo",
+    "pinyinArray": [
+      "Jiao"
+    ]
+  },
+  "椭": {
+    "structure": "⿰木陏",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "𠄎|㇌",
+      "丨",
+      "一",
+      "丿",
+      "丨",
+      "𠃌",
+      "一",
+      "一"
+    ],
+    "pinyin": "Tuǒ",
+    "pinyinArray": [
+      "Tuo"
+    ]
+  },
+  "椰": {
+    "structure": "⿰木耶",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "一",
+      "㇀",
+      "𠄎|㇌",
+      "丨"
+    ],
+    "pinyin": "Yē",
+    "pinyinArray": [
+      "Ye"
+    ]
+  },
+  "椿": {
+    "structure": "⿰木春",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "㇏",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Chūn",
+    "pinyinArray": [
+      "Chun"
+    ]
+  },
+  "楔": {
+    "structure": "⿰木契",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "𠃌",
+      "丿",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Xiē",
+    "pinyinArray": [
+      "Xie"
+    ]
+  },
+  "楚": {
+    "structure": "⿱林疋",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "㇇|乛",
+      "丨",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Chǔ",
+    "pinyinArray": [
+      "Chu"
+    ]
+  },
+  "楞": {
+    "structure": "⿰木𬙙",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丨",
+      "𠃍",
+      "丨",
+      "丨",
+      "一",
+      "丶",
+      "一",
+      "𠃌",
+      "丿"
+    ],
+    "pinyin": "Léng",
+    "pinyinArray": [
+      "Leng"
+    ]
+  },
+  "楣": {
+    "structure": "⿰木眉",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "𠃍",
+      "丨",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一"
+    ],
+    "pinyin": "Méi",
+    "pinyinArray": [
+      "Mei"
+    ]
+  },
+  "楷": {
+    "structure": "⿰木皆",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "𠄌",
+      "丿",
+      "乚",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Kǎi",
+    "pinyinArray": [
+      "Kai"
+    ]
+  },
+  "楼": {
+    "structure": "⿰木娄",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "㇏",
+      "𡿨",
+      "丿",
+      "一"
+    ],
+    "pinyin": "Lóu",
+    "pinyinArray": [
+      "Lou"
+    ]
+  },
+  "概": {
+    "structure": "⿰木既",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "𠃍",
+      "一",
+      "一",
+      "𠄌",
+      "丶",
+      "一",
+      "𠃋",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Gài",
+    "pinyinArray": [
+      "Gai"
+    ]
+  },
+  "榄": {
+    "structure": "⿰木览",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丨",
+      "丨",
+      "丿",
+      "一",
+      "丶",
+      "丨",
+      "𠃍",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Lǎn",
+    "pinyinArray": [
+      "Lan"
+    ]
+  },
+  "榆": {
+    "structure": "⿰木俞",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丿",
+      "㇏",
+      "一",
+      "丨",
+      "𠃌",
+      "一",
+      "一",
+      "丨",
+      "亅"
+    ],
+    "pinyin": "Yú",
+    "pinyinArray": [
+      "Yu"
+    ]
+  },
+  "榔": {
+    "structure": "⿰木郎",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丶",
+      "𠃍",
+      "一",
+      "一",
+      "𠄌",
+      "丶",
+      "𠄎|㇌",
+      "丨"
+    ],
+    "pinyin": "Láng",
+    "pinyinArray": [
+      "Lang"
+    ]
+  },
+  "榕": {
+    "structure": "⿰木容",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "丿",
+      "丶",
+      "丿",
+      "㇏",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Róng",
+    "pinyinArray": [
+      "Rong"
+    ]
+  },
+  "榛": {
+    "structure": "⿰木秦",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "㇏",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Zhēn",
+    "pinyinArray": [
+      "Zhen"
+    ]
+  },
+  "榜": {
+    "structure": "⿰木旁",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "㇀",
+      "㇇|乛",
+      "丶",
+      "一",
+      "𠃌",
+      "丿"
+    ],
+    "pinyin": "Bàng",
+    "pinyinArray": [
+      "Bang"
+    ]
+  },
+  "榨": {
+    "structure": "⿰木窄",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "丿",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "一",
+      "一"
+    ],
+    "pinyin": "Zhà",
+    "pinyinArray": [
+      "Zha"
+    ]
+  },
+  "榴": {
+    "structure": "⿰木留",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丿",
+      "𠄌",
+      "丶",
+      "𠃌",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Liú",
+    "pinyinArray": [
+      "Liu"
+    ]
+  },
+  "槐": {
+    "structure": "⿰木鬼",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "乚",
+      "𠃋",
+      "丶"
+    ],
+    "pinyin": "Huái",
+    "pinyinArray": [
+      "Huai"
+    ]
+  },
+  "槽": {
+    "structure": "⿰木曹",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Cáo",
+    "pinyinArray": [
+      "Cao"
+    ]
+  },
+  "樊": {
+    "structure": "⿱棥大",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丿",
+      "丶",
+      "丿",
+      "丶",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Fán",
+    "pinyinArray": [
+      "Fan"
+    ]
+  },
+  "樟": {
+    "structure": "⿰木章",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Zhāng",
+    "pinyinArray": [
+      "Zhang"
+    ]
+  },
+  "模": {
+    "structure": "⿰木莫",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "丨",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Mó",
+    "pinyinArray": [
+      "Mo"
+    ]
+  },
+  "横": {
+    "structure": "⿰木黄",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Héng",
+    "pinyinArray": [
+      "Heng"
+    ]
+  },
+  "樱": {
+    "structure": "⿰木婴",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶",
+      "𡿨",
+      "丿",
+      "一"
+    ],
+    "pinyin": "Yīng",
+    "pinyinArray": [
+      "Ying"
+    ]
+  },
+  "橄": {
+    "structure": "⿰木敢",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "㇇|乛",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "一",
+      "㇀",
+      "丿",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Gǎn",
+    "pinyinArray": [
+      "Gan"
+    ]
+  },
+  "橘": {
+    "structure": "⿰木矞",
+    "strokeCount": 16,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "㇇|乛",
+      "丶",
+      "㇇|乛",
+      "亅",
+      "丿",
+      "丨",
+      "𠃌",
+      "丿",
+      "丶",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Jú",
+    "pinyinArray": [
+      "Ju"
+    ]
+  },
+  "橙": {
+    "structure": "⿰木登",
+    "strokeCount": 16,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "㇇|乛",
+      "丶",
+      "丿",
+      "丿",
+      "㇏",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丶",
+      "丿",
+      "一"
+    ],
+    "pinyin": "Chéng",
+    "pinyinArray": [
+      "Cheng"
+    ]
+  },
+  "橡": {
+    "structure": "⿰木象",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丿",
+      "㇇|乛",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "㇁",
+      "丿",
+      "丿",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Xiàng",
+    "pinyinArray": [
+      "Xiang"
+    ]
+  },
+  "橱": {
+    "structure": "⿰木厨",
+    "strokeCount": 16,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "丿",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丶",
+      "丿",
+      "㇀",
+      "一",
+      "亅",
+      "丶"
+    ],
+    "pinyin": "Chú",
+    "pinyinArray": [
+      "Chu"
+    ]
+  },
+  "檀": {
+    "structure": "⿰木亶",
+    "strokeCount": 17,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丶",
+      "一",
+      "丨",
+      "𠃍",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一"
+    ],
+    "pinyin": "Tán",
+    "pinyinArray": [
+      "Tan"
+    ]
+  },
+  "檐": {
+    "structure": "⿰木詹",
+    "strokeCount": 17,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丿",
+      "㇇|乛",
+      "一",
+      "丿",
+      "丿",
+      "丶",
+      "丶",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Yán",
+    "pinyinArray": [
+      "Yan"
+    ]
+  },
+  "檩": {
+    "structure": "⿰木禀",
+    "strokeCount": 17,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丶",
+      "一",
+      "丨",
+      "𠃍",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "一",
+      "亅",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Lǐn",
+    "pinyinArray": [
+      "Lin"
+    ]
+  },
+  "檬": {
+    "structure": "⿰木蒙",
+    "strokeCount": 17,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "丨",
+      "丨",
+      "㇀",
+      "㇇|乛",
+      "一",
+      "一",
+      "丿",
+      "㇁",
+      "丿",
+      "丿",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Méng",
+    "pinyinArray": [
+      "Meng"
+    ]
+  },
+  "欠": {
+    "structure": "欠",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "丿",
+      "㇇|乛",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Qiàn",
+    "pinyinArray": [
+      "Qian"
+    ]
+  },
+  "次": {
+    "structure": "⿰冫欠[GJ]",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "丿",
+      "㇇|乛",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Cì",
+    "pinyinArray": [
+      "Ci"
+    ]
+  },
+  "欢": {
+    "structure": "⿰又欠",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "㇇|乛",
+      "丶",
+      "丿",
+      "㇇|乛",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Huān",
+    "pinyinArray": [
+      "Huan"
+    ]
+  },
+  "欣": {
+    "structure": "⿰斤欠",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丿",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "㇇|乛",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Xīn",
+    "pinyinArray": [
+      "Xin"
+    ]
+  },
+  "欧": {
+    "structure": "⿰区欠",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "丶",
+      "㇄",
+      "丿",
+      "㇇|乛",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Ōu",
+    "pinyinArray": [
+      "Ou"
+    ]
+  },
+  "欲": {
+    "structure": "⿰谷欠",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丿",
+      "丶",
+      "丿",
+      "丶",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "㇇|乛",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Yù",
+    "pinyinArray": [
+      "Yu"
+    ]
+  },
+  "欺": {
+    "structure": "⿰其欠",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "丶",
+      "丿",
+      "㇇|乛",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Qī",
+    "pinyinArray": [
+      "Qi"
+    ]
+  },
+  "款": {
+    "structure": "⿰⿱士示欠",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "一",
+      "一",
+      "一",
+      "亅",
+      "丿",
+      "丶",
+      "丿",
+      "㇇|乛",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Kuǎn",
+    "pinyinArray": [
+      "Kuan"
+    ]
+  },
+  "歇": {
+    "structure": "⿰曷欠",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "𠃌",
+      "丿",
+      "丶",
+      "㇄",
+      "丿",
+      "㇇|乛",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Xiē",
+    "pinyinArray": [
+      "Xie"
+    ]
+  },
+  "歉": {
+    "structure": "⿰兼欠",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "丶",
+      "丿",
+      "一",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "丨",
+      "丿",
+      "丶",
+      "丿",
+      "㇇|乛",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Qiàn",
+    "pinyinArray": [
+      "Qian"
+    ]
+  },
+  "歌": {
+    "structure": "⿰哥欠",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "亅",
+      "丿",
+      "㇇|乛",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Gē",
+    "pinyinArray": [
+      "Ge"
+    ]
+  },
+  "止": {
+    "structure": "止",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "丨",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Zhǐ",
+    "pinyinArray": [
+      "Zhi"
+    ]
+  },
+  "正": {
+    "structure": "⿱一止",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Zhèng",
+    "pinyinArray": [
+      "Zheng"
+    ]
+  },
+  "此": {
+    "structure": "⿰止匕",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丨",
+      "一",
+      "丨",
+      "㇀",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Cǐ",
+    "pinyinArray": [
+      "Ci"
+    ]
+  },
+  "步": {
+    "structure": "⿱止𣥂",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丨",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "丿",
+      "丿"
+    ],
+    "pinyin": "Bù",
+    "pinyinArray": [
+      "Bu"
+    ]
+  },
+  "武": {
+    "structure": "⿹⿶弋一止",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "㇀",
+      "㇂|㇃",
+      "丶"
+    ],
+    "pinyin": "Wǔ",
+    "pinyinArray": [
+      "Wu"
+    ]
+  },
+  "歧": {
+    "structure": "⿰止支",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丨",
+      "一",
+      "丨",
+      "㇀",
+      "一",
+      "丨",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Qí",
+    "pinyinArray": [
+      "Qi"
+    ]
+  },
+  "歪": {
+    "structure": "⿱不正",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "丨",
+      "丶",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Wāi",
+    "pinyinArray": [
+      "Wai"
+    ]
+  },
+  "歹": {
+    "structure": "⿱一夕",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "㇇|乛",
+      "丶"
+    ],
+    "pinyin": "Dǎi",
+    "pinyinArray": [
+      "Dai"
+    ]
+  },
+  "死": {
+    "structure": "⿸歹匕",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "㇇|乛",
+      "丶",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Sǐ",
+    "pinyinArray": [
+      "Si"
+    ]
+  },
+  "歼": {
+    "structure": "⿰歹千",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "㇇|乛",
+      "丶",
+      "丿",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Jiān",
+    "pinyinArray": [
+      "Jian"
+    ]
+  },
+  "殃": {
+    "structure": "⿰歹央",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "㇇|乛",
+      "丶",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Yāng",
+    "pinyinArray": [
+      "Yang"
+    ]
+  },
+  "殉": {
+    "structure": "⿰歹旬",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "㇇|乛",
+      "丶",
+      "丿",
+      "𠃌",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Xùn",
+    "pinyinArray": [
+      "Xun"
+    ]
+  },
+  "殊": {
+    "structure": "⿰歹朱",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "㇇|乛",
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Shū",
+    "pinyinArray": [
+      "Shu"
+    ]
+  },
+  "残": {
+    "structure": "⿰歹戋[G]",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "㇇|乛",
+      "丶",
+      "一",
+      "一",
+      "㇂|㇃",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Cán",
+    "pinyinArray": [
+      "Can"
+    ]
+  },
+  "殖": {
+    "structure": "⿰歹直",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "㇇|乛",
+      "丶",
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "一"
+    ],
+    "pinyin": "Zhí",
+    "pinyinArray": [
+      "Zhi"
+    ]
+  },
+  "殴": {
+    "structure": "⿰区殳",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "丶",
+      "㇄",
+      "丿",
+      "㇅|㇍",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Ōu",
+    "pinyinArray": [
+      "Ou"
+    ]
+  },
+  "段": {
+    "structure": "⿰⑤殳",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "一",
+      "一",
+      "㇀",
+      "丿",
+      "㇅|㇍",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Duàn",
+    "pinyinArray": [
+      "Duan"
+    ]
+  },
+  "殷": {
+    "structure": "⿰㐆殳",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "丿",
+      "𠃍",
+      "一",
+      "一",
+      "𠃌",
+      "丿",
+      "㇅|㇍",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Yīn",
+    "pinyinArray": [
+      "Yin"
+    ]
+  },
+  "殿": {
+    "structure": "⿰𡱒殳",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "𠃍",
+      "一",
+      "丿",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丿",
+      "丶",
+      "丿",
+      "㇅|㇍",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Diàn",
+    "pinyinArray": [
+      "Dian"
+    ]
+  },
+  "毁": {
+    "structure": "⿰𬛸殳",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "一",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "㇀",
+      "丿",
+      "㇅|㇍",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Huǐ",
+    "pinyinArray": [
+      "Hui"
+    ]
+  },
+  "毅": {
+    "structure": "⿰豙殳",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丿",
+      "㇁",
+      "丿",
+      "丿",
+      "丿",
+      "丶",
+      "丿",
+      "㇅|㇍",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Yì",
+    "pinyinArray": [
+      "Yi"
+    ]
+  },
+  "母": {
+    "structure": "母",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "㇄",
+      "𠃌",
+      "丶",
+      "一",
+      "丶"
+    ],
+    "pinyin": "Mǔ",
+    "pinyinArray": [
+      "Mu"
+    ]
+  },
+  "每": {
+    "structure": "⿱𠂉母",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "㇄",
+      "𠃌",
+      "丶",
+      "一",
+      "丶"
+    ],
+    "pinyin": "Měi",
+    "pinyinArray": [
+      "Mei"
+    ]
+  },
+  "毒": {
+    "structure": "⿱龶母[GK]",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "一",
+      "丨",
+      "一",
+      "㇄",
+      "𠃌",
+      "丶",
+      "一",
+      "丶"
+    ],
+    "pinyin": "Dú",
+    "pinyinArray": [
+      "Du"
+    ]
+  },
+  "比": {
+    "structure": "比",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "一",
+      "𠄌",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Bǐ",
+    "pinyinArray": [
+      "Bi"
+    ]
+  },
+  "毕": {
+    "structure": "⿱比十",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "一",
+      "𠄌",
+      "丿",
+      "乚",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Bì",
+    "pinyinArray": [
+      "Bi"
+    ]
+  },
+  "毙": {
+    "structure": "⿱比死",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "𠄌",
+      "丿",
+      "乚",
+      "一",
+      "丿",
+      "㇇|乛",
+      "丶",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Bì",
+    "pinyinArray": [
+      "Bi"
+    ]
+  },
+  "毛": {
+    "structure": "⿱丿⿻二乚",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "乚"
+    ],
+    "pinyin": "Máo",
+    "pinyinArray": [
+      "Mao"
+    ]
+  },
+  "毡": {
+    "structure": "⿺毛占",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "乚",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Zhān",
+    "pinyinArray": [
+      "Zhan"
+    ]
+  },
+  "毫": {
+    "structure": "⿱⿳亠口冖毛",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "㇀",
+      "㇇|乛",
+      "丿",
+      "一",
+      "一",
+      "乚"
+    ],
+    "pinyin": "Háo",
+    "pinyinArray": [
+      "Hao"
+    ]
+  },
+  "毯": {
+    "structure": "⿺毛炎",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "乚",
+      "㇀",
+      "丿",
+      "丿",
+      "丶",
+      "㇀",
+      "丿",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Tǎn",
+    "pinyinArray": [
+      "Tan"
+    ]
+  },
+  "氏": {
+    "structure": "氏",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "丿",
+      "𠄌",
+      "一",
+      "㇂|㇃"
+    ],
+    "pinyin": "Shì",
+    "pinyinArray": [
+      "Shi"
+    ]
+  },
+  "民": {
+    "structure": "民",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "𠃍",
+      "一",
+      "𠄌",
+      "一",
+      "㇂|㇃"
+    ],
+    "pinyin": "Mín",
+    "pinyinArray": [
+      "Min"
+    ]
+  },
+  "氓": {
+    "structure": "⿰亡民",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "㇄",
+      "𠃍",
+      "一",
+      "𠄌",
+      "一",
+      "㇂|㇃"
+    ],
+    "pinyin": "Máng",
+    "pinyinArray": [
+      "Mang"
+    ]
+  },
+  "气": {
+    "structure": "⿳𠂉一乁",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "⺄"
+    ],
+    "pinyin": "Qì",
+    "pinyinArray": [
+      "Qi"
+    ]
+  },
+  "氛": {
+    "structure": "⿹气分",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "⺄",
+      "丿",
+      "㇏",
+      "𠃌",
+      "丿"
+    ],
+    "pinyin": "Fēn",
+    "pinyinArray": [
+      "Fen"
+    ]
+  },
+  "氢": {
+    "structure": "⿹气𢀖",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "⺄",
+      "㇇|乛",
+      "丶",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Qīng",
+    "pinyinArray": [
+      "Qing"
+    ]
+  },
+  "氧": {
+    "structure": "⿹气羊",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "⺄",
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Yǎng",
+    "pinyinArray": [
+      "Yang"
+    ]
+  },
+  "氨": {
+    "structure": "⿹气安",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "⺄",
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "𡿨",
+      "丿",
+      "一"
+    ],
+    "pinyin": "Ān",
+    "pinyinArray": [
+      "An"
+    ]
+  },
+  "氮": {
+    "structure": "⿹气炎",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "⺄",
+      "㇀",
+      "丿",
+      "丿",
+      "丶",
+      "㇀",
+      "丿",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Dàn",
+    "pinyinArray": [
+      "Dan"
+    ]
+  },
+  "氯": {
+    "structure": "⿹气录[G]",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "⺄",
+      "𠃍",
+      "一",
+      "一",
+      "亅",
+      "丶",
+      "㇀",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Lǜ",
+    "pinyinArray": [
+      "Lü"
+    ]
+  },
+  "水": {
+    "structure": "⿲㇇亅⿺乀丿",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "亅",
+      "㇇|乛",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Shuǐ",
+    "pinyinArray": [
+      "Shui"
+    ]
+  },
+  "永": {
+    "structure": "永",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丶",
+      "𠃌",
+      "㇇|乛",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Yǒng",
+    "pinyinArray": [
+      "Yong"
+    ]
+  },
+  "汁": {
+    "structure": "⿰氵十",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Zhī",
+    "pinyinArray": [
+      "Zhi"
+    ]
+  },
+  "求": {
+    "structure": "⿺⿻一氺丶",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "丶",
+      "㇀",
+      "丿",
+      "㇏",
+      "丶"
+    ],
+    "pinyin": "Qiú",
+    "pinyinArray": [
+      "Qiu"
+    ]
+  },
+  "汇": {
+    "structure": "⿰氵匚",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "一",
+      "㇄"
+    ],
+    "pinyin": "Huì",
+    "pinyinArray": [
+      "Hui"
+    ]
+  },
+  "汉": {
+    "structure": "⿰氵又",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Hàn",
+    "pinyinArray": [
+      "Han"
+    ]
+  },
+  "汗": {
+    "structure": "⿰氵干",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Hán",
+    "pinyinArray": [
+      "Han"
+    ]
+  },
+  "汛": {
+    "structure": "⿰氵卂[GTV]",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "⺄",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Xùn",
+    "pinyinArray": [
+      "Xun"
+    ]
+  },
+  "汞": {
+    "structure": "⿱工水",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "一",
+      "亅",
+      "㇇|乛",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Gǒng",
+    "pinyinArray": [
+      "Gong"
+    ]
+  },
+  "江": {
+    "structure": "⿰氵工",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Jiāng",
+    "pinyinArray": [
+      "Jiang"
+    ]
+  },
+  "池": {
+    "structure": "⿰氵也",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "𠃌",
+      "丨",
+      "乚"
+    ],
+    "pinyin": "Chí",
+    "pinyinArray": [
+      "Chi"
+    ]
+  },
+  "污": {
+    "structure": "⿰氵亏",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "一",
+      "一",
+      "㇉"
+    ],
+    "pinyin": "Wū",
+    "pinyinArray": [
+      "Wu"
+    ]
+  },
+  "汤": {
+    "structure": "⿰氵𠃓",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "𠄎|㇌",
+      "丿",
+      "丿"
+    ],
+    "pinyin": "Tāng",
+    "pinyinArray": [
+      "Tang"
+    ]
+  },
+  "汪": {
+    "structure": "⿰氵王",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Wāng",
+    "pinyinArray": [
+      "Wang"
+    ]
+  },
+  "汰": {
+    "structure": "⿰氵太",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "一",
+      "丿",
+      "㇏",
+      "丶"
+    ],
+    "pinyin": "Tài",
+    "pinyinArray": [
+      "Tai"
+    ]
+  },
+  "汹": {
+    "structure": "⿰氵凶",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丿",
+      "丶",
+      "㇄",
+      "丨"
+    ],
+    "pinyin": "Xiōng",
+    "pinyinArray": [
+      "Xiong"
+    ]
+  },
+  "汽": {
+    "structure": "⿰氵气",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丿",
+      "一",
+      "一",
+      "⺄"
+    ],
+    "pinyin": "Qì",
+    "pinyinArray": [
+      "Qi"
+    ]
+  },
+  "沃": {
+    "structure": "⿰氵夭",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丿",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Wò",
+    "pinyinArray": [
+      "Wo"
+    ]
+  },
+  "沈": {
+    "structure": "⿰氵冘",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "㇀",
+      "㇇|乛",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Shěn",
+    "pinyinArray": [
+      "Shen"
+    ]
+  },
+  "沉": {
+    "structure": "⿰氵冗[GJK]",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "㇀",
+      "㇇|乛",
+      "丿",
+      "⺄"
+    ],
+    "pinyin": "Chén",
+    "pinyinArray": [
+      "Chen"
+    ]
+  },
+  "沐": {
+    "structure": "⿰氵木",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Mù",
+    "pinyinArray": [
+      "Mu"
+    ]
+  },
+  "沙": {
+    "structure": "⿰氵少",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丨",
+      "丿",
+      "丶",
+      "丿"
+    ],
+    "pinyin": "Shà",
+    "pinyinArray": [
+      "Sha"
+    ]
+  },
+  "沛": {
+    "structure": "⿰氵巿",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "一",
+      "丨",
+      "𠃌",
+      "丨"
+    ],
+    "pinyin": "Pèi",
+    "pinyinArray": [
+      "Pei"
+    ]
+  },
+  "沟": {
+    "structure": "⿰氵勾",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丿",
+      "𠃌",
+      "𠃋",
+      "丶"
+    ],
+    "pinyin": "Gōu",
+    "pinyinArray": [
+      "Gou"
+    ]
+  },
+  "没": {
+    "structure": "⿰氵殳",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丿",
+      "㇅|㇍",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Méi",
+    "pinyinArray": [
+      "Mei"
+    ]
+  },
+  "沥": {
+    "structure": "⿰氵历",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "一",
+      "丿",
+      "𠃌",
+      "丿"
+    ],
+    "pinyin": "Lì",
+    "pinyinArray": [
+      "Li"
+    ]
+  },
+  "沦": {
+    "structure": "⿰氵仑",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丿",
+      "㇏",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Lún",
+    "pinyinArray": [
+      "Lun"
+    ]
+  },
+  "沧": {
+    "structure": "⿰氵仓",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丿",
+      "㇏",
+      "𠃌",
+      "乚"
+    ],
+    "pinyin": "Cāng",
+    "pinyinArray": [
+      "Cang"
+    ]
+  },
+  "沪": {
+    "structure": "⿰氵户[G]",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丶",
+      "𠃍",
+      "一",
+      "丿"
+    ],
+    "pinyin": "Hù",
+    "pinyinArray": [
+      "Hu"
+    ]
+  },
+  "沫": {
+    "structure": "⿰氵末",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "一",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Mò",
+    "pinyinArray": [
+      "Mo"
+    ]
+  },
+  "沮": {
+    "structure": "⿰氵且",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一"
+    ],
+    "pinyin": "Jù",
+    "pinyinArray": [
+      "Ju"
+    ]
+  },
+  "河": {
+    "structure": "⿰氵可",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "亅"
+    ],
+    "pinyin": "Hé",
+    "pinyinArray": [
+      "He"
+    ]
+  },
+  "沸": {
+    "structure": "⿰氵弗",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "𠃍",
+      "一",
+      "㇉",
+      "丿",
+      "丨"
+    ],
+    "pinyin": "Fèi",
+    "pinyinArray": [
+      "Fei"
+    ]
+  },
+  "油": {
+    "structure": "⿰氵由",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Yóu",
+    "pinyinArray": [
+      "You"
+    ]
+  },
+  "治": {
+    "structure": "⿰氵台",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "𠃋",
+      "丶",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Zhì",
+    "pinyinArray": [
+      "Zhi"
+    ]
+  },
+  "沼": {
+    "structure": "⿰氵召",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "𠃌",
+      "丿",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Zhǎo",
+    "pinyinArray": [
+      "Zhao"
+    ]
+  },
+  "沽": {
+    "structure": "⿰氵古",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Gū",
+    "pinyinArray": [
+      "Gu"
+    ]
+  },
+  "沾": {
+    "structure": "⿰氵占",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Zhān",
+    "pinyinArray": [
+      "Zhan"
+    ]
+  },
+  "沿": {
+    "structure": "⿰氵⿱几口[GK]",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丿",
+      "㇅|㇍",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Yán",
+    "pinyinArray": [
+      "Yan"
+    ]
+  },
+  "泄": {
+    "structure": "⿰氵世",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "㇄"
+    ],
+    "pinyin": "Xiè",
+    "pinyinArray": [
+      "Xie"
+    ]
+  },
+  "泉": {
+    "structure": "⿱白水",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "亅",
+      "㇇|乛",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Quán",
+    "pinyinArray": [
+      "Quan"
+    ]
+  },
+  "泊": {
+    "structure": "⿰氵白",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Pō",
+    "pinyinArray": [
+      "Po"
+    ]
+  },
+  "泌": {
+    "structure": "⿰氵必",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "㇀",
+      "㇂|㇃",
+      "丶",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Mì",
+    "pinyinArray": [
+      "Mi"
+    ]
+  },
+  "法": {
+    "structure": "⿰氵去",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "一",
+      "丨",
+      "一",
+      "𠃋",
+      "丶"
+    ],
+    "pinyin": "Fǎ",
+    "pinyinArray": [
+      "Fa"
+    ]
+  },
+  "泛": {
+    "structure": "⿰氵乏",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丿",
+      "丶",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Fàn",
+    "pinyinArray": [
+      "Fan"
+    ]
+  },
+  "泞": {
+    "structure": "⿰氵宁",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "一",
+      "亅"
+    ],
+    "pinyin": "Nìng",
+    "pinyinArray": [
+      "Ning"
+    ]
+  },
+  "泡": {
+    "structure": "⿰氵包",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丿",
+      "𠃌",
+      "𠃍",
+      "一",
+      "乚"
+    ],
+    "pinyin": "Pào",
+    "pinyinArray": [
+      "Pao"
+    ]
+  },
+  "波": {
+    "structure": "⿰氵皮",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "丿",
+      "丨",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Bō",
+    "pinyinArray": [
+      "Bo"
+    ]
+  },
+  "泣": {
+    "structure": "⿰氵立",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "一"
+    ],
+    "pinyin": "Qì",
+    "pinyinArray": [
+      "Qi"
+    ]
+  },
+  "泥": {
+    "structure": "⿰氵尼",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "𠃍",
+      "一",
+      "丿",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Ní",
+    "pinyinArray": [
+      "Ni"
+    ]
+  },
+  "注": {
+    "structure": "⿰氵主",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丶",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Zhù",
+    "pinyinArray": [
+      "Zhu"
+    ]
+  },
+  "泪": {
+    "structure": "⿰氵目",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一"
+    ],
+    "pinyin": "Lèi",
+    "pinyinArray": [
+      "Lei"
+    ]
+  },
+  "泰": {
+    "structure": "⿱𡗗氺",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "一",
+      "一",
+      "丿",
+      "㇏",
+      "亅",
+      "丶",
+      "㇀",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Tài",
+    "pinyinArray": [
+      "Tai"
+    ]
+  },
+  "泳": {
+    "structure": "⿰氵永",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丶",
+      "𠃌",
+      "㇇|乛",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Yǒng",
+    "pinyinArray": [
+      "Yong"
+    ]
+  },
+  "泵": {
+    "structure": "⿱石水",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "亅",
+      "㇇|乛",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Bèng",
+    "pinyinArray": [
+      "Beng"
+    ]
+  },
+  "泻": {
+    "structure": "⿰氵写",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "㇀",
+      "㇇|乛",
+      "一",
+      "㇉",
+      "一"
+    ],
+    "pinyin": "Xiè",
+    "pinyinArray": [
+      "Xie"
+    ]
+  },
+  "泼": {
+    "structure": "⿰氵发",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "𠃋",
+      "丿",
+      "㇇|乛",
+      "㇏",
+      "丶"
+    ],
+    "pinyin": "Pō",
+    "pinyinArray": [
+      "Po"
+    ]
+  },
+  "泽": {
+    "structure": "⿰氵𠬤",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "㇏",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Zé",
+    "pinyinArray": [
+      "Ze"
+    ]
+  },
+  "洁": {
+    "structure": "⿰氵吉",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Jié",
+    "pinyinArray": [
+      "Jie"
+    ]
+  },
+  "洋": {
+    "structure": "⿰氵羊",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Yáng",
+    "pinyinArray": [
+      "Yang"
+    ]
+  },
+  "洒": {
+    "structure": "⿰氵西",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "一",
+      "丨",
+      "𠃍",
+      "丿",
+      "㇄",
+      "一"
+    ],
+    "pinyin": "Sǎ",
+    "pinyinArray": [
+      "Sa"
+    ]
+  },
+  "洗": {
+    "structure": "⿰氵先",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丿",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Xǐ",
+    "pinyinArray": [
+      "Xi"
+    ]
+  },
+  "洛": {
+    "structure": "⿰氵各",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丿",
+      "㇇|乛",
+      "㇏",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Luò",
+    "pinyinArray": [
+      "Luo"
+    ]
+  },
+  "洞": {
+    "structure": "⿰氵同",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丨",
+      "𠃌",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Dòng",
+    "pinyinArray": [
+      "Dong"
+    ]
+  },
+  "津": {
+    "structure": "⿰氵聿",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Jīn",
+    "pinyinArray": [
+      "Jin"
+    ]
+  },
+  "洪": {
+    "structure": "⿰氵共",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Hóng",
+    "pinyinArray": [
+      "Hong"
+    ]
+  },
+  "洲": {
+    "structure": "⿰氵州",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "㇀",
+      "丿",
+      "丶",
+      "丨",
+      "丶",
+      "丨"
+    ],
+    "pinyin": "Zhōu",
+    "pinyinArray": [
+      "Zhou"
+    ]
+  },
+  "活": {
+    "structure": "⿰氵舌",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丿",
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Huó",
+    "pinyinArray": [
+      "Huo"
+    ]
+  },
+  "洼": {
+    "structure": "⿰氵圭",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "一",
+      "丨",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Wā",
+    "pinyinArray": [
+      "Wa"
+    ]
+  },
+  "洽": {
+    "structure": "⿰氵合",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丿",
+      "㇏",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Qià",
+    "pinyinArray": [
+      "Qia"
+    ]
+  },
+  "派": {
+    "structure": "⿰氵𠂢",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丿",
+      "丿",
+      "丿",
+      "𠄌",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Pā",
+    "pinyinArray": [
+      "Pa"
+    ]
+  },
+  "流": {
+    "structure": "⿰氵㐬",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丶",
+      "一",
+      "𠃋",
+      "丶",
+      "丿",
+      "丨",
+      "乚"
+    ],
+    "pinyin": "Liú",
+    "pinyinArray": [
+      "Liu"
+    ]
+  },
+  "浅": {
+    "structure": "⿰氵戋[G]",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "一",
+      "一",
+      "㇂|㇃",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Qiǎn",
+    "pinyinArray": [
+      "Qian"
+    ]
+  },
+  "浆": {
+    "structure": "⿱⿰丬夕水",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "丨",
+      "丿",
+      "㇇|乛",
+      "丶",
+      "亅",
+      "㇇|乛",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Jiāng",
+    "pinyinArray": [
+      "Jiang"
+    ]
+  },
+  "浇": {
+    "structure": "⿰氵尧",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "一",
+      "㇂|㇃",
+      "丿",
+      "一",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Jiāo",
+    "pinyinArray": [
+      "Jiao"
+    ]
+  },
+  "浊": {
+    "structure": "⿰氵虫",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丶"
+    ],
+    "pinyin": "Zhuó",
+    "pinyinArray": [
+      "Zhuo"
+    ]
+  },
+  "测": {
+    "structure": "⿰氵则",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶",
+      "丨",
+      "亅"
+    ],
+    "pinyin": "Cè",
+    "pinyinArray": [
+      "Ce"
+    ]
+  },
+  "济": {
+    "structure": "⿰氵齐",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丶",
+      "一",
+      "丿",
+      "㇏",
+      "丿",
+      "丨"
+    ],
+    "pinyin": "Jì",
+    "pinyinArray": [
+      "Ji"
+    ]
+  },
+  "浑": {
+    "structure": "⿰氵军",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "㇀",
+      "㇇|乛",
+      "一",
+      "𠃋",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Hún",
+    "pinyinArray": [
+      "Hun"
+    ]
+  },
+  "浓": {
+    "structure": "⿰氵农",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "㇀",
+      "㇇|乛",
+      "丿",
+      "𠄌",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Nóng",
+    "pinyinArray": [
+      "Nong"
+    ]
+  },
+  "浙": {
+    "structure": "⿰氵折",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "一",
+      "亅",
+      "㇀",
+      "丿",
+      "丿",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Zhè",
+    "pinyinArray": [
+      "Zhe"
+    ]
+  },
+  "浦": {
+    "structure": "⿰氵甫",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "一",
+      "丨",
+      "𠃌",
+      "一",
+      "一",
+      "丨",
+      "丶"
+    ],
+    "pinyin": "Pǔ",
+    "pinyinArray": [
+      "Pu"
+    ]
+  },
+  "浩": {
+    "structure": "⿰氵告[GTJ]",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丿",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Hào",
+    "pinyinArray": [
+      "Hao"
+    ]
+  },
+  "浪": {
+    "structure": "⿰氵良",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丶",
+      "𠃍",
+      "一",
+      "一",
+      "𠄌",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Làng",
+    "pinyinArray": [
+      "Lang"
+    ]
+  },
+  "浮": {
+    "structure": "⿰氵孚",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丿",
+      "丶",
+      "丶",
+      "丿",
+      "㇇|乛",
+      "亅",
+      "一"
+    ],
+    "pinyin": "Fú",
+    "pinyinArray": [
+      "Fu"
+    ]
+  },
+  "浴": {
+    "structure": "⿰氵谷",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丿",
+      "丶",
+      "丿",
+      "㇏",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Yù",
+    "pinyinArray": [
+      "Yu"
+    ]
+  },
+  "海": {
+    "structure": "⿰氵每",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丿",
+      "一",
+      "㇄",
+      "𠃌",
+      "丶",
+      "一",
+      "丶"
+    ],
+    "pinyin": "Hǎi",
+    "pinyinArray": [
+      "Hai"
+    ]
+  },
+  "浸": {
+    "structure": "⿰氵𠬶",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "𠃍",
+      "一",
+      "一",
+      "㇀",
+      "㇇|乛",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Jìn",
+    "pinyinArray": [
+      "Jin"
+    ]
+  },
+  "涂": {
+    "structure": "⿰氵余",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丿",
+      "㇏",
+      "一",
+      "一",
+      "亅",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Tú",
+    "pinyinArray": [
+      "Tu"
+    ]
+  },
+  "消": {
+    "structure": "⿰氵肖",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丨",
+      "丶",
+      "丿",
+      "丨",
+      "𠃌",
+      "一",
+      "一"
+    ],
+    "pinyin": "Xiāo",
+    "pinyinArray": [
+      "Xiao"
+    ]
+  },
+  "涉": {
+    "structure": "⿰氵步",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丨",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "丿",
+      "丿"
+    ],
+    "pinyin": "Shè",
+    "pinyinArray": [
+      "She"
+    ]
+  },
+  "涌": {
+    "structure": "⿰氵甬",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "丶",
+      "丨",
+      "𠃌",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Yǒng",
+    "pinyinArray": [
+      "Yong"
+    ]
+  },
+  "涎": {
+    "structure": "⿰氵延",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丿",
+      "丨",
+      "一",
+      "㇄",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Xián",
+    "pinyinArray": [
+      "Xian"
+    ]
+  },
+  "涕": {
+    "structure": "⿰氵弟",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丶",
+      "丿",
+      "𠃍",
+      "一",
+      "㇉",
+      "丨",
+      "丿"
+    ],
+    "pinyin": "Tì",
+    "pinyinArray": [
+      "Ti"
+    ]
+  },
+  "涛": {
+    "structure": "⿰氵寿",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "一",
+      "亅",
+      "丶"
+    ],
+    "pinyin": "Tāo",
+    "pinyinArray": [
+      "Tao"
+    ]
+  },
+  "涝": {
+    "structure": "⿰氵劳",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "一",
+      "丨",
+      "丨",
+      "㇀",
+      "㇇|乛",
+      "𠃌",
+      "丿"
+    ],
+    "pinyin": "Láo",
+    "pinyinArray": [
+      "Lao"
+    ]
+  },
+  "涡": {
+    "structure": "⿰氵呙",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃌",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Wō",
+    "pinyinArray": [
+      "Wo"
+    ]
+  },
+  "涣": {
+    "structure": "⿰氵奂",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丿",
+      "㇇|乛",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Huàn",
+    "pinyinArray": [
+      "Huan"
+    ]
+  },
+  "涤": {
+    "structure": "⿰氵条",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丿",
+      "㇇|乛",
+      "㇏",
+      "一",
+      "亅",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Dí",
+    "pinyinArray": [
+      "Di"
+    ]
+  },
+  "润": {
+    "structure": "⿰氵闰",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丶",
+      "丨",
+      "𠃌",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Rùn",
+    "pinyinArray": [
+      "Run"
+    ]
+  },
+  "涧": {
+    "structure": "⿰氵间",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丶",
+      "丨",
+      "𠃌",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Jiàn",
+    "pinyinArray": [
+      "Jian"
+    ]
+  },
+  "涨": {
+    "structure": "⿰氵张",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "𠃍",
+      "一",
+      "㇉",
+      "丿",
+      "一",
+      "𠄌",
+      "㇏"
+    ],
+    "pinyin": "Zhǎng",
+    "pinyinArray": [
+      "Zhang"
+    ]
+  },
+  "涩": {
+    "structure": "⿰氵⿱刃止",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "𠃌",
+      "丿",
+      "㇀",
+      "丨",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Sè",
+    "pinyinArray": [
+      "Se"
+    ]
+  },
+  "涮": {
+    "structure": "⿰氵刷",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "𠃍",
+      "一",
+      "丿",
+      "丨",
+      "𠃌",
+      "丨",
+      "丨",
+      "亅"
+    ],
+    "pinyin": "Shuàn",
+    "pinyinArray": [
+      "Shuan"
+    ]
+  },
+  "涯": {
+    "structure": "⿰氵厓",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "一",
+      "丿",
+      "一",
+      "丨",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Yá",
+    "pinyinArray": [
+      "Ya"
+    ]
+  },
+  "液": {
+    "structure": "⿰氵夜",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丶",
+      "一",
+      "丿",
+      "丨",
+      "丿",
+      "㇇|乛",
+      "丶",
+      "㇏"
+    ],
+    "pinyin": "Yè",
+    "pinyinArray": [
+      "Ye"
+    ]
+  },
+  "涵": {
+    "structure": "⿰氵函",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "亅",
+      "丶",
+      "㇀",
+      "丿",
+      "丶",
+      "㇄",
+      "丨"
+    ],
+    "pinyin": "Hán",
+    "pinyinArray": [
+      "Han"
+    ]
+  },
+  "淀": {
+    "structure": "⿰氵定",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Diàn",
+    "pinyinArray": [
+      "Dian"
+    ]
+  },
+  "淆": {
+    "structure": "⿰氵肴",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丿",
+      "丶",
+      "一",
+      "丿",
+      "丨",
+      "𠃌",
+      "一",
+      "一"
+    ],
+    "pinyin": "Xiáo",
+    "pinyinArray": [
+      "Xiao"
+    ]
+  },
+  "淋": {
+    "structure": "⿰氵林",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Lín",
+    "pinyinArray": [
+      "Lin"
+    ]
+  },
+  "淌": {
+    "structure": "⿰氵尚[GT]",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丨",
+      "丶",
+      "丿",
+      "丨",
+      "𠃌",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Tǎng",
+    "pinyinArray": [
+      "Tang"
+    ]
+  },
+  "淑": {
+    "structure": "⿰氵叔",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丨",
+      "一",
+      "一",
+      "亅",
+      "丿",
+      "丶",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Shū",
+    "pinyinArray": [
+      "Shu"
+    ]
+  },
+  "淘": {
+    "structure": "⿰氵匋",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丿",
+      "𠃌",
+      "丿",
+      "一",
+      "一",
+      "丨",
+      "㇄",
+      "丨"
+    ],
+    "pinyin": "Táo",
+    "pinyinArray": [
+      "Tao"
+    ]
+  },
+  "淡": {
+    "structure": "⿰氵炎",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "㇀",
+      "丿",
+      "丿",
+      "丶",
+      "㇀",
+      "丿",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Dàn",
+    "pinyinArray": [
+      "Dan"
+    ]
+  },
+  "淤": {
+    "structure": "⿰氵於",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丶",
+      "一",
+      "𠃌",
+      "丿",
+      "丿",
+      "㇏",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Yū",
+    "pinyinArray": [
+      "Yu"
+    ]
+  },
+  "淫": {
+    "structure": "⿰氵㸒",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丿",
+      "丶",
+      "丶",
+      "丿",
+      "丿",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Yín",
+    "pinyinArray": [
+      "Yin"
+    ]
+  },
+  "淮": {
+    "structure": "⿰氵隹",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丿",
+      "丨",
+      "丶",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Huái",
+    "pinyinArray": [
+      "Huai"
+    ]
+  },
+  "深": {
+    "structure": "⿰氵罙",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "㇀",
+      "㇇|乛",
+      "丿",
+      "丶",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Shēn",
+    "pinyinArray": [
+      "Shen"
+    ]
+  },
+  "淳": {
+    "structure": "⿰氵享",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丶",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "㇇|乛",
+      "亅",
+      "一"
+    ],
+    "pinyin": "Chún",
+    "pinyinArray": [
+      "Chun"
+    ]
+  },
+  "混": {
+    "structure": "⿰氵昆",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "𠄌",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Hún",
+    "pinyinArray": [
+      "Hun"
+    ]
+  },
+  "淹": {
+    "structure": "⿰氵奄",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "一",
+      "丿",
+      "㇏",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "乚"
+    ],
+    "pinyin": "Yān",
+    "pinyinArray": [
+      "Yan"
+    ]
+  },
+  "添": {
+    "structure": "⿰氵忝",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "一",
+      "一",
+      "丿",
+      "㇏",
+      "亅",
+      "㇀",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Tiān",
+    "pinyinArray": [
+      "Tian"
+    ]
+  },
+  "清": {
+    "structure": "⿰氵青",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "𠃌",
+      "一",
+      "一"
+    ],
+    "pinyin": "Qīng",
+    "pinyinArray": [
+      "Qing"
+    ]
+  },
+  "渊": {
+    "structure": "⿰氵𫂱",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丿",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丨"
+    ],
+    "pinyin": "Yuān",
+    "pinyinArray": [
+      "Yuan"
+    ]
+  },
+  "渐": {
+    "structure": "⿰氵斩",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "一",
+      "𠃋",
+      "丨",
+      "㇀",
+      "丿",
+      "丿",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Jiàn",
+    "pinyinArray": [
+      "Jian"
+    ]
+  },
+  "渔": {
+    "structure": "⿰氵鱼",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丿",
+      "㇇|乛",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "一"
+    ],
+    "pinyin": "Yú",
+    "pinyinArray": [
+      "Yu"
+    ]
+  },
+  "渗": {
+    "structure": "⿰氵参",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "𠃋",
+      "丶",
+      "一",
+      "丿",
+      "㇏",
+      "丿",
+      "丿",
+      "丿"
+    ],
+    "pinyin": "Shèn",
+    "pinyinArray": [
+      "Shen"
+    ]
+  },
+  "渠": {
+    "structure": "⿱洰木[GJK]",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "一",
+      "𠃍",
+      "一",
+      "㇄",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Qú",
+    "pinyinArray": [
+      "Qu"
+    ]
+  },
+  "渡": {
+    "structure": "⿰氵度",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丶",
+      "一",
+      "丿",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Dù",
+    "pinyinArray": [
+      "Du"
+    ]
+  },
+  "渣": {
+    "structure": "⿰氵查[GT]",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "一",
+      "丨",
+      "丿",
+      "㇏",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一"
+    ],
+    "pinyin": "Zhā",
+    "pinyinArray": [
+      "Zha"
+    ]
+  },
+  "渤": {
+    "structure": "⿰氵勃",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "一",
+      "丨",
+      "㇀",
+      "㇇|乛",
+      "㇇|乛",
+      "亅",
+      "㇀",
+      "𠃌",
+      "丿"
+    ],
+    "pinyin": "Bó",
+    "pinyinArray": [
+      "Bo"
+    ]
+  },
+  "温": {
+    "structure": "⿰氵昷",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "𠃍",
+      "丨",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Wēn",
+    "pinyinArray": [
+      "Wen"
+    ]
+  },
+  "港": {
+    "structure": "⿰氵巷",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丿",
+      "㇏",
+      "𠃍",
+      "一",
+      "乚"
+    ],
+    "pinyin": "Gǎng",
+    "pinyinArray": [
+      "Gang"
+    ]
+  },
+  "渴": {
+    "structure": "⿰氵曷",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "𠃌",
+      "丿",
+      "丶",
+      "㇄"
+    ],
+    "pinyin": "Kě",
+    "pinyinArray": [
+      "Ke"
+    ]
+  },
+  "游": {
+    "structure": "⿰氵斿",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丶",
+      "一",
+      "𠃌",
+      "丿",
+      "丿",
+      "一",
+      "㇇|乛",
+      "亅",
+      "一"
+    ],
+    "pinyin": "Yóu",
+    "pinyinArray": [
+      "You"
+    ]
+  },
+  "渺": {
+    "structure": "⿰氵眇",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丿"
+    ],
+    "pinyin": "Miǎo",
+    "pinyinArray": [
+      "Miao"
+    ]
+  },
+  "湃": {
+    "structure": "⿰氵拜",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丿",
+      "一",
+      "一",
+      "丿",
+      "一",
+      "一",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Pài",
+    "pinyinArray": [
+      "Pai"
+    ]
+  },
+  "湖": {
+    "structure": "⿰氵胡",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "𠃌",
+      "一",
+      "一"
+    ],
+    "pinyin": "Hú",
+    "pinyinArray": [
+      "Hu"
+    ]
+  },
+  "湘": {
+    "structure": "⿰氵相",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一"
+    ],
+    "pinyin": "Xiāng",
+    "pinyinArray": [
+      "Xiang"
+    ]
+  },
+  "湾": {
+    "structure": "⿰氵弯",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丶",
+      "一",
+      "丨",
+      "丨",
+      "丿",
+      "丶",
+      "𠃍",
+      "一",
+      "㇉"
+    ],
+    "pinyin": "Wān",
+    "pinyinArray": [
+      "Wan"
+    ]
+  },
+  "湿": {
+    "structure": "⿰氵显",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "丨",
+      "丶",
+      "丿",
+      "一"
+    ],
+    "pinyin": "Shī",
+    "pinyinArray": [
+      "Shi"
+    ]
+  },
+  "溃": {
+    "structure": "⿰氵贵",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Kuì",
+    "pinyinArray": [
+      "Kui"
+    ]
+  },
+  "溅": {
+    "structure": "⿰氵贱",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶",
+      "一",
+      "一",
+      "㇂|㇃",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Jiàn",
+    "pinyinArray": [
+      "Jian"
+    ]
+  },
+  "溉": {
+    "structure": "⿰氵既",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "𠃍",
+      "一",
+      "一",
+      "𠄌",
+      "丶",
+      "一",
+      "𠃋",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Gài",
+    "pinyinArray": [
+      "Gai"
+    ]
+  },
+  "源": {
+    "structure": "⿰氵原",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "一",
+      "丿",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "亅",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Yuán",
+    "pinyinArray": [
+      "Yuan"
+    ]
+  },
+  "溜": {
+    "structure": "⿰氵留",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丿",
+      "𠄌",
+      "丶",
+      "𠃌",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Liù",
+    "pinyinArray": [
+      "Liu"
+    ]
+  },
+  "溢": {
+    "structure": "⿰氵益",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丶",
+      "丿",
+      "一",
+      "丿",
+      "丶",
+      "丨",
+      "𠃍",
+      "丨",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Yì",
+    "pinyinArray": [
+      "Yi"
+    ]
+  },
+  "溪": {
+    "structure": "⿰氵奚",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丿",
+      "丶",
+      "丶",
+      "丿",
+      "𠃋",
+      "𠃋",
+      "丶",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Xī",
+    "pinyinArray": [
+      "Xi"
+    ]
+  },
+  "溯": {
+    "structure": "⿰氵朔",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丶",
+      "丿",
+      "一",
+      "㇄",
+      "丨",
+      "丿",
+      "丿",
+      "𠃌",
+      "一",
+      "一"
+    ],
+    "pinyin": "Sù",
+    "pinyinArray": [
+      "Su"
+    ]
+  },
+  "溶": {
+    "structure": "⿰氵容",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "丿",
+      "丶",
+      "丿",
+      "㇏",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Róng",
+    "pinyinArray": [
+      "Rong"
+    ]
+  },
+  "溺": {
+    "structure": "⿰氵弱",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "𠃍",
+      "一",
+      "㇉",
+      "丶",
+      "㇀",
+      "𠃍",
+      "一",
+      "㇉",
+      "丶",
+      "㇀"
+    ],
+    "pinyin": "Nì",
+    "pinyinArray": [
+      "Ni"
+    ]
+  },
+  "滋": {
+    "structure": "⿰氵兹",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丶",
+      "丿",
+      "一",
+      "𠃋",
+      "𠃋",
+      "丶",
+      "𠃋",
+      "𠃋",
+      "丶"
+    ],
+    "pinyin": "Zī",
+    "pinyinArray": [
+      "Zi"
+    ]
+  },
+  "滑": {
+    "structure": "⿰氵骨",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丨",
+      "𠃍",
+      "𠃍",
+      "㇀",
+      "㇇|乛",
+      "丨",
+      "𠃌",
+      "一",
+      "一"
+    ],
+    "pinyin": "Huá",
+    "pinyinArray": [
+      "Hua"
+    ]
+  },
+  "滓": {
+    "structure": "⿰氵宰",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Zǐ",
+    "pinyinArray": [
+      "Zi"
+    ]
+  },
+  "滔": {
+    "structure": "⿰氵舀",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丿",
+      "丶",
+      "丶",
+      "丿",
+      "丿",
+      "丨",
+      "一",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Tāo",
+    "pinyinArray": [
+      "Tao"
+    ]
+  },
+  "滚": {
+    "structure": "⿰氵衮",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丶",
+      "一",
+      "丿",
+      "丶",
+      "𠃋",
+      "丶",
+      "丿",
+      "𠄌",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Gǔn",
+    "pinyinArray": [
+      "Gun"
+    ]
+  },
+  "滞": {
+    "structure": "⿰氵带[G]",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "一",
+      "丨",
+      "丨",
+      "丨",
+      "㇀",
+      "㇇|乛",
+      "丨",
+      "𠃌",
+      "丨"
+    ],
+    "pinyin": "Zhì",
+    "pinyinArray": [
+      "Zhi"
+    ]
+  },
+  "满": {
+    "structure": "⿰氵𬜯",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丨",
+      "𠃌",
+      "丿",
+      "丶",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Mǎn",
+    "pinyinArray": [
+      "Man"
+    ]
+  },
+  "滤": {
+    "structure": "⿰氵虑",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丨",
+      "一",
+      "㇇|乛",
+      "丿",
+      "一",
+      "乚",
+      "㇀",
+      "㇂|㇃",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Lǜ",
+    "pinyinArray": [
+      "Lü"
+    ]
+  },
+  "滥": {
+    "structure": "⿰氵监",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丨",
+      "丨",
+      "丿",
+      "一",
+      "丶",
+      "丨",
+      "𠃍",
+      "丨",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Làn",
+    "pinyinArray": [
+      "Lan"
+    ]
+  },
+  "滨": {
+    "structure": "⿰氵宾",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "丿",
+      "丨",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Bīn",
+    "pinyinArray": [
+      "Bin"
+    ]
+  },
+  "滩": {
+    "structure": "⿰氵难",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "丶",
+      "丿",
+      "丨",
+      "丶",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Tān",
+    "pinyinArray": [
+      "Tan"
+    ]
+  },
+  "滴": {
+    "structure": "⿰氵啇",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "丨",
+      "𠃌",
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Dī",
+    "pinyinArray": [
+      "Di"
+    ]
+  },
+  "漂": {
+    "structure": "⿰氵票",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "一",
+      "丨",
+      "𠃍",
+      "丨",
+      "丨",
+      "一",
+      "一",
+      "一",
+      "亅",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Piào",
+    "pinyinArray": [
+      "Piao"
+    ]
+  },
+  "漆": {
+    "structure": "⿰氵桼",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丿",
+      "㇏",
+      "亅",
+      "丶",
+      "㇀",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Qī",
+    "pinyinArray": [
+      "Qi"
+    ]
+  },
+  "漏": {
+    "structure": "⿰氵屚",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "𠃍",
+      "一",
+      "丿",
+      "一",
+      "丨",
+      "𠃌",
+      "丨",
+      "丶",
+      "丶",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Lòu",
+    "pinyinArray": [
+      "Lou"
+    ]
+  },
+  "漓": {
+    "structure": "⿰氵离",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丶",
+      "一",
+      "丿",
+      "丶",
+      "㇄",
+      "丨",
+      "丨",
+      "𠃌",
+      "𠃋",
+      "丶"
+    ],
+    "pinyin": "Lí",
+    "pinyinArray": [
+      "Li"
+    ]
+  },
+  "演": {
+    "structure": "⿰氵寅",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Yǎn",
+    "pinyinArray": [
+      "Yan"
+    ]
+  },
+  "漠": {
+    "structure": "⿰氵莫",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "一",
+      "丨",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Mò",
+    "pinyinArray": [
+      "Mo"
+    ]
+  },
+  "漩": {
+    "structure": "⿰氵旋",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丶",
+      "一",
+      "𠃌",
+      "丿",
+      "丿",
+      "一",
+      "㇇|乛",
+      "丨",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Xuán",
+    "pinyinArray": [
+      "Xuan"
+    ]
+  },
+  "漫": {
+    "structure": "⿰氵曼",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "𠃍",
+      "丨",
+      "丨",
+      "一",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Màn",
+    "pinyinArray": [
+      "Man"
+    ]
+  },
+  "漱": {
+    "structure": "⿰氵欶",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丿",
+      "㇇|乛",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Shù",
+    "pinyinArray": [
+      "Shu"
+    ]
+  },
+  "漾": {
+    "structure": "⿰氵羕",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "丶",
+      "𠃌",
+      "㇇|乛",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Yàng",
+    "pinyinArray": [
+      "Yang"
+    ]
+  },
+  "潘": {
+    "structure": "⿰氵番",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丿",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "㇏",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Pān",
+    "pinyinArray": [
+      "Pan"
+    ]
+  },
+  "潜": {
+    "structure": "⿰氵替",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "一",
+      "一",
+      "丿",
+      "丶",
+      "一",
+      "一",
+      "丿",
+      "㇏",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Qián",
+    "pinyinArray": [
+      "Qian"
+    ]
+  },
+  "潦": {
+    "structure": "⿰氵尞",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "一",
+      "丿",
+      "㇏",
+      "丶",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "亅",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Liáo",
+    "pinyinArray": [
+      "Liao"
+    ]
+  },
+  "潭": {
+    "structure": "⿰氵覃",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "一",
+      "丨",
+      "𠃍",
+      "丨",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Tán",
+    "pinyinArray": [
+      "Tan"
+    ]
+  },
+  "潮": {
+    "structure": "⿰氵朝",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "丿",
+      "𠃌",
+      "一",
+      "一"
+    ],
+    "pinyin": "Cháo",
+    "pinyinArray": [
+      "Chao"
+    ]
+  },
+  "澄": {
+    "structure": "⿰氵登",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "丶",
+      "丿",
+      "丿",
+      "㇏",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丶",
+      "丿",
+      "一"
+    ],
+    "pinyin": "Chéng",
+    "pinyinArray": [
+      "Cheng"
+    ]
+  },
+  "澈": {
+    "structure": "⿲氵育攵",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丶",
+      "一",
+      "𠃋",
+      "丶",
+      "丨",
+      "𠃌",
+      "一",
+      "一",
+      "丿",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Chè",
+    "pinyinArray": [
+      "Che"
+    ]
+  },
+  "澎": {
+    "structure": "⿰氵彭",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丶",
+      "丿",
+      "㇀",
+      "丿",
+      "丿",
+      "丿"
+    ],
+    "pinyin": "Péng",
+    "pinyinArray": [
+      "Peng"
+    ]
+  },
+  "澜": {
+    "structure": "⿰氵阑",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丶",
+      "丨",
+      "𠃌",
+      "一",
+      "丨",
+      "𠃍",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Lán",
+    "pinyinArray": [
+      "Lan"
+    ]
+  },
+  "澡": {
+    "structure": "⿰氵喿",
+    "strokeCount": 16,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Zǎo",
+    "pinyinArray": [
+      "Zao"
+    ]
+  },
+  "澳": {
+    "structure": "⿰氵奥[G]",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丿",
+      "丨",
+      "𠃍",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Ào",
+    "pinyinArray": [
+      "Ao"
+    ]
+  },
+  "激": {
+    "structure": "⿰氵敫",
+    "strokeCount": 16,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丶",
+      "一",
+      "𠃌",
+      "丿",
+      "丿",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Jī",
+    "pinyinArray": [
+      "Ji"
+    ]
+  },
+  "濒": {
+    "structure": "⿰氵频",
+    "strokeCount": 16,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丨",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "丿",
+      "丿",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Bīn",
+    "pinyinArray": [
+      "Bin"
+    ]
+  },
+  "瀑": {
+    "structure": "⿰氵暴",
+    "strokeCount": 18,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丿",
+      "㇏",
+      "亅",
+      "丶",
+      "㇀",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Pù",
+    "pinyinArray": [
+      "Pu"
+    ]
+  },
+  "灌": {
+    "structure": "⿰氵雚",
+    "strokeCount": 20,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "一",
+      "丨",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "丨",
+      "丶",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Guàn",
+    "pinyinArray": [
+      "Guan"
+    ]
+  },
+  "火": {
+    "structure": "⿱八人",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "㇀",
+      "丿",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Huǒ",
+    "pinyinArray": [
+      "Huo"
+    ]
+  },
+  "灭": {
+    "structure": "⿱一火",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "一",
+      "㇀",
+      "丿",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Miè",
+    "pinyinArray": [
+      "Mie"
+    ]
+  },
+  "灯": {
+    "structure": "⿰火丁",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "㇀",
+      "丿",
+      "丿",
+      "丶",
+      "一",
+      "亅"
+    ],
+    "pinyin": "Dēng",
+    "pinyinArray": [
+      "Deng"
+    ]
+  },
+  "灰": {
+    "structure": "⿸𠂇火[GTKV]",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "㇀",
+      "丿",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Huī",
+    "pinyinArray": [
+      "Hui"
+    ]
+  },
+  "灵": {
+    "structure": "⿱彐火[GV]",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "𠃍",
+      "一",
+      "一",
+      "㇀",
+      "丿",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Líng",
+    "pinyinArray": [
+      "Ling"
+    ]
+  },
+  "灶": {
+    "structure": "⿰火土",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "㇀",
+      "丿",
+      "丿",
+      "丶",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Zào",
+    "pinyinArray": [
+      "Zao"
+    ]
+  },
+  "灸": {
+    "structure": "⿱久火",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丿",
+      "㇇|乛",
+      "丶",
+      "㇀",
+      "丿",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Jiǔ",
+    "pinyinArray": [
+      "Jiu"
+    ]
+  },
+  "灼": {
+    "structure": "⿰火勺",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "㇀",
+      "丿",
+      "丿",
+      "丶",
+      "丿",
+      "𠃌",
+      "丶"
+    ],
+    "pinyin": "Zhuó",
+    "pinyinArray": [
+      "Zhuo"
+    ]
+  },
+  "灾": {
+    "structure": "⿱宀火",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "㇀",
+      "丿",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Zāi",
+    "pinyinArray": [
+      "Zai"
+    ]
+  },
+  "灿": {
+    "structure": "⿰火山",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "㇀",
+      "丿",
+      "丿",
+      "丶",
+      "丨",
+      "㇄",
+      "丨"
+    ],
+    "pinyin": "Càn",
+    "pinyinArray": [
+      "Can"
+    ]
+  },
+  "炉": {
+    "structure": "⿰火户[G]",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "㇀",
+      "丿",
+      "丿",
+      "丶",
+      "丶",
+      "𠃍",
+      "一",
+      "丿"
+    ],
+    "pinyin": "Lú",
+    "pinyinArray": [
+      "Lu"
+    ]
+  },
+  "炊": {
+    "structure": "⿰火欠",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "㇀",
+      "丿",
+      "丿",
+      "丶",
+      "丿",
+      "㇇|乛",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Chuī",
+    "pinyinArray": [
+      "Chui"
+    ]
+  },
+  "炎": {
+    "structure": "⿱火火",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "㇀",
+      "丿",
+      "丿",
+      "丶",
+      "㇀",
+      "丿",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Yán",
+    "pinyinArray": [
+      "Yan"
+    ]
+  },
+  "炒": {
+    "structure": "⿰火少",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "㇀",
+      "丿",
+      "丿",
+      "丶",
+      "丨",
+      "丿",
+      "丶",
+      "丿"
+    ],
+    "pinyin": "Chǎo",
+    "pinyinArray": [
+      "Chao"
+    ]
+  },
+  "炕": {
+    "structure": "⿰火亢",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "㇀",
+      "丿",
+      "丿",
+      "丶",
+      "丶",
+      "一",
+      "丿",
+      "⺄"
+    ],
+    "pinyin": "Kàng",
+    "pinyinArray": [
+      "Kang"
+    ]
+  },
+  "炫": {
+    "structure": "⿰火玄",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "㇀",
+      "丿",
+      "丿",
+      "丶",
+      "丶",
+      "一",
+      "𠃋",
+      "𠃋",
+      "丶"
+    ],
+    "pinyin": "Xuàn",
+    "pinyinArray": [
+      "Xuan"
+    ]
+  },
+  "炬": {
+    "structure": "⿰火巨",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "㇀",
+      "丿",
+      "丿",
+      "丶",
+      "一",
+      "𠃍",
+      "一",
+      "㇄"
+    ],
+    "pinyin": "Jù",
+    "pinyinArray": [
+      "Ju"
+    ]
+  },
+  "炭": {
+    "structure": "⿱山灰",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丨",
+      "㇄",
+      "丨",
+      "一",
+      "丿",
+      "㇀",
+      "丿",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Tàn",
+    "pinyinArray": [
+      "Tan"
+    ]
+  },
+  "炮": {
+    "structure": "⿰火包",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "㇀",
+      "丿",
+      "丿",
+      "丶",
+      "丿",
+      "𠃌",
+      "𠃍",
+      "一",
+      "乚"
+    ],
+    "pinyin": "Pào",
+    "pinyinArray": [
+      "Pao"
+    ]
+  },
+  "炸": {
+    "structure": "⿰火乍",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "㇀",
+      "丿",
+      "丿",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "一",
+      "一"
+    ],
+    "pinyin": "Zhá",
+    "pinyinArray": [
+      "Zha"
+    ]
+  },
+  "点": {
+    "structure": "⿱占灬",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "㇀",
+      "丶",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Diǎn",
+    "pinyinArray": [
+      "Dian"
+    ]
+  },
+  "炼": {
+    "structure": "⿰火𫠣",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "㇀",
+      "丿",
+      "丿",
+      "丶",
+      "一",
+      "𠃋",
+      "𠃌",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Liàn",
+    "pinyinArray": [
+      "Lian"
+    ]
+  },
+  "烁": {
+    "structure": "⿰火乐",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "㇀",
+      "丿",
+      "丿",
+      "丶",
+      "丿",
+      "㇄",
+      "亅",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Shuò",
+    "pinyinArray": [
+      "Shuo"
+    ]
+  },
+  "烂": {
+    "structure": "⿰火兰",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "㇀",
+      "丿",
+      "丿",
+      "丶",
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "一"
+    ],
+    "pinyin": "Làn",
+    "pinyinArray": [
+      "Lan"
+    ]
+  },
+  "烈": {
+    "structure": "⿱列灬",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "㇇|乛",
+      "丶",
+      "丨",
+      "亅",
+      "㇀",
+      "丶",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Liè",
+    "pinyinArray": [
+      "Lie"
+    ]
+  },
+  "烘": {
+    "structure": "⿰火共",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "㇀",
+      "丿",
+      "丿",
+      "丶",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Hōng",
+    "pinyinArray": [
+      "Hong"
+    ]
+  },
+  "烙": {
+    "structure": "⿰火各",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "㇀",
+      "丿",
+      "丿",
+      "丶",
+      "丿",
+      "㇇|乛",
+      "㇏",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Lào",
+    "pinyinArray": [
+      "Lao"
+    ]
+  },
+  "烛": {
+    "structure": "⿰火虫",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "㇀",
+      "丿",
+      "丿",
+      "丶",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丶"
+    ],
+    "pinyin": "Zhú",
+    "pinyinArray": [
+      "Zhu"
+    ]
+  },
+  "烟": {
+    "structure": "⿰火因",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "㇀",
+      "丿",
+      "丿",
+      "丶",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "丶",
+      "一"
+    ],
+    "pinyin": "Yān",
+    "pinyinArray": [
+      "Yan"
+    ]
+  },
+  "烤": {
+    "structure": "⿰火考",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "㇀",
+      "丿",
+      "丿",
+      "丶",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "一",
+      "㇉"
+    ],
+    "pinyin": "Kǎo",
+    "pinyinArray": [
+      "Kao"
+    ]
+  },
+  "烦": {
+    "structure": "⿰火页",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "㇀",
+      "丿",
+      "丿",
+      "丶",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Fán",
+    "pinyinArray": [
+      "Fan"
+    ]
+  },
+  "烧": {
+    "structure": "⿰火尧",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "㇀",
+      "丿",
+      "丿",
+      "丶",
+      "一",
+      "㇂|㇃",
+      "丿",
+      "一",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Shāo",
+    "pinyinArray": [
+      "Shao"
+    ]
+  },
+  "烫": {
+    "structure": "⿱汤火",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "𠄎|㇌",
+      "丿",
+      "丿",
+      "㇀",
+      "丿",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Tàng",
+    "pinyinArray": [
+      "Tang"
+    ]
+  },
+  "热": {
+    "structure": "⿱执灬",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丿",
+      "⺄",
+      "丶",
+      "㇀",
+      "丶",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Rè",
+    "pinyinArray": [
+      "Re"
+    ]
+  },
+  "烹": {
+    "structure": "⿱亨灬",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "㇇|乛",
+      "亅",
+      "㇀",
+      "丶",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Pēng",
+    "pinyinArray": [
+      "Peng"
+    ]
+  },
+  "焊": {
+    "structure": "⿰火旱",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "㇀",
+      "丿",
+      "丿",
+      "丶",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Hàn",
+    "pinyinArray": [
+      "Han"
+    ]
+  },
+  "焕": {
+    "structure": "⿰火奂",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "㇀",
+      "丿",
+      "丿",
+      "丶",
+      "丿",
+      "㇇|乛",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Huàn",
+    "pinyinArray": [
+      "Huan"
+    ]
+  },
+  "焙": {
+    "structure": "⿰火咅",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "㇀",
+      "丿",
+      "丿",
+      "丶",
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Bèi",
+    "pinyinArray": [
+      "Bei"
+    ]
+  },
+  "焚": {
+    "structure": "⿱林火",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "㇀",
+      "丿",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Fén",
+    "pinyinArray": [
+      "Fen"
+    ]
+  },
+  "焦": {
+    "structure": "⿱隹灬",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "丶",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "㇀",
+      "丶",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Jiāo",
+    "pinyinArray": [
+      "Jiao"
+    ]
+  },
+  "焰": {
+    "structure": "⿰火臽",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "㇀",
+      "丿",
+      "丿",
+      "丶",
+      "丿",
+      "㇇|乛",
+      "丿",
+      "丨",
+      "一",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Yàn",
+    "pinyinArray": [
+      "Yan"
+    ]
+  },
+  "然": {
+    "structure": "⿱⿰⿴𠂊冫犬灬",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丿",
+      "㇇|乛",
+      "丶",
+      "丶",
+      "一",
+      "丿",
+      "㇏",
+      "丶",
+      "㇀",
+      "丶",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Rán",
+    "pinyinArray": [
+      "Ran"
+    ]
+  },
+  "煌": {
+    "structure": "⿰火皇",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "㇀",
+      "丿",
+      "丿",
+      "丶",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Huáng",
+    "pinyinArray": [
+      "Huang"
+    ]
+  },
+  "煎": {
+    "structure": "⿱前灬",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "𠃌",
+      "一",
+      "一",
+      "丨",
+      "亅",
+      "㇀",
+      "丶",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Jiān",
+    "pinyinArray": [
+      "Jian"
+    ]
+  },
+  "煞": {
+    "structure": "⿱𭣦灬",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丿",
+      "㇇|乛",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "一",
+      "丿",
+      "㇏",
+      "㇀",
+      "丶",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Shà",
+    "pinyinArray": [
+      "Sha"
+    ]
+  },
+  "煤": {
+    "structure": "⿰火某",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "㇀",
+      "丿",
+      "丿",
+      "丶",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Méi",
+    "pinyinArray": [
+      "Mei"
+    ]
+  },
+  "照": {
+    "structure": "⿱昭灬",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "𠃌",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "㇀",
+      "丶",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Zhào",
+    "pinyinArray": [
+      "Zhao"
+    ]
+  },
+  "煮": {
+    "structure": "⿱者灬",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "㇀",
+      "丶",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Zhǔ",
+    "pinyinArray": [
+      "Zhu"
+    ]
+  },
+  "熄": {
+    "structure": "⿰火息",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "㇀",
+      "丿",
+      "丿",
+      "丶",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "㇀",
+      "㇂|㇃",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Xī",
+    "pinyinArray": [
+      "Xi"
+    ]
+  },
+  "熊": {
+    "structure": "⿱能灬",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "𠃋",
+      "丶",
+      "丨",
+      "𠃌",
+      "一",
+      "一",
+      "丿",
+      "乚",
+      "丿",
+      "乚",
+      "㇀",
+      "丶",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Xióng",
+    "pinyinArray": [
+      "Xiong"
+    ]
+  },
+  "熏": {
+    "structure": "熏",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丨",
+      "𠃍",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "一",
+      "一",
+      "㇀",
+      "丶",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Xūn",
+    "pinyinArray": [
+      "Xun"
+    ]
+  },
+  "熔": {
+    "structure": "⿰火容",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "㇀",
+      "丿",
+      "丿",
+      "丶",
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "丿",
+      "丶",
+      "丿",
+      "㇏",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Róng",
+    "pinyinArray": [
+      "Rong"
+    ]
+  },
+  "熙": {
+    "structure": "⿱巸灬",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "㇄",
+      "𠃍",
+      "一",
+      "乚",
+      "㇀",
+      "丶",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Xī",
+    "pinyinArray": [
+      "Xi"
+    ]
+  },
+  "熟": {
+    "structure": "⿱孰灬",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "㇇|乛",
+      "亅",
+      "㇀",
+      "丿",
+      "⺄",
+      "丶",
+      "㇀",
+      "丶",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Shú",
+    "pinyinArray": [
+      "Shu"
+    ]
+  },
+  "熬": {
+    "structure": "⿱敖灬",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "一",
+      "一",
+      "丨",
+      "一",
+      "𠃌",
+      "丿",
+      "丿",
+      "一",
+      "丿",
+      "㇏",
+      "㇀",
+      "丶",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Áo",
+    "pinyinArray": [
+      "Ao"
+    ]
+  },
+  "燃": {
+    "structure": "⿰火然",
+    "strokeCount": 16,
+    "strokeShapes": [
+      "㇀",
+      "丿",
+      "丿",
+      "丶",
+      "丿",
+      "㇇|乛",
+      "丶",
+      "丶",
+      "一",
+      "丿",
+      "㇏",
+      "丶",
+      "㇀",
+      "丶",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Rán",
+    "pinyinArray": [
+      "Ran"
+    ]
+  },
+  "燎": {
+    "structure": "⿰火尞",
+    "strokeCount": 16,
+    "strokeShapes": [
+      "㇀",
+      "丿",
+      "丿",
+      "丶",
+      "一",
+      "丿",
+      "㇏",
+      "丶",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "亅",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Liáo",
+    "pinyinArray": [
+      "Liao"
+    ]
+  },
+  "燕": {
+    "structure": "⿳廿⿴北口灬",
+    "strokeCount": 16,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "㇀",
+      "丿",
+      "乚",
+      "㇀",
+      "丶",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Yàn",
+    "pinyinArray": [
+      "Yan"
+    ]
+  },
+  "燥": {
+    "structure": "⿰火喿",
+    "strokeCount": 17,
+    "strokeShapes": [
+      "㇀",
+      "丿",
+      "丿",
+      "丶",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Sào",
+    "pinyinArray": [
+      "Sao"
+    ]
+  },
+  "爆": {
+    "structure": "⿰火暴",
+    "strokeCount": 19,
+    "strokeShapes": [
+      "㇀",
+      "丿",
+      "丿",
+      "丶",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丿",
+      "㇏",
+      "亅",
+      "丶",
+      "㇀",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Bào",
+    "pinyinArray": [
+      "Bao"
+    ]
+  },
+  "爪": {
+    "structure": "爪",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "丿",
+      "丿",
+      "丨",
+      "㇏"
+    ],
+    "pinyin": "Zhuǎ",
+    "pinyinArray": [
+      "Zhua"
+    ]
+  },
+  "爬": {
+    "structure": "⿺爪巴",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丿",
+      "丿",
+      "丨",
+      "㇏",
+      "𠃍",
+      "丨",
+      "一",
+      "乚"
+    ],
+    "pinyin": "Pá",
+    "pinyinArray": [
+      "Pa"
+    ]
+  },
+  "爱": {
+    "structure": "⿱⿱爫冖友",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "丶",
+      "丶",
+      "丿",
+      "㇀",
+      "㇇|乛",
+      "一",
+      "丿",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Ài",
+    "pinyinArray": [
+      "Ai"
+    ]
+  },
+  "爵": {
+    "structure": "⿳爫罒𡬠",
+    "strokeCount": 17,
+    "strokeShapes": [
+      "丿",
+      "丶",
+      "丶",
+      "丿",
+      "丨",
+      "𠃍",
+      "丨",
+      "丨",
+      "一",
+      "𠃍",
+      "一",
+      "一",
+      "𠄌",
+      "丶",
+      "一",
+      "亅",
+      "丶"
+    ],
+    "pinyin": "Jué",
+    "pinyinArray": [
+      "Jue"
+    ]
+  },
+  "父": {
+    "structure": "⿱八乂",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "丿",
+      "丶",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Fù",
+    "pinyinArray": [
+      "Fu"
+    ]
+  },
+  "爷": {
+    "structure": "⿱父卩",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丿",
+      "丶",
+      "丿",
+      "㇏",
+      "𠃌",
+      "丨"
+    ],
+    "pinyin": "Yé",
+    "pinyinArray": [
+      "Ye"
+    ]
+  },
+  "爸": {
+    "structure": "⿱父巴",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丿",
+      "丶",
+      "丿",
+      "㇏",
+      "𠃍",
+      "丨",
+      "一",
+      "乚"
+    ],
+    "pinyin": "Bà",
+    "pinyinArray": [
+      "Ba"
+    ]
+  },
+  "爹": {
+    "structure": "⿱父多",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "丶",
+      "丿",
+      "㇏",
+      "丿",
+      "㇇|乛",
+      "丶",
+      "丿",
+      "㇇|乛",
+      "丶"
+    ],
+    "pinyin": "Diē",
+    "pinyinArray": [
+      "Die"
+    ]
+  },
+  "爽": {
+    "structure": "⿻大㸚",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "丶",
+      "丿",
+      "丶",
+      "丿",
+      "丶",
+      "丿",
+      "丶",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Shuāng",
+    "pinyinArray": [
+      "Shuang"
+    ]
+  },
+  "片": {
+    "structure": "片",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "一",
+      "𠃍"
+    ],
+    "pinyin": "Piàn",
+    "pinyinArray": [
+      "Pian"
+    ]
+  },
+  "版": {
+    "structure": "⿰片反",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "一",
+      "𠃍",
+      "丿",
+      "丿",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Bǎn",
+    "pinyinArray": [
+      "Ban"
+    ]
+  },
+  "牌": {
+    "structure": "⿰片卑",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "一",
+      "𠃍",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Pái",
+    "pinyinArray": [
+      "Pai"
+    ]
+  },
+  "牍": {
+    "structure": "⿰片卖",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "一",
+      "𠃍",
+      "一",
+      "丨",
+      "㇇|乛",
+      "丶",
+      "丶",
+      "一",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Dú",
+    "pinyinArray": [
+      "Du"
+    ]
+  },
+  "牙": {
+    "structure": "牙",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "一",
+      "𠃋",
+      "亅",
+      "丿"
+    ],
+    "pinyin": "Yá",
+    "pinyinArray": [
+      "Ya"
+    ]
+  },
+  "牛": {
+    "structure": "牛",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Niú",
+    "pinyinArray": [
+      "Niu"
+    ]
+  },
+  "牡": {
+    "structure": "⿰牛土",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丨",
+      "㇀",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Mǔ",
+    "pinyinArray": [
+      "Mu"
+    ]
+  },
+  "牢": {
+    "structure": "⿱宀牛",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "丿",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Láo",
+    "pinyinArray": [
+      "Lao"
+    ]
+  },
+  "牧": {
+    "structure": "⿰牛攵",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丨",
+      "㇀",
+      "丿",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Mù",
+    "pinyinArray": [
+      "Mu"
+    ]
+  },
+  "物": {
+    "structure": "⿰牛勿",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丨",
+      "㇀",
+      "丿",
+      "𠃌",
+      "丿",
+      "丿"
+    ],
+    "pinyin": "Wù",
+    "pinyinArray": [
+      "Wu"
+    ]
+  },
+  "牲": {
+    "structure": "⿰牛生",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丨",
+      "㇀",
+      "丿",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Shēng",
+    "pinyinArray": [
+      "Sheng"
+    ]
+  },
+  "牵": {
+    "structure": "⿳大冖牛",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "丿",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Qiān",
+    "pinyinArray": [
+      "Qian"
+    ]
+  },
+  "特": {
+    "structure": "⿰牛寺",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丨",
+      "㇀",
+      "一",
+      "丨",
+      "一",
+      "一",
+      "亅",
+      "丶"
+    ],
+    "pinyin": "Tè",
+    "pinyinArray": [
+      "Te"
+    ]
+  },
+  "牺": {
+    "structure": "⿰牛西",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丨",
+      "㇀",
+      "一",
+      "丨",
+      "𠃍",
+      "丿",
+      "㇄",
+      "一"
+    ],
+    "pinyin": "Xī",
+    "pinyinArray": [
+      "Xi"
+    ]
+  },
+  "犀": {
+    "structure": "⿸尸⿱⿻丨⿱丷八牛",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "𠃍",
+      "一",
+      "丿",
+      "丨",
+      "丶",
+      "㇀",
+      "丿",
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Xī",
+    "pinyinArray": [
+      "Xi"
+    ]
+  },
+  "犁": {
+    "structure": "⿱利牛",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丨",
+      "亅",
+      "丿",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Lí",
+    "pinyinArray": [
+      "Li"
+    ]
+  },
+  "犬": {
+    "structure": "犬",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "㇏",
+      "丶"
+    ],
+    "pinyin": "Quǎn",
+    "pinyinArray": [
+      "Quan"
+    ]
+  },
+  "犯": {
+    "structure": "⿰犭㔾",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丿",
+      "㇁",
+      "丿",
+      "𠃌",
+      "乚"
+    ],
+    "pinyin": "Fàn",
+    "pinyinArray": [
+      "Fan"
+    ]
+  },
+  "状": {
+    "structure": "⿰丬犬",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "丨",
+      "一",
+      "丿",
+      "㇏",
+      "丶"
+    ],
+    "pinyin": "Zhuàng",
+    "pinyinArray": [
+      "Zhuang"
+    ]
+  },
+  "犹": {
+    "structure": "⿰犭尤",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丿",
+      "㇁",
+      "丿",
+      "一",
+      "丿",
+      "乚",
+      "丶"
+    ],
+    "pinyin": "Yóu",
+    "pinyinArray": [
+      "You"
+    ]
+  },
+  "狂": {
+    "structure": "⿰犭王",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丿",
+      "㇁",
+      "丿",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Kuáng",
+    "pinyinArray": [
+      "Kuang"
+    ]
+  },
+  "狈": {
+    "structure": "⿰犭贝",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丿",
+      "㇁",
+      "丿",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Bèi",
+    "pinyinArray": [
+      "Bei"
+    ]
+  },
+  "狐": {
+    "structure": "⿰犭瓜",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丿",
+      "㇁",
+      "丿",
+      "丿",
+      "丿",
+      "𠄌",
+      "丶",
+      "㇏"
+    ],
+    "pinyin": "Hú",
+    "pinyinArray": [
+      "Hu"
+    ]
+  },
+  "狗": {
+    "structure": "⿰犭句",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丿",
+      "㇁",
+      "丿",
+      "丿",
+      "𠃌",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Gǒu",
+    "pinyinArray": [
+      "Gou"
+    ]
+  },
+  "狞": {
+    "structure": "⿰犭宁",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丿",
+      "㇁",
+      "丿",
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "一",
+      "亅"
+    ],
+    "pinyin": "Níng",
+    "pinyinArray": [
+      "Ning"
+    ]
+  },
+  "狠": {
+    "structure": "⿰犭艮",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "㇁",
+      "丿",
+      "𠃍",
+      "一",
+      "一",
+      "𠄌",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Hěn",
+    "pinyinArray": [
+      "Hen"
+    ]
+  },
+  "狡": {
+    "structure": "⿰犭交",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "㇁",
+      "丿",
+      "丶",
+      "一",
+      "丿",
+      "丶",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Jiǎo",
+    "pinyinArray": [
+      "Jiao"
+    ]
+  },
+  "独": {
+    "structure": "⿰犭虫",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "㇁",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丶"
+    ],
+    "pinyin": "Dú",
+    "pinyinArray": [
+      "Du"
+    ]
+  },
+  "狭": {
+    "structure": "⿰犭夹",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "㇁",
+      "丿",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Xiá",
+    "pinyinArray": [
+      "Xia"
+    ]
+  },
+  "狮": {
+    "structure": "⿰犭师",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "㇁",
+      "丿",
+      "丨",
+      "丿",
+      "一",
+      "丨",
+      "𠃌",
+      "丨"
+    ],
+    "pinyin": "Shī",
+    "pinyinArray": [
+      "Shi"
+    ]
+  },
+  "狰": {
+    "structure": "⿰犭争",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "㇁",
+      "丿",
+      "丿",
+      "㇇|乛",
+      "𠃍",
+      "一",
+      "一",
+      "亅"
+    ],
+    "pinyin": "Zhēng",
+    "pinyinArray": [
+      "Zheng"
+    ]
+  },
+  "狱": {
+    "structure": "⿲犭讠犬",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "㇁",
+      "丿",
+      "丶",
+      "㇊",
+      "一",
+      "丿",
+      "㇏",
+      "丶"
+    ],
+    "pinyin": "Yù",
+    "pinyinArray": [
+      "Yu"
+    ]
+  },
+  "狸": {
+    "structure": "⿰犭里",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "㇁",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "一"
+    ],
+    "pinyin": "Lí",
+    "pinyinArray": [
+      "Li"
+    ]
+  },
+  "狼": {
+    "structure": "⿰犭良",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "㇁",
+      "丿",
+      "丶",
+      "𠃍",
+      "一",
+      "一",
+      "𠄌",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Láng",
+    "pinyinArray": [
+      "Lang"
+    ]
+  },
+  "猎": {
+    "structure": "⿰犭昔",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丿",
+      "㇁",
+      "丿",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Liè",
+    "pinyinArray": [
+      "Lie"
+    ]
+  },
+  "猖": {
+    "structure": "⿰犭昌",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丿",
+      "㇁",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Chāng",
+    "pinyinArray": [
+      "Chang"
+    ]
+  },
+  "猛": {
+    "structure": "⿰犭孟",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丿",
+      "㇁",
+      "丿",
+      "㇇|乛",
+      "亅",
+      "一",
+      "丨",
+      "𠃍",
+      "丨",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Měng",
+    "pinyinArray": [
+      "Meng"
+    ]
+  },
+  "猜": {
+    "structure": "⿰犭青[GT]",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丿",
+      "㇁",
+      "丿",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "𠃌",
+      "一",
+      "一"
+    ],
+    "pinyin": "Cāi",
+    "pinyinArray": [
+      "Cai"
+    ]
+  },
+  "猩": {
+    "structure": "⿰犭星",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丿",
+      "㇁",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Xīng",
+    "pinyinArray": [
+      "Xing"
+    ]
+  },
+  "猪": {
+    "structure": "⿰犭者",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丿",
+      "㇁",
+      "丿",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Zhū",
+    "pinyinArray": [
+      "Zhu"
+    ]
+  },
+  "猫": {
+    "structure": "⿰犭苗",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丿",
+      "㇁",
+      "丿",
+      "一",
+      "丨",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Māo",
+    "pinyinArray": [
+      "Mao"
+    ]
+  },
+  "猬": {
+    "structure": "⿰犭胃",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丿",
+      "㇁",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "𠃌",
+      "一",
+      "一"
+    ],
+    "pinyin": "Wèi",
+    "pinyinArray": [
+      "Wei"
+    ]
+  },
+  "献": {
+    "structure": "⿰南犬",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "𠃌",
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "㇏",
+      "丶"
+    ],
+    "pinyin": "Xiàn",
+    "pinyinArray": [
+      "Xian"
+    ]
+  },
+  "猴": {
+    "structure": "⿰犭侯",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丿",
+      "㇁",
+      "丿",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "一",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Hóu",
+    "pinyinArray": [
+      "Hou"
+    ]
+  },
+  "猾": {
+    "structure": "⿰犭骨",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丿",
+      "㇁",
+      "丿",
+      "丨",
+      "𠃍",
+      "𠃍",
+      "㇀",
+      "㇇|乛",
+      "丨",
+      "𠃌",
+      "一",
+      "一"
+    ],
+    "pinyin": "Huá",
+    "pinyinArray": [
+      "Hua"
+    ]
+  },
+  "猿": {
+    "structure": "⿰犭袁",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丿",
+      "㇁",
+      "丿",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "𠄌",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Yuán",
+    "pinyinArray": [
+      "Yuan"
+    ]
+  },
+  "玄": {
+    "structure": "⿱亠幺",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "𠃋",
+      "𠃋",
+      "丶"
+    ],
+    "pinyin": "Xuán",
+    "pinyinArray": [
+      "Xuan"
+    ]
+  },
+  "率": {
+    "structure": "⿱⿻玄⿱丷八十",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "𠃋",
+      "𠃋",
+      "丶",
+      "丶",
+      "㇀",
+      "丿",
+      "丶",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Shuài",
+    "pinyinArray": [
+      "Shuai"
+    ]
+  },
+  "玉": {
+    "structure": "⿷王丶",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "一",
+      "一",
+      "丨",
+      "一",
+      "丶"
+    ],
+    "pinyin": "Yù",
+    "pinyinArray": [
+      "Yu"
+    ]
+  },
+  "王": {
+    "structure": "⿱一土",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Wáng",
+    "pinyinArray": [
+      "Wang"
+    ]
+  },
+  "玖": {
+    "structure": "⿰王久",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "一",
+      "丨",
+      "㇀",
+      "丿",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Jiǔ",
+    "pinyinArray": [
+      "Jiu"
+    ]
+  },
+  "玛": {
+    "structure": "⿰王马",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "一",
+      "丨",
+      "㇀",
+      "𠃍",
+      "㇉",
+      "一"
+    ],
+    "pinyin": "Mǎ",
+    "pinyinArray": [
+      "Ma"
+    ]
+  },
+  "玩": {
+    "structure": "⿰王元",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "一",
+      "丨",
+      "㇀",
+      "一",
+      "一",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Wán",
+    "pinyinArray": [
+      "Wan"
+    ]
+  },
+  "玫": {
+    "structure": "⿰王攵",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "一",
+      "丨",
+      "㇀",
+      "丿",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Méi",
+    "pinyinArray": [
+      "Mei"
+    ]
+  },
+  "环": {
+    "structure": "⿰王不",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "一",
+      "丨",
+      "㇀",
+      "一",
+      "丿",
+      "丨",
+      "丶"
+    ],
+    "pinyin": "Huán",
+    "pinyinArray": [
+      "Huan"
+    ]
+  },
+  "现": {
+    "structure": "⿰王见",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "一",
+      "丨",
+      "㇀",
+      "丨",
+      "𠃍",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Xiàn",
+    "pinyinArray": [
+      "Xian"
+    ]
+  },
+  "玲": {
+    "structure": "⿰王令",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "一",
+      "丨",
+      "㇀",
+      "丿",
+      "㇏",
+      "丶",
+      "㇇|乛",
+      "丶"
+    ],
+    "pinyin": "Líng",
+    "pinyinArray": [
+      "Ling"
+    ]
+  },
+  "玷": {
+    "structure": "⿰王占",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "一",
+      "丨",
+      "㇀",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Diàn",
+    "pinyinArray": [
+      "Dian"
+    ]
+  },
+  "玻": {
+    "structure": "⿰王皮",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "一",
+      "丨",
+      "㇀",
+      "㇇|乛",
+      "丿",
+      "丨",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Bō",
+    "pinyinArray": [
+      "Bo"
+    ]
+  },
+  "珊": {
+    "structure": "⿰王册[G]",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "一",
+      "丨",
+      "㇀",
+      "丿",
+      "𠃌",
+      "丿",
+      "𠃌",
+      "一"
+    ],
+    "pinyin": "Shān",
+    "pinyinArray": [
+      "Shan"
+    ]
+  },
+  "珍": {
+    "structure": "⿰王㐱",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "一",
+      "丨",
+      "㇀",
+      "丿",
+      "㇏",
+      "丿",
+      "丿",
+      "丿"
+    ],
+    "pinyin": "Zhēn",
+    "pinyinArray": [
+      "Zhen"
+    ]
+  },
+  "珠": {
+    "structure": "⿰王朱",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "一",
+      "丨",
+      "㇀",
+      "丿",
+      "一",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Zhū",
+    "pinyinArray": [
+      "Zhu"
+    ]
+  },
+  "班": {
+    "structure": "⿲王②王",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "一",
+      "丨",
+      "㇀",
+      "㇀",
+      "丿",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Bān",
+    "pinyinArray": [
+      "Ban"
+    ]
+  },
+  "球": {
+    "structure": "⿰王求",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "一",
+      "丨",
+      "㇀",
+      "一",
+      "亅",
+      "丶",
+      "㇀",
+      "丿",
+      "㇏",
+      "丶"
+    ],
+    "pinyin": "Qiú",
+    "pinyinArray": [
+      "Qiu"
+    ]
+  },
+  "琅": {
+    "structure": "⿰王良",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "一",
+      "丨",
+      "㇀",
+      "丶",
+      "𠃍",
+      "一",
+      "一",
+      "𠄌",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Láng",
+    "pinyinArray": [
+      "Lang"
+    ]
+  },
+  "理": {
+    "structure": "⿰王里",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "一",
+      "丨",
+      "㇀",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "一"
+    ],
+    "pinyin": "Lǐ",
+    "pinyinArray": [
+      "Li"
+    ]
+  },
+  "琉": {
+    "structure": "⿰王㐬",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "一",
+      "丨",
+      "㇀",
+      "丶",
+      "一",
+      "𠃋",
+      "丶",
+      "丿",
+      "丨",
+      "乚"
+    ],
+    "pinyin": "Liú",
+    "pinyinArray": [
+      "Liu"
+    ]
+  },
+  "琐": {
+    "structure": "⿰王𭕆",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "一",
+      "丨",
+      "㇀",
+      "丨",
+      "丶",
+      "丿",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Suǒ",
+    "pinyinArray": [
+      "Suo"
+    ]
+  },
+  "琢": {
+    "structure": "⿰王豖[GTKV]",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "一",
+      "丨",
+      "㇀",
+      "一",
+      "丿",
+      "㇁",
+      "丿",
+      "丿",
+      "丶",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Zhuó",
+    "pinyinArray": [
+      "Zhuo"
+    ]
+  },
+  "琳": {
+    "structure": "⿰王林",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "一",
+      "丨",
+      "㇀",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Lín",
+    "pinyinArray": [
+      "Lin"
+    ]
+  },
+  "琴": {
+    "structure": "⿱玨今",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "一",
+      "丨",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "㇏",
+      "丶",
+      "㇇|乛"
+    ],
+    "pinyin": "Qín",
+    "pinyinArray": [
+      "Qin"
+    ]
+  },
+  "琼": {
+    "structure": "⿰王京",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "一",
+      "丨",
+      "㇀",
+      "丶",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "亅",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Qióng",
+    "pinyinArray": [
+      "Qiong"
+    ]
+  },
+  "瑞": {
+    "structure": "⿰王耑",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "一",
+      "一",
+      "丨",
+      "㇀",
+      "丨",
+      "㇄",
+      "丨",
+      "一",
+      "丿",
+      "丨",
+      "𠃌",
+      "丨",
+      "丨"
+    ],
+    "pinyin": "Ruì",
+    "pinyinArray": [
+      "Rui"
+    ]
+  },
+  "瑟": {
+    "structure": "⿱玨必",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "一",
+      "一",
+      "丨",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "㇀",
+      "㇂|㇃",
+      "丶",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Sè",
+    "pinyinArray": [
+      "Se"
+    ]
+  },
+  "瑰": {
+    "structure": "⿰王鬼",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "一",
+      "一",
+      "丨",
+      "㇀",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "乚",
+      "𠃋",
+      "丶"
+    ],
+    "pinyin": "Guī",
+    "pinyinArray": [
+      "Gui"
+    ]
+  },
+  "璃": {
+    "structure": "⿰王离",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "一",
+      "一",
+      "丨",
+      "㇀",
+      "丶",
+      "一",
+      "丿",
+      "丶",
+      "㇄",
+      "丨",
+      "丨",
+      "𠃌",
+      "𠃋",
+      "丶"
+    ],
+    "pinyin": "Lí",
+    "pinyinArray": [
+      "Li"
+    ]
+  },
+  "璧": {
+    "structure": "⿱辟玉",
+    "strokeCount": 18,
+    "strokeShapes": [
+      "𠃍",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "丶"
+    ],
+    "pinyin": "Bì",
+    "pinyinArray": [
+      "Bi"
+    ]
+  },
+  "瓜": {
+    "structure": "瓜",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丿",
+      "丿",
+      "𠄌",
+      "丶",
+      "㇏"
+    ],
+    "pinyin": "Guā",
+    "pinyinArray": [
+      "Gua"
+    ]
+  },
+  "瓢": {
+    "structure": "⿰票瓜",
+    "strokeCount": 16,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "𠃍",
+      "丨",
+      "丨",
+      "一",
+      "一",
+      "一",
+      "亅",
+      "丿",
+      "丶",
+      "丿",
+      "丿",
+      "𠄌",
+      "丶",
+      "㇏"
+    ],
+    "pinyin": "Piáo",
+    "pinyinArray": [
+      "Piao"
+    ]
+  },
+  "瓣": {
+    "structure": "⿲辛瓜辛",
+    "strokeCount": 19,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "丿",
+      "丿",
+      "丿",
+      "𠄌",
+      "丶",
+      "㇏",
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Bàn",
+    "pinyinArray": [
+      "Ban"
+    ]
+  },
+  "瓤": {
+    "structure": "⿰襄瓜",
+    "strokeCount": 22,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丿",
+      "𠄌",
+      "丿",
+      "丶",
+      "丿",
+      "丿",
+      "𠄌",
+      "丶",
+      "㇏"
+    ],
+    "pinyin": "Ráng",
+    "pinyinArray": [
+      "Rang"
+    ]
+  },
+  "瓦": {
+    "structure": "瓦",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "一",
+      "𠄌",
+      "⺄",
+      "丶"
+    ],
+    "pinyin": "Wà",
+    "pinyinArray": [
+      "Wa"
+    ]
+  },
+  "瓮": {
+    "structure": "⿱公瓦",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丿",
+      "㇏",
+      "𠃋",
+      "丶",
+      "一",
+      "𠄌",
+      "⺄",
+      "丶"
+    ],
+    "pinyin": "Wèng",
+    "pinyinArray": [
+      "Weng"
+    ]
+  },
+  "瓶": {
+    "structure": "⿰并瓦",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "丿",
+      "丨",
+      "一",
+      "𠄌",
+      "⺄",
+      "丶"
+    ],
+    "pinyin": "Píng",
+    "pinyinArray": [
+      "Ping"
+    ]
+  },
+  "瓷": {
+    "structure": "⿱次瓦",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "丿",
+      "㇇|乛",
+      "丿",
+      "㇏",
+      "一",
+      "𠄌",
+      "⺄",
+      "丶"
+    ],
+    "pinyin": "Cí",
+    "pinyinArray": [
+      "Ci"
+    ]
+  },
+  "甘": {
+    "structure": "甘",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "一"
+    ],
+    "pinyin": "Gān",
+    "pinyinArray": [
+      "Gan"
+    ]
+  },
+  "甚": {
+    "structure": "⿱⑤匹",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "丶",
+      "㇄"
+    ],
+    "pinyin": "Shén",
+    "pinyinArray": [
+      "Shen"
+    ]
+  },
+  "甜": {
+    "structure": "⿰舌甘",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "一"
+    ],
+    "pinyin": "Tián",
+    "pinyinArray": [
+      "Tian"
+    ]
+  },
+  "生": {
+    "structure": "生",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Shēng",
+    "pinyinArray": [
+      "Sheng"
+    ]
+  },
+  "甥": {
+    "structure": "⿰生男",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "丨",
+      "㇀",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "𠃌",
+      "丿"
+    ],
+    "pinyin": "Shēng",
+    "pinyinArray": [
+      "Sheng"
+    ]
+  },
+  "用": {
+    "structure": "⿵冂⿻二丨",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Yòng",
+    "pinyinArray": [
+      "Yong"
+    ]
+  },
+  "甩": {
+    "structure": "⿵冂⿻二乚",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "乚"
+    ],
+    "pinyin": "Shuǎi",
+    "pinyinArray": [
+      "Shuai"
+    ]
+  },
+  "甫": {
+    "structure": "⿺⿻十月丶",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "𠃌",
+      "一",
+      "一",
+      "丨",
+      "丶"
+    ],
+    "pinyin": "Fǔ",
+    "pinyinArray": [
+      "Fu"
+    ]
+  },
+  "田": {
+    "structure": "田",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Tián",
+    "pinyinArray": [
+      "Tian"
+    ]
+  },
+  "由": {
+    "structure": "由",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Yóu",
+    "pinyinArray": [
+      "You"
+    ]
+  },
+  "甲": {
+    "structure": "甲",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Jiǎ",
+    "pinyinArray": [
+      "Jia"
+    ]
+  },
+  "申": {
+    "structure": "申",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Shēn",
+    "pinyinArray": [
+      "Shen"
+    ]
+  },
+  "电": {
+    "structure": "⿻日乚",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "乚"
+    ],
+    "pinyin": "Diàn",
+    "pinyinArray": [
+      "Dian"
+    ]
+  },
+  "男": {
+    "structure": "⿱田力",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "𠃌",
+      "丿"
+    ],
+    "pinyin": "Nán",
+    "pinyinArray": [
+      "Nan"
+    ]
+  },
+  "甸": {
+    "structure": "⿹勹田",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Diàn",
+    "pinyinArray": [
+      "Dian"
+    ]
+  },
+  "画": {
+    "structure": "⿱一⿶凵田[GT]",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "㇄",
+      "丨"
+    ],
+    "pinyin": "Huà",
+    "pinyinArray": [
+      "Hua"
+    ]
+  },
+  "畅": {
+    "structure": "⿰申𠃓",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "𠄎|㇌",
+      "丿",
+      "丿"
+    ],
+    "pinyin": "Chàng",
+    "pinyinArray": [
+      "Chang"
+    ]
+  },
+  "界": {
+    "structure": "⿱田介",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "㇏",
+      "丿",
+      "丨"
+    ],
+    "pinyin": "Jiè",
+    "pinyinArray": [
+      "Jie"
+    ]
+  },
+  "畏": {
+    "structure": "⿳田一⿰𠄌⿺乀丿",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "一",
+      "𠄌",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Wèi",
+    "pinyinArray": [
+      "Wei"
+    ]
+  },
+  "畔": {
+    "structure": "⿰田半",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Pàn",
+    "pinyinArray": [
+      "Pan"
+    ]
+  },
+  "留": {
+    "structure": "⿱⿰③刀田",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "𠄌",
+      "丶",
+      "𠃌",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Liú",
+    "pinyinArray": [
+      "Liu"
+    ]
+  },
+  "畜": {
+    "structure": "⿱玄田",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "𠃋",
+      "𠃋",
+      "丶",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Chù",
+    "pinyinArray": [
+      "Chu"
+    ]
+  },
+  "略": {
+    "structure": "⿰田各",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "㇇|乛",
+      "㇏",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Lüè",
+    "pinyinArray": [
+      "Lüe"
+    ]
+  },
+  "畦": {
+    "structure": "⿰田圭",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Qí",
+    "pinyinArray": [
+      "Qi"
+    ]
+  },
+  "番": {
+    "structure": "⿱釆田",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丿",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "㇏",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Fān",
+    "pinyinArray": [
+      "Fan"
+    ]
+  },
+  "畴": {
+    "structure": "⿰田寿",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "一",
+      "亅",
+      "丶"
+    ],
+    "pinyin": "Chóu",
+    "pinyinArray": [
+      "Chou"
+    ]
+  },
+  "畸": {
+    "structure": "⿰田奇",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "一",
+      "丿",
+      "丶",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "亅"
+    ],
+    "pinyin": "Jī",
+    "pinyinArray": [
+      "Ji"
+    ]
+  },
+  "疆": {
+    "structure": "⿰⿹弓土畺",
+    "strokeCount": 19,
+    "strokeShapes": [
+      "𠃍",
+      "一",
+      "㇉",
+      "一",
+      "丨",
+      "㇀",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "一"
+    ],
+    "pinyin": "Jiāng",
+    "pinyinArray": [
+      "Jiang"
+    ]
+  },
+  "疏": {
+    "structure": "⿰𤴔㐬",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "㇇|乛",
+      "丨",
+      "一",
+      "丨",
+      "㇀",
+      "丶",
+      "一",
+      "𠃋",
+      "丶",
+      "丿",
+      "丨",
+      "乚"
+    ],
+    "pinyin": "Shū",
+    "pinyinArray": [
+      "Shu"
+    ]
+  },
+  "疑": {
+    "structure": "⿰𠤕⿱龴疋",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "丿",
+      "乚",
+      "丿",
+      "一",
+      "一",
+      "丿",
+      "丶",
+      "㇇|乛",
+      "丶",
+      "㇇|乛",
+      "丨",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Yí",
+    "pinyinArray": [
+      "Yi"
+    ]
+  },
+  "疗": {
+    "structure": "⿸疒了",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "亅"
+    ],
+    "pinyin": "Liáo",
+    "pinyinArray": [
+      "Liao"
+    ]
+  },
+  "疙": {
+    "structure": "⿸疒乞",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "丶",
+      "㇀",
+      "丿",
+      "一",
+      "⺄"
+    ],
+    "pinyin": "Gē",
+    "pinyinArray": [
+      "Ge"
+    ]
+  },
+  "疚": {
+    "structure": "⿸疒久",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "丶",
+      "㇀",
+      "丿",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Jiù",
+    "pinyinArray": [
+      "Jiu"
+    ]
+  },
+  "疟": {
+    "structure": "⿸疒⿻匚一",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "丶",
+      "㇀",
+      "一",
+      "㇄",
+      "一"
+    ],
+    "pinyin": "Nüè",
+    "pinyinArray": [
+      "Nüe"
+    ]
+  },
+  "疤": {
+    "structure": "⿸疒巴",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "丶",
+      "㇀",
+      "𠃍",
+      "丨",
+      "一",
+      "乚"
+    ],
+    "pinyin": "Bā",
+    "pinyinArray": [
+      "Ba"
+    ]
+  },
+  "疫": {
+    "structure": "⿸疒殳",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "丶",
+      "㇀",
+      "丿",
+      "㇅|㇍",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Yì",
+    "pinyinArray": [
+      "Yi"
+    ]
+  },
+  "疮": {
+    "structure": "⿸疒仓",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "丶",
+      "㇀",
+      "丿",
+      "㇏",
+      "𠃌",
+      "乚"
+    ],
+    "pinyin": "Chuāng",
+    "pinyinArray": [
+      "Chuang"
+    ]
+  },
+  "疯": {
+    "structure": "⿸疒风",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "丶",
+      "㇀",
+      "丿",
+      "⺄",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Fēng",
+    "pinyinArray": [
+      "Feng"
+    ]
+  },
+  "疲": {
+    "structure": "⿸疒皮",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "丿",
+      "丨",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Pí",
+    "pinyinArray": [
+      "Pi"
+    ]
+  },
+  "疹": {
+    "structure": "⿸疒㐱",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "丶",
+      "㇀",
+      "丿",
+      "㇏",
+      "丿",
+      "丿",
+      "丿"
+    ],
+    "pinyin": "Zhěn",
+    "pinyinArray": [
+      "Zhen"
+    ]
+  },
+  "疼": {
+    "structure": "⿸疒冬",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "丶",
+      "㇀",
+      "丿",
+      "㇇|乛",
+      "㇏",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Téng",
+    "pinyinArray": [
+      "Teng"
+    ]
+  },
+  "疾": {
+    "structure": "⿸疒矢",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "丶",
+      "㇀",
+      "丿",
+      "一",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Jí",
+    "pinyinArray": [
+      "Ji"
+    ]
+  },
+  "病": {
+    "structure": "⿸疒丙",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "丶",
+      "㇀",
+      "一",
+      "丨",
+      "𠃌",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Bìng",
+    "pinyinArray": [
+      "Bing"
+    ]
+  },
+  "症": {
+    "structure": "⿸疒正",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "丶",
+      "㇀",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Zhèng",
+    "pinyinArray": [
+      "Zheng"
+    ]
+  },
+  "痊": {
+    "structure": "⿸疒全",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "丶",
+      "㇀",
+      "丿",
+      "㇏",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Quán",
+    "pinyinArray": [
+      "Quan"
+    ]
+  },
+  "痒": {
+    "structure": "⿸疒羊",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "丶",
+      "㇀",
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Yǎng",
+    "pinyinArray": [
+      "Yang"
+    ]
+  },
+  "痕": {
+    "structure": "⿸疒艮",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "丶",
+      "㇀",
+      "𠃍",
+      "一",
+      "一",
+      "𠄌",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Hén",
+    "pinyinArray": [
+      "Hen"
+    ]
+  },
+  "痘": {
+    "structure": "⿸疒豆",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "丶",
+      "㇀",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丶",
+      "丿",
+      "一"
+    ],
+    "pinyin": "Dòu",
+    "pinyinArray": [
+      "Dou"
+    ]
+  },
+  "痛": {
+    "structure": "⿸疒甬",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "丶",
+      "丨",
+      "𠃌",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Tòng",
+    "pinyinArray": [
+      "Tong"
+    ]
+  },
+  "痢": {
+    "structure": "⿸疒利",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "丶",
+      "㇀",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丨",
+      "亅"
+    ],
+    "pinyin": "Lì",
+    "pinyinArray": [
+      "Li"
+    ]
+  },
+  "痪": {
+    "structure": "⿸疒奂",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "丶",
+      "㇀",
+      "丿",
+      "㇇|乛",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Huàn",
+    "pinyinArray": [
+      "Huan"
+    ]
+  },
+  "痰": {
+    "structure": "⿸疒炎",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "丶",
+      "㇀",
+      "㇀",
+      "丿",
+      "丿",
+      "丶",
+      "㇀",
+      "丿",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Tán",
+    "pinyinArray": [
+      "Tan"
+    ]
+  },
+  "痴": {
+    "structure": "⿸疒知",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "丶",
+      "㇀",
+      "丿",
+      "一",
+      "一",
+      "丿",
+      "丶",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Chī",
+    "pinyinArray": [
+      "Chi"
+    ]
+  },
+  "痹": {
+    "structure": "⿸疒畀",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "丶",
+      "㇀",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "一",
+      "丿",
+      "丨"
+    ],
+    "pinyin": "Bì",
+    "pinyinArray": [
+      "Bi"
+    ]
+  },
+  "瘟": {
+    "structure": "⿸疒昷[G]",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "丶",
+      "㇀",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "𠃍",
+      "丨",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Wēn",
+    "pinyinArray": [
+      "Wen"
+    ]
+  },
+  "瘤": {
+    "structure": "⿸疒留",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "丶",
+      "㇀",
+      "丿",
+      "𠄌",
+      "丶",
+      "𠃌",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Liú",
+    "pinyinArray": [
+      "Liu"
+    ]
+  },
+  "瘦": {
+    "structure": "⿸疒叟",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "丶",
+      "㇀",
+      "丿",
+      "丨",
+      "一",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Shòu",
+    "pinyinArray": [
+      "Shou"
+    ]
+  },
+  "瘩": {
+    "structure": "⿸疒荅",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "丶",
+      "㇀",
+      "一",
+      "丨",
+      "丨",
+      "丿",
+      "㇏",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Dá",
+    "pinyinArray": [
+      "Da"
+    ]
+  },
+  "瘪": {
+    "structure": "⿸疒⿱自仓",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "丶",
+      "㇀",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "㇏",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Biě",
+    "pinyinArray": [
+      "Bie"
+    ]
+  },
+  "瘫": {
+    "structure": "⿸疒难",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "丶",
+      "丿",
+      "丨",
+      "丶",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Tān",
+    "pinyinArray": [
+      "Tan"
+    ]
+  },
+  "瘸": {
+    "structure": "⿸疒𦙲",
+    "strokeCount": 16,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "丶",
+      "㇀",
+      "𠃌",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃌",
+      "丿",
+      "丶",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Qué",
+    "pinyinArray": [
+      "Que"
+    ]
+  },
+  "瘾": {
+    "structure": "⿸疒隐",
+    "strokeCount": 16,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "丶",
+      "㇀",
+      "𠄎|㇌",
+      "丨",
+      "丿",
+      "㇇|乛",
+      "𠃍",
+      "一",
+      "一",
+      "㇀",
+      "㇂|㇃",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Yǐn",
+    "pinyinArray": [
+      "Yin"
+    ]
+  },
+  "癌": {
+    "structure": "⿸疒嵒",
+    "strokeCount": 17,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "丶",
+      "㇀",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "㇄",
+      "丨"
+    ],
+    "pinyin": "Ái",
+    "pinyinArray": [
+      "Ai"
+    ]
+  },
+  "癞": {
+    "structure": "⿸疒赖",
+    "strokeCount": 18,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "丶",
+      "㇀",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丿",
+      "㇇|乛",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Là",
+    "pinyinArray": [
+      "La"
+    ]
+  },
+  "癣": {
+    "structure": "⿸疒鲜",
+    "strokeCount": 19,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "丶",
+      "㇀",
+      "丿",
+      "㇇|乛",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "㇀",
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Xuǎn",
+    "pinyinArray": [
+      "Xuan"
+    ]
+  },
+  "登": {
+    "structure": "⿱癶豆",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "㇇|乛",
+      "丶",
+      "丿",
+      "丿",
+      "㇏",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丶",
+      "丿",
+      "一"
+    ],
+    "pinyin": "Dēng",
+    "pinyinArray": [
+      "Deng"
+    ]
+  },
+  "白": {
+    "structure": "白",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Bái",
+    "pinyinArray": [
+      "Bai"
+    ]
+  },
+  "百": {
+    "structure": "⿱一白",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Bǎi",
+    "pinyinArray": [
+      "Bai"
+    ]
+  },
+  "皂": {
+    "structure": "⿱白七",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "乚"
+    ],
+    "pinyin": "Zào",
+    "pinyinArray": [
+      "Zao"
+    ]
+  },
+  "的": {
+    "structure": "⿰白勺",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "𠃌",
+      "丶"
+    ],
+    "pinyin": "De",
+    "pinyinArray": [
+      "De"
+    ]
+  },
+  "皆": {
+    "structure": "⿱比白",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "𠄌",
+      "丿",
+      "乚",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Jiē",
+    "pinyinArray": [
+      "Jie"
+    ]
+  },
+  "皇": {
+    "structure": "⿱白王",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Huáng",
+    "pinyinArray": [
+      "Huang"
+    ]
+  },
+  "皮": {
+    "structure": "皮",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "㇇|乛",
+      "丿",
+      "丨",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Pí",
+    "pinyinArray": [
+      "Pi"
+    ]
+  },
+  "皱": {
+    "structure": "⿰刍皮",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "㇇|乛",
+      "𠃍",
+      "一",
+      "一",
+      "㇇|乛",
+      "丿",
+      "丨",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Zhòu",
+    "pinyinArray": [
+      "Zhou"
+    ]
+  },
+  "皿": {
+    "structure": "皿",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "丨",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Mǐn",
+    "pinyinArray": [
+      "Min"
+    ]
+  },
+  "盅": {
+    "structure": "⿱中皿",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "丨",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Zhōng",
+    "pinyinArray": [
+      "Zhong"
+    ]
+  },
+  "盆": {
+    "structure": "⿱分皿",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "㇏",
+      "𠃌",
+      "丿",
+      "丨",
+      "𠃍",
+      "丨",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Pén",
+    "pinyinArray": [
+      "Pen"
+    ]
+  },
+  "盈": {
+    "structure": "⿱夃皿",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "𠄎|㇌",
+      "丿",
+      "㇇|乛",
+      "丶",
+      "丨",
+      "𠃍",
+      "丨",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Yíng",
+    "pinyinArray": [
+      "Ying"
+    ]
+  },
+  "益": {
+    "structure": "⿱⿱䒑八皿",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "丿",
+      "一",
+      "丿",
+      "丶",
+      "丨",
+      "𠃍",
+      "丨",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Yì",
+    "pinyinArray": [
+      "Yi"
+    ]
+  },
+  "盏": {
+    "structure": "⿱戋皿",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "一",
+      "㇂|㇃",
+      "丿",
+      "丶",
+      "丨",
+      "𠃍",
+      "丨",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Zhǎn",
+    "pinyinArray": [
+      "Zhan"
+    ]
+  },
+  "盐": {
+    "structure": "⿱圤皿",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "㇀",
+      "丨",
+      "丶",
+      "丨",
+      "𠃍",
+      "丨",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Yán",
+    "pinyinArray": [
+      "Yan"
+    ]
+  },
+  "监": {
+    "structure": "⿱⿰〢⿱𠂉丶皿",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丨",
+      "丨",
+      "丿",
+      "一",
+      "丶",
+      "丨",
+      "𠃍",
+      "丨",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Jiàn",
+    "pinyinArray": [
+      "Jian"
+    ]
+  },
+  "盒": {
+    "structure": "⿱合皿",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丿",
+      "㇏",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃍",
+      "丨",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Hé",
+    "pinyinArray": [
+      "He"
+    ]
+  },
+  "盔": {
+    "structure": "⿱灰皿",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "㇀",
+      "丿",
+      "丿",
+      "㇏",
+      "丨",
+      "𠃍",
+      "丨",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Kuī",
+    "pinyinArray": [
+      "Kui"
+    ]
+  },
+  "盖": {
+    "structure": "⿱𦍌皿",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "丨",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Gě",
+    "pinyinArray": [
+      "Ge"
+    ]
+  },
+  "盗": {
+    "structure": "⿱次皿",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "丿",
+      "㇇|乛",
+      "丿",
+      "㇏",
+      "丨",
+      "𠃍",
+      "丨",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Dào",
+    "pinyinArray": [
+      "Dao"
+    ]
+  },
+  "盘": {
+    "structure": "⿱舟皿",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丿",
+      "丿",
+      "𠃌",
+      "丶",
+      "一",
+      "丶",
+      "丨",
+      "𠃍",
+      "丨",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Pán",
+    "pinyinArray": [
+      "Pan"
+    ]
+  },
+  "盛": {
+    "structure": "⿱成皿",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "𠃌",
+      "㇂|㇃",
+      "丿",
+      "丶",
+      "丨",
+      "𠃍",
+      "丨",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Shèng",
+    "pinyinArray": [
+      "Sheng"
+    ]
+  },
+  "盟": {
+    "structure": "⿱明皿",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "丨",
+      "𠃍",
+      "丨",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Méng",
+    "pinyinArray": [
+      "Meng"
+    ]
+  },
+  "目": {
+    "structure": "目",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一"
+    ],
+    "pinyin": "Mù",
+    "pinyinArray": [
+      "Mu"
+    ]
+  },
+  "盯": {
+    "structure": "⿰目丁",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "一",
+      "亅"
+    ],
+    "pinyin": "Dīng",
+    "pinyinArray": [
+      "Ding"
+    ]
+  },
+  "盲": {
+    "structure": "⿱亡目",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "㇄",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一"
+    ],
+    "pinyin": "Máng",
+    "pinyinArray": [
+      "Mang"
+    ]
+  },
+  "直": {
+    "structure": "⿱十⿴且一[GT]",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "一"
+    ],
+    "pinyin": "Zhí",
+    "pinyinArray": [
+      "Zhi"
+    ]
+  },
+  "相": {
+    "structure": "⿰木目",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一"
+    ],
+    "pinyin": "Xiàng",
+    "pinyinArray": [
+      "Xiang"
+    ]
+  },
+  "盹": {
+    "structure": "⿰目屯",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "一",
+      "㇄",
+      "丨",
+      "乚"
+    ],
+    "pinyin": "Dǔn",
+    "pinyinArray": [
+      "Dun"
+    ]
+  },
+  "盼": {
+    "structure": "⿰目分",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "㇏",
+      "𠃌",
+      "丿"
+    ],
+    "pinyin": "Pàn",
+    "pinyinArray": [
+      "Pan"
+    ]
+  },
+  "盾": {
+    "structure": "⿸𠂆𥃭",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "丿",
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一"
+    ],
+    "pinyin": "Dùn",
+    "pinyinArray": [
+      "Dun"
+    ]
+  },
+  "省": {
+    "structure": "⿱少目",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丨",
+      "丿",
+      "丶",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一"
+    ],
+    "pinyin": "Shěng",
+    "pinyinArray": [
+      "Sheng"
+    ]
+  },
+  "眉": {
+    "structure": "⿸𠃜目",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "𠃍",
+      "丨",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一"
+    ],
+    "pinyin": "Méi",
+    "pinyinArray": [
+      "Mei"
+    ]
+  },
+  "看": {
+    "structure": "⿱龵目",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一"
+    ],
+    "pinyin": "Kàn",
+    "pinyinArray": [
+      "Kan"
+    ]
+  },
+  "真": {
+    "structure": "⿱十具",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Zhēn",
+    "pinyinArray": [
+      "Zhen"
+    ]
+  },
+  "眠": {
+    "structure": "⿰目民",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "𠃍",
+      "一",
+      "𠄌",
+      "一",
+      "㇂|㇃"
+    ],
+    "pinyin": "Mián",
+    "pinyinArray": [
+      "Mian"
+    ]
+  },
+  "眨": {
+    "structure": "⿰目乏",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "丶",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Zhǎ",
+    "pinyinArray": [
+      "Zha"
+    ]
+  },
+  "眯": {
+    "structure": "⿰目米",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Mí",
+    "pinyinArray": [
+      "Mi"
+    ]
+  },
+  "眶": {
+    "structure": "⿰目匡",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "㇄"
+    ],
+    "pinyin": "Kuàng",
+    "pinyinArray": [
+      "Kuang"
+    ]
+  },
+  "眷": {
+    "structure": "⿱龹目[GTV]",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "丿",
+      "㇏",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一"
+    ],
+    "pinyin": "Juàn",
+    "pinyinArray": [
+      "Juan"
+    ]
+  },
+  "眼": {
+    "structure": "⿰目艮",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "𠃍",
+      "一",
+      "一",
+      "𠄌",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Yǎn",
+    "pinyinArray": [
+      "Yan"
+    ]
+  },
+  "着": {
+    "structure": "⿸羊目[GT]",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一"
+    ],
+    "pinyin": "Zhe",
+    "pinyinArray": [
+      "Zhe"
+    ]
+  },
+  "睁": {
+    "structure": "⿰目争",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "㇇|乛",
+      "𠃍",
+      "一",
+      "一",
+      "亅"
+    ],
+    "pinyin": "Zhēng",
+    "pinyinArray": [
+      "Zheng"
+    ]
+  },
+  "睛": {
+    "structure": "⿰目青[GT]",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "𠃌",
+      "一",
+      "一"
+    ],
+    "pinyin": "Jīng",
+    "pinyinArray": [
+      "Jing"
+    ]
+  },
+  "睡": {
+    "structure": "⿰目垂",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "一"
+    ],
+    "pinyin": "Shuì",
+    "pinyinArray": [
+      "Shui"
+    ]
+  },
+  "督": {
+    "structure": "⿱叔目",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丨",
+      "一",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "㇇|乛",
+      "㇏",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一"
+    ],
+    "pinyin": "Dū",
+    "pinyinArray": [
+      "Du"
+    ]
+  },
+  "睦": {
+    "structure": "⿰目坴",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "丶",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Mù",
+    "pinyinArray": [
+      "Mu"
+    ]
+  },
+  "睬": {
+    "structure": "⿰目采",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "丶",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Cǎi",
+    "pinyinArray": [
+      "Cai"
+    ]
+  },
+  "睹": {
+    "structure": "⿰目者",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Dǔ",
+    "pinyinArray": [
+      "Du"
+    ]
+  },
+  "瞄": {
+    "structure": "⿰目苗",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Miáo",
+    "pinyinArray": [
+      "Miao"
+    ]
+  },
+  "瞎": {
+    "structure": "⿰目害",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Xiā",
+    "pinyinArray": [
+      "Xia"
+    ]
+  },
+  "瞒": {
+    "structure": "⿰目𬜯",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丨",
+      "𠃌",
+      "丿",
+      "丶",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Mán",
+    "pinyinArray": [
+      "Man"
+    ]
+  },
+  "瞧": {
+    "structure": "⿰目焦",
+    "strokeCount": 17,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "丨",
+      "丶",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "㇀",
+      "丶",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Qiáo",
+    "pinyinArray": [
+      "Qiao"
+    ]
+  },
+  "瞪": {
+    "structure": "⿰目登",
+    "strokeCount": 17,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "㇇|乛",
+      "丶",
+      "丿",
+      "丿",
+      "㇏",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丶",
+      "丿",
+      "一"
+    ],
+    "pinyin": "Dèng",
+    "pinyinArray": [
+      "Deng"
+    ]
+  },
+  "瞬": {
+    "structure": "⿰目舜",
+    "strokeCount": 17,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "丶",
+      "丶",
+      "丿",
+      "㇀",
+      "㇇|乛",
+      "丿",
+      "㇇|乛",
+      "丶",
+      "一",
+      "𠃋",
+      "丨"
+    ],
+    "pinyin": "Shùn",
+    "pinyinArray": [
+      "Shun"
+    ]
+  },
+  "瞭": {
+    "structure": "⿰目尞",
+    "strokeCount": 17,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "㇏",
+      "丶",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "亅",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Liào",
+    "pinyinArray": [
+      "Liao"
+    ]
+  },
+  "瞳": {
+    "structure": "⿰目童",
+    "strokeCount": 17,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "一"
+    ],
+    "pinyin": "Tóng",
+    "pinyinArray": [
+      "Tong"
+    ]
+  },
+  "瞻": {
+    "structure": "⿰目詹",
+    "strokeCount": 18,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "㇇|乛",
+      "一",
+      "丿",
+      "丿",
+      "丶",
+      "丶",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Zhān",
+    "pinyinArray": [
+      "Zhan"
+    ]
+  },
+  "矗": {
+    "structure": "⿱直⿰直直",
+    "strokeCount": 24,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "㇀",
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "一"
+    ],
+    "pinyin": "Chù",
+    "pinyinArray": [
+      "Chu"
+    ]
+  },
+  "矛": {
+    "structure": "⿱龴⿹𠄐丿",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "㇇|乛",
+      "丶",
+      "㇇|乛",
+      "亅",
+      "丿"
+    ],
+    "pinyin": "Máo",
+    "pinyinArray": [
+      "Mao"
+    ]
+  },
+  "矢": {
+    "structure": "⿱𠂉大",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Shǐ",
+    "pinyinArray": [
+      "Shi"
+    ]
+  },
+  "知": {
+    "structure": "⿰矢口",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "丿",
+      "丶",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Zhī",
+    "pinyinArray": [
+      "Zhi"
+    ]
+  },
+  "矩": {
+    "structure": "⿰矢巨",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "丿",
+      "丶",
+      "一",
+      "𠃍",
+      "一",
+      "㇄"
+    ],
+    "pinyin": "Jǔ",
+    "pinyinArray": [
+      "Ju"
+    ]
+  },
+  "矫": {
+    "structure": "⿰矢乔",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "丿",
+      "丶",
+      "丿",
+      "一",
+      "丿",
+      "㇏",
+      "丿",
+      "丨"
+    ],
+    "pinyin": "Jiáo",
+    "pinyinArray": [
+      "Jiao"
+    ]
+  },
+  "短": {
+    "structure": "⿰矢豆",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "丿",
+      "丶",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丶",
+      "丿",
+      "一"
+    ],
+    "pinyin": "Duǎn",
+    "pinyinArray": [
+      "Duan"
+    ]
+  },
+  "矮": {
+    "structure": "⿰矢委",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "丿",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "㇏",
+      "𡿨",
+      "丿",
+      "一"
+    ],
+    "pinyin": "Ǎi",
+    "pinyinArray": [
+      "Ai"
+    ]
+  },
+  "石": {
+    "structure": "⿸丆口",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Shí",
+    "pinyinArray": [
+      "Shi"
+    ]
+  },
+  "矾": {
+    "structure": "⿰石凡",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "⺄",
+      "丶"
+    ],
+    "pinyin": "Fán",
+    "pinyinArray": [
+      "Fan"
+    ]
+  },
+  "矿": {
+    "structure": "⿰石广",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "丶",
+      "一",
+      "丿"
+    ],
+    "pinyin": "Kuàng",
+    "pinyinArray": [
+      "Kuang"
+    ]
+  },
+  "码": {
+    "structure": "⿰石马",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "𠃍",
+      "㇉",
+      "一"
+    ],
+    "pinyin": "Mǎ",
+    "pinyinArray": [
+      "Ma"
+    ]
+  },
+  "砂": {
+    "structure": "⿰石少",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丿"
+    ],
+    "pinyin": "Shā",
+    "pinyinArray": [
+      "Sha"
+    ]
+  },
+  "砌": {
+    "structure": "⿰石切",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "𠄌",
+      "𠃌",
+      "丿"
+    ],
+    "pinyin": "Qì",
+    "pinyinArray": [
+      "Qi"
+    ]
+  },
+  "砍": {
+    "structure": "⿰石欠",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "㇇|乛",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Kǎn",
+    "pinyinArray": [
+      "Kan"
+    ]
+  },
+  "研": {
+    "structure": "⿰石开",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "丨"
+    ],
+    "pinyin": "Yán",
+    "pinyinArray": [
+      "Yan"
+    ]
+  },
+  "砖": {
+    "structure": "⿰石专",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "ㄣ|𠃑",
+      "丶"
+    ],
+    "pinyin": "Zhuān",
+    "pinyinArray": [
+      "Zhuan"
+    ]
+  },
+  "砚": {
+    "structure": "⿰石见",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃍",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Yàn",
+    "pinyinArray": [
+      "Yan"
+    ]
+  },
+  "砰": {
+    "structure": "⿰石平",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Pēng",
+    "pinyinArray": [
+      "Peng"
+    ]
+  },
+  "破": {
+    "structure": "⿰石皮",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "㇇|乛",
+      "丿",
+      "丨",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Pò",
+    "pinyinArray": [
+      "Po"
+    ]
+  },
+  "砸": {
+    "structure": "⿰石匝",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "𠃌",
+      "丨",
+      "㇄"
+    ],
+    "pinyin": "Zá",
+    "pinyinArray": [
+      "Za"
+    ]
+  },
+  "砾": {
+    "structure": "⿰石乐",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "㇄",
+      "亅",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Lì",
+    "pinyinArray": [
+      "Li"
+    ]
+  },
+  "础": {
+    "structure": "⿰石出",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "㇄",
+      "丨",
+      "丨",
+      "㇄",
+      "丨"
+    ],
+    "pinyin": "Chǔ",
+    "pinyinArray": [
+      "Chu"
+    ]
+  },
+  "硅": {
+    "structure": "⿰石圭",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Guī",
+    "pinyinArray": [
+      "Gui"
+    ]
+  },
+  "硕": {
+    "structure": "⿰石页",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Shuò",
+    "pinyinArray": [
+      "Shuo"
+    ]
+  },
+  "硝": {
+    "structure": "⿰石肖",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "丶",
+      "丿",
+      "丨",
+      "𠃌",
+      "一",
+      "一"
+    ],
+    "pinyin": "Xiāo",
+    "pinyinArray": [
+      "Xiao"
+    ]
+  },
+  "硫": {
+    "structure": "⿰石㐬",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "丶",
+      "一",
+      "𠃋",
+      "丶",
+      "丿",
+      "丨",
+      "乚"
+    ],
+    "pinyin": "Liú",
+    "pinyinArray": [
+      "Liu"
+    ]
+  },
+  "硬": {
+    "structure": "⿰石更",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Yìng",
+    "pinyinArray": [
+      "Ying"
+    ]
+  },
+  "确": {
+    "structure": "⿰石角",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "㇇|乛",
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Què",
+    "pinyinArray": [
+      "Que"
+    ]
+  },
+  "硼": {
+    "structure": "⿰石朋",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "丿",
+      "𠃌",
+      "一",
+      "一"
+    ],
+    "pinyin": "Péng",
+    "pinyinArray": [
+      "Peng"
+    ]
+  },
+  "碉": {
+    "structure": "⿰石周",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "𠃌",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Diāo",
+    "pinyinArray": [
+      "Diao"
+    ]
+  },
+  "碌": {
+    "structure": "⿰石录[G]",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "𠃍",
+      "一",
+      "一",
+      "亅",
+      "丶",
+      "㇀",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Lù",
+    "pinyinArray": [
+      "Lu"
+    ]
+  },
+  "碍": {
+    "structure": "⿰石㝵",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "一",
+      "亅",
+      "丶"
+    ],
+    "pinyin": "Ài",
+    "pinyinArray": [
+      "Ai"
+    ]
+  },
+  "碎": {
+    "structure": "⿰石卒",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "丶",
+      "一",
+      "丿",
+      "丶",
+      "丿",
+      "丶",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Suì",
+    "pinyinArray": [
+      "Sui"
+    ]
+  },
+  "碑": {
+    "structure": "⿰石卑",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Bēi",
+    "pinyinArray": [
+      "Bei"
+    ]
+  },
+  "碗": {
+    "structure": "⿰石宛",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "丿",
+      "㇇|乛",
+      "丶",
+      "𠃌",
+      "乚"
+    ],
+    "pinyin": "Wǎn",
+    "pinyinArray": [
+      "Wan"
+    ]
+  },
+  "碘": {
+    "structure": "⿰石典",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Diǎn",
+    "pinyinArray": [
+      "Dian"
+    ]
+  },
+  "碟": {
+    "structure": "⿰石枼",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "㇄",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Dié",
+    "pinyinArray": [
+      "Die"
+    ]
+  },
+  "碧": {
+    "structure": "⿱珀石",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "一",
+      "一",
+      "丨",
+      "㇀",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Bì",
+    "pinyinArray": [
+      "Bi"
+    ]
+  },
+  "碰": {
+    "structure": "⿰石並[GT]",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "丨",
+      "丶",
+      "丿",
+      "一"
+    ],
+    "pinyin": "Pèng",
+    "pinyinArray": [
+      "Peng"
+    ]
+  },
+  "碱": {
+    "structure": "⿰石咸",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "㇂|㇃",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Jiǎn",
+    "pinyinArray": [
+      "Jian"
+    ]
+  },
+  "碳": {
+    "structure": "⿰石炭",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "㇄",
+      "丨",
+      "一",
+      "丿",
+      "㇀",
+      "丿",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Tàn",
+    "pinyinArray": [
+      "Tan"
+    ]
+  },
+  "碴": {
+    "structure": "⿰石查",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "丿",
+      "㇏",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一"
+    ],
+    "pinyin": "Chá",
+    "pinyinArray": [
+      "Cha"
+    ]
+  },
+  "碾": {
+    "structure": "⿰石展",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "𠃍",
+      "一",
+      "丿",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "𠄌",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Niǎn",
+    "pinyinArray": [
+      "Nian"
+    ]
+  },
+  "磁": {
+    "structure": "⿰石兹",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "𠃋",
+      "𠃋",
+      "丶",
+      "𠃋",
+      "𠃋",
+      "丶"
+    ],
+    "pinyin": "Cí",
+    "pinyinArray": [
+      "Ci"
+    ]
+  },
+  "磅": {
+    "structure": "⿰石旁",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "㇀",
+      "㇇|乛",
+      "丶",
+      "一",
+      "𠃌",
+      "丿"
+    ],
+    "pinyin": "Páng",
+    "pinyinArray": [
+      "Pang"
+    ]
+  },
+  "磕": {
+    "structure": "⿰石盍",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "𠃋",
+      "丶",
+      "丨",
+      "𠃍",
+      "丨",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Kē",
+    "pinyinArray": [
+      "Ke"
+    ]
+  },
+  "磨": {
+    "structure": "⿸麻石",
+    "strokeCount": 16,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "丨",
+      "丿",
+      "㇏",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Mó",
+    "pinyinArray": [
+      "Mo"
+    ]
+  },
+  "磷": {
+    "structure": "⿰石粦",
+    "strokeCount": 17,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "㇏",
+      "丿",
+      "㇇|乛",
+      "丶",
+      "一",
+      "𠃋",
+      "丨"
+    ],
+    "pinyin": "Lín",
+    "pinyinArray": [
+      "Lin"
+    ]
+  },
+  "磺": {
+    "structure": "⿰石黄[G]",
+    "strokeCount": 16,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Huáng",
+    "pinyinArray": [
+      "Huang"
+    ]
+  },
+  "礁": {
+    "structure": "⿰石焦",
+    "strokeCount": 17,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "丨",
+      "丶",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "㇀",
+      "丶",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Jiāo",
+    "pinyinArray": [
+      "Jiao"
+    ]
+  },
+  "示": {
+    "structure": "示",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "一",
+      "一",
+      "亅",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Shì",
+    "pinyinArray": [
+      "Shi"
+    ]
+  },
+  "礼": {
+    "structure": "⿰礻乚",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丶",
+      "㇇|乛",
+      "丨",
+      "丶",
+      "乚"
+    ],
+    "pinyin": "Lǐ",
+    "pinyinArray": [
+      "Li"
+    ]
+  },
+  "社": {
+    "structure": "⿰礻土",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丶",
+      "㇇|乛",
+      "丨",
+      "丶",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Shè",
+    "pinyinArray": [
+      "She"
+    ]
+  },
+  "祈": {
+    "structure": "⿰礻斤[GTJ]",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丶",
+      "㇇|乛",
+      "丨",
+      "丶",
+      "丿",
+      "丿",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Qí",
+    "pinyinArray": [
+      "Qi"
+    ]
+  },
+  "祖": {
+    "structure": "⿰礻且[GTJ]",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "㇇|乛",
+      "丨",
+      "丶",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一"
+    ],
+    "pinyin": "Zǔ",
+    "pinyinArray": [
+      "Zu"
+    ]
+  },
+  "祝": {
+    "structure": "⿰礻兄",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "㇇|乛",
+      "丨",
+      "丶",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Zhù",
+    "pinyinArray": [
+      "Zhu"
+    ]
+  },
+  "神": {
+    "structure": "⿰礻申",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "㇇|乛",
+      "丨",
+      "丶",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Shén",
+    "pinyinArray": [
+      "Shen"
+    ]
+  },
+  "祟": {
+    "structure": "⿱出示",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "㇄",
+      "丨",
+      "丨",
+      "㇄",
+      "丨",
+      "一",
+      "一",
+      "亅",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Suì",
+    "pinyinArray": [
+      "Sui"
+    ]
+  },
+  "祠": {
+    "structure": "⿰礻司[GTV]",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "㇇|乛",
+      "丨",
+      "丶",
+      "𠃌",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Cí",
+    "pinyinArray": [
+      "Ci"
+    ]
+  },
+  "祥": {
+    "structure": "⿰礻羊[GTJ]",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "㇇|乛",
+      "丨",
+      "丶",
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Xiáng",
+    "pinyinArray": [
+      "Xiang"
+    ]
+  },
+  "票": {
+    "structure": "⿱覀示",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "𠃍",
+      "丨",
+      "丨",
+      "一",
+      "一",
+      "一",
+      "亅",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Piào",
+    "pinyinArray": [
+      "Piao"
+    ]
+  },
+  "祭": {
+    "structure": "⿱⿰⿴𠂊冫②示",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丿",
+      "㇇|乛",
+      "丶",
+      "丶",
+      "㇇|乛",
+      "㇏",
+      "一",
+      "一",
+      "亅",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Jì",
+    "pinyinArray": [
+      "Ji"
+    ]
+  },
+  "祷": {
+    "structure": "⿰礻寿",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丶",
+      "㇇|乛",
+      "丨",
+      "丶",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "一",
+      "亅",
+      "丶"
+    ],
+    "pinyin": "Dǎo",
+    "pinyinArray": [
+      "Dao"
+    ]
+  },
+  "祸": {
+    "structure": "⿰礻呙",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丶",
+      "㇇|乛",
+      "丨",
+      "丶",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃌",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Huò",
+    "pinyinArray": [
+      "Huo"
+    ]
+  },
+  "禀": {
+    "structure": "⿱㐭示",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丨",
+      "𠃍",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "一",
+      "亅",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Bǐng",
+    "pinyinArray": [
+      "Bing"
+    ]
+  },
+  "禁": {
+    "structure": "⿱林示",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "丨",
+      "丿",
+      "㇏",
+      "一",
+      "一",
+      "亅",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Jìn",
+    "pinyinArray": [
+      "Jin"
+    ]
+  },
+  "福": {
+    "structure": "⿰礻畐",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丶",
+      "㇇|乛",
+      "丨",
+      "丶",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Fú",
+    "pinyinArray": [
+      "Fu"
+    ]
+  },
+  "离": {
+    "structure": "⿱㐫禸",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "丶",
+      "㇄",
+      "丨",
+      "丨",
+      "𠃌",
+      "𠃋",
+      "丶"
+    ],
+    "pinyin": "Lí",
+    "pinyinArray": [
+      "Li"
+    ]
+  },
+  "禽": {
+    "structure": "⿱人离",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丿",
+      "㇏",
+      "丶",
+      "一",
+      "丿",
+      "丶",
+      "㇄",
+      "丨",
+      "丨",
+      "𠃌",
+      "𠃋",
+      "丶"
+    ],
+    "pinyin": "Qín",
+    "pinyinArray": [
+      "Qin"
+    ]
+  },
+  "禾": {
+    "structure": "⿱丿木",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Hé",
+    "pinyinArray": [
+      "He"
+    ]
+  },
+  "秀": {
+    "structure": "⿱禾乃",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "㇏",
+      "𠄎|㇌",
+      "丿"
+    ],
+    "pinyin": "Xiù",
+    "pinyinArray": [
+      "Xiu"
+    ]
+  },
+  "私": {
+    "structure": "⿰禾厶",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "𠃋",
+      "丶"
+    ],
+    "pinyin": "Sī",
+    "pinyinArray": [
+      "Si"
+    ]
+  },
+  "秃": {
+    "structure": "⿱禾几",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "㇏",
+      "丿",
+      "⺄"
+    ],
+    "pinyin": "Tū",
+    "pinyinArray": [
+      "Tu"
+    ]
+  },
+  "秆": {
+    "structure": "⿰禾干",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Gǎn",
+    "pinyinArray": [
+      "Gan"
+    ]
+  },
+  "秉": {
+    "structure": "⿻禾⿻コ一",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Bǐng",
+    "pinyinArray": [
+      "Bing"
+    ]
+  },
+  "秋": {
+    "structure": "⿰禾火",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "㇀",
+      "丿",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Qiū",
+    "pinyinArray": [
+      "Qiu"
+    ]
+  },
+  "种": {
+    "structure": "⿰禾中",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丨",
+      "𠃍",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Zhòng",
+    "pinyinArray": [
+      "Zhong"
+    ]
+  },
+  "科": {
+    "structure": "⿰禾斗",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丶",
+      "丶",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Kē",
+    "pinyinArray": [
+      "Ke"
+    ]
+  },
+  "秒": {
+    "structure": "⿰禾少",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丨",
+      "丿",
+      "丶",
+      "丿"
+    ],
+    "pinyin": "Miǎo",
+    "pinyinArray": [
+      "Miao"
+    ]
+  },
+  "秕": {
+    "structure": "⿰禾比",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "𠄌",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Bǐ",
+    "pinyinArray": [
+      "Bi"
+    ]
+  },
+  "秘": {
+    "structure": "⿰禾必",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "㇀",
+      "㇂|㇃",
+      "丶",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Mì",
+    "pinyinArray": [
+      "Mi"
+    ]
+  },
+  "租": {
+    "structure": "⿰禾且",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一"
+    ],
+    "pinyin": "Zū",
+    "pinyinArray": [
+      "Zu"
+    ]
+  },
+  "秤": {
+    "structure": "⿰禾平",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Chèng",
+    "pinyinArray": [
+      "Cheng"
+    ]
+  },
+  "秦": {
+    "structure": "⿱𡗗禾",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "一",
+      "一",
+      "丿",
+      "㇏",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Qín",
+    "pinyinArray": [
+      "Qin"
+    ]
+  },
+  "秧": {
+    "structure": "⿰禾央",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Yāng",
+    "pinyinArray": [
+      "Yang"
+    ]
+  },
+  "秩": {
+    "structure": "⿰禾失",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Zhì",
+    "pinyinArray": [
+      "Zhi"
+    ]
+  },
+  "秫": {
+    "structure": "⿰禾术[G]",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "丨",
+      "丿",
+      "㇏",
+      "丶"
+    ],
+    "pinyin": "Shú",
+    "pinyinArray": [
+      "Shu"
+    ]
+  },
+  "积": {
+    "structure": "⿰禾只",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Jī",
+    "pinyinArray": [
+      "Ji"
+    ]
+  },
+  "称": {
+    "structure": "⿰禾尔[GTKV]",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丿",
+      "㇇|乛",
+      "亅",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Chēng",
+    "pinyinArray": [
+      "Cheng"
+    ]
+  },
+  "秸": {
+    "structure": "⿰禾吉",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Jiē",
+    "pinyinArray": [
+      "Jie"
+    ]
+  },
+  "移": {
+    "structure": "⿰禾多",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丿",
+      "㇇|乛",
+      "丶",
+      "丿",
+      "㇇|乛",
+      "丶"
+    ],
+    "pinyin": "Yí",
+    "pinyinArray": [
+      "Yi"
+    ]
+  },
+  "秽": {
+    "structure": "⿰禾岁",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丨",
+      "㇄",
+      "丨",
+      "丿",
+      "㇇|乛",
+      "丶"
+    ],
+    "pinyin": "Huì",
+    "pinyinArray": [
+      "Hui"
+    ]
+  },
+  "稀": {
+    "structure": "⿰禾希",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丿",
+      "丶",
+      "一",
+      "丿",
+      "丨",
+      "𠃌",
+      "丨"
+    ],
+    "pinyin": "Xī",
+    "pinyinArray": [
+      "Xi"
+    ]
+  },
+  "程": {
+    "structure": "⿰禾呈",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Chéng",
+    "pinyinArray": [
+      "Cheng"
+    ]
+  },
+  "稍": {
+    "structure": "⿰禾肖",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丨",
+      "丶",
+      "丿",
+      "丨",
+      "𠃌",
+      "一",
+      "一"
+    ],
+    "pinyin": "Shào",
+    "pinyinArray": [
+      "Shao"
+    ]
+  },
+  "税": {
+    "structure": "⿰禾兑",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丶",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Shuì",
+    "pinyinArray": [
+      "Shui"
+    ]
+  },
+  "稚": {
+    "structure": "⿰禾隹",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丿",
+      "丨",
+      "丶",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Zhì",
+    "pinyinArray": [
+      "Zhi"
+    ]
+  },
+  "稠": {
+    "structure": "⿰禾周",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丿",
+      "𠃌",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Chóu",
+    "pinyinArray": [
+      "Chou"
+    ]
+  },
+  "稳": {
+    "structure": "⿰禾急",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丿",
+      "㇇|乛",
+      "𠃍",
+      "一",
+      "一",
+      "㇀",
+      "㇂|㇃",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Wěn",
+    "pinyinArray": [
+      "Wen"
+    ]
+  },
+  "稻": {
+    "structure": "⿰禾舀",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丿",
+      "丶",
+      "丶",
+      "丿",
+      "丿",
+      "丨",
+      "一",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Dào",
+    "pinyinArray": [
+      "Dao"
+    ]
+  },
+  "稼": {
+    "structure": "⿰禾家",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "一",
+      "丿",
+      "㇁",
+      "丿",
+      "丿",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Jià",
+    "pinyinArray": [
+      "Jia"
+    ]
+  },
+  "稽": {
+    "structure": "⿰禾⿱尤旨[GTJK]",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "丿",
+      "乚",
+      "丶",
+      "丿",
+      "乚",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Jī",
+    "pinyinArray": [
+      "Ji"
+    ]
+  },
+  "稿": {
+    "structure": "⿰禾高",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丶",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃌",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Gǎo",
+    "pinyinArray": [
+      "Gao"
+    ]
+  },
+  "穆": {
+    "structure": "⿰禾㣎",
+    "strokeCount": 16,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丿",
+      "丿",
+      "丿"
+    ],
+    "pinyin": "Mù",
+    "pinyinArray": [
+      "Mu"
+    ]
+  },
+  "穗": {
+    "structure": "⿰禾惠",
+    "strokeCount": 17,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "丶",
+      "㇀",
+      "㇂|㇃",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Suì",
+    "pinyinArray": [
+      "Sui"
+    ]
+  },
+  "穴": {
+    "structure": "⿱宀八",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Xué",
+    "pinyinArray": [
+      "Xue"
+    ]
+  },
+  "究": {
+    "structure": "⿱穴九",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "丿",
+      "丶",
+      "丿",
+      "⺄"
+    ],
+    "pinyin": "Jiū",
+    "pinyinArray": [
+      "Jiu"
+    ]
+  },
+  "穷": {
+    "structure": "⿱穴力",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "丿",
+      "丶",
+      "𠃌",
+      "丿"
+    ],
+    "pinyin": "Qióng",
+    "pinyinArray": [
+      "Qiong"
+    ]
+  },
+  "空": {
+    "structure": "⿱穴工",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "丿",
+      "丶",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Kōng",
+    "pinyinArray": [
+      "Kong"
+    ]
+  },
+  "穿": {
+    "structure": "⿱穴牙",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "丿",
+      "丶",
+      "一",
+      "𠃋",
+      "亅",
+      "丿"
+    ],
+    "pinyin": "Chuān",
+    "pinyinArray": [
+      "Chuan"
+    ]
+  },
+  "突": {
+    "structure": "⿱穴犬[GTKV]",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "丿",
+      "丶",
+      "一",
+      "丿",
+      "㇏",
+      "丶"
+    ],
+    "pinyin": "Tū",
+    "pinyinArray": [
+      "Tu"
+    ]
+  },
+  "窃": {
+    "structure": "⿱穴切",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "丿",
+      "丶",
+      "一",
+      "𠄌",
+      "𠃌",
+      "丿"
+    ],
+    "pinyin": "Qiè",
+    "pinyinArray": [
+      "Qie"
+    ]
+  },
+  "窄": {
+    "structure": "⿱穴乍",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "丿",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "一",
+      "一"
+    ],
+    "pinyin": "Zhǎi",
+    "pinyinArray": [
+      "Zhai"
+    ]
+  },
+  "窍": {
+    "structure": "⿱穴巧",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "丿",
+      "丶",
+      "一",
+      "丨",
+      "㇀",
+      "一",
+      "㇉"
+    ],
+    "pinyin": "Qiào",
+    "pinyinArray": [
+      "Qiao"
+    ]
+  },
+  "窑": {
+    "structure": "⿱穴缶",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "丿",
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "丨",
+      "㇄",
+      "丨"
+    ],
+    "pinyin": "Yáo",
+    "pinyinArray": [
+      "Yao"
+    ]
+  },
+  "窒": {
+    "structure": "⿱穴至",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "丿",
+      "丶",
+      "一",
+      "𠃋",
+      "丶",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Zhì",
+    "pinyinArray": [
+      "Zhi"
+    ]
+  },
+  "窖": {
+    "structure": "⿱穴告[GT]",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "丿",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Jiào",
+    "pinyinArray": [
+      "Jiao"
+    ]
+  },
+  "窗": {
+    "structure": "⿱穴囱[GJK]",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "丿",
+      "丶",
+      "丿",
+      "丨",
+      "𠃍",
+      "丿",
+      "㇇|乛",
+      "丶",
+      "一"
+    ],
+    "pinyin": "Chuāng",
+    "pinyinArray": [
+      "Chuang"
+    ]
+  },
+  "窘": {
+    "structure": "⿱穴君",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "丿",
+      "丶",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Jiǒng",
+    "pinyinArray": [
+      "Jiong"
+    ]
+  },
+  "窜": {
+    "structure": "⿱穴串",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "丿",
+      "丶",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Cuàn",
+    "pinyinArray": [
+      "Cuan"
+    ]
+  },
+  "窝": {
+    "structure": "⿱穴呙",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "丿",
+      "丶",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃌",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Wō",
+    "pinyinArray": [
+      "Wo"
+    ]
+  },
+  "窟": {
+    "structure": "⿱穴屈",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "丿",
+      "丶",
+      "𠃍",
+      "一",
+      "丿",
+      "㇄",
+      "丨",
+      "丨",
+      "㇄",
+      "丨"
+    ],
+    "pinyin": "Kū",
+    "pinyinArray": [
+      "Ku"
+    ]
+  },
+  "窥": {
+    "structure": "⿱穴规",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "丿",
+      "丶",
+      "一",
+      "一",
+      "丿",
+      "丶",
+      "丨",
+      "𠃍",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Kuī",
+    "pinyinArray": [
+      "Kui"
+    ]
+  },
+  "窿": {
+    "structure": "⿱穴隆",
+    "strokeCount": 16,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "丿",
+      "丶",
+      "𠄎|㇌",
+      "丨",
+      "丿",
+      "㇇|乛",
+      "㇏",
+      "一",
+      "丿",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Lóng",
+    "pinyinArray": [
+      "Long"
+    ]
+  },
+  "立": {
+    "structure": "⿱⿱亠丷一",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "一"
+    ],
+    "pinyin": "Lì",
+    "pinyinArray": [
+      "Li"
+    ]
+  },
+  "竖": {
+    "structure": "⿱⿰〢又立",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丨",
+      "丨",
+      "㇇|乛",
+      "㇏",
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "一"
+    ],
+    "pinyin": "Shù",
+    "pinyinArray": [
+      "Shu"
+    ]
+  },
+  "站": {
+    "structure": "⿰立占",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "㇀",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Zhàn",
+    "pinyinArray": [
+      "Zhan"
+    ]
+  },
+  "竞": {
+    "structure": "⿱立兄",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Jìng",
+    "pinyinArray": [
+      "Jing"
+    ]
+  },
+  "竟": {
+    "structure": "⿱音儿",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Jìng",
+    "pinyinArray": [
+      "Jing"
+    ]
+  },
+  "章": {
+    "structure": "⿱立早",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Zhāng",
+    "pinyinArray": [
+      "Zhang"
+    ]
+  },
+  "竣": {
+    "structure": "⿰立夋",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "㇀",
+      "𠃋",
+      "丶",
+      "丿",
+      "丶",
+      "丿",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Jùn",
+    "pinyinArray": [
+      "Jun"
+    ]
+  },
+  "童": {
+    "structure": "⿱立里",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "一"
+    ],
+    "pinyin": "Tóng",
+    "pinyinArray": [
+      "Tong"
+    ]
+  },
+  "竭": {
+    "structure": "⿰立曷",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "㇀",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "𠃌",
+      "丿",
+      "丶",
+      "㇄"
+    ],
+    "pinyin": "Jié",
+    "pinyinArray": [
+      "Jie"
+    ]
+  },
+  "端": {
+    "structure": "⿰立耑",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "㇀",
+      "丨",
+      "㇄",
+      "丨",
+      "一",
+      "丿",
+      "丨",
+      "𠃌",
+      "丨",
+      "丨"
+    ],
+    "pinyin": "Duān",
+    "pinyinArray": [
+      "Duan"
+    ]
+  },
+  "竹": {
+    "structure": "⿰亇亇",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "一",
+      "亅"
+    ],
+    "pinyin": "Zhú",
+    "pinyinArray": [
+      "Zhu"
+    ]
+  },
+  "竿": {
+    "structure": "⿱竹干",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丶",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Gān",
+    "pinyinArray": [
+      "Gan"
+    ]
+  },
+  "笆": {
+    "structure": "⿱竹巴",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丶",
+      "𠃍",
+      "丨",
+      "一",
+      "乚"
+    ],
+    "pinyin": "Bā",
+    "pinyinArray": [
+      "Ba"
+    ]
+  },
+  "笋": {
+    "structure": "⿱竹尹",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丶",
+      "𠃍",
+      "一",
+      "一",
+      "丿"
+    ],
+    "pinyin": "Sǔn",
+    "pinyinArray": [
+      "Sun"
+    ]
+  },
+  "笑": {
+    "structure": "⿱竹夭",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Xiào",
+    "pinyinArray": [
+      "Xiao"
+    ]
+  },
+  "笔": {
+    "structure": "⿱竹毛",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "乚"
+    ],
+    "pinyin": "Bǐ",
+    "pinyinArray": [
+      "Bi"
+    ]
+  },
+  "笙": {
+    "structure": "⿱竹生",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Shēng",
+    "pinyinArray": [
+      "Sheng"
+    ]
+  },
+  "笛": {
+    "structure": "⿱竹由",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丶",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Dí",
+    "pinyinArray": [
+      "Di"
+    ]
+  },
+  "笤": {
+    "structure": "⿱竹召",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丶",
+      "𠃌",
+      "丿",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Tiáo",
+    "pinyinArray": [
+      "Tiao"
+    ]
+  },
+  "符": {
+    "structure": "⿱竹付",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丶",
+      "丿",
+      "丨",
+      "一",
+      "亅",
+      "丶"
+    ],
+    "pinyin": "Fú",
+    "pinyinArray": [
+      "Fu"
+    ]
+  },
+  "笨": {
+    "structure": "⿱竹本",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丶",
+      "一",
+      "丨",
+      "丿",
+      "㇏",
+      "一"
+    ],
+    "pinyin": "Bèn",
+    "pinyinArray": [
+      "Ben"
+    ]
+  },
+  "第": {
+    "structure": "⿱竹𢎨",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丶",
+      "𠃍",
+      "一",
+      "㇉",
+      "丨",
+      "丿"
+    ],
+    "pinyin": "Dì",
+    "pinyinArray": [
+      "Di"
+    ]
+  },
+  "笼": {
+    "structure": "⿱竹龙",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丶",
+      "一",
+      "丿",
+      "乚",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Lóng",
+    "pinyinArray": [
+      "Long"
+    ]
+  },
+  "等": {
+    "structure": "⿱竹寺",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丶",
+      "一",
+      "丨",
+      "一",
+      "一",
+      "亅",
+      "丶"
+    ],
+    "pinyin": "Děng",
+    "pinyinArray": [
+      "Deng"
+    ]
+  },
+  "筋": {
+    "structure": "⿱竹肋",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丶",
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "𠃌",
+      "丿"
+    ],
+    "pinyin": "Jīn",
+    "pinyinArray": [
+      "Jin"
+    ]
+  },
+  "筏": {
+    "structure": "⿱竹伐",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丶",
+      "丿",
+      "丨",
+      "一",
+      "㇂|㇃",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Fá",
+    "pinyinArray": [
+      "Fa"
+    ]
+  },
+  "筐": {
+    "structure": "⿱竹匡",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丶",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "㇄"
+    ],
+    "pinyin": "Kuāng",
+    "pinyinArray": [
+      "Kuang"
+    ]
+  },
+  "筑": {
+    "structure": "⿱竹巩",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丶",
+      "一",
+      "丨",
+      "㇀",
+      "丿",
+      "⺄",
+      "丶"
+    ],
+    "pinyin": "Zhù",
+    "pinyinArray": [
+      "Zhu"
+    ]
+  },
+  "筒": {
+    "structure": "⿱竹同",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丶",
+      "丨",
+      "𠃌",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Tǒng",
+    "pinyinArray": [
+      "Tong"
+    ]
+  },
+  "答": {
+    "structure": "⿱竹合",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丶",
+      "丿",
+      "㇏",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Dá",
+    "pinyinArray": [
+      "Da"
+    ]
+  },
+  "策": {
+    "structure": "⿱竹朿",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丶",
+      "一",
+      "丨",
+      "𠃌",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Cè",
+    "pinyinArray": [
+      "Ce"
+    ]
+  },
+  "筛": {
+    "structure": "⿱竹师",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丶",
+      "丨",
+      "丿",
+      "一",
+      "丨",
+      "𠃌",
+      "丨"
+    ],
+    "pinyin": "Shāi",
+    "pinyinArray": [
+      "Shai"
+    ]
+  },
+  "筝": {
+    "structure": "⿱竹争",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丶",
+      "丿",
+      "㇇|乛",
+      "𠃍",
+      "一",
+      "一",
+      "亅"
+    ],
+    "pinyin": "Zhēng",
+    "pinyinArray": [
+      "Zheng"
+    ]
+  },
+  "筷": {
+    "structure": "⿱竹快",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丶",
+      "㇀",
+      "丶",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Kuài",
+    "pinyinArray": [
+      "Kuai"
+    ]
+  },
+  "筹": {
+    "structure": "⿱竹寿",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丶",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "一",
+      "亅",
+      "丶"
+    ],
+    "pinyin": "Chóu",
+    "pinyinArray": [
+      "Chou"
+    ]
+  },
+  "签": {
+    "structure": "⿱竹佥",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丶",
+      "丿",
+      "㇏",
+      "一",
+      "丶",
+      "丶",
+      "丿",
+      "一"
+    ],
+    "pinyin": "Qiān",
+    "pinyinArray": [
+      "Qian"
+    ]
+  },
+  "简": {
+    "structure": "⿱竹间",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丶",
+      "丶",
+      "丨",
+      "𠃌",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Jiǎn",
+    "pinyinArray": [
+      "Jian"
+    ]
+  },
+  "箍": {
+    "structure": "⿱竹㧜",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丶",
+      "一",
+      "亅",
+      "㇀",
+      "一",
+      "丨",
+      "𠃌",
+      "丨",
+      "㇄"
+    ],
+    "pinyin": "Gū",
+    "pinyinArray": [
+      "Gu"
+    ]
+  },
+  "箕": {
+    "structure": "⿱竹其",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丶",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Jī",
+    "pinyinArray": [
+      "Ji"
+    ]
+  },
+  "算": {
+    "structure": "⿱竹𥃲",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丶",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "丨"
+    ],
+    "pinyin": "Suàn",
+    "pinyinArray": [
+      "Suan"
+    ]
+  },
+  "管": {
+    "structure": "⿱竹官",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丶",
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "丨",
+      "𠃍",
+      "一",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Guǎn",
+    "pinyinArray": [
+      "Guan"
+    ]
+  },
+  "箩": {
+    "structure": "⿱竹罗",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丶",
+      "丨",
+      "𠃍",
+      "丨",
+      "丨",
+      "一",
+      "丿",
+      "㇇|乛",
+      "丶"
+    ],
+    "pinyin": "Luó",
+    "pinyinArray": [
+      "Luo"
+    ]
+  },
+  "箫": {
+    "structure": "⿱竹肃",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丶",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "丿",
+      "丨",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Xiāo",
+    "pinyinArray": [
+      "Xiao"
+    ]
+  },
+  "箭": {
+    "structure": "⿱竹前",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丶",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "𠃌",
+      "一",
+      "一",
+      "丨",
+      "亅"
+    ],
+    "pinyin": "Jiàn",
+    "pinyinArray": [
+      "Jian"
+    ]
+  },
+  "箱": {
+    "structure": "⿱竹相",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丶",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一"
+    ],
+    "pinyin": "Xiāng",
+    "pinyinArray": [
+      "Xiang"
+    ]
+  },
+  "篇": {
+    "structure": "⿱竹扁",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丶",
+      "丶",
+      "𠃍",
+      "一",
+      "丿",
+      "丨",
+      "𠃌",
+      "一",
+      "丨",
+      "丨"
+    ],
+    "pinyin": "Piān",
+    "pinyinArray": [
+      "Pian"
+    ]
+  },
+  "篓": {
+    "structure": "⿱竹娄",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丶",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "㇏",
+      "𡿨",
+      "丿",
+      "一"
+    ],
+    "pinyin": "Lǒu",
+    "pinyinArray": [
+      "Lou"
+    ]
+  },
+  "篙": {
+    "structure": "⿱竹高",
+    "strokeCount": 16,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丶",
+      "丶",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃌",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Gāo",
+    "pinyinArray": [
+      "Gao"
+    ]
+  },
+  "篡": {
+    "structure": "⿱𮅕厶",
+    "strokeCount": 16,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丶",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "㇏",
+      "𠃋",
+      "丶"
+    ],
+    "pinyin": "Cuàn",
+    "pinyinArray": [
+      "Cuan"
+    ]
+  },
+  "篮": {
+    "structure": "⿱竹监",
+    "strokeCount": 16,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丶",
+      "丨",
+      "丨",
+      "丿",
+      "一",
+      "丶",
+      "丨",
+      "𠃍",
+      "丨",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Lán",
+    "pinyinArray": [
+      "Lan"
+    ]
+  },
+  "篱": {
+    "structure": "⿱竹离",
+    "strokeCount": 16,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丶",
+      "丶",
+      "一",
+      "丿",
+      "丶",
+      "㇄",
+      "丨",
+      "丨",
+      "𠃌",
+      "𠃋",
+      "丶"
+    ],
+    "pinyin": "Lí",
+    "pinyinArray": [
+      "Li"
+    ]
+  },
+  "篷": {
+    "structure": "⿱竹逢",
+    "strokeCount": 16,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丶",
+      "丿",
+      "㇇|乛",
+      "㇏",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "丶",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Péng",
+    "pinyinArray": [
+      "Peng"
+    ]
+  },
+  "簇": {
+    "structure": "⿱竹族",
+    "strokeCount": 17,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丶",
+      "丶",
+      "一",
+      "𠃌",
+      "丿",
+      "丿",
+      "一",
+      "丿",
+      "一",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Cù",
+    "pinyinArray": [
+      "Cu"
+    ]
+  },
+  "簸": {
+    "structure": "⿱竹𤿺",
+    "strokeCount": 19,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丶",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "丶",
+      "㇇|乛",
+      "丿",
+      "丨",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Bò",
+    "pinyinArray": [
+      "Bo"
+    ]
+  },
+  "簿": {
+    "structure": "⿱竹溥[GTKV]",
+    "strokeCount": 19,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丶",
+      "丶",
+      "丶",
+      "㇀",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "丶",
+      "一",
+      "亅",
+      "丶"
+    ],
+    "pinyin": "Bù",
+    "pinyinArray": [
+      "Bu"
+    ]
+  },
+  "籍": {
+    "structure": "⿱竹耤",
+    "strokeCount": 20,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丶",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Jí",
+    "pinyinArray": [
+      "Ji"
+    ]
+  },
+  "米": {
+    "structure": "米",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Mǐ",
+    "pinyinArray": [
+      "Mi"
+    ]
+  },
+  "类": {
+    "structure": "⿱米大",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Lèi",
+    "pinyinArray": [
+      "Lei"
+    ]
+  },
+  "籽": {
+    "structure": "⿰米子",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "㇇|乛",
+      "亅",
+      "一"
+    ],
+    "pinyin": "Zǐ",
+    "pinyinArray": [
+      "Zi"
+    ]
+  },
+  "粉": {
+    "structure": "⿰米分",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丿",
+      "㇏",
+      "𠃌",
+      "丿"
+    ],
+    "pinyin": "Fěn",
+    "pinyinArray": [
+      "Fen"
+    ]
+  },
+  "粒": {
+    "structure": "⿰米立",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "一"
+    ],
+    "pinyin": "Lì",
+    "pinyinArray": [
+      "Li"
+    ]
+  },
+  "粗": {
+    "structure": "⿰米且",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一"
+    ],
+    "pinyin": "Cū",
+    "pinyinArray": [
+      "Cu"
+    ]
+  },
+  "粘": {
+    "structure": "⿰米占",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Nián",
+    "pinyinArray": [
+      "Nian"
+    ]
+  },
+  "粟": {
+    "structure": "⿱覀米",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "𠃍",
+      "丨",
+      "丨",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Sù",
+    "pinyinArray": [
+      "Su"
+    ]
+  },
+  "粤": {
+    "structure": "⿱⿴⿱丿囗米丂[GTJK]",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "𠃍",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "一",
+      "㇉"
+    ],
+    "pinyin": "Yuè",
+    "pinyinArray": [
+      "Yue"
+    ]
+  },
+  "粥": {
+    "structure": "⿲弓米弓",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "𠃍",
+      "一",
+      "㇉",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "𠃍",
+      "一",
+      "㇉"
+    ],
+    "pinyin": "Zhōu",
+    "pinyinArray": [
+      "Zhou"
+    ]
+  },
+  "粪": {
+    "structure": "⿱米共",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "㇏",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Fèn",
+    "pinyinArray": [
+      "Fen"
+    ]
+  },
+  "粮": {
+    "structure": "⿰米良",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丶",
+      "𠃍",
+      "一",
+      "一",
+      "𠄌",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Liáng",
+    "pinyinArray": [
+      "Liang"
+    ]
+  },
+  "粱": {
+    "structure": "⿱⿰氵刅米",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "𠃌",
+      "丿",
+      "㇀",
+      "丶",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Liáng",
+    "pinyinArray": [
+      "Liang"
+    ]
+  },
+  "粹": {
+    "structure": "⿰米卒",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丶",
+      "一",
+      "丿",
+      "丶",
+      "丿",
+      "丶",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Suì",
+    "pinyinArray": [
+      "Sui"
+    ]
+  },
+  "精": {
+    "structure": "⿰米青",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "𠃌",
+      "一",
+      "一"
+    ],
+    "pinyin": "Jīng",
+    "pinyinArray": [
+      "Jing"
+    ]
+  },
+  "糊": {
+    "structure": "⿰米胡",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "𠃌",
+      "一",
+      "一"
+    ],
+    "pinyin": "Hú",
+    "pinyinArray": [
+      "Hu"
+    ]
+  },
+  "糕": {
+    "structure": "⿰米羔",
+    "strokeCount": 16,
+    "strokeShapes": [
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "㇀",
+      "丶",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Gāo",
+    "pinyinArray": [
+      "Gao"
+    ]
+  },
+  "糖": {
+    "structure": "⿰米唐",
+    "strokeCount": 16,
+    "strokeShapes": [
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丶",
+      "一",
+      "丿",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Táng",
+    "pinyinArray": [
+      "Tang"
+    ]
+  },
+  "糙": {
+    "structure": "⿰米造",
+    "strokeCount": 16,
+    "strokeShapes": [
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丶",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Cāo",
+    "pinyinArray": [
+      "Cao"
+    ]
+  },
+  "糜": {
+    "structure": "⿸麻米",
+    "strokeCount": 17,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "丨",
+      "丿",
+      "㇏",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Mí",
+    "pinyinArray": [
+      "Mi"
+    ]
+  },
+  "糟": {
+    "structure": "⿰米曹",
+    "strokeCount": 17,
+    "strokeShapes": [
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Zāo",
+    "pinyinArray": [
+      "Zao"
+    ]
+  },
+  "糠": {
+    "structure": "⿰米康",
+    "strokeCount": 17,
+    "strokeShapes": [
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丶",
+      "一",
+      "丿",
+      "𠃍",
+      "一",
+      "一",
+      "亅",
+      "丶",
+      "㇀",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Kāng",
+    "pinyinArray": [
+      "Kang"
+    ]
+  },
+  "糯": {
+    "structure": "⿰米需",
+    "strokeCount": 20,
+    "strokeShapes": [
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "㇀",
+      "㇇|乛",
+      "丨",
+      "丶",
+      "丶",
+      "丶",
+      "丶",
+      "一",
+      "丿",
+      "丨",
+      "𠃌",
+      "丨",
+      "丨"
+    ],
+    "pinyin": "Nuò",
+    "pinyinArray": [
+      "Nuo"
+    ]
+  },
+  "系": {
+    "structure": "⿱丿糸",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丿",
+      "𠃋",
+      "𠃋",
+      "丶",
+      "亅",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Xì",
+    "pinyinArray": [
+      "Xi"
+    ]
+  },
+  "紊": {
+    "structure": "⿱文糸",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "㇏",
+      "𠃋",
+      "𠃋",
+      "丶",
+      "亅",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Wěn",
+    "pinyinArray": [
+      "Wen"
+    ]
+  },
+  "素": {
+    "structure": "⿱龶糸",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "一",
+      "丨",
+      "一",
+      "𠃋",
+      "𠃋",
+      "丶",
+      "亅",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Sù",
+    "pinyinArray": [
+      "Su"
+    ]
+  },
+  "索": {
+    "structure": "⿱⿱十冖糸",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "㇀",
+      "㇇|乛",
+      "𠃋",
+      "𠃋",
+      "丶",
+      "亅",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Suǒ",
+    "pinyinArray": [
+      "Suo"
+    ]
+  },
+  "紧": {
+    "structure": "⿱⿰〢又糸",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丨",
+      "丨",
+      "㇇|乛",
+      "㇏",
+      "𠃋",
+      "𠃋",
+      "丶",
+      "亅",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Jǐn",
+    "pinyinArray": [
+      "Jin"
+    ]
+  },
+  "紫": {
+    "structure": "⿱此糸",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丨",
+      "一",
+      "丨",
+      "㇀",
+      "丿",
+      "乚",
+      "𠃋",
+      "𠃋",
+      "丶",
+      "亅",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Zǐ",
+    "pinyinArray": [
+      "Zi"
+    ]
+  },
+  "累": {
+    "structure": "⿱田糸",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "𠃋",
+      "𠃋",
+      "丶",
+      "亅",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Lèi",
+    "pinyinArray": [
+      "Lei"
+    ]
+  },
+  "絮": {
+    "structure": "⿱如糸",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "𡿨",
+      "丿",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "𠃋",
+      "𠃋",
+      "丶",
+      "亅",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Xù",
+    "pinyinArray": [
+      "Xu"
+    ]
+  },
+  "繁": {
+    "structure": "⿱敏糸",
+    "strokeCount": 17,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "㇄",
+      "𠃌",
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丿",
+      "㇏",
+      "𠃋",
+      "𠃋",
+      "丶",
+      "亅",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Fán",
+    "pinyinArray": [
+      "Fan"
+    ]
+  },
+  "纠": {
+    "structure": "⿰纟丩",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "𠃋",
+      "𠃋",
+      "㇀",
+      "𠄌",
+      "丨"
+    ],
+    "pinyin": "Jiū",
+    "pinyinArray": [
+      "Jiu"
+    ]
+  },
+  "红": {
+    "structure": "⿰纟工",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "𠃋",
+      "𠃋",
+      "㇀",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Hóng",
+    "pinyinArray": [
+      "Hong"
+    ]
+  },
+  "纤": {
+    "structure": "⿰纟千",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "𠃋",
+      "𠃋",
+      "㇀",
+      "丿",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Xiān",
+    "pinyinArray": [
+      "Xian"
+    ]
+  },
+  "约": {
+    "structure": "⿰纟勺",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "𠃋",
+      "𠃋",
+      "㇀",
+      "丿",
+      "𠃌",
+      "丶"
+    ],
+    "pinyin": "Yuē",
+    "pinyinArray": [
+      "Yue"
+    ]
+  },
+  "级": {
+    "structure": "⿰纟及",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "𠃋",
+      "𠃋",
+      "㇀",
+      "丿",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Jí",
+    "pinyinArray": [
+      "Ji"
+    ]
+  },
+  "纪": {
+    "structure": "⿰纟己",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "𠃋",
+      "𠃋",
+      "㇀",
+      "𠃍",
+      "一",
+      "乚"
+    ],
+    "pinyin": "Jì",
+    "pinyinArray": [
+      "Ji"
+    ]
+  },
+  "纫": {
+    "structure": "⿰纟刃",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "𠃋",
+      "𠃋",
+      "㇀",
+      "𠃌",
+      "丿",
+      "㇀"
+    ],
+    "pinyin": "Rèn",
+    "pinyinArray": [
+      "Ren"
+    ]
+  },
+  "纬": {
+    "structure": "⿰纟韦",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "𠃋",
+      "𠃋",
+      "㇀",
+      "一",
+      "一",
+      "𠃌",
+      "丨"
+    ],
+    "pinyin": "Wěi",
+    "pinyinArray": [
+      "Wei"
+    ]
+  },
+  "纯": {
+    "structure": "⿰纟屯",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "𠃋",
+      "𠃋",
+      "㇀",
+      "一",
+      "㇄",
+      "丨",
+      "乚"
+    ],
+    "pinyin": "Chún",
+    "pinyinArray": [
+      "Chun"
+    ]
+  },
+  "纱": {
+    "structure": "⿰纟少",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "𠃋",
+      "𠃋",
+      "㇀",
+      "丨",
+      "丿",
+      "丶",
+      "丿"
+    ],
+    "pinyin": "Shā",
+    "pinyinArray": [
+      "Sha"
+    ]
+  },
+  "纲": {
+    "structure": "⿰纟冈",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "𠃋",
+      "𠃋",
+      "㇀",
+      "丨",
+      "𠃌",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Gāng",
+    "pinyinArray": [
+      "Gang"
+    ]
+  },
+  "纳": {
+    "structure": "⿰纟内",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "𠃋",
+      "𠃋",
+      "㇀",
+      "丨",
+      "𠃌",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Nà",
+    "pinyinArray": [
+      "Na"
+    ]
+  },
+  "纵": {
+    "structure": "⿰纟从",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "𠃋",
+      "𠃋",
+      "㇀",
+      "丿",
+      "丶",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Zòng",
+    "pinyinArray": [
+      "Zong"
+    ]
+  },
+  "纷": {
+    "structure": "⿰纟分",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "𠃋",
+      "𠃋",
+      "㇀",
+      "丿",
+      "㇏",
+      "𠃌",
+      "丿"
+    ],
+    "pinyin": "Fēn",
+    "pinyinArray": [
+      "Fen"
+    ]
+  },
+  "纸": {
+    "structure": "⿰纟氏",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "𠃋",
+      "𠃋",
+      "㇀",
+      "丿",
+      "𠄌",
+      "一",
+      "㇂|㇃"
+    ],
+    "pinyin": "Zhǐ",
+    "pinyinArray": [
+      "Zhi"
+    ]
+  },
+  "纹": {
+    "structure": "⿰纟文",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "𠃋",
+      "𠃋",
+      "㇀",
+      "丶",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Wén",
+    "pinyinArray": [
+      "Wen"
+    ]
+  },
+  "纺": {
+    "structure": "⿰纟方",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "𠃋",
+      "𠃋",
+      "㇀",
+      "丶",
+      "一",
+      "𠃌",
+      "丿"
+    ],
+    "pinyin": "Fǎng",
+    "pinyinArray": [
+      "Fang"
+    ]
+  },
+  "纽": {
+    "structure": "⿰纟丑",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "𠃋",
+      "𠃋",
+      "㇀",
+      "𠃍",
+      "丨",
+      "一",
+      "一"
+    ],
+    "pinyin": "Niǔ",
+    "pinyinArray": [
+      "Niu"
+    ]
+  },
+  "线": {
+    "structure": "⿰纟戋",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "𠃋",
+      "𠃋",
+      "㇀",
+      "一",
+      "一",
+      "㇂|㇃",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Xiàn",
+    "pinyinArray": [
+      "Xian"
+    ]
+  },
+  "练": {
+    "structure": "⿰纟𫠣",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "𠃋",
+      "𠃋",
+      "㇀",
+      "一",
+      "𠃋",
+      "𠃌",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Liàn",
+    "pinyinArray": [
+      "Lian"
+    ]
+  },
+  "组": {
+    "structure": "⿰纟且",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "𠃋",
+      "𠃋",
+      "㇀",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一"
+    ],
+    "pinyin": "Zǔ",
+    "pinyinArray": [
+      "Zu"
+    ]
+  },
+  "绅": {
+    "structure": "⿰纟申",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "𠃋",
+      "𠃋",
+      "㇀",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Shēn",
+    "pinyinArray": [
+      "Shen"
+    ]
+  },
+  "细": {
+    "structure": "⿰纟田",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "𠃋",
+      "𠃋",
+      "㇀",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Xì",
+    "pinyinArray": [
+      "Xi"
+    ]
+  },
+  "织": {
+    "structure": "⿰纟只",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "𠃋",
+      "𠃋",
+      "㇀",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Zhì",
+    "pinyinArray": [
+      "Zhi"
+    ]
+  },
+  "终": {
+    "structure": "⿰纟冬",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "𠃋",
+      "𠃋",
+      "㇀",
+      "丿",
+      "㇇|乛",
+      "㇏",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Zhōng",
+    "pinyinArray": [
+      "Zhong"
+    ]
+  },
+  "绊": {
+    "structure": "⿰纟半",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "𠃋",
+      "𠃋",
+      "㇀",
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Bàn",
+    "pinyinArray": [
+      "Ban"
+    ]
+  },
+  "绍": {
+    "structure": "⿰纟召",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "𠃋",
+      "𠃋",
+      "㇀",
+      "𠃌",
+      "丿",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Shào",
+    "pinyinArray": [
+      "Shao"
+    ]
+  },
+  "绎": {
+    "structure": "⿰纟𠬤",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "𠃋",
+      "𠃋",
+      "㇀",
+      "㇇|乛",
+      "㇏",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Yì",
+    "pinyinArray": [
+      "Yi"
+    ]
+  },
+  "经": {
+    "structure": "⿰纟𢀖",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "𠃋",
+      "𠃋",
+      "㇀",
+      "㇇|乛",
+      "丶",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Jìng",
+    "pinyinArray": [
+      "Jing"
+    ]
+  },
+  "绑": {
+    "structure": "⿰纟邦",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "𠃋",
+      "𠃋",
+      "㇀",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "𠄎|㇌",
+      "丨"
+    ],
+    "pinyin": "Bǎng",
+    "pinyinArray": [
+      "Bang"
+    ]
+  },
+  "绒": {
+    "structure": "⿰纟戎",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "𠃋",
+      "𠃋",
+      "㇀",
+      "一",
+      "一",
+      "丿",
+      "㇂|㇃",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Róng",
+    "pinyinArray": [
+      "Rong"
+    ]
+  },
+  "结": {
+    "structure": "⿰纟吉",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "𠃋",
+      "𠃋",
+      "㇀",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Jié",
+    "pinyinArray": [
+      "Jie"
+    ]
+  },
+  "绕": {
+    "structure": "⿰纟尧",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "𠃋",
+      "𠃋",
+      "㇀",
+      "一",
+      "㇂|㇃",
+      "丿",
+      "一",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Rào",
+    "pinyinArray": [
+      "Rao"
+    ]
+  },
+  "绘": {
+    "structure": "⿰纟会",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "𠃋",
+      "𠃋",
+      "㇀",
+      "丿",
+      "㇏",
+      "一",
+      "一",
+      "𠃋",
+      "丶"
+    ],
+    "pinyin": "Huì",
+    "pinyinArray": [
+      "Hui"
+    ]
+  },
+  "给": {
+    "structure": "⿰纟合",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "𠃋",
+      "𠃋",
+      "㇀",
+      "丿",
+      "㇏",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Gěi",
+    "pinyinArray": [
+      "Gei"
+    ]
+  },
+  "络": {
+    "structure": "⿰纟各",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "𠃋",
+      "𠃋",
+      "㇀",
+      "丿",
+      "㇇|乛",
+      "㇏",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Luò",
+    "pinyinArray": [
+      "Luo"
+    ]
+  },
+  "绝": {
+    "structure": "⿰纟色",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "𠃋",
+      "𠃋",
+      "㇀",
+      "丿",
+      "㇇|乛",
+      "𠃍",
+      "丨",
+      "一",
+      "乚"
+    ],
+    "pinyin": "Jué",
+    "pinyinArray": [
+      "Jue"
+    ]
+  },
+  "绞": {
+    "structure": "⿰纟交",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "𠃋",
+      "𠃋",
+      "㇀",
+      "丶",
+      "一",
+      "丿",
+      "丶",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Jiǎo",
+    "pinyinArray": [
+      "Jiao"
+    ]
+  },
+  "统": {
+    "structure": "⿰纟充",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "𠃋",
+      "𠃋",
+      "㇀",
+      "丶",
+      "一",
+      "𠃋",
+      "丶",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Tǒng",
+    "pinyinArray": [
+      "Tong"
+    ]
+  },
+  "绢": {
+    "structure": "⿰纟肙",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "𠃋",
+      "𠃋",
+      "㇀",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃌",
+      "一",
+      "一"
+    ],
+    "pinyin": "Juàn",
+    "pinyinArray": [
+      "Juan"
+    ]
+  },
+  "绣": {
+    "structure": "⿰纟秀",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "𠃋",
+      "𠃋",
+      "㇀",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "㇏",
+      "𠄎|㇌",
+      "丿"
+    ],
+    "pinyin": "Xiù",
+    "pinyinArray": [
+      "Xiu"
+    ]
+  },
+  "继": {
+    "structure": "⿰纟⿺𠃊米",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "𠃋",
+      "𠃋",
+      "㇀",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "㇄"
+    ],
+    "pinyin": "Jì",
+    "pinyinArray": [
+      "Ji"
+    ]
+  },
+  "绩": {
+    "structure": "⿰纟责",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "𠃋",
+      "𠃋",
+      "㇀",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Jì",
+    "pinyinArray": [
+      "Ji"
+    ]
+  },
+  "绪": {
+    "structure": "⿰纟者",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "𠃋",
+      "𠃋",
+      "㇀",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Xù",
+    "pinyinArray": [
+      "Xu"
+    ]
+  },
+  "续": {
+    "structure": "⿰纟卖",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "𠃋",
+      "𠃋",
+      "㇀",
+      "一",
+      "丨",
+      "㇇|乛",
+      "丶",
+      "丶",
+      "一",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Xù",
+    "pinyinArray": [
+      "Xu"
+    ]
+  },
+  "绰": {
+    "structure": "⿰纟卓",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "𠃋",
+      "𠃋",
+      "㇀",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Chuò",
+    "pinyinArray": [
+      "Chuo"
+    ]
+  },
+  "绳": {
+    "structure": "⿰纟黾",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "𠃋",
+      "𠃋",
+      "㇀",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "乚"
+    ],
+    "pinyin": "Shéng",
+    "pinyinArray": [
+      "Sheng"
+    ]
+  },
+  "维": {
+    "structure": "⿰纟隹",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "𠃋",
+      "𠃋",
+      "㇀",
+      "丿",
+      "丨",
+      "丶",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Wéi",
+    "pinyinArray": [
+      "Wei"
+    ]
+  },
+  "绵": {
+    "structure": "⿰纟帛",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "𠃋",
+      "𠃋",
+      "㇀",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "𠃌",
+      "丨"
+    ],
+    "pinyin": "Mián",
+    "pinyinArray": [
+      "Mian"
+    ]
+  },
+  "绷": {
+    "structure": "⿰纟朋",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "𠃋",
+      "𠃋",
+      "㇀",
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "丿",
+      "𠃌",
+      "一",
+      "一"
+    ],
+    "pinyin": "Bèng",
+    "pinyinArray": [
+      "Beng"
+    ]
+  },
+  "绸": {
+    "structure": "⿰纟周",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "𠃋",
+      "𠃋",
+      "㇀",
+      "丿",
+      "𠃌",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Chóu",
+    "pinyinArray": [
+      "Chou"
+    ]
+  },
+  "综": {
+    "structure": "⿰纟宗",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "𠃋",
+      "𠃋",
+      "㇀",
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "一",
+      "一",
+      "亅",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Zōng",
+    "pinyinArray": [
+      "Zong"
+    ]
+  },
+  "绽": {
+    "structure": "⿰纟定",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "𠃋",
+      "𠃋",
+      "㇀",
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Zhàn",
+    "pinyinArray": [
+      "Zhan"
+    ]
+  },
+  "绿": {
+    "structure": "⿰纟录",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "𠃋",
+      "𠃋",
+      "㇀",
+      "𠃍",
+      "一",
+      "一",
+      "亅",
+      "丶",
+      "㇀",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Lǜ",
+    "pinyinArray": [
+      "Lü"
+    ]
+  },
+  "缀": {
+    "structure": "⿰纟叕",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "𠃋",
+      "𠃋",
+      "㇀",
+      "㇇|乛",
+      "丶",
+      "㇇|乛",
+      "丶",
+      "㇇|乛",
+      "丶",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Zhuì",
+    "pinyinArray": [
+      "Zhui"
+    ]
+  },
+  "缅": {
+    "structure": "⿰纟面",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "𠃋",
+      "𠃋",
+      "㇀",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "丨",
+      "丨",
+      "一",
+      "一",
+      "一"
+    ],
+    "pinyin": "Miǎn",
+    "pinyinArray": [
+      "Mian"
+    ]
+  },
+  "缆": {
+    "structure": "⿰纟览",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "𠃋",
+      "𠃋",
+      "㇀",
+      "丨",
+      "丨",
+      "丿",
+      "一",
+      "丶",
+      "丨",
+      "𠃍",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Lǎn",
+    "pinyinArray": [
+      "Lan"
+    ]
+  },
+  "缎": {
+    "structure": "⿰纟段",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "𠃋",
+      "𠃋",
+      "㇀",
+      "丿",
+      "丨",
+      "一",
+      "一",
+      "㇀",
+      "丿",
+      "㇅|㇍",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Duàn",
+    "pinyinArray": [
+      "Duan"
+    ]
+  },
+  "缓": {
+    "structure": "⿰纟爰",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "𠃋",
+      "𠃋",
+      "㇀",
+      "丿",
+      "丶",
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "丿",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Huǎn",
+    "pinyinArray": [
+      "Huan"
+    ]
+  },
+  "缔": {
+    "structure": "⿰纟帝",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "𠃋",
+      "𠃋",
+      "㇀",
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "㇀",
+      "㇇|乛",
+      "丨",
+      "𠃌",
+      "丨"
+    ],
+    "pinyin": "Dì",
+    "pinyinArray": [
+      "Di"
+    ]
+  },
+  "缕": {
+    "structure": "⿰纟娄",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "𠃋",
+      "𠃋",
+      "㇀",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "㇏",
+      "𡿨",
+      "丿",
+      "一"
+    ],
+    "pinyin": "Lǚ",
+    "pinyinArray": [
+      "Lü"
+    ]
+  },
+  "编": {
+    "structure": "⿰纟扁",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "𠃋",
+      "𠃋",
+      "㇀",
+      "丶",
+      "𠃍",
+      "一",
+      "丿",
+      "丨",
+      "𠃌",
+      "一",
+      "丨",
+      "丨"
+    ],
+    "pinyin": "Biān",
+    "pinyinArray": [
+      "Bian"
+    ]
+  },
+  "缘": {
+    "structure": "⿰纟彖",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "𠃋",
+      "𠃋",
+      "㇀",
+      "𠃋",
+      "㇇|乛",
+      "一",
+      "丿",
+      "㇁",
+      "丿",
+      "丿",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Yuán",
+    "pinyinArray": [
+      "Yuan"
+    ]
+  },
+  "缚": {
+    "structure": "⿰纟尃",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "𠃋",
+      "𠃋",
+      "㇀",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "丶",
+      "一",
+      "亅",
+      "丶"
+    ],
+    "pinyin": "Fù",
+    "pinyinArray": [
+      "Fu"
+    ]
+  },
+  "缝": {
+    "structure": "⿰纟逢",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "𠃋",
+      "𠃋",
+      "㇀",
+      "丿",
+      "㇇|乛",
+      "㇏",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "丶",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Féng",
+    "pinyinArray": [
+      "Feng"
+    ]
+  },
+  "缠": {
+    "structure": "⿰纟㢆",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "𠃋",
+      "𠃋",
+      "㇀",
+      "丶",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "一"
+    ],
+    "pinyin": "Chán",
+    "pinyinArray": [
+      "Chan"
+    ]
+  },
+  "缤": {
+    "structure": "⿰纟宾",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "𠃋",
+      "𠃋",
+      "㇀",
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "丿",
+      "丨",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Bīn",
+    "pinyinArray": [
+      "Bin"
+    ]
+  },
+  "缨": {
+    "structure": "⿰纟婴",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "𠃋",
+      "𠃋",
+      "㇀",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶",
+      "𡿨",
+      "丿",
+      "一"
+    ],
+    "pinyin": "Yīng",
+    "pinyinArray": [
+      "Ying"
+    ]
+  },
+  "缩": {
+    "structure": "⿰纟宿",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "𠃋",
+      "𠃋",
+      "㇀",
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "丿",
+      "丨",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Suō",
+    "pinyinArray": [
+      "Suo"
+    ]
+  },
+  "缭": {
+    "structure": "⿰纟尞",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "𠃋",
+      "𠃋",
+      "㇀",
+      "一",
+      "丿",
+      "㇏",
+      "丶",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "亅",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Liáo",
+    "pinyinArray": [
+      "Liao"
+    ]
+  },
+  "缰": {
+    "structure": "⿰纟畺",
+    "strokeCount": 16,
+    "strokeShapes": [
+      "𠃋",
+      "𠃋",
+      "㇀",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "一"
+    ],
+    "pinyin": "Jiāng",
+    "pinyinArray": [
+      "Jiang"
+    ]
+  },
+  "缴": {
+    "structure": "⿰纟敫",
+    "strokeCount": 16,
+    "strokeShapes": [
+      "𠃋",
+      "𠃋",
+      "㇀",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丶",
+      "一",
+      "𠃌",
+      "丿",
+      "丿",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Jiǎo",
+    "pinyinArray": [
+      "Jiao"
+    ]
+  },
+  "缸": {
+    "structure": "⿰缶工",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "丨",
+      "㇄",
+      "丨",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Gāng",
+    "pinyinArray": [
+      "Gang"
+    ]
+  },
+  "缺": {
+    "structure": "⿰缶夬",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "丨",
+      "㇄",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Quē",
+    "pinyinArray": [
+      "Que"
+    ]
+  },
+  "罐": {
+    "structure": "⿰缶雚",
+    "strokeCount": 23,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "丨",
+      "㇄",
+      "丨",
+      "一",
+      "丨",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "丨",
+      "丶",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Guàn",
+    "pinyinArray": [
+      "Guan"
+    ]
+  },
+  "网": {
+    "structure": "⿵冂⿰㐅㐅",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丨",
+      "𠃌",
+      "丿",
+      "丶",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Wǎng",
+    "pinyinArray": [
+      "Wang"
+    ]
+  },
+  "罕": {
+    "structure": "⿱㓁干",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "㇀",
+      "㇇|乛",
+      "丿",
+      "丶",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Hǎn",
+    "pinyinArray": [
+      "Han"
+    ]
+  },
+  "罗": {
+    "structure": "⿱罒夕",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "丨",
+      "丨",
+      "一",
+      "丿",
+      "㇇|乛",
+      "丶"
+    ],
+    "pinyin": "Luó",
+    "pinyinArray": [
+      "Luo"
+    ]
+  },
+  "罚": {
+    "structure": "⿱罒⿰讠刂",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "丨",
+      "丨",
+      "一",
+      "丶",
+      "㇊",
+      "丨",
+      "亅"
+    ],
+    "pinyin": "Fá",
+    "pinyinArray": [
+      "Fa"
+    ]
+  },
+  "罢": {
+    "structure": "⿱罒去",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "丨",
+      "丨",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "𠃋",
+      "丶"
+    ],
+    "pinyin": "Bà",
+    "pinyinArray": [
+      "Ba"
+    ]
+  },
+  "罩": {
+    "structure": "⿱罒卓",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "丨",
+      "丨",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Zhào",
+    "pinyinArray": [
+      "Zhao"
+    ]
+  },
+  "罪": {
+    "structure": "⿱罒非",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "丨",
+      "丨",
+      "一",
+      "丨",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "一",
+      "一"
+    ],
+    "pinyin": "Zuì",
+    "pinyinArray": [
+      "Zui"
+    ]
+  },
+  "置": {
+    "structure": "⿱罒直",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "丨",
+      "丨",
+      "一",
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "一"
+    ],
+    "pinyin": "Zhì",
+    "pinyinArray": [
+      "Zhi"
+    ]
+  },
+  "署": {
+    "structure": "⿱罒者",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "丨",
+      "丨",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Shǔ",
+    "pinyinArray": [
+      "Shu"
+    ]
+  },
+  "羊": {
+    "structure": "⿱䒑⿻二丨",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Yáng",
+    "pinyinArray": [
+      "Yang"
+    ]
+  },
+  "美": {
+    "structure": "⿱𦍌大",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Měi",
+    "pinyinArray": [
+      "Mei"
+    ]
+  },
+  "羔": {
+    "structure": "⿱𦍌灬",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "㇀",
+      "丶",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Gāo",
+    "pinyinArray": [
+      "Gao"
+    ]
+  },
+  "羞": {
+    "structure": "⿸羊丑[G]",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "𠃍",
+      "丨",
+      "一",
+      "一"
+    ],
+    "pinyin": "Xiū",
+    "pinyinArray": [
+      "Xiu"
+    ]
+  },
+  "羡": {
+    "structure": "⿱𦍌次",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "丶",
+      "㇀",
+      "丿",
+      "㇇|乛",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Xiàn",
+    "pinyinArray": [
+      "Xian"
+    ]
+  },
+  "群": {
+    "structure": "⿰君羊",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Qún",
+    "pinyinArray": [
+      "Qun"
+    ]
+  },
+  "羹": {
+    "structure": "⿱羔美",
+    "strokeCount": 19,
+    "strokeShapes": [
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "㇀",
+      "丶",
+      "丶",
+      "丶",
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Gēng",
+    "pinyinArray": [
+      "Geng"
+    ]
+  },
+  "羽": {
+    "structure": "⿰习习",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "𠃌",
+      "丶",
+      "㇀",
+      "𠃌",
+      "丶",
+      "㇀"
+    ],
+    "pinyin": "Yǔ",
+    "pinyinArray": [
+      "Yu"
+    ]
+  },
+  "翁": {
+    "structure": "⿱公羽",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "㇏",
+      "𠃋",
+      "丶",
+      "𠃌",
+      "丶",
+      "㇀",
+      "𠃌",
+      "丶",
+      "㇀"
+    ],
+    "pinyin": "Wēng",
+    "pinyinArray": [
+      "Weng"
+    ]
+  },
+  "翅": {
+    "structure": "⿺支羽",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "㇇|乛",
+      "㇏",
+      "𠃌",
+      "丶",
+      "㇀",
+      "𠃌",
+      "丶",
+      "㇀"
+    ],
+    "pinyin": "Chì",
+    "pinyinArray": [
+      "Chi"
+    ]
+  },
+  "翎": {
+    "structure": "⿰令羽",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丿",
+      "丶",
+      "丶",
+      "㇇|乛",
+      "丶",
+      "𠃌",
+      "丶",
+      "㇀",
+      "𠃌",
+      "丶",
+      "㇀"
+    ],
+    "pinyin": "Líng",
+    "pinyinArray": [
+      "Ling"
+    ]
+  },
+  "翔": {
+    "structure": "⿰羊羽",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "𠃌",
+      "丶",
+      "㇀",
+      "𠃌",
+      "丶",
+      "㇀"
+    ],
+    "pinyin": "Xiáng",
+    "pinyinArray": [
+      "Xiang"
+    ]
+  },
+  "翘": {
+    "structure": "⿺尧羽",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "㇂|㇃",
+      "丿",
+      "一",
+      "丿",
+      "乚",
+      "𠃌",
+      "丶",
+      "㇀",
+      "𠃌",
+      "丶",
+      "㇀"
+    ],
+    "pinyin": "Qiáo",
+    "pinyinArray": [
+      "Qiao"
+    ]
+  },
+  "翠": {
+    "structure": "⿱羽卒",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "𠃍",
+      "丶",
+      "㇀",
+      "𠃍",
+      "丶",
+      "㇀",
+      "丶",
+      "一",
+      "丿",
+      "丶",
+      "丿",
+      "丶",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Cuì",
+    "pinyinArray": [
+      "Cui"
+    ]
+  },
+  "翩": {
+    "structure": "⿰扁羽",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "丶",
+      "𠃍",
+      "一",
+      "丿",
+      "丨",
+      "𠃌",
+      "一",
+      "丨",
+      "丨",
+      "𠃌",
+      "丶",
+      "㇀",
+      "𠃌",
+      "丶",
+      "㇀"
+    ],
+    "pinyin": "Piān",
+    "pinyinArray": [
+      "Pian"
+    ]
+  },
+  "翰": {
+    "structure": "⿰𠦝⿱人羽",
+    "strokeCount": 16,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "丿",
+      "㇏",
+      "𠃌",
+      "丶",
+      "㇀",
+      "𠃌",
+      "丶",
+      "㇀"
+    ],
+    "pinyin": "Hàn",
+    "pinyinArray": [
+      "Han"
+    ]
+  },
+  "翻": {
+    "structure": "⿰番羽",
+    "strokeCount": 18,
+    "strokeShapes": [
+      "丿",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "𠃌",
+      "丶",
+      "㇀",
+      "𠃌",
+      "丶",
+      "㇀"
+    ],
+    "pinyin": "Fān",
+    "pinyinArray": [
+      "Fan"
+    ]
+  },
+  "翼": {
+    "structure": "⿱羽異",
+    "strokeCount": 17,
+    "strokeShapes": [
+      "𠃍",
+      "丶",
+      "㇀",
+      "𠃍",
+      "丶",
+      "㇀",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Yì",
+    "pinyinArray": [
+      "Yi"
+    ]
+  },
+  "耀": {
+    "structure": "⿰光翟",
+    "strokeCount": 20,
+    "strokeShapes": [
+      "丨",
+      "丶",
+      "丿",
+      "一",
+      "丿",
+      "𠄌",
+      "𠃍",
+      "丶",
+      "㇀",
+      "𠃍",
+      "丶",
+      "㇀",
+      "丿",
+      "丨",
+      "丶",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Yào",
+    "pinyinArray": [
+      "Yao"
+    ]
+  },
+  "老": {
+    "structure": "⿸耂匕",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Lǎo",
+    "pinyinArray": [
+      "Lao"
+    ]
+  },
+  "考": {
+    "structure": "⿸耂丂",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "一",
+      "㇉"
+    ],
+    "pinyin": "Kǎo",
+    "pinyinArray": [
+      "Kao"
+    ]
+  },
+  "者": {
+    "structure": "⿸耂日[GTJ]",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Zhě",
+    "pinyinArray": [
+      "Zhe"
+    ]
+  },
+  "而": {
+    "structure": "⿱一𦓐",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "丨",
+      "𠃌",
+      "丨",
+      "丨"
+    ],
+    "pinyin": "Ér",
+    "pinyinArray": [
+      "Er"
+    ]
+  },
+  "耍": {
+    "structure": "⿱而女",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "丨",
+      "𠃌",
+      "丨",
+      "丨",
+      "𡿨",
+      "丿",
+      "一"
+    ],
+    "pinyin": "Shuǎ",
+    "pinyinArray": [
+      "Shua"
+    ]
+  },
+  "耐": {
+    "structure": "⿰而寸",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "丨",
+      "𠃌",
+      "丨",
+      "丨",
+      "一",
+      "亅",
+      "丶"
+    ],
+    "pinyin": "Nài",
+    "pinyinArray": [
+      "Nai"
+    ]
+  },
+  "耕": {
+    "structure": "⿰耒井",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "一",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "一",
+      "丿",
+      "丨"
+    ],
+    "pinyin": "Gēng",
+    "pinyinArray": [
+      "Geng"
+    ]
+  },
+  "耗": {
+    "structure": "⿰耒毛",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "一",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "乚"
+    ],
+    "pinyin": "Hào",
+    "pinyinArray": [
+      "Hao"
+    ]
+  },
+  "耘": {
+    "structure": "⿰耒云",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "一",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "一",
+      "𠃋",
+      "丶"
+    ],
+    "pinyin": "Yún",
+    "pinyinArray": [
+      "Yun"
+    ]
+  },
+  "耙": {
+    "structure": "⿰耒巴",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "一",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "𠃍",
+      "丨",
+      "一",
+      "乚"
+    ],
+    "pinyin": "Pá",
+    "pinyinArray": [
+      "Pa"
+    ]
+  },
+  "耳": {
+    "structure": "耳",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "一",
+      "一"
+    ],
+    "pinyin": "Ěr",
+    "pinyinArray": [
+      "Er"
+    ]
+  },
+  "耸": {
+    "structure": "⿱从耳",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "丶",
+      "丿",
+      "㇏",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "一",
+      "一"
+    ],
+    "pinyin": "Sǒng",
+    "pinyinArray": [
+      "Song"
+    ]
+  },
+  "耻": {
+    "structure": "⿰耳止",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "一",
+      "㇀",
+      "丨",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Chǐ",
+    "pinyinArray": [
+      "Chi"
+    ]
+  },
+  "耽": {
+    "structure": "⿰耳冘",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "一",
+      "㇀",
+      "㇀",
+      "㇇|乛",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Dān",
+    "pinyinArray": [
+      "Dan"
+    ]
+  },
+  "耿": {
+    "structure": "⿰耳火",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "一",
+      "㇀",
+      "㇀",
+      "丿",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Gěng",
+    "pinyinArray": [
+      "Geng"
+    ]
+  },
+  "聂": {
+    "structure": "⿱耳双",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "一",
+      "一",
+      "㇇|乛",
+      "丶",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Niè",
+    "pinyinArray": [
+      "Nie"
+    ]
+  },
+  "聊": {
+    "structure": "⿰耳卯",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "一",
+      "㇀",
+      "丿",
+      "𠄌",
+      "丿",
+      "𠃌",
+      "丨"
+    ],
+    "pinyin": "Liáo",
+    "pinyinArray": [
+      "Liao"
+    ]
+  },
+  "聋": {
+    "structure": "⿱龙耳",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "乚",
+      "丿",
+      "丶",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "一",
+      "一"
+    ],
+    "pinyin": "Lóng",
+    "pinyinArray": [
+      "Long"
+    ]
+  },
+  "职": {
+    "structure": "⿰耳只",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "一",
+      "㇀",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Zhí",
+    "pinyinArray": [
+      "Zhi"
+    ]
+  },
+  "联": {
+    "structure": "⿰耳关",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "一",
+      "㇀",
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Lián",
+    "pinyinArray": [
+      "Lian"
+    ]
+  },
+  "聘": {
+    "structure": "⿰耳甹",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "一",
+      "㇀",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "一",
+      "㇉"
+    ],
+    "pinyin": "Pìn",
+    "pinyinArray": [
+      "Pin"
+    ]
+  },
+  "聚": {
+    "structure": "⿱取乑[GJK]",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "一",
+      "㇀",
+      "㇇|乛",
+      "丶",
+      "丿",
+      "丨",
+      "丿",
+      "丿",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Jù",
+    "pinyinArray": [
+      "Ju"
+    ]
+  },
+  "聪": {
+    "structure": "⿰耳总",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "一",
+      "㇀",
+      "丶",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "㇀",
+      "㇂|㇃",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Cōng",
+    "pinyinArray": [
+      "Cong"
+    ]
+  },
+  "肃": {
+    "structure": "肃",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "丿",
+      "丨",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Sù",
+    "pinyinArray": [
+      "Su"
+    ]
+  },
+  "肄": {
+    "structure": "⿰𠤕聿",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丿",
+      "乚",
+      "丿",
+      "一",
+      "一",
+      "丿",
+      "丶",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Yì",
+    "pinyinArray": [
+      "Yi"
+    ]
+  },
+  "肆": {
+    "structure": "⿰镸聿",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "一",
+      "一",
+      "一",
+      "𠃋",
+      "丶",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Sì",
+    "pinyinArray": [
+      "Si"
+    ]
+  },
+  "肉": {
+    "structure": "肉",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丨",
+      "𠃌",
+      "丿",
+      "丶",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Ròu",
+    "pinyinArray": [
+      "Rou"
+    ]
+  },
+  "肋": {
+    "structure": "⿰月力[GTV]",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "𠃌",
+      "丿"
+    ],
+    "pinyin": "Lèi",
+    "pinyinArray": [
+      "Lei"
+    ]
+  },
+  "肌": {
+    "structure": "⿰月几",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "丿",
+      "⺄"
+    ],
+    "pinyin": "Jī",
+    "pinyinArray": [
+      "Ji"
+    ]
+  },
+  "肖": {
+    "structure": "⿱⺌月[GJ]",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丨",
+      "丶",
+      "丿",
+      "丨",
+      "𠃌",
+      "一",
+      "一"
+    ],
+    "pinyin": "Xiào",
+    "pinyinArray": [
+      "Xiao"
+    ]
+  },
+  "肘": {
+    "structure": "⿰月寸[GJK]",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "一",
+      "亅",
+      "丶"
+    ],
+    "pinyin": "Zhǒu",
+    "pinyinArray": [
+      "Zhou"
+    ]
+  },
+  "肚": {
+    "structure": "⿰月土[GJK]",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Dù",
+    "pinyinArray": [
+      "Du"
+    ]
+  },
+  "肛": {
+    "structure": "⿰月工[GJK]",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Gāng",
+    "pinyinArray": [
+      "Gang"
+    ]
+  },
+  "肝": {
+    "structure": "⿰月干[GJK]",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Gān",
+    "pinyinArray": [
+      "Gan"
+    ]
+  },
+  "肠": {
+    "structure": "⿰月𠃓",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "𠄎|㇌",
+      "丿",
+      "丿"
+    ],
+    "pinyin": "Cháng",
+    "pinyinArray": [
+      "Chang"
+    ]
+  },
+  "股": {
+    "structure": "⿰月殳[GJK]",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "丿",
+      "㇅|㇍",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Gǔ",
+    "pinyinArray": [
+      "Gu"
+    ]
+  },
+  "肢": {
+    "structure": "⿰月支[GJK]",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Zhī",
+    "pinyinArray": [
+      "Zhi"
+    ]
+  },
+  "肤": {
+    "structure": "⿰月夫[G]",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Fū",
+    "pinyinArray": [
+      "Fu"
+    ]
+  },
+  "肥": {
+    "structure": "⿰月巴[GJK]",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "𠃍",
+      "丨",
+      "一",
+      "乚"
+    ],
+    "pinyin": "Féi",
+    "pinyinArray": [
+      "Fei"
+    ]
+  },
+  "肩": {
+    "structure": "⿸户月[G]",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丶",
+      "𠃍",
+      "一",
+      "丿",
+      "丨",
+      "𠃌",
+      "一",
+      "一"
+    ],
+    "pinyin": "Jiān",
+    "pinyinArray": [
+      "Jian"
+    ]
+  },
+  "肪": {
+    "structure": "⿰月方[GJK]",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "丶",
+      "一",
+      "𠃌",
+      "丿"
+    ],
+    "pinyin": "Fáng",
+    "pinyinArray": [
+      "Fang"
+    ]
+  },
+  "肮": {
+    "structure": "⿰月亢[GK]",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "丶",
+      "一",
+      "丿",
+      "⺄"
+    ],
+    "pinyin": "Āng",
+    "pinyinArray": [
+      "Ang"
+    ]
+  },
+  "肯": {
+    "structure": "⿱止月[GJKV]",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丨",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "𠃌",
+      "一",
+      "一"
+    ],
+    "pinyin": "Kěn",
+    "pinyinArray": [
+      "Ken"
+    ]
+  },
+  "育": {
+    "structure": "⿱𠫓月[GJK]",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "𠃋",
+      "丶",
+      "丨",
+      "𠃌",
+      "一",
+      "一"
+    ],
+    "pinyin": "Yù",
+    "pinyinArray": [
+      "Yu"
+    ]
+  },
+  "肴": {
+    "structure": "⿱㐅有[GJK]",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丿",
+      "丶",
+      "一",
+      "丿",
+      "丨",
+      "𠃌",
+      "一",
+      "一"
+    ],
+    "pinyin": "Yáo",
+    "pinyinArray": [
+      "Yao"
+    ]
+  },
+  "肺": {
+    "structure": "⿰月巿[G]",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "𠃌",
+      "丨"
+    ],
+    "pinyin": "Fèi",
+    "pinyinArray": [
+      "Fei"
+    ]
+  },
+  "肾": {
+    "structure": "⿱⿰〢又月",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丨",
+      "丨",
+      "㇇|乛",
+      "㇏",
+      "丨",
+      "𠃌",
+      "一",
+      "一"
+    ],
+    "pinyin": "Shèn",
+    "pinyinArray": [
+      "Shen"
+    ]
+  },
+  "肿": {
+    "structure": "⿰月中",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Zhǒng",
+    "pinyinArray": [
+      "Zhong"
+    ]
+  },
+  "胀": {
+    "structure": "⿰月长",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "丿",
+      "一",
+      "𠄌",
+      "㇏"
+    ],
+    "pinyin": "Zhàng",
+    "pinyinArray": [
+      "Zhang"
+    ]
+  },
+  "胁": {
+    "structure": "⿰月办",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "𠃌",
+      "丿",
+      "㇀",
+      "丶"
+    ],
+    "pinyin": "Xié",
+    "pinyinArray": [
+      "Xie"
+    ]
+  },
+  "胃": {
+    "structure": "⿱田月[GJK]",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "𠃌",
+      "一",
+      "一"
+    ],
+    "pinyin": "Wèi",
+    "pinyinArray": [
+      "Wei"
+    ]
+  },
+  "胆": {
+    "structure": "⿰月旦[GJK]",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一"
+    ],
+    "pinyin": "Dǎn",
+    "pinyinArray": [
+      "Dan"
+    ]
+  },
+  "背": {
+    "structure": "⿱北月[GJK]",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丨",
+      "一",
+      "㇀",
+      "丿",
+      "乚",
+      "丨",
+      "𠃌",
+      "一",
+      "一"
+    ],
+    "pinyin": "Bèi",
+    "pinyinArray": [
+      "Bei"
+    ]
+  },
+  "胎": {
+    "structure": "⿰月台[GJK]",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "𠃋",
+      "丶",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Tāi",
+    "pinyinArray": [
+      "Tai"
+    ]
+  },
+  "胖": {
+    "structure": "⿰月半[GJK]",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Pàng",
+    "pinyinArray": [
+      "Pang"
+    ]
+  },
+  "胚": {
+    "structure": "⿰月丕[GJK]",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "丨",
+      "丶",
+      "一"
+    ],
+    "pinyin": "Pēi",
+    "pinyinArray": [
+      "Pei"
+    ]
+  },
+  "胜": {
+    "structure": "⿰月生[GK]",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "丿",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Shèng",
+    "pinyinArray": [
+      "Sheng"
+    ]
+  },
+  "胞": {
+    "structure": "⿰月包[GJK]",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "丿",
+      "𠃌",
+      "𠃍",
+      "一",
+      "乚"
+    ],
+    "pinyin": "Bāo",
+    "pinyinArray": [
+      "Bao"
+    ]
+  },
+  "胡": {
+    "structure": "⿰古月[GJK]",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "𠃌",
+      "一",
+      "一"
+    ],
+    "pinyin": "Hú",
+    "pinyinArray": [
+      "Hu"
+    ]
+  },
+  "胧": {
+    "structure": "⿰月龙",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "乚",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Lóng",
+    "pinyinArray": [
+      "Long"
+    ]
+  },
+  "胯": {
+    "structure": "⿰月夸[GJK]",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "㇏",
+      "一",
+      "一",
+      "㇉"
+    ],
+    "pinyin": "Kuà",
+    "pinyinArray": [
+      "Kua"
+    ]
+  },
+  "胰": {
+    "structure": "⿰月夷[GJK]",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "一",
+      "𠃍",
+      "一",
+      "㇉",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Yí",
+    "pinyinArray": [
+      "Yi"
+    ]
+  },
+  "胳": {
+    "structure": "⿰月各[GJK]",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "丿",
+      "㇇|乛",
+      "㇏",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Gé",
+    "pinyinArray": [
+      "Ge"
+    ]
+  },
+  "胶": {
+    "structure": "⿰月交[GJK]",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "丶",
+      "一",
+      "丿",
+      "丶",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Jiāo",
+    "pinyinArray": [
+      "Jiao"
+    ]
+  },
+  "胸": {
+    "structure": "⿰月匈[GJK]",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "丿",
+      "𠃌",
+      "丿",
+      "丶",
+      "㇄",
+      "丨"
+    ],
+    "pinyin": "Xiōng",
+    "pinyinArray": [
+      "Xiong"
+    ]
+  },
+  "能": {
+    "structure": "⿰䏍𫧇",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "𠃋",
+      "丶",
+      "丨",
+      "𠃌",
+      "一",
+      "一",
+      "丿",
+      "乚",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Néng",
+    "pinyinArray": [
+      "Neng"
+    ]
+  },
+  "脂": {
+    "structure": "⿰月旨[GJK]",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "丿",
+      "乚",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Zhī",
+    "pinyinArray": [
+      "Zhi"
+    ]
+  },
+  "脆": {
+    "structure": "⿰月危[GJK]",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "丿",
+      "㇇|乛",
+      "一",
+      "丿",
+      "𠃌",
+      "乚"
+    ],
+    "pinyin": "Cuì",
+    "pinyinArray": [
+      "Cui"
+    ]
+  },
+  "脉": {
+    "structure": "⿰月永[GJK]",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "丶",
+      "𠃌",
+      "㇇|乛",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Mài",
+    "pinyinArray": [
+      "Mai"
+    ]
+  },
+  "脊": {
+    "structure": "⿱⿻人⿱丷八月[GJK]",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "丿",
+      "丶",
+      "丿",
+      "㇏",
+      "丨",
+      "𠃌",
+      "一",
+      "一"
+    ],
+    "pinyin": "Jǐ",
+    "pinyinArray": [
+      "Ji"
+    ]
+  },
+  "脏": {
+    "structure": "⿰月庄",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "丶",
+      "一",
+      "丿",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Zàng",
+    "pinyinArray": [
+      "Zang"
+    ]
+  },
+  "脐": {
+    "structure": "⿰月齐",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "丶",
+      "一",
+      "丿",
+      "㇏",
+      "丿",
+      "丨"
+    ],
+    "pinyin": "Qí",
+    "pinyinArray": [
+      "Qi"
+    ]
+  },
+  "脑": {
+    "structure": "⿰月㐫",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "丶",
+      "一",
+      "丿",
+      "丶",
+      "㇄",
+      "丨"
+    ],
+    "pinyin": "Nǎo",
+    "pinyinArray": [
+      "Nao"
+    ]
+  },
+  "脓": {
+    "structure": "⿰月农",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "㇀",
+      "㇇|乛",
+      "丿",
+      "𠄌",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Nóng",
+    "pinyinArray": [
+      "Nong"
+    ]
+  },
+  "脖": {
+    "structure": "⿰月孛[GJK]",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "㇀",
+      "㇇|乛",
+      "㇇|乛",
+      "亅",
+      "一"
+    ],
+    "pinyin": "Bó",
+    "pinyinArray": [
+      "Bo"
+    ]
+  },
+  "脚": {
+    "structure": "⿰月却[GJK]",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "𠃋",
+      "丶",
+      "𠃌",
+      "丨"
+    ],
+    "pinyin": "Jué",
+    "pinyinArray": [
+      "Jue"
+    ]
+  },
+  "脯": {
+    "structure": "⿰月甫[GJK]",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "𠃌",
+      "一",
+      "一",
+      "丨",
+      "丶"
+    ],
+    "pinyin": "Fǔ",
+    "pinyinArray": [
+      "Fu"
+    ]
+  },
+  "脱": {
+    "structure": "⿰月兑[GJK]",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "丶",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Tuō",
+    "pinyinArray": [
+      "Tuo"
+    ]
+  },
+  "脸": {
+    "structure": "⿰月佥",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "丿",
+      "㇏",
+      "一",
+      "丶",
+      "丶",
+      "丿",
+      "一"
+    ],
+    "pinyin": "Liǎn",
+    "pinyinArray": [
+      "Lian"
+    ]
+  },
+  "脾": {
+    "structure": "⿰月卑[GJK]",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Pí",
+    "pinyinArray": [
+      "Pi"
+    ]
+  },
+  "腊": {
+    "structure": "⿰月昔[GJK]",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Là",
+    "pinyinArray": [
+      "La"
+    ]
+  },
+  "腋": {
+    "structure": "⿰月夜[GJK]",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "丶",
+      "一",
+      "丿",
+      "丨",
+      "丿",
+      "㇇|乛",
+      "丶",
+      "㇏"
+    ],
+    "pinyin": "Yè",
+    "pinyinArray": [
+      "Ye"
+    ]
+  },
+  "腌": {
+    "structure": "⿰月奄[GJK]",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "㇏",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "乚"
+    ],
+    "pinyin": "Yān",
+    "pinyinArray": [
+      "Yan"
+    ]
+  },
+  "腐": {
+    "structure": "⿸府肉",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "丿",
+      "丨",
+      "一",
+      "亅",
+      "丶",
+      "丨",
+      "𠃌",
+      "丿",
+      "丶",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Fǔ",
+    "pinyinArray": [
+      "Fu"
+    ]
+  },
+  "腔": {
+    "structure": "⿰月空[GJK]",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "丿",
+      "丶",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Qiāng",
+    "pinyinArray": [
+      "Qiang"
+    ]
+  },
+  "腕": {
+    "structure": "⿰月宛[GJK]",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "丿",
+      "㇇|乛",
+      "丶",
+      "𠃌",
+      "乚"
+    ],
+    "pinyin": "Wàn",
+    "pinyinArray": [
+      "Wan"
+    ]
+  },
+  "腥": {
+    "structure": "⿰月星[GJK]",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Xīng",
+    "pinyinArray": [
+      "Xing"
+    ]
+  },
+  "腮": {
+    "structure": "⿰月思[GJK]",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "㇀",
+      "㇂|㇃",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Sāi",
+    "pinyinArray": [
+      "Sai"
+    ]
+  },
+  "腰": {
+    "structure": "⿰月要[GJK]",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "𠃍",
+      "丨",
+      "丨",
+      "一",
+      "𡿨",
+      "丿",
+      "一"
+    ],
+    "pinyin": "Yāo",
+    "pinyinArray": [
+      "Yao"
+    ]
+  },
+  "腹": {
+    "structure": "⿰月复[GJK]",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "丿",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Fù",
+    "pinyinArray": [
+      "Fu"
+    ]
+  },
+  "腺": {
+    "structure": "⿰月泉[GJK]",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "亅",
+      "㇇|乛",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Xiàn",
+    "pinyinArray": [
+      "Xian"
+    ]
+  },
+  "腻": {
+    "structure": "⿰月贰",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶",
+      "㇂|㇃",
+      "丶"
+    ],
+    "pinyin": "Nì",
+    "pinyinArray": [
+      "Ni"
+    ]
+  },
+  "腾": {
+    "structure": "⿰月⿱龹马",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "丿",
+      "㇏",
+      "𠃍",
+      "㇉",
+      "一"
+    ],
+    "pinyin": "Téng",
+    "pinyinArray": [
+      "Teng"
+    ]
+  },
+  "腿": {
+    "structure": "⿰月退[GJK]",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "𠃍",
+      "一",
+      "一",
+      "𠄌",
+      "丿",
+      "丶",
+      "丶",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Tuǐ",
+    "pinyinArray": [
+      "Tui"
+    ]
+  },
+  "膀": {
+    "structure": "⿰月旁[GJK]",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "㇀",
+      "㇇|乛",
+      "丶",
+      "一",
+      "𠃌",
+      "丿"
+    ],
+    "pinyin": "Bǎng",
+    "pinyinArray": [
+      "Bang"
+    ]
+  },
+  "膊": {
+    "structure": "⿰月尃[GJK]",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "丶",
+      "一",
+      "亅",
+      "丶"
+    ],
+    "pinyin": "Bo",
+    "pinyinArray": [
+      "Bo"
+    ]
+  },
+  "膏": {
+    "structure": "⿱高月[GJK]",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "㇀",
+      "㇇|乛",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃌",
+      "一",
+      "一"
+    ],
+    "pinyin": "Gào",
+    "pinyinArray": [
+      "Gao"
+    ]
+  },
+  "膘": {
+    "structure": "⿰月票[GJK]",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "𠃍",
+      "丨",
+      "丨",
+      "一",
+      "一",
+      "一",
+      "亅",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Biāo",
+    "pinyinArray": [
+      "Biao"
+    ]
+  },
+  "膛": {
+    "structure": "⿰月堂[GJK]",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "丨",
+      "丶",
+      "丿",
+      "㇀",
+      "㇇|乛",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Táng",
+    "pinyinArray": [
+      "Tang"
+    ]
+  },
+  "膜": {
+    "structure": "⿰月莫[GJK]",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Mó",
+    "pinyinArray": [
+      "Mo"
+    ]
+  },
+  "膝": {
+    "structure": "⿰月桼[GJK]",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丿",
+      "㇏",
+      "亅",
+      "丶",
+      "㇀",
+      "㇀",
+      "丶"
+    ],
+    "pinyin": "Xī",
+    "pinyinArray": [
+      "Xi"
+    ]
+  },
+  "膨": {
+    "structure": "⿰月彭[GJK]",
+    "strokeCount": 16,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丶",
+      "丿",
+      "㇀",
+      "丿",
+      "丿",
+      "丿"
+    ],
+    "pinyin": "Péng",
+    "pinyinArray": [
+      "Peng"
+    ]
+  },
+  "膳": {
+    "structure": "⿰月善[GJK]",
+    "strokeCount": 16,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Shàn",
+    "pinyinArray": [
+      "Shan"
+    ]
+  },
+  "臀": {
+    "structure": "⿱殿月[GJK]",
+    "strokeCount": 17,
+    "strokeShapes": [
+      "𠃍",
+      "一",
+      "丿",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丿",
+      "丶",
+      "丿",
+      "㇅|㇍",
+      "㇇|乛",
+      "㇏",
+      "丨",
+      "𠃌",
+      "一",
+      "一"
+    ],
+    "pinyin": "Tún",
+    "pinyinArray": [
+      "Tun"
+    ]
+  },
+  "臂": {
+    "structure": "⿱辟月[GJK]",
+    "strokeCount": 17,
+    "strokeShapes": [
+      "𠃍",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "丨",
+      "丨",
+      "𠃌",
+      "一",
+      "一"
+    ],
+    "pinyin": "Bì",
+    "pinyinArray": [
+      "Bi"
+    ]
+  },
+  "臊": {
+    "structure": "⿰月喿[GJK]",
+    "strokeCount": 17,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Sào",
+    "pinyinArray": [
+      "Sao"
+    ]
+  },
+  "臣": {
+    "structure": "臣",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "㇄"
+    ],
+    "pinyin": "Chén",
+    "pinyinArray": [
+      "Chen"
+    ]
+  },
+  "自": {
+    "structure": "自",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一"
+    ],
+    "pinyin": "Zì",
+    "pinyinArray": [
+      "Zi"
+    ]
+  },
+  "臭": {
+    "structure": "⿱自犬[GTKV]",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "㇏",
+      "丶"
+    ],
+    "pinyin": "Chòu",
+    "pinyinArray": [
+      "Chou"
+    ]
+  },
+  "至": {
+    "structure": "⿱𠫔土",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "一",
+      "𠃋",
+      "丶",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Zhì",
+    "pinyinArray": [
+      "Zhi"
+    ]
+  },
+  "致": {
+    "structure": "⿰至攵[GJK]",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "𠃋",
+      "丶",
+      "一",
+      "丨",
+      "㇀",
+      "丿",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Zhì",
+    "pinyinArray": [
+      "Zhi"
+    ]
+  },
+  "臼": {
+    "structure": "臼",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "一",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Jiù",
+    "pinyinArray": [
+      "Jiu"
+    ]
+  },
+  "舀": {
+    "structure": "⿱爫臼",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "丶",
+      "丶",
+      "丿",
+      "丿",
+      "丨",
+      "一",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Yǎo",
+    "pinyinArray": [
+      "Yao"
+    ]
+  },
+  "舅": {
+    "structure": "⿱臼男",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "一",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "𠃌",
+      "丿"
+    ],
+    "pinyin": "Jiù",
+    "pinyinArray": [
+      "Jiu"
+    ]
+  },
+  "舆": {
+    "structure": "⿶⿳𦥑一八车",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "一",
+      "一",
+      "一",
+      "𠃋",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Yú",
+    "pinyinArray": [
+      "Yu"
+    ]
+  },
+  "舌": {
+    "structure": "⿱千口[GJK]",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Shé",
+    "pinyinArray": [
+      "She"
+    ]
+  },
+  "舍": {
+    "structure": "⿱人舌",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丿",
+      "㇏",
+      "一",
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Shě",
+    "pinyinArray": [
+      "She"
+    ]
+  },
+  "舒": {
+    "structure": "⿰舍予",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丿",
+      "丶",
+      "一",
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "㇇|乛",
+      "丶",
+      "㇇|乛",
+      "亅"
+    ],
+    "pinyin": "Shū",
+    "pinyinArray": [
+      "Shu"
+    ]
+  },
+  "舔": {
+    "structure": "⿰舌忝",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "㇏",
+      "亅",
+      "㇀",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Tiǎn",
+    "pinyinArray": [
+      "Tian"
+    ]
+  },
+  "舞": {
+    "structure": "⿱⿳𠂉卌一舛",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "丨",
+      "丨",
+      "丨",
+      "丨",
+      "一",
+      "丿",
+      "㇇|乛",
+      "丶",
+      "一",
+      "𠃋",
+      "丨"
+    ],
+    "pinyin": "Wǔ",
+    "pinyinArray": [
+      "Wu"
+    ]
+  },
+  "舟": {
+    "structure": "舟",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丿",
+      "丿",
+      "𠃌",
+      "丶",
+      "一",
+      "丶"
+    ],
+    "pinyin": "Zhōu",
+    "pinyinArray": [
+      "Zhou"
+    ]
+  },
+  "航": {
+    "structure": "⿰舟亢",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "丿",
+      "𠃌",
+      "丶",
+      "一",
+      "丶",
+      "丶",
+      "一",
+      "丿",
+      "⺄"
+    ],
+    "pinyin": "Háng",
+    "pinyinArray": [
+      "Hang"
+    ]
+  },
+  "般": {
+    "structure": "⿰舟殳",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "丿",
+      "𠃌",
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "㇅|㇍",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Bō",
+    "pinyinArray": [
+      "Bo"
+    ]
+  },
+  "舰": {
+    "structure": "⿰舟见",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "丿",
+      "𠃌",
+      "丶",
+      "一",
+      "丶",
+      "丨",
+      "𠃍",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Jiàn",
+    "pinyinArray": [
+      "Jian"
+    ]
+  },
+  "舱": {
+    "structure": "⿰舟仓",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "丿",
+      "𠃌",
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "㇏",
+      "𠃌",
+      "乚"
+    ],
+    "pinyin": "Cāng",
+    "pinyinArray": [
+      "Cang"
+    ]
+  },
+  "舵": {
+    "structure": "⿰舟它",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丿",
+      "丿",
+      "𠃌",
+      "丶",
+      "一",
+      "丶",
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Duǒ",
+    "pinyinArray": [
+      "Duo"
+    ]
+  },
+  "舶": {
+    "structure": "⿰舟白",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丿",
+      "丿",
+      "𠃌",
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Bó",
+    "pinyinArray": [
+      "Bo"
+    ]
+  },
+  "舷": {
+    "structure": "⿰舟玄",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丿",
+      "丿",
+      "𠃌",
+      "丶",
+      "一",
+      "丶",
+      "丶",
+      "一",
+      "𠃋",
+      "𠃋",
+      "丶"
+    ],
+    "pinyin": "Xián",
+    "pinyinArray": [
+      "Xian"
+    ]
+  },
+  "船": {
+    "structure": "⿰舟⿱𠘧口[G]",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丿",
+      "丿",
+      "𠃌",
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "㇅|㇍",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Chuán",
+    "pinyinArray": [
+      "Chuan"
+    ]
+  },
+  "艇": {
+    "structure": "⿰舟廷",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丿",
+      "丿",
+      "𠃌",
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "一",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Tǐng",
+    "pinyinArray": [
+      "Ting"
+    ]
+  },
+  "艘": {
+    "structure": "⿰舟叟",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "丿",
+      "丿",
+      "𠃌",
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "丨",
+      "一",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Sōu",
+    "pinyinArray": [
+      "Sou"
+    ]
+  },
+  "良": {
+    "structure": "⿱丶艮[GTV]",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丶",
+      "𠃍",
+      "一",
+      "一",
+      "𠄌",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Liáng",
+    "pinyinArray": [
+      "Liang"
+    ]
+  },
+  "艰": {
+    "structure": "⿰又艮",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "㇇|乛",
+      "丶",
+      "𠃍",
+      "一",
+      "一",
+      "𠄌",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Jiān",
+    "pinyinArray": [
+      "Jian"
+    ]
+  },
+  "色": {
+    "structure": "⿱𠂊巴",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丿",
+      "㇇|乛",
+      "𠃍",
+      "丨",
+      "一",
+      "乚"
+    ],
+    "pinyin": "Sè",
+    "pinyinArray": [
+      "Se"
+    ]
+  },
+  "艳": {
+    "structure": "⿰丰色",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "一",
+      "一",
+      "丨",
+      "丿",
+      "㇇|乛",
+      "𠃍",
+      "丨",
+      "一",
+      "乚"
+    ],
+    "pinyin": "Yàn",
+    "pinyinArray": [
+      "Yan"
+    ]
+  },
+  "艺": {
+    "structure": "⿱艹乙",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "⺄"
+    ],
+    "pinyin": "Yì",
+    "pinyinArray": [
+      "Yi"
+    ]
+  },
+  "艾": {
+    "structure": "⿱艹乂",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Ài",
+    "pinyinArray": [
+      "Ai"
+    ]
+  },
+  "节": {
+    "structure": "⿱艹⿱𠃌丨",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "𠃌",
+      "丨"
+    ],
+    "pinyin": "Jié",
+    "pinyinArray": [
+      "Jie"
+    ]
+  },
+  "芋": {
+    "structure": "⿱艹于",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "一",
+      "亅"
+    ],
+    "pinyin": "Yù",
+    "pinyinArray": [
+      "Yu"
+    ]
+  },
+  "芍": {
+    "structure": "⿱艹勺",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丿",
+      "𠃌",
+      "丶"
+    ],
+    "pinyin": "Sháo",
+    "pinyinArray": [
+      "Shao"
+    ]
+  },
+  "芒": {
+    "structure": "⿱艹亡",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丶",
+      "一",
+      "㇄"
+    ],
+    "pinyin": "Máng",
+    "pinyinArray": [
+      "Mang"
+    ]
+  },
+  "芙": {
+    "structure": "⿱艹夫",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Fú",
+    "pinyinArray": [
+      "Fu"
+    ]
+  },
+  "芜": {
+    "structure": "⿱艹无",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "一",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Wú",
+    "pinyinArray": [
+      "Wu"
+    ]
+  },
+  "芝": {
+    "structure": "⿱艹之",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丶",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Zhī",
+    "pinyinArray": [
+      "Zhi"
+    ]
+  },
+  "芥": {
+    "structure": "⿱艹介",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丿",
+      "㇏",
+      "丿",
+      "丨"
+    ],
+    "pinyin": "Jiè",
+    "pinyinArray": [
+      "Jie"
+    ]
+  },
+  "芦": {
+    "structure": "⿱艹户[G]",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丶",
+      "𠃍",
+      "一",
+      "丿"
+    ],
+    "pinyin": "Lú",
+    "pinyinArray": [
+      "Lu"
+    ]
+  },
+  "芬": {
+    "structure": "⿱艹分",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丿",
+      "㇏",
+      "𠃌",
+      "丿"
+    ],
+    "pinyin": "Fēn",
+    "pinyinArray": [
+      "Fen"
+    ]
+  },
+  "芭": {
+    "structure": "⿱艹巴",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "丨",
+      "一",
+      "乚"
+    ],
+    "pinyin": "Bā",
+    "pinyinArray": [
+      "Ba"
+    ]
+  },
+  "芯": {
+    "structure": "⿱艹心",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "㇀",
+      "㇂|㇃",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Xìn",
+    "pinyinArray": [
+      "Xin"
+    ]
+  },
+  "花": {
+    "structure": "⿱艹化",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丿",
+      "丨",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Huā",
+    "pinyinArray": [
+      "Hua"
+    ]
+  },
+  "芳": {
+    "structure": "⿱艹方",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丶",
+      "一",
+      "𠃌",
+      "丿"
+    ],
+    "pinyin": "Fāng",
+    "pinyinArray": [
+      "Fang"
+    ]
+  },
+  "芹": {
+    "structure": "⿱艹斤",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丿",
+      "丿",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Qín",
+    "pinyinArray": [
+      "Qin"
+    ]
+  },
+  "芽": {
+    "structure": "⿱艹牙",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "𠃋",
+      "亅",
+      "丿"
+    ],
+    "pinyin": "Yá",
+    "pinyinArray": [
+      "Ya"
+    ]
+  },
+  "苇": {
+    "structure": "⿱艹韦",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "一",
+      "𠃌",
+      "丨"
+    ],
+    "pinyin": "Wěi",
+    "pinyinArray": [
+      "Wei"
+    ]
+  },
+  "苍": {
+    "structure": "⿱艹仓",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丿",
+      "㇏",
+      "𠃌",
+      "乚"
+    ],
+    "pinyin": "Cāng",
+    "pinyinArray": [
+      "Cang"
+    ]
+  },
+  "苏": {
+    "structure": "⿱艹办",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "𠃌",
+      "丿",
+      "㇀",
+      "丶"
+    ],
+    "pinyin": "Sū",
+    "pinyinArray": [
+      "Su"
+    ]
+  },
+  "苔": {
+    "structure": "⿱艹台",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "𠃋",
+      "丶",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Tái",
+    "pinyinArray": [
+      "Tai"
+    ]
+  },
+  "苗": {
+    "structure": "⿱艹田",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Miáo",
+    "pinyinArray": [
+      "Miao"
+    ]
+  },
+  "苛": {
+    "structure": "⿱艹可",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "亅"
+    ],
+    "pinyin": "Kē",
+    "pinyinArray": [
+      "Ke"
+    ]
+  },
+  "苞": {
+    "structure": "⿱艹包",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丿",
+      "𠃌",
+      "𠃍",
+      "一",
+      "乚"
+    ],
+    "pinyin": "Bāo",
+    "pinyinArray": [
+      "Bao"
+    ]
+  },
+  "苟": {
+    "structure": "⿱艹句",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丿",
+      "𠃌",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Gǒu",
+    "pinyinArray": [
+      "Gou"
+    ]
+  },
+  "若": {
+    "structure": "⿱艹右",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Ruò",
+    "pinyinArray": [
+      "Ruo"
+    ]
+  },
+  "苦": {
+    "structure": "⿱艹古",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Kǔ",
+    "pinyinArray": [
+      "Ku"
+    ]
+  },
+  "苫": {
+    "structure": "⿱艹占",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Shàn",
+    "pinyinArray": [
+      "Shan"
+    ]
+  },
+  "英": {
+    "structure": "⿱艹央",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Yīng",
+    "pinyinArray": [
+      "Ying"
+    ]
+  },
+  "苹": {
+    "structure": "⿱艹平",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Píng",
+    "pinyinArray": [
+      "Ping"
+    ]
+  },
+  "茁": {
+    "structure": "⿱艹出",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "㇄",
+      "丨",
+      "丨",
+      "㇄",
+      "丨"
+    ],
+    "pinyin": "Zhuó",
+    "pinyinArray": [
+      "Zhuo"
+    ]
+  },
+  "茂": {
+    "structure": "⿱艹戊",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丿",
+      "㇂|㇃",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Mào",
+    "pinyinArray": [
+      "Mao"
+    ]
+  },
+  "范": {
+    "structure": "⿱艹氾",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丶",
+      "丶",
+      "㇀",
+      "𠃌",
+      "乚"
+    ],
+    "pinyin": "Fàn",
+    "pinyinArray": [
+      "Fan"
+    ]
+  },
+  "茄": {
+    "structure": "⿱艹加",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "𠃌",
+      "丿",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Qié",
+    "pinyinArray": [
+      "Qie"
+    ]
+  },
+  "茅": {
+    "structure": "⿱艹矛",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "㇇|乛",
+      "丶",
+      "㇇|乛",
+      "亅",
+      "丿"
+    ],
+    "pinyin": "Máo",
+    "pinyinArray": [
+      "Mao"
+    ]
+  },
+  "茉": {
+    "structure": "⿱艹末",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Mò",
+    "pinyinArray": [
+      "Mo"
+    ]
+  },
+  "茎": {
+    "structure": "⿱艹𢀖[G]",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "㇇|乛",
+      "丶",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Jīng",
+    "pinyinArray": [
+      "Jing"
+    ]
+  },
+  "茧": {
+    "structure": "⿱艹虫",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丶"
+    ],
+    "pinyin": "Jiǎn",
+    "pinyinArray": [
+      "Jian"
+    ]
+  },
+  "茫": {
+    "structure": "⿱艹汒",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丶",
+      "丶",
+      "㇀",
+      "丶",
+      "一",
+      "㇄"
+    ],
+    "pinyin": "Máng",
+    "pinyinArray": [
+      "Mang"
+    ]
+  },
+  "茬": {
+    "structure": "⿱艹在",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丿",
+      "丨",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Chá",
+    "pinyinArray": [
+      "Cha"
+    ]
+  },
+  "茴": {
+    "structure": "⿱艹回",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丨",
+      "𠃍",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Huí",
+    "pinyinArray": [
+      "Hui"
+    ]
+  },
+  "茵": {
+    "structure": "⿱艹因",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "丶",
+      "一"
+    ],
+    "pinyin": "Yīn",
+    "pinyinArray": [
+      "Yin"
+    ]
+  },
+  "茶": {
+    "structure": "⿳艹人朩",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丿",
+      "㇏",
+      "一",
+      "亅",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Chá",
+    "pinyinArray": [
+      "Cha"
+    ]
+  },
+  "茸": {
+    "structure": "⿱艹耳",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "一",
+      "一"
+    ],
+    "pinyin": "Róng",
+    "pinyinArray": [
+      "Rong"
+    ]
+  },
+  "荆": {
+    "structure": "⿰茾刂[G]",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "一",
+      "丿",
+      "丨",
+      "丨",
+      "亅"
+    ],
+    "pinyin": "Jīng",
+    "pinyinArray": [
+      "Jing"
+    ]
+  },
+  "草": {
+    "structure": "⿱艹早",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Cǎo",
+    "pinyinArray": [
+      "Cao"
+    ]
+  },
+  "荐": {
+    "structure": "⿱艹存",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丿",
+      "丨",
+      "㇇|乛",
+      "亅",
+      "一"
+    ],
+    "pinyin": "Jiàn",
+    "pinyinArray": [
+      "Jian"
+    ]
+  },
+  "荒": {
+    "structure": "⿱艹巟",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丶",
+      "一",
+      "㇄",
+      "丿",
+      "丨",
+      "乚"
+    ],
+    "pinyin": "Huāng",
+    "pinyinArray": [
+      "Huang"
+    ]
+  },
+  "荔": {
+    "structure": "⿱艹劦",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "𠃌",
+      "丿",
+      "𠃌",
+      "丿",
+      "𠃌",
+      "丿"
+    ],
+    "pinyin": "Lì",
+    "pinyinArray": [
+      "Li"
+    ]
+  },
+  "荚": {
+    "structure": "⿱艹夹",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Jiá",
+    "pinyinArray": [
+      "Jia"
+    ]
+  },
+  "荞": {
+    "structure": "⿱艹乔",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丿",
+      "一",
+      "丿",
+      "㇏",
+      "丿",
+      "丨"
+    ],
+    "pinyin": "Qiáo",
+    "pinyinArray": [
+      "Qiao"
+    ]
+  },
+  "荠": {
+    "structure": "⿱艹齐",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丶",
+      "一",
+      "丿",
+      "㇏",
+      "丿",
+      "丨"
+    ],
+    "pinyin": "Qí",
+    "pinyinArray": [
+      "Qi"
+    ]
+  },
+  "荡": {
+    "structure": "⿱艹汤",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丶",
+      "丶",
+      "㇀",
+      "𠄎|㇌",
+      "丿",
+      "丿"
+    ],
+    "pinyin": "Dàng",
+    "pinyinArray": [
+      "Dang"
+    ]
+  },
+  "荣": {
+    "structure": "⿱艹𣎾",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "㇀",
+      "㇇|乛",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Róng",
+    "pinyinArray": [
+      "Rong"
+    ]
+  },
+  "荤": {
+    "structure": "⿱艹军",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "㇀",
+      "㇇|乛",
+      "一",
+      "𠃋",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Xūn",
+    "pinyinArray": [
+      "Xun"
+    ]
+  },
+  "荧": {
+    "structure": "⿱𫇦火",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "㇀",
+      "㇇|乛",
+      "㇀",
+      "丿",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Yíng",
+    "pinyinArray": [
+      "Ying"
+    ]
+  },
+  "药": {
+    "structure": "⿱艹约",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "𠃋",
+      "𠃋",
+      "㇀",
+      "丿",
+      "𠃌",
+      "丶"
+    ],
+    "pinyin": "Yào",
+    "pinyinArray": [
+      "Yao"
+    ]
+  },
+  "荷": {
+    "structure": "⿱艹何",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丿",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "亅"
+    ],
+    "pinyin": "Hé",
+    "pinyinArray": [
+      "He"
+    ]
+  },
+  "荸": {
+    "structure": "⿱艹孛",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丨",
+      "㇀",
+      "㇇|乛",
+      "㇇|乛",
+      "亅",
+      "一"
+    ],
+    "pinyin": "Bí",
+    "pinyinArray": [
+      "Bi"
+    ]
+  },
+  "莉": {
+    "structure": "⿱艹利",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丨",
+      "亅"
+    ],
+    "pinyin": "Lì",
+    "pinyinArray": [
+      "Li"
+    ]
+  },
+  "莫": {
+    "structure": "⿱艹旲",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Mò",
+    "pinyinArray": [
+      "Mo"
+    ]
+  },
+  "莱": {
+    "structure": "⿱艹来",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Lāi",
+    "pinyinArray": [
+      "Lai"
+    ]
+  },
+  "莲": {
+    "structure": "⿱艹连",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "𠃋",
+      "一",
+      "丨",
+      "丶",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Lián",
+    "pinyinArray": [
+      "Lian"
+    ]
+  },
+  "获": {
+    "structure": "⿱艹犾",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丿",
+      "㇁",
+      "丿",
+      "一",
+      "丿",
+      "㇏",
+      "丶"
+    ],
+    "pinyin": "Huò",
+    "pinyinArray": [
+      "Huo"
+    ]
+  },
+  "莹": {
+    "structure": "⿱𫇦玉",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "㇀",
+      "㇇|乛",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "丶"
+    ],
+    "pinyin": "Yíng",
+    "pinyinArray": [
+      "Ying"
+    ]
+  },
+  "莺": {
+    "structure": "⿱𫇦鸟",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "㇀",
+      "㇇|乛",
+      "丿",
+      "𠃌",
+      "丶",
+      "㇉",
+      "一"
+    ],
+    "pinyin": "Yīng",
+    "pinyinArray": [
+      "Ying"
+    ]
+  },
+  "莽": {
+    "structure": "⿱𦬫廾[GT]",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丿",
+      "㇏",
+      "丶",
+      "一",
+      "丿",
+      "丨"
+    ],
+    "pinyin": "Mǎng",
+    "pinyinArray": [
+      "Mang"
+    ]
+  },
+  "菇": {
+    "structure": "⿱艹姑",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "𡿨",
+      "丿",
+      "一",
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Gū",
+    "pinyinArray": [
+      "Gu"
+    ]
+  },
+  "菊": {
+    "structure": "⿱艹匊",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丿",
+      "𠃌",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Jú",
+    "pinyinArray": [
+      "Ju"
+    ]
+  },
+  "菌": {
+    "structure": "⿱艹囷",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丨",
+      "𠃍",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "一"
+    ],
+    "pinyin": "Jùn",
+    "pinyinArray": [
+      "Jun"
+    ]
+  },
+  "菜": {
+    "structure": "⿱艹采",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丿",
+      "丶",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Cài",
+    "pinyinArray": [
+      "Cai"
+    ]
+  },
+  "菠": {
+    "structure": "⿱艹波",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丶",
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "丿",
+      "丨",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Bō",
+    "pinyinArray": [
+      "Bo"
+    ]
+  },
+  "菩": {
+    "structure": "⿱艹咅",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Pú",
+    "pinyinArray": [
+      "Pu"
+    ]
+  },
+  "菱": {
+    "structure": "⿱艹夌",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "丶",
+      "丿",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Líng",
+    "pinyinArray": [
+      "Ling"
+    ]
+  },
+  "菲": {
+    "structure": "⿱艹非",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丨",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "一",
+      "一"
+    ],
+    "pinyin": "Fěi",
+    "pinyinArray": [
+      "Fei"
+    ]
+  },
+  "萄": {
+    "structure": "⿱艹匋",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丿",
+      "𠃌",
+      "丿",
+      "一",
+      "一",
+      "丨",
+      "㇄",
+      "丨"
+    ],
+    "pinyin": "Táo",
+    "pinyinArray": [
+      "Tao"
+    ]
+  },
+  "萌": {
+    "structure": "⿱艹明",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "𠃌",
+      "一",
+      "一"
+    ],
+    "pinyin": "Méng",
+    "pinyinArray": [
+      "Meng"
+    ]
+  },
+  "萍": {
+    "structure": "⿱艹泙",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丶",
+      "丶",
+      "㇀",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Píng",
+    "pinyinArray": [
+      "Ping"
+    ]
+  },
+  "萎": {
+    "structure": "⿱艹委",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "㇏",
+      "𡿨",
+      "丿",
+      "一"
+    ],
+    "pinyin": "Wěi",
+    "pinyinArray": [
+      "Wei"
+    ]
+  },
+  "萝": {
+    "structure": "⿱艹罗",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丨",
+      "𠃍",
+      "丨",
+      "丨",
+      "一",
+      "丿",
+      "㇇|乛",
+      "丶"
+    ],
+    "pinyin": "Luó",
+    "pinyinArray": [
+      "Luo"
+    ]
+  },
+  "萤": {
+    "structure": "⿱𫇦虫",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "㇀",
+      "㇇|乛",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丶"
+    ],
+    "pinyin": "Yíng",
+    "pinyinArray": [
+      "Ying"
+    ]
+  },
+  "营": {
+    "structure": "⿱𫇦吕",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "㇀",
+      "㇇|乛",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Yíng",
+    "pinyinArray": [
+      "Ying"
+    ]
+  },
+  "萧": {
+    "structure": "⿱艹肃",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "丿",
+      "丨",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Xiāo",
+    "pinyinArray": [
+      "Xiao"
+    ]
+  },
+  "萨": {
+    "structure": "⿱艹⿰阝产",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "𠄎|㇌",
+      "丨",
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丿"
+    ],
+    "pinyin": "Sà",
+    "pinyinArray": [
+      "Sa"
+    ]
+  },
+  "落": {
+    "structure": "⿱艹洛",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丶",
+      "丶",
+      "㇀",
+      "丿",
+      "㇇|乛",
+      "㇏",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Luò",
+    "pinyinArray": [
+      "Luo"
+    ]
+  },
+  "著": {
+    "structure": "⿱艹者",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Zhù",
+    "pinyinArray": [
+      "Zhu"
+    ]
+  },
+  "葛": {
+    "structure": "⿱艹曷[GTK]",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "𠃌",
+      "丿",
+      "丶",
+      "㇄"
+    ],
+    "pinyin": "Gé",
+    "pinyinArray": [
+      "Ge"
+    ]
+  },
+  "葡": {
+    "structure": "⿱艹匍",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丿",
+      "𠃌",
+      "一",
+      "丨",
+      "𠃌",
+      "一",
+      "一",
+      "丨",
+      "丶"
+    ],
+    "pinyin": "Pú",
+    "pinyinArray": [
+      "Pu"
+    ]
+  },
+  "董": {
+    "structure": "⿱艹重",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丿",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "一"
+    ],
+    "pinyin": "Dǒng",
+    "pinyinArray": [
+      "Dong"
+    ]
+  },
+  "葫": {
+    "structure": "⿱艹胡",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "𠃌",
+      "一",
+      "一"
+    ],
+    "pinyin": "Hú",
+    "pinyinArray": [
+      "Hu"
+    ]
+  },
+  "葬": {
+    "structure": "⿳艹死廾",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丿",
+      "㇇|乛",
+      "丶",
+      "丿",
+      "乚",
+      "一",
+      "丿",
+      "丨"
+    ],
+    "pinyin": "Zàng",
+    "pinyinArray": [
+      "Zang"
+    ]
+  },
+  "葱": {
+    "structure": "⿱艹怱",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丿",
+      "𠃌",
+      "丿",
+      "丿",
+      "丶",
+      "㇀",
+      "㇂|㇃",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Cōng",
+    "pinyinArray": [
+      "Cong"
+    ]
+  },
+  "葵": {
+    "structure": "⿱艹癸",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "㇇|乛",
+      "丶",
+      "丿",
+      "丿",
+      "㇏",
+      "一",
+      "一",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Kuí",
+    "pinyinArray": [
+      "Kui"
+    ]
+  },
+  "蒂": {
+    "structure": "⿱艹帝",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "㇀",
+      "㇇|乛",
+      "丨",
+      "𠃌",
+      "丨"
+    ],
+    "pinyin": "Dì",
+    "pinyinArray": [
+      "Di"
+    ]
+  },
+  "蒋": {
+    "structure": "⿱艹将",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丶",
+      "㇀",
+      "丨",
+      "丿",
+      "㇇|乛",
+      "丶",
+      "一",
+      "亅",
+      "丶"
+    ],
+    "pinyin": "Jiǎng",
+    "pinyinArray": [
+      "Jiang"
+    ]
+  },
+  "蒙": {
+    "structure": "⿱艹冡",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "㇀",
+      "㇇|乛",
+      "一",
+      "一",
+      "丿",
+      "㇁",
+      "丿",
+      "丿",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Méng",
+    "pinyinArray": [
+      "Meng"
+    ]
+  },
+  "蒜": {
+    "structure": "⿱艹祘",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "一",
+      "亅",
+      "丿",
+      "丶",
+      "一",
+      "一",
+      "亅",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Suàn",
+    "pinyinArray": [
+      "Suan"
+    ]
+  },
+  "蒲": {
+    "structure": "⿱艹浦",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丶",
+      "丶",
+      "㇀",
+      "一",
+      "丨",
+      "𠃌",
+      "一",
+      "一",
+      "丨",
+      "丶"
+    ],
+    "pinyin": "Pú",
+    "pinyinArray": [
+      "Pu"
+    ]
+  },
+  "蒸": {
+    "structure": "⿱艹烝",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "㇇|乛",
+      "亅",
+      "㇇|乛",
+      "丿",
+      "㇏",
+      "一",
+      "㇀",
+      "丶",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Zhēng",
+    "pinyinArray": [
+      "Zheng"
+    ]
+  },
+  "蒿": {
+    "structure": "⿱艹高",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丶",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃌",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Hāo",
+    "pinyinArray": [
+      "Hao"
+    ]
+  },
+  "蓄": {
+    "structure": "⿱艹畜",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丶",
+      "一",
+      "𠃋",
+      "𠃋",
+      "丶",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Xù",
+    "pinyinArray": [
+      "Xu"
+    ]
+  },
+  "蓉": {
+    "structure": "⿱艹容",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "丿",
+      "丶",
+      "丿",
+      "㇏",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Róng",
+    "pinyinArray": [
+      "Rong"
+    ]
+  },
+  "蓖": {
+    "structure": "⿱艹𣬉",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丿",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶",
+      "一",
+      "一",
+      "𠄌",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Bì",
+    "pinyinArray": [
+      "Bi"
+    ]
+  },
+  "蓝": {
+    "structure": "⿱艹监",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丨",
+      "丨",
+      "丿",
+      "一",
+      "丶",
+      "丨",
+      "𠃍",
+      "丨",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Lán",
+    "pinyinArray": [
+      "Lan"
+    ]
+  },
+  "蓬": {
+    "structure": "⿱艹逢",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丿",
+      "㇇|乛",
+      "㇏",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "丶",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Péng",
+    "pinyinArray": [
+      "Peng"
+    ]
+  },
+  "蔑": {
+    "structure": "⿱𦭝戍[GJK]",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丨",
+      "𠃍",
+      "丨",
+      "丨",
+      "一",
+      "一",
+      "丿",
+      "丶",
+      "㇂|㇃",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Miè",
+    "pinyinArray": [
+      "Mie"
+    ]
+  },
+  "蔓": {
+    "structure": "⿱艹曼",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "𠃍",
+      "丨",
+      "丨",
+      "一",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Màn",
+    "pinyinArray": [
+      "Man"
+    ]
+  },
+  "蔗": {
+    "structure": "⿱艹庶",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丶",
+      "一",
+      "丿",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "㇀",
+      "丶",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Zhè",
+    "pinyinArray": [
+      "Zhe"
+    ]
+  },
+  "蔚": {
+    "structure": "⿱艹尉",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "一",
+      "一",
+      "亅",
+      "丿",
+      "丶",
+      "一",
+      "亅",
+      "丶"
+    ],
+    "pinyin": "Wèi",
+    "pinyinArray": [
+      "Wei"
+    ]
+  },
+  "蔫": {
+    "structure": "⿱艹焉",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "一",
+      "一",
+      "㇉",
+      "㇀",
+      "丶",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Niān",
+    "pinyinArray": [
+      "Nian"
+    ]
+  },
+  "蔬": {
+    "structure": "⿱艹疏",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "㇇|乛",
+      "丨",
+      "一",
+      "丨",
+      "㇀",
+      "丶",
+      "一",
+      "𠃋",
+      "丶",
+      "丿",
+      "丨",
+      "乚"
+    ],
+    "pinyin": "Shū",
+    "pinyinArray": [
+      "Shu"
+    ]
+  },
+  "蔼": {
+    "structure": "⿱艹谒",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丶",
+      "㇊",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "𠃌",
+      "丿",
+      "丶",
+      "㇄"
+    ],
+    "pinyin": "Ǎi",
+    "pinyinArray": [
+      "Ai"
+    ]
+  },
+  "蔽": {
+    "structure": "⿱艹敝",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丶",
+      "丿",
+      "丨",
+      "𠃌",
+      "丨",
+      "丿",
+      "丶",
+      "丿",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Bì",
+    "pinyinArray": [
+      "Bi"
+    ]
+  },
+  "蕉": {
+    "structure": "⿱艹焦",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丿",
+      "丨",
+      "丶",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "㇀",
+      "丶",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Jiāo",
+    "pinyinArray": [
+      "Jiao"
+    ]
+  },
+  "蕊": {
+    "structure": "⿱艹惢",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "㇀",
+      "㇂|㇃",
+      "丶",
+      "丶",
+      "㇀",
+      "㇂|㇃",
+      "丶",
+      "丶",
+      "㇀",
+      "㇂|㇃",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Ruǐ",
+    "pinyinArray": [
+      "Rui"
+    ]
+  },
+  "蕴": {
+    "structure": "⿱艹缊",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "𠃋",
+      "𠃋",
+      "㇀",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "𠃍",
+      "丨",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Yùn",
+    "pinyinArray": [
+      "Yun"
+    ]
+  },
+  "蕾": {
+    "structure": "⿱艹雷",
+    "strokeCount": 16,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "㇀",
+      "㇇|乛",
+      "丨",
+      "丶",
+      "丶",
+      "丶",
+      "丶",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Lěi",
+    "pinyinArray": [
+      "Lei"
+    ]
+  },
+  "薄": {
+    "structure": "⿱艹溥[GT]",
+    "strokeCount": 16,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丶",
+      "丶",
+      "㇀",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "丶",
+      "一",
+      "亅",
+      "丶"
+    ],
+    "pinyin": "Bó",
+    "pinyinArray": [
+      "Bo"
+    ]
+  },
+  "薇": {
+    "structure": "⿱艹微",
+    "strokeCount": 16,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丿",
+      "丿",
+      "丨",
+      "丨",
+      "㇄",
+      "丨",
+      "一",
+      "丿",
+      "㇊",
+      "丿",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Wēi",
+    "pinyinArray": [
+      "Wei"
+    ]
+  },
+  "薛": {
+    "structure": "⿱艹⿰𠂤辛",
+    "strokeCount": 16,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "𠃍",
+      "一",
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Xuē",
+    "pinyinArray": [
+      "Xue"
+    ]
+  },
+  "薪": {
+    "structure": "⿱艹新",
+    "strokeCount": 16,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "亅",
+      "丿",
+      "丶",
+      "丿",
+      "丿",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Xīn",
+    "pinyinArray": [
+      "Xin"
+    ]
+  },
+  "薯": {
+    "structure": "⿱艹署",
+    "strokeCount": 16,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丨",
+      "𠃍",
+      "丨",
+      "丨",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Shǔ",
+    "pinyinArray": [
+      "Shu"
+    ]
+  },
+  "藏": {
+    "structure": "⿱艹臧",
+    "strokeCount": 17,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丿",
+      "㇄",
+      "一",
+      "丿",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "㇄",
+      "㇂|㇃",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Cáng",
+    "pinyinArray": [
+      "Cang"
+    ]
+  },
+  "藐": {
+    "structure": "⿱艹貌",
+    "strokeCount": 17,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丿",
+      "丶",
+      "丶",
+      "丿",
+      "㇁",
+      "丿",
+      "丿",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Miǎo",
+    "pinyinArray": [
+      "Miao"
+    ]
+  },
+  "藕": {
+    "structure": "⿱艹耦",
+    "strokeCount": 18,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "𠃌",
+      "丨",
+      "㇀",
+      "丶"
+    ],
+    "pinyin": "Ǒu",
+    "pinyinArray": [
+      "Ou"
+    ]
+  },
+  "藤": {
+    "structure": "⿱艹滕",
+    "strokeCount": 18,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "丿",
+      "㇏",
+      "亅",
+      "丶",
+      "㇀",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Téng",
+    "pinyinArray": [
+      "Teng"
+    ]
+  },
+  "藻": {
+    "structure": "⿱艹澡",
+    "strokeCount": 19,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丶",
+      "丶",
+      "㇀",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Zǎo",
+    "pinyinArray": [
+      "Zao"
+    ]
+  },
+  "蘑": {
+    "structure": "⿱艹磨",
+    "strokeCount": 19,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丶",
+      "一",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "丨",
+      "丿",
+      "㇏",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Mó",
+    "pinyinArray": [
+      "Mo"
+    ]
+  },
+  "蘸": {
+    "structure": "⿱艹醮[G]",
+    "strokeCount": 22,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "丿",
+      "㇄",
+      "一",
+      "一",
+      "丿",
+      "丨",
+      "丶",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "㇀",
+      "丶",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Zhàn",
+    "pinyinArray": [
+      "Zhan"
+    ]
+  },
+  "虎": {
+    "structure": "⿸虍几[G]",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丨",
+      "一",
+      "㇇|乛",
+      "丿",
+      "一",
+      "乚",
+      "丿",
+      "⺄"
+    ],
+    "pinyin": "Hǔ",
+    "pinyinArray": [
+      "Hu"
+    ]
+  },
+  "虏": {
+    "structure": "⿸虍力",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丨",
+      "一",
+      "㇇|乛",
+      "丿",
+      "一",
+      "乚",
+      "𠃌",
+      "丿"
+    ],
+    "pinyin": "Lǔ",
+    "pinyinArray": [
+      "Lu"
+    ]
+  },
+  "虐": {
+    "structure": "⿸虍⿻匚一[GTKV]",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丨",
+      "一",
+      "㇇|乛",
+      "丿",
+      "一",
+      "乚",
+      "一",
+      "㇄",
+      "一"
+    ],
+    "pinyin": "Nüè",
+    "pinyinArray": [
+      "Nüe"
+    ]
+  },
+  "虑": {
+    "structure": "⿸虍心",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丨",
+      "一",
+      "㇇|乛",
+      "丿",
+      "一",
+      "乚",
+      "㇀",
+      "㇂|㇃",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Lǜ",
+    "pinyinArray": [
+      "Lü"
+    ]
+  },
+  "虚": {
+    "structure": "⿸虍业",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丨",
+      "一",
+      "㇇|乛",
+      "丿",
+      "一",
+      "乚",
+      "丨",
+      "丨",
+      "丶",
+      "丿",
+      "一"
+    ],
+    "pinyin": "Xū",
+    "pinyinArray": [
+      "Xu"
+    ]
+  },
+  "虫": {
+    "structure": "虫",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丶"
+    ],
+    "pinyin": "Chóng",
+    "pinyinArray": [
+      "Chong"
+    ]
+  },
+  "虱": {
+    "structure": "⿹⺄䖝",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "⺄",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丶"
+    ],
+    "pinyin": "Shī",
+    "pinyinArray": [
+      "Shi"
+    ]
+  },
+  "虹": {
+    "structure": "⿰虫工",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丶",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Hóng",
+    "pinyinArray": [
+      "Hong"
+    ]
+  },
+  "虽": {
+    "structure": "⿱口虫",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丶"
+    ],
+    "pinyin": "Suī",
+    "pinyinArray": [
+      "Sui"
+    ]
+  },
+  "虾": {
+    "structure": "⿰虫下",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丶",
+      "一",
+      "丨",
+      "丶"
+    ],
+    "pinyin": "Xiā",
+    "pinyinArray": [
+      "Xia"
+    ]
+  },
+  "蚀": {
+    "structure": "⿰饣虫",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "㇇|乛",
+      "𠄌",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丶"
+    ],
+    "pinyin": "Shí",
+    "pinyinArray": [
+      "Shi"
+    ]
+  },
+  "蚁": {
+    "structure": "⿰虫义",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丶",
+      "丶",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Yǐ",
+    "pinyinArray": [
+      "Yi"
+    ]
+  },
+  "蚂": {
+    "structure": "⿰虫马",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丶",
+      "𠃍",
+      "㇉",
+      "一"
+    ],
+    "pinyin": "Mà",
+    "pinyinArray": [
+      "Ma"
+    ]
+  },
+  "蚊": {
+    "structure": "⿰虫文",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丶",
+      "丶",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Wén",
+    "pinyinArray": [
+      "Wen"
+    ]
+  },
+  "蚌": {
+    "structure": "⿰虫丰",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丶",
+      "一",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Bàng",
+    "pinyinArray": [
+      "Bang"
+    ]
+  },
+  "蚓": {
+    "structure": "⿰虫引",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丶",
+      "𠃍",
+      "一",
+      "㇉",
+      "丨"
+    ],
+    "pinyin": "Yǐn",
+    "pinyinArray": [
+      "Yin"
+    ]
+  },
+  "蚕": {
+    "structure": "⿱天虫",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "一",
+      "丿",
+      "㇏",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丶"
+    ],
+    "pinyin": "Cán",
+    "pinyinArray": [
+      "Can"
+    ]
+  },
+  "蚜": {
+    "structure": "⿰虫牙",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丶",
+      "一",
+      "𠃋",
+      "亅",
+      "丿"
+    ],
+    "pinyin": "Yá",
+    "pinyinArray": [
+      "Ya"
+    ]
+  },
+  "蚣": {
+    "structure": "⿰虫公",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丶",
+      "丿",
+      "㇏",
+      "𠃋",
+      "丶"
+    ],
+    "pinyin": "Gōng",
+    "pinyinArray": [
+      "Gong"
+    ]
+  },
+  "蚤": {
+    "structure": "⿱叉虫[G]",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "㇇|乛",
+      "㇏",
+      "丶",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丶"
+    ],
+    "pinyin": "Zǎo",
+    "pinyinArray": [
+      "Zao"
+    ]
+  },
+  "蚪": {
+    "structure": "⿰虫斗",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丶",
+      "丶",
+      "丶",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Dǒu",
+    "pinyinArray": [
+      "Dou"
+    ]
+  },
+  "蚯": {
+    "structure": "⿰虫丘",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丶",
+      "丿",
+      "丨",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Qiū",
+    "pinyinArray": [
+      "Qiu"
+    ]
+  },
+  "蛀": {
+    "structure": "⿰虫主",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丶",
+      "丶",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Zhù",
+    "pinyinArray": [
+      "Zhu"
+    ]
+  },
+  "蛆": {
+    "structure": "⿰虫且",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丶",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一"
+    ],
+    "pinyin": "Qū",
+    "pinyinArray": [
+      "Qu"
+    ]
+  },
+  "蛇": {
+    "structure": "⿰虫它",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丶",
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Shé",
+    "pinyinArray": [
+      "She"
+    ]
+  },
+  "蛉": {
+    "structure": "⿰虫令",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丶",
+      "丿",
+      "㇏",
+      "丶",
+      "㇇|乛",
+      "丶"
+    ],
+    "pinyin": "Líng",
+    "pinyinArray": [
+      "Ling"
+    ]
+  },
+  "蛋": {
+    "structure": "⿱疋虫",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "㇇|乛",
+      "丨",
+      "一",
+      "丿",
+      "㇏",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丶"
+    ],
+    "pinyin": "Dàn",
+    "pinyinArray": [
+      "Dan"
+    ]
+  },
+  "蛔": {
+    "structure": "⿰虫回",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丶",
+      "丨",
+      "𠃍",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Huí",
+    "pinyinArray": [
+      "Hui"
+    ]
+  },
+  "蛙": {
+    "structure": "⿰虫圭",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丶",
+      "一",
+      "丨",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Wā",
+    "pinyinArray": [
+      "Wa"
+    ]
+  },
+  "蛛": {
+    "structure": "⿰虫朱",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Zhū",
+    "pinyinArray": [
+      "Zhu"
+    ]
+  },
+  "蛤": {
+    "structure": "⿰虫合",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丶",
+      "丿",
+      "㇏",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Há",
+    "pinyinArray": [
+      "Ha"
+    ]
+  },
+  "蛮": {
+    "structure": "⿱亦虫",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丨",
+      "丨",
+      "丿",
+      "丶",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丶"
+    ],
+    "pinyin": "Mán",
+    "pinyinArray": [
+      "Man"
+    ]
+  },
+  "蛹": {
+    "structure": "⿰虫甬",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丶",
+      "㇇|乛",
+      "丶",
+      "丨",
+      "𠃌",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Yǒng",
+    "pinyinArray": [
+      "Yong"
+    ]
+  },
+  "蛾": {
+    "structure": "⿰虫我",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "亅",
+      "㇀",
+      "㇂|㇃",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "É",
+    "pinyinArray": [
+      "E"
+    ]
+  },
+  "蜀": {
+    "structure": "⿱罒𠣜",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "丨",
+      "丨",
+      "一",
+      "丿",
+      "𠃌",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丶"
+    ],
+    "pinyin": "Shǔ",
+    "pinyinArray": [
+      "Shu"
+    ]
+  },
+  "蜂": {
+    "structure": "⿰虫夆",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丶",
+      "丿",
+      "㇇|乛",
+      "㇏",
+      "一",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Fēng",
+    "pinyinArray": [
+      "Feng"
+    ]
+  },
+  "蜈": {
+    "structure": "⿰虫吴[G]",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丶",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Wú",
+    "pinyinArray": [
+      "Wu"
+    ]
+  },
+  "蜒": {
+    "structure": "⿰虫延",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丶",
+      "丿",
+      "丨",
+      "一",
+      "㇄",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Yán",
+    "pinyinArray": [
+      "Yan"
+    ]
+  },
+  "蜓": {
+    "structure": "⿰虫廷",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "一",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Tíng",
+    "pinyinArray": [
+      "Ting"
+    ]
+  },
+  "蜕": {
+    "structure": "⿰虫兑",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丶",
+      "丶",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Tuì",
+    "pinyinArray": [
+      "Tui"
+    ]
+  },
+  "蜗": {
+    "structure": "⿰虫呙",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丶",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃌",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Wō",
+    "pinyinArray": [
+      "Wo"
+    ]
+  },
+  "蜘": {
+    "structure": "⿰虫知",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "丿",
+      "丶",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Zhī",
+    "pinyinArray": [
+      "Zhi"
+    ]
+  },
+  "蜜": {
+    "structure": "⿱宓虫",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "㇀",
+      "㇂|㇃",
+      "丶",
+      "丿",
+      "丶",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丶"
+    ],
+    "pinyin": "Mì",
+    "pinyinArray": [
+      "Mi"
+    ]
+  },
+  "蜡": {
+    "structure": "⿰虫昔",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丶",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Zhà",
+    "pinyinArray": [
+      "Zha"
+    ]
+  },
+  "蜻": {
+    "structure": "⿰虫青[GT]",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丶",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "𠃌",
+      "一",
+      "一"
+    ],
+    "pinyin": "Qīng",
+    "pinyinArray": [
+      "Qing"
+    ]
+  },
+  "蝇": {
+    "structure": "⿰虫黾[G]",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丶",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "乚"
+    ],
+    "pinyin": "Yíng",
+    "pinyinArray": [
+      "Ying"
+    ]
+  },
+  "蝉": {
+    "structure": "⿰虫单[G]",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丶",
+      "丶",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Chán",
+    "pinyinArray": [
+      "Chan"
+    ]
+  },
+  "蝌": {
+    "structure": "⿰虫科",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丶",
+      "丶",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Kē",
+    "pinyinArray": [
+      "Ke"
+    ]
+  },
+  "蝎": {
+    "structure": "⿰虫曷",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丶",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "𠃌",
+      "丿",
+      "丶",
+      "㇄"
+    ],
+    "pinyin": "Xiē",
+    "pinyinArray": [
+      "Xie"
+    ]
+  },
+  "蝗": {
+    "structure": "⿰虫皇",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丶",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Huáng",
+    "pinyinArray": [
+      "Huang"
+    ]
+  },
+  "蝙": {
+    "structure": "⿰虫扁",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丶",
+      "丶",
+      "𠃍",
+      "一",
+      "丿",
+      "丨",
+      "𠃌",
+      "一",
+      "丨",
+      "丨"
+    ],
+    "pinyin": "Biān",
+    "pinyinArray": [
+      "Bian"
+    ]
+  },
+  "蝠": {
+    "structure": "⿰虫畐",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丶",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Fú",
+    "pinyinArray": [
+      "Fu"
+    ]
+  },
+  "蝴": {
+    "structure": "⿰虫胡",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丶",
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "𠃌",
+      "一",
+      "一"
+    ],
+    "pinyin": "Hú",
+    "pinyinArray": [
+      "Hu"
+    ]
+  },
+  "蝶": {
+    "structure": "⿰虫枼",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丶",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "㇄",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Dié",
+    "pinyinArray": [
+      "Die"
+    ]
+  },
+  "螃": {
+    "structure": "⿰虫旁",
+    "strokeCount": 16,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丶",
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "㇀",
+      "㇇|乛",
+      "丶",
+      "一",
+      "𠃌",
+      "丿"
+    ],
+    "pinyin": "Páng",
+    "pinyinArray": [
+      "Pang"
+    ]
+  },
+  "融": {
+    "structure": "⿰鬲虫",
+    "strokeCount": 16,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃌",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丶"
+    ],
+    "pinyin": "Róng",
+    "pinyinArray": [
+      "Rong"
+    ]
+  },
+  "螟": {
+    "structure": "⿰虫冥",
+    "strokeCount": 16,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丶",
+      "一",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Míng",
+    "pinyinArray": [
+      "Ming"
+    ]
+  },
+  "螺": {
+    "structure": "⿰虫累",
+    "strokeCount": 17,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丶",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "𠃋",
+      "𠃋",
+      "丶",
+      "亅",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Luó",
+    "pinyinArray": [
+      "Luo"
+    ]
+  },
+  "蟀": {
+    "structure": "⿰虫率",
+    "strokeCount": 17,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丶",
+      "丶",
+      "一",
+      "𠃋",
+      "𠃋",
+      "丶",
+      "丶",
+      "㇀",
+      "丿",
+      "丶",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Shuài",
+    "pinyinArray": [
+      "Shuai"
+    ]
+  },
+  "蟆": {
+    "structure": "⿰虫莫",
+    "strokeCount": 16,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丶",
+      "一",
+      "丨",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Má",
+    "pinyinArray": [
+      "Ma"
+    ]
+  },
+  "蟋": {
+    "structure": "⿰虫悉",
+    "strokeCount": 17,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丶",
+      "丿",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "㇏",
+      "㇀",
+      "㇂|㇃",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Xī",
+    "pinyinArray": [
+      "Xi"
+    ]
+  },
+  "蟹": {
+    "structure": "⿱解虫",
+    "strokeCount": 19,
+    "strokeShapes": [
+      "丿",
+      "㇇|乛",
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "丨",
+      "𠃌",
+      "丿",
+      "丿",
+      "一",
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丶"
+    ],
+    "pinyin": "Xiè",
+    "pinyinArray": [
+      "Xie"
+    ]
+  },
+  "蠕": {
+    "structure": "⿰虫需",
+    "strokeCount": 20,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丶",
+      "一",
+      "㇀",
+      "㇇|乛",
+      "丨",
+      "丶",
+      "丶",
+      "丶",
+      "丶",
+      "一",
+      "丿",
+      "丨",
+      "𠃌",
+      "丨",
+      "丨"
+    ],
+    "pinyin": "Rú",
+    "pinyinArray": [
+      "Ru"
+    ]
+  },
+  "蠢": {
+    "structure": "⿱春䖵",
+    "strokeCount": 21,
+    "strokeShapes": [
+      "一",
+      "一",
+      "一",
+      "丿",
+      "㇏",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丶",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丶"
+    ],
+    "pinyin": "Chǔn",
+    "pinyinArray": [
+      "Chun"
+    ]
+  },
+  "血": {
+    "structure": "⿱丿皿",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "𠃍",
+      "丨",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Xiě",
+    "pinyinArray": [
+      "Xie"
+    ]
+  },
+  "衅": {
+    "structure": "⿰血半",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "𠃍",
+      "丨",
+      "丨",
+      "㇀",
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Xìn",
+    "pinyinArray": [
+      "Xin"
+    ]
+  },
+  "行": {
+    "structure": "⿰彳亍",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丿",
+      "丿",
+      "丨",
+      "一",
+      "一",
+      "亅"
+    ],
+    "pinyin": "Xíng",
+    "pinyinArray": [
+      "Xing"
+    ]
+  },
+  "衍": {
+    "structure": "⿲彳氵亍",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "丿",
+      "丨",
+      "丶",
+      "丶",
+      "㇀",
+      "一",
+      "一",
+      "亅"
+    ],
+    "pinyin": "Yǎn",
+    "pinyinArray": [
+      "Yan"
+    ]
+  },
+  "衔": {
+    "structure": "⿲彳钅亍",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丿",
+      "丿",
+      "丨",
+      "丿",
+      "一",
+      "一",
+      "一",
+      "𠄌",
+      "一",
+      "一",
+      "亅"
+    ],
+    "pinyin": "Xián",
+    "pinyinArray": [
+      "Xian"
+    ]
+  },
+  "街": {
+    "structure": "⿲彳圭亍",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丿",
+      "丿",
+      "丨",
+      "一",
+      "丨",
+      "一",
+      "一",
+      "丨",
+      "㇀",
+      "一",
+      "一",
+      "亅"
+    ],
+    "pinyin": "Jiē",
+    "pinyinArray": [
+      "Jie"
+    ]
+  },
+  "衙": {
+    "structure": "⿲彳吾亍",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丿",
+      "丿",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "亅"
+    ],
+    "pinyin": "Yá",
+    "pinyinArray": [
+      "Ya"
+    ]
+  },
+  "衡": {
+    "structure": "⿲彳𩵋亍",
+    "strokeCount": 16,
+    "strokeShapes": [
+      "丿",
+      "丿",
+      "丨",
+      "丿",
+      "㇇|乛",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "一",
+      "丿",
+      "丶",
+      "一",
+      "一",
+      "亅"
+    ],
+    "pinyin": "Héng",
+    "pinyinArray": [
+      "Heng"
+    ]
+  },
+  "衣": {
+    "structure": "⿱亠𧘇",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "𠄌",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Yī",
+    "pinyinArray": [
+      "Yi"
+    ]
+  },
+  "补": {
+    "structure": "⿰衤卜",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丶",
+      "㇇|乛",
+      "丨",
+      "丿",
+      "丶",
+      "丨",
+      "丶"
+    ],
+    "pinyin": "Bǔ",
+    "pinyinArray": [
+      "Bu"
+    ]
+  },
+  "表": {
+    "structure": "⿱龶𧘇",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "𠄌",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Biǎo",
+    "pinyinArray": [
+      "Biao"
+    ]
+  },
+  "衩": {
+    "structure": "⿰衤叉",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丶",
+      "㇇|乛",
+      "丨",
+      "丿",
+      "丶",
+      "㇇|乛",
+      "㇏",
+      "丶"
+    ],
+    "pinyin": "Chǎ",
+    "pinyinArray": [
+      "Cha"
+    ]
+  },
+  "衫": {
+    "structure": "⿰衤彡",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丶",
+      "㇇|乛",
+      "丨",
+      "丿",
+      "丶",
+      "丿",
+      "丿",
+      "丿"
+    ],
+    "pinyin": "Shān",
+    "pinyinArray": [
+      "Shan"
+    ]
+  },
+  "衬": {
+    "structure": "⿰衤寸",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丶",
+      "㇇|乛",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "亅",
+      "丶"
+    ],
+    "pinyin": "Chèn",
+    "pinyinArray": [
+      "Chen"
+    ]
+  },
+  "衰": {
+    "structure": "⿳亠⿻口一𧘇",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "𠄌",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Shuāi",
+    "pinyinArray": [
+      "Shuai"
+    ]
+  },
+  "衷": {
+    "structure": "⿳亠中𧘇[GT]",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "丿",
+      "𠄌",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Zhōng",
+    "pinyinArray": [
+      "Zhong"
+    ]
+  },
+  "袁": {
+    "structure": "⿱𠮷𧘇",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "𠄌",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Yuán",
+    "pinyinArray": [
+      "Yuan"
+    ]
+  },
+  "袄": {
+    "structure": "⿰衤夭",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "㇇|乛",
+      "丨",
+      "丿",
+      "丶",
+      "丿",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Ǎo",
+    "pinyinArray": [
+      "Ao"
+    ]
+  },
+  "袋": {
+    "structure": "⿱代衣",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "一",
+      "㇂|㇃",
+      "丶",
+      "丶",
+      "一",
+      "丿",
+      "𠄌",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Dài",
+    "pinyinArray": [
+      "Dai"
+    ]
+  },
+  "袍": {
+    "structure": "⿰衤包",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "㇇|乛",
+      "丨",
+      "丿",
+      "丶",
+      "丿",
+      "𠃌",
+      "𠃍",
+      "一",
+      "乚"
+    ],
+    "pinyin": "Páo",
+    "pinyinArray": [
+      "Pao"
+    ]
+  },
+  "袒": {
+    "structure": "⿰衤旦",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "㇇|乛",
+      "丨",
+      "丿",
+      "丶",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一"
+    ],
+    "pinyin": "Tǎn",
+    "pinyinArray": [
+      "Tan"
+    ]
+  },
+  "袖": {
+    "structure": "⿰衤由",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "㇇|乛",
+      "丨",
+      "丿",
+      "丶",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Xiù",
+    "pinyinArray": [
+      "Xiu"
+    ]
+  },
+  "袜": {
+    "structure": "⿰衤末",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "㇇|乛",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Mò",
+    "pinyinArray": [
+      "Mo"
+    ]
+  },
+  "被": {
+    "structure": "⿰衤皮",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "㇇|乛",
+      "丨",
+      "丿",
+      "丶",
+      "㇇|乛",
+      "丿",
+      "丨",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Bèi",
+    "pinyinArray": [
+      "Bei"
+    ]
+  },
+  "袭": {
+    "structure": "⿱龙衣",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "乚",
+      "丿",
+      "丶",
+      "丶",
+      "一",
+      "丿",
+      "𠄌",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Xí",
+    "pinyinArray": [
+      "Xi"
+    ]
+  },
+  "袱": {
+    "structure": "⿰衤伏",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丶",
+      "㇇|乛",
+      "丨",
+      "丿",
+      "丶",
+      "丿",
+      "丨",
+      "一",
+      "丿",
+      "㇏",
+      "丶"
+    ],
+    "pinyin": "Fú",
+    "pinyinArray": [
+      "Fu"
+    ]
+  },
+  "裁": {
+    "structure": "⿹𢦏衣",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "一",
+      "丶",
+      "一",
+      "丿",
+      "𠄌",
+      "丿",
+      "丶",
+      "㇂|㇃",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Cái",
+    "pinyinArray": [
+      "Cai"
+    ]
+  },
+  "裂": {
+    "structure": "⿱列衣",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "㇇|乛",
+      "丶",
+      "丨",
+      "亅",
+      "丶",
+      "一",
+      "丿",
+      "𠄌",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Liě",
+    "pinyinArray": [
+      "Lie"
+    ]
+  },
+  "装": {
+    "structure": "⿱壮衣",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "丨",
+      "一",
+      "丨",
+      "一",
+      "丶",
+      "一",
+      "丿",
+      "𠄌",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Zhuāng",
+    "pinyinArray": [
+      "Zhuang"
+    ]
+  },
+  "裆": {
+    "structure": "⿰衤当",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丶",
+      "㇇|乛",
+      "丨",
+      "丿",
+      "丶",
+      "丨",
+      "丶",
+      "丿",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Dāng",
+    "pinyinArray": [
+      "Dang"
+    ]
+  },
+  "裕": {
+    "structure": "⿰衤谷",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丶",
+      "㇇|乛",
+      "丨",
+      "丿",
+      "丶",
+      "丿",
+      "丶",
+      "丿",
+      "㇏",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Yù",
+    "pinyinArray": [
+      "Yu"
+    ]
+  },
+  "裙": {
+    "structure": "⿰衤君",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丶",
+      "㇇|乛",
+      "丨",
+      "丿",
+      "丶",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Qún",
+    "pinyinArray": [
+      "Qun"
+    ]
+  },
+  "裤": {
+    "structure": "⿰衤库",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丶",
+      "㇇|乛",
+      "丨",
+      "丿",
+      "丶",
+      "丶",
+      "一",
+      "丿",
+      "一",
+      "𠃋",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Kù",
+    "pinyinArray": [
+      "Ku"
+    ]
+  },
+  "裳": {
+    "structure": "⿱𫩠衣",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "丨",
+      "丶",
+      "丿",
+      "㇀",
+      "㇇|乛",
+      "丨",
+      "𠃍",
+      "一",
+      "丶",
+      "一",
+      "丿",
+      "𠄌",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Cháng",
+    "pinyinArray": [
+      "Chang"
+    ]
+  },
+  "裸": {
+    "structure": "⿰衤果",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丶",
+      "㇇|乛",
+      "丨",
+      "丿",
+      "丶",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Luǒ",
+    "pinyinArray": [
+      "Luo"
+    ]
+  },
+  "裹": {
+    "structure": "⿳亠果𧘇",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丿",
+      "𠄌",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Guǒ",
+    "pinyinArray": [
+      "Guo"
+    ]
+  },
+  "褂": {
+    "structure": "⿰衤卦",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丶",
+      "㇇|乛",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "丨",
+      "一",
+      "一",
+      "丨",
+      "㇀",
+      "丨",
+      "丶"
+    ],
+    "pinyin": "Guà",
+    "pinyinArray": [
+      "Gua"
+    ]
+  },
+  "褐": {
+    "structure": "⿰衤曷[GTK]",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "丶",
+      "㇇|乛",
+      "丨",
+      "丿",
+      "丶",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "𠃌",
+      "丿",
+      "丶",
+      "㇄"
+    ],
+    "pinyin": "Hè",
+    "pinyinArray": [
+      "He"
+    ]
+  },
+  "褒": {
+    "structure": "⿳亠保𧘇",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丿",
+      "𠄌",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Bāo",
+    "pinyinArray": [
+      "Bao"
+    ]
+  },
+  "褥": {
+    "structure": "⿰衤辱",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "丶",
+      "㇇|乛",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "丿",
+      "一",
+      "一",
+      "𠄌",
+      "丿",
+      "㇏",
+      "一",
+      "亅",
+      "丶"
+    ],
+    "pinyin": "Rù",
+    "pinyinArray": [
+      "Ru"
+    ]
+  },
+  "褪": {
+    "structure": "⿰衤退",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "丶",
+      "㇇|乛",
+      "丨",
+      "丿",
+      "丶",
+      "𠃍",
+      "一",
+      "一",
+      "𠄌",
+      "丿",
+      "丶",
+      "丶",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Tuì",
+    "pinyinArray": [
+      "Tui"
+    ]
+  },
+  "襟": {
+    "structure": "⿰衤禁",
+    "strokeCount": 18,
+    "strokeShapes": [
+      "丶",
+      "㇇|乛",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "丨",
+      "丿",
+      "㇏",
+      "一",
+      "一",
+      "亅",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Jīn",
+    "pinyinArray": [
+      "Jin"
+    ]
+  },
+  "西": {
+    "structure": "⿱一𠁤",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "𠃍",
+      "丿",
+      "㇄",
+      "一"
+    ],
+    "pinyin": "Xī",
+    "pinyinArray": [
+      "Xi"
+    ]
+  },
+  "要": {
+    "structure": "⿱覀女",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "𠃍",
+      "丨",
+      "丨",
+      "一",
+      "𡿨",
+      "丿",
+      "一"
+    ],
+    "pinyin": "Yào",
+    "pinyinArray": [
+      "Yao"
+    ]
+  },
+  "覆": {
+    "structure": "⿱覀復",
+    "strokeCount": 18,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "𠃍",
+      "丨",
+      "丨",
+      "一",
+      "丿",
+      "丿",
+      "丨",
+      "丿",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Fù",
+    "pinyinArray": [
+      "Fu"
+    ]
+  },
+  "见": {
+    "structure": "见",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Jiàn",
+    "pinyinArray": [
+      "Jian"
+    ]
+  },
+  "观": {
+    "structure": "⿰又见",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "㇇|乛",
+      "丶",
+      "丨",
+      "𠃍",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Guàn",
+    "pinyinArray": [
+      "Guan"
+    ]
+  },
+  "规": {
+    "structure": "⿰夫见",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "一",
+      "丿",
+      "丶",
+      "丨",
+      "𠃍",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Guī",
+    "pinyinArray": [
+      "Gui"
+    ]
+  },
+  "觅": {
+    "structure": "⿱爫见",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丿",
+      "丶",
+      "丶",
+      "丿",
+      "丨",
+      "𠃍",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Mì",
+    "pinyinArray": [
+      "Mi"
+    ]
+  },
+  "视": {
+    "structure": "⿰礻见",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丶",
+      "㇇|乛",
+      "丨",
+      "丶",
+      "丨",
+      "𠃍",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Shì",
+    "pinyinArray": [
+      "Shi"
+    ]
+  },
+  "览": {
+    "structure": "⿱⿰〢⿱𠂉丶见",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丨",
+      "丨",
+      "丿",
+      "一",
+      "丶",
+      "丨",
+      "𠃍",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Lǎn",
+    "pinyinArray": [
+      "Lan"
+    ]
+  },
+  "觉": {
+    "structure": "⿳𭕄冖见",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "丿",
+      "㇀",
+      "㇇|乛",
+      "丨",
+      "𠃍",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Jiào",
+    "pinyinArray": [
+      "Jiao"
+    ]
+  },
+  "角": {
+    "structure": "角",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丿",
+      "㇇|乛",
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Jiǎo",
+    "pinyinArray": [
+      "Jiao"
+    ]
+  },
+  "解": {
+    "structure": "⿰角𭷔",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丿",
+      "㇇|乛",
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "丨",
+      "𠃌",
+      "丿",
+      "丿",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Jiè",
+    "pinyinArray": [
+      "Jie"
+    ]
+  },
+  "触": {
+    "structure": "⿰角虫",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丿",
+      "㇇|乛",
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丶"
+    ],
+    "pinyin": "Chù",
+    "pinyinArray": [
+      "Chu"
+    ]
+  },
+  "言": {
+    "structure": "言",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Yán",
+    "pinyinArray": [
+      "Yan"
+    ]
+  },
+  "誉": {
+    "structure": "⿱兴言",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "丿",
+      "一",
+      "丿",
+      "㇏",
+      "丶",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Yù",
+    "pinyinArray": [
+      "Yu"
+    ]
+  },
+  "誊": {
+    "structure": "⿱龹言",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "丿",
+      "㇏",
+      "丶",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Téng",
+    "pinyinArray": [
+      "Teng"
+    ]
+  },
+  "誓": {
+    "structure": "⿱折言",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丿",
+      "丿",
+      "一",
+      "丨",
+      "丶",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Shì",
+    "pinyinArray": [
+      "Shi"
+    ]
+  },
+  "警": {
+    "structure": "⿱敬言",
+    "strokeCount": 19,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "丿",
+      "𠃌",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "一",
+      "丿",
+      "㇏",
+      "丶",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Jǐng",
+    "pinyinArray": [
+      "Jing"
+    ]
+  },
+  "譬": {
+    "structure": "⿱辟言",
+    "strokeCount": 20,
+    "strokeShapes": [
+      "𠃍",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "丨",
+      "丶",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Pì",
+    "pinyinArray": [
+      "Pi"
+    ]
+  },
+  "计": {
+    "structure": "⿰讠十",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "丶",
+      "㇊",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Jì",
+    "pinyinArray": [
+      "Ji"
+    ]
+  },
+  "订": {
+    "structure": "⿰讠丁",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "丶",
+      "㇊",
+      "一",
+      "亅"
+    ],
+    "pinyin": "Dìng",
+    "pinyinArray": [
+      "Ding"
+    ]
+  },
+  "认": {
+    "structure": "⿰讠人",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "丶",
+      "㇊",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Rèn",
+    "pinyinArray": [
+      "Ren"
+    ]
+  },
+  "讥": {
+    "structure": "⿰讠几",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "丶",
+      "㇊",
+      "丿",
+      "⺄"
+    ],
+    "pinyin": "Jī",
+    "pinyinArray": [
+      "Ji"
+    ]
+  },
+  "讨": {
+    "structure": "⿰讠寸",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丶",
+      "㇊",
+      "一",
+      "亅",
+      "丶"
+    ],
+    "pinyin": "Tǎo",
+    "pinyinArray": [
+      "Tao"
+    ]
+  },
+  "让": {
+    "structure": "⿰讠上",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丶",
+      "㇊",
+      "丨",
+      "一",
+      "一"
+    ],
+    "pinyin": "Ràng",
+    "pinyinArray": [
+      "Rang"
+    ]
+  },
+  "训": {
+    "structure": "⿰讠川",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丶",
+      "㇊",
+      "丿",
+      "丨",
+      "丨"
+    ],
+    "pinyin": "Xùn",
+    "pinyinArray": [
+      "Xun"
+    ]
+  },
+  "议": {
+    "structure": "⿰讠义",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丶",
+      "㇊",
+      "丶",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Yì",
+    "pinyinArray": [
+      "Yi"
+    ]
+  },
+  "讯": {
+    "structure": "⿰讠卂",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丶",
+      "㇊",
+      "⺄",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Xùn",
+    "pinyinArray": [
+      "Xun"
+    ]
+  },
+  "记": {
+    "structure": "⿰讠己",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丶",
+      "㇊",
+      "𠃍",
+      "一",
+      "乚"
+    ],
+    "pinyin": "Jì",
+    "pinyinArray": [
+      "Ji"
+    ]
+  },
+  "讲": {
+    "structure": "⿰讠井",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丶",
+      "㇊",
+      "一",
+      "一",
+      "丿",
+      "丨"
+    ],
+    "pinyin": "Jiǎng",
+    "pinyinArray": [
+      "Jiang"
+    ]
+  },
+  "讳": {
+    "structure": "⿰讠韦",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丶",
+      "㇊",
+      "一",
+      "一",
+      "𠃌",
+      "丨"
+    ],
+    "pinyin": "Huì",
+    "pinyinArray": [
+      "Hui"
+    ]
+  },
+  "讶": {
+    "structure": "⿰讠牙",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丶",
+      "㇊",
+      "一",
+      "𠃋",
+      "亅",
+      "丿"
+    ],
+    "pinyin": "Yà",
+    "pinyinArray": [
+      "Ya"
+    ]
+  },
+  "许": {
+    "structure": "⿰讠午",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丶",
+      "㇊",
+      "丿",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Xǔ",
+    "pinyinArray": [
+      "Xu"
+    ]
+  },
+  "讹": {
+    "structure": "⿰讠化",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丶",
+      "㇊",
+      "丿",
+      "丨",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "É",
+    "pinyinArray": [
+      "E"
+    ]
+  },
+  "论": {
+    "structure": "⿰讠仑",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丶",
+      "㇊",
+      "丿",
+      "㇏",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Lún",
+    "pinyinArray": [
+      "Lun"
+    ]
+  },
+  "讼": {
+    "structure": "⿰讠公",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丶",
+      "㇊",
+      "丿",
+      "㇏",
+      "𠃋",
+      "丶"
+    ],
+    "pinyin": "Sòng",
+    "pinyinArray": [
+      "Song"
+    ]
+  },
+  "讽": {
+    "structure": "⿰讠风",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丶",
+      "㇊",
+      "丿",
+      "⺄",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Fěng",
+    "pinyinArray": [
+      "Feng"
+    ]
+  },
+  "设": {
+    "structure": "⿰讠殳",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丶",
+      "㇊",
+      "丿",
+      "㇅|㇍",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Shè",
+    "pinyinArray": [
+      "She"
+    ]
+  },
+  "访": {
+    "structure": "⿰讠方",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丶",
+      "㇊",
+      "丶",
+      "一",
+      "𠃌",
+      "丿"
+    ],
+    "pinyin": "Fǎng",
+    "pinyinArray": [
+      "Fang"
+    ]
+  },
+  "诀": {
+    "structure": "⿰讠夬",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丶",
+      "㇊",
+      "𠃍",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Jué",
+    "pinyinArray": [
+      "Jue"
+    ]
+  },
+  "证": {
+    "structure": "⿰讠正",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丶",
+      "㇊",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Zhèng",
+    "pinyinArray": [
+      "Zheng"
+    ]
+  },
+  "评": {
+    "structure": "⿰讠平",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丶",
+      "㇊",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Píng",
+    "pinyinArray": [
+      "Ping"
+    ]
+  },
+  "诅": {
+    "structure": "⿰讠且",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丶",
+      "㇊",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一"
+    ],
+    "pinyin": "Zǔ",
+    "pinyinArray": [
+      "Zu"
+    ]
+  },
+  "识": {
+    "structure": "⿰讠只",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丶",
+      "㇊",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Shí",
+    "pinyinArray": [
+      "Shi"
+    ]
+  },
+  "诈": {
+    "structure": "⿰讠乍",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丶",
+      "㇊",
+      "丿",
+      "一",
+      "丨",
+      "一",
+      "一"
+    ],
+    "pinyin": "Zhà",
+    "pinyinArray": [
+      "Zha"
+    ]
+  },
+  "诉": {
+    "structure": "⿰讠斥",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丶",
+      "㇊",
+      "丿",
+      "丿",
+      "一",
+      "丨",
+      "丶"
+    ],
+    "pinyin": "Sù",
+    "pinyinArray": [
+      "Su"
+    ]
+  },
+  "诊": {
+    "structure": "⿰讠㐱",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丶",
+      "㇊",
+      "丿",
+      "㇏",
+      "丿",
+      "丿",
+      "丿"
+    ],
+    "pinyin": "Zhěn",
+    "pinyinArray": [
+      "Zhen"
+    ]
+  },
+  "词": {
+    "structure": "⿰讠司",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丶",
+      "㇊",
+      "𠃌",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Cí",
+    "pinyinArray": [
+      "Ci"
+    ]
+  },
+  "译": {
+    "structure": "⿰讠𠬤",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丶",
+      "㇊",
+      "㇇|乛",
+      "㇏",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Yì",
+    "pinyinArray": [
+      "Yi"
+    ]
+  },
+  "试": {
+    "structure": "⿰讠式",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丶",
+      "㇊",
+      "一",
+      "一",
+      "丨",
+      "㇀",
+      "㇂|㇃",
+      "丶"
+    ],
+    "pinyin": "Shì",
+    "pinyinArray": [
+      "Shi"
+    ]
+  },
+  "诗": {
+    "structure": "⿰讠寺",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丶",
+      "㇊",
+      "一",
+      "丨",
+      "一",
+      "一",
+      "亅",
+      "丶"
+    ],
+    "pinyin": "Shī",
+    "pinyinArray": [
+      "Shi"
+    ]
+  },
+  "诚": {
+    "structure": "⿰讠成",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丶",
+      "㇊",
+      "一",
+      "丿",
+      "𠃌",
+      "㇂|㇃",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Chéng",
+    "pinyinArray": [
+      "Cheng"
+    ]
+  },
+  "话": {
+    "structure": "⿰讠舌",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丶",
+      "㇊",
+      "丿",
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Huà",
+    "pinyinArray": [
+      "Hua"
+    ]
+  },
+  "诞": {
+    "structure": "⿰讠延",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丶",
+      "㇊",
+      "丿",
+      "丨",
+      "一",
+      "㇄",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Dàn",
+    "pinyinArray": [
+      "Dan"
+    ]
+  },
+  "诡": {
+    "structure": "⿰讠危",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丶",
+      "㇊",
+      "丿",
+      "㇇|乛",
+      "一",
+      "丿",
+      "𠃌",
+      "乚"
+    ],
+    "pinyin": "Guǐ",
+    "pinyinArray": [
+      "Gui"
+    ]
+  },
+  "询": {
+    "structure": "⿰讠旬",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丶",
+      "㇊",
+      "丿",
+      "𠃌",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Xún",
+    "pinyinArray": [
+      "Xun"
+    ]
+  },
+  "该": {
+    "structure": "⿰讠亥",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丶",
+      "㇊",
+      "丶",
+      "一",
+      "𠃋",
+      "丿",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Gāi",
+    "pinyinArray": [
+      "Gai"
+    ]
+  },
+  "详": {
+    "structure": "⿰讠羊",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丶",
+      "㇊",
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Xiáng",
+    "pinyinArray": [
+      "Xiang"
+    ]
+  },
+  "诫": {
+    "structure": "⿰讠戒",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "㇊",
+      "一",
+      "一",
+      "丿",
+      "丨",
+      "㇂|㇃",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Jiè",
+    "pinyinArray": [
+      "Jie"
+    ]
+  },
+  "诬": {
+    "structure": "⿰讠巫",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "㇊",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丿",
+      "丶",
+      "一"
+    ],
+    "pinyin": "Wū",
+    "pinyinArray": [
+      "Wu"
+    ]
+  },
+  "语": {
+    "structure": "⿰讠吾",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "㇊",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Yù",
+    "pinyinArray": [
+      "Yu"
+    ]
+  },
+  "误": {
+    "structure": "⿰讠吴",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "㇊",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Wù",
+    "pinyinArray": [
+      "Wu"
+    ]
+  },
+  "诱": {
+    "structure": "⿰讠秀",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "㇊",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "㇏",
+      "𠄎|㇌",
+      "丿"
+    ],
+    "pinyin": "Yòu",
+    "pinyinArray": [
+      "You"
+    ]
+  },
+  "诲": {
+    "structure": "⿰讠每",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "㇊",
+      "丿",
+      "一",
+      "㇄",
+      "𠃌",
+      "丶",
+      "一",
+      "丶"
+    ],
+    "pinyin": "Huì",
+    "pinyinArray": [
+      "Hui"
+    ]
+  },
+  "说": {
+    "structure": "⿰讠兑",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "㇊",
+      "丶",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Shuō",
+    "pinyinArray": [
+      "Shuo"
+    ]
+  },
+  "诵": {
+    "structure": "⿰讠甬",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "㇊",
+      "㇇|乛",
+      "丶",
+      "丨",
+      "𠃌",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Sòng",
+    "pinyinArray": [
+      "Song"
+    ]
+  },
+  "请": {
+    "structure": "⿰讠青",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "㇊",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "𠃌",
+      "一",
+      "一"
+    ],
+    "pinyin": "Qǐng",
+    "pinyinArray": [
+      "Qing"
+    ]
+  },
+  "诸": {
+    "structure": "⿰讠者",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "㇊",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Zhū",
+    "pinyinArray": [
+      "Zhu"
+    ]
+  },
+  "诺": {
+    "structure": "⿰讠若",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "㇊",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Nuò",
+    "pinyinArray": [
+      "Nuo"
+    ]
+  },
+  "读": {
+    "structure": "⿰讠卖",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "㇊",
+      "一",
+      "丨",
+      "㇇|乛",
+      "丶",
+      "丶",
+      "一",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Dú",
+    "pinyinArray": [
+      "Du"
+    ]
+  },
+  "诽": {
+    "structure": "⿰讠非",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "㇊",
+      "丨",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "一",
+      "一"
+    ],
+    "pinyin": "Fěi",
+    "pinyinArray": [
+      "Fei"
+    ]
+  },
+  "课": {
+    "structure": "⿰讠果",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "㇊",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Kè",
+    "pinyinArray": [
+      "Ke"
+    ]
+  },
+  "谁": {
+    "structure": "⿰讠隹",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "㇊",
+      "丿",
+      "丨",
+      "丶",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Shuí",
+    "pinyinArray": [
+      "Shui"
+    ]
+  },
+  "调": {
+    "structure": "⿰讠周",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "㇊",
+      "丿",
+      "𠃌",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Diào",
+    "pinyinArray": [
+      "Diao"
+    ]
+  },
+  "谅": {
+    "structure": "⿰讠京",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "㇊",
+      "丶",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "亅",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Liàng",
+    "pinyinArray": [
+      "Liang"
+    ]
+  },
+  "谆": {
+    "structure": "⿰讠享",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "㇊",
+      "丶",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "㇇|乛",
+      "亅",
+      "一"
+    ],
+    "pinyin": "Zhūn",
+    "pinyinArray": [
+      "Zhun"
+    ]
+  },
+  "谈": {
+    "structure": "⿰讠炎",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "㇊",
+      "㇀",
+      "丿",
+      "丿",
+      "丶",
+      "㇀",
+      "丿",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Tán",
+    "pinyinArray": [
+      "Tan"
+    ]
+  },
+  "谊": {
+    "structure": "⿰讠宜",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "㇊",
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一"
+    ],
+    "pinyin": "Yì",
+    "pinyinArray": [
+      "Yi"
+    ]
+  },
+  "谋": {
+    "structure": "⿰讠某",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丶",
+      "㇊",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Móu",
+    "pinyinArray": [
+      "Mou"
+    ]
+  },
+  "谍": {
+    "structure": "⿰讠枼",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丶",
+      "㇊",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "㇄",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Dié",
+    "pinyinArray": [
+      "Die"
+    ]
+  },
+  "谎": {
+    "structure": "⿰讠荒",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丶",
+      "㇊",
+      "一",
+      "丨",
+      "丨",
+      "丶",
+      "一",
+      "㇄",
+      "丿",
+      "丨",
+      "乚"
+    ],
+    "pinyin": "Huǎng",
+    "pinyinArray": [
+      "Huang"
+    ]
+  },
+  "谐": {
+    "structure": "⿰讠皆",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丶",
+      "㇊",
+      "一",
+      "𠄌",
+      "丿",
+      "乚",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Xié",
+    "pinyinArray": [
+      "Xie"
+    ]
+  },
+  "谒": {
+    "structure": "⿰讠曷",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丶",
+      "㇊",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "𠃌",
+      "丿",
+      "丶",
+      "㇄"
+    ],
+    "pinyin": "Yè",
+    "pinyinArray": [
+      "Ye"
+    ]
+  },
+  "谓": {
+    "structure": "⿰讠胃",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丶",
+      "㇊",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "𠃌",
+      "一",
+      "一"
+    ],
+    "pinyin": "Wèi",
+    "pinyinArray": [
+      "Wei"
+    ]
+  },
+  "谚": {
+    "structure": "⿰讠彦",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丶",
+      "㇊",
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丿",
+      "丿",
+      "丿",
+      "丿"
+    ],
+    "pinyin": "Yàn",
+    "pinyinArray": [
+      "Yan"
+    ]
+  },
+  "谜": {
+    "structure": "⿰讠迷",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丶",
+      "㇊",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丶",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Mèi",
+    "pinyinArray": [
+      "Mei"
+    ]
+  },
+  "谢": {
+    "structure": "⿰讠射",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丶",
+      "㇊",
+      "丿",
+      "丨",
+      "𠃌",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "一",
+      "亅",
+      "丶"
+    ],
+    "pinyin": "Xiè",
+    "pinyinArray": [
+      "Xie"
+    ]
+  },
+  "谣": {
+    "structure": "⿰讠䍃",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丶",
+      "㇊",
+      "丿",
+      "丶",
+      "丶",
+      "丿",
+      "丿",
+      "一",
+      "一",
+      "丨",
+      "㇄",
+      "丨"
+    ],
+    "pinyin": "Yáo",
+    "pinyinArray": [
+      "Yao"
+    ]
+  },
+  "谤": {
+    "structure": "⿰讠旁",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丶",
+      "㇊",
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "㇀",
+      "㇇|乛",
+      "丶",
+      "一",
+      "𠃌",
+      "丿"
+    ],
+    "pinyin": "Bàng",
+    "pinyinArray": [
+      "Bang"
+    ]
+  },
+  "谦": {
+    "structure": "⿰讠兼",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丶",
+      "㇊",
+      "丶",
+      "丿",
+      "一",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Qiān",
+    "pinyinArray": [
+      "Qian"
+    ]
+  },
+  "谨": {
+    "structure": "⿰讠堇",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丶",
+      "㇊",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Jǐn",
+    "pinyinArray": [
+      "Jin"
+    ]
+  },
+  "谬": {
+    "structure": "⿰讠翏",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丶",
+      "㇊",
+      "𠃍",
+      "丶",
+      "㇀",
+      "𠃍",
+      "丶",
+      "㇀",
+      "丿",
+      "㇏",
+      "丿",
+      "丿",
+      "丿"
+    ],
+    "pinyin": "Miù",
+    "pinyinArray": [
+      "Miu"
+    ]
+  },
+  "谭": {
+    "structure": "⿰讠覃",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "丶",
+      "㇊",
+      "一",
+      "丨",
+      "𠃍",
+      "丨",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Tán",
+    "pinyinArray": [
+      "Tan"
+    ]
+  },
+  "谱": {
+    "structure": "⿰讠普",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "丶",
+      "㇊",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "丨",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Pǔ",
+    "pinyinArray": [
+      "Pu"
+    ]
+  },
+  "谴": {
+    "structure": "⿰讠遣",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "丶",
+      "㇊",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "𠃍",
+      "一",
+      "丶",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Qiǎn",
+    "pinyinArray": [
+      "Qian"
+    ]
+  },
+  "谷": {
+    "structure": "谷",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丿",
+      "丶",
+      "丿",
+      "㇏",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Gǔ",
+    "pinyinArray": [
+      "Gu"
+    ]
+  },
+  "豁": {
+    "structure": "⿰害谷",
+    "strokeCount": 17,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "丶",
+      "丿",
+      "㇏",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Huó",
+    "pinyinArray": [
+      "Huo"
+    ]
+  },
+  "豆": {
+    "structure": "豆",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丶",
+      "丿",
+      "一"
+    ],
+    "pinyin": "Dòu",
+    "pinyinArray": [
+      "Dou"
+    ]
+  },
+  "豌": {
+    "structure": "⿰豆宛",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丶",
+      "丿",
+      "㇀",
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "丿",
+      "㇇|乛",
+      "丶",
+      "𠃌",
+      "乚"
+    ],
+    "pinyin": "Wān",
+    "pinyinArray": [
+      "Wan"
+    ]
+  },
+  "象": {
+    "structure": "⿳𠂊𫩏𧰨",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丿",
+      "㇇|乛",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "㇁",
+      "丿",
+      "丿",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Xiàng",
+    "pinyinArray": [
+      "Xiang"
+    ]
+  },
+  "豪": {
+    "structure": "⿱⿳亠口冖豕",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "㇀",
+      "㇇|乛",
+      "一",
+      "丿",
+      "㇁",
+      "丿",
+      "丿",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Háo",
+    "pinyinArray": [
+      "Hao"
+    ]
+  },
+  "豫": {
+    "structure": "⿰予象",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "㇇|乛",
+      "丶",
+      "㇇|乛",
+      "亅",
+      "丿",
+      "㇇|乛",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "㇁",
+      "丿",
+      "丿",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Yù",
+    "pinyinArray": [
+      "Yu"
+    ]
+  },
+  "豹": {
+    "structure": "⿰豸勺",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "丶",
+      "丶",
+      "丿",
+      "㇁",
+      "丿",
+      "丿",
+      "丿",
+      "𠃌",
+      "丶"
+    ],
+    "pinyin": "Bào",
+    "pinyinArray": [
+      "Bao"
+    ]
+  },
+  "豺": {
+    "structure": "⿰豸才",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "丶",
+      "丶",
+      "丿",
+      "㇁",
+      "丿",
+      "丿",
+      "一",
+      "亅",
+      "丿"
+    ],
+    "pinyin": "Chái",
+    "pinyinArray": [
+      "Chai"
+    ]
+  },
+  "貌": {
+    "structure": "⿰豸皃",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "丿",
+      "丶",
+      "丶",
+      "丿",
+      "㇁",
+      "丿",
+      "丿",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Mào",
+    "pinyinArray": [
+      "Mao"
+    ]
+  },
+  "贝": {
+    "structure": "贝",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Bèi",
+    "pinyinArray": [
+      "Bei"
+    ]
+  },
+  "贞": {
+    "structure": "⿱⺊贝",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Zhēn",
+    "pinyinArray": [
+      "Zhen"
+    ]
+  },
+  "负": {
+    "structure": "⿱𠂊贝",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丿",
+      "㇇|乛",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Fù",
+    "pinyinArray": [
+      "Fu"
+    ]
+  },
+  "贡": {
+    "structure": "⿱工贝",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Gòng",
+    "pinyinArray": [
+      "Gong"
+    ]
+  },
+  "财": {
+    "structure": "⿰贝才",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "丿",
+      "丶",
+      "一",
+      "亅",
+      "丿"
+    ],
+    "pinyin": "Cái",
+    "pinyinArray": [
+      "Cai"
+    ]
+  },
+  "责": {
+    "structure": "⿱龶贝",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Zé",
+    "pinyinArray": [
+      "Ze"
+    ]
+  },
+  "贤": {
+    "structure": "⿱⿰〢又贝",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丨",
+      "丨",
+      "㇇|乛",
+      "㇏",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Xián",
+    "pinyinArray": [
+      "Xian"
+    ]
+  },
+  "败": {
+    "structure": "⿰贝攵",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "丿",
+      "丶",
+      "丿",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Bài",
+    "pinyinArray": [
+      "Bai"
+    ]
+  },
+  "账": {
+    "structure": "⿰贝长",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "丿",
+      "丶",
+      "丿",
+      "一",
+      "𠄌",
+      "㇏"
+    ],
+    "pinyin": "Zhàng",
+    "pinyinArray": [
+      "Zhang"
+    ]
+  },
+  "货": {
+    "structure": "⿱化贝",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "丿",
+      "乚",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Huò",
+    "pinyinArray": [
+      "Huo"
+    ]
+  },
+  "质": {
+    "structure": "⿸𠂆⿱十贝",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丿",
+      "丿",
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Zhì",
+    "pinyinArray": [
+      "Zhi"
+    ]
+  },
+  "贩": {
+    "structure": "⿰贝反",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "丿",
+      "丶",
+      "丿",
+      "丿",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Fàn",
+    "pinyinArray": [
+      "Fan"
+    ]
+  },
+  "贪": {
+    "structure": "⿱今贝",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丿",
+      "㇏",
+      "丶",
+      "㇇|乛",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Tān",
+    "pinyinArray": [
+      "Tan"
+    ]
+  },
+  "贫": {
+    "structure": "⿱分贝",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丿",
+      "㇏",
+      "𠃌",
+      "丿",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Pín",
+    "pinyinArray": [
+      "Pin"
+    ]
+  },
+  "贬": {
+    "structure": "⿰贝乏",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "丿",
+      "丶",
+      "丿",
+      "丶",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Biǎn",
+    "pinyinArray": [
+      "Bian"
+    ]
+  },
+  "购": {
+    "structure": "⿰贝勾",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "丿",
+      "丶",
+      "丿",
+      "𠃌",
+      "𠃋",
+      "丶"
+    ],
+    "pinyin": "Gòu",
+    "pinyinArray": [
+      "Gou"
+    ]
+  },
+  "贮": {
+    "structure": "⿰贝㝉",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "丿",
+      "丶",
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "一"
+    ],
+    "pinyin": "Zhù",
+    "pinyinArray": [
+      "Zhu"
+    ]
+  },
+  "贯": {
+    "structure": "⿱毌贝",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "㇄",
+      "𠃍",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Guàn",
+    "pinyinArray": [
+      "Guan"
+    ]
+  },
+  "贰": {
+    "structure": "⿹弋⿱二贝",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "一",
+      "一",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶",
+      "㇂|㇃",
+      "丶"
+    ],
+    "pinyin": "Èr",
+    "pinyinArray": [
+      "Er"
+    ]
+  },
+  "贱": {
+    "structure": "⿰贝戋",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "丿",
+      "丶",
+      "一",
+      "一",
+      "㇂|㇃",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Jiàn",
+    "pinyinArray": [
+      "Jian"
+    ]
+  },
+  "贴": {
+    "structure": "⿰贝占",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "丿",
+      "丶",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Tiē",
+    "pinyinArray": [
+      "Tie"
+    ]
+  },
+  "贵": {
+    "structure": "⿱𠀐贝",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Guì",
+    "pinyinArray": [
+      "Gui"
+    ]
+  },
+  "贷": {
+    "structure": "⿱代贝",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "一",
+      "㇂|㇃",
+      "丶",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Dài",
+    "pinyinArray": [
+      "Dai"
+    ]
+  },
+  "贸": {
+    "structure": "⿱⿰③刀贝",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "𠄌",
+      "丶",
+      "𠃌",
+      "丿",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Mào",
+    "pinyinArray": [
+      "Mao"
+    ]
+  },
+  "费": {
+    "structure": "⿱弗贝",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "𠃍",
+      "一",
+      "㇉",
+      "丿",
+      "丨",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Fèi",
+    "pinyinArray": [
+      "Fei"
+    ]
+  },
+  "贺": {
+    "structure": "⿱加贝",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "𠃌",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Hè",
+    "pinyinArray": [
+      "He"
+    ]
+  },
+  "贼": {
+    "structure": "⿰贝戎",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "丿",
+      "丶",
+      "一",
+      "一",
+      "丿",
+      "㇂|㇃",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Zéi",
+    "pinyinArray": [
+      "Zei"
+    ]
+  },
+  "贾": {
+    "structure": "⿱覀贝",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "𠃍",
+      "丨",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Jià",
+    "pinyinArray": [
+      "Jia"
+    ]
+  },
+  "贿": {
+    "structure": "⿰贝有",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "丿",
+      "丶",
+      "一",
+      "丿",
+      "丨",
+      "𠃌",
+      "一",
+      "一"
+    ],
+    "pinyin": "Huì",
+    "pinyinArray": [
+      "Hui"
+    ]
+  },
+  "赁": {
+    "structure": "⿱任贝",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "丿",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Lìn",
+    "pinyinArray": [
+      "Lin"
+    ]
+  },
+  "赂": {
+    "structure": "⿰贝各",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "丿",
+      "丶",
+      "丿",
+      "㇇|乛",
+      "㇏",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Lù",
+    "pinyinArray": [
+      "Lu"
+    ]
+  },
+  "赃": {
+    "structure": "⿰贝庄",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "丿",
+      "丶",
+      "丶",
+      "一",
+      "丿",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Zāng",
+    "pinyinArray": [
+      "Zang"
+    ]
+  },
+  "资": {
+    "structure": "⿱次贝",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "丿",
+      "㇇|乛",
+      "丿",
+      "㇏",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Zī",
+    "pinyinArray": [
+      "Zi"
+    ]
+  },
+  "赊": {
+    "structure": "⿰贝佘",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "丿",
+      "丶",
+      "丿",
+      "㇏",
+      "一",
+      "一",
+      "亅",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Shē",
+    "pinyinArray": [
+      "She"
+    ]
+  },
+  "赋": {
+    "structure": "⿰贝武",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "丿",
+      "丶",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "㇀",
+      "㇂|㇃",
+      "丶"
+    ],
+    "pinyin": "Fù",
+    "pinyinArray": [
+      "Fu"
+    ]
+  },
+  "赌": {
+    "structure": "⿰贝者",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "丿",
+      "丶",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Dǔ",
+    "pinyinArray": [
+      "Du"
+    ]
+  },
+  "赎": {
+    "structure": "⿰贝卖",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "丿",
+      "丶",
+      "一",
+      "丨",
+      "㇇|乛",
+      "丶",
+      "丶",
+      "一",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Shú",
+    "pinyinArray": [
+      "Shu"
+    ]
+  },
+  "赏": {
+    "structure": "⿱𫩠贝",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丨",
+      "丶",
+      "丿",
+      "㇀",
+      "㇇|乛",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Shǎng",
+    "pinyinArray": [
+      "Shang"
+    ]
+  },
+  "赐": {
+    "structure": "⿰贝易",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "丿",
+      "丶",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "𠃌",
+      "丿",
+      "丿"
+    ],
+    "pinyin": "Cì",
+    "pinyinArray": [
+      "Ci"
+    ]
+  },
+  "赔": {
+    "structure": "⿰贝咅",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "丿",
+      "丶",
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Péi",
+    "pinyinArray": [
+      "Pei"
+    ]
+  },
+  "赖": {
+    "structure": "⿰束负",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丿",
+      "㇇|乛",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Lái",
+    "pinyinArray": [
+      "Lai"
+    ]
+  },
+  "赘": {
+    "structure": "⿱敖贝",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "一",
+      "一",
+      "丨",
+      "一",
+      "𠃌",
+      "丿",
+      "丿",
+      "一",
+      "丿",
+      "㇏",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Zhuì",
+    "pinyinArray": [
+      "Zhui"
+    ]
+  },
+  "赚": {
+    "structure": "⿰贝兼",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "丿",
+      "丶",
+      "丶",
+      "丿",
+      "一",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Zhuàn",
+    "pinyinArray": [
+      "Zhuan"
+    ]
+  },
+  "赛": {
+    "structure": "⿱𡨄贝",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "一",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丿",
+      "㇏",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Sài",
+    "pinyinArray": [
+      "Sai"
+    ]
+  },
+  "赞": {
+    "structure": "⿱兟贝",
+    "strokeCount": 16,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "𠄌",
+      "丿",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "乚",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Zàn",
+    "pinyinArray": [
+      "Zan"
+    ]
+  },
+  "赠": {
+    "structure": "⿰贝曾",
+    "strokeCount": 16,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "丿",
+      "丶",
+      "丶",
+      "丿",
+      "丨",
+      "𠃍",
+      "丨",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Zèng",
+    "pinyinArray": [
+      "Zeng"
+    ]
+  },
+  "赡": {
+    "structure": "⿰贝詹",
+    "strokeCount": 17,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "丿",
+      "丶",
+      "丿",
+      "㇇|乛",
+      "一",
+      "丿",
+      "丿",
+      "丶",
+      "丶",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Shàn",
+    "pinyinArray": [
+      "Shan"
+    ]
+  },
+  "赢": {
+    "structure": "⿱吂⿲月贝凡",
+    "strokeCount": 17,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "㇄",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶",
+      "丿",
+      "⺄",
+      "丶"
+    ],
+    "pinyin": "Yíng",
+    "pinyinArray": [
+      "Ying"
+    ]
+  },
+  "赤": {
+    "structure": "⿱土④",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "亅",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Chì",
+    "pinyinArray": [
+      "Chi"
+    ]
+  },
+  "赦": {
+    "structure": "⿰赤攵",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "亅",
+      "丿",
+      "丶",
+      "丿",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Shè",
+    "pinyinArray": [
+      "She"
+    ]
+  },
+  "赫": {
+    "structure": "⿰赤赤",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "亅",
+      "丿",
+      "丶",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "亅",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Hè",
+    "pinyinArray": [
+      "He"
+    ]
+  },
+  "走": {
+    "structure": "⿱土龰",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Zǒu",
+    "pinyinArray": [
+      "Zou"
+    ]
+  },
+  "赴": {
+    "structure": "⿺走卜",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "㇏",
+      "丨",
+      "丶"
+    ],
+    "pinyin": "Fù",
+    "pinyinArray": [
+      "Fu"
+    ]
+  },
+  "赵": {
+    "structure": "⿺走㐅",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "㇏",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Zhào",
+    "pinyinArray": [
+      "Zhao"
+    ]
+  },
+  "赶": {
+    "structure": "⿺走干",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "㇏",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Gǎn",
+    "pinyinArray": [
+      "Gan"
+    ]
+  },
+  "起": {
+    "structure": "⿺走巳[GJK]",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "㇏",
+      "𠃍",
+      "一",
+      "乚"
+    ],
+    "pinyin": "Qǐ",
+    "pinyinArray": [
+      "Qi"
+    ]
+  },
+  "趁": {
+    "structure": "⿺走㐱",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "㇏",
+      "丿",
+      "㇏",
+      "丿",
+      "丿",
+      "丿"
+    ],
+    "pinyin": "Chèn",
+    "pinyinArray": [
+      "Chen"
+    ]
+  },
+  "超": {
+    "structure": "⿺走召",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "㇏",
+      "𠃌",
+      "丿",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Chāo",
+    "pinyinArray": [
+      "Chao"
+    ]
+  },
+  "越": {
+    "structure": "⿺走戉",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "㇏",
+      "一",
+      "𠄌",
+      "㇂|㇃",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Yuè",
+    "pinyinArray": [
+      "Yue"
+    ]
+  },
+  "趋": {
+    "structure": "⿺走刍",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "㇏",
+      "丿",
+      "㇇|乛",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Qū",
+    "pinyinArray": [
+      "Qu"
+    ]
+  },
+  "趟": {
+    "structure": "⿺走尚[GT]",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "㇏",
+      "丨",
+      "丶",
+      "丿",
+      "丨",
+      "𠃌",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Tàng",
+    "pinyinArray": [
+      "Tang"
+    ]
+  },
+  "趣": {
+    "structure": "⿺走取",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "㇏",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "一",
+      "㇀",
+      "㇇|乛",
+      "丶"
+    ],
+    "pinyin": "Qù",
+    "pinyinArray": [
+      "Qu"
+    ]
+  },
+  "足": {
+    "structure": "⿱口龰",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Zú",
+    "pinyinArray": [
+      "Zu"
+    ]
+  },
+  "趴": {
+    "structure": "⿰𧾷八",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "㇀",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Pā",
+    "pinyinArray": [
+      "Pa"
+    ]
+  },
+  "趾": {
+    "structure": "⿰𧾷止",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "㇀",
+      "丨",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Zhǐ",
+    "pinyinArray": [
+      "Zhi"
+    ]
+  },
+  "跃": {
+    "structure": "⿰𧾷夭",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "㇀",
+      "丿",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Yuè",
+    "pinyinArray": [
+      "Yue"
+    ]
+  },
+  "跋": {
+    "structure": "⿰𧾷犮",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "㇀",
+      "一",
+      "丿",
+      "㇇|乛",
+      "㇏",
+      "丶"
+    ],
+    "pinyin": "Bá",
+    "pinyinArray": [
+      "Ba"
+    ]
+  },
+  "跌": {
+    "structure": "⿰𧾷失",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "㇀",
+      "丿",
+      "一",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Diē",
+    "pinyinArray": [
+      "Die"
+    ]
+  },
+  "跑": {
+    "structure": "⿰𧾷包",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "㇀",
+      "丿",
+      "𠃌",
+      "𠃍",
+      "一",
+      "乚"
+    ],
+    "pinyin": "Páo",
+    "pinyinArray": [
+      "Pao"
+    ]
+  },
+  "跛": {
+    "structure": "⿰𧾷皮",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "㇀",
+      "㇇|乛",
+      "丿",
+      "丨",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Bǒ",
+    "pinyinArray": [
+      "Bo"
+    ]
+  },
+  "距": {
+    "structure": "⿰𧾷巨",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "㇀",
+      "一",
+      "𠃍",
+      "一",
+      "㇄"
+    ],
+    "pinyin": "Jù",
+    "pinyinArray": [
+      "Ju"
+    ]
+  },
+  "跟": {
+    "structure": "⿰𧾷艮",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "㇀",
+      "𠃍",
+      "一",
+      "一",
+      "𠄌",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Gēn",
+    "pinyinArray": [
+      "Gen"
+    ]
+  },
+  "跨": {
+    "structure": "⿰𧾷夸",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "㇀",
+      "一",
+      "丿",
+      "㇏",
+      "一",
+      "一",
+      "㇉"
+    ],
+    "pinyin": "Kuà",
+    "pinyinArray": [
+      "Kua"
+    ]
+  },
+  "跪": {
+    "structure": "⿰𧾷危",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "㇀",
+      "丿",
+      "㇇|乛",
+      "一",
+      "丿",
+      "𠃌",
+      "乚"
+    ],
+    "pinyin": "Guì",
+    "pinyinArray": [
+      "Gui"
+    ]
+  },
+  "路": {
+    "structure": "⿰𧾷各",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "㇀",
+      "丿",
+      "㇇|乛",
+      "㇏",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Lù",
+    "pinyinArray": [
+      "Lu"
+    ]
+  },
+  "跳": {
+    "structure": "⿰𧾷兆",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "㇀",
+      "丿",
+      "丶",
+      "㇀",
+      "乚",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Tiào",
+    "pinyinArray": [
+      "Tiao"
+    ]
+  },
+  "践": {
+    "structure": "⿰𧾷戋[G]",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "㇀",
+      "一",
+      "一",
+      "㇂|㇃",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Jiàn",
+    "pinyinArray": [
+      "Jian"
+    ]
+  },
+  "跷": {
+    "structure": "⿰𧾷尧",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "㇀",
+      "一",
+      "㇂|㇃",
+      "丿",
+      "一",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Qiāo",
+    "pinyinArray": [
+      "Qiao"
+    ]
+  },
+  "跺": {
+    "structure": "⿰𧾷朵",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "㇀",
+      "丿",
+      "㇅|㇍",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Duǒ",
+    "pinyinArray": [
+      "Duo"
+    ]
+  },
+  "踊": {
+    "structure": "⿰𧾷甬",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "㇀",
+      "㇇|乛",
+      "丶",
+      "丨",
+      "𠃌",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Yǒng",
+    "pinyinArray": [
+      "Yong"
+    ]
+  },
+  "踏": {
+    "structure": "⿰𧾷沓",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "㇀",
+      "亅",
+      "㇇|乛",
+      "丿",
+      "㇏",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Tà",
+    "pinyinArray": [
+      "Ta"
+    ]
+  },
+  "踢": {
+    "structure": "⿰𧾷易",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "㇀",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "𠃌",
+      "丿",
+      "丿"
+    ],
+    "pinyin": "Tī",
+    "pinyinArray": [
+      "Ti"
+    ]
+  },
+  "踩": {
+    "structure": "⿰𧾷采",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "㇀",
+      "丿",
+      "丶",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Cǎi",
+    "pinyinArray": [
+      "Cai"
+    ]
+  },
+  "踪": {
+    "structure": "⿰𧾷宗",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "㇀",
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "一",
+      "一",
+      "亅",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Zōng",
+    "pinyinArray": [
+      "Zong"
+    ]
+  },
+  "踱": {
+    "structure": "⿰𧾷度",
+    "strokeCount": 16,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "㇀",
+      "丶",
+      "一",
+      "丿",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Duó",
+    "pinyinArray": [
+      "Duo"
+    ]
+  },
+  "蹂": {
+    "structure": "⿰𧾷柔",
+    "strokeCount": 16,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "㇀",
+      "㇇|乛",
+      "丶",
+      "㇇|乛",
+      "亅",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Róu",
+    "pinyinArray": [
+      "Rou"
+    ]
+  },
+  "蹄": {
+    "structure": "⿰𧾷帝",
+    "strokeCount": 16,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "㇀",
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "㇀",
+      "㇇|乛",
+      "丨",
+      "𠃌",
+      "丨"
+    ],
+    "pinyin": "Tí",
+    "pinyinArray": [
+      "Ti"
+    ]
+  },
+  "蹈": {
+    "structure": "⿰𧾷舀",
+    "strokeCount": 17,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "㇀",
+      "丿",
+      "丶",
+      "丶",
+      "丿",
+      "丿",
+      "丨",
+      "一",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Dǎo",
+    "pinyinArray": [
+      "Dao"
+    ]
+  },
+  "蹋": {
+    "structure": "⿰𧾷𦐇",
+    "strokeCount": 17,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "㇀",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "𠃌",
+      "丶",
+      "㇀",
+      "𠃌",
+      "丶",
+      "㇀"
+    ],
+    "pinyin": "Tà",
+    "pinyinArray": [
+      "Ta"
+    ]
+  },
+  "蹦": {
+    "structure": "⿰𧾷崩",
+    "strokeCount": 18,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "㇀",
+      "丨",
+      "㇄",
+      "丨",
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "丿",
+      "𠃌",
+      "一",
+      "一"
+    ],
+    "pinyin": "Bèng",
+    "pinyinArray": [
+      "Beng"
+    ]
+  },
+  "蹬": {
+    "structure": "⿰𧾷登",
+    "strokeCount": 19,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "㇀",
+      "㇇|乛",
+      "丶",
+      "丿",
+      "丿",
+      "㇏",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丶",
+      "丿",
+      "一"
+    ],
+    "pinyin": "Dèng",
+    "pinyinArray": [
+      "Deng"
+    ]
+  },
+  "蹭": {
+    "structure": "⿰𧾷曾",
+    "strokeCount": 19,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "㇀",
+      "丶",
+      "丿",
+      "丨",
+      "𠃍",
+      "丨",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Cèng",
+    "pinyinArray": [
+      "Ceng"
+    ]
+  },
+  "蹲": {
+    "structure": "⿰𧾷尊",
+    "strokeCount": 19,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "㇀",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "𠃍",
+      "丿",
+      "㇄",
+      "一",
+      "一",
+      "一",
+      "亅",
+      "丶"
+    ],
+    "pinyin": "Dūn",
+    "pinyinArray": [
+      "Dun"
+    ]
+  },
+  "躁": {
+    "structure": "⿰𧾷喿",
+    "strokeCount": 20,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "㇀",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Zào",
+    "pinyinArray": [
+      "Zao"
+    ]
+  },
+  "躏": {
+    "structure": "⿰𧾷蔺",
+    "strokeCount": 21,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "㇀",
+      "一",
+      "丨",
+      "丨",
+      "丶",
+      "丨",
+      "𠃌",
+      "丿",
+      "丨",
+      "丶",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Lìn",
+    "pinyinArray": [
+      "Lin"
+    ]
+  },
+  "身": {
+    "structure": "身",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "𠃌",
+      "一",
+      "一",
+      "一",
+      "丿"
+    ],
+    "pinyin": "Shēn",
+    "pinyinArray": [
+      "Shen"
+    ]
+  },
+  "躬": {
+    "structure": "⿰身弓",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "𠃌",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "𠃍",
+      "一",
+      "㇉"
+    ],
+    "pinyin": "Gōng",
+    "pinyinArray": [
+      "Gong"
+    ]
+  },
+  "躯": {
+    "structure": "⿰身区",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "𠃌",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "一",
+      "丿",
+      "丶",
+      "㇄"
+    ],
+    "pinyin": "Qū",
+    "pinyinArray": [
+      "Qu"
+    ]
+  },
+  "躲": {
+    "structure": "⿰身朵",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "𠃌",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "丿",
+      "㇅|㇍",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Duǒ",
+    "pinyinArray": [
+      "Duo"
+    ]
+  },
+  "躺": {
+    "structure": "⿰身尚",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "𠃌",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "丨",
+      "丶",
+      "丿",
+      "丨",
+      "𠃌",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Tǎng",
+    "pinyinArray": [
+      "Tang"
+    ]
+  },
+  "车": {
+    "structure": "车",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "一",
+      "𠃋",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Chē",
+    "pinyinArray": [
+      "Che"
+    ]
+  },
+  "轧": {
+    "structure": "⿰车乚",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "一",
+      "𠃋",
+      "丨",
+      "㇀",
+      "乚"
+    ],
+    "pinyin": "Yà",
+    "pinyinArray": [
+      "Ya"
+    ]
+  },
+  "轨": {
+    "structure": "⿰车九",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "一",
+      "𠃋",
+      "丨",
+      "㇀",
+      "丿",
+      "⺄"
+    ],
+    "pinyin": "Guǐ",
+    "pinyinArray": [
+      "Gui"
+    ]
+  },
+  "轩": {
+    "structure": "⿰车干",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "𠃋",
+      "丨",
+      "㇀",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Xuān",
+    "pinyinArray": [
+      "Xuan"
+    ]
+  },
+  "转": {
+    "structure": "⿰车专",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "𠃋",
+      "丨",
+      "㇀",
+      "一",
+      "一",
+      "ㄣ|𠃑",
+      "丶"
+    ],
+    "pinyin": "Zhuàn",
+    "pinyinArray": [
+      "Zhuan"
+    ]
+  },
+  "轮": {
+    "structure": "⿰车仑",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "𠃋",
+      "丨",
+      "㇀",
+      "丿",
+      "㇏",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Lún",
+    "pinyinArray": [
+      "Lun"
+    ]
+  },
+  "软": {
+    "structure": "⿰车欠",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "𠃋",
+      "丨",
+      "㇀",
+      "丿",
+      "㇇|乛",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Ruǎn",
+    "pinyinArray": [
+      "Ruan"
+    ]
+  },
+  "轰": {
+    "structure": "⿱车双",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "𠃋",
+      "一",
+      "丨",
+      "㇇|乛",
+      "丶",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Hōng",
+    "pinyinArray": [
+      "Hong"
+    ]
+  },
+  "轴": {
+    "structure": "⿰车由",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "𠃋",
+      "丨",
+      "㇀",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Zhóu",
+    "pinyinArray": [
+      "Zhou"
+    ]
+  },
+  "轻": {
+    "structure": "⿰车𢀖",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "𠃋",
+      "丨",
+      "㇀",
+      "㇇|乛",
+      "丶",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Qīng",
+    "pinyinArray": [
+      "Qing"
+    ]
+  },
+  "载": {
+    "structure": "⿹𢦏车",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "一",
+      "一",
+      "𠃋",
+      "丨",
+      "㇀",
+      "㇂|㇃",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Zài",
+    "pinyinArray": [
+      "Zai"
+    ]
+  },
+  "轿": {
+    "structure": "⿰车乔",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "𠃋",
+      "丨",
+      "㇀",
+      "丿",
+      "一",
+      "丿",
+      "㇏",
+      "丿",
+      "丨"
+    ],
+    "pinyin": "Jiào",
+    "pinyinArray": [
+      "Jiao"
+    ]
+  },
+  "较": {
+    "structure": "⿰车交",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "𠃋",
+      "丨",
+      "㇀",
+      "丶",
+      "一",
+      "丿",
+      "丶",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Jiào",
+    "pinyinArray": [
+      "Jiao"
+    ]
+  },
+  "辅": {
+    "structure": "⿰车甫",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "𠃋",
+      "丨",
+      "㇀",
+      "一",
+      "丨",
+      "𠃌",
+      "一",
+      "一",
+      "丨",
+      "丶"
+    ],
+    "pinyin": "Fǔ",
+    "pinyinArray": [
+      "Fu"
+    ]
+  },
+  "辆": {
+    "structure": "⿰车两",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "𠃋",
+      "丨",
+      "㇀",
+      "一",
+      "丨",
+      "𠃌",
+      "丿",
+      "丶",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Liàng",
+    "pinyinArray": [
+      "Liang"
+    ]
+  },
+  "辈": {
+    "structure": "⿱非车",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丨",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "一",
+      "一",
+      "一",
+      "𠃋",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Bèi",
+    "pinyinArray": [
+      "Bei"
+    ]
+  },
+  "辉": {
+    "structure": "⿰光军",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丨",
+      "丶",
+      "丿",
+      "一",
+      "丿",
+      "𠄌",
+      "㇀",
+      "㇇|乛",
+      "一",
+      "𠃋",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Huī",
+    "pinyinArray": [
+      "Hui"
+    ]
+  },
+  "辐": {
+    "structure": "⿰车畐",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "一",
+      "𠃋",
+      "丨",
+      "㇀",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Fú",
+    "pinyinArray": [
+      "Fu"
+    ]
+  },
+  "辑": {
+    "structure": "⿰车咠",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "一",
+      "𠃋",
+      "丨",
+      "㇀",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "一",
+      "一"
+    ],
+    "pinyin": "Jí",
+    "pinyinArray": [
+      "Ji"
+    ]
+  },
+  "输": {
+    "structure": "⿰车俞",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "一",
+      "𠃋",
+      "丨",
+      "㇀",
+      "丿",
+      "㇏",
+      "一",
+      "丨",
+      "𠃌",
+      "一",
+      "一",
+      "丨",
+      "亅"
+    ],
+    "pinyin": "Shū",
+    "pinyinArray": [
+      "Shu"
+    ]
+  },
+  "辕": {
+    "structure": "⿰车袁",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "一",
+      "𠃋",
+      "丨",
+      "㇀",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "𠄌",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Yuán",
+    "pinyinArray": [
+      "Yuan"
+    ]
+  },
+  "辖": {
+    "structure": "⿰车害",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "一",
+      "𠃋",
+      "丨",
+      "㇀",
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Xiá",
+    "pinyinArray": [
+      "Xia"
+    ]
+  },
+  "辙": {
+    "structure": "⿲车育攵",
+    "strokeCount": 16,
+    "strokeShapes": [
+      "一",
+      "𠃋",
+      "丨",
+      "㇀",
+      "丶",
+      "一",
+      "𠃋",
+      "丶",
+      "丨",
+      "𠃌",
+      "一",
+      "一",
+      "丿",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Zhé",
+    "pinyinArray": [
+      "Zhe"
+    ]
+  },
+  "辛": {
+    "structure": "⿱立十",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Xīn",
+    "pinyinArray": [
+      "Xin"
+    ]
+  },
+  "辜": {
+    "structure": "⿱古辛",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Gū",
+    "pinyinArray": [
+      "Gu"
+    ]
+  },
+  "辞": {
+    "structure": "⿰舌辛",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Cí",
+    "pinyinArray": [
+      "Ci"
+    ]
+  },
+  "辟": {
+    "structure": "⿰𡰪辛",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "𠃍",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Bì",
+    "pinyinArray": [
+      "Bi"
+    ]
+  },
+  "辣": {
+    "structure": "⿰辛束",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "丿",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Là",
+    "pinyinArray": [
+      "La"
+    ]
+  },
+  "辨": {
+    "structure": "⿲辛②辛",
+    "strokeCount": 16,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "丿",
+      "㇀",
+      "丿",
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Biàn",
+    "pinyinArray": [
+      "Bian"
+    ]
+  },
+  "辩": {
+    "structure": "⿲辛讠辛",
+    "strokeCount": 16,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "丿",
+      "丶",
+      "㇊",
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Biàn",
+    "pinyinArray": [
+      "Bian"
+    ]
+  },
+  "辫": {
+    "structure": "⿲辛纟辛",
+    "strokeCount": 17,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "丿",
+      "𠃋",
+      "𠃋",
+      "㇀",
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Biàn",
+    "pinyinArray": [
+      "Bian"
+    ]
+  },
+  "辰": {
+    "structure": "⿸厂⿱二⿰𠄌⿺乀丿",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "一",
+      "一",
+      "𠄌",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Chén",
+    "pinyinArray": [
+      "Chen"
+    ]
+  },
+  "辱": {
+    "structure": "⿱辰寸",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "一",
+      "一",
+      "𠄌",
+      "丿",
+      "㇏",
+      "一",
+      "亅",
+      "丶"
+    ],
+    "pinyin": "Rǔ",
+    "pinyinArray": [
+      "Ru"
+    ]
+  },
+  "边": {
+    "structure": "⿺辶力",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "𠃌",
+      "丿",
+      "丶",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Biān",
+    "pinyinArray": [
+      "Bian"
+    ]
+  },
+  "辽": {
+    "structure": "⿺辶了",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "㇇|乛",
+      "亅",
+      "丶",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Liáo",
+    "pinyinArray": [
+      "Liao"
+    ]
+  },
+  "达": {
+    "structure": "⿺辶大",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "丶",
+      "丶",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Dá",
+    "pinyinArray": [
+      "Da"
+    ]
+  },
+  "迁": {
+    "structure": "⿺辶千",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丨",
+      "丶",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Qiān",
+    "pinyinArray": [
+      "Qian"
+    ]
+  },
+  "迂": {
+    "structure": "⿺辶于",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "一",
+      "一",
+      "亅",
+      "丶",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Yū",
+    "pinyinArray": [
+      "Yu"
+    ]
+  },
+  "迄": {
+    "structure": "⿺辶乞",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "⺄",
+      "丶",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Qì",
+    "pinyinArray": [
+      "Qi"
+    ]
+  },
+  "迅": {
+    "structure": "⿺辶卂",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "⺄",
+      "一",
+      "丨",
+      "丶",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Xùn",
+    "pinyinArray": [
+      "Xun"
+    ]
+  },
+  "过": {
+    "structure": "⿺辶寸",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "丶",
+      "丶",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Guò",
+    "pinyinArray": [
+      "Guo"
+    ]
+  },
+  "迈": {
+    "structure": "⿺辶万",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "一",
+      "𠃌",
+      "丿",
+      "丶",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Mài",
+    "pinyinArray": [
+      "Mai"
+    ]
+  },
+  "迎": {
+    "structure": "⿺辶卬",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丿",
+      "𠄌",
+      "𠃌",
+      "丨",
+      "丶",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Yíng",
+    "pinyinArray": [
+      "Ying"
+    ]
+  },
+  "运": {
+    "structure": "⿺辶云",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "一",
+      "𠃋",
+      "丶",
+      "丶",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Yùn",
+    "pinyinArray": [
+      "Yun"
+    ]
+  },
+  "近": {
+    "structure": "⿺辶斤",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丿",
+      "丿",
+      "一",
+      "丨",
+      "丶",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Jìn",
+    "pinyinArray": [
+      "Jin"
+    ]
+  },
+  "返": {
+    "structure": "⿺辶反",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丿",
+      "丿",
+      "㇇|乛",
+      "丶",
+      "丶",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Fǎn",
+    "pinyinArray": [
+      "Fan"
+    ]
+  },
+  "还": {
+    "structure": "⿺辶不",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "丨",
+      "丶",
+      "丶",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Hái",
+    "pinyinArray": [
+      "Hai"
+    ]
+  },
+  "这": {
+    "structure": "⿺辶文",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "丶",
+      "丶",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Zhè",
+    "pinyinArray": [
+      "Zhe"
+    ]
+  },
+  "进": {
+    "structure": "⿺辶井",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "一",
+      "丿",
+      "丨",
+      "丶",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Jìn",
+    "pinyinArray": [
+      "Jin"
+    ]
+  },
+  "远": {
+    "structure": "⿺辶元",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "一",
+      "丿",
+      "乚",
+      "丶",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Yuǎn",
+    "pinyinArray": [
+      "Yuan"
+    ]
+  },
+  "违": {
+    "structure": "⿺辶韦",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "一",
+      "𠃌",
+      "丨",
+      "丶",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Wéi",
+    "pinyinArray": [
+      "Wei"
+    ]
+  },
+  "连": {
+    "structure": "⿺辶车",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "𠃋",
+      "一",
+      "丨",
+      "丶",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Lián",
+    "pinyinArray": [
+      "Lian"
+    ]
+  },
+  "迟": {
+    "structure": "⿺辶尺",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "𠃍",
+      "一",
+      "丿",
+      "丶",
+      "丶",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Chí",
+    "pinyinArray": [
+      "Chi"
+    ]
+  },
+  "迫": {
+    "structure": "⿺辶白",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丶",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Pò",
+    "pinyinArray": [
+      "Po"
+    ]
+  },
+  "述": {
+    "structure": "⿺辶术[GJ]",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丶",
+      "丶",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Shù",
+    "pinyinArray": [
+      "Shu"
+    ]
+  },
+  "迷": {
+    "structure": "⿺辶米",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丶",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Mí",
+    "pinyinArray": [
+      "Mi"
+    ]
+  },
+  "迹": {
+    "structure": "⿺辶亦",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "亅",
+      "丿",
+      "丶",
+      "丶",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Jì",
+    "pinyinArray": [
+      "Ji"
+    ]
+  },
+  "追": {
+    "structure": "⿺辶𠂤",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "𠃍",
+      "一",
+      "丶",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Zhuī",
+    "pinyinArray": [
+      "Zhui"
+    ]
+  },
+  "退": {
+    "structure": "⿺辶艮",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "𠃍",
+      "一",
+      "一",
+      "𠄌",
+      "丿",
+      "丶",
+      "丶",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Tuì",
+    "pinyinArray": [
+      "Tui"
+    ]
+  },
+  "送": {
+    "structure": "⿺辶关",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "丿",
+      "丶",
+      "丶",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Sòng",
+    "pinyinArray": [
+      "Song"
+    ]
+  },
+  "适": {
+    "structure": "⿺辶舌",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "丶",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Shì",
+    "pinyinArray": [
+      "Shi"
+    ]
+  },
+  "逃": {
+    "structure": "⿺辶兆",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "丶",
+      "㇀",
+      "乚",
+      "丿",
+      "丶",
+      "丶",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Táo",
+    "pinyinArray": [
+      "Tao"
+    ]
+  },
+  "逆": {
+    "structure": "⿺辶屰",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "丿",
+      "一",
+      "㇄",
+      "丨",
+      "丿",
+      "丶",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Nì",
+    "pinyinArray": [
+      "Ni"
+    ]
+  },
+  "选": {
+    "structure": "⿺辶先",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "乚",
+      "丶",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Xuǎn",
+    "pinyinArray": [
+      "Xuan"
+    ]
+  },
+  "逊": {
+    "structure": "⿺辶孙",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "㇇|乛",
+      "亅",
+      "㇀",
+      "亅",
+      "丿",
+      "丶",
+      "丶",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Xùn",
+    "pinyinArray": [
+      "Xun"
+    ]
+  },
+  "透": {
+    "structure": "⿺辶秀",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "㇏",
+      "𠄎|㇌",
+      "丿",
+      "丶",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Tòu",
+    "pinyinArray": [
+      "Tou"
+    ]
+  },
+  "逐": {
+    "structure": "⿺辶豕",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "㇁",
+      "丿",
+      "丿",
+      "丿",
+      "丶",
+      "丶",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Zhú",
+    "pinyinArray": [
+      "Zhu"
+    ]
+  },
+  "递": {
+    "structure": "⿺辶弟",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "丿",
+      "𠃍",
+      "一",
+      "㇉",
+      "丨",
+      "丿",
+      "丶",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Dì",
+    "pinyinArray": [
+      "Di"
+    ]
+  },
+  "途": {
+    "structure": "⿺辶余",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "㇏",
+      "一",
+      "一",
+      "亅",
+      "丿",
+      "丶",
+      "丶",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Tú",
+    "pinyinArray": [
+      "Tu"
+    ]
+  },
+  "逗": {
+    "structure": "⿺辶豆",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丶",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Dòu",
+    "pinyinArray": [
+      "Dou"
+    ]
+  },
+  "通": {
+    "structure": "⿺辶甬",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "㇇|乛",
+      "丶",
+      "丨",
+      "𠃌",
+      "一",
+      "一",
+      "丨",
+      "丶",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Tòng",
+    "pinyinArray": [
+      "Tong"
+    ]
+  },
+  "逛": {
+    "structure": "⿺辶狂",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "㇁",
+      "丿",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "丶",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Guàng",
+    "pinyinArray": [
+      "Guang"
+    ]
+  },
+  "逝": {
+    "structure": "⿺辶折",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "㇀",
+      "丿",
+      "丿",
+      "一",
+      "丨",
+      "丶",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Shì",
+    "pinyinArray": [
+      "Shi"
+    ]
+  },
+  "逞": {
+    "structure": "⿺辶呈",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "丶",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Chěng",
+    "pinyinArray": [
+      "Cheng"
+    ]
+  },
+  "速": {
+    "structure": "⿺辶束",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丶",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Sù",
+    "pinyinArray": [
+      "Su"
+    ]
+  },
+  "造": {
+    "structure": "⿺辶告",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丶",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Zào",
+    "pinyinArray": [
+      "Zao"
+    ]
+  },
+  "逢": {
+    "structure": "⿺辶夆",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "㇇|乛",
+      "㇏",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "丶",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Féng",
+    "pinyinArray": [
+      "Feng"
+    ]
+  },
+  "逮": {
+    "structure": "⿺辶隶",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "𠃍",
+      "一",
+      "一",
+      "亅",
+      "丶",
+      "㇀",
+      "丿",
+      "丶",
+      "丶",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Dài",
+    "pinyinArray": [
+      "Dai"
+    ]
+  },
+  "逸": {
+    "structure": "⿺辶兔[GTKV]",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丿",
+      "㇇|乛",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "乚",
+      "丶",
+      "丶",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Yì",
+    "pinyinArray": [
+      "Yi"
+    ]
+  },
+  "逻": {
+    "structure": "⿺辶罗",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "丨",
+      "丨",
+      "一",
+      "丿",
+      "㇇|乛",
+      "丶",
+      "丶",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Luó",
+    "pinyinArray": [
+      "Luo"
+    ]
+  },
+  "逼": {
+    "structure": "⿺辶畐",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丶",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Bī",
+    "pinyinArray": [
+      "Bi"
+    ]
+  },
+  "逾": {
+    "structure": "⿺辶俞[GTV]",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丿",
+      "㇏",
+      "一",
+      "丨",
+      "𠃌",
+      "一",
+      "一",
+      "丨",
+      "亅",
+      "丶",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Yú",
+    "pinyinArray": [
+      "Yu"
+    ]
+  },
+  "遂": {
+    "structure": "⿺辶㒸",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丶",
+      "丿",
+      "一",
+      "丿",
+      "㇁",
+      "丿",
+      "丿",
+      "丿",
+      "丶",
+      "丶",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Suí",
+    "pinyinArray": [
+      "Sui"
+    ]
+  },
+  "遇": {
+    "structure": "⿺辶禺",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "𠃌",
+      "丨",
+      "㇀",
+      "丶",
+      "丶",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Yù",
+    "pinyinArray": [
+      "Yu"
+    ]
+  },
+  "遍": {
+    "structure": "⿺辶扁",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丶",
+      "𠃍",
+      "一",
+      "丿",
+      "丨",
+      "𠃌",
+      "一",
+      "丨",
+      "丨",
+      "丶",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Biàn",
+    "pinyinArray": [
+      "Bian"
+    ]
+  },
+  "遏": {
+    "structure": "⿺辶曷",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "𠃌",
+      "丿",
+      "丶",
+      "㇄",
+      "丶",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "È",
+    "pinyinArray": [
+      "E"
+    ]
+  },
+  "道": {
+    "structure": "⿺辶首",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丶",
+      "丿",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丶",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Dào",
+    "pinyinArray": [
+      "Dao"
+    ]
+  },
+  "遗": {
+    "structure": "⿺辶贵",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶",
+      "丶",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Yí",
+    "pinyinArray": [
+      "Yi"
+    ]
+  },
+  "遣": {
+    "structure": "⿺辶𠳋",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "𠃍",
+      "一",
+      "丶",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Qiǎn",
+    "pinyinArray": [
+      "Qian"
+    ]
+  },
+  "遥": {
+    "structure": "⿺辶䍃[G]",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丿",
+      "丶",
+      "丶",
+      "丿",
+      "丿",
+      "一",
+      "一",
+      "丨",
+      "㇄",
+      "丨",
+      "丶",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Yáo",
+    "pinyinArray": [
+      "Yao"
+    ]
+  },
+  "遭": {
+    "structure": "⿺辶曹",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丶",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Zāo",
+    "pinyinArray": [
+      "Zao"
+    ]
+  },
+  "遮": {
+    "structure": "⿺辶庶",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "㇀",
+      "丶",
+      "丶",
+      "丶",
+      "丶",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Zhē",
+    "pinyinArray": [
+      "Zhe"
+    ]
+  },
+  "遵": {
+    "structure": "⿺辶尊",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "𠃍",
+      "丿",
+      "㇄",
+      "一",
+      "一",
+      "一",
+      "亅",
+      "丶",
+      "丶",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Zūn",
+    "pinyinArray": [
+      "Zun"
+    ]
+  },
+  "避": {
+    "structure": "⿺辶辟",
+    "strokeCount": 16,
+    "strokeShapes": [
+      "𠃍",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "丨",
+      "丶",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Bì",
+    "pinyinArray": [
+      "Bi"
+    ]
+  },
+  "邀": {
+    "structure": "⿺辶敫",
+    "strokeCount": 16,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丶",
+      "一",
+      "𠃌",
+      "丿",
+      "丿",
+      "一",
+      "丿",
+      "丶",
+      "丶",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Yāo",
+    "pinyinArray": [
+      "Yao"
+    ]
+  },
+  "邑": {
+    "structure": "⿱口巴",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "𠃍",
+      "丨",
+      "一",
+      "乚"
+    ],
+    "pinyin": "Yì",
+    "pinyinArray": [
+      "Yi"
+    ]
+  },
+  "邓": {
+    "structure": "⿰又阝",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "㇇|乛",
+      "丶",
+      "𠄎|㇌",
+      "丨"
+    ],
+    "pinyin": "Dèng",
+    "pinyinArray": [
+      "Deng"
+    ]
+  },
+  "邢": {
+    "structure": "⿰开阝",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "一",
+      "一",
+      "丿",
+      "丨",
+      "𠄎|㇌",
+      "丨"
+    ],
+    "pinyin": "Xíng",
+    "pinyinArray": [
+      "Xing"
+    ]
+  },
+  "那": {
+    "structure": "⿰⿻刀二阝",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "𠃌",
+      "一",
+      "一",
+      "丿",
+      "𠄎|㇌",
+      "丨"
+    ],
+    "pinyin": "Nà",
+    "pinyinArray": [
+      "Na"
+    ]
+  },
+  "邦": {
+    "structure": "⿰丰阝",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "一",
+      "一",
+      "一",
+      "丿",
+      "𠄎|㇌",
+      "丨"
+    ],
+    "pinyin": "Bāng",
+    "pinyinArray": [
+      "Bang"
+    ]
+  },
+  "邪": {
+    "structure": "⿰牙阝",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "一",
+      "𠃋",
+      "亅",
+      "丿",
+      "𠄎|㇌",
+      "丨"
+    ],
+    "pinyin": "Xié",
+    "pinyinArray": [
+      "Xie"
+    ]
+  },
+  "邮": {
+    "structure": "⿰由阝",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "𠄎|㇌",
+      "丨"
+    ],
+    "pinyin": "Yóu",
+    "pinyinArray": [
+      "You"
+    ]
+  },
+  "邻": {
+    "structure": "⿰令阝",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丿",
+      "丶",
+      "丶",
+      "㇇|乛",
+      "丶",
+      "𠄎|㇌",
+      "丨"
+    ],
+    "pinyin": "Lín",
+    "pinyinArray": [
+      "Lin"
+    ]
+  },
+  "郁": {
+    "structure": "⿰有阝",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "丨",
+      "𠃌",
+      "一",
+      "一",
+      "𠄎|㇌",
+      "丨"
+    ],
+    "pinyin": "Yù",
+    "pinyinArray": [
+      "Yu"
+    ]
+  },
+  "郊": {
+    "structure": "⿰交阝",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "丶",
+      "丿",
+      "丶",
+      "𠄎|㇌",
+      "丨"
+    ],
+    "pinyin": "Jiāo",
+    "pinyinArray": [
+      "Jiao"
+    ]
+  },
+  "郎": {
+    "structure": "⿰⿱丶⑤阝",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丶",
+      "𠃍",
+      "一",
+      "一",
+      "𠄌",
+      "丶",
+      "𠄎|㇌",
+      "丨"
+    ],
+    "pinyin": "Láng",
+    "pinyinArray": [
+      "Lang"
+    ]
+  },
+  "郑": {
+    "structure": "⿰关阝",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "丿",
+      "丶",
+      "𠄎|㇌",
+      "丨"
+    ],
+    "pinyin": "Zhèng",
+    "pinyinArray": [
+      "Zheng"
+    ]
+  },
+  "部": {
+    "structure": "⿰咅阝",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "𠄎|㇌",
+      "丨"
+    ],
+    "pinyin": "Bù",
+    "pinyinArray": [
+      "Bu"
+    ]
+  },
+  "郭": {
+    "structure": "⿰享阝",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "㇇|乛",
+      "亅",
+      "㇀",
+      "𠄎|㇌",
+      "丨"
+    ],
+    "pinyin": "Guō",
+    "pinyinArray": [
+      "Guo"
+    ]
+  },
+  "都": {
+    "structure": "⿰者阝",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "𠄎|㇌",
+      "丨"
+    ],
+    "pinyin": "Dōu",
+    "pinyinArray": [
+      "Dou"
+    ]
+  },
+  "鄙": {
+    "structure": "⿰啚阝",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "𠄎|㇌",
+      "丨"
+    ],
+    "pinyin": "Bǐ",
+    "pinyinArray": [
+      "Bi"
+    ]
+  },
+  "酌": {
+    "structure": "⿰酉勺",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "𠃍",
+      "丿",
+      "㇄",
+      "一",
+      "一",
+      "丿",
+      "𠃌",
+      "丶"
+    ],
+    "pinyin": "Zhuó",
+    "pinyinArray": [
+      "Zhuo"
+    ]
+  },
+  "配": {
+    "structure": "⿰酉己",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "𠃍",
+      "丿",
+      "㇄",
+      "一",
+      "一",
+      "𠃍",
+      "一",
+      "乚"
+    ],
+    "pinyin": "Pèi",
+    "pinyinArray": [
+      "Pei"
+    ]
+  },
+  "酒": {
+    "structure": "⿰氵酉",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "一",
+      "丨",
+      "𠃍",
+      "丿",
+      "㇄",
+      "一",
+      "一"
+    ],
+    "pinyin": "Jiǔ",
+    "pinyinArray": [
+      "Jiu"
+    ]
+  },
+  "酗": {
+    "structure": "⿰酉凶",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "𠃍",
+      "丿",
+      "㇄",
+      "一",
+      "一",
+      "丿",
+      "丶",
+      "㇄",
+      "丨"
+    ],
+    "pinyin": "Xù",
+    "pinyinArray": [
+      "Xu"
+    ]
+  },
+  "酝": {
+    "structure": "⿰酉云",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "𠃍",
+      "丿",
+      "㇄",
+      "一",
+      "一",
+      "一",
+      "一",
+      "𠃋",
+      "丶"
+    ],
+    "pinyin": "Yùn",
+    "pinyinArray": [
+      "Yun"
+    ]
+  },
+  "酣": {
+    "structure": "⿰酉甘",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "𠃍",
+      "丿",
+      "㇄",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "一"
+    ],
+    "pinyin": "Hān",
+    "pinyinArray": [
+      "Han"
+    ]
+  },
+  "酥": {
+    "structure": "⿰酉禾",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "𠃍",
+      "丿",
+      "㇄",
+      "一",
+      "一",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Sū",
+    "pinyinArray": [
+      "Su"
+    ]
+  },
+  "酪": {
+    "structure": "⿰酉各",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "𠃍",
+      "丿",
+      "㇄",
+      "一",
+      "一",
+      "丿",
+      "㇇|乛",
+      "㇏",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Lào",
+    "pinyinArray": [
+      "Lao"
+    ]
+  },
+  "酬": {
+    "structure": "⿰酉州",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "𠃍",
+      "丿",
+      "㇄",
+      "一",
+      "一",
+      "㇀",
+      "丿",
+      "丶",
+      "丨",
+      "丶",
+      "丨"
+    ],
+    "pinyin": "Chóu",
+    "pinyinArray": [
+      "Chou"
+    ]
+  },
+  "酱": {
+    "structure": "⿱⿰丬夕酉",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "丨",
+      "丿",
+      "㇇|乛",
+      "丶",
+      "一",
+      "丨",
+      "𠃍",
+      "丿",
+      "㇄",
+      "一",
+      "一"
+    ],
+    "pinyin": "Jiàng",
+    "pinyinArray": [
+      "Jiang"
+    ]
+  },
+  "酵": {
+    "structure": "⿰酉孝",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "𠃍",
+      "丿",
+      "㇄",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "㇇|乛",
+      "亅",
+      "一"
+    ],
+    "pinyin": "Jiào",
+    "pinyinArray": [
+      "Jiao"
+    ]
+  },
+  "酷": {
+    "structure": "⿰酉告",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "𠃍",
+      "丿",
+      "㇄",
+      "一",
+      "一",
+      "丿",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Kù",
+    "pinyinArray": [
+      "Ku"
+    ]
+  },
+  "酸": {
+    "structure": "⿰酉夋",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "𠃍",
+      "丿",
+      "㇄",
+      "一",
+      "一",
+      "𠃋",
+      "丶",
+      "丿",
+      "丶",
+      "丿",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Suān",
+    "pinyinArray": [
+      "Suan"
+    ]
+  },
+  "酿": {
+    "structure": "⿰酉良",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "𠃍",
+      "丿",
+      "㇄",
+      "一",
+      "一",
+      "丶",
+      "𠃍",
+      "一",
+      "一",
+      "𠄌",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Niàng",
+    "pinyinArray": [
+      "Niang"
+    ]
+  },
+  "醇": {
+    "structure": "⿰酉享",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "𠃍",
+      "丿",
+      "㇄",
+      "一",
+      "一",
+      "丶",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "㇇|乛",
+      "亅",
+      "一"
+    ],
+    "pinyin": "Chún",
+    "pinyinArray": [
+      "Chun"
+    ]
+  },
+  "醉": {
+    "structure": "⿰酉卒",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "𠃍",
+      "丿",
+      "㇄",
+      "一",
+      "一",
+      "丶",
+      "一",
+      "丿",
+      "丶",
+      "丿",
+      "丶",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Zuì",
+    "pinyinArray": [
+      "Zui"
+    ]
+  },
+  "醋": {
+    "structure": "⿰酉昔",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "𠃍",
+      "丿",
+      "㇄",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Cù",
+    "pinyinArray": [
+      "Cu"
+    ]
+  },
+  "醒": {
+    "structure": "⿰酉星",
+    "strokeCount": 16,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "𠃍",
+      "丿",
+      "㇄",
+      "一",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Xǐng",
+    "pinyinArray": [
+      "Xing"
+    ]
+  },
+  "采": {
+    "structure": "⿱爫木",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丿",
+      "丶",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Cài",
+    "pinyinArray": [
+      "Cai"
+    ]
+  },
+  "释": {
+    "structure": "⿰釆𠬤",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丿",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "㇇|乛",
+      "㇏",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Shì",
+    "pinyinArray": [
+      "Shi"
+    ]
+  },
+  "里": {
+    "structure": "⿱⿻甲一一",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "一"
+    ],
+    "pinyin": "Lǐ",
+    "pinyinArray": [
+      "Li"
+    ]
+  },
+  "重": {
+    "structure": "重",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "一"
+    ],
+    "pinyin": "Zhòng",
+    "pinyinArray": [
+      "Zhong"
+    ]
+  },
+  "野": {
+    "structure": "⿰里予",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "㇀",
+      "㇇|乛",
+      "丶",
+      "㇇|乛",
+      "亅"
+    ],
+    "pinyin": "Yě",
+    "pinyinArray": [
+      "Ye"
+    ]
+  },
+  "量": {
+    "structure": "⿱旦里",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "一"
+    ],
+    "pinyin": "Liáng",
+    "pinyinArray": [
+      "Liang"
+    ]
+  },
+  "金": {
+    "structure": "⿱人⿻王丷",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丿",
+      "㇏",
+      "一",
+      "一",
+      "丨",
+      "丶",
+      "丿",
+      "一"
+    ],
+    "pinyin": "Jīn",
+    "pinyinArray": [
+      "Jin"
+    ]
+  },
+  "鉴": {
+    "structure": "⿱⿰〢⿱𠂉丶金",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丨",
+      "丨",
+      "丿",
+      "一",
+      "丶",
+      "丿",
+      "㇏",
+      "一",
+      "一",
+      "丨",
+      "丶",
+      "丿",
+      "一"
+    ],
+    "pinyin": "Jiàn",
+    "pinyinArray": [
+      "Jian"
+    ]
+  },
+  "针": {
+    "structure": "⿰钅十",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "一",
+      "𠄌",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Zhēn",
+    "pinyinArray": [
+      "Zhen"
+    ]
+  },
+  "钉": {
+    "structure": "⿰钅丁",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "一",
+      "𠄌",
+      "一",
+      "亅"
+    ],
+    "pinyin": "Dìng",
+    "pinyinArray": [
+      "Ding"
+    ]
+  },
+  "钓": {
+    "structure": "⿰钅勺",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "一",
+      "𠄌",
+      "丿",
+      "𠃌",
+      "丶"
+    ],
+    "pinyin": "Diào",
+    "pinyinArray": [
+      "Diao"
+    ]
+  },
+  "钙": {
+    "structure": "⿰钅丐",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "一",
+      "𠄌",
+      "一",
+      "丨",
+      "一",
+      "㇉"
+    ],
+    "pinyin": "Gài",
+    "pinyinArray": [
+      "Gai"
+    ]
+  },
+  "钝": {
+    "structure": "⿰钅屯",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "一",
+      "𠄌",
+      "一",
+      "㇄",
+      "丨",
+      "乚"
+    ],
+    "pinyin": "Dùn",
+    "pinyinArray": [
+      "Dun"
+    ]
+  },
+  "钞": {
+    "structure": "⿰钅少",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "一",
+      "𠄌",
+      "丨",
+      "丿",
+      "丶",
+      "丿"
+    ],
+    "pinyin": "Chāo",
+    "pinyinArray": [
+      "Chao"
+    ]
+  },
+  "钟": {
+    "structure": "⿰钅中",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "一",
+      "𠄌",
+      "丨",
+      "𠃍",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Zhōng",
+    "pinyinArray": [
+      "Zhong"
+    ]
+  },
+  "钠": {
+    "structure": "⿰钅内",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "一",
+      "𠄌",
+      "丨",
+      "𠃌",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Nà",
+    "pinyinArray": [
+      "Na"
+    ]
+  },
+  "钢": {
+    "structure": "⿰钅冈",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "一",
+      "𠄌",
+      "丨",
+      "𠃌",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Gàng",
+    "pinyinArray": [
+      "Gang"
+    ]
+  },
+  "钥": {
+    "structure": "⿰钅月",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "一",
+      "𠄌",
+      "丿",
+      "𠃌",
+      "一",
+      "一"
+    ],
+    "pinyin": "Yào",
+    "pinyinArray": [
+      "Yao"
+    ]
+  },
+  "钦": {
+    "structure": "⿰钅欠",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "一",
+      "𠄌",
+      "丿",
+      "㇇|乛",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Qīn",
+    "pinyinArray": [
+      "Qin"
+    ]
+  },
+  "钧": {
+    "structure": "⿰钅匀",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "一",
+      "𠄌",
+      "丿",
+      "𠃌",
+      "丶",
+      "㇀"
+    ],
+    "pinyin": "Jūn",
+    "pinyinArray": [
+      "Jun"
+    ]
+  },
+  "钩": {
+    "structure": "⿰钅勾",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "一",
+      "𠄌",
+      "丿",
+      "𠃌",
+      "𠃋",
+      "丶"
+    ],
+    "pinyin": "Gōu",
+    "pinyinArray": [
+      "Gou"
+    ]
+  },
+  "钮": {
+    "structure": "⿰钅丑",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "一",
+      "𠄌",
+      "𠃍",
+      "丨",
+      "一",
+      "一"
+    ],
+    "pinyin": "Niǔ",
+    "pinyinArray": [
+      "Niu"
+    ]
+  },
+  "钱": {
+    "structure": "⿰钅戋",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "一",
+      "𠄌",
+      "一",
+      "一",
+      "㇂|㇃",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Qián",
+    "pinyinArray": [
+      "Qian"
+    ]
+  },
+  "钳": {
+    "structure": "⿰钅甘",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "一",
+      "𠄌",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "一"
+    ],
+    "pinyin": "Qián",
+    "pinyinArray": [
+      "Qian"
+    ]
+  },
+  "钻": {
+    "structure": "⿰钅占",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "一",
+      "𠄌",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Zuàn",
+    "pinyinArray": [
+      "Zuan"
+    ]
+  },
+  "钾": {
+    "structure": "⿰钅甲",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "一",
+      "𠄌",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Jiǎ",
+    "pinyinArray": [
+      "Jia"
+    ]
+  },
+  "铁": {
+    "structure": "⿰钅失",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "一",
+      "𠄌",
+      "丿",
+      "一",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Tiě",
+    "pinyinArray": [
+      "Tie"
+    ]
+  },
+  "铃": {
+    "structure": "⿰钅令",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "一",
+      "𠄌",
+      "丿",
+      "㇏",
+      "丶",
+      "㇇|乛",
+      "丶"
+    ],
+    "pinyin": "Líng",
+    "pinyinArray": [
+      "Ling"
+    ]
+  },
+  "铅": {
+    "structure": "⿰钅⿱𠘧口",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "一",
+      "𠄌",
+      "丿",
+      "㇅|㇍",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Qiān",
+    "pinyinArray": [
+      "Qian"
+    ]
+  },
+  "铆": {
+    "structure": "⿰钅卯",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "一",
+      "𠄌",
+      "丿",
+      "𠄌",
+      "丿",
+      "𠃌",
+      "丨"
+    ],
+    "pinyin": "Mǎo",
+    "pinyinArray": [
+      "Mao"
+    ]
+  },
+  "铐": {
+    "structure": "⿰钅考",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "一",
+      "𠄌",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "一",
+      "㇉"
+    ],
+    "pinyin": "Kào",
+    "pinyinArray": [
+      "Kao"
+    ]
+  },
+  "铛": {
+    "structure": "⿰钅当",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "一",
+      "𠄌",
+      "丨",
+      "丶",
+      "丿",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Dāng",
+    "pinyinArray": [
+      "Dang"
+    ]
+  },
+  "铜": {
+    "structure": "⿰钅同",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "一",
+      "𠄌",
+      "丨",
+      "𠃌",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Tóng",
+    "pinyinArray": [
+      "Tong"
+    ]
+  },
+  "铝": {
+    "structure": "⿰钅吕",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "一",
+      "𠄌",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Lǚ",
+    "pinyinArray": [
+      "Lü"
+    ]
+  },
+  "铡": {
+    "structure": "⿰钅则",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "一",
+      "𠄌",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶",
+      "丨",
+      "亅"
+    ],
+    "pinyin": "Zhá",
+    "pinyinArray": [
+      "Zha"
+    ]
+  },
+  "铣": {
+    "structure": "⿰钅先",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "一",
+      "𠄌",
+      "丿",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Xiǎn",
+    "pinyinArray": [
+      "Xian"
+    ]
+  },
+  "铭": {
+    "structure": "⿰钅名",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "一",
+      "𠄌",
+      "丿",
+      "㇇|乛",
+      "丶",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Míng",
+    "pinyinArray": [
+      "Ming"
+    ]
+  },
+  "铲": {
+    "structure": "⿰钅产",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "一",
+      "𠄌",
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丿"
+    ],
+    "pinyin": "Chǎn",
+    "pinyinArray": [
+      "Chan"
+    ]
+  },
+  "银": {
+    "structure": "⿰钅艮",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "一",
+      "𠄌",
+      "𠃍",
+      "一",
+      "一",
+      "𠄌",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Yín",
+    "pinyinArray": [
+      "Yin"
+    ]
+  },
+  "铸": {
+    "structure": "⿰钅寿",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "一",
+      "𠄌",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "一",
+      "亅",
+      "丶"
+    ],
+    "pinyin": "Zhù",
+    "pinyinArray": [
+      "Zhu"
+    ]
+  },
+  "铺": {
+    "structure": "⿰钅甫",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "一",
+      "𠄌",
+      "一",
+      "丨",
+      "𠃌",
+      "一",
+      "一",
+      "丨",
+      "丶"
+    ],
+    "pinyin": "Pù",
+    "pinyinArray": [
+      "Pu"
+    ]
+  },
+  "链": {
+    "structure": "⿰钅连",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "一",
+      "𠄌",
+      "一",
+      "𠃋",
+      "一",
+      "丨",
+      "丶",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Liàn",
+    "pinyinArray": [
+      "Lian"
+    ]
+  },
+  "销": {
+    "structure": "⿰钅肖",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "一",
+      "𠄌",
+      "丨",
+      "丶",
+      "丿",
+      "丨",
+      "𠃌",
+      "一",
+      "一"
+    ],
+    "pinyin": "Xiāo",
+    "pinyinArray": [
+      "Xiao"
+    ]
+  },
+  "锁": {
+    "structure": "⿰钅𭕆",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "一",
+      "𠄌",
+      "丨",
+      "丶",
+      "丿",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Suǒ",
+    "pinyinArray": [
+      "Suo"
+    ]
+  },
+  "锄": {
+    "structure": "⿰钅助",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "一",
+      "𠄌",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "㇀",
+      "𠃌",
+      "丿"
+    ],
+    "pinyin": "Chú",
+    "pinyinArray": [
+      "Chu"
+    ]
+  },
+  "锅": {
+    "structure": "⿰钅呙",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "一",
+      "𠄌",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃌",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Guō",
+    "pinyinArray": [
+      "Guo"
+    ]
+  },
+  "锈": {
+    "structure": "⿰钅秀",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "一",
+      "𠄌",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "㇏",
+      "𠄎|㇌",
+      "丿"
+    ],
+    "pinyin": "Xiù",
+    "pinyinArray": [
+      "Xiu"
+    ]
+  },
+  "锉": {
+    "structure": "⿰钅坐",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "一",
+      "𠄌",
+      "丿",
+      "丶",
+      "丿",
+      "丶",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Cuò",
+    "pinyinArray": [
+      "Cuo"
+    ]
+  },
+  "锋": {
+    "structure": "⿰钅夆",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "一",
+      "𠄌",
+      "丿",
+      "㇇|乛",
+      "㇏",
+      "一",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Fēng",
+    "pinyinArray": [
+      "Feng"
+    ]
+  },
+  "锌": {
+    "structure": "⿰钅辛",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "一",
+      "𠄌",
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Xīn",
+    "pinyinArray": [
+      "Xin"
+    ]
+  },
+  "锐": {
+    "structure": "⿰钅兑",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "一",
+      "𠄌",
+      "丶",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Ruì",
+    "pinyinArray": [
+      "Rui"
+    ]
+  },
+  "错": {
+    "structure": "⿰钅昔",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "一",
+      "𠄌",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Cuò",
+    "pinyinArray": [
+      "Cuo"
+    ]
+  },
+  "锚": {
+    "structure": "⿰钅苗",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "一",
+      "𠄌",
+      "一",
+      "丨",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Máo",
+    "pinyinArray": [
+      "Mao"
+    ]
+  },
+  "锡": {
+    "structure": "⿰钅易",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "一",
+      "𠄌",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "𠃌",
+      "丿",
+      "丿"
+    ],
+    "pinyin": "Xī",
+    "pinyinArray": [
+      "Xi"
+    ]
+  },
+  "锣": {
+    "structure": "⿰钅罗",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "一",
+      "𠄌",
+      "丨",
+      "𠃍",
+      "丨",
+      "丨",
+      "一",
+      "丿",
+      "㇇|乛",
+      "丶"
+    ],
+    "pinyin": "Luó",
+    "pinyinArray": [
+      "Luo"
+    ]
+  },
+  "锤": {
+    "structure": "⿰钅垂",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "一",
+      "𠄌",
+      "丿",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "一"
+    ],
+    "pinyin": "Chuí",
+    "pinyinArray": [
+      "Chui"
+    ]
+  },
+  "锥": {
+    "structure": "⿰钅隹",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "一",
+      "𠄌",
+      "丿",
+      "丨",
+      "丶",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Zhuī",
+    "pinyinArray": [
+      "Zhui"
+    ]
+  },
+  "锦": {
+    "structure": "⿰钅帛",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "一",
+      "𠄌",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "𠃌",
+      "丨"
+    ],
+    "pinyin": "Jǐn",
+    "pinyinArray": [
+      "Jin"
+    ]
+  },
+  "锨": {
+    "structure": "⿰钅欣",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "一",
+      "𠄌",
+      "丿",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "㇇|乛",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Xiān",
+    "pinyinArray": [
+      "Xian"
+    ]
+  },
+  "锭": {
+    "structure": "⿰钅定",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "一",
+      "𠄌",
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Dìng",
+    "pinyinArray": [
+      "Ding"
+    ]
+  },
+  "键": {
+    "structure": "⿰钅建",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "一",
+      "𠄌",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Jiàn",
+    "pinyinArray": [
+      "Jian"
+    ]
+  },
+  "锯": {
+    "structure": "⿰钅居",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "一",
+      "𠄌",
+      "𠃍",
+      "一",
+      "丿",
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Jù",
+    "pinyinArray": [
+      "Ju"
+    ]
+  },
+  "锰": {
+    "structure": "⿰钅孟",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "一",
+      "𠄌",
+      "㇇|乛",
+      "亅",
+      "一",
+      "丨",
+      "𠃍",
+      "丨",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Měng",
+    "pinyinArray": [
+      "Meng"
+    ]
+  },
+  "锹": {
+    "structure": "⿰钅秋",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "一",
+      "𠄌",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "㇀",
+      "丿",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Qiāo",
+    "pinyinArray": [
+      "Qiao"
+    ]
+  },
+  "锻": {
+    "structure": "⿰钅段",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "一",
+      "𠄌",
+      "丿",
+      "丨",
+      "一",
+      "一",
+      "㇀",
+      "丿",
+      "㇅|㇍",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Duàn",
+    "pinyinArray": [
+      "Duan"
+    ]
+  },
+  "镀": {
+    "structure": "⿰钅度",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "一",
+      "𠄌",
+      "丶",
+      "一",
+      "丿",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Dù",
+    "pinyinArray": [
+      "Du"
+    ]
+  },
+  "镇": {
+    "structure": "⿰钅真",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "一",
+      "𠄌",
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Zhèn",
+    "pinyinArray": [
+      "Zhen"
+    ]
+  },
+  "镊": {
+    "structure": "⿰钅聂",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "一",
+      "𠄌",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "一",
+      "一",
+      "㇇|乛",
+      "丶",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Niè",
+    "pinyinArray": [
+      "Nie"
+    ]
+  },
+  "镐": {
+    "structure": "⿰钅高",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "一",
+      "𠄌",
+      "丶",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃌",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Hào",
+    "pinyinArray": [
+      "Hao"
+    ]
+  },
+  "镜": {
+    "structure": "⿰钅竟",
+    "strokeCount": 16,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "一",
+      "𠄌",
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Jìng",
+    "pinyinArray": [
+      "Jing"
+    ]
+  },
+  "镣": {
+    "structure": "⿰钅尞",
+    "strokeCount": 17,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "一",
+      "𠄌",
+      "一",
+      "丿",
+      "㇏",
+      "丶",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "亅",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Liào",
+    "pinyinArray": [
+      "Liao"
+    ]
+  },
+  "镰": {
+    "structure": "⿰钅廉",
+    "strokeCount": 18,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "一",
+      "𠄌",
+      "丶",
+      "一",
+      "丿",
+      "丶",
+      "丿",
+      "一",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Lián",
+    "pinyinArray": [
+      "Lian"
+    ]
+  },
+  "镶": {
+    "structure": "⿰钅襄",
+    "strokeCount": 22,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "一",
+      "一",
+      "𠄌",
+      "丶",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丿",
+      "𠄌",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Xiāng",
+    "pinyinArray": [
+      "Xiang"
+    ]
+  },
+  "长": {
+    "structure": "长",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "𠄌",
+      "㇏"
+    ],
+    "pinyin": "Cháng",
+    "pinyinArray": [
+      "Chang"
+    ]
+  },
+  "门": {
+    "structure": "门",
+    "strokeCount": 3,
+    "strokeShapes": [
+      "丶",
+      "丨",
+      "𠃌"
+    ],
+    "pinyin": "Mén",
+    "pinyinArray": [
+      "Men"
+    ]
+  },
+  "闪": {
+    "structure": "⿵门人",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丶",
+      "丨",
+      "𠃌",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Shǎn",
+    "pinyinArray": [
+      "Shan"
+    ]
+  },
+  "闭": {
+    "structure": "⿵门才",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丶",
+      "丨",
+      "𠃌",
+      "一",
+      "亅",
+      "丿"
+    ],
+    "pinyin": "Bì",
+    "pinyinArray": [
+      "Bi"
+    ]
+  },
+  "问": {
+    "structure": "⿵门口",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丶",
+      "丨",
+      "𠃌",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Wèn",
+    "pinyinArray": [
+      "Wen"
+    ]
+  },
+  "闯": {
+    "structure": "⿵门马",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丶",
+      "丨",
+      "𠃌",
+      "𠃍",
+      "㇉",
+      "一"
+    ],
+    "pinyin": "Chuǎng",
+    "pinyinArray": [
+      "Chuang"
+    ]
+  },
+  "闰": {
+    "structure": "⿵门王",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丶",
+      "丨",
+      "𠃌",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Rùn",
+    "pinyinArray": [
+      "Run"
+    ]
+  },
+  "闲": {
+    "structure": "⿵门木",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丶",
+      "丨",
+      "𠃌",
+      "一",
+      "丨",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Xián",
+    "pinyinArray": [
+      "Xian"
+    ]
+  },
+  "间": {
+    "structure": "⿵门日",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丶",
+      "丨",
+      "𠃌",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Jiān",
+    "pinyinArray": [
+      "Jian"
+    ]
+  },
+  "闷": {
+    "structure": "⿵门心",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丶",
+      "丨",
+      "𠃌",
+      "㇀",
+      "㇂|㇃",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Mēn",
+    "pinyinArray": [
+      "Men"
+    ]
+  },
+  "闸": {
+    "structure": "⿵门甲",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丶",
+      "丨",
+      "𠃌",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Zhá",
+    "pinyinArray": [
+      "Zha"
+    ]
+  },
+  "闹": {
+    "structure": "⿵门市",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丶",
+      "丨",
+      "𠃌",
+      "丶",
+      "一",
+      "丨",
+      "𠃌",
+      "丨"
+    ],
+    "pinyin": "Nào",
+    "pinyinArray": [
+      "Nao"
+    ]
+  },
+  "闺": {
+    "structure": "⿵门圭",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "丨",
+      "𠃌",
+      "一",
+      "丨",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Guī",
+    "pinyinArray": [
+      "Gui"
+    ]
+  },
+  "闻": {
+    "structure": "⿵门耳",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "丨",
+      "𠃌",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "一",
+      "一"
+    ],
+    "pinyin": "Wén",
+    "pinyinArray": [
+      "Wen"
+    ]
+  },
+  "闽": {
+    "structure": "⿵门虫",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "丨",
+      "𠃌",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丶"
+    ],
+    "pinyin": "Mǐn",
+    "pinyinArray": [
+      "Min"
+    ]
+  },
+  "阀": {
+    "structure": "⿵门伐",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "丨",
+      "𠃌",
+      "丿",
+      "丨",
+      "一",
+      "㇂|㇃",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Fá",
+    "pinyinArray": [
+      "Fa"
+    ]
+  },
+  "阁": {
+    "structure": "⿵门各",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "丨",
+      "𠃌",
+      "丿",
+      "㇇|乛",
+      "㇏",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Gé",
+    "pinyinArray": [
+      "Ge"
+    ]
+  },
+  "阅": {
+    "structure": "⿵门兑",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "丨",
+      "𠃌",
+      "丶",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Yuè",
+    "pinyinArray": [
+      "Yue"
+    ]
+  },
+  "阎": {
+    "structure": "⿵门臽",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丶",
+      "丨",
+      "𠃌",
+      "丿",
+      "㇇|乛",
+      "丿",
+      "丨",
+      "一",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Yán",
+    "pinyinArray": [
+      "Yan"
+    ]
+  },
+  "阐": {
+    "structure": "⿵门单",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丶",
+      "丨",
+      "𠃌",
+      "丶",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Chǎn",
+    "pinyinArray": [
+      "Chan"
+    ]
+  },
+  "阔": {
+    "structure": "⿵门活",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丶",
+      "丨",
+      "𠃌",
+      "丶",
+      "丶",
+      "㇀",
+      "丿",
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Kuò",
+    "pinyinArray": [
+      "Kuo"
+    ]
+  },
+  "队": {
+    "structure": "⿰阝人",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "𠄎|㇌",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Duì",
+    "pinyinArray": [
+      "Dui"
+    ]
+  },
+  "阱": {
+    "structure": "⿰阝井",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "𠄎|㇌",
+      "丨",
+      "一",
+      "一",
+      "丿",
+      "丨"
+    ],
+    "pinyin": "Jǐng",
+    "pinyinArray": [
+      "Jing"
+    ]
+  },
+  "防": {
+    "structure": "⿰阝方",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "𠄎|㇌",
+      "丨",
+      "丶",
+      "一",
+      "𠃌",
+      "丿"
+    ],
+    "pinyin": "Fáng",
+    "pinyinArray": [
+      "Fang"
+    ]
+  },
+  "阳": {
+    "structure": "⿰阝日",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "𠄎|㇌",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Yáng",
+    "pinyinArray": [
+      "Yang"
+    ]
+  },
+  "阴": {
+    "structure": "⿰阝月",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "𠄎|㇌",
+      "丨",
+      "丿",
+      "𠃌",
+      "一",
+      "一"
+    ],
+    "pinyin": "Yīn",
+    "pinyinArray": [
+      "Yin"
+    ]
+  },
+  "阵": {
+    "structure": "⿰阝车",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "𠄎|㇌",
+      "丨",
+      "一",
+      "𠃋",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Zhèn",
+    "pinyinArray": [
+      "Zhen"
+    ]
+  },
+  "阶": {
+    "structure": "⿰阝介",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "𠄎|㇌",
+      "丨",
+      "丿",
+      "㇏",
+      "丿",
+      "丨"
+    ],
+    "pinyin": "Jiē",
+    "pinyinArray": [
+      "Jie"
+    ]
+  },
+  "阻": {
+    "structure": "⿰阝且",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "𠄎|㇌",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一"
+    ],
+    "pinyin": "Zǔ",
+    "pinyinArray": [
+      "Zu"
+    ]
+  },
+  "阿": {
+    "structure": "⿰阝可",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "𠄎|㇌",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "亅"
+    ],
+    "pinyin": "Ā",
+    "pinyinArray": [
+      "A"
+    ]
+  },
+  "附": {
+    "structure": "⿰阝付",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "𠄎|㇌",
+      "丨",
+      "丿",
+      "丨",
+      "一",
+      "亅",
+      "丶"
+    ],
+    "pinyin": "Fù",
+    "pinyinArray": [
+      "Fu"
+    ]
+  },
+  "际": {
+    "structure": "⿰阝示",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "𠄎|㇌",
+      "丨",
+      "一",
+      "一",
+      "亅",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Jì",
+    "pinyinArray": [
+      "Ji"
+    ]
+  },
+  "陆": {
+    "structure": "⿰阝击",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "𠄎|㇌",
+      "丨",
+      "一",
+      "一",
+      "丨",
+      "㇄",
+      "丨"
+    ],
+    "pinyin": "Liù",
+    "pinyinArray": [
+      "Liu"
+    ]
+  },
+  "陈": {
+    "structure": "⿰阝东",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "𠄎|㇌",
+      "丨",
+      "一",
+      "𠃋",
+      "亅",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Chén",
+    "pinyinArray": [
+      "Chen"
+    ]
+  },
+  "陋": {
+    "structure": "⿰阝𫠥",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "𠄎|㇌",
+      "丨",
+      "一",
+      "丨",
+      "𠃌",
+      "丿",
+      "丶",
+      "㇄"
+    ],
+    "pinyin": "Lòu",
+    "pinyinArray": [
+      "Lou"
+    ]
+  },
+  "陌": {
+    "structure": "⿰阝百",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "𠄎|㇌",
+      "丨",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Mò",
+    "pinyinArray": [
+      "Mo"
+    ]
+  },
+  "降": {
+    "structure": "⿰阝夅",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "𠄎|㇌",
+      "丨",
+      "丿",
+      "㇇|乛",
+      "㇏",
+      "一",
+      "𠃋",
+      "丨"
+    ],
+    "pinyin": "Jiàng",
+    "pinyinArray": [
+      "Jiang"
+    ]
+  },
+  "限": {
+    "structure": "⿰阝艮",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "𠄎|㇌",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "𠄌",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Xiàn",
+    "pinyinArray": [
+      "Xian"
+    ]
+  },
+  "陕": {
+    "structure": "⿰阝夹",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "𠄎|㇌",
+      "丨",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Shǎn",
+    "pinyinArray": [
+      "Shan"
+    ]
+  },
+  "陡": {
+    "structure": "⿰阝走",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "𠄎|㇌",
+      "丨",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Dǒu",
+    "pinyinArray": [
+      "Dou"
+    ]
+  },
+  "院": {
+    "structure": "⿰阝完",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "𠄎|㇌",
+      "丨",
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "一",
+      "一",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Yuàn",
+    "pinyinArray": [
+      "Yuan"
+    ]
+  },
+  "除": {
+    "structure": "⿰阝余",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "𠄎|㇌",
+      "丨",
+      "丿",
+      "㇏",
+      "一",
+      "一",
+      "亅",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Chú",
+    "pinyinArray": [
+      "Chu"
+    ]
+  },
+  "陨": {
+    "structure": "⿰阝员",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "𠄎|㇌",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Yǔn",
+    "pinyinArray": [
+      "Yun"
+    ]
+  },
+  "险": {
+    "structure": "⿰阝佥",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "𠄎|㇌",
+      "丨",
+      "丿",
+      "㇏",
+      "一",
+      "丶",
+      "丶",
+      "丿",
+      "一"
+    ],
+    "pinyin": "Xiǎn",
+    "pinyinArray": [
+      "Xian"
+    ]
+  },
+  "陪": {
+    "structure": "⿰阝咅",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "𠄎|㇌",
+      "丨",
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Péi",
+    "pinyinArray": [
+      "Pei"
+    ]
+  },
+  "陵": {
+    "structure": "⿰阝夌",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "𠄎|㇌",
+      "丨",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "丶",
+      "丿",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Líng",
+    "pinyinArray": [
+      "Ling"
+    ]
+  },
+  "陶": {
+    "structure": "⿰阝匋",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "𠄎|㇌",
+      "丨",
+      "丿",
+      "𠃌",
+      "丿",
+      "一",
+      "一",
+      "丨",
+      "㇄",
+      "丨"
+    ],
+    "pinyin": "Táo",
+    "pinyinArray": [
+      "Tao"
+    ]
+  },
+  "陷": {
+    "structure": "⿰阝臽",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "𠄎|㇌",
+      "丨",
+      "丿",
+      "㇇|乛",
+      "丿",
+      "丨",
+      "一",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Xiàn",
+    "pinyinArray": [
+      "Xian"
+    ]
+  },
+  "隅": {
+    "structure": "⿰阝禺",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "𠄎|㇌",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "𠃌",
+      "丨",
+      "㇀",
+      "丶"
+    ],
+    "pinyin": "Yú",
+    "pinyinArray": [
+      "Yu"
+    ]
+  },
+  "隆": {
+    "structure": "⿰阝㚅[GTKV]",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "𠄎|㇌",
+      "丨",
+      "丿",
+      "㇇|乛",
+      "㇏",
+      "一",
+      "丿",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Lóng",
+    "pinyinArray": [
+      "Long"
+    ]
+  },
+  "随": {
+    "structure": "⿰阝迶",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "𠄎|㇌",
+      "丨",
+      "一",
+      "丿",
+      "丨",
+      "𠃌",
+      "一",
+      "一",
+      "丶",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Suí",
+    "pinyinArray": [
+      "Sui"
+    ]
+  },
+  "隐": {
+    "structure": "⿰阝急",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "𠄎|㇌",
+      "丨",
+      "丿",
+      "㇇|乛",
+      "𠃍",
+      "一",
+      "一",
+      "㇀",
+      "㇂|㇃",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Yǐn",
+    "pinyinArray": [
+      "Yin"
+    ]
+  },
+  "隔": {
+    "structure": "⿰阝鬲",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "𠄎|㇌",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃌",
+      "丶",
+      "丿",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Gé",
+    "pinyinArray": [
+      "Ge"
+    ]
+  },
+  "隘": {
+    "structure": "⿰阝益",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "𠄎|㇌",
+      "丨",
+      "丶",
+      "丿",
+      "一",
+      "丿",
+      "丶",
+      "丨",
+      "𠃍",
+      "丨",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Ài",
+    "pinyinArray": [
+      "Ai"
+    ]
+  },
+  "隙": {
+    "structure": "⿰阝𡭴[GJK]",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "𠄎|㇌",
+      "丨",
+      "丨",
+      "丿",
+      "丶",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "亅",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Xì",
+    "pinyinArray": [
+      "Xi"
+    ]
+  },
+  "障": {
+    "structure": "⿰阝章",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "𠄎|㇌",
+      "丨",
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Zhàng",
+    "pinyinArray": [
+      "Zhang"
+    ]
+  },
+  "隧": {
+    "structure": "⿰阝遂",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "𠄎|㇌",
+      "丨",
+      "丶",
+      "丿",
+      "一",
+      "丿",
+      "㇁",
+      "丿",
+      "丿",
+      "丿",
+      "丶",
+      "丶",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Suì",
+    "pinyinArray": [
+      "Sui"
+    ]
+  },
+  "隶": {
+    "structure": "隶",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "𠃍",
+      "一",
+      "一",
+      "亅",
+      "丶",
+      "㇀",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Lì",
+    "pinyinArray": [
+      "Li"
+    ]
+  },
+  "难": {
+    "structure": "⿰又隹",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "㇇|乛",
+      "丶",
+      "丿",
+      "丨",
+      "丶",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Nán",
+    "pinyinArray": [
+      "Nan"
+    ]
+  },
+  "雀": {
+    "structure": "⿱小隹",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丨",
+      "丿",
+      "丶",
+      "丿",
+      "丨",
+      "丶",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Què",
+    "pinyinArray": [
+      "Que"
+    ]
+  },
+  "雁": {
+    "structure": "⿸厂倠",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "丿",
+      "丨",
+      "丿",
+      "丨",
+      "丶",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Yàn",
+    "pinyinArray": [
+      "Yan"
+    ]
+  },
+  "雄": {
+    "structure": "⿰厷隹",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "𠃋",
+      "丶",
+      "丿",
+      "丨",
+      "丶",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Xióng",
+    "pinyinArray": [
+      "Xiong"
+    ]
+  },
+  "雅": {
+    "structure": "⿰牙隹",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "𠃋",
+      "亅",
+      "丿",
+      "丿",
+      "丨",
+      "丶",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Yǎ",
+    "pinyinArray": [
+      "Ya"
+    ]
+  },
+  "集": {
+    "structure": "⿱隹木[GJK]",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "丶",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Jí",
+    "pinyinArray": [
+      "Ji"
+    ]
+  },
+  "雇": {
+    "structure": "⿸户隹[G]",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丶",
+      "𠃍",
+      "一",
+      "丿",
+      "丿",
+      "丨",
+      "丶",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Hù",
+    "pinyinArray": [
+      "Hu"
+    ]
+  },
+  "雌": {
+    "structure": "⿰此隹",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "丨",
+      "一",
+      "丨",
+      "㇀",
+      "一",
+      "𠄌",
+      "丿",
+      "丨",
+      "丶",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Cí",
+    "pinyinArray": [
+      "Ci"
+    ]
+  },
+  "雏": {
+    "structure": "⿰刍隹",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丿",
+      "㇇|乛",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "丨",
+      "丶",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Chú",
+    "pinyinArray": [
+      "Chu"
+    ]
+  },
+  "雕": {
+    "structure": "⿰周隹",
+    "strokeCount": 16,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "丨",
+      "丶",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Diāo",
+    "pinyinArray": [
+      "Diao"
+    ]
+  },
+  "雨": {
+    "structure": "⿱一𠕒",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "𠃌",
+      "丨",
+      "丶",
+      "丶",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Yù",
+    "pinyinArray": [
+      "Yu"
+    ]
+  },
+  "雪": {
+    "structure": "⿱雨彐",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "㇀",
+      "㇇|乛",
+      "丨",
+      "丶",
+      "丶",
+      "丶",
+      "丶",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Xuě",
+    "pinyinArray": [
+      "Xue"
+    ]
+  },
+  "雳": {
+    "structure": "⿱雨历",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "㇀",
+      "㇇|乛",
+      "丨",
+      "丶",
+      "丶",
+      "丶",
+      "丶",
+      "一",
+      "丿",
+      "𠃌",
+      "丿"
+    ],
+    "pinyin": "Lì",
+    "pinyinArray": [
+      "Li"
+    ]
+  },
+  "零": {
+    "structure": "⿱雨令",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "一",
+      "㇀",
+      "㇇|乛",
+      "丨",
+      "丶",
+      "丶",
+      "丶",
+      "丶",
+      "丿",
+      "㇏",
+      "丶",
+      "㇇|乛",
+      "丶"
+    ],
+    "pinyin": "Líng",
+    "pinyinArray": [
+      "Ling"
+    ]
+  },
+  "雷": {
+    "structure": "⿱雨田",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "一",
+      "㇀",
+      "㇇|乛",
+      "丨",
+      "丶",
+      "丶",
+      "丶",
+      "丶",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Léi",
+    "pinyinArray": [
+      "Lei"
+    ]
+  },
+  "雹": {
+    "structure": "⿱雨包",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "一",
+      "㇀",
+      "㇇|乛",
+      "丨",
+      "丶",
+      "丶",
+      "丶",
+      "丶",
+      "丿",
+      "𠃌",
+      "𠃍",
+      "一",
+      "乚"
+    ],
+    "pinyin": "Báo",
+    "pinyinArray": [
+      "Bao"
+    ]
+  },
+  "雾": {
+    "structure": "⿱雨务",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "一",
+      "㇀",
+      "㇇|乛",
+      "丨",
+      "丶",
+      "丶",
+      "丶",
+      "丶",
+      "丿",
+      "㇇|乛",
+      "㇏",
+      "𠃌",
+      "丿"
+    ],
+    "pinyin": "Wù",
+    "pinyinArray": [
+      "Wu"
+    ]
+  },
+  "需": {
+    "structure": "⿱雨而",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "一",
+      "㇀",
+      "㇇|乛",
+      "丨",
+      "丶",
+      "丶",
+      "丶",
+      "丶",
+      "一",
+      "丿",
+      "丨",
+      "𠃌",
+      "丨",
+      "丨"
+    ],
+    "pinyin": "Xū",
+    "pinyinArray": [
+      "Xu"
+    ]
+  },
+  "震": {
+    "structure": "⿱雨辰",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "一",
+      "㇀",
+      "㇇|乛",
+      "丨",
+      "丶",
+      "丶",
+      "丶",
+      "丶",
+      "一",
+      "丿",
+      "一",
+      "一",
+      "𠄌",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Zhèn",
+    "pinyinArray": [
+      "Zhen"
+    ]
+  },
+  "霉": {
+    "structure": "⿱雨每",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "一",
+      "㇀",
+      "㇇|乛",
+      "丨",
+      "丶",
+      "丶",
+      "丶",
+      "丶",
+      "丿",
+      "一",
+      "㇄",
+      "𠃌",
+      "丶",
+      "一",
+      "丶"
+    ],
+    "pinyin": "Méi",
+    "pinyinArray": [
+      "Mei"
+    ]
+  },
+  "霍": {
+    "structure": "⿱雨隹",
+    "strokeCount": 16,
+    "strokeShapes": [
+      "一",
+      "㇀",
+      "㇇|乛",
+      "丨",
+      "丶",
+      "丶",
+      "丶",
+      "丶",
+      "丿",
+      "丨",
+      "丶",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Huò",
+    "pinyinArray": [
+      "Huo"
+    ]
+  },
+  "霎": {
+    "structure": "⿱雨妾",
+    "strokeCount": 16,
+    "strokeShapes": [
+      "一",
+      "㇀",
+      "㇇|乛",
+      "丨",
+      "丶",
+      "丶",
+      "丶",
+      "丶",
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "𡿨",
+      "丿",
+      "一"
+    ],
+    "pinyin": "Shà",
+    "pinyinArray": [
+      "Sha"
+    ]
+  },
+  "霜": {
+    "structure": "⿱雨相",
+    "strokeCount": 17,
+    "strokeShapes": [
+      "一",
+      "㇀",
+      "㇇|乛",
+      "丨",
+      "丶",
+      "丶",
+      "丶",
+      "丶",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一"
+    ],
+    "pinyin": "Shuāng",
+    "pinyinArray": [
+      "Shuang"
+    ]
+  },
+  "霞": {
+    "structure": "⿱雨叚",
+    "strokeCount": 17,
+    "strokeShapes": [
+      "一",
+      "㇀",
+      "㇇|乛",
+      "丨",
+      "丶",
+      "丶",
+      "丶",
+      "丶",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "一",
+      "𠃍",
+      "一",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Xiá",
+    "pinyinArray": [
+      "Xia"
+    ]
+  },
+  "露": {
+    "structure": "⿱雨路",
+    "strokeCount": 21,
+    "strokeShapes": [
+      "一",
+      "㇀",
+      "㇇|乛",
+      "丨",
+      "丶",
+      "丶",
+      "丶",
+      "丶",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "㇀",
+      "丿",
+      "㇇|乛",
+      "㇏",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Lù",
+    "pinyinArray": [
+      "Lu"
+    ]
+  },
+  "霸": {
+    "structure": "⿱雨䩗",
+    "strokeCount": 21,
+    "strokeShapes": [
+      "一",
+      "㇀",
+      "㇇|乛",
+      "丨",
+      "丶",
+      "丶",
+      "丶",
+      "丶",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "丿",
+      "𠃌",
+      "一",
+      "一"
+    ],
+    "pinyin": "Bà",
+    "pinyinArray": [
+      "Ba"
+    ]
+  },
+  "霹": {
+    "structure": "⿱雨辟",
+    "strokeCount": 21,
+    "strokeShapes": [
+      "一",
+      "㇀",
+      "㇇|乛",
+      "丨",
+      "丶",
+      "丶",
+      "丶",
+      "丶",
+      "𠃍",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Pī",
+    "pinyinArray": [
+      "Pi"
+    ]
+  },
+  "青": {
+    "structure": "⿱龶月",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "𠃌",
+      "一",
+      "一"
+    ],
+    "pinyin": "Qīng",
+    "pinyinArray": [
+      "Qing"
+    ]
+  },
+  "靖": {
+    "structure": "⿰立青[GTJ]",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "㇀",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "𠃌",
+      "一",
+      "一"
+    ],
+    "pinyin": "Jìng",
+    "pinyinArray": [
+      "Jing"
+    ]
+  },
+  "静": {
+    "structure": "⿰青争",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "一",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "𠃌",
+      "一",
+      "一",
+      "丿",
+      "㇇|乛",
+      "𠃍",
+      "一",
+      "一",
+      "亅"
+    ],
+    "pinyin": "Jìng",
+    "pinyinArray": [
+      "Jing"
+    ]
+  },
+  "非": {
+    "structure": "非",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丨",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "一",
+      "一"
+    ],
+    "pinyin": "Fēi",
+    "pinyinArray": [
+      "Fei"
+    ]
+  },
+  "靠": {
+    "structure": "⿱告非[GT]",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "一",
+      "一"
+    ],
+    "pinyin": "Kào",
+    "pinyinArray": [
+      "Kao"
+    ]
+  },
+  "靡": {
+    "structure": "⿸麻非",
+    "strokeCount": 19,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "丨",
+      "丿",
+      "㇏",
+      "丨",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "一",
+      "一"
+    ],
+    "pinyin": "Mí",
+    "pinyinArray": [
+      "Mi"
+    ]
+  },
+  "面": {
+    "structure": "⿱丆囬",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "丨",
+      "丨",
+      "一",
+      "一",
+      "一"
+    ],
+    "pinyin": "Miàn",
+    "pinyinArray": [
+      "Mian"
+    ]
+  },
+  "革": {
+    "structure": "革",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Jí",
+    "pinyinArray": [
+      "Ji"
+    ]
+  },
+  "靴": {
+    "structure": "⿰革化",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "丿",
+      "丨",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Xuē",
+    "pinyinArray": [
+      "Xue"
+    ]
+  },
+  "靶": {
+    "structure": "⿰革巴",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "𠃍",
+      "丨",
+      "一",
+      "乚"
+    ],
+    "pinyin": "Bà",
+    "pinyinArray": [
+      "Ba"
+    ]
+  },
+  "鞋": {
+    "structure": "⿰革圭",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Xié",
+    "pinyinArray": [
+      "Xie"
+    ]
+  },
+  "鞍": {
+    "structure": "⿰革安",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "𡿨",
+      "丿",
+      "一"
+    ],
+    "pinyin": "Ān",
+    "pinyinArray": [
+      "An"
+    ]
+  },
+  "鞠": {
+    "structure": "⿰革匊",
+    "strokeCount": 17,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "丿",
+      "𠃌",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Jū",
+    "pinyinArray": [
+      "Ju"
+    ]
+  },
+  "鞭": {
+    "structure": "⿰革便",
+    "strokeCount": 18,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "丿",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Biān",
+    "pinyinArray": [
+      "Bian"
+    ]
+  },
+  "韧": {
+    "structure": "⿰韦刃",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "一",
+      "𠃌",
+      "丨",
+      "𠃌",
+      "丿",
+      "㇀"
+    ],
+    "pinyin": "Rèn",
+    "pinyinArray": [
+      "Ren"
+    ]
+  },
+  "韩": {
+    "structure": "⿰𠦝韦",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "一",
+      "𠃌",
+      "丨"
+    ],
+    "pinyin": "Hán",
+    "pinyinArray": [
+      "Han"
+    ]
+  },
+  "韭": {
+    "structure": "⿱非一",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丨",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "一",
+      "一",
+      "一"
+    ],
+    "pinyin": "Jiǔ",
+    "pinyinArray": [
+      "Jiu"
+    ]
+  },
+  "音": {
+    "structure": "⿱立日",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Yīn",
+    "pinyinArray": [
+      "Yin"
+    ]
+  },
+  "韵": {
+    "structure": "⿰音匀[G]",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "𠃌",
+      "丶",
+      "㇀"
+    ],
+    "pinyin": "Yùn",
+    "pinyinArray": [
+      "Yun"
+    ]
+  },
+  "页": {
+    "structure": "页",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Yè",
+    "pinyinArray": [
+      "Ye"
+    ]
+  },
+  "顶": {
+    "structure": "⿰丁页",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "亅",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Dǐng",
+    "pinyinArray": [
+      "Ding"
+    ]
+  },
+  "顷": {
+    "structure": "⿰匕页",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "一",
+      "𠄌",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Qǐng",
+    "pinyinArray": [
+      "Qing"
+    ]
+  },
+  "项": {
+    "structure": "⿰工页",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "㇀",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Xiàng",
+    "pinyinArray": [
+      "Xiang"
+    ]
+  },
+  "顺": {
+    "structure": "⿰川页",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "丨",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Shùn",
+    "pinyinArray": [
+      "Shun"
+    ]
+  },
+  "须": {
+    "structure": "⿰彡页",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "丿",
+      "丿",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Xū",
+    "pinyinArray": [
+      "Xu"
+    ]
+  },
+  "顽": {
+    "structure": "⿰元页",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "一",
+      "丿",
+      "𠄌",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Wán",
+    "pinyinArray": [
+      "Wan"
+    ]
+  },
+  "顾": {
+    "structure": "⿰厄页",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "𠃌",
+      "𠄌",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Gù",
+    "pinyinArray": [
+      "Gu"
+    ]
+  },
+  "顿": {
+    "structure": "⿰屯页",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "一",
+      "㇄",
+      "丨",
+      "𠄌",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Dùn",
+    "pinyinArray": [
+      "Dun"
+    ]
+  },
+  "颁": {
+    "structure": "⿰分页",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "丶",
+      "𠃌",
+      "丿",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Bān",
+    "pinyinArray": [
+      "Ban"
+    ]
+  },
+  "颂": {
+    "structure": "⿰公页",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "丶",
+      "𠃋",
+      "丶",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Sòng",
+    "pinyinArray": [
+      "Song"
+    ]
+  },
+  "预": {
+    "structure": "⿰予页",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "㇇|乛",
+      "丶",
+      "㇇|乛",
+      "亅",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Yù",
+    "pinyinArray": [
+      "Yu"
+    ]
+  },
+  "颅": {
+    "structure": "⿰卢页",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丨",
+      "一",
+      "𠃍",
+      "一",
+      "丿",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Lú",
+    "pinyinArray": [
+      "Lu"
+    ]
+  },
+  "领": {
+    "structure": "⿰令页",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丿",
+      "丶",
+      "丶",
+      "㇇|乛",
+      "丶",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Lǐng",
+    "pinyinArray": [
+      "Ling"
+    ]
+  },
+  "颇": {
+    "structure": "⿰皮页",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "㇇|乛",
+      "丿",
+      "丨",
+      "㇇|乛",
+      "丶",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Pō",
+    "pinyinArray": [
+      "Po"
+    ]
+  },
+  "颈": {
+    "structure": "⿰𢀖页",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "㇇|乛",
+      "丶",
+      "一",
+      "丨",
+      "㇀",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Jǐng",
+    "pinyinArray": [
+      "Jing"
+    ]
+  },
+  "颊": {
+    "structure": "⿰夹页",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丿",
+      "丶",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Jiá",
+    "pinyinArray": [
+      "Jia"
+    ]
+  },
+  "频": {
+    "structure": "⿰步页",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丨",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "丿",
+      "丿",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Pín",
+    "pinyinArray": [
+      "Pin"
+    ]
+  },
+  "颓": {
+    "structure": "⿰秃页",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丿",
+      "㇊",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Tuí",
+    "pinyinArray": [
+      "Tui"
+    ]
+  },
+  "颖": {
+    "structure": "⿰⿱匕禾页",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丿",
+      "乚",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Yíng",
+    "pinyinArray": [
+      "Ying"
+    ]
+  },
+  "颗": {
+    "structure": "⿰果页",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Kē",
+    "pinyinArray": [
+      "Ke"
+    ]
+  },
+  "题": {
+    "structure": "⿺是页",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "㇏",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Tí",
+    "pinyinArray": [
+      "Ti"
+    ]
+  },
+  "颜": {
+    "structure": "⿰彦页",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "一",
+      "丿",
+      "丿",
+      "丿",
+      "丿",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Yán",
+    "pinyinArray": [
+      "Yan"
+    ]
+  },
+  "额": {
+    "structure": "⿰客页",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "丿",
+      "㇇|乛",
+      "丶",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "É",
+    "pinyinArray": [
+      "E"
+    ]
+  },
+  "颠": {
+    "structure": "⿰真页",
+    "strokeCount": 16,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "丶",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Diān",
+    "pinyinArray": [
+      "Dian"
+    ]
+  },
+  "颤": {
+    "structure": "⿰亶页",
+    "strokeCount": 19,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丨",
+      "𠃍",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "㇀",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Chàn",
+    "pinyinArray": [
+      "Chan"
+    ]
+  },
+  "风": {
+    "structure": "⿵几㐅",
+    "strokeCount": 4,
+    "strokeShapes": [
+      "丿",
+      "⺄",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Fēng",
+    "pinyinArray": [
+      "Feng"
+    ]
+  },
+  "飒": {
+    "structure": "⿰立风",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丶",
+      "丿",
+      "㇀",
+      "丿",
+      "⺄",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Sà",
+    "pinyinArray": [
+      "Sa"
+    ]
+  },
+  "飘": {
+    "structure": "⿰票风",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "𠃍",
+      "丨",
+      "丨",
+      "一",
+      "一",
+      "一",
+      "亅",
+      "丿",
+      "丶",
+      "丿",
+      "⺄",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Piāo",
+    "pinyinArray": [
+      "Piao"
+    ]
+  },
+  "飞": {
+    "structure": "飞",
+    "strokeCount": 3,
+    "strokeShapes": [
+      "⺄",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Fēi",
+    "pinyinArray": [
+      "Fei"
+    ]
+  },
+  "食": {
+    "structure": "⿱人良",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "㇏",
+      "丶",
+      "𠃍",
+      "一",
+      "一",
+      "𠄌",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Shí",
+    "pinyinArray": [
+      "Shi"
+    ]
+  },
+  "餐": {
+    "structure": "⿱𣦼食",
+    "strokeCount": 16,
+    "strokeShapes": [
+      "丨",
+      "一",
+      "丿",
+      "㇇|乛",
+      "丶",
+      "㇇|乛",
+      "丶",
+      "丿",
+      "㇏",
+      "丶",
+      "𠃍",
+      "一",
+      "一",
+      "𠄌",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Cān",
+    "pinyinArray": [
+      "Can"
+    ]
+  },
+  "饥": {
+    "structure": "⿰饣几",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丿",
+      "㇇|乛",
+      "𠄌",
+      "丿",
+      "⺄"
+    ],
+    "pinyin": "Jī",
+    "pinyinArray": [
+      "Ji"
+    ]
+  },
+  "饭": {
+    "structure": "⿰饣反",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丿",
+      "㇇|乛",
+      "𠄌",
+      "丿",
+      "丿",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Fàn",
+    "pinyinArray": [
+      "Fan"
+    ]
+  },
+  "饮": {
+    "structure": "⿰饣欠",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丿",
+      "㇇|乛",
+      "𠄌",
+      "丿",
+      "㇇|乛",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Yìn",
+    "pinyinArray": [
+      "Yin"
+    ]
+  },
+  "饰": {
+    "structure": "⿰饣⿱𠂉巾",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丿",
+      "㇇|乛",
+      "𠄌",
+      "丿",
+      "一",
+      "丨",
+      "𠃌",
+      "丨"
+    ],
+    "pinyin": "Shì",
+    "pinyinArray": [
+      "Shi"
+    ]
+  },
+  "饱": {
+    "structure": "⿰饣包",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丿",
+      "㇇|乛",
+      "𠄌",
+      "丿",
+      "𠃌",
+      "𠃍",
+      "一",
+      "乚"
+    ],
+    "pinyin": "Bǎo",
+    "pinyinArray": [
+      "Bao"
+    ]
+  },
+  "饲": {
+    "structure": "⿰饣司",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丿",
+      "㇇|乛",
+      "𠄌",
+      "𠃌",
+      "一",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Sì",
+    "pinyinArray": [
+      "Si"
+    ]
+  },
+  "饵": {
+    "structure": "⿰饣耳",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "㇇|乛",
+      "𠄌",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "一",
+      "一"
+    ],
+    "pinyin": "Ěr",
+    "pinyinArray": [
+      "Er"
+    ]
+  },
+  "饶": {
+    "structure": "⿰饣尧",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "㇇|乛",
+      "𠄌",
+      "一",
+      "㇂|㇃",
+      "丿",
+      "一",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Ráo",
+    "pinyinArray": [
+      "Rao"
+    ]
+  },
+  "饺": {
+    "structure": "⿰饣交",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "㇇|乛",
+      "𠄌",
+      "丶",
+      "一",
+      "丿",
+      "丶",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Jiǎo",
+    "pinyinArray": [
+      "Jiao"
+    ]
+  },
+  "饼": {
+    "structure": "⿰饣并",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "㇇|乛",
+      "𠄌",
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "丿",
+      "丨"
+    ],
+    "pinyin": "Bǐng",
+    "pinyinArray": [
+      "Bing"
+    ]
+  },
+  "饿": {
+    "structure": "⿰饣我",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "㇇|乛",
+      "𠄌",
+      "丿",
+      "一",
+      "亅",
+      "㇀",
+      "㇂|㇃",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "È",
+    "pinyinArray": [
+      "E"
+    ]
+  },
+  "馁": {
+    "structure": "⿰饣妥",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "㇇|乛",
+      "𠄌",
+      "丿",
+      "丶",
+      "丶",
+      "丿",
+      "𡿨",
+      "丿",
+      "一"
+    ],
+    "pinyin": "Něi",
+    "pinyinArray": [
+      "Nei"
+    ]
+  },
+  "馅": {
+    "structure": "⿰饣臽",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丿",
+      "㇇|乛",
+      "𠄌",
+      "丿",
+      "㇇|乛",
+      "丿",
+      "丨",
+      "一",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Xiàn",
+    "pinyinArray": [
+      "Xian"
+    ]
+  },
+  "馆": {
+    "structure": "⿰饣官",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丿",
+      "㇇|乛",
+      "𠄌",
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "丨",
+      "𠃍",
+      "一",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Guǎn",
+    "pinyinArray": [
+      "Guan"
+    ]
+  },
+  "馋": {
+    "structure": "⿰饣𫥎",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丿",
+      "㇇|乛",
+      "𠄌",
+      "丿",
+      "㇇|乛",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "乚",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Chán",
+    "pinyinArray": [
+      "Chan"
+    ]
+  },
+  "馍": {
+    "structure": "⿰饣莫",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丿",
+      "㇇|乛",
+      "𠄌",
+      "一",
+      "丨",
+      "丨",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Mó",
+    "pinyinArray": [
+      "Mo"
+    ]
+  },
+  "馏": {
+    "structure": "⿰饣留",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丿",
+      "㇇|乛",
+      "𠄌",
+      "丿",
+      "𠄌",
+      "丶",
+      "𠃌",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Liú",
+    "pinyinArray": [
+      "Liu"
+    ]
+  },
+  "馒": {
+    "structure": "⿰饣曼",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "丿",
+      "㇇|乛",
+      "𠄌",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "𠃍",
+      "丨",
+      "丨",
+      "一",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Mán",
+    "pinyinArray": [
+      "Man"
+    ]
+  },
+  "首": {
+    "structure": "⿱䒑自",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丶",
+      "丿",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一"
+    ],
+    "pinyin": "Shǒu",
+    "pinyinArray": [
+      "Shou"
+    ]
+  },
+  "香": {
+    "structure": "⿱禾日",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "㇏",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Xiāng",
+    "pinyinArray": [
+      "Xiang"
+    ]
+  },
+  "马": {
+    "structure": "⿹②一",
+    "strokeCount": 3,
+    "strokeShapes": [
+      "𠃍",
+      "㇉",
+      "一"
+    ],
+    "pinyin": "Mǎ",
+    "pinyinArray": [
+      "Ma"
+    ]
+  },
+  "驮": {
+    "structure": "⿰马大",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "𠃍",
+      "㇉",
+      "㇀",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Tuó",
+    "pinyinArray": [
+      "Tuo"
+    ]
+  },
+  "驯": {
+    "structure": "⿰马川",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "𠃍",
+      "㇉",
+      "㇀",
+      "丿",
+      "丨",
+      "丨"
+    ],
+    "pinyin": "Xùn",
+    "pinyinArray": [
+      "Xun"
+    ]
+  },
+  "驰": {
+    "structure": "⿰马也",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "𠃍",
+      "㇉",
+      "㇀",
+      "𠃌",
+      "丨",
+      "乚"
+    ],
+    "pinyin": "Chí",
+    "pinyinArray": [
+      "Chi"
+    ]
+  },
+  "驱": {
+    "structure": "⿰马区",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "𠃍",
+      "㇉",
+      "㇀",
+      "一",
+      "丿",
+      "丶",
+      "㇄"
+    ],
+    "pinyin": "Qū",
+    "pinyinArray": [
+      "Qu"
+    ]
+  },
+  "驳": {
+    "structure": "⿰马爻",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "𠃍",
+      "㇉",
+      "㇀",
+      "丿",
+      "丶",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Bó",
+    "pinyinArray": [
+      "Bo"
+    ]
+  },
+  "驴": {
+    "structure": "⿰马户",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "𠃍",
+      "㇉",
+      "㇀",
+      "丶",
+      "𠃍",
+      "一",
+      "丿"
+    ],
+    "pinyin": "Lǘ",
+    "pinyinArray": [
+      "Lü"
+    ]
+  },
+  "驶": {
+    "structure": "⿰马史",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "𠃍",
+      "㇉",
+      "㇀",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Shǐ",
+    "pinyinArray": [
+      "Shi"
+    ]
+  },
+  "驹": {
+    "structure": "⿰马句",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "𠃍",
+      "㇉",
+      "㇀",
+      "丿",
+      "𠃌",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Jū",
+    "pinyinArray": [
+      "Ju"
+    ]
+  },
+  "驻": {
+    "structure": "⿰马主",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "𠃍",
+      "㇉",
+      "㇀",
+      "丶",
+      "一",
+      "一",
+      "丨",
+      "一"
+    ],
+    "pinyin": "Zhù",
+    "pinyinArray": [
+      "Zhu"
+    ]
+  },
+  "驼": {
+    "structure": "⿰马它",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "𠃍",
+      "㇉",
+      "㇀",
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Tuó",
+    "pinyinArray": [
+      "Tuo"
+    ]
+  },
+  "驾": {
+    "structure": "⿱加马",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "𠃌",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "𠃍",
+      "㇉",
+      "一"
+    ],
+    "pinyin": "Jià",
+    "pinyinArray": [
+      "Jia"
+    ]
+  },
+  "骂": {
+    "structure": "⿱吅马",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "𠃍",
+      "㇉",
+      "一"
+    ],
+    "pinyin": "Mà",
+    "pinyinArray": [
+      "Ma"
+    ]
+  },
+  "骄": {
+    "structure": "⿰马乔",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "𠃍",
+      "㇉",
+      "㇀",
+      "丿",
+      "一",
+      "丿",
+      "㇏",
+      "丿",
+      "丨"
+    ],
+    "pinyin": "Jiāo",
+    "pinyinArray": [
+      "Jiao"
+    ]
+  },
+  "骆": {
+    "structure": "⿰马各",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "𠃍",
+      "㇉",
+      "㇀",
+      "丿",
+      "㇇|乛",
+      "㇏",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Luò",
+    "pinyinArray": [
+      "Luo"
+    ]
+  },
+  "骇": {
+    "structure": "⿰马亥",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "𠃍",
+      "㇉",
+      "㇀",
+      "丶",
+      "一",
+      "𠃋",
+      "丿",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Hài",
+    "pinyinArray": [
+      "Hai"
+    ]
+  },
+  "验": {
+    "structure": "⿰马佥",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "𠃍",
+      "㇉",
+      "㇀",
+      "丿",
+      "㇏",
+      "一",
+      "丶",
+      "丶",
+      "丿",
+      "一"
+    ],
+    "pinyin": "Yàn",
+    "pinyinArray": [
+      "Yan"
+    ]
+  },
+  "骏": {
+    "structure": "⿰马夋",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "𠃍",
+      "㇉",
+      "㇀",
+      "𠃋",
+      "丶",
+      "丿",
+      "丶",
+      "丿",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Jùn",
+    "pinyinArray": [
+      "Jun"
+    ]
+  },
+  "骑": {
+    "structure": "⿰马奇",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "𠃍",
+      "㇉",
+      "㇀",
+      "一",
+      "丿",
+      "丶",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "亅"
+    ],
+    "pinyin": "Qí",
+    "pinyinArray": [
+      "Qi"
+    ]
+  },
+  "骗": {
+    "structure": "⿰马扁",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "𠃍",
+      "㇉",
+      "㇀",
+      "丶",
+      "𠃍",
+      "一",
+      "丿",
+      "丨",
+      "𠃌",
+      "一",
+      "丨",
+      "丨"
+    ],
+    "pinyin": "Piàn",
+    "pinyinArray": [
+      "Pian"
+    ]
+  },
+  "骚": {
+    "structure": "⿰马蚤",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "𠃍",
+      "㇉",
+      "㇀",
+      "㇇|乛",
+      "㇏",
+      "丶",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丶"
+    ],
+    "pinyin": "Sāo",
+    "pinyinArray": [
+      "Sao"
+    ]
+  },
+  "骡": {
+    "structure": "⿰马累",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "𠃍",
+      "㇉",
+      "㇀",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "𠃋",
+      "𠃋",
+      "丶",
+      "亅",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Luó",
+    "pinyinArray": [
+      "Luo"
+    ]
+  },
+  "骤": {
+    "structure": "⿰马聚",
+    "strokeCount": 17,
+    "strokeShapes": [
+      "𠃍",
+      "㇉",
+      "㇀",
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "一",
+      "㇀",
+      "㇇|乛",
+      "丶",
+      "丿",
+      "丨",
+      "丿",
+      "丿",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Zhòu",
+    "pinyinArray": [
+      "Zhou"
+    ]
+  },
+  "骨": {
+    "structure": "⿱⑤月[G]",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "𠃍",
+      "㇀",
+      "㇇|乛",
+      "丨",
+      "𠃌",
+      "一",
+      "一"
+    ],
+    "pinyin": "Gǔ",
+    "pinyinArray": [
+      "Gu"
+    ]
+  },
+  "髓": {
+    "structure": "⿰骨遀",
+    "strokeCount": 21,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "𠃍",
+      "㇀",
+      "㇇|乛",
+      "丨",
+      "𠃌",
+      "一",
+      "一",
+      "一",
+      "丿",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "𠃌",
+      "一",
+      "一",
+      "丶",
+      "㇋",
+      "㇏"
+    ],
+    "pinyin": "Suǐ",
+    "pinyinArray": [
+      "Sui"
+    ]
+  },
+  "高": {
+    "structure": "⿳亠口冋",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃌",
+      "丨",
+      "𠃍",
+      "一"
+    ],
+    "pinyin": "Gāo",
+    "pinyinArray": [
+      "Gao"
+    ]
+  },
+  "鬓": {
+    "structure": "⿱髟宾",
+    "strokeCount": 20,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "一",
+      "一",
+      "一",
+      "𠃋",
+      "丶",
+      "丿",
+      "丿",
+      "丿",
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "丿",
+      "丨",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Bìn",
+    "pinyinArray": [
+      "Bin"
+    ]
+  },
+  "鬼": {
+    "structure": "⿱甶⿺儿厶",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "乚",
+      "𠃋",
+      "丶"
+    ],
+    "pinyin": "Guǐ",
+    "pinyinArray": [
+      "Gui"
+    ]
+  },
+  "魁": {
+    "structure": "⿺鬼斗",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "乚",
+      "𠃋",
+      "丶",
+      "丶",
+      "丶",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Kuí",
+    "pinyinArray": [
+      "Kui"
+    ]
+  },
+  "魂": {
+    "structure": "⿰云鬼",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "一",
+      "一",
+      "𠃋",
+      "丶",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "乚",
+      "𠃋",
+      "丶"
+    ],
+    "pinyin": "Hún",
+    "pinyinArray": [
+      "Hun"
+    ]
+  },
+  "魄": {
+    "structure": "⿰白鬼",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "乚",
+      "𠃋",
+      "丶"
+    ],
+    "pinyin": "Pò",
+    "pinyinArray": [
+      "Po"
+    ]
+  },
+  "魏": {
+    "structure": "⿰委鬼",
+    "strokeCount": 17,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "𡿨",
+      "丿",
+      "一",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "乚",
+      "𠃋",
+      "丶"
+    ],
+    "pinyin": "Wèi",
+    "pinyinArray": [
+      "Wei"
+    ]
+  },
+  "魔": {
+    "structure": "⿸麻鬼",
+    "strokeCount": 20,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "丨",
+      "丿",
+      "㇏",
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "乚",
+      "𠃋",
+      "丶"
+    ],
+    "pinyin": "Mó",
+    "pinyinArray": [
+      "Mo"
+    ]
+  },
+  "鱼": {
+    "structure": "⿳𠂊田一",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丿",
+      "㇇|乛",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "一"
+    ],
+    "pinyin": "Yú",
+    "pinyinArray": [
+      "Yu"
+    ]
+  },
+  "鲁": {
+    "structure": "⿱鱼日",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丿",
+      "㇇|乛",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Lǔ",
+    "pinyinArray": [
+      "Lu"
+    ]
+  },
+  "鲜": {
+    "structure": "⿰鱼羊",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "丿",
+      "㇇|乛",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "㇀",
+      "丶",
+      "丿",
+      "一",
+      "一",
+      "一",
+      "丨"
+    ],
+    "pinyin": "Xiǎn",
+    "pinyinArray": [
+      "Xian"
+    ]
+  },
+  "鲤": {
+    "structure": "⿰鱼里",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "丿",
+      "㇇|乛",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "㇀",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "一"
+    ],
+    "pinyin": "Lǐ",
+    "pinyinArray": [
+      "Li"
+    ]
+  },
+  "鲫": {
+    "structure": "⿰鱼即",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "丿",
+      "㇇|乛",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "㇀",
+      "𠃍",
+      "一",
+      "一",
+      "𠄌",
+      "丶",
+      "𠃌",
+      "丨"
+    ],
+    "pinyin": "Jì",
+    "pinyinArray": [
+      "Ji"
+    ]
+  },
+  "鲸": {
+    "structure": "⿰鱼京",
+    "strokeCount": 16,
+    "strokeShapes": [
+      "丿",
+      "㇇|乛",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "㇀",
+      "丶",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "亅",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Jīng",
+    "pinyinArray": [
+      "Jing"
+    ]
+  },
+  "鳄": {
+    "structure": "⿰鱼咢",
+    "strokeCount": 17,
+    "strokeShapes": [
+      "丿",
+      "㇇|乛",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "㇀",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "㇉"
+    ],
+    "pinyin": "Ě",
+    "pinyinArray": [
+      "E"
+    ]
+  },
+  "鳍": {
+    "structure": "⿰鱼耆",
+    "strokeCount": 18,
+    "strokeShapes": [
+      "丿",
+      "㇇|乛",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "㇀",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "丿",
+      "乚",
+      "丨",
+      "𠃍",
+      "一",
+      "一"
+    ],
+    "pinyin": "Qí",
+    "pinyinArray": [
+      "Qi"
+    ]
+  },
+  "鳖": {
+    "structure": "⿱敝鱼",
+    "strokeCount": 19,
+    "strokeShapes": [
+      "丶",
+      "丿",
+      "丨",
+      "𠃌",
+      "丨",
+      "丿",
+      "丶",
+      "丿",
+      "一",
+      "丿",
+      "㇏",
+      "丿",
+      "㇇|乛",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "一"
+    ],
+    "pinyin": "Biē",
+    "pinyinArray": [
+      "Bie"
+    ]
+  },
+  "鳞": {
+    "structure": "⿰鱼粦",
+    "strokeCount": 20,
+    "strokeShapes": [
+      "丿",
+      "㇇|乛",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "㇀",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "㇏",
+      "丿",
+      "㇇|乛",
+      "丶",
+      "一",
+      "𠃋",
+      "丨"
+    ],
+    "pinyin": "Lín",
+    "pinyinArray": [
+      "Lin"
+    ]
+  },
+  "鸟": {
+    "structure": "⿹④一",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "丶",
+      "㇉",
+      "一"
+    ],
+    "pinyin": "Niǎo",
+    "pinyinArray": [
+      "Niao"
+    ]
+  },
+  "鸠": {
+    "structure": "⿰九鸟",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丿",
+      "⺄",
+      "丿",
+      "𠃌",
+      "丶",
+      "㇉",
+      "一"
+    ],
+    "pinyin": "Jiū",
+    "pinyinArray": [
+      "Jiu"
+    ]
+  },
+  "鸡": {
+    "structure": "⿰又鸟",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "㇇|乛",
+      "丶",
+      "丿",
+      "𠃌",
+      "丶",
+      "㇉",
+      "一"
+    ],
+    "pinyin": "Jī",
+    "pinyinArray": [
+      "Ji"
+    ]
+  },
+  "鸣": {
+    "structure": "⿰口鸟",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "𠃌",
+      "丶",
+      "㇉",
+      "一"
+    ],
+    "pinyin": "Míng",
+    "pinyinArray": [
+      "Ming"
+    ]
+  },
+  "鸥": {
+    "structure": "⿰区鸟",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "丶",
+      "㇄",
+      "丿",
+      "𠃌",
+      "丶",
+      "㇉",
+      "一"
+    ],
+    "pinyin": "Ōu",
+    "pinyinArray": [
+      "Ou"
+    ]
+  },
+  "鸦": {
+    "structure": "⿰牙鸟",
+    "strokeCount": 9,
+    "strokeShapes": [
+      "一",
+      "𠃋",
+      "亅",
+      "丿",
+      "丿",
+      "𠃌",
+      "丶",
+      "㇉",
+      "一"
+    ],
+    "pinyin": "Yā",
+    "pinyinArray": [
+      "Ya"
+    ]
+  },
+  "鸭": {
+    "structure": "⿰甲鸟",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丨",
+      "丿",
+      "𠃌",
+      "丶",
+      "㇉",
+      "一"
+    ],
+    "pinyin": "Yā",
+    "pinyinArray": [
+      "Ya"
+    ]
+  },
+  "鸯": {
+    "structure": "⿱央鸟",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "㇏",
+      "丿",
+      "𠃌",
+      "丶",
+      "㇉",
+      "一"
+    ],
+    "pinyin": "Yāng",
+    "pinyinArray": [
+      "Yang"
+    ]
+  },
+  "鸳": {
+    "structure": "⿱夗鸟",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "㇇|乛",
+      "丶",
+      "𠃌",
+      "乚",
+      "丿",
+      "𠃌",
+      "丶",
+      "㇉",
+      "一"
+    ],
+    "pinyin": "Yuān",
+    "pinyinArray": [
+      "Yuan"
+    ]
+  },
+  "鸵": {
+    "structure": "⿰鸟它",
+    "strokeCount": 10,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "丶",
+      "㇉",
+      "㇀",
+      "丶",
+      "㇀",
+      "㇇|乛",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Tuó",
+    "pinyinArray": [
+      "Tuo"
+    ]
+  },
+  "鸽": {
+    "structure": "⿰合鸟",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丿",
+      "丶",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丿",
+      "𠃌",
+      "丶",
+      "㇉",
+      "一"
+    ],
+    "pinyin": "Gē",
+    "pinyinArray": [
+      "Ge"
+    ]
+  },
+  "鸿": {
+    "structure": "⿰江鸟",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "一",
+      "丨",
+      "㇀",
+      "丿",
+      "𠃌",
+      "丶",
+      "㇉",
+      "一"
+    ],
+    "pinyin": "Hóng",
+    "pinyinArray": [
+      "Hong"
+    ]
+  },
+  "鹃": {
+    "structure": "⿰肙鸟",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "𠃌",
+      "一",
+      "一",
+      "丿",
+      "𠃌",
+      "丶",
+      "㇉",
+      "一"
+    ],
+    "pinyin": "Juān",
+    "pinyinArray": [
+      "Juan"
+    ]
+  },
+  "鹅": {
+    "structure": "⿰我鸟",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "亅",
+      "㇀",
+      "㇂|㇃",
+      "丿",
+      "丶",
+      "丿",
+      "𠃌",
+      "丶",
+      "㇉",
+      "一"
+    ],
+    "pinyin": "É",
+    "pinyinArray": [
+      "E"
+    ]
+  },
+  "鹉": {
+    "structure": "⿰武鸟",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "一",
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "㇀",
+      "㇂|㇃",
+      "丶",
+      "丿",
+      "𠃌",
+      "丶",
+      "㇉",
+      "一"
+    ],
+    "pinyin": "Wǔ",
+    "pinyinArray": [
+      "Wu"
+    ]
+  },
+  "鹊": {
+    "structure": "⿰昔鸟",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "丿",
+      "𠃌",
+      "丶",
+      "㇉",
+      "一"
+    ],
+    "pinyin": "Què",
+    "pinyinArray": [
+      "Que"
+    ]
+  },
+  "鹏": {
+    "structure": "⿰朋鸟",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "丿",
+      "𠃌",
+      "一",
+      "一",
+      "丿",
+      "𠃌",
+      "丶",
+      "㇉",
+      "一"
+    ],
+    "pinyin": "Péng",
+    "pinyinArray": [
+      "Peng"
+    ]
+  },
+  "鹤": {
+    "structure": "⿰隺鸟",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "㇀",
+      "㇇|乛",
+      "丿",
+      "丨",
+      "丶",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "𠃌",
+      "丶",
+      "㇉",
+      "一"
+    ],
+    "pinyin": "Hè",
+    "pinyinArray": [
+      "He"
+    ]
+  },
+  "鹦": {
+    "structure": "⿰婴鸟",
+    "strokeCount": 16,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "丿",
+      "丶",
+      "丨",
+      "𠃍",
+      "丿",
+      "丶",
+      "𡿨",
+      "丿",
+      "一",
+      "丿",
+      "𠃌",
+      "丶",
+      "㇉",
+      "一"
+    ],
+    "pinyin": "Yīng",
+    "pinyinArray": [
+      "Ying"
+    ]
+  },
+  "鹰": {
+    "structure": "⿸䧹鸟",
+    "strokeCount": 18,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "丿",
+      "丨",
+      "丿",
+      "丨",
+      "丶",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "𠃌",
+      "丶",
+      "㇉",
+      "一"
+    ],
+    "pinyin": "Yīng",
+    "pinyinArray": [
+      "Ying"
+    ]
+  },
+  "鹿": {
+    "structure": "⿸⿸广⿻コ⿰丨丨比",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "𠃍",
+      "丨",
+      "丨",
+      "一",
+      "一",
+      "𠄌",
+      "丿",
+      "乚"
+    ],
+    "pinyin": "Lù",
+    "pinyinArray": [
+      "Lu"
+    ]
+  },
+  "麦": {
+    "structure": "⿱龶夂",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "一",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Mài",
+    "pinyinArray": [
+      "Mai"
+    ]
+  },
+  "麸": {
+    "structure": "⿰麦夫[G]",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "㇇|乛",
+      "丶",
+      "一",
+      "一",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Fū",
+    "pinyinArray": [
+      "Fu"
+    ]
+  },
+  "麻": {
+    "structure": "⿸广林[GJ]",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "一",
+      "丨",
+      "丿",
+      "㇏"
+    ],
+    "pinyin": "Má",
+    "pinyinArray": [
+      "Ma"
+    ]
+  },
+  "黄": {
+    "structure": "⿳龷由八[GJ]",
+    "strokeCount": 11,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Huáng",
+    "pinyinArray": [
+      "Huang"
+    ]
+  },
+  "黍": {
+    "structure": "⿱禾⿱人氺",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丿",
+      "㇏",
+      "亅",
+      "丶",
+      "㇀",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Shǔ",
+    "pinyinArray": [
+      "Shu"
+    ]
+  },
+  "黎": {
+    "structure": "⿱𥝢⿱人氺",
+    "strokeCount": 15,
+    "strokeShapes": [
+      "丿",
+      "一",
+      "丨",
+      "丿",
+      "丶",
+      "丿",
+      "𠃌",
+      "丿",
+      "丿",
+      "㇏",
+      "亅",
+      "丶",
+      "㇀",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Lí",
+    "pinyinArray": [
+      "Li"
+    ]
+  },
+  "黑": {
+    "structure": "⿱⑧灬",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "一",
+      "一",
+      "㇀",
+      "丶",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Hēi",
+    "pinyinArray": [
+      "Hei"
+    ]
+  },
+  "黔": {
+    "structure": "⿰黑今",
+    "strokeCount": 16,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "一",
+      "㇀",
+      "㇀",
+      "丶",
+      "丶",
+      "丶",
+      "丿",
+      "㇏",
+      "丶",
+      "㇇|乛"
+    ],
+    "pinyin": "Qián",
+    "pinyinArray": [
+      "Qian"
+    ]
+  },
+  "默": {
+    "structure": "⿰黑犬",
+    "strokeCount": 16,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "丶",
+      "丿",
+      "一",
+      "丨",
+      "一",
+      "㇀",
+      "㇀",
+      "丶",
+      "丶",
+      "丶",
+      "一",
+      "丿",
+      "㇏",
+      "丶"
+    ],
+    "pinyin": "Mò",
+    "pinyinArray": [
+      "Mo"
+    ]
+  },
+  "鼎": {
+    "structure": "⿶⑧目",
+    "strokeCount": 12,
+    "strokeShapes": [
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "ㄣ|𠃑",
+      "一",
+      "丿",
+      "丨",
+      "一",
+      "丨",
+      "𠃍"
+    ],
+    "pinyin": "Dǐng",
+    "pinyinArray": [
+      "Ding"
+    ]
+  },
+  "鼓": {
+    "structure": "⿰壴支",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "一",
+      "丨",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丶",
+      "丿",
+      "㇀",
+      "一",
+      "丨",
+      "㇇|乛",
+      "㇏"
+    ],
+    "pinyin": "Gǔ",
+    "pinyinArray": [
+      "Gu"
+    ]
+  },
+  "鼠": {
+    "structure": "⿱臼⑦",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "一",
+      "𠃍",
+      "一",
+      "一",
+      "𠄌",
+      "丶",
+      "丶",
+      "𠄌",
+      "丶",
+      "丶",
+      "㇂|㇃"
+    ],
+    "pinyin": "Shǔ",
+    "pinyinArray": [
+      "Shu"
+    ]
+  },
+  "鼻": {
+    "structure": "⿱自畀[GT]",
+    "strokeCount": 14,
+    "strokeShapes": [
+      "丿",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "一",
+      "丨",
+      "𠃍",
+      "一",
+      "丨",
+      "一",
+      "一",
+      "丿",
+      "丨"
+    ],
+    "pinyin": "Bí",
+    "pinyinArray": [
+      "Bi"
+    ]
+  },
+  "齐": {
+    "structure": "⿱文⿰丿丨",
+    "strokeCount": 6,
+    "strokeShapes": [
+      "丶",
+      "一",
+      "丿",
+      "㇏",
+      "丿",
+      "丨"
+    ],
+    "pinyin": "Qí",
+    "pinyinArray": [
+      "Qi"
+    ]
+  },
+  "齿": {
+    "structure": "齿",
+    "strokeCount": 8,
+    "strokeShapes": [
+      "丨",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "丶",
+      "㇄",
+      "丨"
+    ],
+    "pinyin": "Chǐ",
+    "pinyinArray": [
+      "Chi"
+    ]
+  },
+  "龄": {
+    "structure": "⿰齿令",
+    "strokeCount": 13,
+    "strokeShapes": [
+      "丨",
+      "一",
+      "丨",
+      "一",
+      "丿",
+      "丶",
+      "㇄",
+      "丨",
+      "丿",
+      "㇏",
+      "丶",
+      "㇇|乛",
+      "丶"
+    ],
+    "pinyin": "Líng",
+    "pinyinArray": [
+      "Ling"
+    ]
+  },
+  "龙": {
+    "structure": "⿻尤丿",
+    "strokeCount": 5,
+    "strokeShapes": [
+      "一",
+      "丿",
+      "乚",
+      "丿",
+      "丶"
+    ],
+    "pinyin": "Lóng",
+    "pinyinArray": [
+      "Long"
+    ]
+  },
+  "龟": {
+    "structure": "⿱𠂊⿻日乚",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丿",
+      "㇇|乛",
+      "丨",
+      "𠃍",
+      "一",
+      "一",
+      "乚"
+    ],
+    "pinyin": "Guī",
+    "pinyinArray": [
+      "Gui"
+    ]
+  },
+  "沁": {
+    "structure": "⿰氵心",
+    "strokeCount": 7,
+    "strokeShapes": [
+      "丶",
+      "丶",
+      "㇀",
+      "㇀",
+      "㇂|㇃",
+      "丶",
+      "丶"
+    ],
+    "pinyin": "Qìn",
+    "pinyinArray": [
+      "Qin"
+    ]
+  }
+};
+
+module.exports = {
+  HANZI_DATA
+};

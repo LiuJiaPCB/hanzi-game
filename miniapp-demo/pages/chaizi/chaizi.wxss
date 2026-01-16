@@ -1,0 +1,294 @@
+/* pages/chaizi/chaizi.wxss */
+.container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 30rpx;
+}
+
+.title {
+  font-size: 40rpx;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  margin-bottom: 30rpx;
+  text-shadow: 2rpx 2rpx 4rpx rgba(0, 0, 0, 0.2);
+}
+
+/* 输入区 */
+.input-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: white;
+  padding: 25rpx 30rpx;
+  border-radius: 50rpx;
+  margin-bottom: 30rpx;
+  box-shadow: 0 8rpx 20rpx rgba(0, 0, 0, 0.1);
+  gap: 15rpx;
+}
+
+.input-label {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #8b4513;
+  margin-right: 20rpx;
+}
+
+.char-input {
+  width: 180rpx;
+  height: 100rpx;
+  font-size: 48rpx;
+  text-align: center;
+  border: 4rpx solid #667eea;
+  border-radius: 20rpx;
+  margin-right: 20rpx;
+  flex-shrink: 0;
+  padding: 0 10rpx;
+  box-sizing: border-box;
+  background: #fff;
+  color: #333;
+}
+
+.btn-primary,
+.btn-secondary {
+  padding: 16rpx 24rpx;
+  font-size: 26rpx;
+  border-radius: 40rpx;
+  color: white;
+  border: none;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  box-shadow: 0 6rpx 0 #5568d3;
+}
+
+.btn-secondary {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  box-shadow: 0 6rpx 0 #d35400;
+}
+
+.btn-primary:active,
+.btn-secondary:active {
+  transform: translateY(4rpx);
+  box-shadow: 0 2rpx 0 #5568d3;
+}
+
+/* 主内容区 */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30rpx;
+  background: white;
+  padding: 40rpx;
+  border-radius: 40rpx;
+  box-shadow: 0 15rpx 40rpx rgba(0, 0, 0, 0.1);
+  border: 8rpx solid #FFD1D1;
+}
+
+/* 汉字展示区 */
+.hanzi-display {
+  position: relative;
+  width: 300rpx;
+  height: 300rpx;
+  border: 4rpx solid #eee;
+  border-radius: 30rpx;
+  background: #fff;
+  flex-shrink: 0;
+  overflow: hidden; /* 防止溢出 */
+}
+
+.hanzi-canvas {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  transition: opacity 0.1s ease-out; /* 更快的过渡 */
+}
+
+/* 加载中状态：完全隐藏，避免看到销毁过程 */
+.hanzi-canvas.loading {
+  opacity: 0;
+  pointer-events: none; /* 禁止交互 */
+}
+
+/* 加载遮罩层：完全覆盖canvas，避免看到销毁和重建过程 */
+.canvas-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30rpx;
+}
+
+/* 右侧面板 */
+.right-panel {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30rpx;
+}
+
+/* 笔画选择区 */
+.stroke-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20rpx;
+}
+
+.stroke-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15rpx;
+  justify-content: flex-start;
+}
+
+.loading-hint {
+  width: 100%;
+  text-align: center;
+  color: #999;
+  font-size: 28rpx;
+  padding: 20rpx 0;
+}
+
+.stroke-btn {
+  display: inline-block !important;
+  width: calc((100% - 60rpx) / 5) !important; /* 一行5个，减去4个gap的宽度 */
+  min-width: auto !important;
+  height: 70rpx;
+  line-height: 70rpx;
+  padding: 0;
+  margin: 0;
+  font-size: 32rpx;
+  background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+  border: 2rpx solid #fff;
+  border-radius: 15rpx;
+  box-shadow: 0 4rpx 0 #b8c5d6;
+  color: #333;
+  font-weight: bold;
+  transition: all 0.2s;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.stroke-btn::after {
+  border: none;
+}
+
+.stroke-btn.active {
+  background: linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%);
+  transform: scale(0.95);
+  box-shadow: 0 2rpx 0 #b8c5d6;
+}
+
+.stroke-btn:active {
+  transform: translateY(4rpx);
+}
+
+/* 操作按钮 */
+.action-buttons {
+  display: flex;
+  gap: 20rpx;
+}
+
+.btn-find,
+.btn-reset {
+  flex: 1;
+  padding: 20rpx;
+  font-size: 32rpx;
+  border-radius: 30rpx;
+  color: white;
+  border: none;
+  font-weight: bold;
+}
+
+.btn-find {
+  background: linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%);
+  box-shadow: 0 6rpx 0 #5bbd5b;
+}
+
+.btn-reset {
+  background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+  box-shadow: 0 6rpx 0 #d35400;
+}
+
+.btn-find:active,
+.btn-reset:active {
+  transform: translateY(4rpx);
+  box-shadow: 0 2rpx 0 #5bbd5b;
+}
+
+/* 结果展示区 */
+.result-section {
+  flex: 1;
+  padding: 30rpx;
+  border: 4rpx dashed #667eea;
+  border-radius: 30rpx;
+  background: #f8f9ff;
+  min-height: 300rpx;
+}
+
+.result-title {
+  display: block;
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #667eea;
+  margin-bottom: 20rpx;
+}
+
+.result-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20rpx;
+  justify-content: flex-start;
+}
+
+.empty-hint {
+  width: 100%;
+  text-align: center;
+  color: #aaa;
+  font-size: 28rpx;
+  padding: 40rpx 0;
+}
+
+.char-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  padding: 15rpx;
+  border-radius: 20rpx;
+  border: 4rpx solid #FFE4E1;
+  box-shadow: 0 4rpx 10rpx rgba(0, 0, 0, 0.05);
+  width: calc((100% - 40rpx) / 3); /* 一行3个，减去2个gap的宽度 */
+  box-sizing: border-box;
+}
+
+.char-pinyin {
+  font-size: 24rpx;
+  color: #f5576c;
+  font-weight: bold;
+  margin-bottom: 10rpx;
+}
+
+.char-text {
+  font-size: 36rpx;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 10rpx;
+}
+
+.char-canvas {
+  width: 70rpx;
+  height: 70rpx;
+  display: block;
+}

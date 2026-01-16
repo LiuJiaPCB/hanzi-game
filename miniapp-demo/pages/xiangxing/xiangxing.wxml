@@ -1,0 +1,68 @@
+<!--pages/xiangxing/xiangxing.wxml-->
+<view class="container">
+  <view class="header">
+    <text class="title">看图找汉字，象形字变变变！</text>
+  </view>
+
+  <view class="match-stage">
+    <!-- 左侧图片卡片 -->
+    <view class="match-col">
+      <view 
+        wx:for="{{currentPics}}" 
+        wx:key="char"
+        class="pic-card {{selPic && selPic.char === item.char ? 'selected' : ''}}"
+        bindtap="selectPic"
+        data-item="{{item}}"
+      >
+        <image class="pic-image" src="{{item.pic}}" mode="aspectFit"></image>
+      </view>
+    </view>
+
+    <!-- 中间配对区域 -->
+    <view class="center-area">
+      <view class="slots">
+        <view class="slot">
+          <image wx:if="{{selPic}}" class="slot-image" src="{{selPic.pic}}" mode="aspectFit"></image>
+          <text wx:else class="slot-placeholder">?</text>
+        </view>
+        <view class="slot">
+          <text wx:if="{{selHan}}" class="slot-hanzi">{{selHan.char}}</text>
+          <text wx:else class="slot-placeholder">?</text>
+        </view>
+      </view>
+      <button class="btn-check" bindtap="checkMatch">💡 变一变</button>
+      <text class="hint">先从左右各选一张卡片哦</text>
+    </view>
+
+    <!-- 右侧汉字卡片 -->
+    <view class="match-col">
+      <view 
+        wx:for="{{currentHans}}" 
+        wx:key="char"
+        class="han-card {{selHan && selHan.char === item.char ? 'selected' : ''}}"
+        bindtap="selectHan"
+        data-item="{{item}}"
+      >
+        <text class="han-text">{{item.char}}</text>
+      </view>
+    </view>
+  </view>
+</view>
+
+<!-- 成功弹窗 -->
+<view class="modal-overlay" wx:if="{{showModal}}" bindtap="closeModal"></view>
+<view class="modal" wx:if="{{showModal}}">
+  <view class="modal-content">
+    <text class="modal-title">🌟 太棒啦！找对了！</text>
+    <view class="modal-hanzi">{{matchedChar}}</view>
+    <text class="modal-tip">{{matchedTip}}</text>
+    
+    <!-- 语音播放按钮 -->
+    <view class="voice-buttons">
+      <button class="btn-voice" bindtap="playCharVoice">🔊 听发音</button>
+      <button class="btn-voice" bindtap="playTipVoice">📢 听提示</button>
+    </view>
+    
+    <button class="btn-continue" bindtap="closeModal">继续挑战</button>
+  </view>
+</view>

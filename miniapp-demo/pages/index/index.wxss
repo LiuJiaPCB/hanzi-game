@@ -1,0 +1,143 @@
+/* pages/index/index.wxss */
+.container {
+  padding: 40rpx;
+  min-height: 100vh;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 40rpx;
+}
+
+.title {
+  font-size: 48rpx;
+  font-weight: bold;
+  color: #333;
+  display: block;
+  margin-bottom: 10rpx;
+}
+
+.subtitle {
+  font-size: 28rpx;
+  color: #666;
+  display: block;
+}
+
+.card {
+  background: white;
+  border-radius: 20rpx;
+  padding: 40rpx;
+  margin-bottom: 30rpx;
+  box-shadow: 0 4rpx 20rpx rgba(0, 0, 0, 0.08);
+}
+
+.hanzi-display {
+  font-size: 240rpx;
+  text-align: center;
+  color: #4CAF50;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 30rpx;
+}
+
+.hanzi-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15rpx;
+  font-size: 32rpx;
+}
+
+.info-label {
+  color: #666;
+  margin-right: 10rpx;
+}
+
+.info-value {
+  color: #333;
+  font-weight: bold;
+}
+
+.actions {
+  display: flex;
+  gap: 20rpx;
+  margin-bottom: 30rpx;
+}
+
+.btn-primary {
+  flex: 1;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 12rpx;
+  padding: 25rpx;
+  font-size: 32rpx;
+  border: none;
+}
+
+.btn-secondary {
+  flex: 1;
+  background-color: #2196F3;
+  color: white;
+  border-radius: 12rpx;
+  padding: 25rpx;
+  font-size: 32rpx;
+  border: none;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20rpx;
+  margin-bottom: 30rpx;
+}
+
+.feature-item {
+  background: white;
+  border-radius: 16rpx;
+  padding: 40rpx 20rpx;
+  text-align: center;
+  box-shadow: 0 2rpx 12rpx rgba(0, 0, 0, 0.08);
+  transition: all 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1;
+}
+
+.feature-item:active {
+  transform: scale(0.95);
+}
+
+.feature-icon {
+  font-size: 60rpx;
+  display: block;
+  margin-bottom: 15rpx;
+}
+
+.feature-name {
+  font-size: 28rpx;
+  color: #333;
+  display: block;
+}
+
+.tips {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 16rpx;
+  padding: 30rpx;
+  color: white;
+}
+
+.tips-title {
+  font-size: 32rpx;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10rpx;
+}
+
+.tips-content {
+  font-size: 26rpx;
+  line-height: 1.6;
+  display: block;
+  opacity: 0.9;
+}

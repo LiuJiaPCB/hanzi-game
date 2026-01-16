@@ -1,0 +1,15 @@
+{
+  "name": "hanzi-miniapp-demo",
+  "version": "1.0.0",
+  "description": "汉字实验室小程序",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "patch": "node patch-hanzi-writer.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "hanzi-writer-miniprogram": "^1.1.0"
+  }
+}
