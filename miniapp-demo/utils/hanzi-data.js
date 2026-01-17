@@ -19,7 +19,8 @@ const HANZI_DATA = {
     "pinyin": "Yī",
     "pinyinArray": [
       "Yi"
-    ]
+    ],
+    "word": "合一"
   },
   "丁": {
     "structure": "⿱一亅",
@@ -135,7 +136,8 @@ const HANZI_DATA = {
     "pinyin": "Yú",
     "pinyinArray": [
       "Yu"
-    ]
+    ],
+    "word": "参与"
   },
   "丐": {
     "structure": "丐",
@@ -252,7 +254,8 @@ const HANZI_DATA = {
     "pinyin": "Yè",
     "pinyinArray": [
       "Ye"
-    ]
+    ],
+    "word": "毕业"
   },
   "丛": {
     "structure": "⿱从一",
@@ -484,6 +487,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Wei"
     ]
+,
+    "word": "因为"
   },
   "主": {
     "structure": "⿱亠土",
@@ -560,6 +565,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Jiu"
     ]
+,
+    "word": "长久"
   },
   "么": {
     "structure": "⿱丿厶",
@@ -672,6 +679,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Le"
     ]
+,
+    "word": "快乐"
   },
   "乒": {
     "structure": "⿱丘丿",
@@ -758,6 +767,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Cheng"
     ]
+,
+    "word": "乘法"
   },
   "乙": {
     "structure": "乙",
@@ -781,6 +792,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Jiu"
     ]
+,
+    "word": "九月"
   },
   "乞": {
     "structure": "⿱𠂉乙",
@@ -820,6 +833,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Xi"
     ]
+,
+    "word": "学习"
   },
   "乡": {
     "structure": "乡",
@@ -847,6 +862,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Shu"
     ]
+,
+    "word": "书本"
   },
   "买": {
     "structure": "⿱乛头",
@@ -880,6 +897,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Luan"
     ]
+,
+    "word": "慌乱"
   },
   "乳": {
     "structure": "⿰孚乚",
@@ -931,6 +950,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Le"
     ]
+,
+    "word": "完了"
   },
   "予": {
     "structure": "⿱龴𠄐",
@@ -979,6 +1000,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Shi"
     ]
+,
+    "word": "事情"
   },
   "二": {
     "structure": "⿱一一",
@@ -991,6 +1014,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Er"
     ]
+,
+    "word": "二月"
   },
   "于": {
     "structure": "于",
@@ -1004,6 +1029,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Yu"
     ]
+,
+    "word": "终于"
   },
   "亏": {
     "structure": "⿱一丂",
@@ -1031,6 +1058,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Yun"
     ]
+,
+    "word": "白云"
   },
   "互": {
     "structure": "⿱一彑",
@@ -1059,6 +1088,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Wu"
     ]
+,
+    "word": "五月"
   },
   "井": {
     "structure": "井",
@@ -1107,6 +1138,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Xie"
     ]
+,
+    "word": "一些"
   },
   "亡": {
     "structure": "⿱亠𠃊",
@@ -1120,6 +1153,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Wang"
     ]
+,
+    "word": "灭亡"
   },
   "交": {
     "structure": "⿱亠父",
@@ -1275,6 +1310,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Liang"
     ]
+,
+    "word": "明亮"
   },
   "亲": {
     "structure": "⿱立朩",
@@ -1403,6 +1440,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Jin"
     ]
+,
+    "word": "今天"
   },
   "介": {
     "structure": "⿱人⿰丿丨",
@@ -1563,6 +1602,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Dai"
     ]
+,
+    "word": "替代"
   },
   "令": {
     "structure": "⿱亽龴[G]",
@@ -1592,6 +1633,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Yi"
     ]
+,
+    "word": "所以"
   },
   "仪": {
     "structure": "⿰亻义",
@@ -1670,6 +1713,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Jian"
     ]
+,
+    "word": "文件"
   },
   "价": {
     "structure": "⿰亻介",
@@ -1830,6 +1875,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Xiu"
     ]
+,
+    "word": "休息"
   },
   "众": {
     "structure": "⿱人从",
@@ -1926,6 +1973,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Wei"
     ]
+,
+    "word": "伟大"
   },
   "传": {
     "structure": "⿰亻专",
@@ -1942,6 +1991,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Chuan"
     ]
+,
+    "word": "传递"
   },
   "伤": {
     "structure": "⿰亻⿱𠂉力",
@@ -2159,6 +2210,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Wei"
     ]
+,
+    "word": "位置"
   },
   "低": {
     "structure": "⿰亻氐",
@@ -2176,6 +2229,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Di"
     ]
+,
+    "word": "低头"
   },
   "住": {
     "structure": "⿰亻主",
@@ -2227,6 +2282,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Ti"
     ]
+,
+    "word": "身体"
   },
   "何": {
     "structure": "⿰亻可",
@@ -2295,6 +2352,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Zuo"
     ]
+,
+    "word": "作品"
   },
   "你": {
     "structure": "⿰亻尔",
@@ -2437,6 +2496,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Li"
     ]
+,
+    "word": "例子"
   },
   "侍": {
     "structure": "⿰亻寺",
@@ -3224,6 +3285,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Jia"
     ]
+,
+    "word": "假期"
   },
   "偎": {
     "structure": "⿰亻畏",
@@ -3308,6 +3371,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Ting"
     ]
+,
+    "word": "停止"
   },
   "健": {
     "structure": "⿰亻建",
@@ -3569,6 +3634,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Xiang"
     ]
+,
+    "word": "好像"
   },
   "僚": {
     "structure": "⿰亻尞",
@@ -3823,6 +3890,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Xian"
     ]
+,
+    "word": "先后"
   },
   "光": {
     "structure": "⿱⺌兀",
@@ -3839,6 +3908,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Guang"
     ]
+,
+    "word": "光线"
   },
   "克": {
     "structure": "⿱古儿",
@@ -3908,6 +3979,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Tu"
     ]
+,
+    "word": "兔子"
   },
   "党": {
     "structure": "⿱龸兄",
@@ -4001,6 +4074,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Quan"
     ]
+,
+    "word": "安全"
   },
   "八": {
     "structure": "八",
@@ -4013,6 +4088,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Ba"
     ]
+,
+    "word": "八月"
   },
   "公": {
     "structure": "⿱八厶",
@@ -4041,6 +4118,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Liu"
     ]
+,
+    "word": "六月"
   },
   "兰": {
     "structure": "⿱丷三",
@@ -4072,6 +4151,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Gong"
     ]
+,
+    "word": "共同"
   },
   "关": {
     "structure": "⿱丷天[G]",
@@ -4088,6 +4169,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Guan"
     ]
+,
+    "word": "关心"
   },
   "兴": {
     "structure": "⿳𭕄一八",
@@ -4275,6 +4358,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Nei"
     ]
+,
+    "word": "内容"
   },
   "冈": {
     "structure": "⿵冂㐅",
@@ -4320,6 +4405,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Zai"
     ]
+,
+    "word": "再次"
   },
   "冒": {
     "structure": "⿱冃目[GTKV]",
@@ -4389,6 +4476,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Xie"
     ]
+,
+    "word": "写字"
   },
   "军": {
     "structure": "⿱冖车",
@@ -4475,6 +4564,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Dong"
     ]
+,
+    "word": "冬天"
   },
   "冯": {
     "structure": "⿰冫马",
@@ -4506,6 +4597,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Bing"
     ]
+,
+    "word": "冰块"
   },
   "冲": {
     "structure": "⿰冫中",
@@ -4555,6 +4648,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Kuang"
     ]
+,
+    "word": "实况"
   },
   "冶": {
     "structure": "⿰冫台",
@@ -4589,6 +4684,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Leng"
     ]
+,
+    "word": "冷静"
   },
   "冻": {
     "structure": "⿰冫东",
@@ -4664,6 +4761,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Zhun"
     ]
+,
+    "word": "准确"
   },
   "凉": {
     "structure": "⿰冫京",
@@ -4684,6 +4783,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Liang"
     ]
+,
+    "word": "凉爽"
   },
   "凌": {
     "structure": "⿰冫夌",
@@ -4725,6 +4826,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Jian"
     ]
+,
+    "word": "减法"
   },
   "凑": {
     "structure": "⿰冫奏[GT]",
@@ -4992,6 +5095,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Chu"
     ]
+,
+    "word": "出入"
   },
   "击": {
     "structure": "⿱⿻二丨凵",
@@ -5007,6 +5112,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Ji"
     ]
+,
+    "word": "打击"
   },
   "函": {
     "structure": "⿶凵⿻了⿱丷八[GTV]",
@@ -5098,6 +5205,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Fen"
     ]
+,
+    "word": "分钟"
   },
   "切": {
     "structure": "⿰七刀",
@@ -5112,6 +5221,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Qie"
     ]
+,
+    "word": "迫切"
   },
   "刊": {
     "structure": "⿰干刂",
@@ -5324,6 +5435,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Li"
     ]
+,
+    "word": "顺利"
   },
   "别": {
     "structure": "⿰另刂",
@@ -5341,6 +5454,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Bie"
     ]
+,
+    "word": "差别"
   },
   "刮": {
     "structure": "⿰舌刂",
@@ -5377,6 +5492,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Dao"
     ]
+,
+    "word": "到达"
   },
   "制": {
     "structure": "⿰⿻牛冂刂",
@@ -5578,6 +5695,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Qian"
     ]
+,
+    "word": "前进"
   },
   "剑": {
     "structure": "⿰佥刂",
@@ -5823,6 +5942,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Li"
     ]
+,
+    "word": "实力"
   },
   "劝": {
     "structure": "⿰又力",
@@ -5866,6 +5987,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Gong"
     ]
+,
+    "word": "成功"
   },
   "加": {
     "structure": "⿰力口",
@@ -5881,6 +6004,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Jia"
     ]
+,
+    "word": "加法"
   },
   "务": {
     "structure": "⿱夂力",
@@ -5928,6 +6053,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Dong"
     ]
+,
+    "word": "走动"
   },
   "助": {
     "structure": "⿰且力",
@@ -6086,6 +6213,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Yong"
     ]
+,
+    "word": "勇敢"
   },
   "勉": {
     "structure": "⿺免力",
@@ -6338,6 +6467,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Hua"
     ]
+,
+    "word": "变化"
   },
   "北": {
     "structure": "⿰③匕",
@@ -6353,6 +6484,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Bei"
     ]
+,
+    "word": "北方"
   },
   "匙": {
     "structure": "⿺是匕",
@@ -6525,6 +6658,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Shi"
     ]
+,
+    "word": "十分"
   },
   "千": {
     "structure": "⿱丿十",
@@ -6538,6 +6673,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Qian"
     ]
+,
+    "word": "千里"
   },
   "升": {
     "structure": "⿱丿廾",
@@ -6581,6 +6718,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Ban"
     ]
+,
+    "word": "半天"
   },
   "华": {
     "structure": "⿱化十",
@@ -6685,6 +6824,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Dan"
     ]
+,
+    "word": "单独"
   },
   "卖": {
     "structure": "⿱十买",
@@ -6722,6 +6863,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Nan"
     ]
+,
+    "word": "南方"
   },
   "博": {
     "structure": "⿰十尃[GTKV]",
@@ -6744,6 +6887,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Bo"
     ]
+,
+    "word": "广博"
   },
   "卜": {
     "structure": "卜",
@@ -7169,6 +7314,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Yuan"
     ]
+,
+    "word": "原来"
   },
   "厢": {
     "structure": "⿸厂相",
@@ -7249,6 +7396,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Qu"
     ]
+,
+    "word": "去年"
   },
   "县": {
     "structure": "⿱且厶",
@@ -7397,6 +7546,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Fa"
     ]
+,
+    "word": "头发"
   },
   "叔": {
     "structure": "⿰尗又",
@@ -7469,6 +7620,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Bian"
     ]
+,
+    "word": "变化"
   },
   "叙": {
     "structure": "⿰余又",
@@ -7543,6 +7696,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Kou"
     ]
+,
+    "word": "口才"
   },
   "古": {
     "structure": "⿱十口",
@@ -7558,6 +7713,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Gu"
     ]
+,
+    "word": "古代"
   },
   "句": {
     "structure": "⿹勹口",
@@ -7573,6 +7730,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Ju"
     ]
+,
+    "word": "句子"
   },
   "另": {
     "structure": "⿱口力",
@@ -7723,6 +7882,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Shi"
     ]
+,
+    "word": "历史"
   },
   "右": {
     "structure": "⿸𠂇口",
@@ -7738,6 +7899,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "You"
     ]
+,
+    "word": "右边"
   },
   "叶": {
     "structure": "⿰口十",
@@ -7860,6 +8023,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Chi"
     ]
+,
+    "word": "吃饭"
   },
   "各": {
     "structure": "⿱夂口",
@@ -7908,6 +8073,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "He"
     ]
+,
+    "word": "合并"
   },
   "吉": {
     "structure": "⿱士口",
@@ -7956,6 +8123,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Tong"
     ]
+,
+    "word": "相同"
   },
   "名": {
     "structure": "⿱夕口",
@@ -7988,6 +8157,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Hou"
     ]
+,
+    "word": "后来"
   },
   "吏": {
     "structure": "⿻一史",
@@ -8036,6 +8207,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Xiang"
     ]
+,
+    "word": "方向"
   },
   "吓": {
     "structure": "⿰口下",
@@ -8271,6 +8444,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Ting"
     ]
+,
+    "word": "听见"
   },
   "吭": {
     "structure": "⿰口亢",
@@ -8508,6 +8683,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Gao"
     ]
+,
+    "word": "告诉"
   },
   "呐": {
     "structure": "⿰口内",
@@ -8629,6 +8806,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Zhou"
     ]
+,
+    "word": "周围"
   },
   "味": {
     "structure": "⿰口未",
@@ -8701,6 +8880,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Hu"
     ]
+,
+    "word": "称呼"
   },
   "命": {
     "structure": "⿱亼叩",
@@ -8755,6 +8936,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "He"
     ]
+,
+    "word": "和平"
   },
   "咏": {
     "structure": "⿰口永",
@@ -9053,6 +9236,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Pin"
     ]
+,
+    "word": "作品"
   },
   "哄": {
     "structure": "⿰口共",
@@ -9627,6 +9812,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Chang"
     ]
+,
+    "word": "唱歌"
   },
   "唾": {
     "structure": "⿰口垂",
@@ -10033,6 +10220,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Xi"
     ]
+,
+    "word": "喜欢"
   },
   "喝": {
     "structure": "⿰口曷[GTKV]",
@@ -10055,6 +10244,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "He"
     ]
+,
+    "word": "喝水"
   },
   "喧": {
     "structure": "⿰口宣",
@@ -10783,6 +10974,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Si"
     ]
+,
+    "word": "四季"
   },
   "回": {
     "structure": "⿴囗口",
@@ -10799,6 +10992,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Hui"
     ]
+,
+    "word": "回家"
   },
   "因": {
     "structure": "⿴囗大",
@@ -10815,6 +11010,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Yin"
     ]
+,
+    "word": "原因"
   },
   "团": {
     "structure": "⿴囗才",
@@ -10865,6 +11062,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Yuan"
     ]
+,
+    "word": "公园"
   },
   "困": {
     "structure": "⿴囗木",
@@ -10916,6 +11115,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Wei"
     ]
+,
+    "word": "围绕"
   },
   "固": {
     "structure": "⿴囗古",
@@ -10934,6 +11135,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Gu"
     ]
+,
+    "word": "固定"
   },
   "国": {
     "structure": "⿴囗玉",
@@ -10952,6 +11155,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Guo"
     ]
+,
+    "word": "国家"
   },
   "图": {
     "structure": "⿴囗冬",
@@ -10970,6 +11175,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Tu"
     ]
+,
+    "word": "图画"
   },
   "圃": {
     "structure": "⿴囗甫",
@@ -11010,6 +11217,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Yuan"
     ]
+,
+    "word": "圆形"
   },
   "圈": {
     "structure": "⿴囗卷",
@@ -11044,6 +11253,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Tu"
     ]
+,
+    "word": "土地"
   },
   "圣": {
     "structure": "⿱又土",
@@ -11091,6 +11302,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Di"
     ]
+,
+    "word": "地方"
   },
   "场": {
     "structure": "⿰土𠃓",
@@ -11107,6 +11320,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Chang"
     ]
+,
+    "word": "场地"
   },
   "圾": {
     "structure": "⿰土及",
@@ -11208,6 +11423,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Huai"
     ]
+,
+    "word": "破坏"
   },
   "坐": {
     "structure": "⿻土从",
@@ -11225,6 +11442,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Zuo"
     ]
+,
+    "word": "坐下"
   },
   "坑": {
     "structure": "⿰土亢",
@@ -11542,6 +11761,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Xing"
     ]
+,
+    "word": "典型"
   },
   "垒": {
     "structure": "⿱厽土",
@@ -11735,6 +11956,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Cheng"
     ]
+,
+    "word": "城市"
   },
   "域": {
     "structure": "⿰土或",
@@ -12223,6 +12446,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Qiang"
     ]
+,
+    "word": "墙壁"
   },
   "增": {
     "structure": "⿰土曾",
@@ -12501,6 +12726,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Chu"
     ]
+,
+    "word": "处所"
   },
   "备": {
     "structure": "⿱夂田",
@@ -12558,6 +12785,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Xia"
     ]
+,
+    "word": "夏天"
   },
   "夕": {
     "structure": "⿴𠂊丶",
@@ -12586,6 +12815,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Wai"
     ]
+,
+    "word": "外面"
   },
   "多": {
     "structure": "⿱夕夕",
@@ -12602,6 +12833,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Duo"
     ]
+,
+    "word": "多少"
   },
   "夜": {
     "structure": "⿱亠⿰亻⿴夂丶",
@@ -12725,6 +12958,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Yang"
     ]
+,
+    "word": "中央"
   },
   "夯": {
     "structure": "⿱大力",
@@ -12755,6 +12990,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Shi"
     ]
+,
+    "word": "失去"
   },
   "头": {
     "structure": "头",
@@ -12770,6 +13007,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Tou"
     ]
+,
+    "word": "开头"
   },
   "夷": {
     "structure": "⿻大弓",
@@ -13194,6 +13433,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Hao"
     ]
+,
+    "word": "好人"
   },
   "如": {
     "structure": "⿰女口",
@@ -13210,6 +13451,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Ru"
     ]
+,
+    "word": "如果"
   },
   "妄": {
     "structure": "⿱亡女",
@@ -13465,6 +13708,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Shi"
     ]
+,
+    "word": "开始"
   },
   "姐": {
     "structure": "⿰女且",
@@ -14243,6 +14488,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Zi"
     ]
+,
+    "word": "汉字"
   },
   "存": {
     "structure": "⿸③子",
@@ -14327,7 +14574,8 @@ const HANZI_DATA = {
     "pinyin": "Jì",
     "pinyinArray": [
       "Ji"
-    ]
+    ],
+    "word": "季节"
   },
   "孤": {
     "structure": "⿰子瓜",
@@ -14364,6 +14612,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Xue"
     ]
+,
+    "word": "学习"
   },
   "孩": {
     "structure": "⿰子亥",
@@ -14530,6 +14780,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "An"
     ]
+,
+    "word": "安定"
   },
   "宋": {
     "structure": "⿱宀木",
@@ -14564,6 +14816,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Wan"
     ]
+,
+    "word": "完成"
   },
   "宏": {
     "structure": "⿱宀厷",
@@ -14653,6 +14907,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Ding"
     ]
+,
+    "word": "一定"
   },
   "宛": {
     "structure": "⿱宀夗",
@@ -14725,6 +14981,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Shi"
     ]
+,
+    "word": "实际"
   },
   "宠": {
     "structure": "⿱宀龙",
@@ -14818,6 +15076,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Shi"
     ]
+,
+    "word": "教室"
   },
   "宦": {
     "structure": "⿱宀臣",
@@ -14915,6 +15175,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Hai"
     ]
+,
+    "word": "要害"
   },
   "宴": {
     "structure": "⿱宀妟",
@@ -14975,6 +15237,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Jia"
     ]
+,
+    "word": "家庭"
   },
   "容": {
     "structure": "⿱宀谷",
@@ -14995,6 +15259,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Rong"
     ]
+,
+    "word": "容貌"
   },
   "宽": {
     "structure": "⿱宀苋",
@@ -15015,6 +15281,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Kuan"
     ]
+,
+    "word": "宽广"
   },
   "宾": {
     "structure": "⿱宀兵",
@@ -15119,6 +15387,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Mi"
     ]
+,
+    "word": "茂密"
   },
   "寇": {
     "structure": "⿱宀⿺元攴",
@@ -15361,6 +15631,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Cun"
     ]
+,
+    "word": "一寸"
   },
   "对": {
     "structure": "⿰又寸",
@@ -15376,6 +15648,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Dui"
     ]
+,
+    "word": "对话"
   },
   "寺": {
     "structure": "⿱土寸[GJK]",
@@ -15480,6 +15754,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "She"
     ]
+,
+    "word": "发射"
   },
   "将": {
     "structure": "⿰丬𪧷[G]",
@@ -15555,6 +15831,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Xiao"
     ]
+,
+    "word": "细小"
   },
   "少": {
     "structure": "⿱小丿",
@@ -15616,6 +15894,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Chen"
     ]
+,
+    "word": "粉尘"
   },
   "尚": {
     "structure": "⿱⺌冋",
@@ -15689,6 +15969,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Jiu"
     ]
+,
+    "word": "就是"
   },
   "尸": {
     "structure": "尸",
@@ -15716,6 +15998,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Chi"
     ]
+,
+    "word": "一尺"
   },
   "尼": {
     "structure": "⿸尸匕",
@@ -15747,6 +16031,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Jin"
     ]
+,
+    "word": "竭尽"
   },
   "尾": {
     "structure": "⿸尸毛",
@@ -15923,6 +16209,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Wu"
     ]
+,
+    "word": "房屋"
   },
   "屎": {
     "structure": "⿸尸米",
@@ -16118,6 +16406,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Shan"
     ]
+,
+    "word": "山水"
   },
   "屹": {
     "structure": "⿰山乞",
@@ -16250,6 +16540,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Dao"
     ]
+,
+    "word": "岛屿"
   },
   "岩": {
     "structure": "⿱山石",
@@ -16611,6 +16903,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Chuan"
     ]
+,
+    "word": "河川"
   },
   "州": {
     "structure": "州",
@@ -16692,6 +16986,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Zuo"
     ]
+,
+    "word": "左右"
   },
   "巧": {
     "structure": "⿰工丂",
@@ -16721,6 +17017,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Ju"
     ]
+,
+    "word": "巨大"
   },
   "巩": {
     "structure": "⿰工凡[G]",
@@ -16786,6 +17084,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Ji"
     ]
+,
+    "word": "自己"
   },
   "已": {
     "structure": "已",
@@ -16874,6 +17174,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Shi"
     ]
+,
+    "word": "城市"
   },
   "布": {
     "structure": "⿸𠂇巾",
@@ -17310,6 +17612,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Gan"
     ]
+,
+    "word": "干净"
   },
   "平": {
     "structure": "⿻干丷",
@@ -17325,6 +17629,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Ping"
     ]
+,
+    "word": "平安"
   },
   "年": {
     "structure": "年",
@@ -17341,6 +17647,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Nian"
     ]
+,
+    "word": "年级"
   },
   "并": {
     "structure": "⿱丷开",
@@ -17436,6 +17744,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Guang"
     ]
+,
+    "word": "广泛"
   },
   "庄": {
     "structure": "⿸广土",
@@ -17519,6 +17829,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Xu"
     ]
+,
+    "word": "序号"
   },
   "庐": {
     "structure": "⿸广户[G]",
@@ -17951,6 +18263,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Kai"
     ]
+,
+    "word": "开心"
   },
   "异": {
     "structure": "⿱巳廾[G]",
@@ -18041,6 +18355,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Shi"
     ]
+,
+    "word": "正式"
   },
   "弓": {
     "structure": "弓",
@@ -18211,6 +18527,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Ruo"
     ]
+,
+    "word": "弱小"
   },
   "弹": {
     "structure": "⿰弓单",
@@ -18254,6 +18572,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Qiang"
     ]
+,
+    "word": "强大"
   },
   "归": {
     "structure": "⿰⿰丨丿彐",
@@ -18285,6 +18605,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Dang"
     ]
+,
+    "word": "当然"
   },
   "录": {
     "structure": "⿱彐氺",
@@ -18320,6 +18642,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Xing"
     ]
+,
+    "word": "形状"
   },
   "彤": {
     "structure": "⿰丹彡",
@@ -18714,6 +19038,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "De"
     ]
+,
+    "word": "得到"
   },
   "徘": {
     "structure": "⿰彳非",
@@ -18823,6 +19149,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Wei"
     ]
+,
+    "word": "微小"
   },
   "德": {
     "structure": "⿰彳𢛳",
@@ -18889,6 +19217,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Xin"
     ]
+,
+    "word": "心情"
   },
   "必": {
     "structure": "⿻心丿",
@@ -18969,6 +19299,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Zhi"
     ]
+,
+    "word": "志向"
   },
   "忘": {
     "structure": "⿱亡心",
@@ -18986,6 +19318,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Wang"
     ]
+,
+    "word": "忘记"
   },
   "忙": {
     "structure": "⿰忄亡",
@@ -19002,6 +19336,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Mang"
     ]
+,
+    "word": "忙碌"
   },
   "忠": {
     "structure": "⿱中心",
@@ -19054,6 +19390,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Kuai"
     ]
+,
+    "word": "快乐"
   },
   "忱": {
     "structure": "⿰忄冘",
@@ -19089,6 +19427,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Nian"
     ]
+,
+    "word": "念书"
   },
   "忽": {
     "structure": "⿱勿心",
@@ -19289,6 +19629,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Si"
     ]
+,
+    "word": "思考"
   },
   "怠": {
     "structure": "⿱台心",
@@ -19327,6 +19669,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Ji"
     ]
+,
+    "word": "急忙"
   },
   "性": {
     "structure": "⿰忄生",
@@ -19419,6 +19763,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Zong"
     ]
+,
+    "word": "总共"
   },
   "恃": {
     "structure": "⿰忄寺",
@@ -20060,6 +20406,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Qing"
     ]
+,
+    "word": "情况"
   },
   "惊": {
     "structure": "⿰忄京",
@@ -20382,6 +20730,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Xiang"
     ]
+,
+    "word": "想象"
   },
   "惶": {
     "structure": "⿰忄皇",
@@ -20517,6 +20867,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Yi"
     ]
+,
+    "word": "意思"
   },
   "愕": {
     "structure": "⿰忄咢",
@@ -20585,6 +20937,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Gan"
     ]
+,
+    "word": "感觉"
   },
   "愤": {
     "structure": "⿰忄贲",
@@ -20653,6 +21007,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Yuan"
     ]
+,
+    "word": "愿望"
   },
   "慈": {
     "structure": "⿱兹心",
@@ -20698,6 +21054,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Huang"
     ]
+,
+    "word": "慌张"
   },
   "慎": {
     "structure": "⿰忄真",
@@ -20769,6 +21127,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Man"
     ]
+,
+    "word": "慢慢"
   },
   "慧": {
     "structure": "⿱彗心",
@@ -21166,6 +21526,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Cheng"
     ]
+,
+    "word": "成功"
   },
   "我": {
     "structure": "我",
@@ -21369,6 +21731,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Fang"
     ]
+,
+    "word": "房间"
   },
   "所": {
     "structure": "⿰戶斤[GTKV]",
@@ -21387,6 +21751,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Suo"
     ]
+,
+    "word": "所以"
   },
   "扁": {
     "structure": "⿸户𠕁[G]",
@@ -21440,6 +21806,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Shou"
     ]
+,
+    "word": "手工"
   },
   "才": {
     "structure": "才",
@@ -21512,6 +21880,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Da"
     ]
+,
+    "word": "打击"
   },
   "扔": {
     "structure": "⿰扌乃",
@@ -21792,6 +22162,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Zhao"
     ]
+,
+    "word": "寻找"
   },
   "承": {
     "structure": "承",
@@ -23549,6 +23921,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Huan"
     ]
+,
+    "word": "改换"
   },
   "捣": {
     "structure": "⿰扌岛",
@@ -24225,6 +24599,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Ti"
     ]
+,
+    "word": "提前"
   },
   "插": {
     "structure": "⿰扌臿",
@@ -24783,6 +25159,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Yao"
     ]
+,
+    "word": "摇动"
   },
   "摊": {
     "structure": "⿰扌难",
@@ -25549,6 +25927,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Shou"
     ]
+,
+    "word": "收获"
   },
   "改": {
     "structure": "⿰己攵",
@@ -25566,6 +25946,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Gai"
     ]
+,
+    "word": "更改"
   },
   "攻": {
     "structure": "⿰工攵",
@@ -25601,6 +25983,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Fang"
     ]
+,
+    "word": "散放"
   },
   "政": {
     "structure": "⿰正攵",
@@ -25659,6 +26043,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Xiao"
     ]
+,
+    "word": "实效"
   },
   "敌": {
     "structure": "⿰舌攵",
@@ -25742,6 +26128,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Jiao"
     ]
+,
+    "word": "教育"
   },
   "敛": {
     "structure": "⿰佥攵",
@@ -25828,6 +26216,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "San"
     ]
+,
+    "word": "分散"
   },
   "敦": {
     "structure": "⿰享攵",
@@ -25895,6 +26285,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Shu"
     ]
+,
+    "word": "数学"
   },
   "敲": {
     "structure": "⿰高攴",
@@ -25984,6 +26376,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Wen"
     ]
+,
+    "word": "文字"
   },
   "斋": {
     "structure": "⿱文而",
@@ -26235,6 +26629,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Xin"
     ]
+,
+    "word": "新年"
   },
   "方": {
     "structure": "⿱亠⿰丿𠃌",
@@ -26249,6 +26645,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Fang"
     ]
+,
+    "word": "方向"
   },
   "施": {
     "structure": "⿰方㐌",
@@ -26388,6 +26786,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Wu"
     ]
+,
+    "word": "无限"
   },
   "既": {
     "structure": "⿰⑤旡",
@@ -26421,6 +26821,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Ri"
     ]
+,
+    "word": "日子"
   },
   "旦": {
     "structure": "⿱日一",
@@ -26451,6 +26853,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Jiu"
     ]
+,
+    "word": "旧书"
   },
   "旨": {
     "structure": "⿱匕日",
@@ -26483,6 +26887,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Zao"
     ]
+,
+    "word": "早上"
   },
   "旬": {
     "structure": "⿹勹日",
@@ -26549,6 +26955,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Shi"
     ]
+,
+    "word": "时间"
   },
   "旷": {
     "structure": "⿰日广",
@@ -26656,6 +27064,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Ming"
     ]
+,
+    "word": "明天"
   },
   "昏": {
     "structure": "⿱氏日",
@@ -26785,6 +27195,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Chun"
     ]
+,
+    "word": "春天"
   },
   "昧": {
     "structure": "⿰日未",
@@ -26823,6 +27235,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Zuo"
     ]
+,
+    "word": "昨天"
   },
   "昭": {
     "structure": "⿰日召",
@@ -26861,6 +27275,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Shi"
     ]
+,
+    "word": "是的"
   },
   "昵": {
     "structure": "⿰日尼",
@@ -27059,6 +27475,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Wan"
     ]
+,
+    "word": "晚上"
   },
   "晤": {
     "structure": "⿰日吾",
@@ -27366,6 +27784,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Nuan"
     ]
+,
+    "word": "温暖"
   },
   "暗": {
     "structure": "⿰日音",
@@ -27498,6 +27918,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Geng"
     ]
+,
+    "word": "变更"
   },
   "曹": {
     "structure": "⿱⿻一曲日",
@@ -27584,6 +28006,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Ti"
     ]
+,
+    "word": "替换"
   },
   "最": {
     "structure": "⿱日取[GJK]",
@@ -27620,6 +28044,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Yue"
     ]
+,
+    "word": "月亮"
   },
   "有": {
     "structure": "⿸𠂇月",
@@ -27636,6 +28062,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "You"
     ]
+,
+    "word": "有趣"
   },
   "朋": {
     "structure": "⿰月月",
@@ -27713,6 +28141,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Wang"
     ]
+,
+    "word": "希望"
   },
   "朝": {
     "structure": "⿰𠦝月",
@@ -27798,6 +28228,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Mu"
     ]
+,
+    "word": "木头"
   },
   "未": {
     "structure": "未",
@@ -27828,6 +28260,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Mo"
     ]
+,
+    "word": "末尾"
   },
   "本": {
     "structure": "本",
@@ -27843,6 +28277,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Ben"
     ]
+,
+    "word": "本子"
   },
   "术": {
     "structure": "⿺木丶",
@@ -27970,6 +28406,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Za"
     ]
+,
+    "word": "杂乱"
   },
   "权": {
     "structure": "⿰木又",
@@ -28105,6 +28543,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Cun"
     ]
+,
+    "word": "村庄"
   },
   "杖": {
     "structure": "⿰木丈",
@@ -28207,6 +28647,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Lai"
     ]
+,
+    "word": "来往"
   },
   "杨": {
     "structure": "⿰木𠃓",
@@ -28331,6 +28773,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Ji"
     ]
+,
+    "word": "极限"
   },
   "构": {
     "structure": "⿰木勾",
@@ -28421,6 +28865,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Lin"
     ]
+,
+    "word": "森林"
   },
   "枚": {
     "structure": "⿰木攵",
@@ -28457,6 +28903,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Guo"
     ]
+,
+    "word": "结果"
   },
   "枝": {
     "structure": "⿰木支",
@@ -29003,6 +29451,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Shu"
     ]
+,
+    "word": "树木"
   },
   "栓": {
     "structure": "⿰木全",
@@ -29083,6 +29533,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Xiao"
     ]
+,
+    "word": "学校"
   },
   "株": {
     "structure": "⿰木朱",
@@ -29123,6 +29575,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Yang"
     ]
+,
+    "word": "样子"
   },
   "核": {
     "structure": "⿰木亥",
@@ -29143,6 +29597,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "He"
     ]
+,
+    "word": "核心"
   },
   "根": {
     "structure": "⿰木艮",
@@ -29609,6 +30065,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Meng"
     ]
+,
+    "word": "梦想"
   },
   "梧": {
     "structure": "⿰木吾",
@@ -30064,6 +30522,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Zhi"
     ]
+,
+    "word": "植物"
   },
   "椎": {
     "structure": "⿰木隹",
@@ -30313,6 +30773,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Lou"
     ]
+,
+    "word": "楼房"
   },
   "概": {
     "structure": "⿰木既",
@@ -30962,6 +31424,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Ci"
     ]
+,
+    "word": "次序"
   },
   "欢": {
     "structure": "⿰又欠",
@@ -31150,6 +31614,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Ge"
     ]
+,
+    "word": "歌颂"
   },
   "止": {
     "structure": "止",
@@ -31164,6 +31630,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Zhi"
     ]
+,
+    "word": "停止"
   },
   "正": {
     "structure": "⿱一止",
@@ -31179,6 +31647,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Zheng"
     ]
+,
+    "word": "正确"
   },
   "此": {
     "structure": "⿰止匕",
@@ -31195,6 +31665,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Ci"
     ]
+,
+    "word": "因此"
   },
   "步": {
     "structure": "⿱止𣥂",
@@ -31212,6 +31684,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Bu"
     ]
+,
+    "word": "步骤"
   },
   "武": {
     "structure": "⿹⿶弋一止",
@@ -31297,6 +31771,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Si"
     ]
+,
+    "word": "死亡"
   },
   "歼": {
     "structure": "⿰歹千",
@@ -31780,6 +32256,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Qi"
     ]
+,
+    "word": "天气"
   },
   "氛": {
     "structure": "⿹气分",
@@ -31915,6 +32393,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Shui"
     ]
+,
+    "word": "水果"
   },
   "永": {
     "structure": "永",
@@ -31930,6 +32410,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Yong"
     ]
+,
+    "word": "永久"
   },
   "汁": {
     "structure": "⿰氵十",
@@ -31962,6 +32444,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Qiu"
     ]
+,
+    "word": "要求"
   },
   "汇": {
     "structure": "⿰氵匚",
@@ -32057,6 +32541,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Jiang"
     ]
+,
+    "word": "江河"
   },
   "池": {
     "structure": "⿰氵也",
@@ -32173,6 +32659,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Qi"
     ]
+,
+    "word": "蒸汽"
   },
   "沃": {
     "structure": "⿰氵夭",
@@ -32258,6 +32746,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Sha"
     ]
+,
+    "word": "沙子"
   },
   "沛": {
     "structure": "⿰氵巿",
@@ -32431,6 +32921,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "He"
     ]
+,
+    "word": "河流"
   },
   "沸": {
     "structure": "⿰氵弗",
@@ -32648,6 +33140,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Fa"
     ]
+,
+    "word": "方法"
   },
   "泛": {
     "structure": "⿰氵乏",
@@ -33461,6 +33955,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Hai"
     ]
+,
+    "word": "大海"
   },
   "浸": {
     "structure": "⿰氵𠬶",
@@ -34137,6 +34633,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Hun"
     ]
+,
+    "word": "混乱"
   },
   "淹": {
     "structure": "⿰氵奄",
@@ -34200,6 +34698,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Qing"
     ]
+,
+    "word": "清楚"
   },
   "渊": {
     "structure": "⿰氵𫂱",
@@ -34459,6 +34959,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "You"
     ]
+,
+    "word": "游泳"
   },
   "渺": {
     "structure": "⿰氵眇",
@@ -34525,6 +35027,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Hu"
     ]
+,
+    "word": "湖泊"
   },
   "湘": {
     "structure": "⿰氵相",
@@ -34976,6 +35480,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Man"
     ]
+,
+    "word": "满足"
   },
   "滤": {
     "structure": "⿰氵虑",
@@ -35092,6 +35598,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Di"
     ]
+,
+    "word": "一滴"
   },
   "漂": {
     "structure": "⿰氵票",
@@ -35730,6 +36238,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Huo"
     ]
+,
+    "word": "火车"
   },
   "灭": {
     "structure": "⿱一火",
@@ -35777,6 +36287,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Hui"
     ]
+,
+    "word": "灰色"
   },
   "灵": {
     "structure": "⿱彐火[GV]",
@@ -36082,6 +36594,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Dian"
     ]
+,
+    "word": "一点"
   },
   "炼": {
     "structure": "⿰火𫠣",
@@ -36239,6 +36753,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Yan"
     ]
+,
+    "word": "烟尘"
   },
   "烤": {
     "structure": "⿰火考",
@@ -36339,6 +36855,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Re"
     ]
+,
+    "word": "热情"
   },
   "烹": {
     "structure": "⿱亨灬",
@@ -36512,6 +37030,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Ran"
     ]
+,
+    "word": "自然"
   },
   "煌": {
     "structure": "⿰火皇",
@@ -36984,6 +37504,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Pa"
     ]
+,
+    "word": "爬山"
   },
   "爱": {
     "structure": "⿱⿱爫冖友",
@@ -37004,6 +37526,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Ai"
     ]
+,
+    "word": "爱心"
   },
   "爵": {
     "structure": "⿳爫罒𡬠",
@@ -37134,6 +37658,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Pian"
     ]
+,
+    "word": "碎片"
   },
   "版": {
     "structure": "⿰片反",
@@ -37224,6 +37750,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Niu"
     ]
+,
+    "word": "牛奶"
   },
   "牡": {
     "structure": "⿰牛土",
@@ -37294,6 +37822,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Wu"
     ]
+,
+    "word": "物品"
   },
   "牲": {
     "structure": "⿰牛生",
@@ -37352,6 +37882,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Te"
     ]
+,
+    "word": "特别"
   },
   "牺": {
     "structure": "⿰牛西",
@@ -37429,6 +37961,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Quan"
     ]
+,
+    "word": "犬类"
   },
   "犯": {
     "structure": "⿰犭㔾",
@@ -37623,6 +38157,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Du"
     ]
+,
+    "word": "独特"
   },
   "狭": {
     "structure": "⿰犭夹",
@@ -37866,6 +38402,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Zhu"
     ]
+,
+    "word": "猪肉"
   },
   "猫": {
     "structure": "⿰犭苗",
@@ -37887,6 +38425,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Mao"
     ]
+,
+    "word": "猫咪"
   },
   "猬": {
     "structure": "⿰犭胃",
@@ -37954,6 +38494,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Hou"
     ]
+,
+    "word": "猴子"
   },
   "猾": {
     "structure": "⿰犭骨",
@@ -38116,6 +38658,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Wan"
     ]
+,
+    "word": "玩具"
   },
   "玫": {
     "structure": "⿰王攵",
@@ -38170,6 +38714,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Xian"
     ]
+,
+    "word": "表现"
   },
   "玲": {
     "structure": "⿰王令",
@@ -38305,6 +38851,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Ban"
     ]
+,
+    "word": "班级"
   },
   "球": {
     "structure": "⿰王求",
@@ -38326,6 +38874,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Qiu"
     ]
+,
+    "word": "地球"
   },
   "琅": {
     "structure": "⿰王良",
@@ -38368,6 +38918,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Li"
     ]
+,
+    "word": "道理"
   },
   "琉": {
     "structure": "⿰王㐬",
@@ -38863,6 +39415,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Sheng"
     ]
+,
+    "word": "生活"
   },
   "甥": {
     "structure": "⿰生男",
@@ -38900,6 +39454,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Yong"
     ]
+,
+    "word": "实用"
   },
   "甩": {
     "structure": "⿵冂⿻二乚",
@@ -38947,6 +39503,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Tian"
     ]
+,
+    "word": "田野"
   },
   "由": {
     "structure": "由",
@@ -38962,6 +39520,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "You"
     ]
+,
+    "word": "理由"
   },
   "甲": {
     "structure": "甲",
@@ -39007,6 +39567,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Dian"
     ]
+,
+    "word": "电话"
   },
   "男": {
     "structure": "⿱田力",
@@ -39059,6 +39621,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Hua"
     ]
+,
+    "word": "画画"
   },
   "畅": {
     "structure": "⿰申𠃓",
@@ -39096,6 +39660,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Jie"
     ]
+,
+    "word": "世界"
   },
   "畏": {
     "structure": "⿳田一⿰𠄌⿺乀丿",
@@ -40166,6 +40732,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Bai"
     ]
+,
+    "word": "白云"
   },
   "百": {
     "structure": "⿱一白",
@@ -40182,6 +40750,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Bai"
     ]
+,
+    "word": "百花"
   },
   "皂": {
     "structure": "⿱白七",
@@ -40568,6 +41138,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Sheng"
     ]
+,
+    "word": "兴盛"
   },
   "盟": {
     "structure": "⿱明皿",
@@ -40606,6 +41178,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Mu"
     ]
+,
+    "word": "目标"
   },
   "盯": {
     "structure": "⿰目丁",
@@ -40659,6 +41233,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Zhi"
     ]
+,
+    "word": "一直"
   },
   "相": {
     "structure": "⿰木目",
@@ -40678,6 +41254,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Xiang"
     ]
+,
+    "word": "相距"
   },
   "盹": {
     "structure": "⿰目屯",
@@ -40792,6 +41370,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Kan"
     ]
+,
+    "word": "看书"
   },
   "真": {
     "structure": "⿱十具",
@@ -40812,6 +41392,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Zhen"
     ]
+,
+    "word": "真实"
   },
   "眠": {
     "structure": "⿰目民",
@@ -40935,6 +41517,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Yan"
     ]
+,
+    "word": "眼睛"
   },
   "着": {
     "structure": "⿸羊目[GT]",
@@ -41023,6 +41607,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Shui"
     ]
+,
+    "word": "睡觉"
   },
   "督": {
     "structure": "⿱叔目",
@@ -41433,6 +42019,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Zhi"
     ]
+,
+    "word": "知道"
   },
   "矩": {
     "structure": "⿰矢巨",
@@ -41495,6 +42083,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Duan"
     ]
+,
+    "word": "短发"
   },
   "矮": {
     "structure": "⿰矢委",
@@ -41533,6 +42123,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Shi"
     ]
+,
+    "word": "石头"
   },
   "矾": {
     "structure": "⿰石凡",
@@ -41741,6 +42333,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Po"
     ]
+,
+    "word": "破旧"
   },
   "砸": {
     "structure": "⿰石匝",
@@ -42046,6 +42640,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Sui"
     ]
+,
+    "word": "破碎"
   },
   "碑": {
     "structure": "⿰石卑",
@@ -42478,6 +43074,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Shi"
     ]
+,
+    "word": "表示"
   },
   "礼": {
     "structure": "⿰礻乚",
@@ -42817,6 +43415,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Li"
     ]
+,
+    "word": "离开"
   },
   "禽": {
     "structure": "⿱人离",
@@ -42960,6 +43560,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Qiu"
     ]
+,
+    "word": "秋天"
   },
   "种": {
     "structure": "⿰禾中",
@@ -42979,6 +43581,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Zhong"
     ]
+,
+    "word": "种植"
   },
   "科": {
     "structure": "⿰禾斗",
@@ -42998,6 +43602,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Ke"
     ]
+,
+    "word": "科学"
   },
   "秒": {
     "structure": "⿰禾少",
@@ -43216,6 +43822,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Cheng"
     ]
+,
+    "word": "称呼"
   },
   "秸": {
     "structure": "⿰禾吉",
@@ -43258,6 +43866,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Yi"
     ]
+,
+    "word": "移动"
   },
   "秽": {
     "structure": "⿰禾岁",
@@ -43323,6 +43933,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Cheng"
     ]
+,
+    "word": "过程"
   },
   "稍": {
     "structure": "⿰禾肖",
@@ -43657,6 +44269,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Kong"
     ]
+,
+    "word": "空气"
   },
   "穿": {
     "structure": "⿱穴牙",
@@ -43840,6 +44454,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Chuang"
     ]
+,
+    "word": "窗户"
   },
   "窘": {
     "structure": "⿱穴君",
@@ -44032,6 +44648,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Zhan"
     ]
+,
+    "word": "车站"
   },
   "竞": {
     "structure": "⿱立兄",
@@ -44281,6 +44899,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Xiao"
     ]
+,
+    "word": "笑容"
   },
   "笔": {
     "structure": "⿱竹毛",
@@ -44301,6 +44921,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Bi"
     ]
+,
+    "word": "笔记"
   },
   "笙": {
     "structure": "⿱竹生",
@@ -44427,6 +45049,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Di"
     ]
+,
+    "word": "第一"
   },
   "笼": {
     "structure": "⿱竹龙",
@@ -44470,6 +45094,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Deng"
     ]
+,
+    "word": "等待"
   },
   "筋": {
     "structure": "⿱竹肋",
@@ -44602,6 +45228,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Da"
     ]
+,
+    "word": "回答"
   },
   "策": {
     "structure": "⿱竹朿",
@@ -45323,6 +45951,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Fen"
     ]
+,
+    "word": "粉末"
   },
   "粒": {
     "structure": "⿰米立",
@@ -45725,6 +46355,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Zao"
     ]
+,
+    "word": "糟乱"
   },
   "糠": {
     "structure": "⿰米康",
@@ -45879,6 +46511,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Jin"
     ]
+,
+    "word": "紧要"
   },
   "紫": {
     "structure": "⿱此糸",
@@ -45901,6 +46535,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Zi"
     ]
+,
+    "word": "紫色"
   },
   "累": {
     "structure": "⿱田糸",
@@ -45922,6 +46558,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Lei"
     ]
+,
+    "word": "劳累"
   },
   "絮": {
     "structure": "⿱如糸",
@@ -46002,6 +46640,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Hong"
     ]
+,
+    "word": "红色"
   },
   "纤": {
     "structure": "⿰纟千",
@@ -46050,6 +46690,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Ji"
     ]
+,
+    "word": "年级"
   },
   "纪": {
     "structure": "⿰纟己",
@@ -46218,6 +46860,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Zhi"
     ]
+,
+    "word": "纸张"
   },
   "纹": {
     "structure": "⿰纟文",
@@ -46287,6 +46931,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Xian"
     ]
+,
+    "word": "线条"
   },
   "练": {
     "structure": "⿰纟𫠣",
@@ -46305,6 +46951,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Lian"
     ]
+,
+    "word": "练习"
   },
   "组": {
     "structure": "⿰纟且",
@@ -46359,6 +47007,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Xi"
     ]
+,
+    "word": "细微"
   },
   "织": {
     "structure": "⿰纟只",
@@ -46395,6 +47045,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Zhong"
     ]
+,
+    "word": "终点"
   },
   "绊": {
     "structure": "⿰纟半",
@@ -46524,6 +47176,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Jie"
     ]
+,
+    "word": "结果"
   },
   "绕": {
     "structure": "⿰纟尧",
@@ -46543,6 +47197,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Rao"
     ]
+,
+    "word": "环绕"
   },
   "绘": {
     "structure": "⿰纟会",
@@ -46969,6 +47625,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Lü"
     ]
+,
+    "word": "绿色"
   },
   "缀": {
     "structure": "⿰纟叕",
@@ -47653,6 +48311,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Yang"
     ]
+,
+    "word": "羊毛"
   },
   "美": {
     "structure": "⿱𦍌大",
@@ -47672,6 +48332,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Mei"
     ]
+,
+    "word": "美丽"
   },
   "羔": {
     "structure": "⿱𦍌灬",
@@ -48083,6 +48745,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Lao"
     ]
+,
+    "word": "古老"
   },
   "考": {
     "structure": "⿸耂丂",
@@ -48099,6 +48763,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Kao"
     ]
+,
+    "word": "考试"
   },
   "者": {
     "structure": "⿸耂日[GTJ]",
@@ -48267,6 +48933,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Er"
     ]
+,
+    "word": "耳朵"
   },
   "耸": {
     "structure": "⿱从耳",
@@ -48900,6 +49568,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Yu"
     ]
+,
+    "word": "教育"
   },
   "肴": {
     "structure": "⿱㐅有[GJK]",
@@ -49141,6 +49811,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Sheng"
     ]
+,
+    "word": "胜利"
   },
   "胞": {
     "structure": "⿰月包[GJK]",
@@ -49582,6 +50254,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Lian"
     ]
+,
+    "word": "脸部"
   },
   "脾": {
     "structure": "⿰月卑[GJK]",
@@ -50258,6 +50932,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Zi"
     ]
+,
+    "word": "自己"
   },
   "臭": {
     "structure": "⿱自犬[GTKV]",
@@ -50294,6 +50970,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Zhi"
     ]
+,
+    "word": "至于"
   },
   "致": {
     "structure": "⿰至攵[GJK]",
@@ -50779,6 +51457,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Se"
     ]
+,
+    "word": "颜色"
   },
   "艳": {
     "structure": "⿰丰色",
@@ -50843,6 +51523,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Jie"
     ]
+,
+    "word": "节日"
   },
   "芋": {
     "structure": "⿱艹于",
@@ -51043,6 +51725,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Hua"
     ]
+,
+    "word": "花朵"
   },
   "芳": {
     "structure": "⿱艹方",
@@ -51271,6 +51955,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Ku"
     ]
+,
+    "word": "困苦"
   },
   "苫": {
     "structure": "⿱艹占",
@@ -51622,6 +52308,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Cao"
     ]
+,
+    "word": "草地"
   },
   "荐": {
     "structure": "⿱艹存",
@@ -51774,6 +52462,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Rong"
     ]
+,
+    "word": "繁荣"
   },
   "荤": {
     "structure": "⿱艹军",
@@ -52721,6 +53411,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Zheng"
     ]
+,
+    "word": "蒸汽"
   },
   "蒿": {
     "structure": "⿱艹高",
@@ -52836,6 +53528,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Lan"
     ]
+,
+    "word": "蓝天"
   },
   "蓬": {
     "structure": "⿱艹逢",
@@ -53501,6 +54195,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Hu"
     ]
+,
+    "word": "老虎"
   },
   "虏": {
     "structure": "⿸虍力",
@@ -53970,6 +54666,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "She"
     ]
+,
+    "word": "蛇形"
   },
   "蛉": {
     "structure": "⿰虫令",
@@ -54974,6 +55672,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Xing"
     ]
+,
+    "word": "行走"
   },
   "衍": {
     "structure": "⿲彳氵亍",
@@ -55036,6 +55736,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Jie"
     ]
+,
+    "word": "街道"
   },
   "衙": {
     "structure": "⿲彳吾亍",
@@ -55136,6 +55838,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Biao"
     ]
+,
+    "word": "代表"
   },
   "衩": {
     "structure": "⿰衤叉",
@@ -55476,6 +56180,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Lie"
     ]
+,
+    "word": "分裂"
   },
   "装": {
     "structure": "⿱壮衣",
@@ -55821,6 +56527,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Xi"
     ]
+,
+    "word": "西方"
   },
   "要": {
     "structure": "⿱覀女",
@@ -55840,6 +56548,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Yao"
     ]
+,
+    "word": "重要"
   },
   "覆": {
     "structure": "⿱覀復",
@@ -55882,6 +56592,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Jian"
     ]
+,
+    "word": "看见"
   },
   "观": {
     "structure": "⿰又见",
@@ -55916,6 +56628,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Gui"
     ]
+,
+    "word": "正规"
   },
   "觅": {
     "structure": "⿱爫见",
@@ -55990,6 +56704,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Jiao"
     ]
+,
+    "word": "觉得"
   },
   "角": {
     "structure": "角",
@@ -56007,6 +56723,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Jiao"
     ]
+,
+    "word": "角落"
   },
   "解": {
     "structure": "⿰角𭷔",
@@ -56070,6 +56788,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Yan"
     ]
+,
+    "word": "言语"
   },
   "誉": {
     "structure": "⿱兴言",
@@ -56213,6 +56933,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Ji"
     ]
+,
+    "word": "总计"
   },
   "订": {
     "structure": "⿰讠丁",
@@ -56241,6 +56963,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Ren"
     ]
+,
+    "word": "认真"
   },
   "讥": {
     "structure": "⿰讠几",
@@ -56345,6 +57069,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Ji"
     ]
+,
+    "word": "记忆"
   },
   "讲": {
     "structure": "⿰讠井",
@@ -56361,6 +57087,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Jiang"
     ]
+,
+    "word": "讲话"
   },
   "讳": {
     "structure": "⿰讠韦",
@@ -56538,6 +57266,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Zheng"
     ]
+,
+    "word": "实证"
   },
   "评": {
     "structure": "⿰讠平",
@@ -56657,6 +57387,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Ci"
     ]
+,
+    "word": "词语"
   },
   "译": {
     "structure": "⿰讠𠬤",
@@ -56746,6 +57478,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Hua"
     ]
+,
+    "word": "说话"
   },
   "诞": {
     "structure": "⿰讠延",
@@ -56818,6 +57552,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Gai"
     ]
+,
+    "word": "应该"
   },
   "详": {
     "structure": "⿰讠羊",
@@ -56893,6 +57629,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Yu"
     ]
+,
+    "word": "语言"
   },
   "误": {
     "structure": "⿰讠吴",
@@ -56969,6 +57707,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Shuo"
     ]
+,
+    "word": "说话"
   },
   "诵": {
     "structure": "⿰讠甬",
@@ -57068,6 +57808,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Du"
     ]
+,
+    "word": "读书"
   },
   "诽": {
     "structure": "⿰讠非",
@@ -57108,6 +57850,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Ke"
     ]
+,
+    "word": "课程"
   },
   "谁": {
     "structure": "⿰讠隹",
@@ -57208,6 +57952,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Tan"
     ]
+,
+    "word": "谈话"
   },
   "谊": {
     "structure": "⿰讠宜",
@@ -57957,6 +58703,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Bai"
     ]
+,
+    "word": "失败"
   },
   "账": {
     "structure": "⿰贝长",
@@ -58011,6 +58759,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Zhi"
     ]
+,
+    "word": "实质"
   },
   "贩": {
     "structure": "⿰贝反",
@@ -58703,6 +59453,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Zan"
     ]
+,
+    "word": "赞美"
   },
   "赠": {
     "structure": "⿰贝曾",
@@ -58862,6 +59614,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Zou"
     ]
+,
+    "word": "走路"
   },
   "赴": {
     "structure": "⿺走卜",
@@ -58940,6 +59694,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Qi"
     ]
+,
+    "word": "起床"
   },
   "趁": {
     "structure": "⿺走㐱",
@@ -59095,6 +59851,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Zu"
     ]
+,
+    "word": "足球"
   },
   "趴": {
     "structure": "⿰𧾷八",
@@ -59156,6 +59914,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Yue"
     ]
+,
+    "word": "跳跃"
   },
   "跋": {
     "structure": "⿰𧾷犮",
@@ -59222,6 +59982,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Pao"
     ]
+,
+    "word": "跑步"
   },
   "跛": {
     "structure": "⿰𧾷皮",
@@ -59357,6 +60119,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Lu"
     ]
+,
+    "word": "道路"
   },
   "跳": {
     "structure": "⿰𧾷兆",
@@ -59380,6 +60144,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Tiao"
     ]
+,
+    "word": "跳舞"
   },
   "践": {
     "structure": "⿰𧾷戋[G]",
@@ -59897,6 +60663,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Shen"
     ]
+,
+    "word": "身体"
   },
   "躬": {
     "structure": "⿰身弓",
@@ -60000,6 +60768,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Che"
     ]
+,
+    "word": "车站"
   },
   "轧": {
     "structure": "⿰车乚",
@@ -60066,6 +60836,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Zhuan"
     ]
+,
+    "word": "旋转"
   },
   "轮": {
     "structure": "⿰车仑",
@@ -60158,6 +60930,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Qing"
     ]
+,
+    "word": "轻松"
   },
   "载": {
     "structure": "⿹𢦏车",
@@ -60687,6 +61461,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Bian"
     ]
+,
+    "word": "边缘"
   },
   "辽": {
     "structure": "⿺辶了",
@@ -60782,6 +61558,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Xun"
     ]
+,
+    "word": "迅速"
   },
   "过": {
     "structure": "⿺辶寸",
@@ -60798,6 +61576,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Guo"
     ]
+,
+    "word": "经过"
   },
   "迈": {
     "structure": "⿺辶万",
@@ -60848,6 +61628,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Yun"
     ]
+,
+    "word": "搬运"
   },
   "近": {
     "structure": "⿺辶斤",
@@ -60865,6 +61647,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Jin"
     ]
+,
+    "word": "近处"
   },
   "返": {
     "structure": "⿺辶反",
@@ -60899,6 +61683,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Hai"
     ]
+,
+    "word": "还是"
   },
   "这": {
     "structure": "⿺辶文",
@@ -60933,6 +61719,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Jin"
     ]
+,
+    "word": "进入"
   },
   "远": {
     "structure": "⿺辶元",
@@ -60950,6 +61738,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Yuan"
     ]
+,
+    "word": "远方"
   },
   "违": {
     "structure": "⿺辶韦",
@@ -61132,6 +61922,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Song"
     ]
+,
+    "word": "运送"
   },
   "适": {
     "structure": "⿺辶舌",
@@ -61347,6 +62139,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Tong"
     ]
+,
+    "word": "通达"
   },
   "逛": {
     "structure": "⿺辶狂",
@@ -61427,6 +62221,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Su"
     ]
+,
+    "word": "快速"
   },
   "造": {
     "structure": "⿺辶告",
@@ -61684,6 +62480,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Dao"
     ]
+,
+    "word": "道路"
   },
   "遗": {
     "structure": "⿺辶贵",
@@ -62630,6 +63428,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Li"
     ]
+,
+    "word": "里面"
   },
   "重": {
     "structure": "重",
@@ -62649,6 +63449,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Zhong"
     ]
+,
+    "word": "重要"
   },
   "野": {
     "structure": "⿰里予",
@@ -62670,6 +63472,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Ye"
     ]
+,
+    "word": "野外"
   },
   "量": {
     "structure": "⿱旦里",
@@ -62692,6 +63496,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Liang"
     ]
+,
+    "word": "数量"
   },
   "金": {
     "structure": "⿱人⿻王丷",
@@ -62710,6 +63516,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Jin"
     ]
+,
+    "word": "金色"
   },
   "鉴": {
     "structure": "⿱⿰〢⿱𠂉丶金",
@@ -63630,6 +64438,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Cuo"
     ]
+,
+    "word": "错误"
   },
   "锚": {
     "structure": "⿰钅苗",
@@ -64157,6 +64967,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Chang"
     ]
+,
+    "word": "长大"
   },
   "门": {
     "structure": "门",
@@ -64170,6 +64982,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Men"
     ]
+,
+    "word": "门口"
   },
   "闪": {
     "structure": "⿵门人",
@@ -64217,6 +65031,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Wen"
     ]
+,
+    "word": "问题"
   },
   "闯": {
     "structure": "⿵门马",
@@ -64856,6 +65672,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Yuan"
     ]
+,
+    "word": "院子"
   },
   "除": {
     "structure": "⿰阝余",
@@ -64875,6 +65693,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Chu"
     ]
+,
+    "word": "除法"
   },
   "陨": {
     "structure": "⿰阝员",
@@ -65228,6 +66048,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Nan"
     ]
+,
+    "word": "困难"
   },
   "雀": {
     "structure": "⿱小隹",
@@ -65337,6 +66159,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Ji"
     ]
+,
+    "word": "密集"
   },
   "雇": {
     "structure": "⿸户隹[G]",
@@ -65450,6 +66274,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Yu"
     ]
+,
+    "word": "雨天"
   },
   "雪": {
     "structure": "⿱雨彐",
@@ -65471,6 +66297,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Xue"
     ]
+,
+    "word": "雪花"
   },
   "雳": {
     "structure": "⿱雨历",
@@ -65585,6 +66413,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Wu"
     ]
+,
+    "word": "烟雾"
   },
   "需": {
     "structure": "⿱雨而",
@@ -65796,6 +66626,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Lu"
     ]
+,
+    "word": "显露"
   },
   "霸": {
     "structure": "⿱雨䩗",
@@ -65876,6 +66708,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Qing"
     ]
+,
+    "word": "青春"
   },
   "靖": {
     "structure": "⿰立青[GTJ]",
@@ -65923,6 +66757,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Jing"
     ]
+,
+    "word": "安静"
   },
   "非": {
     "structure": "非",
@@ -66014,6 +66850,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Mian"
     ]
+,
+    "word": "面前"
   },
   "革": {
     "structure": "革",
@@ -66300,6 +67138,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Ye"
     ]
+,
+    "word": "页面"
   },
   "顶": {
     "structure": "⿰丁页",
@@ -66374,6 +67214,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Shun"
     ]
+,
+    "word": "顺畅"
   },
   "须": {
     "structure": "⿰彡页",
@@ -66787,6 +67629,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "E"
     ]
+,
+    "word": "数额"
   },
   "颠": {
     "structure": "⿰真页",
@@ -66856,6 +67700,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Feng"
     ]
+,
+    "word": "风景"
   },
   "飒": {
     "structure": "⿰立风",
@@ -66913,6 +67759,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Fei"
     ]
+,
+    "word": "飞机"
   },
   "食": {
     "structure": "⿱人良",
@@ -67362,6 +68210,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Ma"
     ]
+,
+    "word": "马路"
   },
   "驮": {
     "structure": "⿰马大",
@@ -67647,6 +68497,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Yan"
     ]
+,
+    "word": "实验"
   },
   "骏": {
     "structure": "⿰马夋",
@@ -67853,6 +68705,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Gao"
     ]
+,
+    "word": "高兴"
   },
   "鬓": {
     "structure": "⿱髟宾",
@@ -68047,6 +68901,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Yu"
     ]
+,
+    "word": "鱼儿"
   },
   "鲁": {
     "structure": "⿱鱼日",
@@ -68298,6 +69154,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Niao"
     ]
+,
+    "word": "鸟儿"
   },
   "鸠": {
     "structure": "⿰九鸟",
@@ -68332,6 +69190,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Ji"
     ]
+,
+    "word": "鸡蛋"
   },
   "鸣": {
     "structure": "⿰口鸟",
@@ -68803,6 +69663,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Huang"
     ]
+,
+    "word": "黄色"
   },
   "黍": {
     "structure": "⿱禾⿱人氺",
@@ -68872,6 +69734,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Hei"
     ]
+,
+    "word": "黑板"
   },
   "黔": {
     "structure": "⿰黑今",
@@ -69088,6 +69952,8 @@ const HANZI_DATA = {
     "pinyinArray": [
       "Long"
     ]
+,
+    "word": "龙舟"
   },
   "龟": {
     "structure": "⿱𠂊⿻日乚",

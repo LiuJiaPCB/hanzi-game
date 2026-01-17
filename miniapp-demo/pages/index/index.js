@@ -1,5 +1,6 @@
 // pages/index/index.js
 const app = getApp();
+const ttsUtil = require('../../utils/tts-util');
 
 Page({
   data: {
@@ -12,6 +13,11 @@ Page({
   onLoad() {
     console.log('首页加载');
     this.changeHanzi();
+  },
+
+  onUnload() {
+    // 页面卸载时停止语音播放
+    ttsUtil.stop();
   },
 
   // 随机切换汉字
@@ -53,18 +59,30 @@ Page({
 
   // 朗读汉字
   playSound() {
-    const { currentHanzi } = this.data;
+    const { currentHanzi, pinyin } = this.data;
 
-    // 使用系统提示音（实际项目中可以使用真实的语音文件）
-    wx.showToast({
-      title: `朗读：${currentHanzi}`,
-      icon: 'none'
+    // 使用腾讯云语音合成播报汉字
+    ttsUtil.speak(currentHanzi, {
+      voiceType: 0, // 0-女声，1-男声
+      speed: -1, // 语速：-2到2，负数表示慢速
+      volume: 8, // 音量：0-10
+      success: () => {
+        console.log('语音播报成功');
+        wx.showToast({
+          title: `正在朗读：${currentHanzi}`,
+          icon: 'none',
+          duration: 1500
+        });
+      },
+      fail: (error) => {
+        console.error('语音播报失败', error);
+        wx.showToast({
+          title: '语音播报失败，请重试',
+          icon: 'none',
+          duration: 2000
+        });
+      }
     });
-
-    // 如果有音频文件，可以这样播放：
-    // const audio = wx.createInnerAudioContext();
-    // audio.src = `/audio/${currentHanzi}.mp3`;
-    // audio.play();
   },
 
   // 跳转到跑跑镇
