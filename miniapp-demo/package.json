@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "hanzi": "^2.1.5",
     "hanzi-writer-miniprogram": "^1.1.0"
   }
 }

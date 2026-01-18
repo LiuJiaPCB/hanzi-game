@@ -40,7 +40,11 @@ class HanziLoader {
         const parts = this.parseStructureParts(structure);
         if (parts && parts.length === 2) {
           const key = `${parts[0]}+${parts[1]}`;
-          this.outputLibMap[key] = { char };
+          this.outputLibMap[key] = { 
+            char,
+            pinyin: hanziData.pinyin || '',
+            word: hanziData.word || ''
+          };
 
           // 统计各结构类型的数量
           const operator = structure[0];

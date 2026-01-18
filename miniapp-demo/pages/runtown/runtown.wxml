@@ -108,7 +108,7 @@
         value="{{newPartInput}}"
         bindinput="onInputChange"
         placeholder="输入部件"
-        maxlength="2"
+        maxlength="6"
       />
       <button class="btn-add-left" bindtap="addLeft">➕ 加入部件一</button>
       <button class="btn-add-right" bindtap="addRight">➕ 加入部件二</button>

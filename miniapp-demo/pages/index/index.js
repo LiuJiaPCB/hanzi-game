@@ -1,17 +1,23 @@
 // pages/index/index.js
 const app = getApp();
 const ttsUtil = require('../../utils/tts-util');
+const { HANZI_DATA } = require('../../utils/hanzi-data');
 
 Page({
   data: {
     currentHanzi: '汉',
     pinyin: 'hàn',
     strokeCount: 5,
-    hanziList: ['汉', '字', '学', '习', '一', '二', '三', '上', '下', '大', '小', '人', '口', '手', '山', '水', '火', '木', '日', '月']
+    word: '汉字',
+    hanziList: [] // 将从 HANZI_DATA 中获取
   },
 
   onLoad() {
     console.log('首页加载');
+    // 从 HANZI_DATA 中获取所有汉字列表
+    const hanziList = Object.keys(HANZI_DATA);
+    this.setData({ hanziList });
+    console.log(`加载了 ${hanziList.length} 个汉字`);
     this.changeHanzi();
   },
 
@@ -23,35 +29,37 @@ Page({
   // 随机切换汉字
   changeHanzi() {
     const { hanziList } = this.data;
+    if (hanziList.length === 0) {
+      console.error('汉字列表为空');
+      return;
+    }
+
     const randomIndex = Math.floor(Math.random() * hanziList.length);
     const hanzi = hanziList[randomIndex];
 
-    // 模拟获取汉字信息（实际项目中可以调用 cnchar 库）
-    const pinyinMap = {
-      '汉': 'hàn', '字': 'zì', '学': 'xué', '习': 'xí',
-      '一': 'yī', '二': 'èr', '三': 'sān', '上': 'shàng',
-      '下': 'xià', '大': 'dà', '小': 'xiǎo', '人': 'rén',
-      '口': 'kǒu', '手': 'shǒu', '山': 'shān', '水': 'shuǐ',
-      '火': 'huǒ', '木': 'mù', '日': 'rì', '月': 'yuè'
-    };
+    // 从 HANZI_DATA 获取汉字信息
+    const hanziInfo = HANZI_DATA[hanzi];
+    if (!hanziInfo) {
+      console.error(`未找到汉字信息：${hanzi}`);
+      return;
+    }
 
-    const strokeMap = {
-      '汉': 5, '字': 6, '学': 8, '习': 3,
-      '一': 1, '二': 2, '三': 3, '上': 3,
-      '下': 3, '大': 3, '小': 3, '人': 2,
-      '口': 3, '手': 4, '山': 3, '水': 4,
-      '火': 4, '木': 4, '日': 4, '月': 4
-    };
+    // 转换拼音格式（从 "Hàn" 转为 "hàn"）
+    const pinyin = hanziInfo.pinyin ? hanziInfo.pinyin.toLowerCase() : 'unknown';
+    const strokeCount = hanziInfo.strokeCount || 0;
+    const word = hanziInfo.word || '';
 
     this.setData({
       currentHanzi: hanzi,
-      pinyin: pinyinMap[hanzi] || 'unknown',
-      strokeCount: strokeMap[hanzi] || 0
+      pinyin: pinyin,
+      strokeCount: strokeCount,
+      word: word
     });
 
     // 显示提示
+    const displayText = word ? `${hanzi}（${word}）` : hanzi;
     wx.showToast({
-      title: `切换到：${hanzi}`,
+      title: `切换到：${displayText}`,
       icon: 'none',
       duration: 1000
     });
@@ -59,17 +67,24 @@ Page({
 
   // 朗读汉字
   playSound() {
-    const { currentHanzi, pinyin } = this.data;
+    const { currentHanzi, pinyin, word } = this.data;
+
+    // 构建播报文本：汉字  + 组词
+    let speakText = `${currentHanzi}`;
+    if (word) {
+      speakText += `，组词：${word}`;
+    }
 
     // 使用腾讯云语音合成播报汉字
-    ttsUtil.speak(currentHanzi, {
+    ttsUtil.speak(speakText, {
       voiceType: 0, // 0-女声，1-男声
       speed: -1, // 语速：-2到2，负数表示慢速
       volume: 8, // 音量：0-10
       success: () => {
         console.log('语音播报成功');
+        const displayText = word ? `${currentHanzi}（${word}）` : currentHanzi;
         wx.showToast({
-          title: `正在朗读：${currentHanzi}`,
+          title: `正在朗读：${displayText}`,
           icon: 'none',
           duration: 1500
         });

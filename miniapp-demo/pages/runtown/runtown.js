@@ -1,6 +1,5 @@
 // pages/runtown/runtown.js
 const { hanziLoader } = require('../../utils/hanzi-loader.js');
-const { PinyinUtil } = require('../../utils/pinyin-util.js');
 const ttsUtil = require('../../utils/tts-util');
 
 // 默认部件库（支持多种结构类型）
@@ -162,8 +161,8 @@ Page({
         showResult: true,
         isSuccess: true,
         resultChar: targetChar,
-        resultPinyin: this.getPinyin(targetChar),
-        resultPhrase: this.getPhrase(targetChar),
+        resultPinyin: this.outputLibMap[comboKey].pinyin,
+        resultPhrase: this.outputLibMap[comboKey].word,
         runBtnText: '✨ 成功！',
         leftX: 80,  // 重置位置，避免影响布局
         rightX: 80
@@ -174,7 +173,7 @@ Page({
       
       // 播放语音
       setTimeout(() => {
-        this.playVoice(targetChar);
+        this.playVoice(targetChar,this.outputLibMap[comboKey].word);
       }, 500);
     } else {
       wx.showToast({
@@ -185,18 +184,8 @@ Page({
     }
   },
 
-  // 获取拼音
-  getPinyin(char) {
-    return PinyinUtil.getPinyin(char);
-  },
-
-  // 获取词组
-  getPhrase(char) {
-    return PinyinUtil.getPhrase(char);
-  },
-
   // 播放语音
-  playVoice(e) {
+  playVoice(e,word) {
     // 如果是event对象，从dataset中获取char
     let char = e;
     if (e && e.currentTarget && e.currentTarget.dataset) {
@@ -208,15 +197,12 @@ Page({
       console.error('playVoice: 无效的字符参数', char);
       return;
     }
-    
-    const pinyin = PinyinUtil.getPinyin(char);
-    const phrase = PinyinUtil.getPhrase(char);
-    const text = `${char}，${phrase}`;
+    const text = `${char}，${word}`;
     
     // 使用腾讯云语音合成播报
     ttsUtil.speak(text, {
       voiceType: 0, // 0-女声，1-男声
-      speed: -2, // 语速：-2到2，负数表示慢速
+      speed: -1, // 语速：-2到2，负数表示慢速
       volume: 10, // 音量：0-10
       success: () => {
         console.log('语音播报成功');
