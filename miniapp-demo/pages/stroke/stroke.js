@@ -1,5 +1,6 @@
 // pages/stroke/stroke.js
 const { HANZI_DATA } = require('../../utils/hanzi-data.js');
+const { PRACTICE_HANZI_LIST } = require('../../utils/practice-hanzi-list.js');
 
 // 引入 hanzi-writer-miniprogram
 let createHanziWriter;
@@ -18,7 +19,7 @@ Page({
   data: {
     currentHanzi: '一',
     strokeOrder: '横',
-    hanziList: ['一', '二', '三', '十', '大', '小', '人', '口'],
+    hanziList: [],
     currentIndex: 0,
     canvasSize: 300 // 默认值
   },
@@ -37,6 +38,10 @@ Page({
       console.error('获取系统信息失败', e);
     }
     
+    // 使用预定义的汉字列表
+    const hanziList = PRACTICE_HANZI_LIST;
+    console.log('汉字列表:', hanziList, '共', hanziList.length, '个');
+    
     // 从 HANZI_DATA 中获取初始汉字的笔画信息
     const { currentHanzi } = this.data;
     const hanziData = HANZI_DATA[currentHanzi];
@@ -45,9 +50,12 @@ Page({
       : '未知';
     
     this.setData({
+      hanziList: hanziList,
       strokeOrder: strokeOrder
     });
   },
+  
+
 
   onReady() {
     // 页面渲染完成后初始化 HanziWriter
@@ -62,6 +70,16 @@ Page({
       console.error('HanziWriter 未加载');
       wx.showToast({
         title: 'HanziWriter 加载失败',
+        icon: 'none'
+      });
+      return;
+    }
+    
+    // 验证汉字是否存在于 HANZI_DATA 中
+    if (!HANZI_DATA[currentHanzi]) {
+      console.error('汉字不存在于 HANZI_DATA 中:', currentHanzi);
+      wx.showToast({
+        title: '该汉字暂不支持',
         icon: 'none'
       });
       return;
@@ -83,14 +101,13 @@ Page({
         page: this,
         width: canvasSize,
         height: canvasSize,
-        showHintAfterMisses: false, // 不自动显示提示
         padding: 5,
         showCharacter: false, // 隐藏汉字本身
         showOutline: false,    // 默认隐藏笔画轮廓，点击提示按钮时显示
         strokeColor: '#4CAF50',
         outlineColor: '#DDD',
         drawingColor: '#333',
-        showHintAfterMisses: 1,
+        showHintAfterMisses: 2, // 错误2次后显示提示
         onLoadCharDataSuccess: (data) => {
           console.log('汉字数据加载成功:', data);
           // 启动 quiz 模式
@@ -204,14 +221,30 @@ Page({
   // 下一个汉字
   nextHanzi() {
     const { hanziList, currentIndex } = this.data;
+    
+    if (!hanziList || hanziList.length === 0) {
+      console.error('汉字列表为空');
+      wx.showToast({
+        title: '没有可用的汉字',
+        icon: 'none'
+      });
+      return;
+    }
+    
     const nextIndex = (currentIndex + 1) % hanziList.length;
     const nextHanzi = hanziList[nextIndex];
     
-    // 从 HANZI_DATA 中获取笔画信息
+    // 验证汉字数据
     const hanziData = HANZI_DATA[nextHanzi];
-    const strokeOrder = hanziData && hanziData.strokeShapes
-      ? hanziData.strokeShapes.join('、')
-      : '未知';
+    if (!hanziData || !hanziData.strokeShapes) {
+      console.error('汉字数据无效:', nextHanzi);
+      // 跳过这个汉字，尝试下一个
+      this.setData({ currentIndex: nextIndex });
+      this.nextHanzi();
+      return;
+    }
+    
+    const strokeOrder = hanziData.strokeShapes.join('、');
     
     this.setData({
       currentHanzi: nextHanzi,
