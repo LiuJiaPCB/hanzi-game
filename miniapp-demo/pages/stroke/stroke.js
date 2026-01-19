@@ -18,7 +18,7 @@ try {
 Page({
   data: {
     currentHanzi: '一',
-    strokeOrder: '横',
+    strokeOrder: '',
     hanziList: [],
     currentIndex: 0,
     canvasSize: 300 // 默认值
@@ -103,7 +103,7 @@ Page({
         height: canvasSize,
         padding: 5,
         showCharacter: false, // 隐藏汉字本身
-        showOutline: false,    // 默认隐藏笔画轮廓，点击提示按钮时显示
+        showOutline: true,
         strokeColor: '#4CAF50',
         outlineColor: '#DDD',
         drawingColor: '#333',
@@ -170,28 +170,9 @@ Page({
     
     console.log('重新开始 quiz');
     
-    // 隐藏轮廓
-    this.writer.hideOutline();
-    
     // 重新开始 quiz
     this.writer.cancelQuiz();
     this.startQuiz();
-    
-    wx.showToast({
-      title: '重新开始',
-      icon: 'success'
-    });
-  },
-
-  // 显示提示
-  showHint() {
-    if (!this.writer) {
-      console.error('Writer 未初始化');
-      return;
-    }
-    console.log('显示提示');
-    // 显示轮廓
-    this.writer.showOutline();
   },
 
   // 根据笔画名称查找对应的汉字
@@ -254,9 +235,6 @@ Page({
     
     // 取消当前 quiz 并更新汉字
     if (this.writer) {
-      // 隐藏轮廓
-      this.writer.hideOutline();
-      
       this.writer.cancelQuiz();
       this.writer.setCharacter(nextHanzi);
       // 等待汉字数据加载后启动 quiz

@@ -32,7 +32,6 @@
 
   <view class="actions">
     <button class="btn-primary" bindtap="resetQuiz">重新练习</button>
-    <button class="btn-secondary" bindtap="showHint">显示提示</button>
     <button class="btn-success" bindtap="nextHanzi">下一个</button>
   </view>
 
