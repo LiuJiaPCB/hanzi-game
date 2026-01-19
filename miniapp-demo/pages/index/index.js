@@ -58,11 +58,6 @@ Page({
 
     // 显示提示
     const displayText = word ? `${hanzi}（${word}）` : hanzi;
-    wx.showToast({
-      title: `切换到：${displayText}`,
-      icon: 'none',
-      duration: 1000
-    });
   },
 
   // 朗读汉字

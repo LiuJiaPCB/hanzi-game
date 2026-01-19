@@ -1,5 +1,5 @@
 // pages/xiangxing/xiangxing.js
-const { PinyinUtil } = require('../../utils/pinyin-util.js');
+const ttsUtil = require("../../utils/tts-util");
 
 // 象形字数据
 const xiangData = [
@@ -75,11 +75,11 @@ Page({
     // 随机选5个象形字
     const shuffled = xiangData.sort(() => Math.random() - 0.5);
     const selected = shuffled.slice(0, 5);
-    
+
     // 打乱图片和汉字的顺序
     const pics = [...selected].sort(() => Math.random() - 0.5);
     const hans = [...selected].sort(() => Math.random() - 0.5);
-    
+
     this.setData({
       currentPics: pics,
       currentHans: hans,
@@ -107,7 +107,7 @@ Page({
   // 检查配对
   checkMatch() {
     const { selPic, selHan } = this.data;
-    
+
     if (!selPic || !selHan) {
       wx.showToast({
         title: '请先选两张卡片哦！',
@@ -115,14 +115,14 @@ Page({
       });
       return;
     }
-    
+
     if (selPic.char === selHan.char) {
       // 配对成功
       wx.showToast({
         title: '🌟 太棒啦！',
         icon: 'success'
       });
-      
+
       this.setData({
         showModal: true,
         matchedTip: selPic.tip,
@@ -149,10 +149,28 @@ Page({
   playCharVoice() {
     const { matchedChar } = this.data;
     if (matchedChar) {
-      const pinyin = PinyinUtil.getPinyin(matchedChar);
-      const text = `${matchedChar}，拼音${pinyin}`;
-      // 使用真实语音播报
-      PinyinUtil.speak(text);
+      // 使用腾讯云语音合成播报汉字
+      ttsUtil.speak(matchedChar, {
+        voiceType: 0, // 0-女声，1-男声
+        speed: -1, // 语速：-2到2，负数表示慢速
+        volume: 8, // 音量：0-10
+        success: () => {
+          console.log('语音播报成功');
+          wx.showToast({
+            title: `正在朗读：${matchedChar}`,
+            icon: 'none',
+            duration: 1500
+          });
+        },
+        fail: (error) => {
+          console.error('语音播报失败', error);
+          wx.showToast({
+            title: '语音播报失败，请重试',
+            icon: 'none',
+            duration: 2000
+          });
+        }
+      });
     }
   },
 
@@ -160,8 +178,28 @@ Page({
   playTipVoice() {
     const { matchedTip } = this.data;
     if (matchedTip) {
-      // 使用真实语音播报
-      PinyinUtil.speak(matchedTip);
+      // 使用腾讯云语音合成播报汉字
+      ttsUtil.speak(matchedTip, {
+        voiceType: 0, // 0-女声，1-男声
+        speed: -1, // 语速：-2到2，负数表示慢速
+        volume: 8, // 音量：0-10
+        success: () => {
+          console.log('语音播报成功');
+          wx.showToast({
+            title: `正在朗读：${matchedTip}`,
+            icon: 'none',
+            duration: 1500
+          });
+        },
+        fail: (error) => {
+          console.error('语音播报失败', error);
+          wx.showToast({
+            title: '语音播报失败，请重试',
+            icon: 'none',
+            duration: 2000
+          });
+        }
+      });
     }
   }
 })

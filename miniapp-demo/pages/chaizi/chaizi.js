@@ -1,4 +1,3 @@
-const { PinyinUtil } = require('../../utils/pinyin-util.js');
 const { HANZI_DATA } = require('../../utils/hanzi-data.js');
 const ttsUtil = require('../../utils/tts-util');
 
@@ -155,9 +154,6 @@ Page({
     const char = charInput || '克';
 
     console.log(`[${Date.now()}] initSplit开始，char:`, char);
-
-    // 播放语音
-    PinyinUtil.speak(char);
 
     // 获取组词和拼音
     const hanziData = HANZI_DATA[char];
@@ -452,7 +448,7 @@ Page({
 
       // 检查笔画是否匹配
       if (currentCode === charCode && !this.foundChars.has(char)) {
-        const pinyin = hanziData.pinyin ? hanziData.pinyin.toLowerCase() : PinyinUtil.getPinyin(char);
+        const pinyin = hanziData.pinyin ? hanziData.pinyin.toLowerCase() : "";
         newMatched.push({ char, pinyin });
         this.foundChars.add(char);
       }
@@ -479,11 +475,6 @@ Page({
       wx.showToast({
         title: `找到 ${newMatched.length} 个小伙伴！`,
         icon: 'success'
-      });
-
-      // 播放语音
-      newMatched.forEach(item => {
-        PinyinUtil.speak(item.char);
       });
     } else {
       wx.showToast({
