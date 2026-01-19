@@ -452,7 +452,7 @@ Page({
 
       // 检查笔画是否匹配
       if (currentCode === charCode && !this.foundChars.has(char)) {
-        const pinyin = hanziData.pinyin || PinyinUtil.getPinyin(char);
+        const pinyin = hanziData.pinyin ? hanziData.pinyin.toLowerCase() : PinyinUtil.getPinyin(char);
         newMatched.push({ char, pinyin });
         this.foundChars.add(char);
       }
