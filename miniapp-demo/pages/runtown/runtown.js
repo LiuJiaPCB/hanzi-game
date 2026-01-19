@@ -185,11 +185,14 @@ Page({
   },
 
   // 播放语音
-  playVoice(e,word) {
-    // 如果是event对象，从dataset中获取char
+  playVoice(e, word) {
+    // 如果是event对象，从dataset中获取char和phrase
     let char = e;
+    let phrase = word;
+    
     if (e && e.currentTarget && e.currentTarget.dataset) {
       char = e.currentTarget.dataset.char;
+      phrase = e.currentTarget.dataset.phrase || word;
     }
     
     // 确保char是字符串
@@ -197,13 +200,15 @@ Page({
       console.error('playVoice: 无效的字符参数', char);
       return;
     }
-    const text = `${char}，${word}`;
+    
+    // 构建朗读文本
+    const text = phrase ? `${char}，${phrase}` : char;
     
     // 使用腾讯云语音合成播报
     ttsUtil.speak(text, {
       voiceType: 0, // 0-女声，1-男声
       speed: -1, // 语速：-2到2，负数表示慢速
-      volume: 10, // 音量：0-10
+      volume: 8, // 音量：0-10
       success: () => {
         console.log('语音播报成功');
         wx.showToast({

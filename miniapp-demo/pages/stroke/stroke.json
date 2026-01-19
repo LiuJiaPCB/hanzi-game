@@ -1,3 +1,6 @@
 {
-  "navigationBarTitleText": "笔画练习"
+  "navigationBarTitleText": "笔画练习",
+  "usingComponents": {
+    "hanzi-writer-view": "/miniprogram_npm/hanzi-writer-miniprogram/hanzi-writer-view"
+  }
 }

@@ -31,13 +31,45 @@
   box-shadow: 0 4rpx 20rpx rgba(0, 0, 0, 0.08);
 }
 
+.hanzi-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30rpx;
+  gap: 30rpx;
+}
+
 .hanzi-display {
   font-size: 240rpx;
   text-align: center;
   color: #4CAF50;
   font-weight: bold;
-  line-height: 1.2;
-  margin-bottom: 30rpx;
+  line-height: 1;
+}
+
+.word-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 16rpx;
+  padding: 20rpx 30rpx;
+  min-width: 120rpx;
+}
+
+.word-label {
+  font-size: 24rpx;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 8rpx;
+  display: block;
+}
+
+.word-value {
+  font-size: 48rpx;
+  color: white;
+  font-weight: bold;
+  display: block;
 }
 
 .hanzi-info {

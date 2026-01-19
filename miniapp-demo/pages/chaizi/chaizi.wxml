@@ -18,15 +18,35 @@
 
   <!-- 主内容区 -->
   <view class="main-content">
-    <!-- 汉字展示区 -->
-    <view class="hanzi-display">
-      <!-- 使用 hanzi-writer 的组件 -->
-      <hanzi-writer-view
-        wx:if="{{charInput}}"
-        id="hanzi-canvas"
-        width="{{canvasSize}}"
-        height="{{canvasSize}}"
-      ></hanzi-writer-view>
+    <!-- 汉字展示区容器 -->
+    <view class="hanzi-container">
+      <!-- 汉字展示区 -->
+      <view class="hanzi-display">
+        <!-- 使用 hanzi-writer 的组件 -->
+        <hanzi-writer-view
+          wx:if="{{charInput}}"
+          id="hanzi-canvas"
+          width="{{canvasSize}}"
+          height="{{canvasSize}}"
+        ></hanzi-writer-view>
+      </view>
+      
+      <!-- 组词展示区 -->
+      <view class="word-display" wx:if="{{word}}">
+        <text class="word-label">组词</text>
+        <text class="word-value">{{word}}</text>
+      </view>
+    </view>
+
+    <!-- 读音展示区 -->
+    <view class="hanzi-info" wx:if="{{pinyin}}">
+      <text class="info-label">拼音：</text>
+      <text class="info-value">{{pinyin}}</text>
+    </view>
+
+    <!-- 语音播放按钮 -->
+    <view class="sound-section">
+      <button class="btn-sound" bindtap="playSound">📢 朗读</button>
     </view>
 
     <!-- 右侧面板 -->

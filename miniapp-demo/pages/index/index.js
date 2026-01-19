@@ -72,7 +72,7 @@ Page({
     // 构建播报文本：汉字  + 组词
     let speakText = `${currentHanzi}`;
     if (word) {
-      speakText += `，组词：${word}`;
+      speakText += `，${word}`;
     }
 
     // 使用腾讯云语音合成播报汉字

@@ -1,6 +1,10 @@
 /* pages/stroke/stroke.wxss */
 .container {
   padding: 40rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
 }
 
 .header {
@@ -35,25 +39,95 @@
   color: #666;
 }
 
-.canvas-container {
-  background: white;
-  border-radius: 20rpx;
-  padding: 20rpx;
-  margin-bottom: 30rpx;
-  box-shadow: 0 4rpx 20rpx rgba(0, 0, 0, 0.08);
+/* 画布外层包裹容器 - 居中显示 */
+.canvas-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 40rpx 0;
 }
 
-.hanzi-canvas {
-  width: 100%;
+/* 画布容器 - 放大尺寸 */
+.canvas-container {
+  position: relative;
+  width: 600rpx;
   height: 600rpx;
-  border: 2rpx dashed #E0E0E0;
-  border-radius: 12rpx;
+  background: white;
+  border-radius: 20rpx;
+  box-shadow: 0 8rpx 30rpx rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+}
+
+/* 米字格背景 */
+.grid-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* 米字格线条通用样式 */
+.grid-line {
+  position: absolute;
+  background-color: #E8F5E9;
+}
+
+/* 横线 */
+.grid-horizontal {
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 2rpx;
+  transform: translateY(-50%);
+}
+
+/* 竖线 */
+.grid-vertical {
+  left: 50%;
+  top: 0;
+  width: 2rpx;
+  height: 100%;
+  transform: translateX(-50%);
+}
+
+/* 对角线1（左上到右下）*/
+.grid-diagonal-1 {
+  top: 0;
+  left: 0;
+  width: 141.42%; /* sqrt(2) * 100% */
+  height: 2rpx;
+  transform-origin: top left;
+  transform: rotate(45deg);
+}
+
+/* 对角线2（右上到左下）*/
+.grid-diagonal-2 {
+  top: 0;
+  right: 0;
+  width: 141.42%; /* sqrt(2) * 100% */
+  height: 2rpx;
+  transform-origin: top right;
+  transform: rotate(-45deg);
+}
+
+/* 画布本身 */
+.hanzi-canvas {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
 }
 
 .actions {
   display: flex;
   gap: 15rpx;
   margin-bottom: 20rpx;
+  width: 100%;
+  max-width: 600rpx;
 }
 
 .btn-primary {

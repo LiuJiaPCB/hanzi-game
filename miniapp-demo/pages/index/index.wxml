@@ -6,7 +6,13 @@
   </view>
 
   <view class="card">
-    <view class="hanzi-display">{{currentHanzi}}</view>
+    <view class="hanzi-container">
+      <view class="hanzi-display">{{currentHanzi}}</view>
+      <view class="word-display" wx:if="{{word}}">
+        <text class="word-label">组词</text>
+        <text class="word-value">{{word}}</text>
+      </view>
+    </view>
     <view class="hanzi-info">
       <text class="info-label">拼音：</text>
       <text class="info-value">{{pinyin}}</text>

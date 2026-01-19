@@ -37,7 +37,7 @@
       <view class="result-right">
         <view class="result-phrase">{{resultPhrase}}</view>
         <view class="result-tip">🎉 组合成功！</view>
-        <button class="btn-voice-play" bindtap="playVoice" data-char="{{resultChar}}">🔊 听发音</button>
+        <button class="btn-voice-play" bindtap="playVoice" data-char="{{resultChar}}" data-phrase="{{resultPhrase}}">🔊 听发音</button>
       </view>
     </view>
   </view>

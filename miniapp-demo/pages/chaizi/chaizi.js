@@ -1,5 +1,6 @@
 const { PinyinUtil } = require('../../utils/pinyin-util.js');
 const { HANZI_DATA } = require('../../utils/hanzi-data.js');
+const ttsUtil = require('../../utils/tts-util');
 
 // 尝试引入 hanzi-writer-miniprogram
 let createHanziWriter;
@@ -24,7 +25,9 @@ Page({
     clickSequence: [],
     matchedChars: [],
     hanziList: [],
-    canvasSize: 300 // 默认值
+    canvasSize: 300, // 默认值
+    word: '', // 组词
+    pinyin: '' // 拼音
   },
 
   onLoad() {
@@ -61,6 +64,11 @@ Page({
     this.initSplit();
   },
 
+  onUnload() {
+    // 页面卸载时停止语音播放
+    ttsUtil.stop();
+  },
+
   // 加载汉字列表
   loadHanziList() {
     try {
@@ -85,6 +93,41 @@ Page({
   onCharInput(e) {
     this.setData({
       charInput: e.detail.value
+    });
+  },
+
+  // 朗读汉字
+  playSound() {
+    const { charInput, word } = this.data;
+
+    // 构建播报文本：汉字 + 组词
+    let speakText = `${charInput}`;
+    if (word) {
+      speakText += `，${word}`;
+    }
+
+    // 使用腾讯云语音合成播报汉字
+    ttsUtil.speak(speakText, {
+      voiceType: 0, // 0-女声，1-男声
+      speed: -1, // 语速：-2到2，负数表示慢速
+      volume: 8, // 音量：0-10
+      success: () => {
+        console.log('语音播报成功');
+        const displayText = word ? `${charInput}（${word}）` : charInput;
+        wx.showToast({
+          title: `正在朗读：${displayText}`,
+          icon: 'none',
+          duration: 1500
+        });
+      },
+      fail: (error) => {
+        console.error('语音播报失败', error);
+        wx.showToast({
+          title: '语音播报失败，请重试',
+          icon: 'none',
+          duration: 2000
+        });
+      }
     });
   },
 
@@ -116,12 +159,19 @@ Page({
     // 播放语音
     PinyinUtil.speak(char);
 
+    // 获取组词和拼音
+    const hanziData = HANZI_DATA[char];
+    const word = hanziData && hanziData.word ? hanziData.word : '';
+    const pinyin = hanziData && hanziData.pinyin ? hanziData.pinyin.toLowerCase() : '';
+
     // 重置游戏状态
     this.foundChars.clear();
     this.currentStrokeIndex = 0;
     this.setData({
       matchedChars: [],
-      clickSequence: []
+      clickSequence: [],
+      word: word,
+      pinyin: pinyin
     });
 
     // 获取本地笔画信息

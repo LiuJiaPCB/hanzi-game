@@ -11,23 +11,32 @@
     </view>
   </view>
 
-  <view class="canvas-container">
-    <canvas 
-      canvas-id="hanziCanvas" 
-      class="hanzi-canvas"
-      bindtouchstart="touchStart"
-      bindtouchmove="touchMove"
-      bindtouchend="touchEnd"
-    ></canvas>
+  <view class="canvas-wrapper">
+    <view class="canvas-container">
+      <!-- 米字格背景 -->
+      <view class="grid-background">
+        <view class="grid-line grid-horizontal"></view>
+        <view class="grid-line grid-vertical"></view>
+        <view class="grid-line grid-diagonal-1"></view>
+        <view class="grid-line grid-diagonal-2"></view>
+      </view>
+      
+      <hanzi-writer-view
+        id="hanzi-writer"
+        width="{{canvasSize}}"
+        height="{{canvasSize}}"
+        class="hanzi-canvas"
+      ></hanzi-writer-view>
+    </view>
   </view>
 
   <view class="actions">
-    <button class="btn-primary" bindtap="clearCanvas">清空画布</button>
-    <button class="btn-secondary" bindtap="showStroke">显示笔画</button>
+    <button class="btn-primary" bindtap="resetQuiz">重新练习</button>
+    <button class="btn-secondary" bindtap="showHint">显示提示</button>
     <button class="btn-success" bindtap="nextHanzi">下一个</button>
   </view>
 
   <view class="tips">
-    <text class="tips-text">💡 在画布上临摹汉字笔画</text>
+    <text class="tips-text">💡 按照笔顺依次描画汉字</text>
   </view>
 </view>
