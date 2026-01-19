@@ -135,7 +135,7 @@ const HANZI_DATA = {
     "word": "不是"
   },
   "与": {
-    "structure": "⿹②一[GTKV]",
+    "structure": "⿹②一",
     "strokeCount": 3,
     "strokeShapes": [
       "一",
@@ -423,7 +423,7 @@ const HANZI_DATA = {
     "word": "中间"
   },
   "丰": {
-    "structure": "⿻三丨[GJK]",
+    "structure": "⿻三丨",
     "strokeCount": 4,
     "strokeShapes": [
       "一",
@@ -476,7 +476,7 @@ const HANZI_DATA = {
     "word": "临界"
   },
   "丸": {
-    "structure": "⿻九丶[GJ]",
+    "structure": "⿻九丶",
     "strokeCount": 3,
     "strokeShapes": [
       "丿",
@@ -536,7 +536,7 @@ const HANZI_DATA = {
     "word": "主人"
   },
   "丽": {
-    "structure": "⿱一⿰⿵冂丶⿵冂丶[G]",
+    "structure": "⿱一⿰⿵冂丶⿵冂丶",
     "strokeCount": 7,
     "strokeShapes": [
       "一",
@@ -1343,7 +1343,7 @@ const HANZI_DATA = {
     "word": "亭子"
   },
   "亮": {
-    "structure": "⿱⿳亠口冖几[G]",
+    "structure": "⿱⿳亠口冖几",
     "strokeCount": 9,
     "strokeShapes": [
       "丶",
@@ -1485,7 +1485,7 @@ const HANZI_DATA = {
     "word": "仇敌"
   },
   "今": {
-    "structure": "⿱亽㇇[G]",
+    "structure": "⿱亽㇇",
     "strokeCount": 4,
     "strokeShapes": [
       "丿",
@@ -1671,7 +1671,7 @@ const HANZI_DATA = {
     "word": "替代"
   },
   "令": {
-    "structure": "⿱亽龴[G]",
+    "structure": "⿱亽龴",
     "strokeCount": 5,
     "strokeShapes": [
       "丿",
@@ -2769,7 +2769,7 @@ const HANZI_DATA = {
     "word": "华侨"
   },
   "侮": {
-    "structure": "⿰亻每[GTK]",
+    "structure": "⿰亻每",
     "strokeCount": 9,
     "strokeShapes": [
       "丿",
@@ -3069,7 +3069,7 @@ const HANZI_DATA = {
     "word": "勤俭"
   },
   "修": {
-    "structure": "⿰⿰亻丨⿱夂彡[G]",
+    "structure": "⿰⿰亻丨⿱夂彡",
     "strokeCount": 9,
     "strokeShapes": [
       "丿",
@@ -3215,7 +3215,7 @@ const HANZI_DATA = {
     "word": "倔强"
   },
   "倘": {
-    "structure": "⿰亻尚[GTV]",
+    "structure": "⿰亻尚",
     "strokeCount": 10,
     "strokeShapes": [
       "丿",
@@ -3320,7 +3320,7 @@ const HANZI_DATA = {
     "word": "提倡"
   },
   "倦": {
-    "structure": "⿰亻卷[GTKV]",
+    "structure": "⿰亻卷",
     "strokeCount": 10,
     "strokeShapes": [
       "丿",
@@ -3812,7 +3812,7 @@ const HANZI_DATA = {
     "word": "官僚"
   },
   "僧": {
-    "structure": "⿰亻曾[GTKV]",
+    "structure": "⿰亻曾",
     "strokeCount": 14,
     "strokeShapes": [
       "丿",
@@ -4089,7 +4089,7 @@ const HANZI_DATA = {
     "word": "克服"
   },
   "免": {
-    "structure": "⿱𠂊⑤[GTK]",
+    "structure": "⿱𠂊⑤",
     "strokeCount": 7,
     "strokeShapes": [
       "丿",
@@ -4225,7 +4225,7 @@ const HANZI_DATA = {
     "word": "入口"
   },
   "全": {
-    "structure": "⿱人王[GJ]",
+    "structure": "⿱人王",
     "strokeCount": 6,
     "strokeShapes": [
       "丿",
@@ -4318,7 +4318,7 @@ const HANZI_DATA = {
     "word": "共同"
   },
   "关": {
-    "structure": "⿱丷天[G]",
+    "structure": "⿱丷天",
     "strokeCount": 6,
     "strokeShapes": [
       "丶",
@@ -4389,7 +4389,7 @@ const HANZI_DATA = {
     "word": "其他"
   },
   "具": {
-    "structure": "⿱⿴且一八[GTKV]",
+    "structure": "⿱⿴且一八",
     "strokeCount": 8,
     "strokeShapes": [
       "丨",
@@ -4580,7 +4580,7 @@ const HANZI_DATA = {
     "word": "再次"
   },
   "冒": {
-    "structure": "⿱冃目[GTKV]",
+    "structure": "⿱冃目",
     "strokeCount": 9,
     "strokeShapes": [
       "丨",
@@ -5008,7 +5008,7 @@ const HANZI_DATA = {
     "word": "减法"
   },
   "凑": {
-    "structure": "⿰冫奏[GT]",
+    "structure": "⿰冫奏",
     "strokeCount": 11,
     "strokeShapes": [
       "丶",
@@ -5306,7 +5306,7 @@ const HANZI_DATA = {
     "word": "打击"
   },
   "函": {
-    "structure": "⿶凵⿻了⿱丷八[GTV]",
+    "structure": "⿶凵⿻了⿱丷八",
     "strokeCount": 8,
     "strokeShapes": [
       "㇇|乛",
@@ -5374,7 +5374,7 @@ const HANZI_DATA = {
     "word": "刁难"
   },
   "刃": {
-    "structure": "⿹刀丿[GK]",
+    "structure": "⿹刀丿",
     "strokeCount": 3,
     "strokeShapes": [
       "𠃌",
@@ -5737,7 +5737,7 @@ const HANZI_DATA = {
     "word": "刷牙"
   },
   "券": {
-    "structure": "⿱龹刀[GTJ]",
+    "structure": "⿱龹刀",
     "strokeCount": 8,
     "strokeShapes": [
       "丶",
@@ -6427,7 +6427,7 @@ const HANZI_DATA = {
     "word": "蓬勃"
   },
   "勇": {
-    "structure": "⿱甬力[GTV]",
+    "structure": "⿱甬力",
     "strokeCount": 9,
     "strokeShapes": [
       "㇇|乛",
@@ -6554,7 +6554,7 @@ const HANZI_DATA = {
     "word": "招募"
   },
   "勤": {
-    "structure": "⿰堇力[GTKV]",
+    "structure": "⿰堇力",
     "strokeCount": 13,
     "strokeShapes": [
       "一",
@@ -6637,7 +6637,7 @@ const HANZI_DATA = {
     "word": "均匀"
   },
   "包": {
-    "structure": "⿹勹巳[GTKV]",
+    "structure": "⿹勹巳",
     "strokeCount": 5,
     "strokeShapes": [
       "丿",
@@ -6686,7 +6686,7 @@ const HANZI_DATA = {
     "word": "匈牙利"
   },
   "匕": {
-    "structure": "⿺乚丿[GJ]",
+    "structure": "⿺乚丿",
     "strokeCount": 2,
     "strokeShapes": [
       "丿",
@@ -6699,7 +6699,7 @@ const HANZI_DATA = {
     "word": "匕首"
   },
   "化": {
-    "structure": "⿰亻𠤎[G]",
+    "structure": "⿰亻𠤎",
     "strokeCount": 4,
     "strokeShapes": [
       "丿",
@@ -6808,7 +6808,7 @@ const HANZI_DATA = {
     "word": "土匪"
   },
   "匹": {
-    "structure": "⿷匚儿[GJK]",
+    "structure": "⿷匚儿",
     "strokeCount": 4,
     "strokeShapes": [
       "一",
@@ -6823,7 +6823,7 @@ const HANZI_DATA = {
     "word": "匹配"
   },
   "区": {
-    "structure": "⿷匚㐅[GJK]",
+    "structure": "⿷匚㐅",
     "strokeCount": 4,
     "strokeShapes": [
       "一",
@@ -6838,7 +6838,7 @@ const HANZI_DATA = {
     "word": "区域"
   },
   "医": {
-    "structure": "⿷匚矢[GJK]",
+    "structure": "⿷匚矢",
     "strokeCount": 7,
     "strokeShapes": [
       "一",
@@ -6856,7 +6856,7 @@ const HANZI_DATA = {
     "word": "医生"
   },
   "匾": {
-    "structure": "⿷匚扁[GJK]",
+    "structure": "⿷匚扁",
     "strokeCount": 11,
     "strokeShapes": [
       "一",
@@ -6878,7 +6878,7 @@ const HANZI_DATA = {
     "word": "匾额"
   },
   "匿": {
-    "structure": "⿷匚若[GJK]",
+    "structure": "⿷匚若",
     "strokeCount": 10,
     "strokeShapes": [
       "一",
@@ -7006,7 +7006,7 @@ const HANZI_DATA = {
     "word": "协议"
   },
   "卑": {
-    "structure": "⿱⿻白丿十[GTK]",
+    "structure": "⿱⿻白丿十",
     "strokeCount": 8,
     "strokeShapes": [
       "丿",
@@ -7121,7 +7121,7 @@ const HANZI_DATA = {
     "word": "南方"
   },
   "博": {
-    "structure": "⿰十尃[GTKV]",
+    "structure": "⿰十尃",
     "strokeCount": 12,
     "strokeShapes": [
       "一",
@@ -7362,7 +7362,7 @@ const HANZI_DATA = {
     "word": "卵子"
   },
   "卷": {
-    "structure": "⿱龹㔾[GTV]",
+    "structure": "⿱龹㔾",
     "strokeCount": 8,
     "strokeShapes": [
       "丶",
@@ -7806,7 +7806,7 @@ const HANZI_DATA = {
     "word": "双重"
   },
   "反": {
-    "structure": "⿸𠂆又[G]",
+    "structure": "⿸𠂆又",
     "strokeCount": 4,
     "strokeShapes": [
       "丿",
@@ -7856,7 +7856,7 @@ const HANZI_DATA = {
     "word": "叔叔"
   },
   "取": {
-    "structure": "⿰耳又[GV]",
+    "structure": "⿰耳又",
     "strokeCount": 8,
     "strokeShapes": [
       "一",
@@ -8801,7 +8801,7 @@ const HANZI_DATA = {
     "word": "吮吸"
   },
   "启": {
-    "structure": "⿸户口[G]",
+    "structure": "⿸户口",
     "strokeCount": 7,
     "strokeShapes": [
       "丶",
@@ -8962,7 +8962,7 @@ const HANZI_DATA = {
     "word": "哎呀"
   },
   "呆": {
-    "structure": "⿱口木[GJK]",
+    "structure": "⿱口木",
     "strokeCount": 7,
     "strokeShapes": [
       "丨",
@@ -8980,7 +8980,7 @@ const HANZI_DATA = {
     "word": "发呆"
   },
   "呈": {
-    "structure": "⿱口王[GJK]",
+    "structure": "⿱口王",
     "strokeCount": 7,
     "strokeShapes": [
       "丨",
@@ -9980,7 +9980,7 @@ const HANZI_DATA = {
     "word": "教唆"
   },
   "唇": {
-    "structure": "⿸辰口[G]",
+    "structure": "⿸辰口",
     "strokeCount": 10,
     "strokeShapes": [
       "一",
@@ -10022,7 +10022,7 @@ const HANZI_DATA = {
     "word": "唉声"
   },
   "唐": {
-    "structure": "⿸广⿱肀口[GTKV]",
+    "structure": "⿸广⿱肀口",
     "strokeCount": 10,
     "strokeShapes": [
       "丶",
@@ -10238,7 +10238,7 @@ const HANZI_DATA = {
     "word": "啃咬"
   },
   "啄": {
-    "structure": "⿰口豖[GTKV]",
+    "structure": "⿰口豖",
     "strokeCount": 11,
     "strokeShapes": [
       "丨",
@@ -10481,7 +10481,7 @@ const HANZI_DATA = {
     "word": "喂养"
   },
   "善": {
-    "structure": "⿱⿱羊䒑口[GJK]",
+    "structure": "⿱⿱羊䒑口",
     "strokeCount": 12,
     "strokeShapes": [
       "丶",
@@ -10619,7 +10619,7 @@ const HANZI_DATA = {
     "word": "喜欢"
   },
   "喝": {
-    "structure": "⿰口曷[GTKV]",
+    "structure": "⿰口曷",
     "strokeCount": 12,
     "strokeShapes": [
       "丨",
@@ -10665,7 +10665,7 @@ const HANZI_DATA = {
     "word": "喧闹"
   },
   "喳": {
-    "structure": "⿰口查[GT]",
+    "structure": "⿰口查",
     "strokeCount": 12,
     "strokeShapes": [
       "丨",
@@ -11135,7 +11135,7 @@ const HANZI_DATA = {
     "word": "嘿嘿"
   },
   "器": {
-    "structure": "⿳吅犬吅[GTKV]",
+    "structure": "⿳吅犬吅",
     "strokeCount": 16,
     "strokeShapes": [
       "丨",
@@ -11505,7 +11505,7 @@ const HANZI_DATA = {
     "word": "困难"
   },
   "囱": {
-    "structure": "⿴⿱丿囗夂[G]",
+    "structure": "⿴⿱丿囗夂",
     "strokeCount": 7,
     "strokeShapes": [
       "丿",
@@ -11778,7 +11778,7 @@ const HANZI_DATA = {
     "word": "地址"
   },
   "均": {
-    "structure": "⿰土匀[G]",
+    "structure": "⿰土匀",
     "strokeCount": 7,
     "strokeShapes": [
       "一",
@@ -12942,7 +12942,7 @@ const HANZI_DATA = {
     "word": "增加"
   },
   "墨": {
-    "structure": "⿱黑土[GTK]",
+    "structure": "⿱黑土",
     "strokeCount": 15,
     "strokeShapes": [
       "丨",
@@ -13129,7 +13129,7 @@ const HANZI_DATA = {
     "word": "声音"
   },
   "壳": {
-    "structure": "⿱士冗[G]",
+    "structure": "⿱士冗",
     "strokeCount": 7,
     "strokeShapes": [
       "一",
@@ -13191,7 +13191,7 @@ const HANZI_DATA = {
     "word": "壹仟"
   },
   "处": {
-    "structure": "⿺夂卜[GK]",
+    "structure": "⿺夂卜",
     "strokeCount": 5,
     "strokeShapes": [
       "丿",
@@ -13226,7 +13226,7 @@ const HANZI_DATA = {
     "word": "准备"
   },
   "复": {
-    "structure": "⿳𠂉日夂[G]",
+    "structure": "⿳𠂉日夂",
     "strokeCount": 9,
     "strokeShapes": [
       "丿",
@@ -13246,7 +13246,7 @@ const HANZI_DATA = {
     "word": "复习"
   },
   "夏": {
-    "structure": "⿱𦣻夂[GJK]",
+    "structure": "⿱𦣻夂",
     "strokeCount": 10,
     "strokeShapes": [
       "一",
@@ -13676,7 +13676,7 @@ const HANZI_DATA = {
     "word": "演奏"
   },
   "契": {
-    "structure": "⿱㓞大[GTKV]",
+    "structure": "⿱㓞大",
     "strokeCount": 9,
     "strokeShapes": [
       "一",
@@ -14026,7 +14026,7 @@ const HANZI_DATA = {
     "word": "妈妈"
   },
   "妒": {
-    "structure": "⿰女户[G]",
+    "structure": "⿰女户",
     "strokeCount": 7,
     "strokeShapes": [
       "𡿨",
@@ -15733,7 +15733,7 @@ const HANZI_DATA = {
     "word": "宰相"
   },
   "害": {
-    "structure": "⿱𫲸口[GK]",
+    "structure": "⿱𫲸口",
     "strokeCount": 10,
     "strokeShapes": [
       "丶",
@@ -16182,7 +16182,7 @@ const HANZI_DATA = {
     "word": "寥落"
   },
   "寨": {
-    "structure": "⿱𡨄木[GJK]",
+    "structure": "⿱𡨄木",
     "strokeCount": 14,
     "strokeShapes": [
       "丶",
@@ -16237,7 +16237,7 @@ const HANZI_DATA = {
     "word": "对话"
   },
   "寺": {
-    "structure": "⿱土寸[GJK]",
+    "structure": "⿱土寸",
     "strokeCount": 6,
     "strokeShapes": [
       "一",
@@ -16347,7 +16347,7 @@ const HANZI_DATA = {
     "word": "发射"
   },
   "将": {
-    "structure": "⿰丬𪧷[G]",
+    "structure": "⿰丬𪧷",
     "strokeCount": 9,
     "strokeShapes": [
       "丶",
@@ -17657,7 +17657,7 @@ const HANZI_DATA = {
     "word": "巨大"
   },
   "巩": {
-    "structure": "⿰工凡[G]",
+    "structure": "⿰工凡",
     "strokeCount": 6,
     "strokeShapes": [
       "一",
@@ -17692,7 +17692,7 @@ const HANZI_DATA = {
     "word": "巫师"
   },
   "差": {
-    "structure": "⿸羊工[G]",
+    "structure": "⿸羊工",
     "strokeCount": 9,
     "strokeShapes": [
       "丶",
@@ -17755,7 +17755,7 @@ const HANZI_DATA = {
     "word": "尾巴"
   },
   "巷": {
-    "structure": "⿱共巳[GTK]",
+    "structure": "⿱共巳",
     "strokeCount": 9,
     "strokeShapes": [
       "一",
@@ -17869,7 +17869,7 @@ const HANZI_DATA = {
     "word": "帆船"
   },
   "师": {
-    "structure": "⿰⿰丨丿帀[G]",
+    "structure": "⿰⿰丨丿帀",
     "strokeCount": 6,
     "strokeShapes": [
       "丨",
@@ -17979,7 +17979,7 @@ const HANZI_DATA = {
     "word": "窗帘"
   },
   "帚": {
-    "structure": "⿳彐冖巾[G]",
+    "structure": "⿳彐冖巾",
     "strokeCount": 8,
     "strokeShapes": [
       "𠃍",
@@ -18501,7 +18501,7 @@ const HANZI_DATA = {
     "word": "序号"
   },
   "庐": {
-    "structure": "⿸广户[G]",
+    "structure": "⿸广户",
     "strokeCount": 7,
     "strokeShapes": [
       "丶",
@@ -18888,7 +18888,7 @@ const HANZI_DATA = {
     "word": "轮廓"
   },
   "延": {
-    "structure": "⿺廴⿱丿③[GK]",
+    "structure": "⿺廴⿱丿③",
     "strokeCount": 6,
     "strokeShapes": [
       "丿",
@@ -18905,7 +18905,7 @@ const HANZI_DATA = {
     "word": "延伸"
   },
   "廷": {
-    "structure": "⿺廴壬[GJK]",
+    "structure": "⿺廴壬",
     "strokeCount": 6,
     "strokeShapes": [
       "丿",
@@ -18956,7 +18956,7 @@ const HANZI_DATA = {
     "word": "开心"
   },
   "异": {
-    "structure": "⿱巳廾[G]",
+    "structure": "⿱巳廾",
     "strokeCount": 6,
     "strokeShapes": [
       "𠃍",
@@ -19133,7 +19133,7 @@ const HANZI_DATA = {
     "word": "张开"
   },
   "弥": {
-    "structure": "⿰弓尔[G]",
+    "structure": "⿰弓尔",
     "strokeCount": 8,
     "strokeShapes": [
       "𠃍",
@@ -19597,7 +19597,7 @@ const HANZI_DATA = {
     "word": "征求"
   },
   "径": {
-    "structure": "⿰彳𢀖[G]",
+    "structure": "⿰彳𢀖",
     "strokeCount": 8,
     "strokeShapes": [
       "丿",
@@ -19850,7 +19850,7 @@ const HANZI_DATA = {
     "word": "遵循"
   },
   "微": {
-    "structure": "⿰彳𢼸[GK]",
+    "structure": "⿰彳𢼸",
     "strokeCount": 13,
     "strokeShapes": [
       "丿",
@@ -19900,7 +19900,7 @@ const HANZI_DATA = {
     "word": "道德"
   },
   "徽": {
-    "structure": "⿰彳𢾰[GTK]",
+    "structure": "⿰彳𢾰",
     "strokeCount": 17,
     "strokeShapes": [
       "丿",
@@ -20915,7 +20915,7 @@ const HANZI_DATA = {
     "word": "强悍"
   },
   "悔": {
-    "structure": "⿰忄每[GTKV]",
+    "structure": "⿰忄每",
     "strokeCount": 10,
     "strokeShapes": [
       "㇀",
@@ -21354,7 +21354,7 @@ const HANZI_DATA = {
     "word": "恐惧"
   },
   "惨": {
-    "structure": "⿰忄参[GJK]",
+    "structure": "⿰忄参",
     "strokeCount": 11,
     "strokeShapes": [
       "㇀",
@@ -21607,7 +21607,7 @@ const HANZI_DATA = {
     "word": "治愈"
   },
   "愉": {
-    "structure": "⿰忄俞[GTJ]",
+    "structure": "⿰忄俞",
     "strokeCount": 12,
     "strokeShapes": [
       "㇀",
@@ -21701,7 +21701,7 @@ const HANZI_DATA = {
     "word": "愚笨"
   },
   "感": {
-    "structure": "⿱咸心[GJK]",
+    "structure": "⿱咸心",
     "strokeCount": 13,
     "strokeShapes": [
       "一",
@@ -21771,7 +21771,7 @@ const HANZI_DATA = {
     "word": "惭愧"
   },
   "愿": {
-    "structure": "⿸原心[G]",
+    "structure": "⿸原心",
     "strokeCount": 14,
     "strokeShapes": [
       "一",
@@ -22043,7 +22043,7 @@ const HANZI_DATA = {
     "word": "憋气"
   },
   "憎": {
-    "structure": "⿰忄曾[GTK]",
+    "structure": "⿰忄曾",
     "strokeCount": 15,
     "strokeShapes": [
       "㇀",
@@ -22201,7 +22201,7 @@ const HANZI_DATA = {
     "word": "懈怠"
   },
   "懊": {
-    "structure": "⿰忄奥[G]",
+    "structure": "⿰忄奥",
     "strokeCount": 15,
     "strokeShapes": [
       "㇀",
@@ -22525,7 +22525,7 @@ const HANZI_DATA = {
     "word": "户口"
   },
   "房": {
-    "structure": "⿸户方[G]",
+    "structure": "⿸户方",
     "strokeCount": 8,
     "strokeShapes": [
       "丶",
@@ -22544,7 +22544,7 @@ const HANZI_DATA = {
     "word": "房间"
   },
   "所": {
-    "structure": "⿰戶斤[GTKV]",
+    "structure": "⿰戶斤",
     "strokeCount": 8,
     "strokeShapes": [
       "丿",
@@ -22563,7 +22563,7 @@ const HANZI_DATA = {
     "word": "所以"
   },
   "扁": {
-    "structure": "⿸户𠕁[G]",
+    "structure": "⿸户𠕁",
     "strokeCount": 9,
     "strokeShapes": [
       "丶",
@@ -22583,7 +22583,7 @@ const HANZI_DATA = {
     "word": "扁平"
   },
   "扇": {
-    "structure": "⿸户羽[G]",
+    "structure": "⿸户羽",
     "strokeCount": 10,
     "strokeShapes": [
       "丶",
@@ -23282,7 +23282,7 @@ const HANZI_DATA = {
     "word": "抢夺"
   },
   "护": {
-    "structure": "⿰扌户[G]",
+    "structure": "⿰扌户",
     "strokeCount": 7,
     "strokeShapes": [
       "一",
@@ -23470,7 +23470,7 @@ const HANZI_DATA = {
     "word": "拂拭"
   },
   "拄": {
-    "structure": "⿰扌主[GTJ]",
+    "structure": "⿰扌主",
     "strokeCount": 8,
     "strokeShapes": [
       "一",
@@ -23603,7 +23603,7 @@ const HANZI_DATA = {
     "word": "拍照"
   },
   "拐": {
-    "structure": "⿰扌另[GK]",
+    "structure": "⿰扌另",
     "strokeCount": 8,
     "strokeShapes": [
       "一",
@@ -25373,7 +25373,7 @@ const HANZI_DATA = {
     "word": "措施"
   },
   "掰": {
-    "structure": "⿲龵分手[G]",
+    "structure": "⿲龵分手",
     "strokeCount": 12,
     "strokeShapes": [
       "丿",
@@ -25485,7 +25485,7 @@ const HANZI_DATA = {
     "word": "揉搓"
   },
   "揍": {
-    "structure": "⿰扌奏[GT]",
+    "structure": "⿰扌奏",
     "strokeCount": 12,
     "strokeShapes": [
       "一",
@@ -27070,7 +27070,7 @@ const HANZI_DATA = {
     "word": "敌人"
   },
   "敏": {
-    "structure": "⿰每攵[GTKV]",
+    "structure": "⿰每攵",
     "strokeCount": 11,
     "strokeShapes": [
       "丿",
@@ -27158,7 +27158,7 @@ const HANZI_DATA = {
     "word": "收敛"
   },
   "敞": {
-    "structure": "⿰尚攵[GT]",
+    "structure": "⿰尚攵",
     "strokeCount": 12,
     "strokeShapes": [
       "丨",
@@ -27181,7 +27181,7 @@ const HANZI_DATA = {
     "word": "宽敞"
   },
   "敢": {
-    "structure": "⿰⿱乛耳攵[G]",
+    "structure": "⿰⿱乛耳攵",
     "strokeCount": 11,
     "strokeShapes": [
       "㇇|乛",
@@ -27249,7 +27249,7 @@ const HANZI_DATA = {
     "word": "敦促"
   },
   "敬": {
-    "structure": "⿰苟攵[GJK]",
+    "structure": "⿰苟攵",
     "strokeCount": 12,
     "strokeShapes": [
       "一",
@@ -27348,7 +27348,7 @@ const HANZI_DATA = {
     "word": "整齐"
   },
   "敷": {
-    "structure": "⿰旉攵[GTK]",
+    "structure": "⿰旉攵",
     "strokeCount": 15,
     "strokeShapes": [
       "一",
@@ -29003,7 +29003,7 @@ const HANZI_DATA = {
     "word": "曹操"
   },
   "曼": {
-    "structure": "⿳日罒又[GJK]",
+    "structure": "⿳日罒又",
     "strokeCount": 11,
     "strokeShapes": [
       "丨",
@@ -29025,7 +29025,7 @@ const HANZI_DATA = {
     "word": "曼妙"
   },
   "曾": {
-    "structure": "⿱丷𭥴[GTV]",
+    "structure": "⿱丷𭥴",
     "strokeCount": 12,
     "strokeShapes": [
       "丶",
@@ -29071,7 +29071,7 @@ const HANZI_DATA = {
     "word": "替换"
   },
   "最": {
-    "structure": "⿱日取[GJK]",
+    "structure": "⿱日取",
     "strokeCount": 12,
     "strokeShapes": [
       "丨",
@@ -29185,7 +29185,7 @@ const HANZI_DATA = {
     "word": "开朗"
   },
   "望": {
-    "structure": "⿱⿰亡月王[GJK]",
+    "structure": "⿱⿰亡月王",
     "strokeCount": 11,
     "strokeShapes": [
       "丶",
@@ -29394,7 +29394,7 @@ const HANZI_DATA = {
     "word": "朴素"
   },
   "朵": {
-    "structure": "⿱几木[GK]",
+    "structure": "⿱几木",
     "strokeCount": 6,
     "strokeShapes": [
       "丿",
@@ -29694,7 +29694,7 @@ const HANZI_DATA = {
     "word": "杠杆"
   },
   "条": {
-    "structure": "⿱夂朩[GT]",
+    "structure": "⿱夂朩",
     "strokeCount": 7,
     "strokeShapes": [
       "丿",
@@ -30109,7 +30109,7 @@ const HANZI_DATA = {
     "word": "枯萎"
   },
   "架": {
-    "structure": "⿱加木[GJK]",
+    "structure": "⿱加木",
     "strokeCount": 9,
     "strokeShapes": [
       "𠃌",
@@ -30189,7 +30189,7 @@ const HANZI_DATA = {
     "word": "柏树"
   },
   "某": {
-    "structure": "⿱甘木[GJK]",
+    "structure": "⿱甘木",
     "strokeCount": 9,
     "strokeShapes": [
       "一",
@@ -30229,7 +30229,7 @@ const HANZI_DATA = {
     "word": "柑橘"
   },
   "柒": {
-    "structure": "⿱㲺木[GJK]",
+    "structure": "⿱㲺木",
     "strokeCount": 9,
     "strokeShapes": [
       "丶",
@@ -30249,7 +30249,7 @@ const HANZI_DATA = {
     "word": "七"
   },
   "染": {
-    "structure": "⿱氿木[GJK]",
+    "structure": "⿱氿木",
     "strokeCount": 9,
     "strokeShapes": [
       "丶",
@@ -30269,7 +30269,7 @@ const HANZI_DATA = {
     "word": "染色"
   },
   "柔": {
-    "structure": "⿱矛木[GJK]",
+    "structure": "⿱矛木",
     "strokeCount": 9,
     "strokeShapes": [
       "㇇|乛",
@@ -30408,7 +30408,7 @@ const HANZI_DATA = {
     "word": "柳树"
   },
   "柴": {
-    "structure": "⿱此木[GJK]",
+    "structure": "⿱此木",
     "strokeCount": 10,
     "strokeShapes": [
       "丨",
@@ -30611,7 +30611,7 @@ const HANZI_DATA = {
     "word": "栖息"
   },
   "栗": {
-    "structure": "⿱覀木[GJK]",
+    "structure": "⿱覀木",
     "strokeCount": 10,
     "strokeShapes": [
       "一",
@@ -30863,7 +30863,7 @@ const HANZI_DATA = {
     "word": "框架"
   },
   "案": {
-    "structure": "⿱安木[GJK]",
+    "structure": "⿱安木",
     "strokeCount": 10,
     "strokeShapes": [
       "丶",
@@ -30926,7 +30926,7 @@ const HANZI_DATA = {
     "word": "梧桐"
   },
   "桑": {
-    "structure": "⿱叒木[GJK]",
+    "structure": "⿱叒木",
     "strokeCount": 10,
     "strokeShapes": [
       "㇇|乛",
@@ -31074,7 +31074,7 @@ const HANZI_DATA = {
     "word": "水桶"
   },
   "梁": {
-    "structure": "⿱⿰氵刅木[GJK]",
+    "structure": "⿱⿰氵刅木",
     "strokeCount": 11,
     "strokeShapes": [
       "丶",
@@ -31096,7 +31096,7 @@ const HANZI_DATA = {
     "word": "栋梁"
   },
   "梅": {
-    "structure": "⿰木每[GTKV]",
+    "structure": "⿰木每",
     "strokeCount": 11,
     "strokeShapes": [
       "一",
@@ -31227,7 +31227,7 @@ const HANZI_DATA = {
     "word": "梧桐"
   },
   "梨": {
-    "structure": "⿱利木[GJK]",
+    "structure": "⿱利木",
     "strokeCount": 11,
     "strokeShapes": [
       "丿",
@@ -31520,7 +31520,7 @@ const HANZI_DATA = {
     "word": "大棚"
   },
   "棠": {
-    "structure": "⿱𫩠木[GJK]",
+    "structure": "⿱𫩠木",
     "strokeCount": 12,
     "strokeShapes": [
       "丨",
@@ -32600,7 +32600,7 @@ const HANZI_DATA = {
     "word": "欠缺"
   },
   "次": {
-    "structure": "⿰冫欠[GJ]",
+    "structure": "⿰冫欠",
     "strokeCount": 6,
     "strokeShapes": [
       "丶",
@@ -33050,7 +33050,7 @@ const HANZI_DATA = {
     "word": "特殊"
   },
   "残": {
-    "structure": "⿰歹戋[G]",
+    "structure": "⿰歹戋",
     "strokeCount": 9,
     "strokeShapes": [
       "一",
@@ -33261,7 +33261,7 @@ const HANZI_DATA = {
     "word": "每天"
   },
   "毒": {
-    "structure": "⿱龶母[GK]",
+    "structure": "⿱龶母",
     "strokeCount": 9,
     "strokeShapes": [
       "一",
@@ -33583,7 +33583,7 @@ const HANZI_DATA = {
     "word": "氮气"
   },
   "氯": {
-    "structure": "⿹气录[G]",
+    "structure": "⿹气录",
     "strokeCount": 12,
     "strokeShapes": [
       "丿",
@@ -33720,7 +33720,7 @@ const HANZI_DATA = {
     "word": "汗水"
   },
   "汛": {
-    "structure": "⿰氵卂[GTV]",
+    "structure": "⿰氵卂",
     "strokeCount": 6,
     "strokeShapes": [
       "丶",
@@ -33931,7 +33931,7 @@ const HANZI_DATA = {
     "word": "沈阳"
   },
   "沉": {
-    "structure": "⿰氵冗[GJK]",
+    "structure": "⿰氵冗",
     "strokeCount": 7,
     "strokeShapes": [
       "丶",
@@ -34093,7 +34093,7 @@ const HANZI_DATA = {
     "word": "沧海"
   },
   "沪": {
-    "structure": "⿰氵户[G]",
+    "structure": "⿰氵户",
     "strokeCount": 7,
     "strokeShapes": [
       "丶",
@@ -34282,7 +34282,7 @@ const HANZI_DATA = {
     "word": "沾染"
   },
   "沿": {
-    "structure": "⿰氵⿱几口[GK]",
+    "structure": "⿰氵⿱几口",
     "strokeCount": 8,
     "strokeShapes": [
       "丶",
@@ -34946,7 +34946,7 @@ const HANZI_DATA = {
     "word": "流动"
   },
   "浅": {
-    "structure": "⿰氵戋[G]",
+    "structure": "⿰氵戋",
     "strokeCount": 8,
     "strokeShapes": [
       "丶",
@@ -35148,7 +35148,7 @@ const HANZI_DATA = {
     "word": "黄浦"
   },
   "浩": {
-    "structure": "⿰氵告[GTJ]",
+    "structure": "⿰氵告",
     "strokeCount": 10,
     "strokeShapes": [
       "丶",
@@ -35742,7 +35742,7 @@ const HANZI_DATA = {
     "word": "淋雨"
   },
   "淌": {
-    "structure": "⿰氵尚[GT]",
+    "structure": "⿰氵尚",
     "strokeCount": 11,
     "strokeShapes": [
       "丶",
@@ -36116,7 +36116,7 @@ const HANZI_DATA = {
     "word": "渗透"
   },
   "渠": {
-    "structure": "⿱洰木[GJK]",
+    "structure": "⿱洰木",
     "strokeCount": 11,
     "strokeShapes": [
       "丶",
@@ -36161,7 +36161,7 @@ const HANZI_DATA = {
     "word": "渡口"
   },
   "渣": {
-    "structure": "⿰氵查[GT]",
+    "structure": "⿰氵查",
     "strokeCount": 12,
     "strokeShapes": [
       "丶",
@@ -36792,7 +36792,7 @@ const HANZI_DATA = {
     "word": "滚动"
   },
   "滞": {
-    "structure": "⿰氵带[G]",
+    "structure": "⿰氵带",
     "strokeCount": 12,
     "strokeShapes": [
       "丶",
@@ -37469,7 +37469,7 @@ const HANZI_DATA = {
     "word": "洗澡"
   },
   "澳": {
-    "structure": "⿰氵奥[G]",
+    "structure": "⿰氵奥",
     "strokeCount": 15,
     "strokeShapes": [
       "丶",
@@ -37657,7 +37657,7 @@ const HANZI_DATA = {
     "word": "灯泡"
   },
   "灰": {
-    "structure": "⿸𠂇火[GTKV]",
+    "structure": "⿸𠂇火",
     "strokeCount": 6,
     "strokeShapes": [
       "一",
@@ -37674,7 +37674,7 @@ const HANZI_DATA = {
     "word": "灰色"
   },
   "灵": {
-    "structure": "⿱彐火[GV]",
+    "structure": "⿱彐火",
     "strokeCount": 7,
     "strokeShapes": [
       "𠃍",
@@ -37782,7 +37782,7 @@ const HANZI_DATA = {
     "word": "灿烂"
   },
   "炉": {
-    "structure": "⿰火户[G]",
+    "structure": "⿰火户",
     "strokeCount": 8,
     "strokeShapes": [
       "㇀",
@@ -39801,7 +39801,7 @@ const HANZI_DATA = {
     "word": "勇猛"
   },
   "猜": {
-    "structure": "⿰犭青[GT]",
+    "structure": "⿰犭青",
     "strokeCount": 11,
     "strokeShapes": [
       "丿",
@@ -40248,7 +40248,7 @@ const HANZI_DATA = {
     "word": "玻璃"
   },
   "珊": {
-    "structure": "⿰王册[G]",
+    "structure": "⿰王册",
     "strokeCount": 9,
     "strokeShapes": [
       "一",
@@ -40440,7 +40440,7 @@ const HANZI_DATA = {
     "word": "琐碎"
   },
   "琢": {
-    "structure": "⿰王豖[GTKV]",
+    "structure": "⿰王豖",
     "strokeCount": 12,
     "strokeShapes": [
       "一",
@@ -41103,7 +41103,7 @@ const HANZI_DATA = {
     "word": "草甸"
   },
   "画": {
-    "structure": "⿱一⿶凵田[GT]",
+    "structure": "⿱一⿶凵田",
     "strokeCount": 8,
     "strokeShapes": [
       "一",
@@ -41947,7 +41947,7 @@ const HANZI_DATA = {
     "word": "麻痹"
   },
   "瘟": {
-    "structure": "⿸疒昷[G]",
+    "structure": "⿸疒昷",
     "strokeCount": 14,
     "strokeShapes": [
       "丶",
@@ -42780,7 +42780,7 @@ const HANZI_DATA = {
     "word": "盲目"
   },
   "直": {
-    "structure": "⿱十⿴且一[GT]",
+    "structure": "⿱十⿴且一",
     "strokeCount": 8,
     "strokeShapes": [
       "一",
@@ -43045,7 +43045,7 @@ const HANZI_DATA = {
     "word": "眼眶"
   },
   "眷": {
-    "structure": "⿱龹目[GTV]",
+    "structure": "⿱龹目",
     "strokeCount": 11,
     "strokeShapes": [
       "丶",
@@ -43089,7 +43089,7 @@ const HANZI_DATA = {
     "word": "眼睛"
   },
   "着": {
-    "structure": "⿸羊目[GT]",
+    "structure": "⿸羊目",
     "strokeCount": 11,
     "strokeShapes": [
       "丶",
@@ -43133,7 +43133,7 @@ const HANZI_DATA = {
     "word": "睁眼"
   },
   "睛": {
-    "structure": "⿰目青[GT]",
+    "structure": "⿰目青",
     "strokeCount": 13,
     "strokeShapes": [
       "丨",
@@ -44179,7 +44179,7 @@ const HANZI_DATA = {
     "word": "碉堡"
   },
   "碌": {
-    "structure": "⿰石录[G]",
+    "structure": "⿰石录",
     "strokeCount": 13,
     "strokeShapes": [
       "一",
@@ -44373,7 +44373,7 @@ const HANZI_DATA = {
     "word": "碧绿"
   },
   "碰": {
-    "structure": "⿰石並[GT]",
+    "structure": "⿰石並",
     "strokeCount": 13,
     "strokeShapes": [
       "一",
@@ -44630,7 +44630,7 @@ const HANZI_DATA = {
     "word": "磷火"
   },
   "磺": {
-    "structure": "⿰石黄[G]",
+    "structure": "⿰石黄",
     "strokeCount": 16,
     "strokeShapes": [
       "一",
@@ -44735,7 +44735,7 @@ const HANZI_DATA = {
     "word": "社会"
   },
   "祈": {
-    "structure": "⿰礻斤[GTJ]",
+    "structure": "⿰礻斤",
     "strokeCount": 8,
     "strokeShapes": [
       "丶",
@@ -44754,7 +44754,7 @@ const HANZI_DATA = {
     "word": "祈祷"
   },
   "祖": {
-    "structure": "⿰礻且[GTJ]",
+    "structure": "⿰礻且",
     "strokeCount": 9,
     "strokeShapes": [
       "丶",
@@ -44835,7 +44835,7 @@ const HANZI_DATA = {
     "word": "作祟"
   },
   "祠": {
-    "structure": "⿰礻司[GTV]",
+    "structure": "⿰礻司",
     "strokeCount": 9,
     "strokeShapes": [
       "丶",
@@ -44855,7 +44855,7 @@ const HANZI_DATA = {
     "word": "祠堂"
   },
   "祥": {
-    "structure": "⿰礻羊[GTJ]",
+    "structure": "⿰礻羊",
     "strokeCount": 10,
     "strokeShapes": [
       "丶",
@@ -45414,7 +45414,7 @@ const HANZI_DATA = {
     "word": "秩序"
   },
   "秫": {
-    "structure": "⿰禾术[G]",
+    "structure": "⿰禾术",
     "strokeCount": 10,
     "strokeShapes": [
       "丿",
@@ -45456,7 +45456,7 @@ const HANZI_DATA = {
     "word": "积累"
   },
   "称": {
-    "structure": "⿰禾尔[GTKV]",
+    "structure": "⿰禾尔",
     "strokeCount": 10,
     "strokeShapes": [
       "丿",
@@ -45760,7 +45760,7 @@ const HANZI_DATA = {
     "word": "庄稼"
   },
   "稽": {
-    "structure": "⿰禾⿱尤旨[GTJK]",
+    "structure": "⿰禾⿱尤旨",
     "strokeCount": 15,
     "strokeShapes": [
       "丿",
@@ -45958,7 +45958,7 @@ const HANZI_DATA = {
     "word": "穿着"
   },
   "突": {
-    "structure": "⿱穴犬[GTKV]",
+    "structure": "⿱穴犬",
     "strokeCount": 9,
     "strokeShapes": [
       "丶",
@@ -46084,7 +46084,7 @@ const HANZI_DATA = {
     "word": "窒息"
   },
   "窖": {
-    "structure": "⿱穴告[GT]",
+    "structure": "⿱穴告",
     "strokeCount": 12,
     "strokeShapes": [
       "丶",
@@ -46107,7 +46107,7 @@ const HANZI_DATA = {
     "word": "地窖"
   },
   "窗": {
-    "structure": "⿱穴囱[GJK]",
+    "structure": "⿱穴囱",
     "strokeCount": 12,
     "strokeShapes": [
       "丶",
@@ -47540,7 +47540,7 @@ const HANZI_DATA = {
     "word": "簸箕"
   },
   "簿": {
-    "structure": "⿱竹溥[GTKV]",
+    "structure": "⿱竹溥",
     "strokeCount": 19,
     "strokeShapes": [
       "丿",
@@ -47768,7 +47768,7 @@ const HANZI_DATA = {
     "word": "粟米"
   },
   "粤": {
-    "structure": "⿱⿴⿱丿囗米丂[GTJK]",
+    "structure": "⿱⿴⿱丿囗米丂",
     "strokeCount": 12,
     "strokeShapes": [
       "丿",
@@ -50163,7 +50163,7 @@ const HANZI_DATA = {
     "word": "羊羔"
   },
   "羞": {
-    "structure": "⿸羊丑[G]",
+    "structure": "⿸羊丑",
     "strokeCount": 10,
     "strokeShapes": [
       "丶",
@@ -50588,7 +50588,7 @@ const HANZI_DATA = {
     "word": "考试"
   },
   "者": {
-    "structure": "⿸耂日[GTJ]",
+    "structure": "⿸耂日",
     "strokeCount": 8,
     "strokeShapes": [
       "一",
@@ -50983,7 +50983,7 @@ const HANZI_DATA = {
     "word": "聘请"
   },
   "聚": {
-    "structure": "⿱取乑[GJK]",
+    "structure": "⿱取乑",
     "strokeCount": 14,
     "strokeShapes": [
       "一",
@@ -51118,7 +51118,7 @@ const HANZI_DATA = {
     "word": "肌肉"
   },
   "肋": {
-    "structure": "⿰月力[GTV]",
+    "structure": "⿰月力",
     "strokeCount": 6,
     "strokeShapes": [
       "丿",
@@ -51152,7 +51152,7 @@ const HANZI_DATA = {
     "word": "肌理"
   },
   "肖": {
-    "structure": "⿱⺌月[GJ]",
+    "structure": "⿱⺌月",
     "strokeCount": 7,
     "strokeShapes": [
       "丨",
@@ -51170,7 +51170,7 @@ const HANZI_DATA = {
     "word": "肖像"
   },
   "肘": {
-    "structure": "⿰月寸[GJK]",
+    "structure": "⿰月寸",
     "strokeCount": 7,
     "strokeShapes": [
       "丿",
@@ -51188,7 +51188,7 @@ const HANZI_DATA = {
     "word": "肘部"
   },
   "肚": {
-    "structure": "⿰月土[GJK]",
+    "structure": "⿰月土",
     "strokeCount": 7,
     "strokeShapes": [
       "丿",
@@ -51206,7 +51206,7 @@ const HANZI_DATA = {
     "word": "肚子"
   },
   "肛": {
-    "structure": "⿰月工[GJK]",
+    "structure": "⿰月工",
     "strokeCount": 7,
     "strokeShapes": [
       "丿",
@@ -51224,7 +51224,7 @@ const HANZI_DATA = {
     "word": "肛门"
   },
   "肝": {
-    "structure": "⿰月干[GJK]",
+    "structure": "⿰月干",
     "strokeCount": 7,
     "strokeShapes": [
       "丿",
@@ -51260,7 +51260,7 @@ const HANZI_DATA = {
     "word": "肠子"
   },
   "股": {
-    "structure": "⿰月殳[GJK]",
+    "structure": "⿰月殳",
     "strokeCount": 8,
     "strokeShapes": [
       "丿",
@@ -51279,7 +51279,7 @@ const HANZI_DATA = {
     "word": "股份"
   },
   "肢": {
-    "structure": "⿰月支[GJK]",
+    "structure": "⿰月支",
     "strokeCount": 8,
     "strokeShapes": [
       "丿",
@@ -51298,7 +51298,7 @@ const HANZI_DATA = {
     "word": "肢体"
   },
   "肤": {
-    "structure": "⿰月夫[G]",
+    "structure": "⿰月夫",
     "strokeCount": 8,
     "strokeShapes": [
       "丿",
@@ -51317,7 +51317,7 @@ const HANZI_DATA = {
     "word": "皮肤"
   },
   "肥": {
-    "structure": "⿰月巴[GJK]",
+    "structure": "⿰月巴",
     "strokeCount": 8,
     "strokeShapes": [
       "丿",
@@ -51336,7 +51336,7 @@ const HANZI_DATA = {
     "word": "肥胖"
   },
   "肩": {
-    "structure": "⿸户月[G]",
+    "structure": "⿸户月",
     "strokeCount": 8,
     "strokeShapes": [
       "丶",
@@ -51355,7 +51355,7 @@ const HANZI_DATA = {
     "word": "肩膀"
   },
   "肪": {
-    "structure": "⿰月方[GJK]",
+    "structure": "⿰月方",
     "strokeCount": 8,
     "strokeShapes": [
       "丿",
@@ -51374,7 +51374,7 @@ const HANZI_DATA = {
     "word": "脂肪"
   },
   "肮": {
-    "structure": "⿰月亢[GK]",
+    "structure": "⿰月亢",
     "strokeCount": 8,
     "strokeShapes": [
       "丿",
@@ -51393,7 +51393,7 @@ const HANZI_DATA = {
     "word": "肮脏"
   },
   "肯": {
-    "structure": "⿱止月[GJKV]",
+    "structure": "⿱止月",
     "strokeCount": 8,
     "strokeShapes": [
       "丨",
@@ -51412,7 +51412,7 @@ const HANZI_DATA = {
     "word": "肯干"
   },
   "育": {
-    "structure": "⿱𠫓月[GJK]",
+    "structure": "⿱𠫓月",
     "strokeCount": 8,
     "strokeShapes": [
       "丶",
@@ -51431,7 +51431,7 @@ const HANZI_DATA = {
     "word": "教育"
   },
   "肴": {
-    "structure": "⿱㐅有[GJK]",
+    "structure": "⿱㐅有",
     "strokeCount": 8,
     "strokeShapes": [
       "丿",
@@ -51450,7 +51450,7 @@ const HANZI_DATA = {
     "word": "佳肴"
   },
   "肺": {
-    "structure": "⿰月巿[G]",
+    "structure": "⿰月巿",
     "strokeCount": 8,
     "strokeShapes": [
       "丿",
@@ -51545,7 +51545,7 @@ const HANZI_DATA = {
     "word": "威胁"
   },
   "胃": {
-    "structure": "⿱田月[GJK]",
+    "structure": "⿱田月",
     "strokeCount": 9,
     "strokeShapes": [
       "丨",
@@ -51565,7 +51565,7 @@ const HANZI_DATA = {
     "word": "胃口"
   },
   "胆": {
-    "structure": "⿰月旦[GJK]",
+    "structure": "⿰月旦",
     "strokeCount": 9,
     "strokeShapes": [
       "丿",
@@ -51585,7 +51585,7 @@ const HANZI_DATA = {
     "word": "胆量"
   },
   "背": {
-    "structure": "⿱北月[GJK]",
+    "structure": "⿱北月",
     "strokeCount": 9,
     "strokeShapes": [
       "丨",
@@ -51605,7 +51605,7 @@ const HANZI_DATA = {
     "word": "背影"
   },
   "胎": {
-    "structure": "⿰月台[GJK]",
+    "structure": "⿰月台",
     "strokeCount": 9,
     "strokeShapes": [
       "丿",
@@ -51625,7 +51625,7 @@ const HANZI_DATA = {
     "word": "胚胎"
   },
   "胖": {
-    "structure": "⿰月半[GJK]",
+    "structure": "⿰月半",
     "strokeCount": 9,
     "strokeShapes": [
       "丿",
@@ -51645,7 +51645,7 @@ const HANZI_DATA = {
     "word": "胖乎乎"
   },
   "胚": {
-    "structure": "⿰月丕[GJK]",
+    "structure": "⿰月丕",
     "strokeCount": 9,
     "strokeShapes": [
       "丿",
@@ -51665,7 +51665,7 @@ const HANZI_DATA = {
     "word": "胚胎"
   },
   "胜": {
-    "structure": "⿰月生[GK]",
+    "structure": "⿰月生",
     "strokeCount": 9,
     "strokeShapes": [
       "丿",
@@ -51685,7 +51685,7 @@ const HANZI_DATA = {
     "word": "胜利"
   },
   "胞": {
-    "structure": "⿰月包[GJK]",
+    "structure": "⿰月包",
     "strokeCount": 9,
     "strokeShapes": [
       "丿",
@@ -51705,7 +51705,7 @@ const HANZI_DATA = {
     "word": "同胞"
   },
   "胡": {
-    "structure": "⿰古月[GJK]",
+    "structure": "⿰古月",
     "strokeCount": 9,
     "strokeShapes": [
       "一",
@@ -51745,7 +51745,7 @@ const HANZI_DATA = {
     "word": "朦胧"
   },
   "胯": {
-    "structure": "⿰月夸[GJK]",
+    "structure": "⿰月夸",
     "strokeCount": 10,
     "strokeShapes": [
       "丿",
@@ -51766,7 +51766,7 @@ const HANZI_DATA = {
     "word": "胯下"
   },
   "胰": {
-    "structure": "⿰月夷[GJK]",
+    "structure": "⿰月夷",
     "strokeCount": 10,
     "strokeShapes": [
       "丿",
@@ -51787,7 +51787,7 @@ const HANZI_DATA = {
     "word": "胰脏"
   },
   "胳": {
-    "structure": "⿰月各[GJK]",
+    "structure": "⿰月各",
     "strokeCount": 10,
     "strokeShapes": [
       "丿",
@@ -51808,7 +51808,7 @@ const HANZI_DATA = {
     "word": "胳膊"
   },
   "胶": {
-    "structure": "⿰月交[GJK]",
+    "structure": "⿰月交",
     "strokeCount": 10,
     "strokeShapes": [
       "丿",
@@ -51829,7 +51829,7 @@ const HANZI_DATA = {
     "word": "胶水"
   },
   "胸": {
-    "structure": "⿰月匈[GJK]",
+    "structure": "⿰月匈",
     "strokeCount": 10,
     "strokeShapes": [
       "丿",
@@ -51871,7 +51871,7 @@ const HANZI_DATA = {
     "word": "能够"
   },
   "脂": {
-    "structure": "⿰月旨[GJK]",
+    "structure": "⿰月旨",
     "strokeCount": 10,
     "strokeShapes": [
       "丿",
@@ -51892,7 +51892,7 @@ const HANZI_DATA = {
     "word": "脂肪"
   },
   "脆": {
-    "structure": "⿰月危[GJK]",
+    "structure": "⿰月危",
     "strokeCount": 10,
     "strokeShapes": [
       "丿",
@@ -51913,7 +51913,7 @@ const HANZI_DATA = {
     "word": "干脆"
   },
   "脉": {
-    "structure": "⿰月永[GJK]",
+    "structure": "⿰月永",
     "strokeCount": 9,
     "strokeShapes": [
       "丿",
@@ -51933,7 +51933,7 @@ const HANZI_DATA = {
     "word": "脉搏"
   },
   "脊": {
-    "structure": "⿱⿻人⿱丷八月[GJK]",
+    "structure": "⿱⿻人⿱丷八月",
     "strokeCount": 10,
     "strokeShapes": [
       "丶",
@@ -52038,7 +52038,7 @@ const HANZI_DATA = {
     "word": "化脓"
   },
   "脖": {
-    "structure": "⿰月孛[GJK]",
+    "structure": "⿰月孛",
     "strokeCount": 11,
     "strokeShapes": [
       "丿",
@@ -52060,7 +52060,7 @@ const HANZI_DATA = {
     "word": "脖子"
   },
   "脚": {
-    "structure": "⿰月却[GJK]",
+    "structure": "⿰月却",
     "strokeCount": 11,
     "strokeShapes": [
       "丿",
@@ -52082,7 +52082,7 @@ const HANZI_DATA = {
     "word": "脚掌"
   },
   "脯": {
-    "structure": "⿰月甫[GJK]",
+    "structure": "⿰月甫",
     "strokeCount": 11,
     "strokeShapes": [
       "丿",
@@ -52104,7 +52104,7 @@ const HANZI_DATA = {
     "word": "胸脯"
   },
   "脱": {
-    "structure": "⿰月兑[GJK]",
+    "structure": "⿰月兑",
     "strokeCount": 11,
     "strokeShapes": [
       "丿",
@@ -52148,7 +52148,7 @@ const HANZI_DATA = {
     "word": "脸部"
   },
   "脾": {
-    "structure": "⿰月卑[GJK]",
+    "structure": "⿰月卑",
     "strokeCount": 12,
     "strokeShapes": [
       "丿",
@@ -52171,7 +52171,7 @@ const HANZI_DATA = {
     "word": "脾气"
   },
   "腊": {
-    "structure": "⿰月昔[GJK]",
+    "structure": "⿰月昔",
     "strokeCount": 12,
     "strokeShapes": [
       "丿",
@@ -52194,7 +52194,7 @@ const HANZI_DATA = {
     "word": "腊肉"
   },
   "腋": {
-    "structure": "⿰月夜[GJK]",
+    "structure": "⿰月夜",
     "strokeCount": 12,
     "strokeShapes": [
       "丿",
@@ -52217,7 +52217,7 @@ const HANZI_DATA = {
     "word": "腋下"
   },
   "腌": {
-    "structure": "⿰月奄[GJK]",
+    "structure": "⿰月奄",
     "strokeCount": 12,
     "strokeShapes": [
       "丿",
@@ -52265,7 +52265,7 @@ const HANZI_DATA = {
     "word": "腐烂"
   },
   "腔": {
-    "structure": "⿰月空[GJK]",
+    "structure": "⿰月空",
     "strokeCount": 12,
     "strokeShapes": [
       "丿",
@@ -52288,7 +52288,7 @@ const HANZI_DATA = {
     "word": "口腔"
   },
   "腕": {
-    "structure": "⿰月宛[GJK]",
+    "structure": "⿰月宛",
     "strokeCount": 12,
     "strokeShapes": [
       "丿",
@@ -52311,7 +52311,7 @@ const HANZI_DATA = {
     "word": "手腕"
   },
   "腥": {
-    "structure": "⿰月星[GJK]",
+    "structure": "⿰月星",
     "strokeCount": 13,
     "strokeShapes": [
       "丿",
@@ -52335,7 +52335,7 @@ const HANZI_DATA = {
     "word": "腥味"
   },
   "腮": {
-    "structure": "⿰月思[GJK]",
+    "structure": "⿰月思",
     "strokeCount": 13,
     "strokeShapes": [
       "丿",
@@ -52359,7 +52359,7 @@ const HANZI_DATA = {
     "word": "腮帮"
   },
   "腰": {
-    "structure": "⿰月要[GJK]",
+    "structure": "⿰月要",
     "strokeCount": 13,
     "strokeShapes": [
       "丿",
@@ -52383,7 +52383,7 @@ const HANZI_DATA = {
     "word": "腰身"
   },
   "腹": {
-    "structure": "⿰月复[GJK]",
+    "structure": "⿰月复",
     "strokeCount": 13,
     "strokeShapes": [
       "丿",
@@ -52407,7 +52407,7 @@ const HANZI_DATA = {
     "word": "腹部"
   },
   "腺": {
-    "structure": "⿰月泉[GJK]",
+    "structure": "⿰月泉",
     "strokeCount": 13,
     "strokeShapes": [
       "丿",
@@ -52479,7 +52479,7 @@ const HANZI_DATA = {
     "word": "腾飞"
   },
   "腿": {
-    "structure": "⿰月退[GJK]",
+    "structure": "⿰月退",
     "strokeCount": 13,
     "strokeShapes": [
       "丿",
@@ -52503,7 +52503,7 @@ const HANZI_DATA = {
     "word": "大腿"
   },
   "膀": {
-    "structure": "⿰月旁[GJK]",
+    "structure": "⿰月旁",
     "strokeCount": 14,
     "strokeShapes": [
       "丿",
@@ -52528,7 +52528,7 @@ const HANZI_DATA = {
     "word": "肩膀"
   },
   "膊": {
-    "structure": "⿰月尃[GJK]",
+    "structure": "⿰月尃",
     "strokeCount": 14,
     "strokeShapes": [
       "丿",
@@ -52553,7 +52553,7 @@ const HANZI_DATA = {
     "word": "胳膊"
   },
   "膏": {
-    "structure": "⿱高月[GJK]",
+    "structure": "⿱高月",
     "strokeCount": 14,
     "strokeShapes": [
       "丶",
@@ -52578,7 +52578,7 @@ const HANZI_DATA = {
     "word": "膏药"
   },
   "膘": {
-    "structure": "⿰月票[GJK]",
+    "structure": "⿰月票",
     "strokeCount": 15,
     "strokeShapes": [
       "丿",
@@ -52604,7 +52604,7 @@ const HANZI_DATA = {
     "word": "膘肥"
   },
   "膛": {
-    "structure": "⿰月堂[GJK]",
+    "structure": "⿰月堂",
     "strokeCount": 15,
     "strokeShapes": [
       "丿",
@@ -52630,7 +52630,7 @@ const HANZI_DATA = {
     "word": "胸膛"
   },
   "膜": {
-    "structure": "⿰月莫[GJK]",
+    "structure": "⿰月莫",
     "strokeCount": 14,
     "strokeShapes": [
       "丿",
@@ -52655,7 +52655,7 @@ const HANZI_DATA = {
     "word": "薄膜"
   },
   "膝": {
-    "structure": "⿰月桼[GJK]",
+    "structure": "⿰月桼",
     "strokeCount": 15,
     "strokeShapes": [
       "丿",
@@ -52681,7 +52681,7 @@ const HANZI_DATA = {
     "word": "膝盖"
   },
   "膨": {
-    "structure": "⿰月彭[GJK]",
+    "structure": "⿰月彭",
     "strokeCount": 16,
     "strokeShapes": [
       "丿",
@@ -52708,7 +52708,7 @@ const HANZI_DATA = {
     "word": "膨胀"
   },
   "膳": {
-    "structure": "⿰月善[GJK]",
+    "structure": "⿰月善",
     "strokeCount": 16,
     "strokeShapes": [
       "丿",
@@ -52735,7 +52735,7 @@ const HANZI_DATA = {
     "word": "膳食"
   },
   "臀": {
-    "structure": "⿱殿月[GJK]",
+    "structure": "⿱殿月",
     "strokeCount": 17,
     "strokeShapes": [
       "𠃍",
@@ -52763,7 +52763,7 @@ const HANZI_DATA = {
     "word": "臀部"
   },
   "臂": {
-    "structure": "⿱辟月[GJK]",
+    "structure": "⿱辟月",
     "strokeCount": 17,
     "strokeShapes": [
       "𠃍",
@@ -52791,7 +52791,7 @@ const HANZI_DATA = {
     "word": "手臂"
   },
   "臊": {
-    "structure": "⿰月喿[GJK]",
+    "structure": "⿰月喿",
     "strokeCount": 17,
     "strokeShapes": [
       "丿",
@@ -52853,7 +52853,7 @@ const HANZI_DATA = {
     "word": "自己"
   },
   "臭": {
-    "structure": "⿱自犬[GTKV]",
+    "structure": "⿱自犬",
     "strokeCount": 10,
     "strokeShapes": [
       "丿",
@@ -52891,7 +52891,7 @@ const HANZI_DATA = {
     "word": "至于"
   },
   "致": {
-    "structure": "⿰至攵[GJK]",
+    "structure": "⿰至攵",
     "strokeCount": 10,
     "strokeShapes": [
       "一",
@@ -52999,7 +52999,7 @@ const HANZI_DATA = {
     "word": "舆论"
   },
   "舌": {
-    "structure": "⿱千口[GJK]",
+    "structure": "⿱千口",
     "strokeCount": 6,
     "strokeShapes": [
       "丿",
@@ -53275,7 +53275,7 @@ const HANZI_DATA = {
     "word": "舷梯"
   },
   "船": {
-    "structure": "⿰舟⿱𠘧口[G]",
+    "structure": "⿰舟⿱𠘧口",
     "strokeCount": 11,
     "strokeShapes": [
       "丿",
@@ -53346,7 +53346,7 @@ const HANZI_DATA = {
     "word": "一艘"
   },
   "良": {
-    "structure": "⿱丶艮[GTV]",
+    "structure": "⿱丶艮",
     "strokeCount": 7,
     "strokeShapes": [
       "丶",
@@ -53590,7 +53590,7 @@ const HANZI_DATA = {
     "word": "芥末"
   },
   "芦": {
-    "structure": "⿱艹户[G]",
+    "structure": "⿱艹户",
     "strokeCount": 7,
     "strokeShapes": [
       "一",
@@ -54092,7 +54092,7 @@ const HANZI_DATA = {
     "word": "茉莉"
   },
   "茎": {
-    "structure": "⿱艹𢀖[G]",
+    "structure": "⿱艹𢀖",
     "strokeCount": 8,
     "strokeShapes": [
       "一",
@@ -54251,7 +54251,7 @@ const HANZI_DATA = {
     "word": "鹿茸"
   },
   "荆": {
-    "structure": "⿰茾刂[G]",
+    "structure": "⿰茾刂",
     "strokeCount": 9,
     "strokeShapes": [
       "一",
@@ -54700,7 +54700,7 @@ const HANZI_DATA = {
     "word": "黄莺"
   },
   "莽": {
-    "structure": "⿱𦬫廾[GT]",
+    "structure": "⿱𦬫廾",
     "strokeCount": 10,
     "strokeShapes": [
       "一",
@@ -55140,7 +55140,7 @@ const HANZI_DATA = {
     "word": "著名"
   },
   "葛": {
-    "structure": "⿱艹曷[GTK]",
+    "structure": "⿱艹曷",
     "strokeCount": 12,
     "strokeShapes": [
       "一",
@@ -55587,7 +55587,7 @@ const HANZI_DATA = {
     "word": "蓬乱"
   },
   "蔑": {
-    "structure": "⿱𦭝戍[GJK]",
+    "structure": "⿱𦭝戍",
     "strokeCount": 14,
     "strokeShapes": [
       "一",
@@ -55893,7 +55893,7 @@ const HANZI_DATA = {
     "word": "花蕾"
   },
   "薄": {
-    "structure": "⿱艹溥[GT]",
+    "structure": "⿱艹溥",
     "strokeCount": 16,
     "strokeShapes": [
       "一",
@@ -56202,7 +56202,7 @@ const HANZI_DATA = {
     "word": "蘑菇"
   },
   "蘸": {
-    "structure": "⿱艹醮[G]",
+    "structure": "⿱艹醮",
     "strokeCount": 22,
     "strokeShapes": [
       "一",
@@ -56235,7 +56235,7 @@ const HANZI_DATA = {
     "word": "蘸水"
   },
   "虎": {
-    "structure": "⿸虍几[G]",
+    "structure": "⿸虍几",
     "strokeCount": 8,
     "strokeShapes": [
       "丨",
@@ -56273,7 +56273,7 @@ const HANZI_DATA = {
     "word": "俘虏"
   },
   "虐": {
-    "structure": "⿸虍⿻匚一[GTKV]",
+    "structure": "⿸虍⿻匚一",
     "strokeCount": 9,
     "strokeShapes": [
       "丨",
@@ -56618,7 +56618,7 @@ const HANZI_DATA = {
     "word": "蜈蚣"
   },
   "蚤": {
-    "structure": "⿱叉虫[G]",
+    "structure": "⿱叉虫",
     "strokeCount": 9,
     "strokeShapes": [
       "㇇|乛",
@@ -57002,7 +57002,7 @@ const HANZI_DATA = {
     "word": "蜜蜂"
   },
   "蜈": {
-    "structure": "⿰虫吴[G]",
+    "structure": "⿰虫吴",
     "strokeCount": 13,
     "strokeShapes": [
       "丨",
@@ -57195,7 +57195,7 @@ const HANZI_DATA = {
     "word": "蜡笔"
   },
   "蜻": {
-    "structure": "⿰虫青[GT]",
+    "structure": "⿰虫青",
     "strokeCount": 14,
     "strokeShapes": [
       "丨",
@@ -57220,7 +57220,7 @@ const HANZI_DATA = {
     "word": "蜻蜓"
   },
   "蝇": {
-    "structure": "⿰虫黾[G]",
+    "structure": "⿰虫黾",
     "strokeCount": 14,
     "strokeShapes": [
       "丨",
@@ -57245,7 +57245,7 @@ const HANZI_DATA = {
     "word": "苍蝇"
   },
   "蝉": {
-    "structure": "⿰虫单[G]",
+    "structure": "⿰虫单",
     "strokeCount": 14,
     "strokeShapes": [
       "丨",
@@ -58041,7 +58041,7 @@ const HANZI_DATA = {
     "word": "衰弱"
   },
   "衷": {
-    "structure": "⿳亠中𧘇[GT]",
+    "structure": "⿳亠中𧘇",
     "strokeCount": 10,
     "strokeShapes": [
       "丶",
@@ -58532,7 +58532,7 @@ const HANZI_DATA = {
     "word": "褂子"
   },
   "褐": {
-    "structure": "⿰衤曷[GTK]",
+    "structure": "⿰衤曷",
     "strokeCount": 14,
     "strokeShapes": [
       "丶",
@@ -61938,7 +61938,7 @@ const HANZI_DATA = {
     "word": "赶路"
   },
   "起": {
-    "structure": "⿺走巳[GJK]",
+    "structure": "⿺走巳",
     "strokeCount": 10,
     "strokeShapes": [
       "一",
@@ -62051,7 +62051,7 @@ const HANZI_DATA = {
     "word": "趋势"
   },
   "趟": {
-    "structure": "⿺走尚[GT]",
+    "structure": "⿺走尚",
     "strokeCount": 15,
     "strokeShapes": [
       "一",
@@ -62419,7 +62419,7 @@ const HANZI_DATA = {
     "word": "跳舞"
   },
   "践": {
-    "structure": "⿰𧾷戋[G]",
+    "structure": "⿰𧾷戋",
     "strokeCount": 12,
     "strokeShapes": [
       "丨",
@@ -64136,7 +64136,7 @@ const HANZI_DATA = {
     "word": "迫使"
   },
   "述": {
-    "structure": "⿺辶术[GJ]",
+    "structure": "⿺辶术",
     "strokeCount": 8,
     "strokeShapes": [
       "一",
@@ -64629,7 +64629,7 @@ const HANZI_DATA = {
     "word": "逮捕"
   },
   "逸": {
-    "structure": "⿺辶兔[GTKV]",
+    "structure": "⿺辶兔",
     "strokeCount": 11,
     "strokeShapes": [
       "丿",
@@ -64696,7 +64696,7 @@ const HANZI_DATA = {
     "word": "逼迫"
   },
   "逾": {
-    "structure": "⿺辶俞[GTV]",
+    "structure": "⿺辶俞",
     "strokeCount": 12,
     "strokeShapes": [
       "丿",
@@ -64881,7 +64881,7 @@ const HANZI_DATA = {
     "word": "派遣"
   },
   "遥": {
-    "structure": "⿺辶䍃[G]",
+    "structure": "⿺辶䍃",
     "strokeCount": 13,
     "strokeShapes": [
       "丿",
@@ -68328,7 +68328,7 @@ const HANZI_DATA = {
     "word": "一隅"
   },
   "隆": {
-    "structure": "⿰阝㚅[GTKV]",
+    "structure": "⿰阝㚅",
     "strokeCount": 11,
     "strokeShapes": [
       "𠄎|㇌",
@@ -68440,7 +68440,7 @@ const HANZI_DATA = {
     "word": "狭隘"
   },
   "隙": {
-    "structure": "⿰阝𡭴[GJK]",
+    "structure": "⿰阝𡭴",
     "strokeCount": 12,
     "strokeShapes": [
       "𠄎|㇌",
@@ -68643,7 +68643,7 @@ const HANZI_DATA = {
     "word": "优雅"
   },
   "集": {
-    "structure": "⿱隹木[GJK]",
+    "structure": "⿱隹木",
     "strokeCount": 12,
     "strokeShapes": [
       "丿",
@@ -68666,7 +68666,7 @@ const HANZI_DATA = {
     "word": "密集"
   },
   "雇": {
-    "structure": "⿸户隹[G]",
+    "structure": "⿸户隹",
     "strokeCount": 12,
     "strokeShapes": [
       "丶",
@@ -69227,7 +69227,7 @@ const HANZI_DATA = {
     "word": "青春"
   },
   "靖": {
-    "structure": "⿰立青[GTJ]",
+    "structure": "⿰立青",
     "strokeCount": 13,
     "strokeShapes": [
       "丶",
@@ -69295,7 +69295,7 @@ const HANZI_DATA = {
     "word": "非凡"
   },
   "靠": {
-    "structure": "⿱告非[GT]",
+    "structure": "⿱告非",
     "strokeCount": 15,
     "strokeShapes": [
       "丿",
@@ -69629,7 +69629,7 @@ const HANZI_DATA = {
     "word": "音乐"
   },
   "韵": {
-    "structure": "⿰音匀[G]",
+    "structure": "⿰音匀",
     "strokeCount": 13,
     "strokeShapes": [
       "丶",
@@ -71227,7 +71227,7 @@ const HANZI_DATA = {
     "word": "骤然"
   },
   "骨": {
-    "structure": "⿱⑤月[G]",
+    "structure": "⿱⑤月",
     "strokeCount": 9,
     "strokeShapes": [
       "丨",
@@ -72226,7 +72226,7 @@ const HANZI_DATA = {
     "word": "麦田"
   },
   "麸": {
-    "structure": "⿰麦夫[G]",
+    "structure": "⿰麦夫",
     "strokeCount": 11,
     "strokeShapes": [
       "一",
@@ -72248,7 +72248,7 @@ const HANZI_DATA = {
     "word": "麸皮"
   },
   "麻": {
-    "structure": "⿸广林[GJ]",
+    "structure": "⿸广林",
     "strokeCount": 11,
     "strokeShapes": [
       "丶",
@@ -72270,7 +72270,7 @@ const HANZI_DATA = {
     "word": "芝麻"
   },
   "黄": {
-    "structure": "⿳龷由八[GJ]",
+    "structure": "⿳龷由八",
     "strokeCount": 11,
     "strokeShapes": [
       "一",
@@ -72489,7 +72489,7 @@ const HANZI_DATA = {
     "word": "老鼠"
   },
   "鼻": {
-    "structure": "⿱自畀[GT]",
+    "structure": "⿱自畀",
     "strokeCount": 14,
     "strokeShapes": [
       "丿",

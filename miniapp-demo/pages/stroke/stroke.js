@@ -107,7 +107,7 @@ Page({
         strokeColor: '#4CAF50',
         outlineColor: '#DDD',
         drawingColor: '#333',
-        showHintAfterMisses: 2, // 错误2次后显示提示
+        showHintAfterMisses: 1, // 错误1次后显示提示
         onLoadCharDataSuccess: (data) => {
           console.log('汉字数据加载成功:', data);
           // 启动 quiz 模式
